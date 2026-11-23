@@ -1,0 +1,26 @@
+[package]
+name = "omen-hardware"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Hardware abstraction layer: detection, sensors, fans, profiles, lighting, power"
+
+[dependencies]
+omen-core = { path = "../core" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }
+tempfile = "3"
+libc = "0.2"
+rusqlite = { version = "0.32", default-features = false }
+zbus = { version = "5.19.0", default-features = false, features = ["async-io", "blocking-api"] }
+
+[features]
+native-session-tests = []
+
+[[test]]
+name = "game-session-native"
+path = "tests/game_session_native.rs"
+harness = false
+required-features = ["native-session-tests"]

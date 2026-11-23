@@ -1,0 +1,28 @@
+{
+  "recorded_utc": "2026-10-26T06:20:32.761117+00:00",
+  "method": "application-only GTK widget captures; no desktop framebuffer capture",
+  "session_bus": "private minimal dbus-daemon without service activation; host tray and portal are not used",
+  "hardware_control_writes": 0,
+  "cleanup_complete": true,
+  "screenshots": [
+    {
+      "path": "docs/screenshots/fan.png",
+      "sha256": "1b39ff68ed44294574eafcbb91b27a8b2f6be951691d0b79d834248a4e09747e",
+      "fixture": false,
+      "gtk_display_type": "GdkWaylandDisplay",
+      "page_changes": []
+    },
+    {
+      "path": "docs/screenshots/fan-mode-only-fixture.png",
+      "sha256": "5dbfa060809b663724f35cced132ab953a413206e2e3d2d72f1b150a12b6b379",
+      "fixture": true,
+      "gtk_display_type": "GdkWaylandDisplay",
+      "page_changes": []
+    }
+  ],
+  "gui_sha256": "f351d30d74e50349047466fd628d884c7080f652705a8f9bf059b6918d51fa04",
+  "visual_inspection": {
+    "result": "passed",
+    "scope": "Current build: live read-only Auto and labelled Maximum fixture; actual GTK Wayland fan page; no live controls."
+  }
+}

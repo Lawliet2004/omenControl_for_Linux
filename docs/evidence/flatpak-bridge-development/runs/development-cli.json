@@ -1,0 +1,8 @@
+{
+  "development_cli": "/home/papan/Desktop/Projects/omen/target/flatpak-bridge-development/artifacts/omen-cli",
+  "sha256": "0db5948f506b4abee3f64380bbbeaf1b7767e79d76b66c84bc9ca4f49752d4a4",
+  "bytes": 5704112,
+  "base_package": "target/debian/omen-linux_0.1.0-25_amd64.deb",
+  "base_package_sha256": "c84e5e60bc2e0b7254cf0430e68030c0e2681ff13913c39336621fe7068f5e54",
+  "installed_cli_replaced": false
+}

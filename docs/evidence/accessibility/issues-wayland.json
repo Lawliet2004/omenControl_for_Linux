@@ -1,0 +1,68 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "system_power_bus_used": false,
+  "profile": "release",
+  "requested_gtk_backend": "wayland",
+  "gui_sha256": "787c518933909bf40aacb9d738e46971f9d9fd471ec755acdc54b53774f47de3",
+  "cli_sha256": "42f2241c4862c51cd6e28daf1ec659b320fca6ae05fde7bc6fe7978af203961b",
+  "checks_passed": [
+    "a denial after the submission receipt appears in native Launch issues without execution or profile changes",
+    "worker and GUI observers coalesce to one private reason without captured errors, command arguments or output",
+    "native Clear launch issues resets desktop reports and leaves games, daemon history and profiles unchanged",
+    "a wrapper failure while the GUI is closed is visible when Game Library reopens",
+    "damaged saved data is preserved, late failures remain live in the GUI, and explicit reset recovers",
+    "app-only wide/light and narrow/dark captures cover persisted launch recovery",
+    "CLI inspection and clearing require no hardware discovery, game execution or profile write"
+  ],
+  "captures": [
+    {
+      "path": "target/a11y-final/issues-wayland/captures/launch-issues-wide-light.png",
+      "sha256": "f669e954dc123cec6316a681e81eb8d1ddab51ddabd1fe444d972c341c6d43cc",
+      "requested_size": [
+        1240,
+        1100
+      ],
+      "actual_size": [
+        1240,
+        1080
+      ],
+      "theme": "prefer-light",
+      "original_capture_path": "docs/screenshots/launch-issues/launch-issues-wide-light.png"
+    },
+    {
+      "path": "target/a11y-final/issues-wayland/captures/launch-issues-narrow-dark.png",
+      "sha256": "229bb2dfdfd41a349ad08ab9d8f29fe53ca472cb5a43964e90988961809ac629",
+      "requested_size": [
+        600,
+        1100
+      ],
+      "actual_size": [
+        600,
+        1080
+      ],
+      "theme": "prefer-dark",
+      "original_capture_path": "docs/screenshots/launch-issues/launch-issues-narrow-dark.png"
+    }
+  ],
+  "closed_wrapper_stderr": "permission denied: SECRET_PRIVATE_ERROR\n",
+  "closed_wrapper_saved_issues": {
+    "version": 1,
+    "uid": 1000,
+    "issues": [
+      {
+        "id": "b4e2313f9867711b9c7cd7f6bd440de4",
+        "game_id": "custom/denied",
+        "scope_token": "663814fb90040ce97c3c0c0859179e12",
+        "stage": "registration",
+        "reason": {
+          "kind": "authorization"
+        },
+        "occurred_unix_ms": 1793105450700
+      }
+    ]
+  },
+  "cleanup_complete": true,
+  "captures_relocated_with_verified_bytes": true
+}

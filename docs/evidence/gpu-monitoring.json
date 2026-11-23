@@ -1,0 +1,165 @@
+{
+  "result": "passed",
+  "hardware_writes": false,
+  "host_package_installed": false,
+  "requested_gtk_backend": "auto",
+  "method": "transient systemd user service with real GPU/sysfs and PrivateDevices; production read-only IPC and CLI",
+  "uid": 1000,
+  "binary_sha256": {
+    "omen-cli": "4a961a0d6810c4b346d7aecbf2c56bf9160944ac80848dbfbb8724f9212e7a31",
+    "omen-daemon": "80f23151ed5158b8ac782e891ebaa3c4fe0e6d696e8d180a48d5b508f4c04a51"
+  },
+  "kernel": "7.0.0-42-generic",
+  "nvidia_driver_version": "595.99.02",
+  "gpus": [
+    {
+      "pci": "0000:01:00.0",
+      "runtime_status": "active",
+      "driver": "nvidia"
+    }
+  ],
+  "independent_reference": {
+    "args": [
+      "/usr/bin/nvidia-smi",
+      "--id=0000:01:00.0",
+      "--query-gpu=name,temperature.gpu,utilization.gpu,power.draw,clocks.sm,memory.used,memory.total",
+      "--format=csv,noheader,nounits"
+    ],
+    "exit_code": 0,
+    "stdout": "NVIDIA GeForce RTX 2050, 54, 0, 2.84, 210, 1, 4096\n",
+    "stderr": ""
+  },
+  "properties": [
+    "PrivateDevices=yes",
+    "ProtectSystem=strict",
+    "ProtectHome=yes",
+    "BindReadOnlyPaths=/sys",
+    "ProtectKernelTunables=yes",
+    "ReadWritePaths=/tmp/omen-gpu-probe-ceta_uzu",
+    "PrivateTmp=no",
+    "RestrictAddressFamilies=AF_UNIX",
+    "ProtectKernelModules=yes",
+    "ProtectKernelLogs=yes",
+    "ProtectControlGroups=yes",
+    "NoNewPrivileges=yes",
+    "LockPersonality=yes",
+    "RestrictSUIDSGID=yes",
+    "UMask=0077"
+  ],
+  "device_visibility_control": {
+    "exit_code": 0,
+    "stdout": "NVIDIA GeForce RTX 2050, 54, 0, 2.84, 210, 1, 4096\n",
+    "stderr": "Running as unit: omen-gpu-readonly-e38c71424d-control.service; invocation ID: 36020347e48c4ba9ba1a8a17cc4e48b4\n          Finished with result: success\nMain processes terminated with: code=exited, status=0/SUCCESS\n               Service runtime: 100ms\n             CPU time consumed: 78ms\n                   Memory peak: 18.5M (swap: 0B)\n"
+  },
+  "namespace": {
+    "uid": 1000,
+    "nvidiactl_visible": false,
+    "sysfs_readonly": true,
+    "mount_namespace": "mnt:[4026533715]"
+  },
+  "daemon_info": {
+    "daemon_version": "0.1.0",
+    "machine": {
+      "bios_vendor": "AMI",
+      "bios_version": "F.10",
+      "board_name": "8C30",
+      "board_vendor": "HP",
+      "class": "victus",
+      "kernel_version": "7.0.0-42-generic",
+      "product_family": "103C_5335M7 HP Victus",
+      "product_name": "Victus by HP 15.6 inch Gaming Laptop PC-fb1002AX",
+      "sys_vendor": "HP"
+    },
+    "mock": false,
+    "protocol_version": 1,
+    "started_unix": 1794240669
+  },
+  "daemon_nvidia_capability": {
+    "detail": "NVIDIA telemetry unavailable in this process (nvidia-smi, bound GPU or device-node access missing)",
+    "status": "unavailable"
+  },
+  "daemon_nvidia_samples": [],
+  "client_nvidia_capability": {
+    "detail": "read-only nvidia-smi samples from the local client; privileged daemon keeps its device sandbox",
+    "status": "available"
+  },
+  "client_nvidia_samples": [
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/name",
+      "kind": "text",
+      "label": "GPU",
+      "measured_unix_ms": 1794240670026,
+      "source": "nvidia_smi",
+      "text": "NVIDIA GeForce RTX 2050",
+      "value": null
+    },
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/temp",
+      "kind": "temperature",
+      "label": "GPU temperature (NVIDIA)",
+      "measured_unix_ms": 1794240670026,
+      "source": "nvidia_smi",
+      "text": null,
+      "value": 54.0
+    },
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/util",
+      "kind": "percent",
+      "label": "GPU utilization (NVIDIA)",
+      "measured_unix_ms": 1794240670026,
+      "source": "nvidia_smi",
+      "text": null,
+      "value": 0.0
+    },
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/power",
+      "kind": "power",
+      "label": "GPU power (NVIDIA)",
+      "measured_unix_ms": 1794240670026,
+      "source": "nvidia_smi",
+      "text": null,
+      "value": 2.88
+    },
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/sm_clock",
+      "kind": "frequency",
+      "label": "GPU SM clock (NVIDIA)",
+      "measured_unix_ms": 1794240670026,
+      "source": "nvidia_smi",
+      "text": null,
+      "value": 210.0
+    },
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/vram_used_pct",
+      "kind": "percent",
+      "label": "GPU VRAM used (NVIDIA)",
+      "measured_unix_ms": 1794240670026,
+      "source": "nvidia_smi",
+      "text": null,
+      "value": 0.0244140625
+    }
+  ],
+  "client_telemetry": {
+    "nvidia": {
+      "mode": "read_only",
+      "origin": "local_client",
+      "sensor_ids": [
+        "nvidia/name",
+        "nvidia/temp",
+        "nvidia/util",
+        "nvidia/power",
+        "nvidia/sm_clock",
+        "nvidia/vram_used_pct"
+      ]
+    }
+  },
+  "service_stopped": true,
+  "recorded_utc": "2026-11-09T16:11:10.107016+00:00",
+  "temporary_files_removed": true
+}

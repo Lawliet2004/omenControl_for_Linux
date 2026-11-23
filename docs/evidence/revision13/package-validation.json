@@ -1,0 +1,34 @@
+{
+  "package": "target/debian/omen-linux_0.1.0-13_amd64.deb",
+  "bytes": 2746752,
+  "sha256": "c9536bcc374b8d36a58fcfb470aae4f7c482bb37c64f29ea9e40f205f61ee475",
+  "version": "0.1.0-13",
+  "installed_by_verifier": false,
+  "checks": {
+    "root_ownership_and_directory_modes": true,
+    "payload_md5sums": true,
+    "desktop_file_validate": true,
+    "polkit_xml_matches_source": true,
+    "gui_linkage_current_environment": true,
+    "extracted_cli_readonly_discovery": true
+  },
+  "binaries": {
+    "omen-cli": {
+      "sha256": "80ad3eab4bf6bc4b4915815e8f233522149d5f02e88abf1920d9e730294ffe75",
+      "matches_release": true
+    },
+    "omen-daemon": {
+      "sha256": "5c7ac5a0eec061ac22f2d3939ae6a139a3a49953f168d4ce2ac196bcfb458135",
+      "matches_release": true
+    },
+    "omen-gui": {
+      "sha256": "00ff31c59c90d6c11f6e6bbafe0809ae20bee27549a736b25d0713ad3376c982",
+      "matches_release": true
+    }
+  },
+  "dependency_notices": 156,
+  "systemd_validation": {
+    "exit_code": 0,
+    "method": "unmodified unit in extracted package root; no unit started"
+  }
+}

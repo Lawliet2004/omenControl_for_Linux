@@ -1,0 +1,14 @@
+[
+  {
+    "path": "tests/systemd_vm.py",
+    "sha256": "868f68f5f4f3f0b3699df73dc8485d76192acd9859ea84ffc9b5d275390e4942"
+  },
+  {
+    "path": "tests/flatpak_scope_vm_inner.py",
+    "sha256": "f5b96d06da9485a1c4293af5a166c8b60ada0eed9cac4af175a5ee65e121484e"
+  },
+  {
+    "path": "scripts/prepare-offline-vm-repository.py",
+    "sha256": "56e3bb3d4bc35a1aea7f32b83cb1e6d1b51aa5ce8bce1230a78aa1bd52d01fb2"
+  }
+]

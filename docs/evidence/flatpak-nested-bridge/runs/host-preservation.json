@@ -1,0 +1,85 @@
+{
+  "protected_processes": [
+    {
+      "pid": 3278700,
+      "start_ticks": 31333165,
+      "command": "/home/papan/Desktop/Projects/omen/target/release/omen-gui --page fan"
+    },
+    {
+      "pid": 2124598,
+      "start_ticks": 18438269,
+      "command": "./target/release/omen-daemon --mock"
+    },
+    {
+      "pid": 2563,
+      "start_ticks": 1676,
+      "command": "/usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1"
+    }
+  ],
+  "protected_container": {
+    "Running": true,
+    "Paused": false,
+    "Pid": 3101448,
+    "StartedAt": "2026-10-26T19:37:22.265072939Z"
+  },
+  "runs": [
+    {
+      "result": "passed",
+      "qemu_pid": 523411,
+      "vm_exited": true,
+      "temporary_files_removed": true,
+      "name": "capability-attempt-1"
+    },
+    {
+      "result": "failed",
+      "qemu_pid": 543786,
+      "vm_exited": true,
+      "temporary_files_removed": true,
+      "name": "wrapper-attempt-1"
+    },
+    {
+      "result": "passed",
+      "qemu_pid": 551631,
+      "vm_exited": true,
+      "temporary_files_removed": true,
+      "name": "wrapper-attempt-2"
+    }
+  ],
+  "host_installation_after": {
+    "omen-linux": false,
+    "flatpak": false,
+    "flatpak-xdg-utils": false,
+    "musl": false,
+    "musl-dev": false
+  },
+  "prior_packages": {
+    "21": {
+      "bytes": 3645506,
+      "sha256": "25964019083530e3c3e567dca7edd13cb4eebe1ce0ad2eea8aacc7f301ae3edf"
+    },
+    "22": {
+      "bytes": 3650470,
+      "sha256": "a0745f145d6c8626f9568d1379af2cb10ab6c4a78f1dfaf52a526288c40c0455"
+    },
+    "23": {
+      "bytes": 3664646,
+      "sha256": "4fafc9356f712be2bbf4d642747daade0e689adbf23fa334f61d41cfb0945abe"
+    },
+    "24": {
+      "bytes": 3694524,
+      "sha256": "1a7eb732fa5c672c2e920396ccdf163b718bb008008bc4cedd69ac7f8bb226df"
+    },
+    "25": {
+      "bytes": 3697848,
+      "sha256": "c84e5e60bc2e0b7254cf0430e68030c0e2681ff13913c39336621fe7068f5e54"
+    }
+  },
+  "earlier_evidence_summaries": {
+    "flatpak-bridge-development": "b96506d2d22d2b7dc6ccd02ae65bd36b5abb45fab16dcd1828a4cf5b17918a92",
+    "session-migration-v25": "de7e956bed40d6ad618cd0a38ad143da404b27f15b8b2fa1f9068de058f3327f",
+    "flatpak-scope-probe-v24": "1844e6c78308975f1dc8163ca0590cd8d1efee01927b30071b06d911b2e8d9da",
+    "sensor-browser-v24": "579ef9c40d7964dbee2343ec71c43e95cbdabf920eac7faed41999a65dc55254",
+    "notification-workflow-v24": "72b5a7f6e24e0b5b46937f63d0fe637b8a6e61975bb0fa614a0fe2bd4b9d474f"
+  },
+  "no_revision_26_package": true
+}

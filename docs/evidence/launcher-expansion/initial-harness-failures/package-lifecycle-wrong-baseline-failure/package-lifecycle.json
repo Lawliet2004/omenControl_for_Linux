@@ -1,0 +1,18 @@
+{
+  "started_utc": "2026-10-27T14:44:51.731862+00:00",
+  "base_image": "sha256:aee618c7602b96bf42a21b4fbd7a3fba3e17542c75e4b248aa2f56f022e076c7",
+  "base_digests": [
+    "omen-audit20-dependencies@sha256:aee618c7602b96bf42a21b4fbd7a3fba3e17542c75e4b248aa2f56f022e076c7"
+  ],
+  "package_sha256": "9ee6981283c0075798ec0e7b3e26291143fc64e2f6a810e92a87d7381a7f27e2",
+  "baseline_sha256": "12ee20d102c7c129eb080564805bbaaf150d1e20c8cfb9623503e16bba2b7400",
+  "host_package_installed": false,
+  "container_removed": true,
+  "apt_mirror": "https://archive.ubuntu.com/ubuntu",
+  "offline_dependency_reuse": true,
+  "installed_game_format_fixtures": true,
+  "apt_cache_sha256": null,
+  "isolation": "default Docker namespaces/devices; SYS_ADMIN absent; no-new-privileges; no explicit host mounts, bus, sockets or device passthrough",
+  "result": "failed",
+  "finished_utc": "2026-10-27T14:44:55.904050+00:00"
+}

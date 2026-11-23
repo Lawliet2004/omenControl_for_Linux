@@ -1,0 +1,70 @@
+{
+  "source": "installed powerprofilesctl 0.30",
+  "path": "/usr/bin/powerprofilesctl",
+  "sha256": "6e916bc6da7477a592a9ff5f514d9cdbce6a9cb2a2524627d8e7c4587d0bb157",
+  "properties": {
+    "ActiveProfile": {
+      "type": "s",
+      "data": "performance"
+    },
+    "Profiles": {
+      "type": "aa{sv}",
+      "data": [
+        {
+          "Profile": {
+            "type": "s",
+            "data": "power-saver"
+          },
+          "CpuDriver": {
+            "type": "s",
+            "data": "amd_pstate"
+          },
+          "PlatformDriver": {
+            "type": "s",
+            "data": "placeholder"
+          },
+          "Driver": {
+            "type": "s",
+            "data": "multiple"
+          }
+        },
+        {
+          "Profile": {
+            "type": "s",
+            "data": "balanced"
+          },
+          "CpuDriver": {
+            "type": "s",
+            "data": "amd_pstate"
+          },
+          "PlatformDriver": {
+            "type": "s",
+            "data": "placeholder"
+          },
+          "Driver": {
+            "type": "s",
+            "data": "multiple"
+          }
+        },
+        {
+          "Profile": {
+            "type": "s",
+            "data": "performance"
+          },
+          "CpuDriver": {
+            "type": "s",
+            "data": "amd_pstate"
+          },
+          "Driver": {
+            "type": "s",
+            "data": "amd_pstate"
+          }
+        }
+      ]
+    },
+    "ActiveProfileHolds": {
+      "type": "aa{sv}",
+      "data": []
+    }
+  }
+}

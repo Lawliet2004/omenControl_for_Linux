@@ -1,0 +1,101 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "host_keyboard_input": false,
+  "gui_sha256": "2be2222626f576aa35618ca4573bfded789c4334ba0794cf882264a6d626dc01",
+  "test_script_sha256": "5d257412a751b4e3c9611c42136e2a8ca20265e0d565f5b015d6e3c664a2845a",
+  "profile": "release",
+  "checks_passed": [
+    "Performance choices recover from an empty first report and a user click reaches the actual fixture backend",
+    "profile choices add and remove currently advertised options without restarting or submitting a write",
+    "manual and curve editors recover; saving reaches the real daemon and unsaved changes immediately block curve activation",
+    "lighting initializes from a valid fresh readback, preserves edits through read failure and applies the observed animation without resetting it",
+    "charge threshold appears after startup, follows actual readback and preserves a distinct requested edit",
+    "stalled daemon expires every dependent action; recovery retains native editors and edits without implicit writes",
+    "a new zone layout refreshes matching controls and explains that current values were loaded",
+    "graphics inventory and runtime state refresh from actual fixture PCI files and incomplete discovery remains explicit",
+    "real private keyboard traversal and Space activate the focused profile choice",
+    "real keyboard edits fan controls without writing and immediately disables unsaved curve activation",
+    "native keyboard opens and cancels the color dialog, then edits brightness without implicit writes",
+    "native keyboard threshold editing and explicit Apply reach ordinary fixture hardware with the requested value"
+  ],
+  "write_operations": [
+    {
+      "op": "set_profile",
+      "args": {
+        "profile": "quiet"
+      }
+    },
+    {
+      "op": "set_fan_curve",
+      "args": {
+        "curve": {
+          "points": [
+            {
+              "temp_c": 0,
+              "duty_pct": 30
+            },
+            {
+              "temp_c": 55,
+              "duty_pct": 40
+            },
+            {
+              "temp_c": 65,
+              "duty_pct": 60
+            },
+            {
+              "temp_c": 75,
+              "duty_pct": 80
+            },
+            {
+              "temp_c": 110,
+              "duty_pct": 100
+            }
+          ]
+        }
+      }
+    },
+    {
+      "op": "set_lighting",
+      "args": {
+        "state": {
+          "zones": 2,
+          "colors": [
+            {
+              "r": 255,
+              "g": 0,
+              "b": 0
+            },
+            {
+              "r": 0,
+              "g": 255,
+              "b": 0
+            }
+          ],
+          "brightness_pct": 75,
+          "animation": "static"
+        }
+      }
+    },
+    {
+      "op": "set_charge_threshold",
+      "args": {
+        "pct": 85
+      }
+    },
+    {
+      "op": "set_profile",
+      "args": {
+        "profile": "balanced"
+      }
+    },
+    {
+      "op": "set_charge_threshold",
+      "args": {
+        "pct": 90
+      }
+    }
+  ],
+  "cleanup_complete": true
+}

@@ -1,0 +1,7 @@
+{
+  "package_versions_and_checksums_unchanged": true,
+  "changed_dependency_lists": [
+    "omen-client"
+  ],
+  "new_edge": "omen-client -> existing zbus 5.19.0"
+}

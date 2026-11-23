@@ -1,0 +1,42 @@
+[
+  {
+    "path": "README.md",
+    "sha256": "2e594c2a97292eed3ce56657bb9c1a2c6c37136928eb3b8c90ac8d6b46d280f7"
+  },
+  {
+    "path": "docs/ACCESSIBILITY.md",
+    "sha256": "33a3d18ec0dc05543fae5f6bd0d6e4600cb4ad1fb24691dba2c0808aedb838e5"
+  },
+  {
+    "path": "docs/APPLICATION_AUDIT_IMPLEMENTATION.md",
+    "sha256": "da293c0ec07628dadea6cd6059b855c134065b547a6b1194fa75b8cb3ffd6f1f"
+  },
+  {
+    "path": "docs/CONTINUATION_CHECKLIST.md",
+    "sha256": "aeb71c9ec468a3b6a302cb23eb960eac70cc5a45ba39104214623d8b0000a4a9"
+  },
+  {
+    "path": "docs/IMPLEMENTATION_STATUS.md",
+    "sha256": "ace6e00e8f00962f8e61aa4c5a96af46bf3dea006e0019ca36ffd9207a74b9e2"
+  },
+  {
+    "path": "docs/INSTALLATION.md",
+    "sha256": "21fbcda04e8e1d39ed58c4a1a5cc443853553ffeddd67d2b3783543e6a42c76e"
+  },
+  {
+    "path": "docs/PACKAGE_VALIDATION.md",
+    "sha256": "c255fb0d6dab2adfe22f2bf5ee2f297d485e2fa047f22463884e7ad3029c4e79"
+  },
+  {
+    "path": "docs/SOURCE_SWITCHING_2026-10-28.md",
+    "sha256": "eea81bff1a0563d9d46265cb68c357f96c6a89de1ad649eda6a19471e385dc12"
+  },
+  {
+    "path": "docs/TEST_REPORT.md",
+    "sha256": "1aebfa8ef0fad7b285f28e30da574db26e90cb68d05ad57b9f5aa72b1a3feda9"
+  },
+  {
+    "path": "docs/VM_VALIDATION.md",
+    "sha256": "29445425c7c92e1954a4b2778feafa6d949d711114b3c2a0b82a67e666c4b7f0"
+  }
+]

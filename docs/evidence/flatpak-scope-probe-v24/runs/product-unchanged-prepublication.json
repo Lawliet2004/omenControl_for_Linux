@@ -1,0 +1,23 @@
+{
+  "source_baseline": "docs/evidence/notification-workflow-v24/source-manifest.json",
+  "source_count": 132,
+  "mismatches": [],
+  "packages": {
+    "21": {
+      "sha256": "25964019083530e3c3e567dca7edd13cb4eebe1ce0ad2eea8aacc7f301ae3edf",
+      "bytes": 3645506
+    },
+    "22": {
+      "sha256": "a0745f145d6c8626f9568d1379af2cb10ab6c4a78f1dfaf52a526288c40c0455",
+      "bytes": 3650470
+    },
+    "23": {
+      "sha256": "4fafc9356f712be2bbf4d642747daade0e689adbf23fa334f61d41cfb0945abe",
+      "bytes": 3664646
+    },
+    "24": {
+      "sha256": "1a7eb732fa5c672c2e920396ccdf163b718bb008008bc4cedd69ac7f8bb226df",
+      "bytes": 3694524
+    }
+  }
+}

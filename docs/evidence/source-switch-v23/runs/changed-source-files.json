@@ -1,0 +1,21 @@
+[
+  "Cargo.lock",
+  "crates/client/src/monitoring.rs",
+  "crates/ipc/Cargo.toml",
+  "crates/ipc/src/client.rs",
+  "crates/ipc/src/lib.rs",
+  "gui/Cargo.toml",
+  "gui/src/alerts.rs",
+  "gui/src/charts.rs",
+  "gui/src/control_pages.rs",
+  "gui/src/data.rs",
+  "gui/src/game_library.rs",
+  "gui/src/game_sessions.rs",
+  "gui/src/main.rs",
+  "gui/src/network_view.rs",
+  "gui/src/overlay.rs",
+  "gui/src/pages.rs",
+  "gui/src/tray.rs",
+  "packaging/build-deb.sh",
+  "packaging/debian/changelog"
+]

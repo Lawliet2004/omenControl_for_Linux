@@ -1,0 +1,23 @@
+{
+  "image": "sha256:aee618c7602b96bf42a21b4fbd7a3fba3e17542c75e4b248aa2f56f022e076c7",
+  "tag": "omen-audit20-dependencies:6cf55abbc3",
+  "source_container": {
+    "id": "86ebefddca73f91adea91f764e878e1b3ae94ab7f45069fb9cab17281c19e911",
+    "image": "sha256:c098726dd9b9733f3e885f8de0ef375206a311b0a317eadc40d347b1115fb944",
+    "pid": 3101448,
+    "started_at": "2026-10-26T19:37:22.265072939Z",
+    "running": true
+  },
+  "source_container_unchanged": true,
+  "snapshot_paused_source": false,
+  "temporary_image_removed": true,
+  "source_container_after": {
+    "id": "86ebefddca73f91adea91f764e878e1b3ae94ab7f45069fb9cab17281c19e911",
+    "image": "sha256:c098726dd9b9733f3e885f8de0ef375206a311b0a317eadc40d347b1115fb944",
+    "pid": 3101448,
+    "started_at": "2026-10-26T19:37:22.265072939Z",
+    "running": true
+  },
+  "cleanup_utc": "2026-10-27T14:47:48.481085+00:00",
+  "image_removal_output": "Untagged: omen-audit20-dependencies:6cf55abbc3\nDeleted: sha256:aee618c7602b96bf42a21b4fbd7a3fba3e17542c75e4b248aa2f56f022e076c7"
+}

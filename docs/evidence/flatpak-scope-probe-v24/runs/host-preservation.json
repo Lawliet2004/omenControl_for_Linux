@@ -1,0 +1,73 @@
+{
+  "protected_processes": [
+    {
+      "pid": 3278700,
+      "start_ticks": 31333165,
+      "command": "/home/papan/Desktop/Projects/omen/target/release/omen-gui --page fan"
+    },
+    {
+      "pid": 2124598,
+      "start_ticks": 18438269,
+      "command": "./target/release/omen-daemon --mock"
+    },
+    {
+      "pid": 2563,
+      "start_ticks": 1676,
+      "command": "/usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1"
+    }
+  ],
+  "vm_runs": [
+    {
+      "directory": "runtime",
+      "result": "failed",
+      "qemu_pid": 369134,
+      "vm_exited": true,
+      "temporary_files_removed": true
+    },
+    {
+      "directory": "attempt-2/runtime",
+      "result": "failed",
+      "qemu_pid": 377456,
+      "vm_exited": true,
+      "temporary_files_removed": true
+    },
+    {
+      "directory": "attempt-3/runtime",
+      "result": "passed",
+      "qemu_pid": 379222,
+      "vm_exited": true,
+      "temporary_files_removed": true
+    },
+    {
+      "directory": "attempt-4/runtime",
+      "result": "failed",
+      "qemu_pid": 382503,
+      "vm_exited": true,
+      "temporary_files_removed": true
+    },
+    {
+      "directory": "attempt-5/runtime",
+      "result": "passed",
+      "qemu_pid": 384029,
+      "vm_exited": true,
+      "temporary_files_removed": true
+    },
+    {
+      "directory": "resolution",
+      "result": "resolved",
+      "qemu_pid": 356154,
+      "vm_exited": true,
+      "temporary_files_removed": true
+    }
+  ],
+  "host_installation_after": {
+    "omen-linux": false,
+    "flatpak": false
+  },
+  "protected_container": {
+    "Running": true,
+    "Paused": false,
+    "Pid": 3101448,
+    "StartedAt": "2026-10-26T19:37:22.265072939Z"
+  }
+}

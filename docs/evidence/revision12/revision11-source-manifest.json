@@ -1,0 +1,18 @@
+{
+  "crates/core/src/config.rs": "c51adebc6a5f3ad673d91292ba2b12263f2fed8be421b153828b1b4ec03dbeea",
+  "crates/ipc/src/settings.rs": "c68ee9b9ee9ae08cfe7144198b561f826d09dabfad64c55b93f5fb948853f1d4",
+  "crates/daemon/src/service.rs": "5088914070bf359cb66fde25f805bd5f632b128b38d24346083a14d5a7ee3e3b",
+  "crates/daemon/src/thermal.rs": "9aabe580cb94d8392304f5bab47f8209a40fe5d74c1adde3687af1233b233b74",
+  "gui/src/main.rs": "c43cd908fac83440d29e331e98223f8e70411113e69b92a18c55005a7814b31e",
+  "gui/src/data.rs": "77245c19a7a459f79d727569d3c4dce678bee64db715cac13cbe80be5e8e459f",
+  "gui/src/pages.rs": "ecd558d098cf73266138c2e31014ed9d9f0d71b1c03dfd5788d2c2cc6825bd63",
+  "gui/src/overlay.rs": "1479e61a5e7ded1c3bb629305a20e95e57c65d67df2c5dc7853c9e61d654535c",
+  "gui/src/tray.rs": "d8a278d9c855f5843efbe1b9197eb16fbd7377f8e7212621b031b4ec4c8c61bc",
+  "gui/src/shortcuts.rs": "774275baa254b429d854c96aedf28e52c571722b0c33bdf3d30287a0369f1016",
+  "scripts/benchmark.py": "20b61273239bc49ceada17c90f9c22ab9ee9afd84479ccf59f6eee2d3c388ed3",
+  "scripts/capture-overlay.py": "f991bad1de74f12496764a57cc83271473f91a969f58fed0d60c43053441053d",
+  "tests/shortcuts.py": "db46fe2b29aca599767d468a8a07bea57108a2b7a5b29ce6d2b6d927e450ca16",
+  "tests/thermal_guard.py": "b0355c2601c4b3500abd6b93d799218f33fab5bb9d6c5412b720d11e19403d7f",
+  "packaging/build-deb.sh": "0d48fe552d3da4420799c1a934bca4e235fbab5a4665e43286452983fd23f596",
+  "packaging/debian/changelog": "7217d7961d22a08367e3ddd2bef8cdadbb622c51672e39ec0f760b41cdd89605"
+}

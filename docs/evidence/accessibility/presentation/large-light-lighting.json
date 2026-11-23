@@ -1,0 +1,408 @@
+{
+  "dark": false,
+  "gtk_font_name": "Sans 20",
+  "high_contrast": false,
+  "render_bounds": [
+    0.0,
+    0.0,
+    590.0,
+    1090.0
+  ],
+  "widgets": [
+    {
+      "bounds": [
+        46.0,
+        6.0,
+        249.0,
+        47.0
+      ],
+      "clips": [
+        [
+          0.0,
+          0.0,
+          590.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          600.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 29.333px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        9,
+        222,
+        30
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        3
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        225,
+        40
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "headerbar.",
+        "windowhandle.",
+        "box.",
+        "widget.",
+        "label.title"
+      ],
+      "sensitive": true,
+      "text": "Lighting Studio"
+    },
+    {
+      "bounds": [
+        358.0,
+        11.0,
+        95.0,
+        37.0
+      ],
+      "clips": [
+        [
+          0.0,
+          0.0,
+          590.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          600.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        92,
+        21
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        95,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "headerbar.",
+        "windowhandle.",
+        "box.",
+        "widget.",
+        "box.horizontal.end",
+        "button.text-button",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Fixture"
+    },
+    {
+      "bounds": [
+        18.0,
+        74.0,
+        213.0,
+        39.0
+      ],
+      "clips": [
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          590.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          590.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          600.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 28px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        210,
+        29
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        213,
+        39
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "label.section-title"
+      ],
+      "sensitive": true,
+      "text": "Lighting studio"
+    },
+    {
+      "bounds": [
+        18.0,
+        123.0,
+        500.0,
+        166.0
+      ],
+      "clips": [
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          590.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          590.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          600.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        469,
+        136
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 4,
+      "logical": [
+        0,
+        0,
+        472,
+        146
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "label.unavailable"
+      ],
+      "sensitive": true,
+      "text": "Keyboard lighting control unavailable: no kernel keyboard-lighting interface (model without RGB keyboard or module not installed)"
+    },
+    {
+      "bounds": [
+        18.0,
+        299.0,
+        472.0,
+        182.0
+      ],
+      "clips": [
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          590.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          590.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          600.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        8,
+        470,
+        173
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 5,
+      "logical": [
+        0,
+        0,
+        472,
+        182
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "label.dim"
+      ],
+      "sensitive": true,
+      "text": "No validated lighting control is enabled. A missing interface does not prove that the keyboard lacks lighting hardware. Four-zone and per-key protocols require separate validation."
+    }
+  ],
+  "window_size": [
+    590,
+    1090
+  ]
+}

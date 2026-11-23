@@ -1,0 +1,44 @@
+{
+  "sys_vendor": "HP",
+  "product_name": "Victus by HP 15.6 inch Gaming Laptop PC-fb1002AX",
+  "board_name": "8C30",
+  "bios_version": "F.10",
+  "wmi_devices": [
+    "95F24279-4D7B-4334-9387-ACCDC67EF61C",
+    "988D08E3-68F4-4C35-AF3E-6A1B8106F83C",
+    "05901221-D566-11D1-B2F0-00A0C9062910",
+    "2D114B49-2DFB-4130-B8FE-4A3C09E75133",
+    "5FB7F034-2C63-45E9-BE91-3D44E2C707E4",
+    "ABBC0F6A-8EA1-11D1-00A0-C90629100000",
+    "05901221-D566-11D1-B2F0-00A0C9062910-2",
+    "928B5A30-AD7C-4C36-946A-1300A80CE7E1",
+    "2B814318-4BE8-4707-9D84-A190A859B5D0",
+    "322F2028-0F84-4901-988E-015176049E2D",
+    "B2526ED4-CB45-49FA-9230-8D2FE8AFB8EC",
+    "1F4C91EB-DC5C-460B-951D-C7CB9B4B8D5E",
+    "8A5318A3-7393-4D54-979C-89483522E383",
+    "05901221-D566-11D1-B2F0-00A0C9062910-3",
+    "8232DE3D-663D-4327-A8F4-E293ADB9BF05",
+    "14EA9746-CE1F-4098-A0E0-7045CB4DA745",
+    "05901221-D566-11D1-B2F0-00A0C9062910-1",
+    "1E2A0DA0-2B9E-424F-9C87-B1DAC3F4E9DA"
+  ],
+  "relevant_modules": [
+    "hp_bioscfg",
+    "amdgpu",
+    "hp_wmi",
+    "nvidia"
+  ],
+  "platform_profile_present": false,
+  "keyboard_led_interfaces": [],
+  "hp_hwmon": [
+    {
+      "path": "/sys/class/hwmon/hwmon7",
+      "attributes": [
+        "pwm1_enable",
+        "fan1_input",
+        "fan2_input"
+      ]
+    }
+  ]
+}

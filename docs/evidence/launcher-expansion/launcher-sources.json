@@ -1,0 +1,74 @@
+[
+  {
+    "repository": "legendary-gl/legendary",
+    "commit": "42f6bdeadde3a9526dc8eb713763476999ac217b",
+    "files": [
+      {
+        "path": "legendary/lfs/lgndry.py",
+        "sha256": "6c1642e2b4c60ddcc95758bbb35bb9bc95cc526c25ec1bfbb898e940e124c0f2",
+        "bytes": 20677,
+        "url": "https://raw.githubusercontent.com/legendary-gl/legendary/42f6bdeadde3a9526dc8eb713763476999ac217b/legendary/lfs/lgndry.py"
+      },
+      {
+        "path": "legendary/cli.py",
+        "sha256": "d2986ecb2fb3f2578d6a9b7b927cd87cc021408432203654cde233b4a1d68900",
+        "bytes": 177157,
+        "url": "https://raw.githubusercontent.com/legendary-gl/legendary/42f6bdeadde3a9526dc8eb713763476999ac217b/legendary/cli.py"
+      },
+      {
+        "path": "legendary/core.py",
+        "sha256": "31fd6aa7105506f3e728acb7bd40803ff74392f59f5c100d3703c29ad99b48a0",
+        "bytes": 109994,
+        "url": "https://raw.githubusercontent.com/legendary-gl/legendary/42f6bdeadde3a9526dc8eb713763476999ac217b/legendary/core.py"
+      },
+      {
+        "path": "legendary/models/game.py",
+        "sha256": "b2bd0d892650e61605b5195a273f4aae751c48e10880272f4f0fdde9d6729718",
+        "bytes": 10233,
+        "url": "https://raw.githubusercontent.com/legendary-gl/legendary/42f6bdeadde3a9526dc8eb713763476999ac217b/legendary/models/game.py"
+      },
+      {
+        "path": "pyproject.toml",
+        "sha256": "715ab15c781fa209d3d6ad30a3c275f6e79743158ec5a6cb785cc5d25394cb9a",
+        "bytes": 1410,
+        "url": "https://raw.githubusercontent.com/legendary-gl/legendary/42f6bdeadde3a9526dc8eb713763476999ac217b/pyproject.toml"
+      }
+    ]
+  },
+  {
+    "repository": "canonical/steam-snap",
+    "commit": "b13597e5be9b39a90447b5932a2b401bec1a7af0",
+    "files": [
+      {
+        "path": "snap/snapcraft.yaml",
+        "sha256": "5be021a64b56d406bb36795bef3fee1c874bfb1c26d010530d2bd07457f8b1ba",
+        "bytes": 18063,
+        "url": "https://raw.githubusercontent.com/canonical/steam-snap/b13597e5be9b39a90447b5932a2b401bec1a7af0/snap/snapcraft.yaml"
+      }
+    ]
+  },
+  {
+    "repository": "ValveSoftware/source-sdk-2013",
+    "commit": "be57e3d01ac7d7aa6a2cacbfef187c0b46616db0",
+    "files": [
+      {
+        "path": "src/tier1/KeyValues.cpp",
+        "sha256": "2df760bdce629fca9a0c550528db02c07d8560aee2843f6024b07aeb7780a3f1",
+        "bytes": 85618,
+        "url": "https://raw.githubusercontent.com/ValveSoftware/source-sdk-2013/be57e3d01ac7d7aa6a2cacbfef187c0b46616db0/src/tier1/KeyValues.cpp"
+      },
+      {
+        "path": "src/public/tier1/KeyValues.h",
+        "sha256": "760f3794a728bc1265977cc706312af94218d696e0090317d4c9c082d4becfde",
+        "bytes": 20714,
+        "url": "https://raw.githubusercontent.com/ValveSoftware/source-sdk-2013/be57e3d01ac7d7aa6a2cacbfef187c0b46616db0/src/public/tier1/KeyValues.h"
+      },
+      {
+        "path": "src/public/steam/steamclientpublic.h",
+        "sha256": "993095eaf5838bdc1110de564f504f2bd31fa156b89f9e5b1a08150793dfe90c",
+        "bytes": 52979,
+        "url": "https://raw.githubusercontent.com/ValveSoftware/source-sdk-2013/be57e3d01ac7d7aa6a2cacbfef187c0b46616db0/src/public/steam/steamclientpublic.h"
+      }
+    ]
+  }
+]

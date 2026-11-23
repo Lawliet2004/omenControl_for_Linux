@@ -1,0 +1,29 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/core",
+    "crates/hardware",
+    "crates/ipc",
+    "crates/client",
+    "crates/daemon",
+    "crates/cli",
+    "gui",
+    "tests/integration",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-or-later"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
+thiserror = "2"
+log = "0.4"
+clap = { version = "4", features = ["derive"] }
+
+[profile.release]
+lto = "thin"
+strip = "symbols"

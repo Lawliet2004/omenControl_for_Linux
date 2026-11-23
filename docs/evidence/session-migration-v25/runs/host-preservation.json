@@ -1,0 +1,53 @@
+{
+  "protected_processes": [
+    {
+      "pid": 3278700,
+      "start_ticks": 31333165,
+      "command": "/home/papan/Desktop/Projects/omen/target/release/omen-gui --page fan"
+    },
+    {
+      "pid": 2124598,
+      "start_ticks": 18438269,
+      "command": "./target/release/omen-daemon --mock"
+    },
+    {
+      "pid": 2563,
+      "start_ticks": 1676,
+      "command": "/usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1"
+    }
+  ],
+  "native_fixture_directories_removed": [
+    "/home/papan/Desktop/Projects/omen/target/omen-game-integration-uJRLwp",
+    "/home/papan/Desktop/Projects/omen/target/omen-game-integration-1LHlhe"
+  ],
+  "protected_container": {
+    "Running": true,
+    "Paused": false,
+    "Pid": 3101448,
+    "StartedAt": "2026-10-26T19:37:22.265072939Z"
+  },
+  "vm_exited": true,
+  "vm_temporary_files_removed": true,
+  "host_installation_after": {
+    "omen-linux": false,
+    "flatpak": false
+  },
+  "previous_packages": {
+    "21": {
+      "sha256": "25964019083530e3c3e567dca7edd13cb4eebe1ce0ad2eea8aacc7f301ae3edf",
+      "bytes": 3645506
+    },
+    "22": {
+      "sha256": "a0745f145d6c8626f9568d1379af2cb10ab6c4a78f1dfaf52a526288c40c0455",
+      "bytes": 3650470
+    },
+    "23": {
+      "sha256": "4fafc9356f712be2bbf4d642747daade0e689adbf23fa334f61d41cfb0945abe",
+      "bytes": 3664646
+    },
+    "24": {
+      "sha256": "1a7eb732fa5c672c2e920396ccdf163b718bb008008bc4cedd69ac7f8bb226df",
+      "bytes": 3694524
+    }
+  }
+}

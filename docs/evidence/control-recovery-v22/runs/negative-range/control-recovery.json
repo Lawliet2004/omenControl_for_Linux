@@ -1,0 +1,824 @@
+{
+  "result": "failed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "host_keyboard_input": false,
+  "gui_sha256": "4490112e91355a50d70009fbceb4fb173b39fe5400bc2ce982ded7b1a87a86df",
+  "test_script_sha256": "5d257412a751b4e3c9611c42136e2a8ca20265e0d565f5b015d6e3c664a2845a",
+  "profile": "release",
+  "checks_passed": [
+    "Performance choices recover from an empty first report and a user click reaches the actual fixture backend",
+    "profile choices add and remove currently advertised options without restarting or submitting a write"
+  ],
+  "last_nodes": [
+    {
+      "role": "application",
+      "name": "omen-gui"
+    },
+    {
+      "role": "frame",
+      "name": "OMEN Control"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Show or hide navigation"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Fan & Thermal"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Application actions"
+    },
+    {
+      "role": "button",
+      "name": "Fixture"
+    },
+    {
+      "role": "label",
+      "name": "Fixture"
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Minimize"
+    },
+    {
+      "role": "button",
+      "name": "Maximize"
+    },
+    {
+      "role": "button",
+      "name": "Close"
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": "System Vitals"
+    },
+    {
+      "role": "panel",
+      "name": "Fan & Thermal"
+    },
+    {
+      "role": "scroll pane",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Fan and thermal control"
+    },
+    {
+      "role": "table",
+      "name": ""
+    },
+    {
+      "role": "table cell",
+      "name": "CPU fan 2800 RPM"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "CPU fan"
+    },
+    {
+      "role": "label",
+      "name": "2800 RPM"
+    },
+    {
+      "role": "table cell",
+      "name": "GPU fan 2600 RPM"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "GPU fan"
+    },
+    {
+      "role": "label",
+      "name": "2600 RPM"
+    },
+    {
+      "role": "table cell",
+      "name": "Mode Automatic (firmware)"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Mode"
+    },
+    {
+      "role": "label",
+      "name": "Automatic (firmware)"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Firmware fan mode"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Automatic"
+    },
+    {
+      "role": "label",
+      "name": "Automatic"
+    },
+    {
+      "role": "button",
+      "name": "Maximum"
+    },
+    {
+      "role": "label",
+      "name": "Maximum"
+    },
+    {
+      "role": "label",
+      "name": "hp-wmi pwm1_enable; Automatic/Maximum only, independent of manual PWM"
+    },
+    {
+      "role": "label",
+      "name": "Automatic lets firmware manage cooling. Maximum requests the firmware's maximum fan mode. Neither provides adjustable percentages."
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Manual fan speed"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Requested manual duty: 65 %"
+    },
+    {
+      "role": "label",
+      "name": "Adjust the requested duty, then apply it. The observed mode is shown above."
+    },
+    {
+      "role": "slider",
+      "name": "Manual fan duty (%)"
+    },
+    {
+      "role": "button",
+      "name": "Apply manual speed"
+    },
+    {
+      "role": "label",
+      "name": "Apply manual speed"
+    },
+    {
+      "role": "label",
+      "name": "Percentage and curve controls need manual PWM targets. Automatic/Maximum availability is shown separately above."
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Custom fan curve"
+    },
+    {
+      "role": "label",
+      "name": "Saved curve: 5 points"
+    },
+    {
+      "role": "button",
+      "name": "Edit fan curve"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Edit fan curve"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Temperature (\u00b0C)"
+    },
+    {
+      "role": "spin button",
+      "name": "Temperature (\u00b0C) for curve point 1"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Fan duty (%)"
+    },
+    {
+      "role": "spin button",
+      "name": "Fan duty (%) for curve point 1"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Temperature (\u00b0C)"
+    },
+    {
+      "role": "spin button",
+      "name": "Temperature (\u00b0C) for curve point 2"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Fan duty (%)"
+    },
+    {
+      "role": "spin button",
+      "name": "Fan duty (%) for curve point 2"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Temperature (\u00b0C)"
+    },
+    {
+      "role": "spin button",
+      "name": "Temperature (\u00b0C) for curve point 3"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Fan duty (%)"
+    },
+    {
+      "role": "spin button",
+      "name": "Fan duty (%) for curve point 3"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Temperature (\u00b0C)"
+    },
+    {
+      "role": "spin button",
+      "name": "Temperature (\u00b0C) for curve point 4"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Fan duty (%)"
+    },
+    {
+      "role": "spin button",
+      "name": "Fan duty (%) for curve point 4"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Temperature (\u00b0C)"
+    },
+    {
+      "role": "spin button",
+      "name": "Temperature (\u00b0C) for curve point 5"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Fan duty (%)"
+    },
+    {
+      "role": "spin button",
+      "name": "Fan duty (%) for curve point 5"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Save curve"
+    },
+    {
+      "role": "label",
+      "name": "Save curve"
+    },
+    {
+      "role": "button",
+      "name": "Activate curve mode"
+    },
+    {
+      "role": "label",
+      "name": "Activate curve mode"
+    },
+    {
+      "role": "label",
+      "name": "Save your changes before activating the stored curve. Live custom curves remain subject to backend safety checks."
+    },
+    {
+      "role": "grouping",
+      "name": "Manual fan duty history (%)"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Time range"
+    },
+    {
+      "role": "combo box",
+      "name": "All retained history"
+    },
+    {
+      "role": "toggle button",
+      "name": "All retained history"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "All retained history"
+    },
+    {
+      "role": "button",
+      "name": "Export CSV\u2026"
+    },
+    {
+      "role": "label",
+      "name": "Export CSV\u2026"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Duty %: 50.0 \u00b7 snapshot time \u00b7 1s ago (solid)  |  Gaps indicate unavailable or stale readings."
+    },
+    {
+      "role": "button",
+      "name": "Read history data"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Read history data"
+    },
+    {
+      "role": "label",
+      "name": ""
+    },
+    {
+      "role": "scroll bar",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": "Lighting Studio"
+    },
+    {
+      "role": "panel",
+      "name": "Graphics"
+    },
+    {
+      "role": "panel",
+      "name": "Battery & Power"
+    },
+    {
+      "role": "panel",
+      "name": "Game Library"
+    },
+    {
+      "role": "panel",
+      "name": "Settings & Diagnostics"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Set profile to Quiet: complete"
+    },
+    {
+      "role": "button",
+      "name": "Dismiss message"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "scroll pane",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "OMEN Control"
+    },
+    {
+      "role": "list",
+      "name": "Pages"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Dashboard"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "System Vitals"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Performance Control"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Fan & Thermal"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Lighting Studio"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Graphics"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Battery & Power"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Game Library"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Settings & Diagnostics"
+    },
+    {
+      "role": "label",
+      "name": "Monitor"
+    },
+    {
+      "role": "label",
+      "name": "Controls"
+    },
+    {
+      "role": "label",
+      "name": "Library"
+    },
+    {
+      "role": "label",
+      "name": "Application"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "source: MOCK \u2014 fixture data, no real hardware"
+    }
+  ],
+  "write_operations": [
+    {
+      "op": "set_profile",
+      "args": {
+        "profile": "quiet"
+      }
+    }
+  ],
+  "error": "AssertionError: valid lower curve boundary was clamped"
+}

@@ -1,0 +1,208 @@
+{
+  "result": "passed",
+  "profile": "release",
+  "hardware_control_writes": false,
+  "host_network_policy_changed": false,
+  "binary_sha256": {
+    "omen-cli": "7deae979536c4b0e3b31c8caeaec2d5bddf60ce5d1d9eb670738bd466ec12491",
+    "omen-daemon": "706fe0cc751375ddac93e9f4afb0cf1ed4dd2931765b5fd18b48f3ed5cd7dc6f"
+  },
+  "checks_passed": [
+    "first fixture acquisition reports counters and an unknown rate without reading host interfaces",
+    "production IPC rates match byte deltas and actual interval; errors/drops preserve kernel counter semantics",
+    "counter decrease rebases that direction while unchanged traffic is a measured zero",
+    "an interface identity change suppresses the first rate instead of spiking",
+    "missing counters fail explicitly and recovery starts a fresh baseline",
+    "CLI two-sample JSON and diagnostics use the same fixture-only production path",
+    "CLI rejects polling intervals below the supported bound",
+    "a revision 6 daemon reports the new operation unsupported; the client never substitutes host network data",
+    "unprivileged real daemon counters fall between independent sysfs reads; no traffic is generated and controls remain disabled"
+  ],
+  "old_daemon_sha256": "3021e526922424a548bd9176c46de3ea7aa1e8b966c5cbc6398761d4a2c47aa1",
+  "live_readonly": {
+    "kernel": "7.0.0-38-generic",
+    "uid": 1000,
+    "first": {
+      "interfaces": [
+        {
+          "ifindex": 6,
+          "link_state": "down",
+          "loopback": false,
+          "name": "docker0",
+          "rx_bytes": 21782612,
+          "rx_bytes_per_second": null,
+          "rx_dropped_or_missed": 0,
+          "rx_errors": 0,
+          "tx_bytes": 1103528785,
+          "tx_bytes_per_second": null,
+          "tx_dropped": 163,
+          "tx_errors": 0
+        },
+        {
+          "ifindex": 2,
+          "link_state": "down",
+          "loopback": false,
+          "name": "eno1",
+          "rx_bytes": 0,
+          "rx_bytes_per_second": null,
+          "rx_dropped_or_missed": 0,
+          "rx_errors": 0,
+          "tx_bytes": 0,
+          "tx_bytes_per_second": null,
+          "tx_dropped": 0,
+          "tx_errors": 0
+        },
+        {
+          "ifindex": 1,
+          "link_state": "unknown",
+          "loopback": true,
+          "name": "lo",
+          "rx_bytes": 3363772000,
+          "rx_bytes_per_second": null,
+          "rx_dropped_or_missed": 0,
+          "rx_errors": 0,
+          "tx_bytes": 3363772000,
+          "tx_bytes_per_second": null,
+          "tx_dropped": 0,
+          "tx_errors": 0
+        },
+        {
+          "ifindex": 3,
+          "link_state": "up",
+          "loopback": false,
+          "name": "wlo1",
+          "rx_bytes": 19720898361,
+          "rx_bytes_per_second": null,
+          "rx_dropped_or_missed": 0,
+          "rx_errors": 0,
+          "tx_bytes": 4979669825,
+          "tx_bytes_per_second": null,
+          "tx_dropped": 356,
+          "tx_errors": 0
+        }
+      ],
+      "interval_ms": null,
+      "measured_unix_ms": 1792990722436,
+      "omitted_interfaces": 0,
+      "source": "kernel",
+      "unreadable_interfaces": 0
+    },
+    "second": {
+      "interfaces": [
+        {
+          "ifindex": 6,
+          "link_state": "down",
+          "loopback": false,
+          "name": "docker0",
+          "rx_bytes": 21782612,
+          "rx_bytes_per_second": 0.0,
+          "rx_dropped_or_missed": 0,
+          "rx_errors": 0,
+          "tx_bytes": 1103528785,
+          "tx_bytes_per_second": 0.0,
+          "tx_dropped": 163,
+          "tx_errors": 0
+        },
+        {
+          "ifindex": 2,
+          "link_state": "down",
+          "loopback": false,
+          "name": "eno1",
+          "rx_bytes": 0,
+          "rx_bytes_per_second": 0.0,
+          "rx_dropped_or_missed": 0,
+          "rx_errors": 0,
+          "tx_bytes": 0,
+          "tx_bytes_per_second": 0.0,
+          "tx_dropped": 0,
+          "tx_errors": 0
+        },
+        {
+          "ifindex": 1,
+          "link_state": "unknown",
+          "loopback": true,
+          "name": "lo",
+          "rx_bytes": 3363772000,
+          "rx_bytes_per_second": 0.0,
+          "rx_dropped_or_missed": 0,
+          "rx_errors": 0,
+          "tx_bytes": 3363772000,
+          "tx_bytes_per_second": 0.0,
+          "tx_dropped": 0,
+          "tx_errors": 0
+        },
+        {
+          "ifindex": 3,
+          "link_state": "up",
+          "loopback": false,
+          "name": "wlo1",
+          "rx_bytes": 19720898415,
+          "rx_bytes_per_second": 165.67258971025768,
+          "rx_dropped_or_missed": 0,
+          "rx_errors": 0,
+          "tx_bytes": 4979669825,
+          "tx_bytes_per_second": 0.0,
+          "tx_dropped": 356,
+          "tx_errors": 0
+        }
+      ],
+      "interval_ms": 325,
+      "measured_unix_ms": 1792990722762,
+      "omitted_interfaces": 0,
+      "source": "kernel",
+      "unreadable_interfaces": 0
+    },
+    "independent_sysfs_before": {
+      "lo": {
+        "ifindex": 1,
+        "rx_bytes": 3363772000,
+        "tx_bytes": 3363772000
+      },
+      "eno1": {
+        "ifindex": 2,
+        "rx_bytes": 0,
+        "tx_bytes": 0
+      },
+      "docker0": {
+        "ifindex": 6,
+        "rx_bytes": 21782612,
+        "tx_bytes": 1103528785
+      },
+      "wlo1": {
+        "ifindex": 3,
+        "rx_bytes": 19720898415,
+        "tx_bytes": 4979669825
+      }
+    },
+    "independent_sysfs_after": {
+      "lo": {
+        "ifindex": 1,
+        "rx_bytes": 3363772000,
+        "tx_bytes": 3363772000
+      },
+      "eno1": {
+        "ifindex": 2,
+        "rx_bytes": 0,
+        "tx_bytes": 0
+      },
+      "docker0": {
+        "ifindex": 6,
+        "rx_bytes": 21782612,
+        "tx_bytes": 1103528785
+      },
+      "wlo1": {
+        "ifindex": 3,
+        "rx_bytes": 19720898415,
+        "tx_bytes": 4979669825
+      }
+    },
+    "verified_interfaces": [
+      "docker0",
+      "eno1",
+      "lo",
+      "wlo1"
+    ]
+  },
+  "cleanup_complete": true,
+  "recorded_utc": "2026-10-26T04:58:44.557669+00:00"
+}

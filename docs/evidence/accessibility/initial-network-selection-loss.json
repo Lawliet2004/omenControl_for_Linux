@@ -1,0 +1,109 @@
+{
+  "result": "failed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "host_keyboard_events": false,
+  "input": "XTEST on a new authenticated rootful Xwayland display",
+  "screen_reader": "installed Orca; generated speech log, no audible synthesis",
+  "profile": "release",
+  "gui_sha256": "7185605a8b202217be1a346b31497a7eef828df2c3ebe3dd6a42ad3ef0231697",
+  "checks_passed": [
+    "Tab escapes collapsed selectable disclosure content without entering an unrooted widget",
+    "F6 cycles panes, arrows choose a destination, and Tab enters the selected page",
+    "Ctrl+1 through Ctrl+9 reach every page using window-local actions",
+    "Ctrl+F names and focuses sensor search; actual typed input filters and clears it"
+  ],
+  "error": "updating network readings cleared text selection",
+  "focus": {
+    "role": "label",
+    "name": "Receive: 1.4 MiB/s  \u00b7  Send: 1.4 MiB/s\nErrors RX/TX: 2 / 4  \u00b7  Dropped RX/TX: 3 / 5"
+  },
+  "visible_controls": [
+    {
+      "role": "button",
+      "name": "Show or hide navigation"
+    },
+    {
+      "role": "button",
+      "name": "Application actions"
+    },
+    {
+      "role": "button",
+      "name": "Fixture"
+    },
+    {
+      "role": "button",
+      "name": "Minimize"
+    },
+    {
+      "role": "button",
+      "name": "Maximize"
+    },
+    {
+      "role": "button",
+      "name": "Close"
+    },
+    {
+      "role": "entry",
+      "name": "Search sensors"
+    }
+  ],
+  "key_events": [
+    "Control_L+9",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "F6",
+    "F6",
+    "Up",
+    "Tab",
+    "Control_L+1",
+    "Control_L+2",
+    "Control_L+3",
+    "Control_L+4",
+    "Control_L+5",
+    "Control_L+6",
+    "Control_L+7",
+    "Control_L+8",
+    "Control_L+9",
+    "Control_L+2",
+    "Control_L+f",
+    "n",
+    "o",
+    "minus",
+    "s",
+    "e",
+    "n",
+    "s",
+    "o",
+    "r",
+    "minus",
+    "m",
+    "a",
+    "t",
+    "c",
+    "h",
+    "e",
+    "s",
+    "Control_L+a",
+    "BackSpace",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Control_L+a"
+  ],
+  "private_display": ":257"
+}

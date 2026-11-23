@@ -1,0 +1,78 @@
+{
+  "gui_sha256": "787c518933909bf40aacb9d738e46971f9d9fd471ec755acdc54b53774f47de3",
+  "result": "passed",
+  "jobs": [
+    {
+      "name": "keyboard",
+      "script": "tests/gui_accessibility.py",
+      "exit_code": 0,
+      "seconds": 59.11643593100598
+    },
+    {
+      "name": "presentation",
+      "script": "tests/gui_presentation.py",
+      "exit_code": 0,
+      "seconds": 169.16763072100002
+    },
+    {
+      "name": "settings-x11",
+      "script": "tests/gui_settings.py",
+      "exit_code": 0,
+      "seconds": 49.90131467505125
+    },
+    {
+      "name": "library-x11",
+      "script": "tests/gui_library.py",
+      "exit_code": 0,
+      "seconds": 26.81462309102062
+    },
+    {
+      "name": "managed-x11",
+      "script": "tests/gui_game_sessions.py",
+      "exit_code": 0,
+      "seconds": 31.875435377995018
+    },
+    {
+      "name": "issues-x11",
+      "script": "tests/gui_launch_issues.py",
+      "exit_code": 0,
+      "seconds": 20.14191263198154
+    },
+    {
+      "name": "shortcuts-x11",
+      "script": "tests/shortcuts.py",
+      "exit_code": 0,
+      "seconds": 29.936095050012227
+    },
+    {
+      "name": "settings-wayland",
+      "script": "tests/gui_settings.py",
+      "exit_code": 0,
+      "seconds": 48.984878860996105
+    },
+    {
+      "name": "library-wayland",
+      "script": "tests/gui_library.py",
+      "exit_code": 0,
+      "seconds": 24.604131426953245
+    },
+    {
+      "name": "managed-wayland",
+      "script": "tests/gui_game_sessions.py",
+      "exit_code": 0,
+      "seconds": 31.92085701599717
+    },
+    {
+      "name": "issues-wayland",
+      "script": "tests/gui_launch_issues.py",
+      "exit_code": 0,
+      "seconds": 19.910495757008903
+    },
+    {
+      "name": "shortcuts-wayland",
+      "script": "tests/shortcuts.py",
+      "exit_code": 0,
+      "seconds": 30.360616669000592
+    }
+  ]
+}

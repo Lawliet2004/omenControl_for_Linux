@@ -1,0 +1,42 @@
+[
+  {
+    "path": "README.md",
+    "sha256": "741a64d61ea4ec652c3692670f664f9ff41d31722dc23fbf46780371c07ad379"
+  },
+  {
+    "path": "docs/ACCESSIBILITY.md",
+    "sha256": "bd4c21d1ea0f8972b3affddacae07a1087184ec3e77f606a310a1588639e41c0"
+  },
+  {
+    "path": "docs/APPLICATION_AUDIT_IMPLEMENTATION.md",
+    "sha256": "bcf724e4303b0a945dff4f30d0a899f22aae6618bcd0e633aad37b092a22227f"
+  },
+  {
+    "path": "docs/CONTINUATION_CHECKLIST.md",
+    "sha256": "458a421bd9f140862a6db045f93f9e9ad541ddbace94be10ee5b66a155763bb7"
+  },
+  {
+    "path": "docs/IMPLEMENTATION_STATUS.md",
+    "sha256": "785e3f3373ab52e0faea662f16d5504d30308cf8d68be0717f3c1b48c2b5207f"
+  },
+  {
+    "path": "docs/INSTALLATION.md",
+    "sha256": "ede6b2f08783b573412c2011ffffce920f1d0cd35f472df116c36335eebeaafc"
+  },
+  {
+    "path": "docs/PACKAGE_VALIDATION.md",
+    "sha256": "0eb9d3de34ab8118a0bc9208f6af70cc52a69f8d16d9d319c7b6f9463bc885ef"
+  },
+  {
+    "path": "docs/SENSOR_BROWSER_2026-10-28.md",
+    "sha256": "123e0c1302b64f0be8d7ecc4e148df9205f0f4a7851c98f09b80dd89c76bc8e1"
+  },
+  {
+    "path": "docs/TEST_REPORT.md",
+    "sha256": "a4f974efb2547b5b31eeb989ae6b5439c4c28bd08329dba02d31bdce35919668"
+  },
+  {
+    "path": "docs/VM_VALIDATION.md",
+    "sha256": "287d393af0c8981372f3364d989b5d1967a9bb40fbf8ab1a083f57cc61b23c18"
+  }
+]

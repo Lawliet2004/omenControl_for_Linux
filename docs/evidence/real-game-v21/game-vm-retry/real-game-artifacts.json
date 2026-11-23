@@ -1,0 +1,5 @@
+{
+  "logs": {},
+  "lutris_log": "",
+  "game_config": "[game_creation]\nmap_x=6\nmap_y=6\ngeneration_seed=12345\n[network]\nserver_game_type=local\n[gui]\nthreaded_load=false\n"
+}

@@ -1,0 +1,35 @@
+{
+  "package": "target/icon-fallback-v21/candidate/omen-linux_0.1.0-21_amd64.deb",
+  "bytes": 3641346,
+  "sha256": "f4fc0a72b90416260755be5e475e9926d8bf0e48a729043b3534bba6b08eaab7",
+  "version": "0.1.0-21",
+  "installed_by_verifier": false,
+  "checks": {
+    "root_ownership_and_directory_modes": true,
+    "payload_md5sums": true,
+    "desktop_file_validate": true,
+    "polkit_xml_matches_source": true,
+    "bundled_icon_sources_and_notices": 15,
+    "gui_linkage_current_environment": true,
+    "extracted_cli_readonly_discovery": true
+  },
+  "binaries": {
+    "omen-cli": {
+      "sha256": "f0e5c0b08cfec6f32ecb94e39ca65a990f46af4f4ee7bd0dd74c8c562484cf30",
+      "matches_release": true
+    },
+    "omen-daemon": {
+      "sha256": "219780aa03ea5bda0036b402f0231a13cbded8329b8cf1b2dd05e3bc6f4a12cb",
+      "matches_release": true
+    },
+    "omen-gui": {
+      "sha256": "212c0cb61a18bbcd07652d846e4e3e38fcf50d4afcda1ff0121b53797bb3b7ee",
+      "matches_release": true
+    }
+  },
+  "dependency_notices": 158,
+  "systemd_validation": {
+    "exit_code": 0,
+    "method": "unmodified unit in extracted package root; no unit started"
+  }
+}

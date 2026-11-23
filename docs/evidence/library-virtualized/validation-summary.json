@@ -1,0 +1,273 @@
+{
+  "recorded_utc": "2026-10-27T10:03:44.330141+00:00",
+  "revision": "0.1.0-17",
+  "status": "verified UI/performance milestone; full application audit remains incomplete",
+  "source_manifest": "source-manifest.json",
+  "source_sha256": "62fa17d82622fe931abca82fda7e69321ee6dab317944b25565417081afcb140",
+  "test_harness_manifest": "test-harness-manifest.json",
+  "test_harness_sha256": "96a5634006caebd093f24d21c978c3a837a006b20a4bb77d08e3a1b084c87f55",
+  "language": {
+    "application": "English only",
+    "additional_translations_in_scope": false
+  },
+  "rust_workspace": {
+    "debug": {
+      "passed": 244,
+      "failed": 0,
+      "ignored": 0
+    },
+    "release": {
+      "passed": 244,
+      "failed": 0,
+      "ignored": 0
+    }
+  },
+  "format_check": "passed",
+  "strict_clippy": "workspace all-targets all-features -D warnings passed",
+  "release_binaries": {
+    "omen-cli": {
+      "sha256": "9f0d304a347cef947d26104bcae62c864ade37270abd9f1ccea21034b7c52918",
+      "matches_release": true
+    },
+    "omen-daemon": {
+      "sha256": "f83bdb409f288d6e9ffb6903fc6b38e9820d37d3f40e7cbd0ce99b9178fe4f7b",
+      "matches_release": true
+    },
+    "omen-gui": {
+      "sha256": "376eb8dd7d0a51b921b574ac616c1dd961553022e196b7c6bc0ed2160e7a9825",
+      "matches_release": true
+    }
+  },
+  "native_verification": {
+    "x11": {
+      "gtk_display_type": "GdkX11Display",
+      "large_library_checks": 5,
+      "large_library_evidence": "library-x11-10000.json",
+      "native_regressions": 31,
+      "managed_workflows": 5,
+      "capture_batch_checks": 1
+    },
+    "wayland": {
+      "gtk_display_type": "GdkWaylandDisplay",
+      "large_library_checks": 5,
+      "large_library_evidence": "library-wayland-10000.json",
+      "native_regressions": 31,
+      "managed_workflows": 5,
+      "capture_batch_checks": 0
+    }
+  },
+  "performance": {
+    "scope": "Single fixture observations on this machine, scan plus first accessible response; no universal bounds. Controlled comparison uses the same 2,000 custom-entry fixture and private session/AT-SPI buses on X11.",
+    "before": {
+      "seconds": 5.389096601051278,
+      "rss_kib": 695140,
+      "gui_sha256": "f7b5687fff85b9255a0206db1605f5a6dee2c414ecbe64a369342fc3c0c22ccb",
+      "evidence": "benchmark-reference-2000.json"
+    },
+    "after": {
+      "seconds": 2.103441596031189,
+      "rss_kib": 318824,
+      "gui_sha256": "376eb8dd7d0a51b921b574ac616c1dd961553022e196b7c6bc0ed2160e7a9825",
+      "evidence": "benchmark-final-2000.json"
+    },
+    "time_reduction_percent": 60.968567614452105,
+    "rss_reduction_percent": 54.13528210144719
+  },
+  "implementation": [
+    "GTK ListView directly inside the scrolled window; bounded row controls and full-model filtering",
+    "Permanent controls item keeps empty-result search/recovery available",
+    "Expanded setup keyed by game identity; unchanged rescans preserve objects",
+    "Profile choices update on current capabilities with notification guards and no configuration mutation",
+    "Network labels update in place; source/index/name identity changes replace old rows and missing data clears them"
+  ],
+  "package": {
+    "path": "target/debian/omen-linux_0.1.0-17_amd64.deb",
+    "sha256": "c202e767f998a143e78f59ce3264fd429c19fd4f8fd190f1f61ebec7520186d3",
+    "static_validation": "package-validation.json",
+    "initial_static_reference_sha256": "d71465154e28e0f1704169ccca10d79c5c5155fdc24209969d8583b71bb97017",
+    "final_documentation_only_changes": [
+      "usr/share/doc/omen-linux/APPLICATION_AUDIT_IMPLEMENTATION.md",
+      "usr/share/doc/omen-linux/README.md",
+      "usr/share/doc/omen-linux/TEST_REPORT.md"
+    ],
+    "control_changes": [
+      "md5sums"
+    ],
+    "non_documentation_changes_since_v16": [
+      "usr/bin/omen-gui"
+    ],
+    "container_or_installed_vm_validated": false
+  },
+  "preserved_revision16": {
+    "path": "target/debian/omen-linux_0.1.0-16_amd64.deb",
+    "sha256": "f83ff12dbdcb73ffa0a79c5d8bc004148773405546cf8e97b8ac8985b97767af",
+    "evidence": "../audit-v16/validation-summary.json",
+    "unchanged_cli_daemon_evidence": "Exact CLI and daemon binaries match revision 16; its native managed/provider/kernel results keep their own attribution. Its GUI and deployment results are not relabeled as revision 17."
+  },
+  "visual_review": {
+    "captures": [
+      {
+        "path": "docs/screenshots/library-virtualized/games-active-wide-light.png",
+        "sha256": "00adcd9398a3967e2a6b60de4b99d85e72497fca8eb24e9cea49041c46f6080e",
+        "requested_size": [
+          1240,
+          1100
+        ],
+        "actual_size": [
+          1240,
+          1080
+        ],
+        "theme": "prefer-light",
+        "fixture_only": true
+      },
+      {
+        "path": "docs/screenshots/library-virtualized/games-setup-narrow-dark.png",
+        "sha256": "278d0643926e9ac25b2ffb4de83b0644ecf57549fbfc019ba2b73964ef83c7e1",
+        "requested_size": [
+          600,
+          1100
+        ],
+        "actual_size": [
+          600,
+          1080
+        ],
+        "theme": "prefer-dark",
+        "fixture_only": true
+      }
+    ],
+    "scope": "Final release own-app fixture captures, wide/light and narrow/dark, inspected together once. No further visual edits were needed.",
+    "full_contrast_audit": false,
+    "effective_large_text_validation_complete": false
+  },
+  "physical_hardware_writes_performed": false,
+  "host_package_or_service_installed": false,
+  "remaining": [
+    "pre-registration/late wrapper failure feedback in GUI",
+    "real native launcher/runtime execution and managed Flatpak execution",
+    "broader launcher formats",
+    "full physical keyboard/screen-reader focus and narration workflows",
+    "effective large text and complete contrast coverage",
+    "control-page disclosure/copy refinements",
+    "revision 17 container/install/installed-sandbox VM verification",
+    "physical desktop approval/global shortcuts/full-screen overlay and declared distribution validation",
+    "physical fan/RGB/charge/graphics/suspend-resume release gates"
+  ],
+  "evidence_files": [
+    {
+      "path": "benchmark-final-2000.json",
+      "sha256": "45df1844e3fc8a015554c10c1fa294794e09576e8617ffb001b7ec565784b79c"
+    },
+    {
+      "path": "benchmark-reference-2000.json",
+      "sha256": "88bede825282e12fd49fc454fb514e7c9b9fe50b43aacf5ddeaf759849fb95ae"
+    },
+    {
+      "path": "build-package.log",
+      "sha256": "b014426ee475dcde25407130c34afc70e2069441f734e6db00ea673056877926"
+    },
+    {
+      "path": "cargo-clippy.log",
+      "sha256": "243ad4cbbc727665b8f53f93dcf1f7b94da5bd7e8540370df99c7ce858896f58"
+    },
+    {
+      "path": "cargo-fmt.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cargo-test-debug.log",
+      "sha256": "bafdbdb921b95cc1a007e63d4842c388569bd1e35961075ccee26fa14e32498f"
+    },
+    {
+      "path": "cargo-test-release.log",
+      "sha256": "aba13fbfe074bd6a71a1a6c46846af733fe66b6316d2979cd7a0b862ae9dfebe"
+    },
+    {
+      "path": "desktop-file-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "gui-wayland-release.json",
+      "sha256": "017fdaa7430d8270bd472dc3f53546ee40e26838be2078e2f8f9f3d4d32f5edf"
+    },
+    {
+      "path": "gui-wayland-release.log",
+      "sha256": "3d2c37355827a4ba9375a878155bb1077630d9471ada26aaa5294b070a7d6a99"
+    },
+    {
+      "path": "gui-x11-release.json",
+      "sha256": "f1b3b80e711e742c59b9756545e9b6cb14e514f465166b2f0feffc623b88aaec"
+    },
+    {
+      "path": "gui-x11-release.log",
+      "sha256": "633f1626a77da3c4f4e8d9a0fe74a24ad70020b155a1c0c90f6e380ec2fe06f8"
+    },
+    {
+      "path": "library-wayland-10000-gui.log",
+      "sha256": "8f9066a2b8f1e185caa15f193fe487d0ddb1787b3d70df4bf58bc271a21d5b91"
+    },
+    {
+      "path": "library-wayland-10000-run.log",
+      "sha256": "29e97a8d38c48cb9f0276a898464d668d0e33561952bc275c4a693233f7b4eb8"
+    },
+    {
+      "path": "library-wayland-10000.json",
+      "sha256": "62a00b8de3d0bba54934bd258f49182caa8896dce6087c3966a8bff965463d41"
+    },
+    {
+      "path": "library-x11-10000-gui.log",
+      "sha256": "2679f103e4ab5911b5298b8e2ca84ef8f69608aeaa1ebe1ae8cd9164209007c2"
+    },
+    {
+      "path": "library-x11-10000-run.log",
+      "sha256": "bd43825f5cb1bc322165e78d8ad668f5c47a2dc48d7277c2d3c8e219eca94340"
+    },
+    {
+      "path": "library-x11-10000.json",
+      "sha256": "a26175b406028483a139fe068942275235133d7149359460456396ada5bd3f78"
+    },
+    {
+      "path": "managed-wayland-release.json",
+      "sha256": "e9af338d4d75f073e91fdc477b87223dcc75d7d6887f63c0bc2486e27ebb4272"
+    },
+    {
+      "path": "managed-wayland-release.log",
+      "sha256": "f06b2e2fe805d051628dbf090f0a5bb10c73a5149d1e568fb261fb1234338690"
+    },
+    {
+      "path": "managed-x11-release.json",
+      "sha256": "936c744cbcf4518b252d17f6f61b8031ad3f59301bee0678cbcae0e8800850a3"
+    },
+    {
+      "path": "managed-x11-release.log",
+      "sha256": "55fa9d3e5406f9cf58ef25231890e223e4fe15ce39fddb59a41d4fa71639aa52"
+    },
+    {
+      "path": "package-checksums.log",
+      "sha256": "980df67f54db15d8ad9e2b7822a3e2775e9c176886f3e305a6c7339ee71aa7f7"
+    },
+    {
+      "path": "package-cli-diagnostics.json",
+      "sha256": "97c387d91cfc8f1fbe5f951eed760f04e84464bc3d36ecd0b8690a9e838af64d"
+    },
+    {
+      "path": "package-runtime-linkage.log",
+      "sha256": "c4d10a61abf5552042a133c07691fbca28e6d157427517645604c7e39fc1513f"
+    },
+    {
+      "path": "package-validation.json",
+      "sha256": "0f2ddf2d2c292800bcdf54cacd392dbd53d0d5e0470670b05433f8f7ba714c82"
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "a27645a8174cf9f3333a6c017b488d774f0dc8178092e6bc0abd28a4271edb22"
+    },
+    {
+      "path": "systemd-payload-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test-harness-manifest.json",
+      "sha256": "c95fdec169fba43d87f0456ed43d43971c723483beacab1524319ce78cfd8e6f"
+    }
+  ]
+}

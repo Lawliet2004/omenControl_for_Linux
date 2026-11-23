@@ -1,0 +1,62 @@
+{
+  "package": "target/debian/omen-linux_0.1.0-5_amd64.deb",
+  "bytes": 2512156,
+  "sha256": "dab1b631913ceb76d1835af5ef198220619cc5c328bd364b74036cae5afbb778",
+  "version": "0.1.0-5",
+  "installed_by_verifier": false,
+  "checks": {
+    "root_ownership_and_directory_modes": true,
+    "payload_md5sums": true,
+    "desktop_file_validate": true,
+    "polkit_xml_matches_source": true,
+    "gui_linkage_current_environment": true,
+    "extracted_cli_readonly_discovery": true
+  },
+  "binaries": {
+    "omen-cli": {
+      "sha256": "0eae59567b0be8e243a44e1122bce4406414baf69a08d470952aec859e43c3e7",
+      "matches_release": true
+    },
+    "omen-daemon": {
+      "sha256": "5ef99c6b6203b2164f2b699ef389be255f566b508f98bfb767ccdb514952074a",
+      "matches_release": true
+    },
+    "omen-gui": {
+      "sha256": "6e058c61017d28e731d126280b3c06074675fe001862c5b6e251a9633c44db55",
+      "matches_release": true
+    }
+  },
+  "lifecycle_equivalence": {
+    "reference_package": "target/debian/runtime-tested_omen-linux_0.1.0-5_amd64.deb",
+    "reference_sha256": "0b7c6eb3e43521440736d699581e2221cc8c992ce1cba1bf250bc050c884c338",
+    "runtime_payload_identical": true,
+    "maintainer_scripts_and_control_identical": true,
+    "documentation_changes": [
+      "usr/share/doc/omen-linux/GPU_MONITORING.md",
+      "usr/share/doc/omen-linux/HARDWARE_COMPATIBILITY.md",
+      "usr/share/doc/omen-linux/PACKAGE_VALIDATION.md",
+      "usr/share/doc/omen-linux/README.md",
+      "usr/share/doc/omen-linux/TEST_REPORT.md",
+      "usr/share/doc/omen-linux/VM_VALIDATION.md"
+    ]
+  },
+  "vm_equivalence": {
+    "reference_package": "target/debian/runtime-tested_omen-linux_0.1.0-5_amd64.deb",
+    "reference_sha256": "0b7c6eb3e43521440736d699581e2221cc8c992ce1cba1bf250bc050c884c338",
+    "runtime_payload_identical": true,
+    "maintainer_scripts_and_control_identical": true,
+    "documentation_changes": [
+      "usr/share/doc/omen-linux/GPU_MONITORING.md",
+      "usr/share/doc/omen-linux/HARDWARE_COMPATIBILITY.md",
+      "usr/share/doc/omen-linux/PACKAGE_VALIDATION.md",
+      "usr/share/doc/omen-linux/README.md",
+      "usr/share/doc/omen-linux/TEST_REPORT.md",
+      "usr/share/doc/omen-linux/VM_VALIDATION.md"
+    ]
+  },
+  "dependency_notices": 152,
+  "systemd_validation": {
+    "exit_code": 0,
+    "method": "unmodified unit in extracted package root; no unit started"
+  }
+}

@@ -1,0 +1,154 @@
+[
+  {
+    "package": "ipxe-qemu",
+    "version": "1.21.1+git-20250829.969ce2c55+dfsg-3ubuntu2",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/i/ipxe/ipxe-qemu_1.21.1%2bgit-20250829.969ce2c55%2bdfsg-3ubuntu2_all.deb",
+    "apt_digest": "SHA512:f14a170185aa7efa791a06a7085c290b0a9cac28689794adde8b367b262b3df66490424d51acb60d5f7371cca4deefdaedf4cc15c79cafe8fac162c87bdb4721",
+    "sha256": "51c33251213ebd3c9613273b7e04890cac7e9fc4ec133d32a86a5f4170719410",
+    "filename": "ipxe-qemu_1.21.1+git-20250829.969ce2c55+dfsg-3ubuntu2_all.deb"
+  },
+  {
+    "package": "libcacard0",
+    "version": "1:2.8.1-2",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libc/libcacard/libcacard0_2.8.1-2_amd64.deb",
+    "apt_digest": "SHA512:f8173b51f110303f650cf895d17d539f34dbec272461f8bbad6d37007511d7855b2976998b61454f6f2984f2785dcabca4f7fa9f5751bb458a6ac76a61cf7b78",
+    "sha256": "0a05436cc271ef202315548cdbc34cc77b9cab48a9e865e3006a8eb226f5f35f",
+    "filename": "libcacard0_1%3a2.8.1-2_amd64.deb"
+  },
+  {
+    "package": "libdaxctl1",
+    "version": "81-1ubuntu1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/n/ndctl/libdaxctl1_81-1ubuntu1_amd64.deb",
+    "apt_digest": "SHA512:afea05dca792239029ca4ac392d75ab6f99f66319557b31dd77af453c2c1a2f924b149fc6b59ad8d1114e3073bcffc7503aa321d39bda79fd6eaf7f752a8e42c",
+    "sha256": "10b4620f07da833cf9ec0b0f762e53b7fdbe7432b27387cabd1d34d468066315",
+    "filename": "libdaxctl1_81-1ubuntu1_amd64.deb"
+  },
+  {
+    "package": "libmpathcmd0",
+    "version": "0.14.3-2ubuntu1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/m/multipath-tools/libmpathcmd0_0.14.3-2ubuntu1_amd64.deb",
+    "apt_digest": "SHA512:5edcf608e4b4760db6ceab9e6130415b8bc26f8162b0ce0b6a10dd00c8c11eae46495cabc48ccec0a1d24cfbc9a4bd5bb0f9c67008987a3a21b41725f5ee54b2",
+    "sha256": "9496fa468ad9fecc9cd14f8bfa5a2ba3923e2302e8c48f7713d552bf8494877e",
+    "filename": "libmpathcmd0_0.14.3-2ubuntu1_amd64.deb"
+  },
+  {
+    "package": "libmultipath0",
+    "version": "0.14.3-2ubuntu1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/m/multipath-tools/libmultipath0_0.14.3-2ubuntu1_amd64.deb",
+    "apt_digest": "SHA512:52f5822fdbf3b3f6ea4dc67ab1622bc747bfbd966b1ab33cf2939928b84a5a1a00f758b800053e30bd1c0148307228347488e3cfda42e8a668d5b7425e65fbd4",
+    "sha256": "ee956e9782407ef8fa7c42c424f89b77c754816ae1898409bdae9628de772909",
+    "filename": "libmultipath0_0.14.3-2ubuntu1_amd64.deb"
+  },
+  {
+    "package": "libmpathpersist0",
+    "version": "0.14.3-2ubuntu1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/m/multipath-tools/libmpathpersist0_0.14.3-2ubuntu1_amd64.deb",
+    "apt_digest": "SHA512:3c6f34bc6f418ef605af9d2b30b4d394caff735909923207a7dc28164c5bb7845ea949eec90ab6727368065c15b10e8c285439a8161582e5c1c5b1801bae06d6",
+    "sha256": "d2028797a57a2b7355e9890931a7baefc649422c8f7767bdb2c21ac6c8a5a3c2",
+    "filename": "libmpathpersist0_0.14.3-2ubuntu1_amd64.deb"
+  },
+  {
+    "package": "libndctl6",
+    "version": "81-1ubuntu1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/n/ndctl/libndctl6_81-1ubuntu1_amd64.deb",
+    "apt_digest": "SHA512:91c265be0d5028b5d7aec6897ca64572c388c602638f3d06b92a244084cbf12a952174beb9729a2808ef2dd977bc46ea48c268503ed065555126574a6e2bfe28",
+    "sha256": "3dd50f8ecb34e8252257b070e41a48513619352adf2cfafc11ecf6d7d51bb7ba",
+    "filename": "libndctl6_81-1ubuntu1_amd64.deb"
+  },
+  {
+    "package": "libpmem1",
+    "version": "1.13.1-1.1ubuntu4",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/p/pmdk/libpmem1_1.13.1-1.1ubuntu4_amd64.deb",
+    "apt_digest": "SHA512:fe050682887806f7c4ab0a881431b63b2ecadb9d2565055c03bcf72440ab3316e460e05953c0ed3c159cc05b3906c0ef0b7403acb2ae6a865a0f7bcdfd87428c",
+    "sha256": "12baaed97903ad6af5ee00ac77c01e7e061839f47aa79232725dd7016c6a8d76",
+    "filename": "libpmem1_1.13.1-1.1ubuntu4_amd64.deb"
+  },
+  {
+    "package": "librdmacm1t64",
+    "version": "61.0-2ubuntu3",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/r/rdma-core/librdmacm1t64_61.0-2ubuntu3_amd64.deb",
+    "apt_digest": "SHA512:f08253a68a6bebdcb98ad2521eed95bf22ea74b127f368416bb2dfd877fdd7a4536cb271fa9003bcb2450323f808ae917451e4a6158c8364f2aeeff14a2d3976",
+    "sha256": "3472f83075c2aecfde7b09e02f3f40e96b3356a4cbd1e21b5b33e6c54bff8c0e",
+    "filename": "librdmacm1t64_61.0-2ubuntu3_amd64.deb"
+  },
+  {
+    "package": "libslirp0",
+    "version": "4.9.1-1ubuntu1.1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/libs/libslirp/libslirp0_4.9.1-1ubuntu1.1_amd64.deb",
+    "apt_digest": "SHA512:2212d72d4ba894edbc80cf163a3c5e9826493169d8245fcd04926917a261750259ca409167661bf133a71f43f83670ea37eacbd8790bfc5b60c2f1a8ef6fce8c",
+    "sha256": "bfc8e5afed3287ecd28675fd683913e6b3c9d73bd16a63bc8f45cc3b7e6f83fb",
+    "filename": "libslirp0_4.9.1-1ubuntu1.1_amd64.deb"
+  },
+  {
+    "package": "libusbredirparser1t64",
+    "version": "0.15.0-1build1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/u/usbredir/libusbredirparser1t64_0.15.0-1build1_amd64.deb",
+    "apt_digest": "SHA512:40c908cc80c613a692de26bf7aab36d12218de082be2ddef61a3d9c8ae50e2a561fc277021527318da1178373c98db552b602c70d7ac9105db42eab1e1665db0",
+    "sha256": "3049b91a94ec938db9da3166ed56fecc9de00587becf53c3af4828f89c9f3b0c",
+    "filename": "libusbredirparser1t64_0.15.0-1build1_amd64.deb"
+  },
+  {
+    "package": "ubuntu-helper-virt-hwe",
+    "version": "1:10.2.1+ds-1ubuntu4.4",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/q/qemu-hwe/ubuntu-helper-virt-hwe_10.2.1%2bds-1ubuntu4.4_all.deb",
+    "apt_digest": "SHA512:43f05c631908536c34fc09bab2b6bbde8259e4c23386afff929fe4fa8a23a63b431c8a07a9d5f18dd4bcf2f2e136587b50c0724989dba60cdfb55767b7de2cc5",
+    "sha256": "1b06c1764312e498531099643ad2df2eccef90785b8255d89ae85d86449acc8c",
+    "filename": "ubuntu-helper-virt-hwe_1%3a10.2.1+ds-1ubuntu4.4_all.deb"
+  },
+  {
+    "package": "ubuntu-virt",
+    "version": "1:10.2.1+ds-1ubuntu3.3",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/q/qemu/ubuntu-virt_10.2.1%2bds-1ubuntu3.3_amd64.deb",
+    "apt_digest": "SHA512:91770fbcd6e73c6878feb2dc28fcf6171aeac57d14b14a1b00428d4ce4b4f8973876e08ae6712577e469e4ec49eda3384fb80eec34b1d318b4ffecf34159445e",
+    "sha256": "c317ff6c72a3911ec315ed2d49dbc2c18b947c59fab0992e21cf0872ef628edd",
+    "filename": "ubuntu-virt_1%3a10.2.1+ds-1ubuntu3.3_amd64.deb"
+  },
+  {
+    "package": "qemu-system-common",
+    "version": "1:10.2.1+ds-1ubuntu3.3",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/q/qemu/qemu-system-common_10.2.1%2bds-1ubuntu3.3_amd64.deb",
+    "apt_digest": "SHA512:02ab466e99e91682254b2d1834f1dc1a67b0bcdde6b183846b454878cfa03ea3bb1fe57297b9b6e56b5b16268e1b7a3691acada5f51c7509dc81848f6ecb45bd",
+    "sha256": "0aa28c0f86dd6488c19b332f1ae1f545fadcbf7d5b08ebde03345229eb097046",
+    "filename": "qemu-system-common_1%3a10.2.1+ds-1ubuntu3.3_amd64.deb"
+  },
+  {
+    "package": "qemu-system-data",
+    "version": "1:10.2.1+ds-1ubuntu3.3",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/q/qemu/qemu-system-data_10.2.1%2bds-1ubuntu3.3_all.deb",
+    "apt_digest": "SHA512:e57c6126c42d988ae95c5cde732e2b6d12dfade5cfe9bdbd6617994861d1abe690bbd31de79315790ca74f81f73247514bc7678410b69315c551ef16953f0b36",
+    "sha256": "f4c28a7226502346f6dfc6afca508842b603e7d92b9c397a8372f49ff8739ce1",
+    "filename": "qemu-system-data_1%3a10.2.1+ds-1ubuntu3.3_all.deb"
+  },
+  {
+    "package": "libfdt1",
+    "version": "1.7.2-2ubuntu1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/d/device-tree-compiler/libfdt1_1.7.2-2ubuntu1_amd64.deb",
+    "apt_digest": "SHA512:9236e42c93d5e29eca3a40bba358422e7a4337a86ef9dc10b778420c6745e5a622bc7e1336576903cecb98f9f1f3929a360bcb9574349309e91eb742e7f0cab5",
+    "sha256": "7bbd25e194947a08997deef90fadea37dd255a9bc0bdcf7fea6d4c17131904d4",
+    "filename": "libfdt1_1.7.2-2ubuntu1_amd64.deb"
+  },
+  {
+    "package": "seabios",
+    "version": "1.17.0-1ubuntu1",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/s/seabios/seabios_1.17.0-1ubuntu1_all.deb",
+    "apt_digest": "SHA512:998ffb4b3c2730d83abde577666d01c88e4765f6951f2f8633d25dba8521bc440d1bcb9365110f91b8802f72565644a4e4d22bacf37310c92811f758d4d1ca89",
+    "sha256": "edb9faf3a6ab0ae2eb9eb8283a7d514c1942ab920aa6836bf4639ee8be32eec1",
+    "filename": "seabios_1.17.0-1ubuntu1_all.deb"
+  },
+  {
+    "package": "qemu-system-x86",
+    "version": "1:10.2.1+ds-1ubuntu3.3",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/q/qemu/qemu-system-x86_10.2.1%2bds-1ubuntu3.3_amd64.deb",
+    "apt_digest": "SHA512:148c4f6646ee6ed703e3dbd807fdcccd56bcebbd4e76b534b4ff95535cc238edc3093044b60caf64616df5f96827c05d4e14856d9034a7dc05febbcb50a7a560",
+    "sha256": "9bb6f0aa031accc0e1c4ffa25d92b7563ae1d5b0726e4b07e9f2babe876daa75",
+    "filename": "qemu-system-x86_1%3a10.2.1+ds-1ubuntu3.3_amd64.deb"
+  },
+  {
+    "package": "qemu-utils",
+    "version": "1:10.2.1+ds-1ubuntu3.3",
+    "url": "https://archive.ubuntu.com/ubuntu/pool/main/q/qemu/qemu-utils_10.2.1%2bds-1ubuntu3.3_amd64.deb",
+    "apt_digest": "SHA512:b408405536db158ab049a42d2f2e3cb539dddf702906e640661e19c4f1f584d9144d62533c7974a5f8b08d442eb58ef42a56bc2b043762f1347309b332188250",
+    "sha256": "5a03ed4b961981a0fc52e77f3df80b81fc25d21326329e28b0ac072c78d1209f",
+    "filename": "qemu-utils_1%3a10.2.1+ds-1ubuntu3.3_amd64.deb"
+  }
+]

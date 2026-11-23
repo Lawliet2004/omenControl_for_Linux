@@ -1,0 +1,62 @@
+{
+  "package": "target/debian/omen-linux_0.1.0-15_amd64.deb",
+  "bytes": 2912218,
+  "sha256": "c8d546e4f2f52fed11a648819602e0d32ca550285f3f185bb8bd1138f0740fd5",
+  "version": "0.1.0-15",
+  "installed_by_verifier": false,
+  "checks": {
+    "root_ownership_and_directory_modes": true,
+    "payload_md5sums": true,
+    "desktop_file_validate": true,
+    "polkit_xml_matches_source": true,
+    "gui_linkage_current_environment": true,
+    "extracted_cli_readonly_discovery": true
+  },
+  "binaries": {
+    "omen-cli": {
+      "sha256": "6890afafce77d769ec6641204f74746471e6d4ff2992c4fed5b09ae346ee812f",
+      "matches_release": true
+    },
+    "omen-daemon": {
+      "sha256": "7b7df9f838ce93582a1e81ab6175f68bd6915f20c3024f666a16b786992e8c5e",
+      "matches_release": true
+    },
+    "omen-gui": {
+      "sha256": "3e9e412a5a2fe60cd50c8181975e6b525056f852922c3dc2e3d04180d1126a93",
+      "matches_release": true
+    }
+  },
+  "lifecycle_equivalence": {
+    "reference_package": "target/audit-2026-10-27/deployment/tested-runtime.deb",
+    "reference_sha256": "a7c176d60ebbb7240095865a40036d7c4c8a82ba99cdcc667748eead4651b942",
+    "runtime_payload_identical": true,
+    "maintainer_scripts_and_control_identical": true,
+    "documentation_changes": [
+      "usr/share/doc/omen-linux/APPLICATION_AUDIT_IMPLEMENTATION.md",
+      "usr/share/doc/omen-linux/ARCHITECTURE.md",
+      "usr/share/doc/omen-linux/CONTINUATION_CHECKLIST.md",
+      "usr/share/doc/omen-linux/README.md",
+      "usr/share/doc/omen-linux/STATUS_OVERLAY.md",
+      "usr/share/doc/omen-linux/TEST_REPORT.md"
+    ]
+  },
+  "vm_equivalence": {
+    "reference_package": "target/audit-2026-10-27/deployment/tested-runtime.deb",
+    "reference_sha256": "a7c176d60ebbb7240095865a40036d7c4c8a82ba99cdcc667748eead4651b942",
+    "runtime_payload_identical": true,
+    "maintainer_scripts_and_control_identical": true,
+    "documentation_changes": [
+      "usr/share/doc/omen-linux/APPLICATION_AUDIT_IMPLEMENTATION.md",
+      "usr/share/doc/omen-linux/ARCHITECTURE.md",
+      "usr/share/doc/omen-linux/CONTINUATION_CHECKLIST.md",
+      "usr/share/doc/omen-linux/README.md",
+      "usr/share/doc/omen-linux/STATUS_OVERLAY.md",
+      "usr/share/doc/omen-linux/TEST_REPORT.md"
+    ]
+  },
+  "dependency_notices": 156,
+  "systemd_validation": {
+    "exit_code": 0,
+    "method": "unmodified unit in extracted package root; no unit started"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "system_power_bus_used": false,
+  "profile": "installed",
+  "checks_passed": [
+    "desktop-only JSON inventory finds all routes, keeps provenance and ignores inherited paths under OMEN_HOME",
+    "the real-home Legendary override is honored without merging a different default configuration",
+    "steam/shortcut/7/4045620583: exact route, literal arguments and desktop UID verified",
+    "steam/flatpak/shortcut/7/4045620583: exact route, literal arguments and desktop UID verified",
+    "steam/snap/620: exact route, literal arguments and desktop UID verified",
+    "steam/snap/shortcut/7/4045620583: exact route, literal arguments and desktop UID verified",
+    "legendary/--literal: exact route, literal arguments and desktop UID verified",
+    "legendary/Other: exact route, literal arguments and desktop UID verified",
+    "a missing Snap executable fails before profile mutation or command execution",
+    "a changed recent Steam account invalidates the old shortcut before profile mutation",
+    "early Snap submission failure restores only the owned fixture profile change",
+    "a malformed binary shortcut file does not hide independent store or launcher inventories",
+    "an older Legendary that ignores configuration routing is rejected before profile mutation"
+  ],
+  "cli_sha256": "f0e5c0b08cfec6f32ecb94e39ca65a990f46af4f4ee7bd0dd74c8c562484cf30",
+  "daemon_sha256": "219780aa03ea5bda0036b402f0231a13cbded8329b8cf1b2dd05e3bc6f4a12cb",
+  "upstream_legendary_tested": false,
+  "cleanup_complete": true
+}

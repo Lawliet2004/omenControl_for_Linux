@@ -1,0 +1,18 @@
+{
+  "result": "failed",
+  "profile": "debug",
+  "fixture_only": true,
+  "hardware_control_writes": 0,
+  "checks_passed": [
+    "curve arms with identified CPU and GPU inputs; diagnostics retain the guarded cohort",
+    "a hot GPU raises the real fixture adapter to full curve duty while CPU temperature stays fixed",
+    "invalid GPU data stops and restores the curve; returning data does not rearm it",
+    "missing GPU association fails preflight without claiming or restoring an external fixture override",
+    "GPU power-state changes invalidate the pinned cohort and require explicit rearming",
+    "a real process scheduling gap is detected after continuation and returns the fixture to Auto"
+  ],
+  "daemon_sha256": "69bc0d854147816a4f5ccb4782c2c172ada481725342d86993296b5910131d41",
+  "error": "",
+  "cleanup_complete": true,
+  "recorded_utc": "2026-10-26T09:01:29.178653+00:00"
+}

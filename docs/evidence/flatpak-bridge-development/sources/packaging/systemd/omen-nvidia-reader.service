@@ -1,0 +1,26 @@
+[Unit]
+Description=Unprivileged read-only NVIDIA temperature provider
+Requires=omen-nvidia-reader.socket
+After=omen-nvidia-reader.socket
+BindsTo=omen-nvidia-reader.socket
+[Service]
+ExecStart=/usr/bin/omen-daemon --nvidia-reader
+DynamicUser=yes
+CapabilityBoundingSet=
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+PrivateTmp=yes
+PrivateDevices=no
+DevicePolicy=closed
+DeviceAllow=/dev/nvidiactl rw
+DeviceAllow=/dev/nvidia0 rw
+RestrictAddressFamilies=AF_UNIX
+RestrictSUIDSGID=yes
+LockPersonality=yes
+UMask=0077
+# No control commands or writable sysfs. NVML queries run without root privileges.

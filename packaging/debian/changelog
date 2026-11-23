@@ -1,0 +1,257 @@
+omen-linux (0.1.0-27) unstable; urgency=high
+
+  * Security: ship bundled SQLite 3.54.1 via rusqlite 0.41.1 / libsqlite3-sys
+    0.39.1 instead of linking the unpatched Ubuntu 3.46.1 system library.
+    Fixes RUSTSEC-2026-0459 / CVE-2026-119375 (uninitialized page-cache
+    disclosure on WAL page-size mismatch).
+  * Security: update rustix to 1.1.6 (RUSTSEC-2026-0486, xattr unsoundness).
+  * Security: replace yanked async-executor 1.14.0 with 1.14.1.
+
+ -- omen-linux contributors <noreply@example.invalid>  Sat, 14 Nov 2026 12:15:00 +0530
+
+omen-linux (0.1.0-26) unstable; urgency=medium
+
+  * Develop a descriptor handoff into nested Flatpak game cgroups.
+  * Keep the actual command in its existing sandbox and retain daemon supervision.
+  * Add private per-launcher Flatpak helper setup, permission checks and removal.
+  * Package the static wrapper with build provenance and complete musl notices.
+
+ -- omen-linux contributors <noreply@example.invalid>  Wed, 28 Oct 2026 17:00:00 +0530
+
+omen-linux (0.1.0-25) unstable; urgency=medium
+
+  * Pin the registering game process for ongoing scope membership checks.
+  * Release profile ownership and report Interrupted when that live process moves.
+  * Describe normal completion in terms of the tracked scope becoming empty.
+
+ -- omen-linux contributors <noreply@example.invalid>  Wed, 28 Oct 2026 16:00:00 +0530
+
+omen-linux (0.1.0-24) unstable; urgency=medium
+
+  * Group sensor readings by reported device/provider and measurement type.
+  * Add native device, type, availability and ordering controls.
+  * Retain sensor identities and explicit copy snapshots across updates.
+
+ -- omen-linux contributors <noreply@example.invalid>  Wed, 28 Oct 2026 15:00:00 +0530
+
+omen-linux (0.1.0-23) unstable; urgency=medium
+
+  * Re-evaluate GUI monitoring sources after daemon availability changes.
+  * Carry source provenance with snapshots and pin queued actions to their peer.
+
+ -- omen-linux contributors <noreply@example.invalid>  Wed, 28 Oct 2026 14:00:00 +0530
+
+omen-linux (0.1.0-22) unstable; urgency=medium
+
+  * Recover control pages when fresh capabilities change after startup.
+  * Collect control readbacks off the GTK thread and preserve unsaved edits.
+  * Refresh graphics inventory and expose current values with unavailable reasons.
+  * Keep stale controls disabled and disclose advanced fan curve settings.
+  * Preserve the full validated 0-110 C temperature range in curve editors.
+
+ -- omen-linux contributors <noreply@example.invalid>  Wed, 28 Oct 2026 12:30:00 +0530
+
+omen-linux (0.1.0-21) unstable; urgency=medium
+
+  * Embed native symbolic fallback icons for incomplete desktop icon themes.
+  * Preserve installed theme priority and include asset attribution and sources.
+  * Resolve relative package output paths before shared-library inspection.
+  * Add isolated Plasma Wayland, KDE portal and real PAM authorization validation.
+
+ -- omen-linux contributors <noreply@example.invalid>  Wed, 28 Oct 2026 11:06:00 +0530
+
+omen-linux (0.1.0-20) unstable; urgency=medium
+
+  * Discover account-scoped binary Steam shortcuts and explicit Snap Steam routes.
+  * Add standalone Legendary discovery with configuration-bound launch preparation.
+  * Check Legendary configuration-routing version support before profile changes.
+  * Add desktop-only JSON game inventory without hardware discovery.
+  * Fix keyboard activation and accessible names for disclosures in virtual lists.
+  * Expose new library locations and retain explicit unsupported sandbox behavior.
+  * Show contextual folder guidance and keep removal actions compact at large text.
+  * Add upstream offline Legendary execution and installed-package format fixtures.
+  * Add isolated dependency reuse for package tests without network downloads.
+
+ -- omen-linux contributors <noreply@example.invalid>  Tue, 27 Oct 2026 20:01:33 +0530
+
+omen-linux (0.1.0-19) unstable; urgency=medium
+
+  * Fix keyboard traps in collapsed disclosure content and adaptive control rows.
+  * Add window-local pane, page and search keyboard navigation.
+  * Give charts context and scale their painted labels with the GTK font.
+  * Announce action feedback through the stable accessible window context.
+  * Reflow controls using measured text requirements and wrap long checkboxes.
+  * Improve primary-action text contrast while retaining the system accent.
+  * Keep selected network readings stable with explicit hold and resume feedback.
+  * Add private XTEST/Orca workflows and rendered geometry/contrast measurements.
+  * Retain English-only presentation and outstanding physical release gates.
+
+ -- omen-linux contributors <noreply@example.invalid>  Tue, 27 Oct 2026 17:47:44 +0530
+
+omen-linux (0.1.0-18) unstable; urgency=medium
+
+  * Persist desktop launch failures before registration and after submission.
+  * Show private, bounded recovery reports in Game Library with explicit reset.
+  * Add daemon-independent CLI inspection and clearing of saved launch reports.
+  * Preserve managed command exit status and forward ordinary termination signals.
+  * Keep launch reports separate from process lifetime and profile authority.
+  * Bound stale native row callbacks during prolonged monitoring outages.
+  * Retain English-only presentation and outstanding release validation gates.
+
+ -- omen-linux contributors <noreply@example.invalid>  Tue, 27 Oct 2026 22:00:00 +0530
+
+omen-linux (0.1.0-17) unstable; urgency=medium
+
+  * Virtualize the game library and keep search/setup state across row recycling.
+  * Preserve unchanged library entries and native controls during rescans.
+  * Refresh profile choices with current capabilities without changing bindings.
+  * Retain network row identities across value updates and replace reused interfaces.
+  * Verify large-library interaction and native UI on X11 and Wayland.
+  * Retain English-only presentation and pending deployment/hardware validation.
+
+ -- omen-linux contributors <noreply@example.invalid>  Tue, 27 Oct 2026 15:30:00 +0530
+
+omen-linux (0.1.0-16) unstable; urgency=medium
+
+  * Add desktop-user actual-command wrappers and daemon-owned PPD profile holds.
+  * Bind managed sessions to live socket peers and pinned cgroup v2 lifetimes.
+  * Release owned holds after final process exit and preserve manual policy choices.
+  * Add private interrupted-session recovery without persisting write authority.
+  * Add per-game setup, cached session status and explicit profile-hold release.
+  * Keep English-only presentation and outstanding launcher/hardware release gates.
+
+ -- omen-linux contributors <noreply@example.invalid>  Tue, 27 Oct 2026 18:00:00 +0530
+
+omen-linux (0.1.0-15) unstable; urgency=medium
+
+  * Add timestamped history gaps, accessible readings, time ranges and private CSV export.
+  * Expire stalled telemetry and capabilities across the main window and tray.
+  * Bound daemon sessions and add fair per-user connection admission.
+  * Serialize game launch profile transactions and add library refresh and locations.
+  * Add adaptive navigation, dashboard selection, health reporting and welcome help.
+  * Add opt-in informational temperature notifications and English presentation.
+  * Retain hardware validation gates and explicit game-lifetime limitations.
+
+ -- omen-linux contributors <noreply@example.invalid>  Tue, 27 Oct 2026 12:00:00 +0530
+
+omen-linux (0.1.0-14) unstable; urgency=medium
+
+  * Add a private socket-activated unprivileged NVIDIA temperature reader.
+  * Preserve controller device isolation and reject untrusted/stale samples.
+  * Feed identified fresh temperatures only to explicitly enabled controllers.
+  * Cover reader identity, loss and thermal recovery in the systemd VM.
+
+ -- omen-linux contributors <noreply@example.invalid>  Tue, 27 Oct 2026 01:15:00 +0530
+
+omen-linux (0.1.0-13) unstable; urgency=medium
+
+  * Add a separate exact-target Automatic/Maximum writer and systemd unit.
+  * Persist pinned recovery intent before writes and recover across restarts.
+  * Bind leases to trusted peers, process lifetimes and expiring sequences.
+  * Preserve read-only defaults, thermal coverage and manual/curve restrictions.
+  * Require explicit experimental target opt-in and approved physical testing.
+
+ -- omen-linux contributors <noreply@example.invalid>  Tue, 27 Oct 2026 00:45:00 +0530
+
+omen-linux (0.1.0-12) unstable; urgency=medium
+
+  * Expose Automatic/Maximum independently of manual PWM capabilities.
+  * Add native firmware mode actions with current capability gating.
+  * Supervise mode-only fixture leases without inventing manual targets.
+  * Keep production fan writes disabled pending independent live recovery.
+
+ -- omen-linux contributors <noreply@example.invalid>  Mon, 26 Oct 2026 15:00:00 +0000
+
+omen-linux (0.1.0-11) unstable; urgency=medium
+
+  * Add an opt-in compact native status overlay sharing monitoring snapshots.
+  * Integrate persistence, tray/local/portal actions and explicit stale states.
+  * Release closed overlay surfaces for reliable accessibility enumeration.
+  * Require thermal preflight and fresh CPU/GPU coverage for fixed fan leases.
+  * Preserve read-only deployment and all physical hardware release gates.
+
+ -- omen-linux contributors <noreply@example.invalid>  Mon, 26 Oct 2026 13:45:00 +0000
+
+omen-linux (0.1.0-10) unstable; urgency=medium
+
+  * Route fixture fan writes through a separate process with expiring leases.
+  * Restore pinned ordinary-file actuators after parent stalls or SIGKILL.
+  * Refuse expired ownership and require explicit rearming of overrides.
+  * Reject live/pseudo filesystems and retain all physical fan release gates.
+
+ -- omen-linux contributors <noreply@example.invalid>  Mon, 26 Oct 2026 09:15:00 +0000
+
+omen-linux (0.1.0-9) unstable; urgency=medium
+
+  * Guard fixture curves with identified CPU/GPU inputs and acquisition checks.
+  * Pin cohorts and reject stale data or suspended-time scheduling gaps.
+  * Separate fan ticks from profile IO and retry failed Automatic recovery.
+  * Report controller intent and errors without claiming physical safety.
+
+ -- omen-linux contributors <noreply@example.invalid>  Mon, 26 Oct 2026 07:20:00 +0000
+
+omen-linux (0.1.0-8) unstable; urgency=medium
+
+  * Report readable fan policy independently of manual-target support.
+  * Preserve unknown telemetry instead of inventing missing manual duty.
+  * Reject out-of-range PWM readbacks before normalized write verification.
+  * Detect OmenCore as a potential competing fan writer before fixture writes.
+  * Keep all live device-specific controls disabled pending validation.
+
+ -- omen-linux contributors <noreply@example.invalid>  Mon, 26 Oct 2026 05:45:00 +0000
+
+omen-linux (0.1.0-7) unstable; urgency=medium
+
+  * Add read-only per-interface network counters and sampled receive/send rates.
+  * Show network state in System Vitals, CLI and diagnostics.
+  * Rebase on identity/counter changes and long suspend-aware sampling gaps.
+
+ -- omen-linux contributors <noreply@example.invalid>  Mon, 26 Oct 2026 05:00:00 +0000
+
+omen-linux (0.1.0-6) unstable; urgency=medium
+
+  * Add user-approved global Show shortcut through XDG Desktop Portal.
+  * Handle shortcut cancellation, startup restoration and portal/bus loss.
+  * Test native shortcut workflows with explicit GTK Wayland and X11 backends.
+
+ -- omen-linux contributors <noreply@example.invalid>  Mon, 26 Oct 2026 04:50:00 +0000
+
+omen-linux (0.1.0-5) unstable; urgency=medium
+
+  * Restore NVIDIA monitoring through a read-only foreground client fallback.
+  * Keep physical GPU devices isolated from the privileged daemon.
+  * Validate real GPU reads across a transient systemd device sandbox.
+
+ -- omen-linux contributors <noreply@example.invalid>  Mon, 26 Oct 2026 00:40:00 +0000
+
+omen-linux (0.1.0-4) unstable; urgency=medium
+
+  * Refresh profile capabilities in the GTK controls and system tray.
+  * Add native settings, diagnostics and disconnect interaction coverage.
+
+ -- omen-linux contributors <noreply@example.invalid>  Mon, 26 Oct 2026 00:20:00 +0000
+
+omen-linux (0.1.0-3) unstable; urgency=medium
+
+  * Bind sysfs read-only and protect kernel tunables in the service namespace.
+  * Add signed Ubuntu VM validation for service startup, sandbox and recovery.
+
+ -- omen-linux contributors <noreply@example.invalid>  Sun, 25 Oct 2026 22:30:00 +0000
+
+omen-linux (0.1.0-2) unstable; urgency=medium
+
+  * Preserve service enable/disable/mask choices across upgrade and reinstall.
+  * Honor Debian service-start policy with deb-systemd-invoke.
+  * Track offline enablement and purge links with deb-systemd-helper.
+  * Create initial system configuration privately; preserve existing settings.
+
+ -- omen-linux contributors <noreply@example.invalid>  Sun, 25 Oct 2026 22:00:00 +0000
+
+omen-linux (0.1.0-1) unstable; urgency=medium
+
+  * Development monitoring snapshot; no live device-specific control claims.
+  * Restrict the daemon to typed operations; launch games as the desktop user.
+  * Serialize fan mock recovery; bound IPC and system utility execution.
+  * Disable hardware writes by default and document outstanding validation.
+
+ -- omen-linux contributors <noreply@example.invalid>  Sun, 25 Oct 2026 18:30:00 +0000

@@ -1,0 +1,23 @@
+{
+  "package": "/home/papan/Desktop/Projects/omen/target/session-migration-v25/candidate/omen-linux_0.1.0-25_amd64.deb",
+  "package_sha256": "919adc5f763632511cb6081c457983e12109ff753d64dd40d175cdfba7fcb0bd",
+  "package_bytes": 3696180,
+  "helper": "/home/papan/Desktop/Projects/omen/target/session-migration-v25/artifacts/managed-games-native-release",
+  "helper_built_path": "/home/papan/Desktop/Projects/omen/target/release/deps/managed_games_native-4cff964311c5e5ac",
+  "helper_sha256": "9c9fb81d31b58d42e923c926a3ac5e05b98bddde1db8cbd56e38f65ee83444e9",
+  "helper_source_sha256": "f7a36940ec9a4d0abc9d302f6acedd73b07bc510ef85aac507c449e4a16dc0a9",
+  "runtime_binaries": {
+    "omen-cli": {
+      "sha256": "fabbc592f8bf9666010bd7d5d1244ae45b799b6aab3c15226d25eec63ae67963",
+      "bytes": 3611480
+    },
+    "omen-daemon": {
+      "sha256": "a5c314f7bfa0772722d6fffcd085c5e01b73cae42cb5975b2436d4e8baba1999",
+      "bytes": 4943552
+    },
+    "omen-gui": {
+      "sha256": "d5a2a844c722206e7ec9dfcdb2513ed5601c418678dc478bfbfd87cd53ad8953",
+      "bytes": 7864984
+    }
+  }
+}

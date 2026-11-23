@@ -1,0 +1,32 @@
+{
+  "checks_passed": [
+    "real game-run executes exact arguments as the desktop UID and automatically releases its profile after exit",
+    "nonzero actual-command status is preserved, its profile is released, and a private desktop report survives exit",
+    "SIGTERM directed at the outside-scope observer reaches the actual command and preserves the terminating signal",
+    "an inherited ignored SIGCHLD disposition does not lose the actual command status",
+    "failure before worker registration is saved without executing the game or acquiring a profile",
+    "wrapper exit does not release the profile while its detached descendant is alive",
+    "a registered live peer moving to another real scope releases its hold and persists Interrupted while the command remains alive",
+    "overlapping sessions release independently and use provider priority without a last-launch restore stack",
+    "an explicit same-value daemon profile choice revokes owned holds and survives game exit",
+    "external A-to-B-to-A selection cancels ownership and is never overwritten after exit",
+    "production peer binding refuses managed registration from an ordinary application scope",
+    "a live descendant cannot replay registration through an inherited socket after its original peer exits",
+    "failed actual-command exec releases its hold and returns an error",
+    "four concurrent user sessions are admitted and a fifth fails before executing or acquiring a hold",
+    "explicit release drops the owned profile without terminating the game",
+    "battery policy takes ownership only after managed holds are released",
+    "daemon SIGKILL releases profiles; restart recovers interrupted history without reapplying old authority",
+    "the durable private journal contains recovery information without cookies and leaves desktop settings unchanged",
+    "production authorization fails closed on a private bus without polkit and no game command runs",
+    "registration denial is reported with a closed reason, no command or output, and desktop-private permissions",
+    "an unreadable recovery journal is preserved and blocks new profile ownership before execution"
+  ],
+  "cleanup_complete": true,
+  "cli": "/home/papan/Desktop/Projects/omen/target/debug/omen-cli",
+  "debug_assertions": true,
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "result": "passed",
+  "system_power_bus_used": false
+}

@@ -1,0 +1,973 @@
+{
+  "dark": true,
+  "gtk_font_name": "Sans 20",
+  "high_contrast": false,
+  "render_bounds": [
+    0.0,
+    0.0,
+    590.0,
+    1090.0
+  ],
+  "widgets": [
+    {
+      "bounds": [
+        73.0,
+        6.0,
+        222.0,
+        47.0
+      ],
+      "clips": [
+        [
+          0.0,
+          0.0,
+          590.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          600.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 29.333px",
+      "font_weight": 700,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ink": [
+        1,
+        9,
+        197,
+        30
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        3
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        198,
+        40
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "headerbar.",
+        "windowhandle.",
+        "box.",
+        "widget.",
+        "label.title"
+      ],
+      "sensitive": true,
+      "text": "Game Library"
+    },
+    {
+      "bounds": [
+        358.0,
+        11.0,
+        95.0,
+        37.0
+      ],
+      "clips": [
+        [
+          0.0,
+          0.0,
+          590.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          600.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ink": [
+        2,
+        8,
+        92,
+        21
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        95,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "headerbar.",
+        "windowhandle.",
+        "box.",
+        "widget.",
+        "box.horizontal.end",
+        "button.text-button",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Fixture"
+    },
+    {
+      "bounds": [
+        40.0,
+        -35.0,
+        451.0,
+        218.0
+      ],
+      "clips": [
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          590.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          590.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          600.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ink": [
+        1,
+        8,
+        448,
+        203
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 6,
+      "logical": [
+        0,
+        0,
+        451,
+        218
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "listview.game-library",
+        "row.",
+        "box.vertical.card",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Snap shortcut\nsteam/snap/shortcut/7/4045620583\nLibrary: /home/papan/Desktop/Projects/omen/target/omen-native-h4jyqoem/home/snap/steam/common/.local/share/Steam"
+    },
+    {
+      "bounds": [
+        50.0,
+        198.0,
+        147.0,
+        37.0
+      ],
+      "clips": [
+        [
+          40.0,
+          193.0,
+          510.0,
+          157.0
+        ],
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          590.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          590.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          600.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ink": [
+        1,
+        8,
+        145,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        147,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "listview.game-library",
+        "row.",
+        "box.vertical.card",
+        "widget.",
+        "box.vertical",
+        "dropdown.",
+        "button.toggle",
+        "box.horizontal",
+        "stack.",
+        "row.activatable",
+        "box.horizontal",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "(no profile)"
+    },
+    {
+      "bounds": [
+        57.0,
+        253.0,
+        476.0,
+        37.0
+      ],
+      "clips": [
+        [
+          40.0,
+          193.0,
+          510.0,
+          157.0
+        ],
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          590.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          590.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          600.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ink": [
+        2,
+        8,
+        94,
+        21
+      ],
+      "kind": "label",
+      "layout_offset": [
+        189,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        98,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "listview.game-library",
+        "row.",
+        "box.vertical.card",
+        "widget.",
+        "box.vertical",
+        "button.text-button.suggested-action",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Launch"
+    },
+    {
+      "bounds": [
+        57.0,
+        308.0,
+        476.0,
+        37.0
+      ],
+      "clips": [
+        [
+          40.0,
+          193.0,
+          510.0,
+          157.0
+        ],
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          590.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          590.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          600.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ink": [
+        2,
+        8,
+        166,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        153,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        170,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "listview.game-library",
+        "row.",
+        "box.vertical.card",
+        "widget.",
+        "box.vertical",
+        "button.text-button",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Profile setup"
+    },
+    {
+      "bounds": [
+        40.0,
+        360.0,
+        510.0,
+        109.0
+      ],
+      "clips": [
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          590.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          590.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          600.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ink": [
+        0,
+        8,
+        503,
+        94
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 3,
+      "logical": [
+        0,
+        0,
+        504,
+        109
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "listview.game-library",
+        "row.",
+        "box.vertical.card",
+        "revealer.",
+        "box.vertical",
+        "label.heading"
+      ],
+      "sensitive": true,
+      "text": "Manual restore is selected. Automatic wrapping for this sandboxed installation is not available."
+    },
+    {
+      "bounds": [
+        40.0,
+        477.0,
+        510.0,
+        291.0
+      ],
+      "clips": [
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          590.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          590.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          600.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ink": [
+        0,
+        8,
+        489,
+        282
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 8,
+      "logical": [
+        0,
+        0,
+        489,
+        291
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "listview.game-library",
+        "row.",
+        "box.vertical.card",
+        "revealer.",
+        "box.vertical",
+        "label.dim"
+      ],
+      "sensitive": true,
+      "text": "Automatic restore uses Power Profiles Daemon and a dedicated systemd user scope. It needs an enabled, authorized daemon, a user systemd session and a supported kernel. A canceled hold is never automatically reapplied. Other profile holds can change the effective profile."
+    },
+    {
+      "bounds": [
+        40.0,
+        776.0,
+        510.0,
+        182.0
+      ],
+      "clips": [
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          590.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          590.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          600.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ink": [
+        0,
+        8,
+        491,
+        167
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 5,
+      "logical": [
+        0,
+        0,
+        492,
+        182
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "listview.game-library",
+        "row.",
+        "box.vertical.card",
+        "revealer.",
+        "box.vertical",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Automatic wrapping inside Flatpak or Snap is not validated. Use manual restoration for this installation; a host-spawned launcher is not proof of game lifetime."
+    },
+    {
+      "bounds": [
+        57.0,
+        971.0,
+        337.0,
+        37.0
+      ],
+      "clips": [
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          590.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          590.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          600.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ink": [
+        2,
+        8,
+        334,
+        21
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        337,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "listview.game-library",
+        "row.",
+        "box.vertical.card",
+        "revealer.",
+        "box.vertical",
+        "button.text-button",
+        "label."
+      ],
+      "sensitive": false,
+      "text": "Enable automatic restore"
+    },
+    {
+      "bounds": [
+        40.0,
+        1021.0,
+        510.0,
+        37.0
+      ],
+      "clips": [
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          18.0,
+          74.0,
+          554.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          590.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          590.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          600.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "ink": [
+        0,
+        28,
+        0,
+        1
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        0,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "listview.game-library",
+        "row.",
+        "box.vertical.card",
+        "revealer.",
+        "box.vertical",
+        "label."
+      ],
+      "sensitive": true,
+      "text": ""
+    }
+  ],
+  "window_size": [
+    590,
+    1090
+  ]
+}

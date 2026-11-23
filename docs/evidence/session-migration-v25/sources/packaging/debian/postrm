@@ -1,0 +1,21 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+  purge)
+    # Remove system configuration on purge only (not on upgrade/remove).
+    rm -f /etc/omen-linux/config.toml /etc/omen-linux/config.toml.bak
+    rmdir /etc/omen-linux 2>/dev/null || true
+    deb-systemd-helper purge omen-linux.service >/dev/null || true
+    if [ -d /run/systemd/system ]; then
+      systemctl --system daemon-reload >/dev/null || true
+    fi
+    ;;
+  remove)
+    if [ -d /run/systemd/system ]; then
+      systemctl --system daemon-reload >/dev/null || true
+    fi
+    ;;
+esac
+
+exit 0

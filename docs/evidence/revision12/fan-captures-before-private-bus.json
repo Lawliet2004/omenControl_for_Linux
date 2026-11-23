@@ -1,0 +1,21 @@
+{
+  "recorded_utc": "2026-10-26T05:56:44.532990+00:00",
+  "method": "application-only GTK widget captures; no desktop framebuffer capture",
+  "hardware_control_writes": 0,
+  "cleanup_complete": true,
+  "screenshots": [
+    {
+      "path": "docs/screenshots/fan.png",
+      "sha256": "86aa6e080e92c3c430bf1ca332c92672f71c2244128dd31eb9528cb778cfb8e2",
+      "fixture": false,
+      "gtk_display_type": "GdkWaylandDisplay"
+    },
+    {
+      "path": "docs/screenshots/fan-mode-only-fixture.png",
+      "sha256": "0805cd8cfc6238dbcc36728f6665bd9c950f8f47cfbae37af51874ade1965887",
+      "fixture": true,
+      "gtk_display_type": "GdkWaylandDisplay"
+    }
+  ],
+  "gui_sha256": "cf8586e103e3c0ecc5a0f4c60283609ce4e78a178a6146485885bea5ce087757"
+}

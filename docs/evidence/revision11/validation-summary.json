@@ -1,0 +1,430 @@
+{
+  "generated_utc": "2026-10-26T13:59:40.844134+00:00",
+  "version": "0.1.0",
+  "debian_version": "0.1.0-11",
+  "goal_complete": false,
+  "implementation_scope": {
+    "implemented": [
+      "opt-in compact native status overlay sharing monitoring snapshots",
+      "user preference, tray/local/portal toggle and resilient window lifecycle",
+      "per-sample and whole-frame stale/unavailable states and source attribution",
+      "CPU/GPU thermal preflight and guarded lease renewal for fixed Manual/Maximum fixture overrides"
+    ],
+    "remaining_software": [
+      "separately supervised production hardware fan recovery/ownership",
+      "reliable game lifetime tracking and crash-safe concurrent profile leases",
+      "verified remaining hardware adapters and broader localization/accessibility work"
+    ],
+    "external_gates": [
+      "compatible fan-control target, model-specific thermal/provider policy and separately approved physical tests",
+      "physical portal key/compositor/fullscreen and effective-DPI validation",
+      "real graphical polkit lifecycle and clean full graphical package lifecycle",
+      "authorized main Gaming Hub artifact and compatible Windows behavioral reference"
+    ]
+  },
+  "rust_tests": {
+    "debug": {
+      "passed": 193,
+      "failed": 0,
+      "ignored": 0
+    },
+    "release": {
+      "passed": 193,
+      "failed": 0,
+      "ignored": 0
+    }
+  },
+  "binaries": {
+    "debug": {
+      "omen-cli": "a35284a75be628d055d8e039662ecc6b56a8f74bcccd7657ff47e26e40d92f74",
+      "omen-daemon": "9cd637b0c1d27763fff9bcdb676ed5e15e70ba972a366e213595184c6b344d83",
+      "omen-gui": "4166f5e3f0798f6eb282d880adaf4bb64521db9f3c4f850c5e2564eb92a2c5e6"
+    },
+    "release": {
+      "omen-cli": "a385fc6ea674d726d230a2db500a3ffda39ee8c53fbe8bc949c193dcb3c0c5bd",
+      "omen-daemon": "7a9fc552ea88a8f3fa578b359ab8040b16b73ce05fe7ae86ef85323c564a65be",
+      "omen-gui": "cba3f16de8307237920da1409943ed8b1e9c8473fd4e170a2cf93871754ba0bc"
+    }
+  },
+  "checks": {
+    "cargo_fmt": "pass",
+    "strict_clippy": "pass",
+    "debug_and_release_workspace_build": "pass",
+    "python_syntax": "26 sources parsed",
+    "build_deb_shell_syntax": "pass",
+    "process_smoke": "pass in debug/release; private fixture hardware",
+    "native_shortcut_overlay_matrix": "32 passed for each debug/release \u00d7 X11/Wayland variant",
+    "container_lifecycle": "19 checks passed, container removed",
+    "systemd_vm": "17 checks passed, two guest reboots, QEMU exit 0, private disk/seed/key removed",
+    "final_package_equivalence": "runtime payload/permissions, maintainer scripts and control metadata identical to exact container/VM-tested archive; documentation-only differences",
+    "native_review": "both material fixes scored resolved by independent reviewer; scoped documenter audit passed"
+  },
+  "package": {
+    "package": "target/debian/omen-linux_0.1.0-11_amd64.deb",
+    "bytes": 2698836,
+    "sha256": "71bdd54066149efb59423f4e7374dd193f4073d85743ca4b692f5ff25319c7d3",
+    "version": "0.1.0-11",
+    "installed_by_verifier": false,
+    "checks": {
+      "root_ownership_and_directory_modes": true,
+      "payload_md5sums": true,
+      "desktop_file_validate": true,
+      "polkit_xml_matches_source": true,
+      "gui_linkage_current_environment": true,
+      "extracted_cli_readonly_discovery": true
+    },
+    "binaries": {
+      "omen-cli": {
+        "sha256": "a385fc6ea674d726d230a2db500a3ffda39ee8c53fbe8bc949c193dcb3c0c5bd",
+        "matches_release": true
+      },
+      "omen-daemon": {
+        "sha256": "7a9fc552ea88a8f3fa578b359ab8040b16b73ce05fe7ae86ef85323c564a65be",
+        "matches_release": true
+      },
+      "omen-gui": {
+        "sha256": "cba3f16de8307237920da1409943ed8b1e9c8473fd4e170a2cf93871754ba0bc",
+        "matches_release": true
+      }
+    },
+    "lifecycle_equivalence": {
+      "reference_package": "target/debian/runtime-tested_omen-linux_0.1.0-11_amd64.deb",
+      "reference_sha256": "0fccdc8b2740c8a4a62610f1a776f8ef8a450f6f3a2c6a3320c89bccaec85351",
+      "runtime_payload_identical": true,
+      "maintainer_scripts_and_control_identical": true,
+      "documentation_changes": [
+        "usr/share/doc/omen-linux/CONTINUATION_CHECKLIST.md",
+        "usr/share/doc/omen-linux/PACKAGE_VALIDATION.md",
+        "usr/share/doc/omen-linux/REVERSE_ENGINEERING_REPORT.md",
+        "usr/share/doc/omen-linux/STATUS_OVERLAY.md",
+        "usr/share/doc/omen-linux/TEST_REPORT.md",
+        "usr/share/doc/omen-linux/VM_VALIDATION.md"
+      ]
+    },
+    "vm_equivalence": {
+      "reference_package": "target/debian/runtime-tested_omen-linux_0.1.0-11_amd64.deb",
+      "reference_sha256": "0fccdc8b2740c8a4a62610f1a776f8ef8a450f6f3a2c6a3320c89bccaec85351",
+      "runtime_payload_identical": true,
+      "maintainer_scripts_and_control_identical": true,
+      "documentation_changes": [
+        "usr/share/doc/omen-linux/CONTINUATION_CHECKLIST.md",
+        "usr/share/doc/omen-linux/PACKAGE_VALIDATION.md",
+        "usr/share/doc/omen-linux/REVERSE_ENGINEERING_REPORT.md",
+        "usr/share/doc/omen-linux/STATUS_OVERLAY.md",
+        "usr/share/doc/omen-linux/TEST_REPORT.md",
+        "usr/share/doc/omen-linux/VM_VALIDATION.md"
+      ]
+    },
+    "dependency_notices": 156,
+    "systemd_validation": {
+      "exit_code": 0,
+      "method": "unmodified unit in extracted package root; no unit started"
+    }
+  },
+  "package_lifecycle": {
+    "result": "passed",
+    "checks_passed": 19,
+    "evidence": {
+      "path": "package-lifecycle.json",
+      "sha256": "6b6b8af8af7fd4781f82a7e80ff002a49dd139b41f25f209e63571a8ca33ad82"
+    },
+    "container_removed": true
+  },
+  "systemd_vm": {
+    "result": "passed",
+    "checks_passed": 17,
+    "evidence": {
+      "path": "vm-systemd.json",
+      "sha256": "d1fdd1b71abac3f20274b113e96981a5a1341b1a1ae6a7958efff1b9b71a83f4"
+    },
+    "vm_exit_code": 0,
+    "private_inputs_removed": true
+  },
+  "global_shortcuts_and_overlay": {
+    "debug_x11": {
+      "checks_passed": 32,
+      "fixture_only_controls": true,
+      "gtk_display_type": "GdkX11Display",
+      "evidence": {
+        "path": "shortcuts-debug-x11.json",
+        "sha256": "fdcf0b7581a187facb34c0408a357ca61156cbd769be27cd09a9a5b9343b80ed"
+      }
+    },
+    "debug_wayland": {
+      "checks_passed": 32,
+      "fixture_only_controls": true,
+      "gtk_display_type": "GdkWaylandDisplay",
+      "evidence": {
+        "path": "shortcuts-debug-wayland.json",
+        "sha256": "03d70d033238391192908e7ce9a62a3b7189e4a426bdde457244ac10a2c1fa96"
+      }
+    },
+    "release_x11": {
+      "checks_passed": 32,
+      "fixture_only_controls": true,
+      "gtk_display_type": "GdkX11Display",
+      "evidence": {
+        "path": "shortcuts-release-x11.json",
+        "sha256": "6f952eeac8a9f4bee854fabc8a13b8baa1771a019a8a35c7e3c4679f50a70afb"
+      }
+    },
+    "release_wayland": {
+      "checks_passed": 32,
+      "fixture_only_controls": true,
+      "gtk_display_type": "GdkWaylandDisplay",
+      "evidence": {
+        "path": "shortcuts-release-wayland.json",
+        "sha256": "70247bfe496f314469b35ed944fc6b4f34d6a27ab3dc6c757364893272d0badb"
+      }
+    }
+  },
+  "native_settings": {
+    "debug": {
+      "settings_checks": 16,
+      "network_vitals_checks": 4,
+      "evidence": {
+        "path": "gui-settings-debug.json",
+        "sha256": "310627cf1a1e23e6e0c8bada24f7fe9d88d962208260bf9f735caa79edaf2551"
+      },
+      "gtk_display_type": "GdkWaylandDisplay"
+    },
+    "release": {
+      "settings_checks": 16,
+      "network_vitals_checks": 4,
+      "evidence": {
+        "path": "gui-settings-release.json",
+        "sha256": "8942022a1149660013d8003dc1e0d92a49fb535a393b330974395e57b5b54b34"
+      },
+      "gtk_display_type": "GdkWaylandDisplay"
+    }
+  },
+  "tray": {
+    "debug": {
+      "checks_passed": 6,
+      "evidence": {
+        "path": "tray-integration-debug.json",
+        "sha256": "52c9fc8ca163281fbb88bb03490e0880212cd8f579814888b6afed5480f06c4d"
+      },
+      "requested_gtk_backend": "x11"
+    },
+    "release": {
+      "checks_passed": 6,
+      "evidence": {
+        "path": "tray-integration-release.json",
+        "sha256": "4a036f7f9e1b091208c2c45b33fd5588bc8c3fe43a817a13cee956afac36dece"
+      },
+      "requested_gtk_backend": "wayland"
+    }
+  },
+  "fan_and_thermal": {
+    "debug": {
+      "thermal": {
+        "checks_passed": 11,
+        "evidence": {
+          "path": "thermal-debug.json",
+          "sha256": "9513116077f24c287532f7312b6f800b8c261703d6d776434c7062c1a1c4cd81"
+        }
+      },
+      "fan-guardian": {
+        "checks_passed": 8,
+        "evidence": {
+          "path": "fan-guardian-debug.json",
+          "sha256": "07ac50fdac5efd295a944e60c090506b4282ae07253160c19c38411fee66e05f"
+        }
+      },
+      "fan-monitoring": {
+        "checks_passed": 7,
+        "evidence": {
+          "path": "fan-monitoring-debug.json",
+          "sha256": "c6bda1537baba1919dee072808e84a06a2e5551219b0b26cb45b53f532a6f5a7"
+        },
+        "additional_scope": "independent live read-only mode comparison, zero physical control requests"
+      }
+    },
+    "release": {
+      "thermal": {
+        "checks_passed": 11,
+        "evidence": {
+          "path": "thermal-release.json",
+          "sha256": "a1c740842c6b84827f4d0433c738d936e36daee00f663de3bede5d2567821b1f"
+        }
+      },
+      "fan-guardian": {
+        "checks_passed": 8,
+        "evidence": {
+          "path": "fan-guardian-release.json",
+          "sha256": "d44c0f76421e4e0d3e1f0e58fd5be0b332b2332adb955735390c2b733fb3308a"
+        }
+      },
+      "fan-monitoring": {
+        "checks_passed": 7,
+        "evidence": {
+          "path": "fan-monitoring-release.json",
+          "sha256": "bcfb3a5923fa76880f5c3deaabec7c37811ffed156b2ba25fcca3fa8c313b9af"
+        },
+        "additional_scope": "independent live read-only mode comparison, zero physical control requests"
+      }
+    }
+  },
+  "settings_process": {
+    "debug": {
+      "checks_passed": 6,
+      "run_log": {
+        "path": "settings-debug-run.log",
+        "sha256": "e6be2d37fbe6c525a2ce75ac1224c36b19406f64dd3cc9e031be627f35273ffe"
+      },
+      "cli_sha256": "a35284a75be628d055d8e039662ecc6b56a8f74bcccd7657ff47e26e40d92f74"
+    },
+    "release": {
+      "checks_passed": 6,
+      "run_log": {
+        "path": "settings-release-run.log",
+        "sha256": "e6be2d37fbe6c525a2ce75ac1224c36b19406f64dd3cc9e031be627f35273ffe"
+      },
+      "cli_sha256": "a385fc6ea674d726d230a2db500a3ffda39ee8c53fbe8bc949c193dcb3c0c5bd"
+    }
+  },
+  "overlay_visuals": {
+    "path": "overlay-captures.json",
+    "sha256": "ce5738c6fbcec2aa38f6bbc226874b753a6b24bcab2ea152b5c1414d58359460"
+  },
+  "overlay_review": {
+    "path": "overlay-review.json",
+    "sha256": "57df3dc609bc18b08a3a41c19f8777fb144155ccb7f8b971035f707afdd4e581"
+  },
+  "performance": {
+    "method": "release binaries; 5-second windows; CPU percent of one logical core; page-cache-warm launches; live read-only monitoring",
+    "cpu_count": 12,
+    "cli_detect": {
+      "runs_seconds": [
+        0.08902405999833718,
+        0.07320979601354338,
+        0.07314776899875142,
+        0.0727830370014999,
+        0.07879043999128044
+      ],
+      "median_seconds": 0.07320979601354338
+    },
+    "daemon_socket_ready_seconds": 0.010798450006404892,
+    "daemon_idle_no_clients": {
+      "seconds": 5.000482217001263,
+      "rss_kib": 3624,
+      "cpu_pct_one_core": 0.0,
+      "reaped_children_cpu_pct_one_core": 0.0
+    },
+    "gui_without_overlay": {
+      "overlay_enabled": false,
+      "main_window_visible": true,
+      "window_map_seconds": 0.6802740090060979,
+      "gtk_display_type": "GdkWaylandDisplay",
+      "resources": {
+        "seconds": 5.000520478992257,
+        "rss_kib": 196528,
+        "cpu_pct_one_core": 2.3997501960872545,
+        "reaped_children_cpu_pct_one_core": 1.3998542810508983
+      }
+    },
+    "gui_with_overlay": {
+      "overlay_enabled": true,
+      "main_window_visible": true,
+      "window_map_seconds": 0.36786819400731474,
+      "gtk_display_type": "GdkWaylandDisplay",
+      "resources": {
+        "seconds": 5.0004953739990015,
+        "rss_kib": 202764,
+        "cpu_pct_one_core": 2.199782057033095,
+        "reaped_children_cpu_pct_one_core": 1.1998811220180519
+      }
+    },
+    "gui_window_map_seconds": 0.6802740090060979,
+    "gtk_display_type": "GdkWaylandDisplay",
+    "gui_monitoring_dashboard": {
+      "seconds": 5.000520478992257,
+      "rss_kib": 196528,
+      "cpu_pct_one_core": 2.3997501960872545,
+      "reaped_children_cpu_pct_one_core": 1.3998542810508983
+    },
+    "binary_sha256": {
+      "omen-cli": "a385fc6ea674d726d230a2db500a3ffda39ee8c53fbe8bc949c193dcb3c0c5bd",
+      "omen-daemon": "7a9fc552ea88a8f3fa578b359ab8040b16b73ce05fe7ae86ef85323c564a65be",
+      "omen-gui": "cba3f16de8307237920da1409943ed8b1e9c8473fd4e170a2cf93871754ba0bc"
+    },
+    "cleanup_complete": true,
+    "kernel": "7.0.0-38-generic",
+    "recorded_utc": "2026-10-26T13:55:17.677755+00:00",
+    "session_bus": "private minimal bus without host tray, portal or accessibility bus; package tests completed beforehand",
+    "limits": "Warm launches and five-second CPU/RSS observations; main visible in both modes, other host workloads uncontrolled; no cold-start or causal incremental-overhead claim"
+  },
+  "host_state": {
+    "recorded_utc": "2026-10-26T13:43:28.464598+00:00",
+    "method": "direct CLI detection and independent read-only sysfs identity/interface inventory; no hardware-control requests",
+    "detection_report": "Machine   : HP Victus by HP 15.6 inch Gaming Laptop PC-fb1002AX\nFamily    : 103C_5335M7 HP Victus  Board: 8C30\nBIOS      : F.10 (AMI)  Kernel: 7.0.0-38-generic\nClass     : Victus\n\nCapability                 Status       Detail\nFan monitoring             available    hp-wmi hwmon fan*_input\nFan manual control         unavailable  hp-wmi exposes no pwm1 for board 8C30 (board is not on the hp-wmi fan-control allowlist)\nFan curves                 unavailable  requires manual fan control\nPerformance profiles       read-only    monitoring mode; profile control requires explicit daemon opt-in for this board and BIOS\nLighting zones             unavailable  no kernel keyboard-lighting interface (model without RGB keyboard or module not installed)\nKeyboard backlight         unavailable  no keyboard backlight LED found\nGraphics MUX               unavailable  no mainline kernel MUX interface for this model (status/monitoring only)\nCharge threshold           unavailable  firmware/kernel does not expose charge_control_end_threshold\nBattery-aware              read-only    monitoring mode; profile control requires explicit daemon opt-in for this board and BIOS\nNVIDIA telemetry           available    nvidia-smi interface and NVIDIA device nodes accessible; suspended GPU sampling is skipped\nAMD telemetry              available    hwmon amdgpu\n",
+    "identity": {
+      "product_name": "Victus by HP 15.6 inch Gaming Laptop PC-fb1002AX",
+      "board_name": "8C30",
+      "bios_version": "F.10"
+    },
+    "kernel": "7.0.0-38-generic",
+    "hp_hwmon": [
+      {
+        "path": "/sys/class/hwmon/hwmon7",
+        "attributes": [
+          "pwm1_enable",
+          "fan1_input",
+          "fan2_input"
+        ],
+        "mode_readback": "2"
+      }
+    ],
+    "charging_interfaces": [],
+    "host_package_installed": false,
+    "host_service_file_present": false,
+    "approved_polkit_action_present": true,
+    "preexisting_daemon_2124598_present": true,
+    "cli_sha256": "a385fc6ea674d726d230a2db500a3ffda39ee8c53fbe8bc949c193dcb3c0c5bd",
+    "hardware_control_writes": 0
+  },
+  "host_changes": {
+    "new_physical_control_requests": 0,
+    "deb_installed": false,
+    "host_service_installed": false,
+    "agent_configuration_changes": false,
+    "analysis_engines_installed": false,
+    "host_shortcut_assignments": false,
+    "preexisting_mock_daemon": "PID 2124598 still present and untouched",
+    "polkit_action": "previously approved action remains present; no new installation",
+    "test_processes": "all current harnesses completed cleanup; no current test container or VM remains",
+    "development_crash_dumps": "four failed development GUI runs generated root-owned system-managed dumps for PIDs 2874887, 2877740, 2880060, 2881823; retained by host coredump policy. Local debugging core copy removed. Final native tests pass."
+  },
+  "hardware_scope": "Fresh read-only Victus 8C30/F.10/kernel 7.0.0-38-generic identity; mode-only hp hwmon with no manual PWM targets. No new live hardware-control support.",
+  "historical_evidence": {
+    "revision10_summary": {
+      "path": "revision10/validation-summary.json",
+      "sha256": "0555a41078cbd3d837f5c4cea2ba8056ded1870388af07c9f9771315c5cae731"
+    },
+    "live_profile_test": {
+      "evidence": "live-profile-test.json",
+      "repeated": false,
+      "scope": "earlier separately approved PPD Performance \u2192 Balanced \u2192 Performance transaction; no firmware thermal parity claim"
+    },
+    "not_repeated": [
+      "actual game/store execution",
+      "thermal provider calibration/physical cooling",
+      "Windows analysis/REA setup",
+      "every nine-page workflow or real graphical authentication lifecycle"
+    ]
+  },
+  "source_manifest": {
+    "path": "revision11-source-manifest.json",
+    "sha256": "b864ba361d0d524d16eaaef110c758d8520a04bf310e520be045625ff06a2bcb"
+  },
+  "limits": [
+    "Fixture/kernel policy readback is not measured airflow, settling, thermal safety or production fan crash recovery",
+    "Fan guardian still rejects sysfs and shares controller service cgroup; live fan writes stay blocked",
+    "Game lifetime/concurrent profile ownership remains unfinished software work, not claimed externally blocked",
+    "Overlay uses ordinary compositor-managed windows; no universal placement/fullscreen/key guarantee",
+    "Scale captures record requested settings and logical GTK renders, not effective physical DPI",
+    "Performance numbers are warm sequential five-second observations with uncontrolled other host workloads",
+    "No new goal was created or previous goal-runner status changed"
+  ]
+}

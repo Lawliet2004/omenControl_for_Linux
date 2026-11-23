@@ -1,0 +1,17 @@
+[
+  "plasma-desktop",
+  "sddm",
+  "polkit-kde-agent-1",
+  "xdg-desktop-portal-kde",
+  "python3-gi",
+  "gir1.2-atspi-2.0",
+  "at-spi2-core",
+  "dbus-user-session",
+  "xwayland",
+  "xauth",
+  "xserver-xorg-core",
+  "xserver-xorg-input-libinput",
+  "plasma-session-wayland",
+  "sddm-theme-breeze",
+  "python3-libevdev"
+]

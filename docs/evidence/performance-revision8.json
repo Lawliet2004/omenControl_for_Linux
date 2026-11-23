@@ -1,0 +1,37 @@
+{
+  "method": "release binaries; 5-second windows; CPU percent of one logical core; page-cache-warm launches; live read-only monitoring",
+  "cpu_count": 12,
+  "cli_detect": {
+    "runs_seconds": [
+      0.08598144099232741,
+      0.07355676297447644,
+      0.07292766799218953,
+      0.07201581000117585,
+      0.10176249299547635
+    ],
+    "median_seconds": 0.07355676297447644
+  },
+  "daemon_socket_ready_seconds": 0.010921827022684738,
+  "daemon_idle_no_clients": {
+    "seconds": 5.000531798985321,
+    "rss_kib": 3568,
+    "cpu_pct_one_core": 0.0,
+    "reaped_children_cpu_pct_one_core": 0.0
+  },
+  "gui_window_map_seconds": 0.7235159260162618,
+  "gtk_display_type": "GdkWaylandDisplay",
+  "gui_monitoring_dashboard": {
+    "seconds": 5.000509317993419,
+    "rss_kib": 150368,
+    "cpu_pct_one_core": 2.999694440329356,
+    "reaped_children_cpu_pct_one_core": 1.3998574054870327
+  },
+  "binary_sha256": {
+    "omen-cli": "f69565226fe4085d96a6ef971cb6867bae84695f4005b2e799526461b98277c5",
+    "omen-daemon": "263c9594259c2721ab064bab38743b590225ce2a47481b32de7d761fb54124a5",
+    "omen-gui": "f351d30d74e50349047466fd628d884c7080f652705a8f9bf059b6918d51fa04"
+  },
+  "kernel": "7.0.0-38-generic",
+  "recorded_utc": "2026-10-26T06:25:42.506866+00:00",
+  "session_bus": "private minimal bus without host tray or portal; package VM and container tests completed before this run"
+}

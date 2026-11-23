@@ -1,0 +1,37 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "system_power_bus_used": false,
+  "profile": "release",
+  "requested_gtk_backend": "wayland",
+  "gui_sha256": "516b722be9cd8c57b13f401e714bcb0a2affb2a120e771ff9f14ccce00bd2fc3",
+  "cli_sha256": "f0e5c0b08cfec6f32ecb94e39ca65a990f46af4f4ee7bd0dd74c8c562484cf30",
+  "checks_passed": [
+    "a denial after the submission receipt appears in native Launch issues without execution or profile changes",
+    "worker and GUI observers coalesce to one private reason without captured errors, command arguments or output",
+    "native Clear launch issues resets desktop reports and leaves games, daemon history and profiles unchanged",
+    "a wrapper failure while the GUI is closed is visible when Game Library reopens",
+    "damaged saved data is preserved, late failures remain live in the GUI, and explicit reset recovers",
+    "CLI inspection and clearing require no hardware discovery, game execution or profile write"
+  ],
+  "captures": [],
+  "closed_wrapper_stderr": "permission denied: SECRET_PRIVATE_ERROR\n",
+  "closed_wrapper_saved_issues": {
+    "version": 1,
+    "uid": 1000,
+    "issues": [
+      {
+        "id": "63e016ea930bf28851696d6a79c9d4d2",
+        "game_id": "custom/denied",
+        "scope_token": "9802568ed33079ad13e669445c8939a0",
+        "stage": "registration",
+        "reason": {
+          "kind": "authorization"
+        },
+        "occurred_unix_ms": 1793125810054
+      }
+    ]
+  },
+  "cleanup_complete": true
+}

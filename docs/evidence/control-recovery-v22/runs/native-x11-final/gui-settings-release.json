@@ -1,0 +1,97 @@
+{
+  "result": "passed",
+  "profile": "release",
+  "fixture_only": true,
+  "live_hardware_writes": false,
+  "interaction": "AT-SPI actions, editable text and native file-list selection; no injected application test actions",
+  "picker": "real GTK fallback; private bus has no desktop portal",
+  "requested_gtk_backend": "x11",
+  "checks_passed": [
+    "temperature notifications are disabled by default",
+    "sensor search hides unmatched readings, finds an identifier and restores readings when cleared",
+    "fixture game launch exposes an explicit restoration action that restores the prior profile",
+    "a different profile selected after launch is preserved and disables the restoration action",
+    "readable history remains stable during polling and refreshes only on request",
+    "native export picker cancellation leaves user and service settings unchanged",
+    "native user export writes private, scoped JSON without changing either configuration",
+    "native import picker cancellation leaves both configurations unchanged",
+    "user import preview displays notification settings and cancellation preserves both configurations",
+    "native user import saves the selected preferences only to the desktop file",
+    "native service export reads production IPC and writes a private service-only backup",
+    "scope-mismatched native user import displays an error without configuration changes",
+    "malformed native import preserves existing configuration and reports failure",
+    "oversized native import reports its size limit and preserves configuration",
+    "service preview shows selected automation and cancellation never sends a mutation",
+    "explicit native Apply persists service policy through IPC while leaving desktop settings unchanged",
+    "profile controls become read-only after the imported battery policy takes ownership",
+    "restoring service policies re-enables profile controls without restarting the application",
+    "native diagnostics export identifies fixture hardware and writes private JSON",
+    "daemon loss during service preview reports failure without saving to either configuration",
+    "daemon loss disables profile controls and explains the missing capability",
+    "desktop settings export remains usable after the service disconnects",
+    "application menu reopens the skippable welcome; native dismissal persists and diagnostics navigation works"
+  ],
+  "network_checks_passed": [
+    "Vitals shows fixture interface identity and measured idle rates without live network data",
+    "Vitals updates sampled rates, errors and drops from changed fixture counters",
+    "network updates retain the same native accessible text object instead of replacing its row",
+    "a changed kernel interface index replaces the old row even when its name is reused",
+    "missing fixture counters show an unavailable reason without falling back to the host",
+    "recovered Vitals replaces removed interface rows with the new identity"
+  ],
+  "health_checks_passed": [
+    "health center shows fixture provenance, monitoring age, identity and connected service",
+    "service loss is reflected in the health button and diagnostics"
+  ],
+  "binary_sha256": "2be2222626f576aa35618ca4573bfded789c4334ba0794cf882264a6d626dc01",
+  "observed_picker_selections": [
+    {
+      "dialog": "Import user settings\u2026",
+      "file": "user backup \u03bb.json",
+      "selected": true
+    },
+    {
+      "dialog": "Import user settings\u2026",
+      "file": "user backup \u03bb.json",
+      "selected": true
+    },
+    {
+      "dialog": "Import user settings\u2026",
+      "file": "user backup \u03bb.json",
+      "selected": true
+    },
+    {
+      "dialog": "Import user settings\u2026",
+      "file": "user backup \u03bb.json",
+      "selected": true
+    },
+    {
+      "dialog": "Import user settings\u2026",
+      "file": "user backup \u03bb.json",
+      "selected": true
+    },
+    {
+      "dialog": "Import service policies\u2026",
+      "file": "service policies.json",
+      "selected": true
+    },
+    {
+      "dialog": "Import service policies\u2026",
+      "file": "service policies.json",
+      "selected": true
+    },
+    {
+      "dialog": "Import service policies\u2026",
+      "file": "service policies.json",
+      "selected": true
+    },
+    {
+      "dialog": "Import service policies\u2026",
+      "file": "service policies.json",
+      "selected": true
+    }
+  ],
+  "gtk_display_type": "GdkX11Display",
+  "cleanup_complete": true,
+  "recorded_utc": "2026-10-28T07:27:30.552071+00:00"
+}

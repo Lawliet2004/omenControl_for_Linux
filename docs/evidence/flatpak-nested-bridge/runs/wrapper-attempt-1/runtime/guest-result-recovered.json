@@ -1,0 +1,192 @@
+{
+  "checks_passed": [
+    "real systemd starts the installed read-only daemon; UID 1000 connects to its production socket",
+    "sandboxed installed service exposes real per-interface network counters and sampled rates to UID 1000",
+    "running process has NoNewPrivileges, seccomp and only CAP_DAC_OVERRIDE",
+    "actual mount namespace enforces read-only system/sysfs, writable service paths, hidden home and private tmp",
+    "sandboxed production pkcheck/polkit denies, grants a VM-only admin save and observes rule revocation",
+    "systemd stop removes the socket and RuntimeDirectory",
+    "systemd start/restart creates a new responding daemon",
+    "Restart=on-failure recovers the read-only service and socket after guest-only SIGKILL",
+    "packaged experimental writer is static and never enabled by installation",
+    "packaged writer sandbox starts without an unowned fixture write",
+    "writer has a separate cgroup and only the exact fixture mode attribute is writable",
+    "killing the controller entire service cgroup leaves independent Automatic recovery alive",
+    "systemd restarts a killed writer and its journal restores Automatic while controller remains stopped",
+    "old controller lease cannot reapply Maximum after writer restart",
+    "normal controller service stop restores Automatic without a broad hwmon sweep",
+    "independently scheduled writer expires a stopped controller lease in the real systemd guest",
+    "package removal hook preserves its executable and refuses to discard pending recovery intent",
+    "static socket activates a capability-free DynamicUser reader behind a root-private PID-1 endpoint",
+    "live client rejects fixture frames and desktop users cannot impersonate or access the control telemetry endpoint",
+    "identified active NVIDIA temperature passes fixture preflight; stale/future data restores Auto and cannot rearm itself",
+    "telemetry service loss restores Automatic without widening the controller device sandbox or using a user cache",
+    "installed service sandbox admits production-polkit-authorized desktop wrapper through peer pidfd and real cgroup v2",
+    "read-only cgroup sandbox observes exit and releases private PPD hold, persisting a root-owned private journal",
+    "installed sandbox restart preserves game execution and recovers Interrupted history without reapplying authority"
+  ],
+  "test_payload_sha256": "a1b4924093af386ab5e754cabd8e05c5642674942e7c2b2cddbbe9994b560b5f",
+  "initial_boot_id": "b8f83502-f366-468c-9c4e-7fa422bc1326",
+  "kernel": "7.0.0-38-generic",
+  "systemd_version": "systemd 259 (259.5-0ubuntu3.4)",
+  "network_monitoring": {
+    "interfaces": [
+      {
+        "ifindex": 2,
+        "link_state": "up",
+        "loopback": false,
+        "name": "enp0s1",
+        "rx_bytes": 150794830,
+        "rx_bytes_per_second": 0.0,
+        "rx_dropped_or_missed": 0,
+        "rx_errors": 0,
+        "tx_bytes": 589800,
+        "tx_bytes_per_second": 0.0,
+        "tx_dropped": 0,
+        "tx_errors": 0
+      },
+      {
+        "ifindex": 1,
+        "link_state": "unknown",
+        "loopback": true,
+        "name": "lo",
+        "rx_bytes": 27220,
+        "rx_bytes_per_second": 0.0,
+        "rx_dropped_or_missed": 0,
+        "rx_errors": 0,
+        "tx_bytes": 27220,
+        "tx_bytes_per_second": 0.0,
+        "tx_dropped": 0,
+        "tx_errors": 0
+      }
+    ],
+    "interval_ms": 327,
+    "measured_unix_ms": 1793188717568,
+    "omitted_interfaces": 0,
+    "source": "kernel",
+    "unreadable_interfaces": 0
+  },
+  "loaded_sandbox_properties": "FragmentPath=/usr/lib/systemd/system/omen-linux.service\nReadWritePaths=/run/omen-linux /etc/omen-linux\nReadOnlyPaths=\nPrivateTmp=yes\nProtectKernelTunables=yes\nProtectHome=yes\nProtectSystem=strict\n",
+  "manager_mount_namespace": "mnt:[4026531832]",
+  "service_mount_namespace": "mnt:[4026532310]",
+  "sysfs_mountinfo": [
+    "420 414 0:25 / /sys rw,nosuid,nodev,noexec,relatime shared:351 master:5 - sysfs sysfs rw",
+    "421 420 0:8 / /sys/kernel/security rw,nosuid,nodev,noexec,relatime shared:352 master:6 - securityfs securityfs rw",
+    "422 420 0:29 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime shared:353 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting",
+    "423 420 0:30 / /sys/fs/pstore rw,nosuid,nodev,noexec,relatime shared:354 master:8 - pstore none rw",
+    "424 420 0:31 / /sys/fs/bpf rw,nosuid,nodev,noexec,relatime shared:355 master:9 - bpf bpf rw,mode=700",
+    "425 420 0:21 / /sys/kernel/config rw,nosuid,nodev,noexec,relatime shared:356 master:10 - configfs configfs rw",
+    "426 420 0:9 / /sys/kernel/debug rw,nosuid,nodev,noexec,relatime shared:357 master:16 - debugfs debugfs rw",
+    "427 420 0:14 / /sys/kernel/tracing rw,nosuid,nodev,noexec,relatime shared:358 master:17 - tracefs tracefs rw",
+    "428 420 0:36 / /sys/fs/fuse/connections rw,nosuid,nodev,noexec,relatime shared:359 master:20 - fusectl fusectl rw",
+    "436 420 0:25 / /sys ro,nosuid,nodev,noexec,relatime shared:360 master:5 - sysfs sysfs rw",
+    "437 436 0:8 / /sys/kernel/security ro,nosuid,nodev,noexec,relatime shared:361 master:6 - securityfs securityfs rw",
+    "438 436 0:29 / /sys/fs/cgroup ro,nosuid,nodev,noexec,relatime shared:362 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting",
+    "457 436 0:30 / /sys/fs/pstore ro,nosuid,nodev,noexec,relatime shared:364 master:8 - pstore none rw",
+    "458 436 0:31 / /sys/fs/bpf ro,nosuid,nodev,noexec,relatime shared:365 master:9 - bpf bpf rw,mode=700",
+    "459 436 0:21 / /sys/kernel/config ro,nosuid,nodev,noexec,relatime shared:366 master:10 - configfs configfs rw",
+    "460 436 0:9 / /sys/kernel/debug ro,nosuid,nodev,noexec,relatime shared:367 master:16 - debugfs debugfs rw",
+    "461 436 0:14 / /sys/kernel/tracing ro,nosuid,nodev,noexec,relatime shared:368 master:17 - tracefs tracefs rw",
+    "462 436 0:36 / /sys/fs/fuse/connections ro,nosuid,nodev,noexec,relatime shared:369 master:20 - fusectl fusectl rw",
+    "463 438 0:29 /system.slice/omen-linux.service/memory.pressure /sys/fs/cgroup/system.slice/omen-linux.service/memory.pressure rw,nosuid,nodev,noexec,relatime shared:363 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting"
+  ],
+  "service_mount_options": {
+    "/sys": {
+      "options": "rw,nosuid,nodev,noexec,relatime\nro,nosuid,nodev,noexec,relatime",
+      "statvfs_readonly": true,
+      "expected_writable": false
+    },
+    "/etc/hostname": {
+      "options": "ro,nosuid,relatime",
+      "statvfs_readonly": true,
+      "expected_writable": false
+    },
+    "/etc/omen-linux": {
+      "options": "rw,nosuid,relatime",
+      "statvfs_readonly": false,
+      "expected_writable": true
+    },
+    "/run/omen-linux": {
+      "options": "rw,nosuid,nodev",
+      "statvfs_readonly": false,
+      "expected_writable": true
+    }
+  },
+  "coarse_recovery_fixture_only": true,
+  "coarse_recovery_cleanup_complete": true,
+  "isolated_nvidia_fixture_only": true,
+  "isolated_nvidia_cleanup_complete": true,
+  "managed_session_fixture": {
+    "helper_sha256": "151c0c32947632d88dea295ef2a7bf29fcced95fc8721cf4a3358984ed27028a",
+    "private_ppd": true,
+    "physical_hardware_writes": false,
+    "production_polkit": true,
+    "installed_service_sandbox": true,
+    "cleanup_complete": true
+  },
+  "flatpak_wrapper_probe": {
+    "result": "failed",
+    "checks_passed": [
+      "a signed distro flatpak-spawn and unchanged wrapper run against the installed root service sandbox, normal polkit and a private PPD provider",
+      "the desktop user can create and enter a nested group beneath the real Flatpak scope without changing its memory, CPU or task limits",
+      "missing org.freedesktop.Flatpak permission prevents command execution and profile ownership; no override is added",
+      "real HostCommand handoff executes the actual sandbox command and returns its nonzero exit 7 unchanged",
+      "paired direct and wrapped SIGTERM commands return the same Flatpak status and release the hold after signal exit",
+      "a wrapper inheriting ignored SIGCHLD executes the original command and preserves exit 7 without waiting for an auto-reaped helper"
+    ],
+    "physical_hardware_writes": false,
+    "real_game_tested": false,
+    "real_store_launcher_tested": false,
+    "local_fixture_only": true,
+    "production_root_service_sandbox": true,
+    "production_polkit": true,
+    "private_ppd": true,
+    "development_cli_sha256": "70a59e6ccdc37cc3dd907e31af7a9e81054cc5178ec143e0da06038fe2a9f562",
+    "installed_cli_before_sha256": "fabbc592f8bf9666010bd7d5d1244ae45b799b6aab3c15226d25eec63ae67963",
+    "wrapper_sha256": "f11b3d68396a8b30d331cf39499b66a74bb15260e41b7c220287e519f964c853",
+    "helper_sha256": "151c0c32947632d88dea295ef2a7bf29fcced95fc8721cf4a3358984ed27028a",
+    "source_sha256": "31262427fd22fdfd0c517cbe2c7c67fa02a76d13f3fcd51f0f5451467ea7fbdb",
+    "flatpak_version": "Flatpak 1.16.6",
+    "nested_cgroup_capability": {
+      "policy": {
+        "memory.max": "268435456",
+        "cpu.max": "50000 100000",
+        "pids.max": "64"
+      },
+      "observation": {
+        "uid": 1000,
+        "before": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/omen-nested-capability-4982.scope\n",
+        "after": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-org.omenlinux.WrapperProbe-403614808.scope/omen-game-cee1b09579489868fd34474275785029.scope\n",
+        "child": "/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-org.omenlinux.WrapperProbe-403614808.scope/omen-game-cee1b09579489868fd34474275785029.scope",
+        "parent_uid": 1000,
+        "child_uid": 1000
+      },
+      "child_removed": true
+    },
+    "signal_results": [
+      {
+        "label": "signal-baseline",
+        "returncode": 143,
+        "output": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): No such file or directory\nGAME_PID=2\nGAME_CWD=/home/ubuntu\nGAME_ENV=sandbox dynamic value\nARG=signal\u0000ARG=two words\u0000ARG=\u0000ARG=literal $HOME\u0000ARG=\u03b1\u0000ARG=--flag\u0000\n0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-org.omenlinux.WrapperProbe-1549079332.scope\nName:\tcat\nUmask:\t0022\nState:\tR (running)\nTgid:\t4\nNgid:\t0\nPid:\t4\nPPid:\t2\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t256\nGroups:\t65534 65534 65534 65534 65534 1000 \nNStgid:\t4\nNSpid:\t4\nNSpgid:\t0\nNSsid:\t0\nKthread:\t0\nVmPeak:\t   17652 kB\nVmSize:\t   17652 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t    9540 kB\nVmRSS:\t    9540 kB\nRssAnon:\t    1332 kB\nRssFile:\t    8208 kB\nRssShmem:\t       0 kB\nVmData:\t     292 kB\nVmStk:\t     132 kB\nVmExe:\t    4928 kB\nVmLib:\t    3972 kB\nVmPTE:\t      80 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffffff\nThreads:\t1\nSigQ:\t0/1192\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000000001000\nSigCgt:\t0000000000000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\t3\nCpus_allowed_list:\t0-1\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t0\nnonvoluntary_ctxt_switches:\t0\nx86_Thread_features:\t\nx86_Thread_features_locked:\t\n"
+      },
+      {
+        "label": "signal-wrapped",
+        "returncode": 143,
+        "output": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): No such file or directory\nGAME_PID=2\nGAME_CWD=/home/ubuntu\nGAME_ENV=sandbox dynamic value\nARG=signal\u0000ARG=two words\u0000ARG=\u0000ARG=literal $HOME\u0000ARG=\u03b1\u0000ARG=--flag\u0000\n0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-org.omenlinux.WrapperProbe-3329108749.scope/omen-game-2afe160b4eb0dc65c9563a4acea22ff6.scope\nName:\tcat\nUmask:\t0022\nState:\tR (running)\nTgid:\t8\nNgid:\t0\nPid:\t8\nPPid:\t2\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t256\nGroups:\t65534 65534 65534 65534 65534 1000 \nNStgid:\t8\nNSpid:\t8\nNSpgid:\t0\nNSsid:\t0\nKthread:\t0\nVmPeak:\t   17652 kB\nVmSize:\t   17652 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t    8996 kB\nVmRSS:\t    8996 kB\nRssAnon:\t    1332 kB\nRssFile:\t    7664 kB\nRssShmem:\t       0 kB\nVmData:\t     292 kB\nVmStk:\t     132 kB\nVmExe:\t    4928 kB\nVmLib:\t    3972 kB\nVmPTE:\t      68 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffffff\nThreads:\t1\nSigQ:\t0/1192\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000000001000\nSigCgt:\t0000000000000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\t3\nCpus_allowed_list:\t0-1\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t0\nnonvoluntary_ctxt_switches:\t1\nx86_Thread_features:\t\nx86_Thread_features_locked:\t\n"
+      }
+    ],
+    "error": "FileNotFoundError: [Errno 2] No such file or directory: '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-org.omenlinux.WrapperProbe-3240268756.scope/omen-game-cce384812ef1e573c18bac1933c36b17.scope/memory.max'",
+    "installed_cli_restored": true,
+    "logs": {
+      "resource-policy.log": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): No such file or directory\nLAUNCHER_CWD=/home/ubuntu/.var/app/org.omenlinux.WrapperProbe/data/working directory\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): No such file or directory\nGAME_PID=5\nGAME_CWD=/home/ubuntu/.var/app/org.omenlinux.WrapperProbe/data/working directory\nGAME_ENV=sandbox dynamic value\nARG=long\u0000ARG=two words\u0000ARG=\u0000ARG=literal $HOME\u0000ARG=\u03b1\u0000ARG=--flag\u0000\n0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-org.omenlinux.WrapperProbe-3240268756.scope/omen-game-cce384812ef1e573c18bac1933c36b17.scope\nName:\tcat\nUmask:\t0022\nState:\tR (running)\nTgid:\t11\nNgid:\t0\nPid:\t11\nPPid:\t5\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t256\nGroups:\t65534 65534 65534 65534 65534 1000 \nNStgid:\t11\nNSpid:\t11\nNSpgid:\t0\nNSsid:\t0\nKthread:\t0\nVmPeak:\t   17652 kB\nVmSize:\t   17652 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t    9132 kB\nVmRSS:\t    9132 kB\nRssAnon:\t    1332 kB\nRssFile:\t    7800 kB\nRssShmem:\t       0 kB\nVmData:\t     292 kB\nVmStk:\t     132 kB\nVmExe:\t    4928 kB\nVmLib:\t    3972 kB\nVmPTE:\t      76 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffffff\nThreads:\t1\nSigQ:\t0/1192\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000000001000\nSigCgt:\t0000000000000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\t3\nCpus_allowed_list:\t0-1\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t0\nnonvoluntary_ctxt_switches:\t0\nx86_Thread_features:\t\nx86_Thread_features_locked:\t\n",
+      "ignored-sigchld.log": "sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): No such file or directory\n/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): No such file or directory\nGAME_PID=2\nGAME_CWD=/home/ubuntu\nGAME_ENV=sandbox dynamic value\nARG=normal\u0000ARG=two words\u0000ARG=\u0000ARG=literal $HOME\u0000ARG=\u03b1\u0000ARG=--flag\u0000\n0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-org.omenlinux.WrapperProbe-3475145132.scope/omen-game-94c20a9d4d9fdd7cd84ca50b7d41d168.scope\nName:\tcat\nUmask:\t0022\nState:\tR (running)\nTgid:\t8\nNgid:\t0\nPid:\t8\nPPid:\t2\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t256\nGroups:\t65534 65534 65534 65534 65534 1000 \nNStgid:\t8\nNSpid:\t8\nNSpgid:\t0\nNSsid:\t0\nKthread:\t0\nVmPeak:\t   17652 kB\nVmSize:\t   17652 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t    9664 kB\nVmRSS:\t    9664 kB\nRssAnon:\t    1332 kB\nRssFile:\t    8332 kB\nRssShmem:\t       0 kB\nVmData:\t     292 kB\nVmStk:\t     132 kB\nVmExe:\t    4928 kB\nVmLib:\t    3972 kB\nVmPTE:\t      68 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffffff\nThreads:\t1\nSigQ:\t0/1192\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000000011000\nSigCgt:\t0000000000000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\t3\nCpus_allowed_list:\t0-1\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t0\nnonvoluntary_ctxt_switches:\t3\nx86_Thread_features:\t\nx86_Thread_features_locked:\t\n",
+      "signal-wrapped.log": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): No such file or directory\nGAME_PID=2\nGAME_CWD=/home/ubuntu\nGAME_ENV=sandbox dynamic value\nARG=signal\u0000ARG=two words\u0000ARG=\u0000ARG=literal $HOME\u0000ARG=\u03b1\u0000ARG=--flag\u0000\n0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-org.omenlinux.WrapperProbe-3329108749.scope/omen-game-2afe160b4eb0dc65c9563a4acea22ff6.scope\nName:\tcat\nUmask:\t0022\nState:\tR (running)\nTgid:\t8\nNgid:\t0\nPid:\t8\nPPid:\t2\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t256\nGroups:\t65534 65534 65534 65534 65534 1000 \nNStgid:\t8\nNSpid:\t8\nNSpgid:\t0\nNSsid:\t0\nKthread:\t0\nVmPeak:\t   17652 kB\nVmSize:\t   17652 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t    8996 kB\nVmRSS:\t    8996 kB\nRssAnon:\t    1332 kB\nRssFile:\t    7664 kB\nRssShmem:\t       0 kB\nVmData:\t     292 kB\nVmStk:\t     132 kB\nVmExe:\t    4928 kB\nVmLib:\t    3972 kB\nVmPTE:\t      68 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffffff\nThreads:\t1\nSigQ:\t0/1192\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000000001000\nSigCgt:\t0000000000000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\t3\nCpus_allowed_list:\t0-1\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t0\nnonvoluntary_ctxt_switches:\t1\nx86_Thread_features:\t\nx86_Thread_features_locked:\t\n",
+      "signal-baseline.log": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): No such file or directory\nGAME_PID=2\nGAME_CWD=/home/ubuntu\nGAME_ENV=sandbox dynamic value\nARG=signal\u0000ARG=two words\u0000ARG=\u0000ARG=literal $HOME\u0000ARG=\u03b1\u0000ARG=--flag\u0000\n0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-org.omenlinux.WrapperProbe-1549079332.scope\nName:\tcat\nUmask:\t0022\nState:\tR (running)\nTgid:\t4\nNgid:\t0\nPid:\t4\nPPid:\t2\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t256\nGroups:\t65534 65534 65534 65534 65534 1000 \nNStgid:\t4\nNSpid:\t4\nNSpgid:\t0\nNSsid:\t0\nKthread:\t0\nVmPeak:\t   17652 kB\nVmSize:\t   17652 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t    9540 kB\nVmRSS:\t    9540 kB\nRssAnon:\t    1332 kB\nRssFile:\t    8208 kB\nRssShmem:\t       0 kB\nVmData:\t     292 kB\nVmStk:\t     132 kB\nVmExe:\t    4928 kB\nVmLib:\t    3972 kB\nVmPTE:\t      80 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffffff\nThreads:\t1\nSigQ:\t0/1192\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000000001000\nSigCgt:\t0000000000000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\t3\nCpus_allowed_list:\t0-1\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t0\nnonvoluntary_ctxt_switches:\t0\nx86_Thread_features:\t\nx86_Thread_features_locked:\t\n",
+      "direct-exit.log": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): No such file or directory\nGAME_PID=2\nGAME_CWD=/home/ubuntu\nGAME_ENV=sandbox dynamic value\nARG=normal\u0000ARG=two words\u0000ARG=\u0000ARG=literal $HOME\u0000ARG=\u03b1\u0000ARG=--flag\u0000\n0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-org.omenlinux.WrapperProbe-2825297793.scope/omen-game-c03ee520f9a25c187c830431fa8f1041.scope\nName:\tcat\nUmask:\t0022\nState:\tR (running)\nTgid:\t8\nNgid:\t0\nPid:\t8\nPPid:\t2\nTracerPid:\t0\nUid:\t1000\t1000\t1000\t1000\nGid:\t1000\t1000\t1000\t1000\nFDSize:\t256\nGroups:\t65534 65534 65534 65534 65534 1000 \nNStgid:\t8\nNSpid:\t8\nNSpgid:\t0\nNSsid:\t0\nKthread:\t0\nVmPeak:\t   17652 kB\nVmSize:\t   17652 kB\nVmLck:\t       0 kB\nVmPin:\t       0 kB\nVmHWM:\t    9584 kB\nVmRSS:\t    9584 kB\nRssAnon:\t    1332 kB\nRssFile:\t    8252 kB\nRssShmem:\t       0 kB\nVmData:\t     292 kB\nVmStk:\t     132 kB\nVmExe:\t    4928 kB\nVmLib:\t    3972 kB\nVmPTE:\t      72 kB\nVmSwap:\t       0 kB\nHugetlbPages:\t       0 kB\nCoreDumping:\t0\nTHP_enabled:\t1\nuntag_mask:\t0xffffffffffffffff\nThreads:\t1\nSigQ:\t0/1192\nSigPnd:\t0000000000000000\nShdPnd:\t0000000000000000\nSigBlk:\t0000000000000000\nSigIgn:\t0000000000001000\nSigCgt:\t0000000000000000\nCapInh:\t0000000000000000\nCapPrm:\t0000000000000000\nCapEff:\t0000000000000000\nCapBnd:\t0000000000000000\nCapAmb:\t0000000000000000\nNoNewPrivs:\t1\nSeccomp:\t2\nSeccomp_filters:\t1\nSpeculation_Store_Bypass:\tthread vulnerable\nSpeculationIndirectBranch:\tconditional enabled\nCpus_allowed:\t3\nCpus_allowed_list:\t0-1\nMems_allowed:\t00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000000,00000001\nMems_allowed_list:\t0\nvoluntary_ctxt_switches:\t0\nnonvoluntary_ctxt_switches:\t0\nx86_Thread_features:\t\nx86_Thread_features_locked:\t\n",
+      "permission-denied.log": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): No such file or directory\nLAUNCHER_CWD=/home/ubuntu/.var/app/org.omenlinux.WrapperProbe/data/working directory\nPortal call failed: org.freedesktop.DBus.Error.ServiceUnknown\nHint: --host only works when the Flatpak is allowed to talk to org.freedesktop.Flatpak\nOMEN Flatpak wrapper: preparation failed; the game was not started\nLAUNCHER_EXIT=1\n",
+      "private-ppd.log": "",
+      "private-bus.log": ""
+    },
+    "fixture_cleanup_complete": true
+  }
+}

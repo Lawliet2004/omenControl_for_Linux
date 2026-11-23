@@ -1,0 +1,8 @@
+{
+  "package": "filelock",
+  "version": "3.20.0",
+  "url": "https://files.pythonhosted.org/packages/76/91/7216b27286936c16f5b4d0c530087e4a54eead683e6b0b73dd0c64844af6/filelock-3.20.0-py3-none-any.whl",
+  "sha256": "339b4732ffda5cd79b13f4e2711a31b0365ce445d95d243bb996273d072546a2",
+  "test_only": true,
+  "host_installation": false
+}

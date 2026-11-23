@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-10-26T05:27:06.487688+00:00",
+  "result": "passed",
+  "repository": "https://github.com/theantipopau/omencore",
+  "commit": "840f03d58ddd4c3a709780b6d635828d9ef3d87c",
+  "selected_files": 42,
+  "checks": {
+    "all_selected_file_sizes_match_git_tree": true,
+    "all_selected_git_blob_hashes_match_tree": true,
+    "all_selected_sha256_match_manifest": true,
+    "canonical_mutual_links_verified": true
+  },
+  "target_code_executed": false,
+  "upstream_test_suite_executed": false,
+  "hardware_control_writes": 0,
+  "report": "../OMENCORE_REVIEW.md"
+}

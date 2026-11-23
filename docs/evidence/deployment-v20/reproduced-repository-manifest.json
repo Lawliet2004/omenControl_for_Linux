@@ -1,0 +1,1093 @@
+{
+  "archive": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/complete-repository.tar",
+  "archive_bytes": 53473280,
+  "sha256": "8aeeeb8cb5bef30b8086256fc95a5b0dd2e6cd9af9139fb8c4f33e89863fdefd",
+  "metadata_only": false,
+  "signed_indices": [
+    {
+      "suite": "resolute",
+      "InRelease_sha256": "45f95ce276cdba3e41870516a130e03c58b8b7a79e9546b0efe9e526d255740c",
+      "Packages_sha256": "92eb335c0ed27983d41a5a0efdf0edce3e67bfa34e8e987af9df260ca72d9bf9",
+      "signature_status": [
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED F6ECB3762474EDA9D21B7022871920D1991BC93C 0",
+        "[GNUPG:] SIG_ID u7N3KdZlUUFKlEUkoinMi3cQWWU 2026-04-23 1776964050",
+        "[GNUPG:] GOODSIG 871920D1991BC93C Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>",
+        "[GNUPG:] VALIDSIG F6ECB3762474EDA9D21B7022871920D1991BC93C 2026-04-23 1776964050 0 4 0 1 10 01 F6ECB3762474EDA9D21B7022871920D1991BC93C"
+      ]
+    },
+    {
+      "suite": "resolute-updates",
+      "InRelease_sha256": "ca00e6847ec2681b1c1554890c857e87915f5bc7d09b3bc9d1e78805a6c18d44",
+      "Packages_sha256": "b64b2f4daa5419ae0908b0faf81f26032d6218e55c5134a94e9848804085d4c0",
+      "signature_status": [
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED F6ECB3762474EDA9D21B7022871920D1991BC93C 0",
+        "[GNUPG:] SIG_ID plWijTxlrsPcGDphin78pG7fQOw 2026-10-26 1793031031",
+        "[GNUPG:] GOODSIG 871920D1991BC93C Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>",
+        "[GNUPG:] VALIDSIG F6ECB3762474EDA9D21B7022871920D1991BC93C 2026-10-26 1793031031 0 4 0 1 10 01 F6ECB3762474EDA9D21B7022871920D1991BC93C"
+      ]
+    },
+    {
+      "suite": "resolute-security",
+      "InRelease_sha256": "a09771aa177402e5b8b3464ac309d8e07502eda695687cd7b673d0ffd4d06d04",
+      "Packages_sha256": "78409187ef8d22df55421dd48b016735dbd0121914705426aa5da81aa5aa6849",
+      "signature_status": [
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED F6ECB3762474EDA9D21B7022871920D1991BC93C 0",
+        "[GNUPG:] SIG_ID 1tsPypK8OzFgimfF4/jHTMD/Z2M 2026-10-26 1793034298",
+        "[GNUPG:] GOODSIG 871920D1991BC93C Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>",
+        "[GNUPG:] VALIDSIG F6ECB3762474EDA9D21B7022871920D1991BC93C 2026-10-26 1793034298 0 4 0 1 10 01 F6ECB3762474EDA9D21B7022871920D1991BC93C"
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "Package": "bubblewrap",
+      "Version": "0.11.1-1ubuntu0.3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/b/bubblewrap/bubblewrap_0.11.1-1ubuntu0.3_amd64.deb",
+      "SHA256": "d3a6c1b6b0e0474eaed6dbd055c0d601fd875af153976a0dc4aae75f4ea10868",
+      "Size": "51032",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/b/bubblewrap/bubblewrap_0.11.1-1ubuntu0.3_amd64.deb"
+      }
+    },
+    {
+      "Package": "fonts-dejavu-mono",
+      "Version": "2.37-8build1",
+      "Architecture": "all",
+      "Filename": "pool/main/f/fonts-dejavu/fonts-dejavu-mono_2.37-8build1_all.deb",
+      "SHA256": "bf5ad873961972ea8f1299ef99c1854715e68d9aa798830fb78c5b222ddeb4b9",
+      "Size": "502164",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/f/fonts-dejavu/fonts-dejavu-mono_2.37-8build1_all.deb"
+      }
+    },
+    {
+      "Package": "fonts-dejavu-core",
+      "Version": "2.37-8build1",
+      "Architecture": "all",
+      "Filename": "pool/main/f/fonts-dejavu/fonts-dejavu-core_2.37-8build1_all.deb",
+      "SHA256": "f4606b12eb41ddf7932d3a1ebc2019f9bbf90d0824943a2dc0c77a00f43019f2",
+      "Size": "834166",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.37-8build1_all.deb"
+      }
+    },
+    {
+      "Package": "fontconfig-config",
+      "Version": "2.17.1-3ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/f/fontconfig/fontconfig-config_2.17.1-3ubuntu1_amd64.deb",
+      "SHA256": "304cc61f61b94399453db02e1032d9f74a0bd737307acb4ed847f8da9406b8c1",
+      "Size": "38454",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/f/fontconfig/fontconfig-config_2.17.1-3ubuntu1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libfontconfig1",
+      "Version": "2.17.1-3ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/f/fontconfig/libfontconfig1_2.17.1-3ubuntu1_amd64.deb",
+      "SHA256": "72ba4fc43155566b46442b741a6892d5d1f1581ba58cdfd037aabf47ad9080f7",
+      "Size": "144082",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/f/fontconfig/libfontconfig1_2.17.1-3ubuntu1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libpixman-1-0",
+      "Version": "0.46.4-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/pixman/libpixman-1-0_0.46.4-1_amd64.deb",
+      "SHA256": "55a274db32d4824a1f1a48c42e959fe4293a4e4b545d400d89949cfabe160cc3",
+      "Size": "287322",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/p/pixman/libpixman-1-0_0.46.4-1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxcb-render0",
+      "Version": "1.17.0-2ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxcb/libxcb-render0_1.17.0-2ubuntu1_amd64.deb",
+      "SHA256": "2bdd10dd88c99523a62bfcc2b71b59fdf93ee396e8baf617c76fc3ec38f39bde",
+      "Size": "16208",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxcb/libxcb-render0_1.17.0-2ubuntu1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxcb-shm0",
+      "Version": "1.17.0-2ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxcb/libxcb-shm0_1.17.0-2ubuntu1_amd64.deb",
+      "SHA256": "e70d52936aabd7a90e9cd8af0f54ca050cde244f8382ffc5524ba65117c199c4",
+      "Size": "5808",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxcb/libxcb-shm0_1.17.0-2ubuntu1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxrender1",
+      "Version": "1:0.9.12-1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxrender/libxrender1_0.9.12-1build1_amd64.deb",
+      "SHA256": "60b2f01e8124318e2a11049b82c764fd4c05c21adba11312e93ab116d6594f1e",
+      "Size": "19204",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxrender/libxrender1_0.9.12-1build1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libcairo2",
+      "Version": "1.18.4-3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/c/cairo/libcairo2_1.18.4-3_amd64.deb",
+      "SHA256": "525ab7b5ad6529ea35aa09308ddd1fd2325c85ad70e7483ba66b526d8ee9f7a7",
+      "Size": "578678",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/c/cairo/libcairo2_1.18.4-3_amd64.deb"
+      }
+    },
+    {
+      "Package": "libsharpyuv0",
+      "Version": "1.5.0-0.1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libw/libwebp/libsharpyuv0_1.5.0-0.1build1_amd64.deb",
+      "SHA256": "4e2c0a8aa97dafd923f00d77ca017d14f16ab79d3b1120892c8215a0b5fb7892",
+      "Size": "17650",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libw/libwebp/libsharpyuv0_1.5.0-0.1build1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libaom3",
+      "Version": "3.13.1-2ubuntu0.1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/a/aom/libaom3_3.13.1-2ubuntu0.1_amd64.deb",
+      "SHA256": "74d46764b6b336d15682fb7d6203e6e1052be4ffb1ec371237989bab59fa829d",
+      "Size": "1969262",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/a/aom/libaom3_3.13.1-2ubuntu0.1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libheif-plugin-aomdec",
+      "Version": "1.21.2-3ubuntu0.6",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libh/libheif/libheif-plugin-aomdec_1.21.2-3ubuntu0.6_amd64.deb",
+      "SHA256": "502594310c052b626cb4ab0fcfaa2a9e7132cd073809f2603ef8b2334a490475",
+      "Size": "15510",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libh/libheif/libheif-plugin-aomdec_1.21.2-3ubuntu0.6_amd64.deb"
+      }
+    },
+    {
+      "Package": "libheif1",
+      "Version": "1.21.2-3ubuntu0.6",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libh/libheif/libheif1_1.21.2-3ubuntu0.6_amd64.deb",
+      "SHA256": "a7971dc57fc86dbdfe646100be4fffcca099fed1d69d092f9303b321ae11ff17",
+      "Size": "550142",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libh/libheif/libheif1_1.21.2-3ubuntu0.6_amd64.deb"
+      }
+    },
+    {
+      "Package": "libhwy1t64",
+      "Version": "1.3.0-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/h/highway/libhwy1t64_1.3.0-2_amd64.deb",
+      "SHA256": "8b4e74f6fc7c9a08956f1430fe5d80f4d8970a08fe24df9e187d57753f652c7a",
+      "Size": "767902",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/h/highway/libhwy1t64_1.3.0-2_amd64.deb"
+      }
+    },
+    {
+      "Package": "liblcms2-2",
+      "Version": "2.17-1ubuntu0.2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/l/lcms2/liblcms2-2_2.17-1ubuntu0.2_amd64.deb",
+      "SHA256": "0fcc048872daa6a242d548b78b76749044800d3be5a883123ca45eb4c8c65e05",
+      "Size": "169156",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/l/lcms2/liblcms2-2_2.17-1ubuntu0.2_amd64.deb"
+      }
+    },
+    {
+      "Package": "libjxl0.11",
+      "Version": "0.11.1-6ubuntu4.2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/j/jpeg-xl/libjxl0.11_0.11.1-6ubuntu4.2_amd64.deb",
+      "SHA256": "ad047c32784c7e3d1119f32c164876ae8f60c545c25354c9d673a958eef183df",
+      "Size": "1269230",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/j/jpeg-xl/libjxl0.11_0.11.1-6ubuntu4.2_amd64.deb"
+      }
+    },
+    {
+      "Package": "libcairo-gobject2",
+      "Version": "1.18.4-3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/c/cairo/libcairo-gobject2_1.18.4-3_amd64.deb",
+      "SHA256": "1d48661d59bb164fc27e88bb8e6a8dab0cdfdbf35ea5d2bbf3ebffe849a38822",
+      "Size": "127288",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/c/cairo/libcairo-gobject2_1.18.4-3_amd64.deb"
+      }
+    },
+    {
+      "Package": "fontconfig",
+      "Version": "2.17.1-3ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/f/fontconfig/fontconfig_2.17.1-3ubuntu1_amd64.deb",
+      "SHA256": "5f87d9f0ff7189e5dbf7bedd1ef6c09ea81747bc68dd5263ea811b471f23ee65",
+      "Size": "180360",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/f/fontconfig/fontconfig_2.17.1-3ubuntu1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libgraphite2-3",
+      "Version": "1.3.14-11ubuntu1.1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/g/graphite2/libgraphite2-3_1.3.14-11ubuntu1.1_amd64.deb",
+      "SHA256": "b4a4fbeb00c8553a20c31874c153cbcd856cfc1dda1c9b8252fa1d9bfbec24fc",
+      "Size": "72928",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/g/graphite2/libgraphite2-3_1.3.14-11ubuntu1.1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libharfbuzz0b",
+      "Version": "12.3.2-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/h/harfbuzz/libharfbuzz0b_12.3.2-2_amd64.deb",
+      "SHA256": "ec93ea39ddeb5a98179b60eab4af234b6c676f1958106645d1f4b19280d4cd09",
+      "Size": "519090",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/h/harfbuzz/libharfbuzz0b_12.3.2-2_amd64.deb"
+      }
+    },
+    {
+      "Package": "libthai-data",
+      "Version": "0.1.30-1",
+      "Architecture": "all",
+      "Filename": "pool/main/libt/libthai/libthai-data_0.1.30-1_all.deb",
+      "SHA256": "345fa75fcec8b562e2c6a4a5cd61187e7b825c8379fadb7f3f60d64d73ab1b72",
+      "Size": "154800",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libt/libthai/libthai-data_0.1.30-1_all.deb"
+      }
+    },
+    {
+      "Package": "libdatrie1",
+      "Version": "0.2.14-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libd/libdatrie/libdatrie1_0.2.14-1_amd64.deb",
+      "SHA256": "1ba5a9190119370912ec5955c8129cdf2780a098ed6c80e9ecca05cc515bd039",
+      "Size": "19776",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libd/libdatrie/libdatrie1_0.2.14-1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libthai0",
+      "Version": "0.1.30-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libt/libthai/libthai0_0.1.30-1_amd64.deb",
+      "SHA256": "c06f206be1ef7aa8208110b38945205ebc742dd777cbb39142baa555fe61390a",
+      "Size": "19174",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libt/libthai/libthai0_0.1.30-1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libpango-1.0-0",
+      "Version": "1.57.0-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/pango1.0/libpango-1.0-0_1.57.0-1_amd64.deb",
+      "SHA256": "309f30a8ea77e0264a3c8b66811188f5b788fe87b33be3cafd97c8f221235591",
+      "Size": "240576",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/p/pango1.0/libpango-1.0-0_1.57.0-1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libpangoft2-1.0-0",
+      "Version": "1.57.0-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/pango1.0/libpangoft2-1.0-0_1.57.0-1_amd64.deb",
+      "SHA256": "c1e08ebf03feded26a42a0f07f94789e5995b402d704d2faafdc86fffda0b28b",
+      "Size": "53260",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/p/pango1.0/libpangoft2-1.0-0_1.57.0-1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libpangocairo-1.0-0",
+      "Version": "1.57.0-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/p/pango1.0/libpangocairo-1.0-0_1.57.0-1_amd64.deb",
+      "SHA256": "a989e666bb0d64636a10a1253c949f92a282782d79d1725e0e1acc17282909a5",
+      "Size": "29026",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/p/pango1.0/libpangocairo-1.0-0_1.57.0-1_amd64.deb"
+      }
+    },
+    {
+      "Package": "librsvg2-2",
+      "Version": "2.61.3+dfsg-3ubuntu0.1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libr/librsvg/librsvg2-2_2.61.3+dfsg-3ubuntu0.1_amd64.deb",
+      "SHA256": "49a535a1d8903eca4c0fdb651ee1461a6bc732a9774b2f6bae0f171f02abb779",
+      "Size": "1849824",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libr/librsvg/librsvg2-2_2.61.3+dfsg-3ubuntu0.1_amd64.deb"
+      }
+    },
+    {
+      "Package": "glycin-loaders",
+      "Version": "2.1.5+ds-0ubuntu0.2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/g/glycin/glycin-loaders_2.1.5+ds-0ubuntu0.2_amd64.deb",
+      "SHA256": "b4689ad426e82a08f9274281ee0f712d035ad35cec2dac4b7b2e23048c82e586",
+      "Size": "2983588",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/g/glycin/glycin-loaders_2.1.5+ds-0ubuntu0.2_amd64.deb"
+      }
+    },
+    {
+      "Package": "libglycin-2-0",
+      "Version": "2.1.5+ds-0ubuntu0.2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/g/glycin/libglycin-2-0_2.1.5+ds-0ubuntu0.2_amd64.deb",
+      "SHA256": "df5f6ac3af28284f678834b13ab90ebd5bebf80e3352bee517755f7125139d09",
+      "Size": "1486686",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/g/glycin/libglycin-2-0_2.1.5+ds-0ubuntu0.2_amd64.deb"
+      }
+    },
+    {
+      "Package": "glycin-thumbnailers",
+      "Version": "2.1.5+ds-0ubuntu0.2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/g/glycin/glycin-thumbnailers_2.1.5+ds-0ubuntu0.2_amd64.deb",
+      "SHA256": "caf00f3251981eb69643a0b67f07b5c8f4f60ebd756200eca97b8efb3740000f",
+      "Size": "222612",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/g/glycin/glycin-thumbnailers_2.1.5+ds-0ubuntu0.2_amd64.deb"
+      }
+    },
+    {
+      "Package": "libgdk-pixbuf2.0-common",
+      "Version": "2.44.5+dfsg-4ubuntu1",
+      "Architecture": "all",
+      "Filename": "pool/main/g/gdk-pixbuf/libgdk-pixbuf2.0-common_2.44.5+dfsg-4ubuntu1_all.deb",
+      "SHA256": "2476d552009724d9b027236fcd2e4540a46f419d9d8b881f1d92edf10d6fcc13",
+      "Size": "5754",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/g/gdk-pixbuf/libgdk-pixbuf2.0-common_2.44.5+dfsg-4ubuntu1_all.deb"
+      }
+    },
+    {
+      "Package": "libgdk-pixbuf-2.0-0",
+      "Version": "2.44.5+dfsg-4ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/g/gdk-pixbuf/libgdk-pixbuf-2.0-0_2.44.5+dfsg-4ubuntu1_amd64.deb",
+      "SHA256": "ccd902384546225842384de0c46dad4670ccdda17b697bed4518610ed2e08e89",
+      "Size": "100992",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/g/gdk-pixbuf/libgdk-pixbuf-2.0-0_2.44.5+dfsg-4ubuntu1_amd64.deb"
+      }
+    },
+    {
+      "Package": "gtk-update-icon-cache",
+      "Version": "4.22.4+ds-0ubuntu0.1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/g/gtk4/gtk-update-icon-cache_4.22.4+ds-0ubuntu0.1_amd64.deb",
+      "SHA256": "d9cc7406c53f609ab81cb5b95b965ab926f711d7d7ea0711151cf36d5c1f2826",
+      "Size": "42654",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/g/gtk4/gtk-update-icon-cache_4.22.4+ds-0ubuntu0.1_amd64.deb"
+      }
+    },
+    {
+      "Package": "hicolor-icon-theme",
+      "Version": "0.18-2build1",
+      "Architecture": "all",
+      "Filename": "pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.18-2build1_all.deb",
+      "SHA256": "d05726c4a4dc15079ed2bd6ef633e7d6dca4c4be20296148b1c558dbd5a6c570",
+      "Size": "13154",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.18-2build1_all.deb"
+      }
+    },
+    {
+      "Package": "adwaita-icon-theme",
+      "Version": "50.0-1",
+      "Architecture": "all",
+      "Filename": "pool/main/a/adwaita-icon-theme/adwaita-icon-theme_50.0-1_all.deb",
+      "SHA256": "db9f11a94f993de589e7d8879664cb371eb8aefc8a2bce100d923951e4ef30c8",
+      "Size": "580384",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_50.0-1_all.deb"
+      }
+    },
+    {
+      "Package": "libdconf1",
+      "Version": "0.49.0-4",
+      "Architecture": "amd64",
+      "Filename": "pool/main/d/dconf/libdconf1_0.49.0-4_amd64.deb",
+      "SHA256": "d7a12b52a4803bf3e4c270c9367db4ac20f03412a9dc948e0272348889a151bd",
+      "Size": "40516",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/d/dconf/libdconf1_0.49.0-4_amd64.deb"
+      }
+    },
+    {
+      "Package": "dconf-service",
+      "Version": "0.49.0-4",
+      "Architecture": "amd64",
+      "Filename": "pool/main/d/dconf/dconf-service_0.49.0-4_amd64.deb",
+      "SHA256": "7f247f6032e72f86b1877f0020de77a0f8a11de256cf8f1726c072cf09585d31",
+      "Size": "27696",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/d/dconf/dconf-service_0.49.0-4_amd64.deb"
+      }
+    },
+    {
+      "Package": "dconf-gsettings-backend",
+      "Version": "0.49.0-4",
+      "Architecture": "amd64",
+      "Filename": "pool/main/d/dconf/dconf-gsettings-backend_0.49.0-4_amd64.deb",
+      "SHA256": "4da7b8309d49079ebac028c1f3284df02463da451cbd5f90ea61e535534531ac",
+      "Size": "22172",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/d/dconf/dconf-gsettings-backend_0.49.0-4_amd64.deb"
+      }
+    },
+    {
+      "Package": "libgraphene-1.0-0",
+      "Version": "1.10.8-5build1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/g/graphene/libgraphene-1.0-0_1.10.8-5build1_amd64.deb",
+      "SHA256": "0c73a0aee47f87f496c9150121b04281def45d8e52564e059b59ebd9f22f5360",
+      "Size": "46178",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/g/graphene/libgraphene-1.0-0_1.10.8-5build1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libcairo-script-interpreter2",
+      "Version": "1.18.4-3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/c/cairo/libcairo-script-interpreter2_1.18.4-3_amd64.deb",
+      "SHA256": "516ad272f711e3c4550307ff6d6e1cbc828e3f4744471ffa0389430739197c81",
+      "Size": "61364",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/c/cairo/libcairo-script-interpreter2_1.18.4-3_amd64.deb"
+      }
+    },
+    {
+      "Package": "libcolord2",
+      "Version": "1.4.8-3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/c/colord/libcolord2_1.4.8-3_amd64.deb",
+      "SHA256": "063718186165d691f1b14d77d6ae7abefaf567c7331a463cbe97fa4a1e0b0fac",
+      "Size": "149688",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/c/colord/libcolord2_1.4.8-3_amd64.deb"
+      }
+    },
+    {
+      "Package": "libavahi-common-data",
+      "Version": "0.8-18ubuntu1.1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/a/avahi/libavahi-common-data_0.8-18ubuntu1.1_amd64.deb",
+      "SHA256": "db013cab614418c47073faac4e16f652cb4532458cd8b919f70c717f235d1091",
+      "Size": "27194",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/a/avahi/libavahi-common-data_0.8-18ubuntu1.1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libavahi-common3",
+      "Version": "0.8-18ubuntu1.1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/a/avahi/libavahi-common3_0.8-18ubuntu1.1_amd64.deb",
+      "SHA256": "2213977fd25dab90f3566d3163576955eb74dc89954c48ba6e2bd960fdcd45e2",
+      "Size": "23580",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/a/avahi/libavahi-common3_0.8-18ubuntu1.1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libavahi-client3",
+      "Version": "0.8-18ubuntu1.1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/a/avahi/libavahi-client3_0.8-18ubuntu1.1_amd64.deb",
+      "SHA256": "a0677750521663c898d25ddd0566127712ff4803108ec67182330a27fce85774",
+      "Size": "27220",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/a/avahi/libavahi-client3_0.8-18ubuntu1.1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libcups2t64",
+      "Version": "2.4.16-1ubuntu1.3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/c/cups/libcups2t64_2.4.16-1ubuntu1.3_amd64.deb",
+      "SHA256": "2617a78cbd830310e31813420ea34159347f1121709d2f00c93a87fa666bfcda",
+      "Size": "268968",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/c/cups/libcups2t64_2.4.16-1ubuntu1.3_amd64.deb"
+      }
+    },
+    {
+      "Package": "libepoxy0",
+      "Version": "1.5.10-2build1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libe/libepoxy/libepoxy0_1.5.10-2build1_amd64.deb",
+      "SHA256": "2f4525535b2c7c6d61cc5c131f1cb3f5c0d70177ccf550a05f80d12016dfcfdf",
+      "Size": "226466",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libe/libepoxy/libepoxy0_1.5.10-2build1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libglvnd0",
+      "Version": "1.7.0-3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libg/libglvnd/libglvnd0_1.7.0-3_amd64.deb",
+      "SHA256": "db2cd8cff67e3e210f5223dfe41f000efd4d3d887ab05bda2e88c4a622f12b36",
+      "Size": "64072",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libg/libglvnd/libglvnd0_1.7.0-3_amd64.deb"
+      }
+    },
+    {
+      "Package": "libpciaccess0",
+      "Version": "0.18.1-1ubuntu4.1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libp/libpciaccess/libpciaccess0_0.18.1-1ubuntu4.1_amd64.deb",
+      "SHA256": "8733699ae9d7102a84cd10a1f0f0769b684c6ca8842035db389bb6b8310f72dd",
+      "Size": "18980",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libp/libpciaccess/libpciaccess0_0.18.1-1ubuntu4.1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libdrm-intel1",
+      "Version": "2.4.131-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libd/libdrm/libdrm-intel1_2.4.131-1_amd64.deb",
+      "SHA256": "77411c3b93c8756862a18ccaa4413a65777f40819abdd1468954ba859c8aa740",
+      "Size": "66680",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libd/libdrm/libdrm-intel1_2.4.131-1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libx11-xcb1",
+      "Version": "2:1.8.13-1ubuntu0.1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libx11/libx11-xcb1_1.8.13-1ubuntu0.1_amd64.deb",
+      "SHA256": "23d0a8c5d8be6dc1ca39d5ea66c139ee56ab20116f11bae586e0dc1685682578",
+      "Size": "7980",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libx11/libx11-xcb1_1.8.13-1ubuntu0.1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxcb-dri3-0",
+      "Version": "1.17.0-2ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxcb/libxcb-dri3-0_1.17.0-2ubuntu1_amd64.deb",
+      "SHA256": "2e0e3916c647a74e081621f385aa296dab3052b2582b0781d9fbea2f15696ef4",
+      "Size": "7540",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxcb/libxcb-dri3-0_1.17.0-2ubuntu1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxcb-present0",
+      "Version": "1.17.0-2ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxcb/libxcb-present0_1.17.0-2ubuntu1_amd64.deb",
+      "SHA256": "64f23e7166461758d158220305e93a98fe75c570b68f96303a1c2395a58d5d7d",
+      "Size": "6112",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxcb/libxcb-present0_1.17.0-2ubuntu1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxcb-randr0",
+      "Version": "1.17.0-2ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxcb/libxcb-randr0_1.17.0-2ubuntu1_amd64.deb",
+      "SHA256": "78977a067ec1d59bb4ded1b35835d0ba70e6538aac1ea7edefe413795aaa0d4f",
+      "Size": "17930",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxcb/libxcb-randr0_1.17.0-2ubuntu1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxcb-sync1",
+      "Version": "1.17.0-2ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxcb/libxcb-sync1_1.17.0-2ubuntu1_amd64.deb",
+      "SHA256": "8883f5e6badab24cb7487390bf1a888bb714e406f6c799345c33e4b69a8f3112",
+      "Size": "9348",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxcb/libxcb-sync1_1.17.0-2ubuntu1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxcb-xfixes0",
+      "Version": "1.17.0-2ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxcb/libxcb-xfixes0_1.17.0-2ubuntu1_amd64.deb",
+      "SHA256": "00c1381b61e2e5b8a78e89b15818a214a8f44f1fae6a9ddd95e7c61de8ea33d2",
+      "Size": "10192",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxcb/libxcb-xfixes0_1.17.0-2ubuntu1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxshmfence1",
+      "Version": "1.3.3-1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxshmfence/libxshmfence1_1.3.3-1build1_amd64.deb",
+      "SHA256": "85d6b6883a35e1a3b78af3dda6bb6b843c06cbead030a00d9de7d31a8077d562",
+      "Size": "5284",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxshmfence/libxshmfence1_1.3.3-1build1_amd64.deb"
+      }
+    },
+    {
+      "Package": "mesa-libgallium",
+      "Version": "26.0.8-1ubuntu0.3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/m/mesa/mesa-libgallium_26.0.8-1ubuntu0.3_amd64.deb",
+      "SHA256": "7f123a545774034793ba3516c5fad0be88de68ad91319a4b220d98b32a289451",
+      "Size": "11241306",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/m/mesa/mesa-libgallium_26.0.8-1ubuntu0.3_amd64.deb"
+      }
+    },
+    {
+      "Package": "libgbm1",
+      "Version": "26.0.8-1ubuntu0.3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/m/mesa/libgbm1_26.0.8-1ubuntu0.3_amd64.deb",
+      "SHA256": "5d2d1eaf0f72c5a2c4aef692e5660c6fa61e46542c4d9cb5593ba8bd020b2eea",
+      "Size": "49194",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/m/mesa/libgbm1_26.0.8-1ubuntu0.3_amd64.deb"
+      }
+    },
+    {
+      "Package": "libwayland-client0",
+      "Version": "1.24.0-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/w/wayland/libwayland-client0_1.24.0-2_amd64.deb",
+      "SHA256": "094db0e190b53872e4d5310cd5fa09ca28ee3936386cd09e5f7d13e645aa12ab",
+      "Size": "28530",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/w/wayland/libwayland-client0_1.24.0-2_amd64.deb"
+      }
+    },
+    {
+      "Package": "libegl-mesa0",
+      "Version": "26.0.8-1ubuntu0.3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/m/mesa/libegl-mesa0_26.0.8-1ubuntu0.3_amd64.deb",
+      "SHA256": "938813d9d6bb7ccf8315af1f8bb2770ad4b9d240ad177f0da420db3e94600d6b",
+      "Size": "133774",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/m/mesa/libegl-mesa0_26.0.8-1ubuntu0.3_amd64.deb"
+      }
+    },
+    {
+      "Package": "libegl1",
+      "Version": "1.7.0-3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libg/libglvnd/libegl1_1.7.0-3_amd64.deb",
+      "SHA256": "cf2a6549bbc4339671901bde97c0ca41c380c5783179ef68977bf86151f03766",
+      "Size": "29654",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libg/libglvnd/libegl1_1.7.0-3_amd64.deb"
+      }
+    },
+    {
+      "Package": "libvulkan1",
+      "Version": "1.4.341.0-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/v/vulkan-loader/libvulkan1_1.4.341.0-1_amd64.deb",
+      "SHA256": "b4aca7a519d6318347f15a0e485c636603005e2553dae1a986272ac8c96176b0",
+      "Size": "157194",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/v/vulkan-loader/libvulkan1_1.4.341.0-1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libgl1-mesa-dri",
+      "Version": "26.0.8-1ubuntu0.3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/m/mesa/libgl1-mesa-dri_26.0.8-1ubuntu0.3_amd64.deb",
+      "SHA256": "585dfac64d7ca95a9813faad9f14c361d788069b7578859fb426c657dd528f08",
+      "Size": "38166",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/m/mesa/libgl1-mesa-dri_26.0.8-1ubuntu0.3_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxcb-glx0",
+      "Version": "1.17.0-2ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxcb/libxcb-glx0_1.17.0-2ubuntu1_amd64.deb",
+      "SHA256": "857c34618ae56b2577d8d439cf86f80375582626193efaa3229c6767106a1a20",
+      "Size": "24654",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxcb/libxcb-glx0_1.17.0-2ubuntu1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxxf86vm1",
+      "Version": "1:1.1.4-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxxf86vm/libxxf86vm1_1.1.4-2_amd64.deb",
+      "SHA256": "ff01ae50526c23c6c747e1efd98ee3785a1d28458e865277fc367c565bb94703",
+      "Size": "10610",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxxf86vm/libxxf86vm1_1.1.4-2_amd64.deb"
+      }
+    },
+    {
+      "Package": "libglx-mesa0",
+      "Version": "26.0.8-1ubuntu0.3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/m/mesa/libglx-mesa0_26.0.8-1ubuntu0.3_amd64.deb",
+      "SHA256": "17ff6239daaf75337d3697c1e5f1ef3e190c4c2dd73a9f0edfc36868ef41905c",
+      "Size": "125602",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/m/mesa/libglx-mesa0_26.0.8-1ubuntu0.3_amd64.deb"
+      }
+    },
+    {
+      "Package": "libglx0",
+      "Version": "1.7.0-3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libg/libglvnd/libglx0_1.7.0-3_amd64.deb",
+      "SHA256": "e0b75c32f773201ebca2184d94dfc34f6e09470c7cf6e425d48b270e516fd909",
+      "Size": "38932",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libg/libglvnd/libglx0_1.7.0-3_amd64.deb"
+      }
+    },
+    {
+      "Package": "libgl1",
+      "Version": "1.7.0-3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libg/libglvnd/libgl1_1.7.0-3_amd64.deb",
+      "SHA256": "83ec3a454b28e947a6886e9ae8167e129e25d7a2fd741aaffcdca76eddff5955",
+      "Size": "98292",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libg/libglvnd/libgl1_1.7.0-3_amd64.deb"
+      }
+    },
+    {
+      "Package": "liborc-0.4-0t64",
+      "Version": "1:0.4.42-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/o/orc/liborc-0.4-0t64_0.4.42-2_amd64.deb",
+      "SHA256": "247e3b2100d94e897398e45548beba164b90917130333d6c540a0e3403e82906",
+      "Size": "283098",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/o/orc/liborc-0.4-0t64_0.4.42-2_amd64.deb"
+      }
+    },
+    {
+      "Package": "libgstreamer-plugins-base1.0-0",
+      "Version": "1.28.2-1ubuntu0.1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/g/gst-plugins-base1.0/libgstreamer-plugins-base1.0-0_1.28.2-1ubuntu0.1_amd64.deb",
+      "SHA256": "b04ecc2677ae4544b55efa72655e5239437653bb4a30c031db75599978e5f63c",
+      "Size": "920576",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/g/gst-plugins-base1.0/libgstreamer-plugins-base1.0-0_1.28.2-1ubuntu0.1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libwayland-cursor0",
+      "Version": "1.24.0-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/w/wayland/libwayland-cursor0_1.24.0-2_amd64.deb",
+      "SHA256": "941affa9ef61b0cca5cfac1fab13e8e78168af306709df4adf546c76be82a1de",
+      "Size": "10770",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/w/wayland/libwayland-cursor0_1.24.0-2_amd64.deb"
+      }
+    },
+    {
+      "Package": "libwayland-egl1",
+      "Version": "1.24.0-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/w/wayland/libwayland-egl1_1.24.0-2_amd64.deb",
+      "SHA256": "692358c252186b132f6807548cffffe6f358d5b2139e8d57d0763b1f3ba28c61",
+      "Size": "6248",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/w/wayland/libwayland-egl1_1.24.0-2_amd64.deb"
+      }
+    },
+    {
+      "Package": "libgstreamer-gl1.0-0",
+      "Version": "1.28.2-1ubuntu0.1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/g/gst-plugins-base1.0/libgstreamer-gl1.0-0_1.28.2-1ubuntu0.1_amd64.deb",
+      "SHA256": "95c06e26d8fa0666df1b5ba6b1768112e903fababbca0af5a5a3bacb41b6ecdf",
+      "Size": "229996",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/g/gst-plugins-base1.0/libgstreamer-gl1.0-0_1.28.2-1ubuntu0.1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libva2",
+      "Version": "2.23.0-1ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libv/libva/libva2_2.23.0-1ubuntu1_amd64.deb",
+      "SHA256": "83053abb11b8b0169bfb2abbd209a44ddeb4e56223980cdcfc0218b09e845f00",
+      "Size": "76506",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libv/libva/libva2_2.23.0-1ubuntu1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libva-drm2",
+      "Version": "2.23.0-1ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libv/libva/libva-drm2_2.23.0-1ubuntu1_amd64.deb",
+      "SHA256": "f56b0cb850dcd8af45929b2da7cc1fbdf64245fbcec99033298499a8db2765a3",
+      "Size": "7112",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libv/libva/libva-drm2_2.23.0-1ubuntu1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libgstreamer-plugins-extra1.0-0",
+      "Version": "1.28.2-1ubuntu1.2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/g/gst-plugins-bad1.0/libgstreamer-plugins-extra1.0-0_1.28.2-1ubuntu1.2_amd64.deb",
+      "SHA256": "a6bcbe90a98d9b6709b75a6fe9f6afaf2089e24c3d25ca32e50f207d446d0e12",
+      "Size": "510394",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/g/gst-plugins-bad1.0/libgstreamer-plugins-extra1.0-0_1.28.2-1ubuntu1.2_amd64.deb"
+      }
+    },
+    {
+      "Package": "libharfbuzz-subset0",
+      "Version": "12.3.2-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/h/harfbuzz/libharfbuzz-subset0_12.3.2-2_amd64.deb",
+      "SHA256": "5135ba4f61cc3f71f73d3992b68b2fb08eedac7269a7070ce16d44671f143c04",
+      "Size": "491630",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/h/harfbuzz/libharfbuzz-subset0_12.3.2-2_amd64.deb"
+      }
+    },
+    {
+      "Package": "libjpeg-turbo8",
+      "Version": "2.1.5-4ubuntu4",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libj/libjpeg-turbo/libjpeg-turbo8_2.1.5-4ubuntu4_amd64.deb",
+      "SHA256": "07672ce1f4d187e005ea0cc35d03e515ba056f3d3e7a9a25d3ef386e184da8c5",
+      "Size": "152810",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libj/libjpeg-turbo/libjpeg-turbo8_2.1.5-4ubuntu4_amd64.deb"
+      }
+    },
+    {
+      "Package": "libjpeg8",
+      "Version": "8c-2ubuntu12",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libj/libjpeg8-empty/libjpeg8_8c-2ubuntu12_amd64.deb",
+      "SHA256": "1403d44d2c2d3eba6a7a8aea97fab0bac2e89e144a3bf600adfdd3ecdc3d9394",
+      "Size": "2142",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libj/libjpeg8-empty/libjpeg8_8c-2ubuntu12_amd64.deb"
+      }
+    },
+    {
+      "Package": "libdeflate0",
+      "Version": "1.23-2ubuntu1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libd/libdeflate/libdeflate0_1.23-2ubuntu1_amd64.deb",
+      "SHA256": "40ee517cffd3730405be6ae30826533bec0ddf8773bb7ac2cccd22a57acafc25",
+      "Size": "51702",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libd/libdeflate/libdeflate0_1.23-2ubuntu1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libjbig0",
+      "Version": "2.1-6.1ubuntu3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/j/jbigkit/libjbig0_2.1-6.1ubuntu3_amd64.deb",
+      "SHA256": "bb2ffa4e359ee7a29dab9902b45e5c85de06f019272700cb2538e4762f141ee8",
+      "Size": "30028",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/j/jbigkit/libjbig0_2.1-6.1ubuntu3_amd64.deb"
+      }
+    },
+    {
+      "Package": "liblerc4",
+      "Version": "4.0.0+ds-5ubuntu2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/l/lerc/liblerc4_4.0.0+ds-5ubuntu2_amd64.deb",
+      "SHA256": "29051d37d010a7a0e3b5648f73f30d35eb1e313061137c88f3a2c2078925a36d",
+      "Size": "206718",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/l/lerc/liblerc4_4.0.0+ds-5ubuntu2_amd64.deb"
+      }
+    },
+    {
+      "Package": "libwebp7",
+      "Version": "1.5.0-0.1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libw/libwebp/libwebp7_1.5.0-0.1build1_amd64.deb",
+      "SHA256": "0a846cf63522d9c1f28d31bdd53e35e223d590a0971bb6927b3ee5092934ce9d",
+      "Size": "263542",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libw/libwebp/libwebp7_1.5.0-0.1build1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libtiff6",
+      "Version": "4.7.0-3ubuntu5",
+      "Architecture": "amd64",
+      "Filename": "pool/main/t/tiff/libtiff6_4.7.0-3ubuntu5_amd64.deb",
+      "SHA256": "f48cb837a644826b9411ecd9692cbd57fbcb57b5b8fba026652d9204b3acb169",
+      "Size": "205792",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/t/tiff/libtiff6_4.7.0-3ubuntu5_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxfixes3",
+      "Version": "1:6.0.0-2build2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxfixes/libxfixes3_6.0.0-2build2_amd64.deb",
+      "SHA256": "f3a71f6aa12000480c419e44f3aa5bdca7eb862b720d0307661b4e886db1c5f8",
+      "Size": "11102",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxfixes/libxfixes3_6.0.0-2build2_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxcursor1",
+      "Version": "1:1.2.3-1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxcursor/libxcursor1_1.2.3-1build1_amd64.deb",
+      "SHA256": "0f3d9816a3a557590ca1b31f2548b1988ad7ec9de976bad07cc24cc7d69b4ee7",
+      "Size": "22108",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxcursor/libxcursor1_1.2.3-1build1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxdamage1",
+      "Version": "1:1.1.7-1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxdamage/libxdamage1_1.1.7-1_amd64.deb",
+      "SHA256": "dd751597c6216105774a93769972d1cb6dad5fd1ba91f090197d7acc85c406cb",
+      "Size": "6582",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxdamage/libxdamage1_1.1.7-1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxi6",
+      "Version": "2:1.8.2-2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxi/libxi6_1.8.2-2_amd64.deb",
+      "SHA256": "b975dd89cac8c32a3cf622e1b7f5434db59f37eda87dfee399d0806d9953db0a",
+      "Size": "33120",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxi/libxi6_1.8.2-2_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxinerama1",
+      "Version": "2:1.1.4-3build2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxinerama/libxinerama1_1.1.4-3build2_amd64.deb",
+      "SHA256": "02d3dce422acc3ac9b5491f47acdd07bc7c3f78ce193865f2920d38b10fbadf5",
+      "Size": "6472",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxinerama/libxinerama1_1.1.4-3build2_amd64.deb"
+      }
+    },
+    {
+      "Package": "libxrandr2",
+      "Version": "2:1.5.4-1build1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libx/libxrandr/libxrandr2_1.5.4-1build1_amd64.deb",
+      "SHA256": "d0052315ac1417234777c0872568a86fce4d3a3316c041e5a2200da70f43a855",
+      "Size": "19622",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libx/libxrandr/libxrandr2_1.5.4-1build1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libgles2",
+      "Version": "1.7.0-3",
+      "Architecture": "amd64",
+      "Filename": "pool/main/libg/libglvnd/libgles2_1.7.0-3_amd64.deb",
+      "SHA256": "60113d7ec92c7ccdbd09e90b379bb9041581af3b85e28b3f250374025bb6440e",
+      "Size": "17458",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/libg/libglvnd/libgles2_1.7.0-3_amd64.deb"
+      }
+    },
+    {
+      "Package": "libgtk-4-common",
+      "Version": "4.22.4+ds-0ubuntu0.1",
+      "Architecture": "all",
+      "Filename": "pool/main/g/gtk4/libgtk-4-common_4.22.4+ds-0ubuntu0.1_all.deb",
+      "SHA256": "701267c163e22c901b81733d8a6369cb7edf783618b30a35a663bb8111e67554",
+      "Size": "1546346",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/g/gtk4/libgtk-4-common_4.22.4+ds-0ubuntu0.1_all.deb"
+      }
+    },
+    {
+      "Package": "libgtk-4-1",
+      "Version": "4.22.4+ds-0ubuntu0.1",
+      "Architecture": "amd64",
+      "Filename": "pool/main/g/gtk4/libgtk-4-1_4.22.4+ds-0ubuntu0.1_amd64.deb",
+      "SHA256": "5ae394b2cdd4c09cb725e8a6686af27e33b476c6aca6caf016dce068b0702b2b",
+      "Size": "3551986",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/g/gtk4/libgtk-4-1_4.22.4+ds-0ubuntu0.1_amd64.deb"
+      }
+    },
+    {
+      "Package": "libadwaita-1-0",
+      "Version": "1.9.1-0ubuntu0.2",
+      "Architecture": "amd64",
+      "Filename": "pool/main/liba/libadwaita-1/libadwaita-1-0_1.9.1-0ubuntu0.2_amd64.deb",
+      "SHA256": "b676528ae7e6e60c19776ccde1e1a31111f9d16569a3978c0aa18176b2d55daf",
+      "Size": "529772",
+      "origin": {
+        "cache": "/home/papan/Desktop/Projects/omen/target/deployment-v20/reproducibility-check/repository/pool/main/liba/libadwaita-1/libadwaita-1-0_1.9.1-0ubuntu0.2_amd64.deb"
+      }
+    }
+  ],
+  "host_packages_installed": false,
+  "guest_APT_verifies_again": true
+}

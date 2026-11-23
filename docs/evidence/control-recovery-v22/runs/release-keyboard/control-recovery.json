@@ -1,0 +1,567 @@
+{
+  "result": "failed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "host_keyboard_input": false,
+  "gui_sha256": "4490112e91355a50d70009fbceb4fb173b39fe5400bc2ce982ded7b1a87a86df",
+  "test_script_sha256": "b5cb1a6db773c8e73b538df9ee928a322bccede5578d1378718d6f772221f0ac",
+  "profile": "release",
+  "checks_passed": [
+    "Performance choices recover from an empty first report and a user click reaches the actual fixture backend",
+    "profile choices add and remove currently advertised options without restarting or submitting a write",
+    "manual and curve editors recover; saving reaches the real daemon and unsaved changes immediately block curve activation",
+    "lighting initializes from a valid fresh readback, preserves edits through read failure and applies the observed animation without resetting it",
+    "charge threshold appears after startup, follows actual readback and preserves a distinct requested edit",
+    "stalled daemon expires every dependent action; recovery retains native editors and edits without implicit writes",
+    "a new zone layout refreshes matching controls and explains that current values were loaded",
+    "graphics inventory and runtime state refresh from actual fixture PCI files and incomplete discovery remains explicit",
+    "real private keyboard traversal and Space activate the focused profile choice",
+    "real keyboard edits fan controls without writing and immediately disables unsaved curve activation"
+  ],
+  "last_nodes": [
+    {
+      "role": "application",
+      "name": "omen-gui"
+    },
+    {
+      "role": "frame",
+      "name": "OMEN Control"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Show or hide navigation"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Lighting Studio"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Application actions"
+    },
+    {
+      "role": "button",
+      "name": "Fixture"
+    },
+    {
+      "role": "label",
+      "name": "Fixture"
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Minimize"
+    },
+    {
+      "role": "button",
+      "name": "Maximize"
+    },
+    {
+      "role": "button",
+      "name": "Close"
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": "System Vitals"
+    },
+    {
+      "role": "panel",
+      "name": "Lighting Studio"
+    },
+    {
+      "role": "scroll pane",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Lighting studio"
+    },
+    {
+      "role": "label",
+      "name": "Current lighting: 4 zones \u00b7 75 % brightness"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Zone 1"
+    },
+    {
+      "role": "grouping",
+      "name": "Keyboard zone 1 color"
+    },
+    {
+      "role": "button",
+      "name": "Keyboard zone 1 color"
+    },
+    {
+      "role": "image",
+      "name": "Red 100%, Green 0%, Blue 0%"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Zone 2"
+    },
+    {
+      "role": "grouping",
+      "name": "Keyboard zone 2 color"
+    },
+    {
+      "role": "button",
+      "name": "Keyboard zone 2 color"
+    },
+    {
+      "role": "image",
+      "name": "Red 0%, Green 100%, Blue 0%"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Zone 3"
+    },
+    {
+      "role": "grouping",
+      "name": "Keyboard zone 3 color"
+    },
+    {
+      "role": "button",
+      "name": "Keyboard zone 3 color"
+    },
+    {
+      "role": "image",
+      "name": "Red 0%, Green 0%, Blue 100%"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Zone 4"
+    },
+    {
+      "role": "grouping",
+      "name": "Keyboard zone 4 color"
+    },
+    {
+      "role": "button",
+      "name": "Keyboard zone 4 color"
+    },
+    {
+      "role": "image",
+      "name": "Red 100%, Green 100%, Blue 100%"
+    },
+    {
+      "role": "label",
+      "name": "Requested brightness"
+    },
+    {
+      "role": "slider",
+      "name": "Keyboard brightness (%)"
+    },
+    {
+      "role": "label",
+      "name": "75"
+    },
+    {
+      "role": "button",
+      "name": "Apply keyboard lighting"
+    },
+    {
+      "role": "label",
+      "name": "Apply keyboard lighting"
+    },
+    {
+      "role": "label",
+      "name": "Lighting zone layout changed. Latest values loaded; review them before applying."
+    },
+    {
+      "role": "label",
+      "name": "Lighting availability is reported by the current source. Four-zone and per-key protocols need separate validation; a missing interface does not prove that the keyboard lacks lighting hardware."
+    },
+    {
+      "role": "panel",
+      "name": "Game Library"
+    },
+    {
+      "role": "panel",
+      "name": "Settings & Diagnostics"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Set profile to Balanced: complete"
+    },
+    {
+      "role": "button",
+      "name": "Dismiss message"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "scroll pane",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "OMEN Control"
+    },
+    {
+      "role": "list",
+      "name": "Pages"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Dashboard"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "System Vitals"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Performance Control"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Fan & Thermal"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Lighting Studio"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Graphics"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Battery & Power"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Game Library"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Settings & Diagnostics"
+    },
+    {
+      "role": "label",
+      "name": "Monitor"
+    },
+    {
+      "role": "label",
+      "name": "Controls"
+    },
+    {
+      "role": "label",
+      "name": "Library"
+    },
+    {
+      "role": "label",
+      "name": "Application"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "source: MOCK \u2014 fixture data, no real hardware"
+    }
+  ],
+  "write_operations": [
+    {
+      "op": "set_profile",
+      "args": {
+        "profile": "quiet"
+      }
+    },
+    {
+      "op": "set_fan_curve",
+      "args": {
+        "curve": {
+          "points": [
+            {
+              "temp_c": 40,
+              "duty_pct": 30
+            },
+            {
+              "temp_c": 55,
+              "duty_pct": 40
+            },
+            {
+              "temp_c": 65,
+              "duty_pct": 60
+            },
+            {
+              "temp_c": 75,
+              "duty_pct": 80
+            },
+            {
+              "temp_c": 85,
+              "duty_pct": 100
+            }
+          ]
+        }
+      }
+    },
+    {
+      "op": "set_lighting",
+      "args": {
+        "state": {
+          "zones": 2,
+          "colors": [
+            {
+              "r": 255,
+              "g": 0,
+              "b": 0
+            },
+            {
+              "r": 0,
+              "g": 255,
+              "b": 0
+            }
+          ],
+          "brightness_pct": 75,
+          "animation": "static"
+        }
+      }
+    },
+    {
+      "op": "set_charge_threshold",
+      "args": {
+        "pct": 85
+      }
+    },
+    {
+      "op": "set_profile",
+      "args": {
+        "profile": "balanced"
+      }
+    }
+  ],
+  "error": "RuntimeError: brightness unreachable after color cancel: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]"
+}

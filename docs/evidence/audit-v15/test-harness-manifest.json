@@ -1,0 +1,138 @@
+{
+  "sha256": "67261a8e02a1333615261afca4bbb613fc37e567187a756d3e3d2bec07aa5278",
+  "hash_method": "SHA-256 of sorted sha256 + two spaces + relative path + newline records",
+  "files": [
+    {
+      "path": "scripts/benchmark.py",
+      "sha256": "20b61273239bc49ceada17c90f9c22ab9ee9afd84479ccf59f6eee2d3c388ed3"
+    },
+    {
+      "path": "scripts/capture-audit.py",
+      "sha256": "2993ab5f44668ed65a4ec5a97ed34af74d29653bfbd266109effb43b772ad02f"
+    },
+    {
+      "path": "scripts/capture-fans.py",
+      "sha256": "997b856aca0ab01fee4f61fef27fdde091b7df290a587ee925da0f3f21ad5d05"
+    },
+    {
+      "path": "scripts/capture-network.py",
+      "sha256": "dd5b71dce0bf42a280fef8d05b8b86acaf3d7756f877dc196ca041ed3f46ccb0"
+    },
+    {
+      "path": "scripts/capture-overlay.py",
+      "sha256": "f991bad1de74f12496764a57cc83271473f91a969f58fed0d60c43053441053d"
+    },
+    {
+      "path": "scripts/capture-pages.py",
+      "sha256": "25d150bc165c86eeb047150d09c2fb3ff4629a0eb9318922c2d2295cdf9826ac"
+    },
+    {
+      "path": "scripts/capture-shortcuts.py",
+      "sha256": "8c27486f59c511ec7e8964827f00f4b2620a7832d245aee2d9982b794d278cdc"
+    },
+    {
+      "path": "scripts/coarse-fan-test.py",
+      "sha256": "4155904d0131081c32479fb7e6ca150c98316a2a52b2cd4a91b8e51c078d8c21"
+    },
+    {
+      "path": "scripts/prepare-vm-runtime.py",
+      "sha256": "bffdb404b77700d2e64326831bd9c34ef6ff4c49c26c546c412eb9e35b11bfb0"
+    },
+    {
+      "path": "scripts/profile_test.py",
+      "sha256": "6d006fad8119be37bdd9d2bbafe8bb1dc5de91e118010fc6997b5f35cee1cffc"
+    },
+    {
+      "path": "tests/coarse_recovery.py",
+      "sha256": "60b97e83bbaff8dde34d48829ead598ec92fc978b1dc1cec29fcf1eca0e09543"
+    },
+    {
+      "path": "tests/coarse_recovery_vm_inner.py",
+      "sha256": "0b7b7c833793ff5f741f1c1fdb85833d87b45cf3899ebbcfc1fa9a91ca1b3cbf"
+    },
+    {
+      "path": "tests/fan_guardian.py",
+      "sha256": "000bc86fefe73ee513af1aae21724a98146237adc1379f98ae623a319dfd08e1"
+    },
+    {
+      "path": "tests/fan_modes.py",
+      "sha256": "10b024ee0cb55d393022756e69de918691d11315c05b7b2a7dc99ff12c49c620"
+    },
+    {
+      "path": "tests/fan_monitoring.py",
+      "sha256": "d67085e81c5e828104651927c4a73dfff366192af40186441344a3e2a983cc87"
+    },
+    {
+      "path": "tests/game_launch.py",
+      "sha256": "9e7c848d871bfc63817d6185e880339a7cf1db949f56ad21b7ea68f3eadc701f"
+    },
+    {
+      "path": "tests/gui_settings.py",
+      "sha256": "8d9bcdbcc6e13f39881f983ba722ff578aa7249584c02a7eb4fa43a52cdd747f"
+    },
+    {
+      "path": "tests/integration/src/lib.rs",
+      "sha256": "5469f1aeb7001ff7a0979bbe76562dbab3c38b1274809fc24f9bb692753b945c"
+    },
+    {
+      "path": "tests/live_gpu.py",
+      "sha256": "997dba296b9ed58e9a1f932746f3e04b3f288e2bb6d7b1a45fec0b771bfb10c2"
+    },
+    {
+      "path": "tests/network.py",
+      "sha256": "bf037aab9416fc4ca837680d6e1f3c3eacb1fe8ea13edc8c7fcd9e4acca72a4d"
+    },
+    {
+      "path": "tests/notifications.py",
+      "sha256": "5f05cad8e73b13d31d105d34a890c106a229271c4ebe7b0d44c827c38876c9bf"
+    },
+    {
+      "path": "tests/nvidia_reader_vm_inner.py",
+      "sha256": "6281827745e47200c76cb8a7daede5fd6a17e84a55b3bd01339100774303d41c"
+    },
+    {
+      "path": "tests/package.py",
+      "sha256": "6e72caefac7eb65277dfbcfd45a7d0ef77cfe1f76f4f18c0e0e21c468b58efc3"
+    },
+    {
+      "path": "tests/package_lifecycle.py",
+      "sha256": "779e409cdf4a448ac2bb23a57d2da98030c2f793e8d8bace99787a92de5a2682"
+    },
+    {
+      "path": "tests/package_lifecycle_inner.py",
+      "sha256": "d10529f383bde0aea07070e51e557768b639c96fbc5bc5e93ea566dc1acaaa59"
+    },
+    {
+      "path": "tests/settings.py",
+      "sha256": "d51e34401e8581fd0bed2205a4395ac7c00d87bc756d3304bd6066990bc7e0c4"
+    },
+    {
+      "path": "tests/shortcut_portal_probe.py",
+      "sha256": "22ba12753ec9118d9ed1d1906aa76c46383a559f76144a606eac8d2592f046ab"
+    },
+    {
+      "path": "tests/shortcuts.py",
+      "sha256": "46c35088d173316963a7ce2c72b2840d17a5c4f7f10d058b37605f7d0671f7ba"
+    },
+    {
+      "path": "tests/smoke.py",
+      "sha256": "d9f8c412c678dfc8bb490854dd8da707a7c67f789d632a4c5db7235043bae0ef"
+    },
+    {
+      "path": "tests/systemd_vm.py",
+      "sha256": "bf03f07ffabba7da837fcb24fbeff92195cddadef115d3aba93832b9c47067f1"
+    },
+    {
+      "path": "tests/systemd_vm_inner.py",
+      "sha256": "a1b4924093af386ab5e754cabd8e05c5642674942e7c2b2cddbbe9994b560b5f"
+    },
+    {
+      "path": "tests/thermal_guard.py",
+      "sha256": "b0355c2601c4b3500abd6b93d799218f33fab5bb9d6c5412b720d11e19403d7f"
+    },
+    {
+      "path": "tests/tray.py",
+      "sha256": "6bd1111701cbcf2ac02e87978b49031a490ab138b1ff61dc35df156827c09fa2"
+    }
+  ]
+}

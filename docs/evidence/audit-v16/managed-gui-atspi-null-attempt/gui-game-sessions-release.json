@@ -1,0 +1,630 @@
+{
+  "result": "failed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "system_power_bus_used": false,
+  "real_shortcuts_or_notifications_enabled": false,
+  "profile": "release",
+  "requested_gtk_backend": "x11",
+  "gui_sha256": "f7b5687fff85b9255a0206db1605f5a6dee2c414ecbe64a369342fc3c0c22ccb",
+  "cli_sha256": "9f0d304a347cef947d26104bcae62c864ade37270abd9f1ccea21034b7c52918",
+  "checks_passed": [
+    "native setup saves automatic mode in user settings without starting a hold",
+    "native Launch runs the custom wrapper and renders active ownership with the effective profile",
+    "changing the preference affects future launches and preserves the active session until explicitly released",
+    "native release restores provider selection without stopping the game, and actual exit moves it to history"
+  ],
+  "captures": [],
+  "setup_accessible_description": "",
+  "setup_accessible_relations": [
+    {
+      "type": 2,
+      "targets": [
+        "Profile setup"
+      ]
+    },
+    {
+      "type": 18,
+      "targets": [
+        "GUI session fixture\ncustom/gui"
+      ]
+    }
+  ],
+  "error": "'NoneType' object has no attribute 'get_state_set'",
+  "gui_exit_code": null,
+  "accessible_nodes": [
+    {
+      "role": "application",
+      "name": "omen-gui"
+    },
+    {
+      "role": "frame",
+      "name": "OMEN Control"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Show or hide navigation"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Game Library"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Application actions"
+    },
+    {
+      "role": "button",
+      "name": "Fixture"
+    },
+    {
+      "role": "label",
+      "name": "Fixture"
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Minimize"
+    },
+    {
+      "role": "button",
+      "name": "Maximize"
+    },
+    {
+      "role": "button",
+      "name": "Close"
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": "System Vitals"
+    },
+    {
+      "role": "panel",
+      "name": "Performance Control"
+    },
+    {
+      "role": "panel",
+      "name": "Fan & Thermal"
+    },
+    {
+      "role": "panel",
+      "name": "Lighting Studio"
+    },
+    {
+      "role": "panel",
+      "name": "Graphics"
+    },
+    {
+      "role": "panel",
+      "name": "Battery & Power"
+    },
+    {
+      "role": "panel",
+      "name": "Game Library"
+    },
+    {
+      "role": "scroll pane",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Game library"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "entry",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Rescan library"
+    },
+    {
+      "role": "label",
+      "name": "Rescan library"
+    },
+    {
+      "role": "button",
+      "name": "Library locations"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Library locations"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Game sessions"
+    },
+    {
+      "role": "button",
+      "name": "Refresh sessions"
+    },
+    {
+      "role": "label",
+      "name": "Refresh sessions"
+    },
+    {
+      "role": "label",
+      "name": "Current system profile: Balanced"
+    },
+    {
+      "role": "label",
+      "name": "Fixture sessions \u2014 no physical hardware validation."
+    },
+    {
+      "role": "button",
+      "name": "Recent session history (1)"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Recent session history (1)"
+    },
+    {
+      "role": "label",
+      "name": "Found 1 games from Steam, Heroic, Lutris and custom entries. Missing or unreadable store records are skipped."
+    },
+    {
+      "role": "label",
+      "name": ""
+    },
+    {
+      "role": "list",
+      "name": ""
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "GUI session fixture\ncustom/gui"
+    },
+    {
+      "role": "table",
+      "name": ""
+    },
+    {
+      "role": "table cell",
+      "name": "Performance (unavailable here)"
+    },
+    {
+      "role": "combo box",
+      "name": "Performance (unavailable here)"
+    },
+    {
+      "role": "toggle button",
+      "name": "Performance (unavailable here)"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Performance (unavailable here)"
+    },
+    {
+      "role": "table cell",
+      "name": "Launch"
+    },
+    {
+      "role": "button",
+      "name": "Launch"
+    },
+    {
+      "role": "label",
+      "name": "Launch"
+    },
+    {
+      "role": "table cell",
+      "name": "Profile setup"
+    },
+    {
+      "role": "button",
+      "name": "Profile setup"
+    },
+    {
+      "role": "label",
+      "name": "Profile setup"
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Automatic restore is enabled. The actual game command must run through its wrapper."
+    },
+    {
+      "role": "label",
+      "name": "Automatic restore uses Power Profiles Daemon and a dedicated user process group. It needs an enabled, authorized daemon, a user systemd session and a supported kernel. A canceled hold is never automatically reapplied. Other profile holds can change the effective profile."
+    },
+    {
+      "role": "button",
+      "name": "Use manual restore"
+    },
+    {
+      "role": "label",
+      "name": "Use manual restore"
+    },
+    {
+      "role": "label",
+      "name": "Custom commands are wrapped automatically when launched here. Use the actual game command; a command that dispatches to an existing launcher outside the process group cannot establish game lifetime."
+    },
+    {
+      "role": "label",
+      "name": "Saved for future launches. Active sessions keep their current ownership; use Release profile hold to end it now."
+    },
+    {
+      "role": "label",
+      "name": "Games launch as your desktop user. A launch request does not confirm the game started. Manual mode applies a bound profile during submission and needs manual restoration. Automatic mode tracks the actual command through its configured wrapper and releases only its own profile hold after the process tree ends. Open Profile setup for requirements."
+    },
+    {
+      "role": "scroll bar",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": "Settings & Diagnostics"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Release game profile: Profile hold released; the game is not stopped"
+    },
+    {
+      "role": "button",
+      "name": "Dismiss message"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "scroll pane",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "OMEN Control"
+    },
+    {
+      "role": "list",
+      "name": ""
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Dashboard"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "System Vitals"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Performance Control"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Fan & Thermal"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Lighting Studio"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Graphics"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Battery & Power"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Game Library"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Settings & Diagnostics"
+    },
+    {
+      "role": "label",
+      "name": "Monitor"
+    },
+    {
+      "role": "label",
+      "name": "Controls"
+    },
+    {
+      "role": "label",
+      "name": "Library"
+    },
+    {
+      "role": "label",
+      "name": "Application"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "source: MOCK \u2014 fixture data, no real hardware"
+    }
+  ],
+  "cleanup_complete": true
+}

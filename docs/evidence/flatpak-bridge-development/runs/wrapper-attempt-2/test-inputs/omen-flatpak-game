@@ -1,0 +1,28 @@
+#!/bin/sh
+# Place this script inside the launcher's existing Flatpak app-data directory.
+# It requires existing org.freedesktop.Flatpak host-command permission.
+set -eu
+if [ "$#" -lt 3 ] || [ "$2" != -- ]; then
+    echo 'Usage: omen-flatpak-game GAME_ID -- ACTUAL_COMMAND [ARGUMENTS...]' >&2
+    exit 2
+fi
+omen_bridge_game_id=$1
+shift 2
+omen_bridge_instance=
+omen_bridge_section=0
+while IFS= read -r omen_bridge_line || [ -n "$omen_bridge_line" ]; do
+    case "$omen_bridge_line" in
+        '[Instance]') omen_bridge_section=1 ;;
+        '['*) omen_bridge_section=0 ;;
+        instance-id=*)
+            if [ "$omen_bridge_section" -eq 1 ]; then
+                [ -z "$omen_bridge_instance" ] || exit 2
+                omen_bridge_instance=${omen_bridge_line#instance-id=}
+            fi
+            ;;
+    esac
+done < /.flatpak-info
+case "$omen_bridge_instance" in ''|*[!0-9]*) echo 'A running Flatpak instance is required.' >&2; exit 2 ;; esac
+/usr/bin/flatpak-spawn --host --directory=/ /usr/bin/omen-cli game-flatpak-prepare "$omen_bridge_game_id" --instance "$omen_bridge_instance" --sandbox-pid "$$"
+unset omen_bridge_game_id omen_bridge_instance omen_bridge_section omen_bridge_line
+exec "$@"

@@ -1,0 +1,41 @@
+{
+  "repository": "Heroic-Games-Launcher/HeroicGamesLauncher",
+  "commit": "509a34feea8541b73c928e289f2cf262d432db4a",
+  "files": [
+    {
+      "path": "src/backend/protocol.ts",
+      "url": "https://raw.githubusercontent.com/Heroic-Games-Launcher/HeroicGamesLauncher/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/protocol.ts",
+      "sha256": "78e879d23e347fcebfd9264d2d64761f19ed38bc8ad00a338c90db9035512b3a"
+    },
+    {
+      "path": "src/backend/storeManagers/sideload/library.ts",
+      "url": "https://raw.githubusercontent.com/Heroic-Games-Launcher/HeroicGamesLauncher/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/sideload/library.ts",
+      "sha256": "0e879d1f0ddf6bea56d3cc75324d9d2f2ba40bd57c7922f8942037a7d420de79"
+    },
+    {
+      "path": "src/backend/storeManagers/sideload/electronStores.ts",
+      "url": "https://raw.githubusercontent.com/Heroic-Games-Launcher/HeroicGamesLauncher/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/sideload/electronStores.ts",
+      "sha256": "9d714c19b0c9dacac5960a3e0c148155ac53ec5d4a97fcbf0dc6ea9fe644e8a0"
+    },
+    {
+      "path": "src/backend/storeManagers/zoom/library.ts",
+      "url": "https://raw.githubusercontent.com/Heroic-Games-Launcher/HeroicGamesLauncher/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/zoom/library.ts",
+      "sha256": "a8018550cfa8c2898bf2fb3ee83a103c9b258787607ecf3933ac14963cba6516"
+    },
+    {
+      "path": "src/backend/storeManagers/zoom/electronStores.ts",
+      "url": "https://raw.githubusercontent.com/Heroic-Games-Launcher/HeroicGamesLauncher/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/zoom/electronStores.ts",
+      "sha256": "a747430feb70769fc5bd990ebf2e83d4c9092f5a6f25e5859d63a22ec416e8cd"
+    },
+    {
+      "path": "src/backend/storeManagers/zoom/constants.ts",
+      "url": "https://raw.githubusercontent.com/Heroic-Games-Launcher/HeroicGamesLauncher/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/zoom/constants.ts",
+      "sha256": "1e4cbf2db7803122e11a867f8b71d3f7b821ff68426a357de4df4c4d1d7728f4"
+    },
+    {
+      "path": "src/backend/storeManagers/zoom/games.ts",
+      "url": "https://raw.githubusercontent.com/Heroic-Games-Launcher/HeroicGamesLauncher/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/zoom/games.ts",
+      "sha256": "7c4441b9fcd5ca1c98a413c607a100b40e01ca3d5f970c3fcf01dfec6f0f1832"
+    }
+  ]
+}

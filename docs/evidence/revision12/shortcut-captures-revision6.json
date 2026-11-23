@@ -1,0 +1,24 @@
+{
+  "fixture_only": true,
+  "host_shortcuts_changed": false,
+  "hardware_writes": false,
+  "cleanup_complete": true,
+  "method": "application-only GTK snapshot with private portal/tray/daemon fixtures",
+  "gui_sha256": "391688183390b9dc418f16d8b43b7db916a6d83de6ae788407534c3ec046d822",
+  "screenshots": [
+    {
+      "path": "docs/screenshots/settings-shortcut-disabled-fixture.png",
+      "sha256": "4dabd705d6bba416bc3984222eed7c1ac5226498c3b9b346a79450015f9fac2f",
+      "shortcut_enabled": false,
+      "portal_fixture_bind_count": 0,
+      "display_type": "GdkWaylandDisplay"
+    },
+    {
+      "path": "docs/screenshots/settings-shortcut-enabled-fixture.png",
+      "sha256": "7dc0e39d72076caaf232ea65485ca36abf445e10776788798e216236d0f399cb",
+      "shortcut_enabled": true,
+      "portal_fixture_bind_count": 1,
+      "display_type": "GdkWaylandDisplay"
+    }
+  ]
+}

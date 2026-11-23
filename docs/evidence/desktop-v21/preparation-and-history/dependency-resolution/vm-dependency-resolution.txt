@@ -1,0 +1,973 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-gi is already the newest version (3.56.2-1).
+python3-gi set to manually installed.
+dbus-user-session is already the newest version (1.16.2-2ubuntu4).
+dbus-user-session set to manually installed.
+xauth is already the newest version (1:1.1.2-1.1build1).
+xauth set to manually installed.
+Solving dependencies...
+The following additional packages will be installed:
+  accountsservice adwaita-icon-theme at-spi2-common breeze breeze-cursor-theme
+  breeze-wallpaper bubblewrap cpp cpp-15 cpp-15-x86-64-linux-gnu
+  cpp-x86-64-linux-gnu dconf-gsettings-backend dconf-service fontconfig
+  fontconfig-config fonts-dejavu-core fonts-dejavu-mono frameworkintegration6
+  gcc-15-base gdb geoclue-2.0 gir1.2-freedesktop glib-networking
+  glib-networking-common glib-networking-services glycin-loaders
+  glycin-thumbnailers gsettings-desktop-schemas gstreamer1.0-plugins-base
+  gstreamer1.0-plugins-good gtk-update-icon-cache hicolor-icon-theme
+  kactivitymanagerd kde-cli-tools kde-cli-tools-data kde-style-breeze
+  kde-style-breeze-data kded6 kf6-breeze-icon-theme kglobalacceld kio-fuse
+  kio6 kirigami-addons-data knighttime kwallet6 kwayland6-data kwin-common
+  kwin-data kwin-style-breeze kwin-wayland layer-shell-qt libaa1
+  libaccountsservice0 libadwaita-1-0 libaom3 libappstreamqt3 libasound2-data
+  libasound2t64 libass9 libasyncns0 libatspi2.0-0t64 libavahi-client3
+  libavahi-common-data libavahi-common3 libavahi-glib1 libavc1394-0
+  libavcodec62 libavfilter11 libavformat62 libavutil60 libb2-1 libbabeltrace1
+  libbatterycontrol6 libbluray3 libbs2b0 libcaca0 libcairo-gobject2
+  libcairo-script-interpreter2 libcairo2 libcanberra0 libcdparanoia0
+  libchromaprint1 libcjson1 libcodec2-1.2 libcolord2 libcups2t64 libdatrie1
+  libdav1d7 libdconf1 libdecor-0-0 libdeflate0 libdisplay-info3 libdmtx0t64
+  libdouble-conversion3 libdrm-intel1 libdv4t64 libdvdnav4 libdvdread8t64
+  libeditorconfig0 libegl-mesa0 libegl1 libei1 libeis1 libepoxy0 libexiv2-28
+  libexiv2-data libfftw3-double3 libfftw3-single3 libflac14 libflite1
+  libfontconfig1 libfontenc1 libgbm1 libgdk-pixbuf-2.0-0
+  libgdk-pixbuf2.0-common libgeoclue-2-0 libgl1 libgl1-mesa-dri libgles2
+  libglvnd0 libglx-mesa0 libglx0 libglycin-2-0 libgme0 libgomp1 libgpgmepp7
+  libgraphene-1.0-0 libgraphite2-3 libgsm1 libgstreamer-gl1.0-0
+  libgstreamer-plugins-base1.0-0 libgstreamer-plugins-extra1.0-0 libgtk-4-1
+  libgtk-4-common libharfbuzz-subset0 libharfbuzz0b libheif-plugin-aomdec
+  libheif1 libhunspell-1.7-0 libhwy1t64 libibus-1.0-5 libice6 libiec61883-0
+  libimobiledevice-1.0-6 libimobiledevice-glue-1.0-0 libinireader0
+  libinput-bin libinput10 libipt2 libisl23 libjbig0 libjpeg-turbo8 libjpeg8
+  libjs-underscore libjxl0.11 libkdecorations3-6 libkdecorations3private2
+  libkexiv2qt6-0 libkf6archive-data libkf6archive6 libkf6attica6
+  libkf6auth-data libkf6authcore6 libkf6baloo6 libkf6balooengine6
+  libkf6bookmarks-data libkf6bookmarks6 libkf6bookmarkswidgets6
+  libkf6breezeicons6 libkf6calendarevents6 libkf6codecs-data libkf6codecs6
+  libkf6colorscheme-data libkf6colorscheme6 libkf6completion-data
+  libkf6completion6 libkf6config-bin libkf6config-data libkf6configcore6
+  libkf6configgui6 libkf6configqml6 libkf6configwidgets-data
+  libkf6configwidgets6 libkf6coreaddons-data libkf6coreaddons6 libkf6crash6
+  libkf6dbusaddons-data libkf6dbusaddons6 libkf6declarative-data
+  libkf6doctools6 libkf6filemetadata-data libkf6filemetadata3
+  libkf6globalaccel-data libkf6globalaccel6 libkf6guiaddons-data
+  libkf6guiaddons6 libkf6holidays-data libkf6holidays6 libkf6i18n-data
+  libkf6i18n6 libkf6i18nlocaledata6 libkf6i18nqml6 libkf6iconthemes-data
+  libkf6iconthemes6 libkf6iconwidgets6 libkf6idletime6 libkf6itemmodels6
+  libkf6itemviews-data libkf6itemviews6 libkf6jobwidgets-data
+  libkf6jobwidgets6 libkf6kcmutils-data libkf6kcmutils6 libkf6kcmutilscore6
+  libkf6kcmutilsquick6 libkf6kiocore6 libkf6kiofilewidgets6 libkf6kiogui6
+  libkf6kiowidgets6 libkf6networkmanagerqt6 libkf6newstuff-data
+  libkf6newstuffcore6 libkf6newstuffwidgets6 libkf6notifications-data
+  libkf6notifications6 libkf6notifyconfig-data libkf6notifyconfig6
+  libkf6package-data libkf6package6 libkf6parts-data libkf6parts6
+  libkf6prison6 libkf6prisonscanner6 libkf6pty-data libkf6pty6
+  libkf6qqc2desktopstyle-data libkf6runner6 libkf6screendpms8
+  libkf6service-bin libkf6service-data libkf6service6 libkf6solid-data
+  libkf6solid6 libkf6sonnet-data libkf6sonnetcore6 libkf6sonnetui6
+  libkf6statusnotifieritem-data libkf6statusnotifieritem6 libkf6style6
+  libkf6su-bin libkf6su-data libkf6su6 libkf6svg6 libkf6syndication6
+  libkf6syntaxhighlighting-data libkf6syntaxhighlighting6 libkf6texteditor-bin
+  libkf6texteditor-data libkf6texteditor6 libkf6textwidgets-data
+  libkf6textwidgets6 libkf6unitconversion-data libkf6unitconversion6
+  libkf6userfeedback-data libkf6userfeedbackcore6 libkf6wallet-data
+  libkf6wallet6 libkf6walletbackend6 libkf6widgetsaddons-data
+  libkf6widgetsaddons6 libkf6windowsystem-data libkf6windowsystem6
+  libkf6xmlgui-data libkf6xmlgui6 libkfontinst6 libkfontinstui6
+  libkglobalacceld0 libkirigami-data libkirigami6 libkirigamicontrols6
+  libkirigamidelegates6 libkirigamidialogs6 libkirigamilayouts6
+  libkirigamilayoutsprivate6 libkirigamiplatform6 libkirigamipolyfill6
+  libkirigamiprimitives6 libkirigamiprivate6 libkirigamitemplates6 libklipper6
+  libklookandfeel6 libkmpris6 libknighttime0 libkpipewire-data libkpipewire6
+  libkpipewiredmabuf6 libkpipewirerecord6 libkquickcontrolsprivate0
+  libkscreen-data libkscreenlocker6 libksysguard-data libksysguardformatter2
+  libksysguardsensorfaces2 libksysguardsensors2 libksysguardsystemstats2
+  libkwaylandclient6 libkwin6 libkworkspace6-6 liblayershellqtinterface6
+  liblcms2-2 liblerc4 liblilv-0-0 libltdl7 libmbedcrypto16 libmd4c0
+  libmp3lame0 libmpc3 libmpg123-0t64 libmtdev1t64 libmysofa1 libnorm1t64
+  libnotificationmanager1 libnotify4 liboeffis1 libogg0 libopengl0
+  libopenjp2-7 libopenmpt0t64 libopus0 liborc-0.4-0t64 libpackagekitqt6-2
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpciaccess0
+  libpcre2-16-0 libpgm-5.3-0t64 libpipewire-0.3-0t64 libpixman-1-0
+  libplacebo360 libplasma-geolocation-interface6 libplasma5support-data
+  libplasma5support6 libplasma7 libplasmaactivities-data libplasmaactivities7
+  libplasmaactivitiesstats1 libplasmaquick7 libplist-2.0-4 libpolkit-qt6-1-1
+  libprocesscore10 libproxy1v5 libpulse0 libqaccessibilityclient-qt6-0
+  libqalculate-data libqalculate23 libqca-qt6-2 libqrencode4
+  libqt6core5compat6 libqt6core6t64 libqt6dbus6 libqt6gui6 libqt6labsplatform6
+  libqt6multimedia6 libqt6network6 libqt6opengl6 libqt6openglwidgets6
+  libqt6positioning6 libqt6positioning6-plugins libqt6positioningquick6
+  libqt6printsupport6 libqt6qml6 libqt6qmlmeta6 libqt6qmlmodels6
+  libqt6qmlworkerscript6 libqt6quick6 libqt6quickcontrols2-6
+  libqt6quickshapes6 libqt6quicktemplates2-6 libqt6quickwidgets6
+  libqt6serialport6 libqt6shadertools6 libqt6sql6 libqt6sql6-sqlite libqt6svg6
+  libqt6test6 libqt6texttospeech6 libqt6uitools6 libqt6virtualkeyboard6
+  libqt6waylandclient6 libqt6waylandcompositor6 libqt6widgets6
+  libqt6wlshellintegration6 libqt6xml6 libquickcharts1 libquickchartscontrols1
+  librabbitmq4 librav1e0.8 libraw1394-11 librist4 librsvg2-2 librubberband3
+  libsamplerate0 libscim8v5 libsdl2-2.0-0 libsdl2-classic libsecret-1-0
+  libsecret-common libserd-0-0 libsharpyuv0 libshine3 libshout3 libsm6
+  libsnappy1v5 libsndfile1 libsord-0-0 libsoup-3.0-0 libsoup-3.0-common
+  libsource-highlight-common libsource-highlight4t64 libsoxr0
+  libspa-0.2-modules libspeex1 libsratom-0-0 libsrt1.5-gnutls libssh-4
+  libsvtav1enc2 libswresample6 libswscale9 libtag2 libtaskmanager6 libtdb1
+  libthai-data libthai0 libtheora1 libtheoradec2 libtheoraenc2 libtiff6
+  libts0t64 libtwolame0 libudfread3 libunibreak6 libusbmuxd-2.0-7 libv4l-0t64
+  libv4lconvert0t64 libva-drm2 libva-x11-2 libva2 libvdpau1 libvidstab1.1
+  libvisual-0.4-0 libvorbis0a libvorbisenc2 libvorbisfile3 libvpl2 libvpx12
+  libvulkan1 libwacom-common libwacom9 libwavpack1 libwayland-client0
+  libwayland-cursor0 libwayland-egl1 libwayland-server0 libweather-ion7
+  libwebp7 libwebpmux3 libwebrtc-audio-processing-1-3 libx11-xcb1 libx264-165
+  libx265-215 libxaw7 libxcb-composite0 libxcb-cursor0 libxcb-damage0
+  libxcb-dpms0 libxcb-dri3-0 libxcb-glx0 libxcb-icccm4 libxcb-image0
+  libxcb-keysyms1 libxcb-present0 libxcb-randr0 libxcb-record0
+  libxcb-render-util0 libxcb-render0 libxcb-res0 libxcb-shape0 libxcb-shm0
+  libxcb-sync1 libxcb-util1 libxcb-xfixes0 libxcb-xinput0 libxcb-xkb1
+  libxcomposite1 libxcursor1 libxcvt0 libxdamage1 libxfixes3 libxfont2 libxft2
+  libxi6 libxinerama1 libxkbcommon-x11-0 libxkbfile1 libxkbregistry0 libxmu6
+  libxpm4 libxrandr2 libxrender1 libxres1 libxshmfence1 libxss1 libxt6t64
+  libxtst6 libxv1 libxvidcore4 libxxf86dga1 libxxf86vm1 libzimg2 libzix-0-0
+  libzmq5 libzvbi-common libzvbi0t64 libzxing3 mesa-libgallium milou
+  ocean-sound-theme ocl-icd-libopencl1 oxygen-sounds plasma-desktop-data
+  plasma-desktoptheme plasma-integration plasma-workspace
+  plasma-workspace-data qdbus-qt6 qml6-module-org-kde-activities
+  qml6-module-org-kde-baloo qml6-module-org-kde-breeze
+  qml6-module-org-kde-config qml6-module-org-kde-coreaddons
+  qml6-module-org-kde-desktop qml6-module-org-kde-draganddrop
+  qml6-module-org-kde-graphicaleffects qml6-module-org-kde-guiaddons
+  qml6-module-org-kde-iconthemes qml6-module-org-kde-kcmutils
+  qml6-module-org-kde-kholidays qml6-module-org-kde-kirigami
+  qml6-module-org-kde-kirigamiaddons-components
+  qml6-module-org-kde-kirigamiaddons-delegates
+  qml6-module-org-kde-kirigamiaddons-tableview
+  qml6-module-org-kde-kirigamiaddons-treeview qml6-module-org-kde-kitemmodels
+  qml6-module-org-kde-kquickcontrols qml6-module-org-kde-kquickcontrolsaddons
+  qml6-module-org-kde-ksvg qml6-module-org-kde-ksysguard
+  qml6-module-org-kde-kwindowsystem qml6-module-org-kde-newstuff
+  qml6-module-org-kde-notifications qml6-module-org-kde-pipewire
+  qml6-module-org-kde-plasma-plasma5support qml6-module-org-kde-prison
+  qml6-module-org-kde-quickcharts qml6-module-org-kde-sonnet
+  qml6-module-org-kde-userfeedback qml6-module-qt-labs-folderlistmodel
+  qml6-module-qt-labs-platform qml6-module-qt-labs-qmlmodels
+  qml6-module-qt5compat-graphicaleffects qml6-module-qtcore
+  qml6-module-qtmultimedia qml6-module-qtpositioning qml6-module-qtqml
+  qml6-module-qtqml-models qml6-module-qtqml-workerscript qml6-module-qtquick
+  qml6-module-qtquick-controls qml6-module-qtquick-dialogs
+  qml6-module-qtquick-effects qml6-module-qtquick-layouts
+  qml6-module-qtquick-shapes qml6-module-qtquick-templates
+  qml6-module-qtquick-tooling qml6-module-qtquick-virtualkeyboard
+  qml6-module-qtquick-window qt6-base-dev-tools qt6-svg-plugins qt6-wayland
+  sound-theme-freedesktop user-session-migration x11-common x11-utils
+  x11-xkb-utils x11-xserver-utils xdg-desktop-portal xserver-common
+Suggested packages:
+  gnome-control-center adwaita-icon-theme-legacy cpp-doc gcc-15-locales
+  cpp-15-doc gdb-doc gdbserver libheif-plugin-x265 | libheif-plugin-kvazaar
+  gvfs systemsettings kwin-addons alsa-utils libasound2-plugins libcuda1
+  libnvcuvid1 libnvidia-encode1 libbluray-bdj libglu1-mesa | libglu1
+  libglut3.12 libcanberra-pulse colord cups-common libdv-bin oss-compat
+  libdvdcss2 exiv2 libfftw3-bin libfftw3-dev libvisual-0.4-plugins
+  libheif-plugin-libde265 libheif-plugin-x265 libheif-plugin-ffmpegdec
+  libheif-plugin-jpegdec libheif-plugin-jpegenc libheif-plugin-j2kdec
+  libheif-plugin-j2kenc libheif-plugin-kvazaar libheif-plugin-rav1e
+  libheif-plugin-svtenc libusbmuxd-tools libjs-jquery libpam-fprintd
+  libpam-kwallet5 libpam-pkcs11 libpam-sss liblcms2-utils opus-tools pipewire
+  pulseaudio qt6-qmltooling-plugins libraw1394-doc librsvg2-bin xdg-utils
+  serdi sordi speex libwacom-bin opencl-icd kde-config-flatpak
+  python-libevdev-doc cmake mesa-utils nickle cairo-5c xorg-docs-core
+  xfonts-100dpi | xfonts-75dpi xfonts-scalable
+Recommended packages:
+  librsvg2-common kde-style-breeze-qt5 libc-dbg avahi-daemon iio-sensor-proxy
+  wpasupplicant libheif-plugin-aomenc | libheif-plugin-rav1e
+  | libheif-plugin-svtenc gstreamer1.0-x systemsettings libkf6kcmutils-bin
+  switcheroo-control kwin-style-aurorae alsa-ucm-conf alsa-topology-conf
+  libaacs0 default-libdecor-0-plugin-1 | libdecor-0-plugin-1 gstreamer1.0-gl
+  libgtk-4-bin ibus-gtk4 libheif-plugin-aomenc hunspell-en-us
+  | hunspell-dictionary | myspell-dictionary usbmuxd javascript-common
+  keditbookmarks libkf6dbusaddons-bin libkf6filemetadata-bin
+  libkf6guiaddons-bin libkf6iconthemes-bin kpackagetool6 media-player-info
+  sonnet6-plugins libkf6texteditor-katepart libkf6userfeedback-doc
+  kde-config-screenlocker libpipewire-0.3-common plasma-activities-bin
+  libqca-qt6-plugins qt6-translations-l10n qt6-gtk-platformtheme
+  qt6-qpa-plugins mesa-vulkan-drivers | vulkan-icd power-profiles-daemon
+  bluedevil breeze-gtk-theme fonts-hack fonts-noto-cjk fonts-noto-hinted
+  fonts-noto-mono fonts-noto-unhinted ibus-data kde-config-gtk-style
+  kde-config-sddm kde-style-oxygen-qt6 kgamma khelpcenter kinfocenter
+  kio-extras kmenuedit kscreen ksshaskpass kwrited libpam-kwallet5
+  plasma-browser-integration plasma-discover plasma-disks plasma-firewall
+  plasma-nm plasma-pa plasma-systemmonitor plasma-thunderbolt plasma-vault
+  powerdevil xdg-desktop-portal-gtk fonts-noto-color-emoji fonts-noto-core
+  fonts-noto-ui-core appmenu-gtk3-module ksystemstats
+  qml6-module-org-kde-kirigamiaddons-formcard luit xfonts-base xcvt
+The following NEW packages will be installed:
+  accountsservice adwaita-icon-theme at-spi2-common at-spi2-core breeze
+  breeze-cursor-theme breeze-wallpaper bubblewrap cpp cpp-15
+  cpp-15-x86-64-linux-gnu cpp-x86-64-linux-gnu dconf-gsettings-backend
+  dconf-service fontconfig fontconfig-config fonts-dejavu-core
+  fonts-dejavu-mono frameworkintegration6 gcc-15-base gdb geoclue-2.0
+  gir1.2-atspi-2.0 gir1.2-freedesktop glib-networking glib-networking-common
+  glib-networking-services glycin-loaders glycin-thumbnailers
+  gsettings-desktop-schemas gstreamer1.0-plugins-base
+  gstreamer1.0-plugins-good gtk-update-icon-cache hicolor-icon-theme
+  kactivitymanagerd kde-cli-tools kde-cli-tools-data kde-style-breeze
+  kde-style-breeze-data kded6 kf6-breeze-icon-theme kglobalacceld kio-fuse
+  kio6 kirigami-addons-data knighttime kwallet6 kwayland6-data kwin-common
+  kwin-data kwin-style-breeze kwin-wayland layer-shell-qt libaa1
+  libaccountsservice0 libadwaita-1-0 libaom3 libappstreamqt3 libasound2-data
+  libasound2t64 libass9 libasyncns0 libatspi2.0-0t64 libavahi-client3
+  libavahi-common-data libavahi-common3 libavahi-glib1 libavc1394-0
+  libavcodec62 libavfilter11 libavformat62 libavutil60 libb2-1 libbabeltrace1
+  libbatterycontrol6 libbluray3 libbs2b0 libcaca0 libcairo-gobject2
+  libcairo-script-interpreter2 libcairo2 libcanberra0 libcdparanoia0
+  libchromaprint1 libcjson1 libcodec2-1.2 libcolord2 libcups2t64 libdatrie1
+  libdav1d7 libdconf1 libdecor-0-0 libdeflate0 libdisplay-info3 libdmtx0t64
+  libdouble-conversion3 libdrm-intel1 libdv4t64 libdvdnav4 libdvdread8t64
+  libeditorconfig0 libegl-mesa0 libegl1 libei1 libeis1 libepoxy0 libexiv2-28
+  libexiv2-data libfftw3-double3 libfftw3-single3 libflac14 libflite1
+  libfontconfig1 libfontenc1 libgbm1 libgdk-pixbuf-2.0-0
+  libgdk-pixbuf2.0-common libgeoclue-2-0 libgl1 libgl1-mesa-dri libgles2
+  libglvnd0 libglx-mesa0 libglx0 libglycin-2-0 libgme0 libgomp1 libgpgmepp7
+  libgraphene-1.0-0 libgraphite2-3 libgsm1 libgstreamer-gl1.0-0
+  libgstreamer-plugins-base1.0-0 libgstreamer-plugins-extra1.0-0 libgtk-4-1
+  libgtk-4-common libharfbuzz-subset0 libharfbuzz0b libheif-plugin-aomdec
+  libheif1 libhunspell-1.7-0 libhwy1t64 libibus-1.0-5 libice6 libiec61883-0
+  libimobiledevice-1.0-6 libimobiledevice-glue-1.0-0 libinireader0
+  libinput-bin libinput10 libipt2 libisl23 libjbig0 libjpeg-turbo8 libjpeg8
+  libjs-underscore libjxl0.11 libkdecorations3-6 libkdecorations3private2
+  libkexiv2qt6-0 libkf6archive-data libkf6archive6 libkf6attica6
+  libkf6auth-data libkf6authcore6 libkf6baloo6 libkf6balooengine6
+  libkf6bookmarks-data libkf6bookmarks6 libkf6bookmarkswidgets6
+  libkf6breezeicons6 libkf6calendarevents6 libkf6codecs-data libkf6codecs6
+  libkf6colorscheme-data libkf6colorscheme6 libkf6completion-data
+  libkf6completion6 libkf6config-bin libkf6config-data libkf6configcore6
+  libkf6configgui6 libkf6configqml6 libkf6configwidgets-data
+  libkf6configwidgets6 libkf6coreaddons-data libkf6coreaddons6 libkf6crash6
+  libkf6dbusaddons-data libkf6dbusaddons6 libkf6declarative-data
+  libkf6doctools6 libkf6filemetadata-data libkf6filemetadata3
+  libkf6globalaccel-data libkf6globalaccel6 libkf6guiaddons-data
+  libkf6guiaddons6 libkf6holidays-data libkf6holidays6 libkf6i18n-data
+  libkf6i18n6 libkf6i18nlocaledata6 libkf6i18nqml6 libkf6iconthemes-data
+  libkf6iconthemes6 libkf6iconwidgets6 libkf6idletime6 libkf6itemmodels6
+  libkf6itemviews-data libkf6itemviews6 libkf6jobwidgets-data
+  libkf6jobwidgets6 libkf6kcmutils-data libkf6kcmutils6 libkf6kcmutilscore6
+  libkf6kcmutilsquick6 libkf6kiocore6 libkf6kiofilewidgets6 libkf6kiogui6
+  libkf6kiowidgets6 libkf6networkmanagerqt6 libkf6newstuff-data
+  libkf6newstuffcore6 libkf6newstuffwidgets6 libkf6notifications-data
+  libkf6notifications6 libkf6notifyconfig-data libkf6notifyconfig6
+  libkf6package-data libkf6package6 libkf6parts-data libkf6parts6
+  libkf6prison6 libkf6prisonscanner6 libkf6pty-data libkf6pty6
+  libkf6qqc2desktopstyle-data libkf6runner6 libkf6screendpms8
+  libkf6service-bin libkf6service-data libkf6service6 libkf6solid-data
+  libkf6solid6 libkf6sonnet-data libkf6sonnetcore6 libkf6sonnetui6
+  libkf6statusnotifieritem-data libkf6statusnotifieritem6 libkf6style6
+  libkf6su-bin libkf6su-data libkf6su6 libkf6svg6 libkf6syndication6
+  libkf6syntaxhighlighting-data libkf6syntaxhighlighting6 libkf6texteditor-bin
+  libkf6texteditor-data libkf6texteditor6 libkf6textwidgets-data
+  libkf6textwidgets6 libkf6unitconversion-data libkf6unitconversion6
+  libkf6userfeedback-data libkf6userfeedbackcore6 libkf6wallet-data
+  libkf6wallet6 libkf6walletbackend6 libkf6widgetsaddons-data
+  libkf6widgetsaddons6 libkf6windowsystem-data libkf6windowsystem6
+  libkf6xmlgui-data libkf6xmlgui6 libkfontinst6 libkfontinstui6
+  libkglobalacceld0 libkirigami-data libkirigami6 libkirigamicontrols6
+  libkirigamidelegates6 libkirigamidialogs6 libkirigamilayouts6
+  libkirigamilayoutsprivate6 libkirigamiplatform6 libkirigamipolyfill6
+  libkirigamiprimitives6 libkirigamiprivate6 libkirigamitemplates6 libklipper6
+  libklookandfeel6 libkmpris6 libknighttime0 libkpipewire-data libkpipewire6
+  libkpipewiredmabuf6 libkpipewirerecord6 libkquickcontrolsprivate0
+  libkscreen-data libkscreenlocker6 libksysguard-data libksysguardformatter2
+  libksysguardsensorfaces2 libksysguardsensors2 libksysguardsystemstats2
+  libkwaylandclient6 libkwin6 libkworkspace6-6 liblayershellqtinterface6
+  liblcms2-2 liblerc4 liblilv-0-0 libltdl7 libmbedcrypto16 libmd4c0
+  libmp3lame0 libmpc3 libmpg123-0t64 libmtdev1t64 libmysofa1 libnorm1t64
+  libnotificationmanager1 libnotify4 liboeffis1 libogg0 libopengl0
+  libopenjp2-7 libopenmpt0t64 libopus0 liborc-0.4-0t64 libpackagekitqt6-2
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpciaccess0
+  libpcre2-16-0 libpgm-5.3-0t64 libpipewire-0.3-0t64 libpixman-1-0
+  libplacebo360 libplasma-geolocation-interface6 libplasma5support-data
+  libplasma5support6 libplasma7 libplasmaactivities-data libplasmaactivities7
+  libplasmaactivitiesstats1 libplasmaquick7 libplist-2.0-4 libpolkit-qt6-1-1
+  libprocesscore10 libproxy1v5 libpulse0 libqaccessibilityclient-qt6-0
+  libqalculate-data libqalculate23 libqca-qt6-2 libqrencode4
+  libqt6core5compat6 libqt6core6t64 libqt6dbus6 libqt6gui6 libqt6labsplatform6
+  libqt6multimedia6 libqt6network6 libqt6opengl6 libqt6openglwidgets6
+  libqt6positioning6 libqt6positioning6-plugins libqt6positioningquick6
+  libqt6printsupport6 libqt6qml6 libqt6qmlmeta6 libqt6qmlmodels6
+  libqt6qmlworkerscript6 libqt6quick6 libqt6quickcontrols2-6
+  libqt6quickshapes6 libqt6quicktemplates2-6 libqt6quickwidgets6
+  libqt6serialport6 libqt6shadertools6 libqt6sql6 libqt6sql6-sqlite libqt6svg6
+  libqt6test6 libqt6texttospeech6 libqt6uitools6 libqt6virtualkeyboard6
+  libqt6waylandclient6 libqt6waylandcompositor6 libqt6widgets6
+  libqt6wlshellintegration6 libqt6xml6 libquickcharts1 libquickchartscontrols1
+  librabbitmq4 librav1e0.8 libraw1394-11 librist4 librsvg2-2 librubberband3
+  libsamplerate0 libscim8v5 libsdl2-2.0-0 libsdl2-classic libsecret-1-0
+  libsecret-common libserd-0-0 libsharpyuv0 libshine3 libshout3 libsm6
+  libsnappy1v5 libsndfile1 libsord-0-0 libsoup-3.0-0 libsoup-3.0-common
+  libsource-highlight-common libsource-highlight4t64 libsoxr0
+  libspa-0.2-modules libspeex1 libsratom-0-0 libsrt1.5-gnutls libssh-4
+  libsvtav1enc2 libswresample6 libswscale9 libtag2 libtaskmanager6 libtdb1
+  libthai-data libthai0 libtheora1 libtheoradec2 libtheoraenc2 libtiff6
+  libts0t64 libtwolame0 libudfread3 libunibreak6 libusbmuxd-2.0-7 libv4l-0t64
+  libv4lconvert0t64 libva-drm2 libva-x11-2 libva2 libvdpau1 libvidstab1.1
+  libvisual-0.4-0 libvorbis0a libvorbisenc2 libvorbisfile3 libvpl2 libvpx12
+  libvulkan1 libwacom-common libwacom9 libwavpack1 libwayland-client0
+  libwayland-cursor0 libwayland-egl1 libwayland-server0 libweather-ion7
+  libwebp7 libwebpmux3 libwebrtc-audio-processing-1-3 libx11-xcb1 libx264-165
+  libx265-215 libxaw7 libxcb-composite0 libxcb-cursor0 libxcb-damage0
+  libxcb-dpms0 libxcb-dri3-0 libxcb-glx0 libxcb-icccm4 libxcb-image0
+  libxcb-keysyms1 libxcb-present0 libxcb-randr0 libxcb-record0
+  libxcb-render-util0 libxcb-render0 libxcb-res0 libxcb-shape0 libxcb-shm0
+  libxcb-sync1 libxcb-util1 libxcb-xfixes0 libxcb-xinput0 libxcb-xkb1
+  libxcomposite1 libxcursor1 libxcvt0 libxdamage1 libxfixes3 libxfont2 libxft2
+  libxi6 libxinerama1 libxkbcommon-x11-0 libxkbfile1 libxkbregistry0 libxmu6
+  libxpm4 libxrandr2 libxrender1 libxres1 libxshmfence1 libxss1 libxt6t64
+  libxtst6 libxv1 libxvidcore4 libxxf86dga1 libxxf86vm1 libzimg2 libzix-0-0
+  libzmq5 libzvbi-common libzvbi0t64 libzxing3 mesa-libgallium milou
+  ocean-sound-theme ocl-icd-libopencl1 omen-linux oxygen-sounds plasma-desktop
+  plasma-desktop-data plasma-desktoptheme plasma-integration
+  plasma-session-wayland plasma-workspace plasma-workspace-data
+  polkit-kde-agent-1 python3-libevdev qdbus-qt6 qml6-module-org-kde-activities
+  qml6-module-org-kde-baloo qml6-module-org-kde-breeze
+  qml6-module-org-kde-config qml6-module-org-kde-coreaddons
+  qml6-module-org-kde-desktop qml6-module-org-kde-draganddrop
+  qml6-module-org-kde-graphicaleffects qml6-module-org-kde-guiaddons
+  qml6-module-org-kde-iconthemes qml6-module-org-kde-kcmutils
+  qml6-module-org-kde-kholidays qml6-module-org-kde-kirigami
+  qml6-module-org-kde-kirigamiaddons-components
+  qml6-module-org-kde-kirigamiaddons-delegates
+  qml6-module-org-kde-kirigamiaddons-tableview
+  qml6-module-org-kde-kirigamiaddons-treeview qml6-module-org-kde-kitemmodels
+  qml6-module-org-kde-kquickcontrols qml6-module-org-kde-kquickcontrolsaddons
+  qml6-module-org-kde-ksvg qml6-module-org-kde-ksysguard
+  qml6-module-org-kde-kwindowsystem qml6-module-org-kde-newstuff
+  qml6-module-org-kde-notifications qml6-module-org-kde-pipewire
+  qml6-module-org-kde-plasma-plasma5support qml6-module-org-kde-prison
+  qml6-module-org-kde-quickcharts qml6-module-org-kde-sonnet
+  qml6-module-org-kde-userfeedback qml6-module-qt-labs-folderlistmodel
+  qml6-module-qt-labs-platform qml6-module-qt-labs-qmlmodels
+  qml6-module-qt5compat-graphicaleffects qml6-module-qtcore
+  qml6-module-qtmultimedia qml6-module-qtpositioning qml6-module-qtqml
+  qml6-module-qtqml-models qml6-module-qtqml-workerscript qml6-module-qtquick
+  qml6-module-qtquick-controls qml6-module-qtquick-dialogs
+  qml6-module-qtquick-effects qml6-module-qtquick-layouts
+  qml6-module-qtquick-shapes qml6-module-qtquick-templates
+  qml6-module-qtquick-tooling qml6-module-qtquick-virtualkeyboard
+  qml6-module-qtquick-window qt6-base-dev-tools qt6-svg-plugins qt6-wayland
+  sddm sddm-theme-breeze sound-theme-freedesktop user-session-migration
+  x11-common x11-utils x11-xkb-utils x11-xserver-utils xdg-desktop-portal
+  xdg-desktop-portal-kde xserver-common xserver-xorg-core
+  xserver-xorg-input-libinput xwayland
+0 upgraded, 611 newly installed, 0 to remove and 25 not upgraded.
+Need to get 0 B/312 MB of archives.
+After this operation, 1053 MB of additional disk space will be used.
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kconfig/libkf6config-data_6.24.0-0ubuntu1_all.deb' libkf6config-data_6.24.0-0ubuntu1_all.deb 163472 MD5Sum:64cc17c694768eac9936ad77ff6de4e4
+'file:/var/tmp/omen-apt-repository/pool/main/g/gcc-16/libgomp1_16-20260322-1ubuntu1_amd64.deb' libgomp1_16-20260322-1ubuntu1_amd64.deb 162278 MD5Sum:7d416d782e2f3b41840171fc3c555ce5
+'file:/var/tmp/omen-apt-repository/pool/universe/libb/libb2/libb2-1_0.98.1-1.1build2_amd64.deb' libb2-1_0.98.1-1.1build2_amd64.deb 44914 MD5Sum:5fadd92fe8da86d7f783a6763e4efe57
+'file:/var/tmp/omen-apt-repository/pool/universe/d/double-conversion/libdouble-conversion3_3.4.0-1_amd64.deb' libdouble-conversion3_3.4.0-1_amd64.deb 41386 MD5Sum:cd0336014ad3e59bbf0d24fd281c84be
+'file:/var/tmp/omen-apt-repository/pool/main/p/pcre2/libpcre2-16-0_10.46-1build1_amd64.deb' libpcre2-16-0_10.46-1build1_amd64.deb 240180 MD5Sum:c802b7923d7f69e06fa3cded5352407e
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-base/libqt6core6t64_6.10.2%2bdfsg-7_amd64.deb' libqt6core6t64_6.10.2+dfsg-7_amd64.deb 2079778 MD5Sum:4a01fbfd887ce1d2dcf220c6cc7eb0c5
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-base/libqt6dbus6_6.10.2%2bdfsg-7_amd64.deb' libqt6dbus6_6.10.2+dfsg-7_amd64.deb 284966 MD5Sum:da67836545caaabdedde9ae3dfb270f5
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kconfig/libkf6configcore6_6.24.0-0ubuntu1_amd64.deb' libkf6configcore6_6.24.0-0ubuntu1_amd64.deb 182134 MD5Sum:8552a3df584708c5120a5b5938a9f651
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kcoreaddons/libkf6coreaddons-data_6.24.0-0ubuntu1.1_all.deb' libkf6coreaddons-data_6.24.0-0ubuntu1.1_all.deb 152268 MD5Sum:db362897a1b6a51e23eec933ab090089
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kcoreaddons/libkf6coreaddons6_6.24.0-0ubuntu1.1_amd64.deb' libkf6coreaddons6_6.24.0-0ubuntu1.1_amd64.deb 329318 MD5Sum:d85563924f2574f95280282c503d22c0
+'file:/var/tmp/omen-apt-repository/pool/main/f/fonts-dejavu/fonts-dejavu-mono_2.37-8build1_all.deb' fonts-dejavu-mono_2.37-8build1_all.deb 502164 MD5Sum:4f1c9daadbdfe60cb176c6910d994a9a
+'file:/var/tmp/omen-apt-repository/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.37-8build1_all.deb' fonts-dejavu-core_2.37-8build1_all.deb 834166 MD5Sum:2b8b6ad2bc939923a1c4eea4df2cc317
+'file:/var/tmp/omen-apt-repository/pool/main/f/fontconfig/fontconfig-config_2.17.1-3ubuntu1_amd64.deb' fontconfig-config_2.17.1-3ubuntu1_amd64.deb 38454 MD5Sum:daaa71dd76924ef402f4c5f34e044b44
+'file:/var/tmp/omen-apt-repository/pool/main/f/fontconfig/libfontconfig1_2.17.1-3ubuntu1_amd64.deb' libfontconfig1_2.17.1-3ubuntu1_amd64.deb 144082 MD5Sum:54aeab8c135be9fe50fe2bed4c2a7af2
+'file:/var/tmp/omen-apt-repository/pool/main/f/fontconfig/fontconfig_2.17.1-3ubuntu1_amd64.deb' fontconfig_2.17.1-3ubuntu1_amd64.deb 180360 MD5Sum:3ca2e704affe4b7389f754f576434263
+'file:/var/tmp/omen-apt-repository/pool/main/libg/libglvnd/libglvnd0_1.7.0-3_amd64.deb' libglvnd0_1.7.0-3_amd64.deb 64072 MD5Sum:72c17c9135e5e53a9c4e5d9eefdd1b22
+'file:/var/tmp/omen-apt-repository/pool/main/libp/libpciaccess/libpciaccess0_0.18.1-1ubuntu4.1_amd64.deb' libpciaccess0_0.18.1-1ubuntu4.1_amd64.deb 18980 MD5Sum:453730e859f3cd10b5388bec036bbed1
+'file:/var/tmp/omen-apt-repository/pool/main/libd/libdrm/libdrm-intel1_2.4.131-1_amd64.deb' libdrm-intel1_2.4.131-1_amd64.deb 66680 MD5Sum:32f54572ce2f126761ac97c36e4ff9c5
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libx11/libx11-xcb1_1.8.13-1ubuntu0.1_amd64.deb' libx11-xcb1_2%3a1.8.13-1ubuntu0.1_amd64.deb 7980 MD5Sum:a2e746f47dc8b4735d1b44d991e8c8bb
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-dri3-0_1.17.0-2ubuntu1_amd64.deb' libxcb-dri3-0_1.17.0-2ubuntu1_amd64.deb 7540 MD5Sum:e2598840157e7c33d90e5d42daa03015
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-present0_1.17.0-2ubuntu1_amd64.deb' libxcb-present0_1.17.0-2ubuntu1_amd64.deb 6112 MD5Sum:3b3273d2e8a392a05dc144009c38e525
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-randr0_1.17.0-2ubuntu1_amd64.deb' libxcb-randr0_1.17.0-2ubuntu1_amd64.deb 17930 MD5Sum:84aba088a9234126f974d5d0c4253b93
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-sync1_1.17.0-2ubuntu1_amd64.deb' libxcb-sync1_1.17.0-2ubuntu1_amd64.deb 9348 MD5Sum:e64930623b14cf4106973c698aab4894
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-xfixes0_1.17.0-2ubuntu1_amd64.deb' libxcb-xfixes0_1.17.0-2ubuntu1_amd64.deb 10192 MD5Sum:a83bad9cda97a234337b4e8798d71092
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxshmfence/libxshmfence1_1.3.3-1build1_amd64.deb' libxshmfence1_1.3.3-1build1_amd64.deb 5284 MD5Sum:367a8c596b3dfc9f855d4e0eae15f788
+'file:/var/tmp/omen-apt-repository/pool/main/m/mesa/mesa-libgallium_26.0.8-1ubuntu0.3_amd64.deb' mesa-libgallium_26.0.8-1ubuntu0.3_amd64.deb 11241306 MD5Sum:643a059889de5c9b82029f9d1bdd91a3
+'file:/var/tmp/omen-apt-repository/pool/main/m/mesa/libgbm1_26.0.8-1ubuntu0.3_amd64.deb' libgbm1_26.0.8-1ubuntu0.3_amd64.deb 49194 MD5Sum:a719bdcbbe49b9e32afb6de1f148782b
+'file:/var/tmp/omen-apt-repository/pool/main/w/wayland/libwayland-client0_1.24.0-2_amd64.deb' libwayland-client0_1.24.0-2_amd64.deb 28530 MD5Sum:1f975789e6bd8353e05c1c00e55df104
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-shm0_1.17.0-2ubuntu1_amd64.deb' libxcb-shm0_1.17.0-2ubuntu1_amd64.deb 5808 MD5Sum:fb9d70143153673a246fb47d415fe826
+'file:/var/tmp/omen-apt-repository/pool/main/m/mesa/libegl-mesa0_26.0.8-1ubuntu0.3_amd64.deb' libegl-mesa0_26.0.8-1ubuntu0.3_amd64.deb 133774 MD5Sum:c64d4c3a5af46c5bc510eac1be05a5c1
+'file:/var/tmp/omen-apt-repository/pool/main/libg/libglvnd/libegl1_1.7.0-3_amd64.deb' libegl1_1.7.0-3_amd64.deb 29654 MD5Sum:301e3d61d776827d2d41b4c77c9b5e6c
+'file:/var/tmp/omen-apt-repository/pool/main/v/vulkan-loader/libvulkan1_1.4.341.0-1_amd64.deb' libvulkan1_1.4.341.0-1_amd64.deb 157194 MD5Sum:a3a3c894e00f7e92c444a0e364fd4856
+'file:/var/tmp/omen-apt-repository/pool/main/m/mesa/libgl1-mesa-dri_26.0.8-1ubuntu0.3_amd64.deb' libgl1-mesa-dri_26.0.8-1ubuntu0.3_amd64.deb 38166 MD5Sum:91408d4962007f58a4f0e8acdc06bca5
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-glx0_1.17.0-2ubuntu1_amd64.deb' libxcb-glx0_1.17.0-2ubuntu1_amd64.deb 24654 MD5Sum:657bb19dd511968c8b264d34b8ab920b
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxxf86vm/libxxf86vm1_1.1.4-2_amd64.deb' libxxf86vm1_1%3a1.1.4-2_amd64.deb 10610 MD5Sum:5a7586e33ad8c9f449f8f5393b885092
+'file:/var/tmp/omen-apt-repository/pool/main/m/mesa/libglx-mesa0_26.0.8-1ubuntu0.3_amd64.deb' libglx-mesa0_26.0.8-1ubuntu0.3_amd64.deb 125602 MD5Sum:1359d7d121d8d165faf55fdf94824aa4
+'file:/var/tmp/omen-apt-repository/pool/main/libg/libglvnd/libglx0_1.7.0-3_amd64.deb' libglx0_1.7.0-3_amd64.deb 38932 MD5Sum:cc1cf595cc0e3ee56c2124ab6c7755c1
+'file:/var/tmp/omen-apt-repository/pool/main/g/graphite2/libgraphite2-3_1.3.14-11ubuntu1.1_amd64.deb' libgraphite2-3_1.3.14-11ubuntu1.1_amd64.deb 72928 MD5Sum:3f8b0ed0f1a6d1cbe2cfa9ca5ff95ee5
+'file:/var/tmp/omen-apt-repository/pool/main/h/harfbuzz/libharfbuzz0b_12.3.2-2_amd64.deb' libharfbuzz0b_12.3.2-2_amd64.deb 519090 MD5Sum:fde4c1b807d1feca5c395077dd835804
+'file:/var/tmp/omen-apt-repository/pool/main/x/xorg/x11-common_7.7%2b26ubuntu1_all.deb' x11-common_1%3a7.7+26ubuntu1_all.deb 22520 MD5Sum:628065f3c7b48d78fe64c6ecb57152e4
+'file:/var/tmp/omen-apt-repository/pool/main/libi/libice/libice6_1.1.1-1build1_amd64.deb' libice6_2%3a1.1.1-1build1_amd64.deb 44016 MD5Sum:03948f883ea85af54de58067e9be0959
+'file:/var/tmp/omen-apt-repository/pool/main/m/mtdev/libmtdev1t64_1.1.7-1build1_amd64.deb' libmtdev1t64_1.1.7-1build1_amd64.deb 15162 MD5Sum:72e3dc7c1a8e39e4469b4376bde87ab0
+'file:/var/tmp/omen-apt-repository/pool/main/libw/libwacom/libwacom-common_2.18.0-1_all.deb' libwacom-common_2.18.0-1_all.deb 117250 MD5Sum:c193f5566681f5c4006b1274c0363f6e
+'file:/var/tmp/omen-apt-repository/pool/main/libw/libwacom/libwacom9_2.18.0-1_amd64.deb' libwacom9_2.18.0-1_amd64.deb 28352 MD5Sum:8a1d56d0a750c15f0d76d3eb29dd72ad
+'file:/var/tmp/omen-apt-repository/pool/main/libi/libinput/libinput-bin_1.31.1-1ubuntu1.2_amd64.deb' libinput-bin_1.31.1-1ubuntu1.2_amd64.deb 24484 MD5Sum:7cac0fc7d2165b70d921f0ae90ad0a58
+'file:/var/tmp/omen-apt-repository/pool/main/libi/libinput/libinput10_1.31.1-1ubuntu1.2_amd64.deb' libinput10_1.31.1-1ubuntu1.2_amd64.deb 160660 MD5Sum:85584b30679e486debd0a230510f7ea0
+'file:/var/tmp/omen-apt-repository/pool/main/libj/libjpeg-turbo/libjpeg-turbo8_2.1.5-4ubuntu4_amd64.deb' libjpeg-turbo8_2.1.5-4ubuntu4_amd64.deb 152810 MD5Sum:d66ce9362f0504e0080b2eb1dd754344
+'file:/var/tmp/omen-apt-repository/pool/main/libj/libjpeg8-empty/libjpeg8_8c-2ubuntu12_amd64.deb' libjpeg8_8c-2ubuntu12_amd64.deb 2142 MD5Sum:258add1b2dd69f99dc952382a73aa059
+'file:/var/tmp/omen-apt-repository/pool/universe/m/md4c/libmd4c0_0.5.2-2build1_amd64.deb' libmd4c0_0.5.2-2build1_amd64.deb 43656 MD5Sum:32d394bd0fd4f1305f79336160392075
+'file:/var/tmp/omen-apt-repository/pool/main/libg/libglvnd/libopengl0_1.7.0-3_amd64.deb' libopengl0_1.7.0-3_amd64.deb 32780 MD5Sum:64e9271db46c154aecd3ae72e809a1c5
+'file:/var/tmp/omen-apt-repository/pool/main/libs/libsm/libsm6_1.2.6-1build1_amd64.deb' libsm6_2%3a1.2.6-1build1_amd64.deb 16866 MD5Sum:e91b80c8dc408be1620eb43654bbd111
+'file:/var/tmp/omen-apt-repository/pool/universe/t/tslib/libts0t64_1.22-1.1build2_amd64.deb' libts0t64_1.22-1.1build2_amd64.deb 64032 MD5Sum:523e7909fdc7197a1cb01e9eb249f6a8
+'file:/var/tmp/omen-apt-repository/pool/main/x/xcb-util/libxcb-util1_0.4.1-1build1_amd64.deb' libxcb-util1_0.4.1-1build1_amd64.deb 11070 MD5Sum:49f7c4139621333d604877c86598bf7b
+'file:/var/tmp/omen-apt-repository/pool/universe/x/xcb-util-image/libxcb-image0_0.4.0-2build2_amd64.deb' libxcb-image0_0.4.0-2build2_amd64.deb 10996 MD5Sum:fcccf11f0062251aab204156517250e8
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-render0_1.17.0-2ubuntu1_amd64.deb' libxcb-render0_1.17.0-2ubuntu1_amd64.deb 16208 MD5Sum:54b2b9f5e7e85681546ba41406710cf9
+'file:/var/tmp/omen-apt-repository/pool/universe/x/xcb-util-renderutil/libxcb-render-util0_0.3.10-1build1_amd64.deb' libxcb-render-util0_0.3.10-1build1_amd64.deb 10450 MD5Sum:b73c21b03b448621fbfd1060a261e004
+'file:/var/tmp/omen-apt-repository/pool/universe/x/xcb-util-cursor/libxcb-cursor0_0.1.6-1_amd64.deb' libxcb-cursor0_0.1.6-1_amd64.deb 10590 MD5Sum:7e01da7bc011274af8e3c4f714d951d2
+'file:/var/tmp/omen-apt-repository/pool/universe/x/xcb-util-wm/libxcb-icccm4_0.4.2-1build1_amd64.deb' libxcb-icccm4_0.4.2-1build1_amd64.deb 11002 MD5Sum:70e1539b80fde5394eb76930459b8195
+'file:/var/tmp/omen-apt-repository/pool/universe/x/xcb-util-keysyms/libxcb-keysyms1_0.4.1-1build1_amd64.deb' libxcb-keysyms1_0.4.1-1build1_amd64.deb 8704 MD5Sum:db5914e3c0430b9f6988f898ff33b0f2
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-shape0_1.17.0-2ubuntu1_amd64.deb' libxcb-shape0_1.17.0-2ubuntu1_amd64.deb 6172 MD5Sum:8369a79b41a615b22ae622f87eaf6a6e
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-xinput0_1.17.0-2ubuntu1_amd64.deb' libxcb-xinput0_1.17.0-2ubuntu1_amd64.deb 32536 MD5Sum:c41567256c47f09e24ccc7b184974f27
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-xkb1_1.17.0-2ubuntu1_amd64.deb' libxcb-xkb1_1.17.0-2ubuntu1_amd64.deb 32724 MD5Sum:fb28836cc2a789ca3073df21fa7aca59
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxkbcommon/libxkbcommon-x11-0_1.13.1-1_amd64.deb' libxkbcommon-x11-0_1.13.1-1_amd64.deb 15024 MD5Sum:b3f8f15c4490108bceb091e9f8e800d3
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-base/libqt6gui6_6.10.2%2bdfsg-7_amd64.deb' libqt6gui6_6.10.2+dfsg-7_amd64.deb 3549980 MD5Sum:79087ba675fbf889c7427371c9dea13d
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kcrash/libkf6crash6_6.24.0-0ubuntu1_amd64.deb' libkf6crash6_6.24.0-0ubuntu1_amd64.deb 25246 MD5Sum:a379ed303c9dee2e76c9331fc46cb9b4
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kdbusaddons/libkf6dbusaddons-data_6.24.0-0ubuntu1_all.deb' libkf6dbusaddons-data_6.24.0-0ubuntu1_all.deb 21888 MD5Sum:cc1d0cd663d333099c04745ced523aa1
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kdbusaddons/libkf6dbusaddons6_6.24.0-0ubuntu1_amd64.deb' libkf6dbusaddons6_6.24.0-0ubuntu1_amd64.deb 50790 MD5Sum:e2b7a210b809ac7162a129bfe9453fba
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-ki18n/libkf6i18n-data_6.24.0-0ubuntu1_all.deb' libkf6i18n-data_6.24.0-0ubuntu1_all.deb 1209078 MD5Sum:573c35e717aee05e4d02571cf1d36348
+'file:/var/tmp/omen-apt-repository/pool/main/libp/libproxy/libproxy1v5_0.5.12-1_amd64.deb' libproxy1v5_0.5.12-1_amd64.deb 28344 MD5Sum:9bef9d8d77206644500f753761b620f4
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-base/libqt6network6_6.10.2%2bdfsg-7_amd64.deb' libqt6network6_6.10.2+dfsg-7_amd64.deb 859314 MD5Sum:b3bec8d1ed0eb082be752d46d5a52853
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/libqt6qml6_6.10.2%2bdfsg-3_amd64.deb' libqt6qml6_6.10.2+dfsg-3_amd64.deb 1893106 MD5Sum:b7155a0f8be02c5e0f7fd13070c972ef
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-ki18n/libkf6i18n6_6.24.0-0ubuntu1_amd64.deb' libkf6i18n6_6.24.0-0ubuntu1_amd64.deb 193998 MD5Sum:f8b2c369ddaec7b725c266f84efcf55f
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kservice/libkf6service-data_6.24.0-0ubuntu1_all.deb' libkf6service-data_6.24.0-0ubuntu1_all.deb 39484 MD5Sum:dc1e50ba30f61af85a556b450775929b
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-base/libqt6xml6_6.10.2%2bdfsg-7_amd64.deb' libqt6xml6_6.10.2+dfsg-7_amd64.deb 82090 MD5Sum:6b84d101fa8ccb9e702a5db44b96e5b5
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kservice/libkf6service6_6.24.0-0ubuntu1_amd64.deb' libkf6service6_6.24.0-0ubuntu1_amd64.deb 171120 MD5Sum:bc74b547a17d8a4fa5035f5624cf86c1
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kservice/libkf6service-bin_6.24.0-0ubuntu1_amd64.deb' libkf6service-bin_6.24.0-0ubuntu1_amd64.deb 27660 MD5Sum:f1cdf05a2a906265cbf65f56caea8c44
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-base/libqt6widgets6_6.10.2%2bdfsg-7_amd64.deb' libqt6widgets6_6.10.2+dfsg-7_amd64.deb 2818326 MD5Sum:3a80c9a3b8615a6007ff374176c4371b
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kded/kded6_6.24.0-0ubuntu1_amd64.deb' kded6_6.24.0-0ubuntu1_amd64.deb 64478 MD5Sum:10b774f1bc641e3da02911b991cddb79
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kwallet/libkf6wallet-data_6.24.0-0ubuntu1_all.deb' libkf6wallet-data_6.24.0-0ubuntu1_all.deb 235506 MD5Sum:930bfa5c56b82ee2cec4b56755f795d4
+'file:/var/tmp/omen-apt-repository/pool/main/g/gpgmepp/libgpgmepp7_2.0.0-2_amd64.deb' libgpgmepp7_2.0.0-2_amd64.deb 131100 MD5Sum:caedaf8bb6ed281702a101398442b3e4
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-knotifications/libkf6notifications-data_6.24.0-0ubuntu1_all.deb' libkf6notifications-data_6.24.0-0ubuntu1_all.deb 19256 MD5Sum:5280185ccbcb5ae5745f9863a5eae50b
+'file:/var/tmp/omen-apt-repository/pool/main/a/alsa-lib/libasound2-data_1.2.15.3-1ubuntu1.1_all.deb' libasound2-data_1.2.15.3-1ubuntu1.1_all.deb 19568 MD5Sum:3bfb55dbe7867f448394aec7fbb4ecb4
+'file:/var/tmp/omen-apt-repository/pool/main/a/alsa-lib/libasound2t64_1.2.15.3-1ubuntu1.1_amd64.deb' libasound2t64_1.2.15.3-1ubuntu1.1_amd64.deb 415812 MD5Sum:e33068cbc6099e7cf1d932be5582d935
+'file:/var/tmp/omen-apt-repository/pool/main/libt/libtool/libltdl7_2.5.4-9_amd64.deb' libltdl7_2.5.4-9_amd64.deb 43668 MD5Sum:98ad580b0498684f42c47b96fa0d5fb5
+'file:/var/tmp/omen-apt-repository/pool/main/s/samba/libtdb1_1.4.14%2bsamba4.23.6%2bdfsg-1ubuntu2.2_amd64.deb' libtdb1_2%3a1.4.14+samba4.23.6+dfsg-1ubuntu2.2_amd64.deb 70458 MD5Sum:ab37704d0ba04d6691f7feec8cceef7d
+'file:/var/tmp/omen-apt-repository/pool/main/libo/libogg/libogg0_1.3.6-2_amd64.deb' libogg0_1.3.6-2_amd64.deb 23394 MD5Sum:15de00fba0109cc7f6b156430dbbf70c
+'file:/var/tmp/omen-apt-repository/pool/main/libv/libvorbis/libvorbis0a_1.3.7-3build2_amd64.deb' libvorbis0a_1.3.7-3build2_amd64.deb 100972 MD5Sum:17eb4d39c1729e4f5a7aef34925b58d4
+'file:/var/tmp/omen-apt-repository/pool/main/libv/libvorbis/libvorbisfile3_1.3.7-3build2_amd64.deb' libvorbisfile3_1.3.7-3build2_amd64.deb 17248 MD5Sum:bc4c2a439fadd1adbf3fd13a1b63cf44
+'file:/var/tmp/omen-apt-repository/pool/main/s/sound-theme-freedesktop/sound-theme-freedesktop_0.8-7build1_all.deb' sound-theme-freedesktop_0.8-7build1_all.deb 384340 MD5Sum:128b50d656ec5ab78ae7342ca6309d42
+'file:/var/tmp/omen-apt-repository/pool/main/libc/libcanberra/libcanberra0_0.30-18ubuntu3_amd64.deb' libcanberra0_0.30-18ubuntu3_amd64.deb 40514 MD5Sum:b66ef6b865b857f3091dc80149eb410e
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-knotifications/libkf6notifications6_6.24.0-0ubuntu1_amd64.deb' libkf6notifications6_6.24.0-0ubuntu1_amd64.deb 108652 MD5Sum:82a64ddfe628d22fe5c6ab05f89d94ff
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kwidgetsaddons/libkf6widgetsaddons-data_6.24.0-0ubuntu1_all.deb' libkf6widgetsaddons-data_6.24.0-0ubuntu1_all.deb 338506 MD5Sum:c2ea62066720a23837bc68db3f5f714b
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kwidgetsaddons/libkf6widgetsaddons6_6.24.0-0ubuntu1_amd64.deb' libkf6widgetsaddons6_6.24.0-0ubuntu1_amd64.deb 1377904 MD5Sum:8265b540a0a5a0360c08389c927a7c92
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kwallet/libkf6walletbackend6_6.24.0-0ubuntu1_amd64.deb' libkf6walletbackend6_6.24.0-0ubuntu1_amd64.deb 58388 MD5Sum:7bb0770edcec7a1a96bd89f77c9ba323
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kcolorscheme/libkf6colorscheme-data_6.24.0-0ubuntu1_all.deb' libkf6colorscheme-data_6.24.0-0ubuntu1_all.deb 10034 MD5Sum:e760c7669be3002843559e97668661d1
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kconfig/libkf6configgui6_6.24.0-0ubuntu1_amd64.deb' libkf6configgui6_6.24.0-0ubuntu1_amd64.deb 74476 MD5Sum:f2e9415b499eb22850177f88132e33e8
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kguiaddons/libkf6guiaddons-data_6.24.0-0ubuntu1.1_all.deb' libkf6guiaddons-data_6.24.0-0ubuntu1.1_all.deb 8944 MD5Sum:49256fb8252479d5d75bf12d49dd6e71
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-base/libqt6opengl6_6.10.2%2bdfsg-7_amd64.deb' libqt6opengl6_6.10.2+dfsg-7_amd64.deb 439362 MD5Sum:274f3cae711b763a764f024e3ba4c260
+'file:/var/tmp/omen-apt-repository/pool/main/w/wayland/libwayland-cursor0_1.24.0-2_amd64.deb' libwayland-cursor0_1.24.0-2_amd64.deb 10770 MD5Sum:6b6060f404ae537ebcf35fc5226a2876
+'file:/var/tmp/omen-apt-repository/pool/main/w/wayland/libwayland-egl1_1.24.0-2_amd64.deb' libwayland-egl1_1.24.0-2_amd64.deb 6248 MD5Sum:e6b10525fad4d48c679fcc547b0ebf9a
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-base/libqt6waylandclient6_6.10.2%2bdfsg-7_amd64.deb' libqt6waylandclient6_6.10.2+dfsg-7_amd64.deb 376216 MD5Sum:a388b643767043ab75de97c5a37e1085
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kguiaddons/libkf6guiaddons6_6.24.0-0ubuntu1.1_amd64.deb' libkf6guiaddons6_6.24.0-0ubuntu1.1_amd64.deb 134410 MD5Sum:7a302ba7c9d39012b12b20c7588a302a
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kcolorscheme/libkf6colorscheme6_6.24.0-0ubuntu1_amd64.deb' libkf6colorscheme6_6.24.0-0ubuntu1_amd64.deb 37052 MD5Sum:f423f553d165f63039f9771fa8beb037
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kwallet/libkf6wallet6_6.24.0-0ubuntu1_amd64.deb' libkf6wallet6_6.24.0-0ubuntu1_amd64.deb 54496 MD5Sum:f13d32537048f7aa10ffd72101ba03bb
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kwindowsystem/libkf6windowsystem-data_6.24.0-0ubuntu1_all.deb' libkf6windowsystem-data_6.24.0-0ubuntu1_all.deb 12640 MD5Sum:0bd705462502657efbf4a20015eca89c
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-res0_1.17.0-2ubuntu1_amd64.deb' libxcb-res0_1.17.0-2ubuntu1_amd64.deb 6780 MD5Sum:6e54b097af54cf7ca9029e41e202ac4b
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxfixes/libxfixes3_6.0.0-2build2_amd64.deb' libxfixes3_1%3a6.0.0-2build2_amd64.deb 11102 MD5Sum:931d398d065ba957233d8765d6e20823
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kwindowsystem/libkf6windowsystem6_6.24.0-0ubuntu1_amd64.deb' libkf6windowsystem6_6.24.0-0ubuntu1_amd64.deb 202436 MD5Sum:fc2a7f2c647d5d33ada45e3f25a16b6d
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-5compat/libqt6core5compat6_6.10.2-1_amd64.deb' libqt6core5compat6_6.10.2-1_amd64.deb 150058 MD5Sum:2f068fba814f4004180b2ad4e907deee
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qca2/libqca-qt6-2_2.3.10-2_amd64.deb' libqca-qt6-2_2.3.10-2_amd64.deb 386238 MD5Sum:8285ecd0994130d8b986982c7329ef42
+'file:/var/tmp/omen-apt-repository/pool/main/libs/libsecret/libsecret-common_0.21.7-2build1_all.deb' libsecret-common_0.21.7-2build1_all.deb 5608 MD5Sum:1178acc1922a53ae3bc2c762057da9f1
+'file:/var/tmp/omen-apt-repository/pool/main/libs/libsecret/libsecret-1-0_0.21.7-2build1_amd64.deb' libsecret-1-0_0.21.7-2build1_amd64.deb 118550 MD5Sum:f1d86ce2ff9be7cddba746c0068f1adc
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kwallet/kwallet6_6.24.0-0ubuntu1_amd64.deb' kwallet6_6.24.0-0ubuntu1_amd64.deb 281906 MD5Sum:b4e5a318cbd75dc8933d3824690b6128
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-karchive/libkf6archive-data_6.24.0-0ubuntu1_all.deb' libkf6archive-data_6.24.0-0ubuntu1_all.deb 79136 MD5Sum:f014acb3999ffa35e9e2df4692ef9662
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-karchive/libkf6archive6_6.24.0-0ubuntu1_amd64.deb' libkf6archive6_6.24.0-0ubuntu1_amd64.deb 114246 MD5Sum:7d8e684c08e09264f650e2ee95aff4f2
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kdoctools/libkf6doctools6_6.24.0-0ubuntu1_amd64.deb' libkf6doctools6_6.24.0-0ubuntu1_amd64.deb 16952 MD5Sum:7ed4713fb235b537f87bce633aa26e03
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kio/libkf6kiocore6_6.24.0-0ubuntu1_amd64.deb' libkf6kiocore6_6.24.0-0ubuntu1_amd64.deb 532078 MD5Sum:8a031bd1913522137b8b0e2168ce1a89
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kbookmarks/libkf6bookmarks-data_6.24.0-0ubuntu1_all.deb' libkf6bookmarks-data_6.24.0-0ubuntu1_all.deb 48472 MD5Sum:262b59077eda40889ca0290b4810bb59
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kbookmarks/libkf6bookmarks6_6.24.0-0ubuntu1_amd64.deb' libkf6bookmarks6_6.24.0-0ubuntu1_amd64.deb 46574 MD5Sum:e84db1f0fb957bb08b2977026a34f060
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kbookmarks/libkf6bookmarkswidgets6_6.24.0-0ubuntu1_amd64.deb' libkf6bookmarkswidgets6_6.24.0-0ubuntu1_amd64.deb 37178 MD5Sum:13ac77de4a79dfebf23f3ecc0f54fa58
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kcompletion/libkf6completion-data_6.24.0-0ubuntu1_all.deb' libkf6completion-data_6.24.0-0ubuntu1_all.deb 18228 MD5Sum:27622199470b8813d60a7857d5e99615
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kcodecs/libkf6codecs-data_6.24.0-0ubuntu1_all.deb' libkf6codecs-data_6.24.0-0ubuntu1_all.deb 59696 MD5Sum:a80f07c7a9efcfad95d938b7c12147c9
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kcodecs/libkf6codecs6_6.24.0-0ubuntu1_amd64.deb' libkf6codecs6_6.24.0-0ubuntu1_amd64.deb 96688 MD5Sum:41345048a8bfab4cb5cf8eba79668a1f
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kcompletion/libkf6completion6_6.24.0-0ubuntu1_amd64.deb' libkf6completion6_6.24.0-0ubuntu1_amd64.deb 95814 MD5Sum:bcb4c051709937fc0af1e6aa8b05f7bb
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kiconthemes/libkf6iconthemes-data_6.24.0-0ubuntu2_all.deb' libkf6iconthemes-data_6.24.0-0ubuntu2_all.deb 33784 MD5Sum:9f451a3e95a054b084c554855c754573
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-svg/libqt6svg6_6.10.2-2_amd64.deb' libqt6svg6_6.10.2-2_amd64.deb 233906 MD5Sum:1777ea96ca846ed9ca79473403e2bb0e
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-breeze-icons/libkf6breezeicons6_6.24.0-0ubuntu1_amd64.deb' libkf6breezeicons6_6.24.0-0ubuntu1_amd64.deb 3007802 MD5Sum:01c3633e2adfda21a896e49c3073e7bf
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kiconthemes/libkf6iconthemes6_6.24.0-0ubuntu2_amd64.deb' libkf6iconthemes6_6.24.0-0ubuntu2_amd64.deb 90610 MD5Sum:a6c9ec8f86fe0f46efd94fc79680c063
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kiconthemes/libkf6iconwidgets6_6.24.0-0ubuntu2_amd64.deb' libkf6iconwidgets6_6.24.0-0ubuntu2_amd64.deb 34046 MD5Sum:2c465e83a31f6ef69e3a557ba215a1f7
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kitemviews/libkf6itemviews-data_6.24.0-0ubuntu1_all.deb' libkf6itemviews-data_6.24.0-0ubuntu1_all.deb 15068 MD5Sum:846199d19086271a32023a538071bddf
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kitemviews/libkf6itemviews6_6.24.0-0ubuntu1_amd64.deb' libkf6itemviews6_6.24.0-0ubuntu1_amd64.deb 108322 MD5Sum:c65f40a71379f2c21509d9a6ec2aa884
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-solid/libkf6solid-data_6.24.0-0ubuntu1_all.deb' libkf6solid-data_6.24.0-0ubuntu1_all.deb 122590 MD5Sum:881ac7da684926b9841a2736c585a8df
+'file:/var/tmp/omen-apt-repository/pool/main/libp/libplist/libplist-2.0-4_2.7.0%2bgit20250820-1build1_amd64.deb' libplist-2.0-4_2.7.0+git20250820-1build1_amd64.deb 51138 MD5Sum:4732cb41d46c0f32b00747354aaa51e9
+'file:/var/tmp/omen-apt-repository/pool/main/libi/libimobiledevice-glue/libimobiledevice-glue-1.0-0_1.3.2-2build1_amd64.deb' libimobiledevice-glue-1.0-0_1.3.2-2build1_amd64.deb 33830 MD5Sum:60dbb540782c0b65f20bad795f479e5e
+'file:/var/tmp/omen-apt-repository/pool/main/libu/libusbmuxd/libusbmuxd-2.0-7_2.1.1-1_amd64.deb' libusbmuxd-2.0-7_2.1.1-1_amd64.deb 17898 MD5Sum:f2ed0452a1f7b88e705223fc5059bf20
+'file:/var/tmp/omen-apt-repository/pool/main/libi/libimobiledevice/libimobiledevice-1.0-6_1.4.0-1build1_amd64.deb' libimobiledevice-1.0-6_1.4.0-1build1_amd64.deb 138190 MD5Sum:9f1e8ce76100d124bc51a3ddb2ae6ee0
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-solid/libkf6solid6_6.24.0-0ubuntu1_amd64.deb' libkf6solid6_6.24.0-0ubuntu1_amd64.deb 288678 MD5Sum:180c6561fb8a601293ff3aae8ab2b776
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kio/libkf6kiogui6_6.24.0-0ubuntu1_amd64.deb' libkf6kiogui6_6.24.0-0ubuntu1_amd64.deb 181782 MD5Sum:d7c13bf7d5498c5fb9b511a3f7417a8c
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kjobwidgets/libkf6jobwidgets-data_6.24.0-0ubuntu1_all.deb' libkf6jobwidgets-data_6.24.0-0ubuntu1_all.deb 42516 MD5Sum:8df8d38dc73009ca2c8bf914c21805e3
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kjobwidgets/libkf6jobwidgets6_6.24.0-0ubuntu1_amd64.deb' libkf6jobwidgets6_6.24.0-0ubuntu1_amd64.deb 98962 MD5Sum:cb6f9f8b147a1b471b4b6a009801f41e
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kio/libkf6kiowidgets6_6.24.0-0ubuntu1_amd64.deb' libkf6kiowidgets6_6.24.0-0ubuntu1_amd64.deb 421260 MD5Sum:895e05dae3052bdcf80d6c91f14fa44d
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kio/libkf6kiofilewidgets6_6.24.0-0ubuntu1_amd64.deb' libkf6kiofilewidgets6_6.24.0-0ubuntu1_amd64.deb 391840 MD5Sum:84d8c3000bc623acc17f719273d52106
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kio/kio6_6.24.0-0ubuntu1_amd64.deb' kio6_6.24.0-0ubuntu1_amd64.deb 2344162 MD5Sum:d616e6ff6c1d95b7f7f7f3c085a18baf
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/libqt6qmlmodels6_6.10.2%2bdfsg-3_amd64.deb' libqt6qmlmodels6_6.10.2+dfsg-3_amd64.deb 386520 MD5Sum:67f343bab50fcf3e45f29fea5f24f11d
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/libqt6qmlworkerscript6_6.10.2%2bdfsg-3_amd64.deb' libqt6qmlworkerscript6_6.10.2+dfsg-3_amd64.deb 35868 MD5Sum:eaac0904baef29a10880e4920a9af7d2
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/libqt6qmlmeta6_6.10.2%2bdfsg-3_amd64.deb' libqt6qmlmeta6_6.10.2+dfsg-3_amd64.deb 69374 MD5Sum:6ee643ee3408231d4d3468583964a2f2
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/libqt6quick6_6.10.2%2bdfsg-3_amd64.deb' libqt6quick6_6.10.2+dfsg-3_amd64.deb 2514040 MD5Sum:597de5b8420847207a831af326d8cf40
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kconfig/libkf6configqml6_6.24.0-0ubuntu1_amd64.deb' libkf6configqml6_6.24.0-0ubuntu1_amd64.deb 21974 MD5Sum:78c1c4acfa5674e5dac871129755ad14
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kglobalaccel/libkf6globalaccel-data_6.24.0-0ubuntu1_all.deb' libkf6globalaccel-data_6.24.0-0ubuntu1_all.deb 18310 MD5Sum:11e7d16e158f5b96ada858c23427eeea
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kglobalaccel/libkf6globalaccel6_6.24.0-0ubuntu1_amd64.deb' libkf6globalaccel6_6.24.0-0ubuntu1_amd64.deb 77146 MD5Sum:ffb692f86bf21f6517b57806e63b87a8
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-ki18n/libkf6i18nqml6_6.24.0-0ubuntu1_amd64.deb' libkf6i18nqml6_6.24.0-0ubuntu1_amd64.deb 41298 MD5Sum:41dfe0ec68f7b8d7ca7add252f3785ac
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxss/libxss1_1.2.3-1build4_amd64.deb' libxss1_1%3a1.2.3-1build4_amd64.deb 7084 MD5Sum:67212e05bf98cf57efbbf0bd0a2793cc
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kidletime/libkf6idletime6_6.24.0-0ubuntu1_amd64.deb' libkf6idletime6_6.24.0-0ubuntu1_amd64.deb 63480 MD5Sum:068c81ffcf4774d2016b198681cbbf09
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kpackage/libkf6package-data_6.24.0-0ubuntu1_all.deb' libkf6package-data_6.24.0-0ubuntu1_all.deb 70100 MD5Sum:9f5dbe2ad036d600ac022a1da6043e93
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kpackage/libkf6package6_6.24.0-0ubuntu1_amd64.deb' libkf6package6_6.24.0-0ubuntu1_amd64.deb 70608 MD5Sum:ff579145bc751cb08114681ee9cbeac4
+'file:/var/tmp/omen-apt-repository/pool/universe/libk/libkscreen/libkscreen-data_6.6.4-0ubuntu1_all.deb' libkscreen-data_4%3a6.6.4-0ubuntu1_all.deb 13660 MD5Sum:9ea7447387ee128e6fa8e827f27610d0
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-dpms0_1.17.0-2ubuntu1_amd64.deb' libxcb-dpms0_1.17.0-2ubuntu1_amd64.deb 5410 MD5Sum:181567ae9f672c894f7ebf00a5c1e0bd
+'file:/var/tmp/omen-apt-repository/pool/universe/libk/libkscreen/libkf6screendpms8_6.6.4-0ubuntu1_amd64.deb' libkf6screendpms8_4%3a6.6.4-0ubuntu1_amd64.deb 28376 MD5Sum:b4f7c4a8e638877cd8ed10598454f4a9
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kxmlgui/libkf6xmlgui-data_6.24.0-0ubuntu1_all.deb' libkf6xmlgui-data_6.24.0-0ubuntu1_all.deb 386004 MD5Sum:6b76656b65161ee7dfa476d73b5713ca
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kconfigwidgets/libkf6configwidgets-data_6.24.0-0ubuntu1_all.deb' libkf6configwidgets-data_6.24.0-0ubuntu1_all.deb 215960 MD5Sum:3b9f03b842baff6d44220f5789503ca7
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kconfigwidgets/libkf6configwidgets6_6.24.0-0ubuntu1_amd64.deb' libkf6configwidgets6_6.24.0-0ubuntu1_amd64.deb 127600 MD5Sum:aca16cdeb10f713d9a3357a73288dda6
+'file:/var/tmp/omen-apt-repository/pool/main/a/avahi/libavahi-common-data_0.8-18ubuntu1.1_amd64.deb' libavahi-common-data_0.8-18ubuntu1.1_amd64.deb 27194 MD5Sum:9c1f570afe70163907317d028f4a8938
+'file:/var/tmp/omen-apt-repository/pool/main/a/avahi/libavahi-common3_0.8-18ubuntu1.1_amd64.deb' libavahi-common3_0.8-18ubuntu1.1_amd64.deb 23580 MD5Sum:347964760da474996acb54f42ad0d0ae
+'file:/var/tmp/omen-apt-repository/pool/main/a/avahi/libavahi-client3_0.8-18ubuntu1.1_amd64.deb' libavahi-client3_0.8-18ubuntu1.1_amd64.deb 27220 MD5Sum:6d07929497cc26da7de0639658404157
+'file:/var/tmp/omen-apt-repository/pool/main/c/cups/libcups2t64_2.4.16-1ubuntu1.3_amd64.deb' libcups2t64_2.4.16-1ubuntu1.3_amd64.deb 268968 MD5Sum:222d48cdb998071b1b4f9e9322f25314
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-base/libqt6printsupport6_6.10.2%2bdfsg-7_amd64.deb' libqt6printsupport6_6.10.2+dfsg-7_amd64.deb 224118 MD5Sum:f7025a7f1addd469d42d8e1f4b024989
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kxmlgui/libkf6xmlgui6_6.24.0-0ubuntu1_amd64.deb' libkf6xmlgui6_6.24.0-0ubuntu1_amd64.deb 297088 MD5Sum:11ec0ca222a628a3e0e24bb2e7aefc41
+'file:/var/tmp/omen-apt-repository/pool/universe/l/layer-shell-qt/liblayershellqtinterface6_6.6.4-0ubuntu1_amd64.deb' liblayershellqtinterface6_6.6.4-0ubuntu1_amd64.deb 30604 MD5Sum:f8fe410b310ce8648181258a67b4a827
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-ksvg/libkf6svg6_6.24.0-0ubuntu1_amd64.deb' libkf6svg6_6.24.0-0ubuntu1_amd64.deb 115782 MD5Sum:43182cb8b2bd3cc5b657f4ec2dda2930
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-activities/libplasmaactivities-data_6.6.4-0ubuntu1_all.deb' libplasmaactivities-data_6.6.4-0ubuntu1_all.deb 5684 MD5Sum:3763753e07e7b29fa45bbe3ff39cd245
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-activities/libplasmaactivities7_6.6.4-0ubuntu1_amd64.deb' libplasmaactivities7_6.6.4-0ubuntu1_amd64.deb 78432 MD5Sum:fe165655a4c6406277d5234d8f20f582
+'file:/var/tmp/omen-apt-repository/pool/universe/libp/libplasma/libplasma7_6.6.6-0ubuntu0.1_amd64.deb' libplasma7_6.6.6-0ubuntu0.1_amd64.deb 140192 MD5Sum:31197bc9f48119a9c2c2d5bc7682ff83
+'file:/var/tmp/omen-apt-repository/pool/universe/libp/libplasma/libplasmaquick7_6.6.6-0ubuntu0.1_amd64.deb' libplasmaquick7_6.6.6-0ubuntu0.1_amd64.deb 210550 MD5Sum:15a5e982810aa5c85d03cd5e23530cc4
+'file:/var/tmp/omen-apt-repository/pool/main/w/wayland/libwayland-server0_1.24.0-2_amd64.deb' libwayland-server0_1.24.0-2_amd64.deb 35942 MD5Sum:69961bff4ddc378ba8d4e94f6b4813fd
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxi/libxi6_1.8.2-2_amd64.deb' libxi6_2%3a1.8.2-2_amd64.deb 33120 MD5Sum:3014c452279057ff8e45647deff39d3e
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kscreenlocker/libkscreenlocker6_6.6.5-0ubuntu0.1_amd64.deb' libkscreenlocker6_6.6.5-0ubuntu0.1_amd64.deb 153960 MD5Sum:d59d9a090896e1272ab19b6cabdbed72
+'file:/var/tmp/omen-apt-repository/pool/main/a/accountsservice/libaccountsservice0_23.13.9-8ubuntu5.2_amd64.deb' libaccountsservice0_23.13.9-8ubuntu5.2_amd64.deb 62844 MD5Sum:b6fe7bd548e49bf8e78af588815e0d2a
+'file:/var/tmp/omen-apt-repository/pool/main/a/accountsservice/accountsservice_23.13.9-8ubuntu5.2_amd64.deb' accountsservice_23.13.9-8ubuntu5.2_amd64.deb 72650 MD5Sum:807c69e443e56acad4e0512c39bf860e
+'file:/var/tmp/omen-apt-repository/pool/main/b/bubblewrap/bubblewrap_0.11.1-1ubuntu0.3_amd64.deb' bubblewrap_0.11.1-1ubuntu0.3_amd64.deb 51032 MD5Sum:af24344a1bc415f348a6231176568c2f
+'file:/var/tmp/omen-apt-repository/pool/main/p/pixman/libpixman-1-0_0.46.4-1_amd64.deb' libpixman-1-0_0.46.4-1_amd64.deb 287322 MD5Sum:1401cc15bfe49cc785a85f22cb3b22d6
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxrender/libxrender1_0.9.12-1build1_amd64.deb' libxrender1_1%3a0.9.12-1build1_amd64.deb 19204 MD5Sum:fafef09a4b70a8bc109599abb391b206
+'file:/var/tmp/omen-apt-repository/pool/main/c/cairo/libcairo2_1.18.4-3_amd64.deb' libcairo2_1.18.4-3_amd64.deb 578678 MD5Sum:5f75ae212214125db3ba7c8646e64bd8
+'file:/var/tmp/omen-apt-repository/pool/main/libw/libwebp/libsharpyuv0_1.5.0-0.1build1_amd64.deb' libsharpyuv0_1.5.0-0.1build1_amd64.deb 17650 MD5Sum:18244f647b208a344638a6b7cfcf646e
+'file:/var/tmp/omen-apt-repository/pool/main/a/aom/libaom3_3.13.1-2ubuntu0.1_amd64.deb' libaom3_3.13.1-2ubuntu0.1_amd64.deb 1969262 MD5Sum:8a2b0de444f8c709e6d19a19edd5aa60
+'file:/var/tmp/omen-apt-repository/pool/main/libh/libheif/libheif-plugin-aomdec_1.21.2-3ubuntu0.6_amd64.deb' libheif-plugin-aomdec_1.21.2-3ubuntu0.6_amd64.deb 15510 MD5Sum:6e58bd2638d802470a4f8e180d420dc1
+'file:/var/tmp/omen-apt-repository/pool/main/libh/libheif/libheif1_1.21.2-3ubuntu0.6_amd64.deb' libheif1_1.21.2-3ubuntu0.6_amd64.deb 550142 MD5Sum:31487fda91c76c101d2145a61ea189a6
+'file:/var/tmp/omen-apt-repository/pool/main/h/highway/libhwy1t64_1.3.0-2_amd64.deb' libhwy1t64_1.3.0-2_amd64.deb 767902 MD5Sum:c09d6424f09c22af156a30c32fd9a951
+'file:/var/tmp/omen-apt-repository/pool/main/l/lcms2/liblcms2-2_2.17-1ubuntu0.2_amd64.deb' liblcms2-2_2.17-1ubuntu0.2_amd64.deb 169156 MD5Sum:7f7a64a6b682f6a40522715a613d38c3
+'file:/var/tmp/omen-apt-repository/pool/main/j/jpeg-xl/libjxl0.11_0.11.1-6ubuntu4.2_amd64.deb' libjxl0.11_0.11.1-6ubuntu4.2_amd64.deb 1269230 MD5Sum:1d66785c570648ce38c715c03e0cd02a
+'file:/var/tmp/omen-apt-repository/pool/main/c/cairo/libcairo-gobject2_1.18.4-3_amd64.deb' libcairo-gobject2_1.18.4-3_amd64.deb 127288 MD5Sum:5b3c39443948d1d3ec06cf2b71dda63b
+'file:/var/tmp/omen-apt-repository/pool/main/libt/libthai/libthai-data_0.1.30-1_all.deb' libthai-data_0.1.30-1_all.deb 154800 MD5Sum:0be543a3e84c89df4326236f00bbb078
+'file:/var/tmp/omen-apt-repository/pool/main/libd/libdatrie/libdatrie1_0.2.14-1_amd64.deb' libdatrie1_0.2.14-1_amd64.deb 19776 MD5Sum:194f67ecfddab757263fda37d428d657
+'file:/var/tmp/omen-apt-repository/pool/main/libt/libthai/libthai0_0.1.30-1_amd64.deb' libthai0_0.1.30-1_amd64.deb 19174 MD5Sum:7eac61e35ea0f71729994323d45f5cf6
+'file:/var/tmp/omen-apt-repository/pool/main/p/pango1.0/libpango-1.0-0_1.57.0-1_amd64.deb' libpango-1.0-0_1.57.0-1_amd64.deb 240576 MD5Sum:0eb202b6e4fee3c5f722fcd68ff9fe07
+'file:/var/tmp/omen-apt-repository/pool/main/p/pango1.0/libpangoft2-1.0-0_1.57.0-1_amd64.deb' libpangoft2-1.0-0_1.57.0-1_amd64.deb 53260 MD5Sum:79a185fcfd43657a670923f873c12a1a
+'file:/var/tmp/omen-apt-repository/pool/main/p/pango1.0/libpangocairo-1.0-0_1.57.0-1_amd64.deb' libpangocairo-1.0-0_1.57.0-1_amd64.deb 29026 MD5Sum:4879508bc61ea96c0ceac3b4863775bb
+'file:/var/tmp/omen-apt-repository/pool/main/libr/librsvg/librsvg2-2_2.61.3%2bdfsg-3ubuntu0.1_amd64.deb' librsvg2-2_2.61.3+dfsg-3ubuntu0.1_amd64.deb 1849824 MD5Sum:3332fd8163d3f1498cf349af9da78444
+'file:/var/tmp/omen-apt-repository/pool/main/g/glycin/glycin-loaders_2.1.5%2bds-0ubuntu0.2_amd64.deb' glycin-loaders_2.1.5+ds-0ubuntu0.2_amd64.deb 2983588 MD5Sum:8f5693834a9596badd634bf8b07d7660
+'file:/var/tmp/omen-apt-repository/pool/main/g/glycin/libglycin-2-0_2.1.5%2bds-0ubuntu0.2_amd64.deb' libglycin-2-0_2.1.5+ds-0ubuntu0.2_amd64.deb 1486686 MD5Sum:4848c2839cbde22b8fb9fed1fcd1f707
+'file:/var/tmp/omen-apt-repository/pool/main/g/glycin/glycin-thumbnailers_2.1.5%2bds-0ubuntu0.2_amd64.deb' glycin-thumbnailers_2.1.5+ds-0ubuntu0.2_amd64.deb 222612 MD5Sum:0762397e65847f0fd41fc26b5553070e
+'file:/var/tmp/omen-apt-repository/pool/main/g/gdk-pixbuf/libgdk-pixbuf2.0-common_2.44.5%2bdfsg-4ubuntu1_all.deb' libgdk-pixbuf2.0-common_2.44.5+dfsg-4ubuntu1_all.deb 5754 MD5Sum:248a62034b6f730abfc7b69c3eafa1eb
+'file:/var/tmp/omen-apt-repository/pool/main/g/gdk-pixbuf/libgdk-pixbuf-2.0-0_2.44.5%2bdfsg-4ubuntu1_amd64.deb' libgdk-pixbuf-2.0-0_2.44.5+dfsg-4ubuntu1_amd64.deb 100992 MD5Sum:f384dcb33aa31e5fc0f7960bf8543b3e
+'file:/var/tmp/omen-apt-repository/pool/main/g/gtk4/gtk-update-icon-cache_4.22.4%2bds-0ubuntu0.1_amd64.deb' gtk-update-icon-cache_4.22.4+ds-0ubuntu0.1_amd64.deb 42654 MD5Sum:4dc958bc74b6c6d121a125fb16b041ec
+'file:/var/tmp/omen-apt-repository/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.18-2build1_all.deb' hicolor-icon-theme_0.18-2build1_all.deb 13154 MD5Sum:c33bdeefa20e88964f7df30c077d329e
+'file:/var/tmp/omen-apt-repository/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_50.0-1_all.deb' adwaita-icon-theme_50.0-1_all.deb 580384 MD5Sum:cf8c9551043ac778781871584471ddfe
+'file:/var/tmp/omen-apt-repository/pool/main/a/at-spi2-core/at-spi2-common_2.60.4-0ubuntu0.1_all.deb' at-spi2-common_2.60.4-0ubuntu0.1_all.deb 6604 MD5Sum:4038f8bc537bbf62cd1b3b22bc799a83
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxres/libxres1_1.2.1-1build2_amd64.deb' libxres1_2%3a1.2.1-1build2_amd64.deb 7036 MD5Sum:98ea31021af382d9a3ed3be613311001
+'file:/var/tmp/omen-apt-repository/pool/main/a/at-spi2-core/libatspi2.0-0t64_2.60.4-0ubuntu0.1_amd64.deb' libatspi2.0-0t64_2.60.4-0ubuntu0.1_amd64.deb 85514 MD5Sum:5b0eeeac768f2aa94d73e8050681a021
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxtst/libxtst6_1.2.5-1ubuntu0.1_amd64.deb' libxtst6_2%3a1.2.5-1ubuntu0.1_amd64.deb 13152 MD5Sum:7c04083fd6de01ef427d2fe06d0b95c1
+'file:/var/tmp/omen-apt-repository/pool/main/d/dconf/libdconf1_0.49.0-4_amd64.deb' libdconf1_0.49.0-4_amd64.deb 40516 MD5Sum:04b02805404724eafaaed614d2992e5c
+'file:/var/tmp/omen-apt-repository/pool/main/d/dconf/dconf-service_0.49.0-4_amd64.deb' dconf-service_0.49.0-4_amd64.deb 27696 MD5Sum:dcd25cbe5be756e53d13fa1697dedd8b
+'file:/var/tmp/omen-apt-repository/pool/main/d/dconf/dconf-gsettings-backend_0.49.0-4_amd64.deb' dconf-gsettings-backend_0.49.0-4_amd64.deb 22172 MD5Sum:313cba6e380f441833c81c0c0af3525d
+'file:/var/tmp/omen-apt-repository/pool/main/u/user-session-migration/user-session-migration_0.5.1_amd64.deb' user-session-migration_0.5.1_amd64.deb 10718 MD5Sum:e3ead683cba3a29766eff6eb62e7ee1b
+'file:/var/tmp/omen-apt-repository/pool/main/g/gsettings-desktop-schemas/gsettings-desktop-schemas_50.0-1ubuntu2_all.deb' gsettings-desktop-schemas_50.0-1ubuntu2_all.deb 37776 MD5Sum:f52822fd5dffd9cc686ce163f233428c
+'file:/var/tmp/omen-apt-repository/pool/main/a/at-spi2-core/at-spi2-core_2.60.4-0ubuntu0.1_amd64.deb' at-spi2-core_2.60.4-0ubuntu0.1_amd64.deb 59560 MD5Sum:43407dc5af14d65f2a6af6b2e62d6cb3
+'file:/var/tmp/omen-apt-repository/pool/universe/b/breeze/breeze-wallpaper_6.6.5-0ubuntu0.1_all.deb' breeze-wallpaper_4%3a6.6.5-0ubuntu0.1_all.deb 40168132 MD5Sum:2c6a6aad1259c7014247516c84d24de0
+'file:/var/tmp/omen-apt-repository/pool/main/g/gcc-15/gcc-15-base_15.2.0-16ubuntu1_amd64.deb' gcc-15-base_15.2.0-16ubuntu1_amd64.deb 39040 MD5Sum:ec77f9834440cd64659b206a30eea90d
+'file:/var/tmp/omen-apt-repository/pool/main/i/isl/libisl23_0.27-1build1_amd64.deb' libisl23_0.27-1build1_amd64.deb 690670 MD5Sum:f33ec2b98171f71dff787a647cb84bd0
+'file:/var/tmp/omen-apt-repository/pool/main/m/mpclib3/libmpc3_1.3.1-3_amd64.deb' libmpc3_1.3.1-3_amd64.deb 54628 MD5Sum:08718a9edf1c5bfafd0bc51fc5f85db1
+'file:/var/tmp/omen-apt-repository/pool/main/g/gcc-15/cpp-15-x86-64-linux-gnu_15.2.0-16ubuntu1_amd64.deb' cpp-15-x86-64-linux-gnu_15.2.0-16ubuntu1_amd64.deb 12899858 MD5Sum:a5123a7b09ce9e3ae785f33d5fa3c73d
+'file:/var/tmp/omen-apt-repository/pool/main/g/gcc-15/cpp-15_15.2.0-16ubuntu1_amd64.deb' cpp-15_15.2.0-16ubuntu1_amd64.deb 1030 MD5Sum:02eb788c68e1af8e34b382bbc9ad1d78
+'file:/var/tmp/omen-apt-repository/pool/main/g/gcc-defaults/cpp-x86-64-linux-gnu_15.2.0-5ubuntu1_amd64.deb' cpp-x86-64-linux-gnu_4%3a15.2.0-5ubuntu1_amd64.deb 5840 MD5Sum:e1cc2dd95d765646f8ee5658a7863f39
+'file:/var/tmp/omen-apt-repository/pool/main/g/gcc-defaults/cpp_15.2.0-5ubuntu1_amd64.deb' cpp_4%3a15.2.0-5ubuntu1_amd64.deb 22420 MD5Sum:472c9b90f4822b3bb55d524419690046
+'file:/var/tmp/omen-apt-repository/pool/universe/a/appstream/libappstreamqt3_1.1.2-1_amd64.deb' libappstreamqt3_1.1.2-1_amd64.deb 116208 MD5Sum:8bac8615c3e9ce2ccabac003c5179c53
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-knewstuff/libkf6newstuff-data_6.24.0-0ubuntu1_all.deb' libkf6newstuff-data_6.24.0-0ubuntu1_all.deb 169572 MD5Sum:cd051c3cf620eacb48dc4b0875174350
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-attica/libkf6attica6_6.24.0-0ubuntu1_amd64.deb' libkf6attica6_6.24.0-0ubuntu1_amd64.deb 184746 MD5Sum:924e9180189954092b02f61f74ac6e1f
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-syndication/libkf6syndication6_6.24.0-0ubuntu1_amd64.deb' libkf6syndication6_6.24.0-0ubuntu1_amd64.deb 201158 MD5Sum:fcc0b1df2debd8a973570f94eb5f8822
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-knewstuff/libkf6newstuffcore6_6.24.0-0ubuntu1_amd64.deb' libkf6newstuffcore6_6.24.0-0ubuntu1_amd64.deb 301506 MD5Sum:dea0fd750644530b3927d4453944cbb1
+'file:/var/tmp/omen-apt-repository/pool/universe/p/packagekit-qt/libpackagekitqt6-2_1.1.4-1_amd64.deb' libpackagekitqt6-2_1.1.4-1_amd64.deb 111532 MD5Sum:9fd3566b05fb134020ee4976a7be5424
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-frameworkintegration/frameworkintegration6_6.24.0-0ubuntu1_amd64.deb' frameworkintegration6_6.24.0-0ubuntu1_amd64.deb 61706 MD5Sum:333fe843d499ac09988e514d08205f34
+'file:/var/tmp/omen-apt-repository/pool/main/b/babeltrace/libbabeltrace1_1.5.11-5build1_amd64.deb' libbabeltrace1_1.5.11-5build1_amd64.deb 165286 MD5Sum:cbf5a1d76f8c6af2c7d5d643806905e6
+'file:/var/tmp/omen-apt-repository/pool/main/i/intel-processor-trace/libipt2_2.1.2-3_amd64.deb' libipt2_2.1.2-3_amd64.deb 49182 MD5Sum:cf3e99c491e8c861656be930274861db
+'file:/var/tmp/omen-apt-repository/pool/main/s/source-highlight/libsource-highlight-common_3.1.9-4.3build2_all.deb' libsource-highlight-common_3.1.9-4.3build2_all.deb 64234 MD5Sum:7f57fd9abb850e19507580724e025425
+'file:/var/tmp/omen-apt-repository/pool/main/s/source-highlight/libsource-highlight4t64_3.1.9-4.3build2_amd64.deb' libsource-highlight4t64_3.1.9-4.3build2_amd64.deb 273064 MD5Sum:936518fc9dc186536ad7a6807a296a44
+'file:/var/tmp/omen-apt-repository/pool/main/g/gdb/gdb_17.1-2ubuntu1_amd64.deb' gdb_17.1-2ubuntu1_amd64.deb 4173290 MD5Sum:5ed5d98b67849342f1d03edd4794043a
+'file:/var/tmp/omen-apt-repository/pool/main/a/avahi/libavahi-glib1_0.8-18ubuntu1.1_amd64.deb' libavahi-glib1_0.8-18ubuntu1.1_amd64.deb 8246 MD5Sum:1cfe59936ddd978e51b860cefe443aa3
+'file:/var/tmp/omen-apt-repository/pool/main/libn/libnotify/libnotify4_0.8.8-1_amd64.deb' libnotify4_0.8.8-1_amd64.deb 28632 MD5Sum:24310cd9ef608d417e3c5583bf939808
+'file:/var/tmp/omen-apt-repository/pool/main/g/glib-networking/glib-networking-common_2.80.1-1build2_all.deb' glib-networking-common_2.80.1-1build2_all.deb 6834 MD5Sum:abd2e9cd10bf868f2d0912d6f76ab5a8
+'file:/var/tmp/omen-apt-repository/pool/main/g/glib-networking/glib-networking-services_2.80.1-1build2_amd64.deb' glib-networking-services_2.80.1-1build2_amd64.deb 13086 MD5Sum:126b17162c8b10e26371d5f0a922d2d4
+'file:/var/tmp/omen-apt-repository/pool/main/g/glib-networking/glib-networking_2.80.1-1build2_amd64.deb' glib-networking_2.80.1-1build2_amd64.deb 64812 MD5Sum:0f2bfaf37207f3cfdb320073ff2a4a79
+'file:/var/tmp/omen-apt-repository/pool/main/libs/libsoup3/libsoup-3.0-common_3.6.6-1ubuntu0.1_all.deb' libsoup-3.0-common_3.6.6-1ubuntu0.1_all.deb 9010 MD5Sum:a7d82854c3b5174029cf5f73254debde
+'file:/var/tmp/omen-apt-repository/pool/main/libs/libsoup3/libsoup-3.0-0_3.6.6-1ubuntu0.1_amd64.deb' libsoup-3.0-0_3.6.6-1ubuntu0.1_amd64.deb 293462 MD5Sum:5db66f1d75e6f59f66d5cf47624ecf30
+'file:/var/tmp/omen-apt-repository/pool/main/g/geoclue-2.0/geoclue-2.0_2.7.2-2ubuntu3_amd64.deb' geoclue-2.0_2.7.2-2ubuntu3_amd64.deb 106006 MD5Sum:f372c3b90150487fb3f2046dd6ea7c7d
+'file:/var/tmp/omen-apt-repository/pool/main/g/gobject-introspection/gir1.2-freedesktop_1.86.0-6build1_amd64.deb' gir1.2-freedesktop_1.86.0-6build1_amd64.deb 66000 MD5Sum:6ee1edac312031b90aefc96b1ea19535
+'file:/var/tmp/omen-apt-repository/pool/main/a/at-spi2-core/gir1.2-atspi-2.0_2.60.4-0ubuntu0.1_amd64.deb' gir1.2-atspi-2.0_2.60.4-0ubuntu0.1_amd64.deb 22578 MD5Sum:e1f621a5e783637fe4631f3e6ef4411a
+'file:/var/tmp/omen-apt-repository/pool/main/c/cdparanoia/libcdparanoia0_3.10.2%2bdebian-14ubuntu2_amd64.deb' libcdparanoia0_3.10.2+debian-14ubuntu2_amd64.deb 48274 MD5Sum:a17d7e33dbfe75032b2382a5c98ad09d
+'file:/var/tmp/omen-apt-repository/pool/main/o/orc/liborc-0.4-0t64_0.4.42-2_amd64.deb' liborc-0.4-0t64_1%3a0.4.42-2_amd64.deb 283098 MD5Sum:043b26fceea0e0c5a43701844207ce78
+'file:/var/tmp/omen-apt-repository/pool/main/g/gst-plugins-base1.0/libgstreamer-plugins-base1.0-0_1.28.2-1ubuntu0.1_amd64.deb' libgstreamer-plugins-base1.0-0_1.28.2-1ubuntu0.1_amd64.deb 920576 MD5Sum:7511a875a741d794edb81044ab9be37e
+'file:/var/tmp/omen-apt-repository/pool/main/o/opus/libopus0_1.6.1-1_amd64.deb' libopus0_1.6.1-1_amd64.deb 3563890 MD5Sum:7fb57f8e6265a098c9d98769cc548861
+'file:/var/tmp/omen-apt-repository/pool/main/libt/libtheora/libtheoradec2_1.2.0%2bdfsg-6_amd64.deb' libtheoradec2_1.2.0+dfsg-6_amd64.deb 55638 MD5Sum:e46da518ab79cab2aa12e9842257792c
+'file:/var/tmp/omen-apt-repository/pool/main/libt/libtheora/libtheoraenc2_1.2.0%2bdfsg-6_amd64.deb' libtheoraenc2_1.2.0+dfsg-6_amd64.deb 106272 MD5Sum:cbd7939a72e288b9537130c724665b2f
+'file:/var/tmp/omen-apt-repository/pool/main/libv/libvisual/libvisual-0.4-0_0.4.2-4_amd64.deb' libvisual-0.4-0_0.4.2-4_amd64.deb 116984 MD5Sum:a3903add356f0190b9c8f3ff9b0b63e3
+'file:/var/tmp/omen-apt-repository/pool/main/libv/libvorbis/libvorbisenc2_1.3.7-3build2_amd64.deb' libvorbisenc2_1.3.7-3build2_amd64.deb 79598 MD5Sum:dfde0abc61147cd623feedce43de262b
+'file:/var/tmp/omen-apt-repository/pool/main/g/gst-plugins-base1.0/gstreamer1.0-plugins-base_1.28.2-1ubuntu0.1_amd64.deb' gstreamer1.0-plugins-base_1.28.2-1ubuntu0.1_amd64.deb 750194 MD5Sum:7c89a342fac94c48ca208310081f41f3
+'file:/var/tmp/omen-apt-repository/pool/main/a/aalib/libaa1_1.4p5-51.1build1_amd64.deb' libaa1_1.4p5-51.1build1_amd64.deb 50800 MD5Sum:a147d388ce2a558512fe8c13bd243956
+'file:/var/tmp/omen-apt-repository/pool/main/libr/libraw1394/libraw1394-11_2.1.2-2build4_amd64.deb' libraw1394-11_2.1.2-2build4_amd64.deb 26092 MD5Sum:81fd1dfc98e1b43600be9f12ad8e544a
+'file:/var/tmp/omen-apt-repository/pool/main/liba/libavc1394/libavc1394-0_0.5.4-5build4_amd64.deb' libavc1394-0_0.5.4-5build4_amd64.deb 15410 MD5Sum:8825de81aec878063dd38022e3a24875
+'file:/var/tmp/omen-apt-repository/pool/main/libc/libcaca/libcaca0_0.99.beta20-6ubuntu2.1_amd64.deb' libcaca0_0.99.beta20-6ubuntu2.1_amd64.deb 204812 MD5Sum:623a7a17af2a1d18e4ca43c330e14379
+'file:/var/tmp/omen-apt-repository/pool/main/libd/libdv/libdv4t64_1.0.0-17.1build2_amd64.deb' libdv4t64_1.0.0-17.1build2_amd64.deb 64286 MD5Sum:ff097eebd47b35da5fd76757b2a21771
+'file:/var/tmp/omen-apt-repository/pool/main/f/flac/libflac14_1.5.0%2bds-5_amd64.deb' libflac14_1.5.0+ds-5_amd64.deb 167804 MD5Sum:a5885c087866a303c2ff76529e743410
+'file:/var/tmp/omen-apt-repository/pool/main/libi/libiec61883/libiec61883-0_1.2.0-8_amd64.deb' libiec61883-0_1.2.0-8_amd64.deb 25708 MD5Sum:c79c068295c9320512bc36e2ff909e44
+'file:/var/tmp/omen-apt-repository/pool/main/m/mpg123/libmpg123-0t64_1.33.3-2_amd64.deb' libmpg123-0t64_1.33.3-2_amd64.deb 176430 MD5Sum:3451e8aaaf61f210e3e1394dfc2474de
+'file:/var/tmp/omen-apt-repository/pool/main/l/lame/libmp3lame0_3.101%7esvn6525%2bdfsg-2ubuntu0.1_amd64.deb' libmp3lame0_3.101~svn6525+dfsg-2ubuntu0.1_amd64.deb 121480 MD5Sum:e5e0429389ee91c970568f455047066b
+'file:/var/tmp/omen-apt-repository/pool/main/liba/libasyncns/libasyncns0_0.8-7_amd64.deb' libasyncns0_0.8-7_amd64.deb 12384 MD5Sum:57c0c6b35d6cc198aa2de4dcc79fc090
+'file:/var/tmp/omen-apt-repository/pool/main/libs/libsndfile/libsndfile1_1.2.2-4_amd64.deb' libsndfile1_1.2.2-4_amd64.deb 218520 MD5Sum:3c588b8f0b458281f938bccc311a519c
+'file:/var/tmp/omen-apt-repository/pool/main/p/pulseaudio/libpulse0_17.0%2bdfsg1-2ubuntu4_amd64.deb' libpulse0_1%3a17.0+dfsg1-2ubuntu4_amd64.deb 293408 MD5Sum:f6a75c49f21de1787ee6e766f384ef82
+'file:/var/tmp/omen-apt-repository/pool/main/s/speex/libspeex1_1.2.1-3build1_amd64.deb' libspeex1_1.2.1-3build1_amd64.deb 63298 MD5Sum:9a4a6c45b8a406f4030c73b8c0a0979b
+'file:/var/tmp/omen-apt-repository/pool/main/libt/libtheora/libtheora1_1.2.0%2bdfsg-6_amd64.deb' libtheora1_1.2.0+dfsg-6_amd64.deb 139776 MD5Sum:fdeed34433172ef7fc3f0206226ba913
+'file:/var/tmp/omen-apt-repository/pool/main/libs/libshout/libshout3_2.4.6-1build3_amd64.deb' libshout3_2.4.6-1build3_amd64.deb 50936 MD5Sum:930a757d45256adec31609a373f76a02
+'file:/var/tmp/omen-apt-repository/pool/main/t/taglib/libtag2_2.2.1-3_amd64.deb' libtag2_2.2.1-3_amd64.deb 422258 MD5Sum:0a8e1105dcd490331895e01a2e53ecb7
+'file:/var/tmp/omen-apt-repository/pool/main/t/twolame/libtwolame0_0.4.0-2build4_amd64.deb' libtwolame0_0.4.0-2build4_amd64.deb 52614 MD5Sum:c062f851cf0bfc7f7c01dd605eb6893e
+'file:/var/tmp/omen-apt-repository/pool/main/v/v4l-utils/libv4lconvert0t64_1.32.0-2ubuntu1_amd64.deb' libv4lconvert0t64_1.32.0-2ubuntu1_amd64.deb 90078 MD5Sum:31ffca14f6d5a0d1f80d0377d7e33ec3
+'file:/var/tmp/omen-apt-repository/pool/main/v/v4l-utils/libv4l-0t64_1.32.0-2ubuntu1_amd64.deb' libv4l-0t64_1.32.0-2ubuntu1_amd64.deb 158926 MD5Sum:ba3e3788d9d9122f1007326b1a4ca17b
+'file:/var/tmp/omen-apt-repository/pool/main/libv/libvpx/libvpx12_1.16.0-3_amd64.deb' libvpx12_1.16.0-3_amd64.deb 1243784 MD5Sum:65d7529ae9fb10bf52c2100c70abfd65
+'file:/var/tmp/omen-apt-repository/pool/main/w/wavpack/libwavpack1_5.9.0-1_amd64.deb' libwavpack1_5.9.0-1_amd64.deb 92332 MD5Sum:42e52db2b73ed397521ab434e7af6793
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxdamage/libxdamage1_1.1.7-1_amd64.deb' libxdamage1_1%3a1.1.7-1_amd64.deb 6582 MD5Sum:b8d4c45333498d8bf8909dcf92a9afb0
+'file:/var/tmp/omen-apt-repository/pool/main/g/gst-plugins-good1.0/gstreamer1.0-plugins-good_1.28.2-2ubuntu0.4_amd64.deb' gstreamer1.0-plugins-good_1.28.2-2ubuntu0.4_amd64.deb 2313848 MD5Sum:e610a30ea9cc6235d92b247c38755d49
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-base/libqt6sql6_6.10.2%2bdfsg-7_amd64.deb' libqt6sql6_6.10.2+dfsg-7_amd64.deb 147480 MD5Sum:7d1833b14b2fb2786c07c6a8f8a909d7
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-base/libqt6sql6-sqlite_6.10.2%2bdfsg-7_amd64.deb' libqt6sql6-sqlite_6.10.2+dfsg-7_amd64.deb 61424 MD5Sum:63daa825acc65d77f8d69aea79a9b2c0
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kactivitymanagerd/kactivitymanagerd_6.6.6-0ubuntu0.1_amd64.deb' kactivitymanagerd_6.6.6-0ubuntu0.1_amd64.deb 203484 MD5Sum:26c68fb2066ce2415e42cd7bbf5573f2
+'file:/var/tmp/omen-apt-repository/pool/universe/b/breeze/kde-style-breeze-data_6.6.5-0ubuntu0.1_all.deb' kde-style-breeze-data_4%3a6.6.5-0ubuntu0.1_all.deb 46300 MD5Sum:45a3d51714be68746659e478eac5009d
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-breeze-icons/kf6-breeze-icon-theme_6.24.0-0ubuntu1_all.deb' kf6-breeze-icon-theme_6.24.0-0ubuntu1_all.deb 3762320 MD5Sum:b37e40dc84e5afd8f6a5d337aa2a3486
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-record0_1.17.0-2ubuntu1_amd64.deb' libxcb-record0_1.17.0-2ubuntu1_amd64.deb 7480 MD5Sum:65a76f6a77cb68a07e685bd7413f4f7e
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kglobalacceld/libkglobalacceld0_6.6.5-0ubuntu0.1_amd64.deb' libkglobalacceld0_6.6.5-0ubuntu0.1_amd64.deb 105892 MD5Sum:37bf3dce71f0906f01fb50c9ddd15b73
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kglobalacceld/kglobalacceld_6.6.5-0ubuntu0.1_amd64.deb' kglobalacceld_6.6.5-0ubuntu0.1_amd64.deb 7878 MD5Sum:00fa57d3480f58961a9b1f3b5b8b74bf
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kio-fuse/kio-fuse_5.1.1-1_amd64.deb' kio-fuse_5.1.1-1_amd64.deb 79574 MD5Sum:a51e8e27d835273506837d467fa84322
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kirigami-addons/kirigami-addons-data_1.11.0-2ubuntu2_all.deb' kirigami-addons-data_1.11.0-2ubuntu2_all.deb 343192 MD5Sum:51df2bcb86faabcdce166f1a63536a3b
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kholidays/libkf6holidays-data_6.24.0-0ubuntu1_all.deb' libkf6holidays-data_6.24.0-0ubuntu1_all.deb 61454 MD5Sum:7080b454ba5a6029ba5b5a6a7eb258b3
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kholidays/libkf6holidays6_6.24.0-0ubuntu1_amd64.deb' libkf6holidays6_6.24.0-0ubuntu1_amd64.deb 218392 MD5Sum:eddb95e4ec21bcfe171876e51ddf976a
+'file:/var/tmp/omen-apt-repository/pool/universe/k/knighttime/libknighttime0_6.6.5-0ubuntu0.1_amd64.deb' libknighttime0_6.6.5-0ubuntu0.1_amd64.deb 31920 MD5Sum:63acbef3e4b56090109847033aa4dcc5
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-positioning/libqt6positioning6_6.10.2-1_amd64.deb' libqt6positioning6_6.10.2-1_amd64.deb 200784 MD5Sum:e6460c43c1127d029797e1d6a1eed2f6
+'file:/var/tmp/omen-apt-repository/pool/universe/k/knighttime/knighttime_6.6.5-0ubuntu0.1_amd64.deb' knighttime_6.6.5-0ubuntu0.1_amd64.deb 38114 MD5Sum:24306ffc8861d53aa0fbd6fbc5eb301a
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kwayland/kwayland6-data_6.6.4-0ubuntu1_all.deb' kwayland6-data_4%3a6.6.4-0ubuntu1_all.deb 5724 MD5Sum:23f6147205975dbdf776d1c5575f756d
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kwin/kwin-data_6.6.6-0ubuntu0.1_all.deb' kwin-data_4%3a6.6.6-0ubuntu0.1_all.deb 5463140 MD5Sum:a37579c25581b95dd37cfd2010cca8df
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kirigami/libkirigami-data_6.24.0-0ubuntu1_all.deb' libkirigami-data_6.24.0-0ubuntu1_all.deb 37516 MD5Sum:e3d12e04d7a3d621768cb7240eeb0ab4
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/libqt6quicktemplates2-6_6.10.2%2bdfsg-3_amd64.deb' libqt6quicktemplates2-6_6.10.2+dfsg-3_amd64.deb 692464 MD5Sum:c7d5dbb448385c3fef32e25e22e264ae
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/libqt6quickcontrols2-6_6.10.2%2bdfsg-3_amd64.deb' libqt6quickcontrols2-6_6.10.2+dfsg-3_amd64.deb 2153490 MD5Sum:4b5e997ece4a05beb605bf95bf4c9f57
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kirigami/libkirigamiplatform6_6.24.0-0ubuntu1_amd64.deb' libkirigamiplatform6_6.24.0-0ubuntu1_amd64.deb 112610 MD5Sum:a6bbfe146dab4aec0c7bb17d10cde069
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kirigami/libkirigami6_6.24.0-0ubuntu1_amd64.deb' libkirigami6_6.24.0-0ubuntu1_amd64.deb 75762 MD5Sum:22f9e366ce758f76d850bf9ed65ab898
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kirigami/libkirigamidelegates6_6.24.0-0ubuntu1_amd64.deb' libkirigamidelegates6_6.24.0-0ubuntu1_amd64.deb 51980 MD5Sum:39115a4f56b8a03c81f243b28b3e1dd7
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/qml6-module-qtqml-models_6.10.2%2bdfsg-3_amd64.deb' qml6-module-qtqml-models_6.10.2+dfsg-3_amd64.deb 18984 MD5Sum:95414260e4f73649cebe251fddd595e9
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/qml6-module-qtqml-workerscript_6.10.2%2bdfsg-3_amd64.deb' qml6-module-qtqml-workerscript_6.10.2+dfsg-3_amd64.deb 13434 MD5Sum:43fdc431f7a417b9ebd5ad280b39bb58
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/qml6-module-qtqml_6.10.2%2bdfsg-3_amd64.deb' qml6-module-qtqml_6.10.2+dfsg-3_amd64.deb 14176 MD5Sum:6e668182637a77774e47a093d08ec0d7
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/qml6-module-qtquick_6.10.2%2bdfsg-3_amd64.deb' qml6-module-qtquick_6.10.2+dfsg-3_amd64.deb 62694 MD5Sum:7ff24f19cc10b23bcef651bdf3afc4c7
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/qml6-module-qtquick-templates_6.10.2%2bdfsg-3_amd64.deb' qml6-module-qtquick-templates_6.10.2+dfsg-3_amd64.deb 32268 MD5Sum:aea240e98d2e044a357b9b5b71e4e5c7
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/qml6-module-qt-labs-qmlmodels_6.10.2%2bdfsg-3_amd64.deb' qml6-module-qt-labs-qmlmodels_6.10.2+dfsg-3_amd64.deb 80070 MD5Sum:165cec067917f7b55f312a01c1c7e74b
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/libqt6quickshapes6_6.10.2%2bdfsg-3_amd64.deb' libqt6quickshapes6_6.10.2+dfsg-3_amd64.deb 143458 MD5Sum:86bdac8e2663b1d353f43c981bcf3cfc
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/qml6-module-qtquick-shapes_6.10.2%2bdfsg-3_amd64.deb' qml6-module-qtquick-shapes_6.10.2+dfsg-3_amd64.deb 15486 MD5Sum:de1ec77dc8fd514f77678bcbfe0f8453
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/qml6-module-qtquick-window_6.10.2%2bdfsg-3_amd64.deb' qml6-module-qtquick-window_6.10.2+dfsg-3_amd64.deb 13560 MD5Sum:f62a0616754abebdd6fec16c3ef63dc8
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/qml6-module-qtquick-controls_6.10.2%2bdfsg-3_amd64.deb' qml6-module-qtquick-controls_6.10.2+dfsg-3_amd64.deb 105834 MD5Sum:a312f44b8d8000c63631256ce5e49842
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/qml6-module-qtquick-layouts_6.10.2%2bdfsg-3_amd64.deb' qml6-module-qtquick-layouts_6.10.2+dfsg-3_amd64.deb 121946 MD5Sum:c963f6f895f58de623a027639d84fc8d
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kirigami/libkirigamicontrols6_6.24.0-0ubuntu1_amd64.deb' libkirigamicontrols6_6.24.0-0ubuntu1_amd64.deb 481746 MD5Sum:a4f9abe8a3a48bb2dc3cd5f0bd9ac427
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kirigami/libkirigamidialogs6_6.24.0-0ubuntu1_amd64.deb' libkirigamidialogs6_6.24.0-0ubuntu1_amd64.deb 64876 MD5Sum:90517434129a4a9075556d87b2476e67
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kirigami/libkirigamilayouts6_6.24.0-0ubuntu1_amd64.deb' libkirigamilayouts6_6.24.0-0ubuntu1_amd64.deb 154796 MD5Sum:e4794b4fa07520b1a5aceaa8ef8983f1
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kirigami/libkirigamilayoutsprivate6_6.24.0-0ubuntu1_amd64.deb' libkirigamilayoutsprivate6_6.24.0-0ubuntu1_amd64.deb 25412 MD5Sum:a947eae032987779eb2fb299151d5cdf
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kirigami/libkirigamipolyfill6_6.24.0-0ubuntu1_amd64.deb' libkirigamipolyfill6_6.24.0-0ubuntu1_amd64.deb 9140 MD5Sum:dff53d68a91834d82509bdc8f0ad9ba1
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kirigami/libkirigamiprimitives6_6.24.0-0ubuntu1_amd64.deb' libkirigamiprimitives6_6.24.0-0ubuntu1_amd64.deb 147218 MD5Sum:b368d5f4598a2ddb62fb000addd65ddb
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kirigami/libkirigamiprivate6_6.24.0-0ubuntu1_amd64.deb' libkirigamiprivate6_6.24.0-0ubuntu1_amd64.deb 20436 MD5Sum:a92c2dea8adf1a9931f28784b90b5ee5
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kirigami/libkirigamitemplates6_6.24.0-0ubuntu1_amd64.deb' libkirigamitemplates6_6.24.0-0ubuntu1_amd64.deb 129900 MD5Sum:b6161e98a0657c87a8f4ac5e7c04f6f6
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kirigami/qml6-module-org-kde-kirigami_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-kirigami_6.24.0-0ubuntu1_amd64.deb 130100 MD5Sum:4b75200739299ee80d52de4274c317fc
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-ksvg/qml6-module-org-kde-ksvg_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-ksvg_6.24.0-0ubuntu1_amd64.deb 48692 MD5Sum:0221e7e728f5278142c73bb024671889
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-shadertools/libqt6shadertools6_6.10.2-1_amd64.deb' libqt6shadertools6_6.10.2-1_amd64.deb 1639926 MD5Sum:49dc05b641089678d35c03eac9688c8e
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-5compat/qml6-module-qt5compat-graphicaleffects_6.10.2-1_amd64.deb' qml6-module-qt5compat-graphicaleffects_6.10.2-1_amd64.deb 361778 MD5Sum:909b45b0225151369251bd2693ed5e31
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/qml6-module-qtquick-tooling_6.10.2%2bdfsg-3_amd64.deb' qml6-module-qtquick-tooling_6.10.2+dfsg-3_amd64.deb 23232 MD5Sum:948809f00ba44db4d42b4e4f970c675d
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-composite0_1.17.0-2ubuntu1_amd64.deb' libxcb-composite0_1.17.0-2ubuntu1_amd64.deb 5368 MD5Sum:5c5657fdc8a4c6f5908a45ff97600ef4
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-damage0_1.17.0-2ubuntu1_amd64.deb' libxcb-damage0_1.17.0-2ubuntu1_amd64.deb 5034 MD5Sum:8e73fc4c4ed4f0abb04ba8769029f166
+'file:/var/tmp/omen-apt-repository/pool/universe/libp/libplasma/plasma-desktoptheme_6.6.6-0ubuntu0.1_amd64.deb' plasma-desktoptheme_6.6.6-0ubuntu0.1_amd64.deb 1974008 MD5Sum:0ac383576b46156a3d298fdd5793dc87
+'file:/var/tmp/omen-apt-repository/pool/main/libe/libei/libeis1_1.5.0-3_amd64.deb' libeis1_1.5.0-3_amd64.deb 44010 MD5Sum:e48b6d753eec77347acc7ce74d40763d
+'file:/var/tmp/omen-apt-repository/pool/main/libe/libepoxy/libepoxy0_1.5.10-2build1_amd64.deb' libepoxy0_1.5.10-2build1_amd64.deb 226466 MD5Sum:c597123264110d71cb1507e294a8f2b1
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kdecoration/libkdecorations3private2_6.6.4-0ubuntu1_amd64.deb' libkdecorations3private2_4%3a6.6.4-0ubuntu1_amd64.deb 11912 MD5Sum:8fe40a7517913ee6fab9ddc69f8cf63d
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kdecoration/libkdecorations3-6_6.6.4-0ubuntu1_amd64.deb' libkdecorations3-6_4%3a6.6.4-0ubuntu1_amd64.deb 79952 MD5Sum:b537bff6850ab6ce896d40f5cbd06c7d
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kauth/libkf6auth-data_6.24.0-0ubuntu1_all.deb' libkf6auth-data_6.24.0-0ubuntu1_all.deb 28262 MD5Sum:b5ee810f6238cf04982eb615515ba21b
+'file:/var/tmp/omen-apt-repository/pool/universe/p/polkit-qt-1/libpolkit-qt6-1-1_0.200.0-4ubuntu1_amd64.deb' libpolkit-qt6-1-1_0.200.0-4ubuntu1_amd64.deb 65686 MD5Sum:6c65e99b7cdde331b3c5234c4a4a2593
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kauth/libkf6authcore6_6.24.0-0ubuntu1_amd64.deb' libkf6authcore6_6.24.0-0ubuntu1_amd64.deb 72874 MD5Sum:ad6c90e98e0c6c8ff8f6b01ee09e454e
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kcmutils/libkf6kcmutils-data_6.24.0-0ubuntu1_all.deb' libkf6kcmutils-data_6.24.0-0ubuntu1_all.deb 76114 MD5Sum:7bd3c3b5af69d5bebebbfcaf475176d6
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kcmutils/libkf6kcmutilscore6_6.24.0-0ubuntu1_amd64.deb' libkf6kcmutilscore6_6.24.0-0ubuntu1_amd64.deb 46784 MD5Sum:5f00a4aab633ac7bfd4d41e9e585a0df
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kcmutils/libkf6kcmutilsquick6_6.24.0-0ubuntu1_amd64.deb' libkf6kcmutilsquick6_6.24.0-0ubuntu1_amd64.deb 34674 MD5Sum:b7bd27aa09600c525d0a5769b1485684
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/libqt6quickwidgets6_6.10.2%2bdfsg-3_amd64.deb' libqt6quickwidgets6_6.10.2+dfsg-3_amd64.deb 49054 MD5Sum:7332997e6c8524f9ba799add4ff87948
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kcmutils/libkf6kcmutils6_6.24.0-0ubuntu1_amd64.deb' libkf6kcmutils6_6.24.0-0ubuntu1_amd64.deb 54220 MD5Sum:b2f4718cd77a74e336b15517e9df824e
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-knewstuff/libkf6newstuffwidgets6_6.24.0-0ubuntu1_amd64.deb' libkf6newstuffwidgets6_6.24.0-0ubuntu1_amd64.deb 24814 MD5Sum:60b11c59df8ee210e0a440646d1b4f8c
+'file:/var/tmp/omen-apt-repository/pool/main/libd/libdisplay-info/libdisplay-info3_0.3.0-1_amd64.deb' libdisplay-info3_0.3.0-1_amd64.deb 87808 MD5Sum:faf4f76c3391e03b4523c0ccb7ae6980
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kwayland/libkwaylandclient6_6.6.4-0ubuntu1_amd64.deb' libkwaylandclient6_4%3a6.6.4-0ubuntu1_amd64.deb 214978 MD5Sum:6157ba614cc7603f76a3ccbb24bcdfe6
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcvt/libxcvt0_0.1.3-1build1_amd64.deb' libxcvt0_0.1.3-1build1_amd64.deb 5852 MD5Sum:8afcb848686ce528a2a8b339178eafc4
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kwin/libkwin6_6.6.6-0ubuntu0.1_amd64.deb' libkwin6_4%3a6.6.6-0ubuntu0.1_amd64.deb 2454430 MD5Sum:2d5e3adb8feada2480e1172daf2cc408
+'file:/var/tmp/omen-apt-repository/pool/main/f/fftw3/libfftw3-single3_3.3.10-2fakesync1build3_amd64.deb' libfftw3-single3_3.3.10-2fakesync1build3_amd64.deb 865152 MD5Sum:75f706993d5cc113318b13255f484fe7
+'file:/var/tmp/omen-apt-repository/pool/main/w/webrtc-audio-processing/libwebrtc-audio-processing-1-3_1.3-3build2_amd64.deb' libwebrtc-audio-processing-1-3_1.3-3build2_amd64.deb 410554 MD5Sum:2de4e4317f1fdf43ccd004e5e912f787
+'file:/var/tmp/omen-apt-repository/pool/main/p/pipewire/libspa-0.2-modules_1.6.2-1ubuntu1.2_amd64.deb' libspa-0.2-modules_1.6.2-1ubuntu1.2_amd64.deb 1152096 MD5Sum:1ad1808fbf14167e18e52b6e78c1506c
+'file:/var/tmp/omen-apt-repository/pool/main/p/pipewire/libpipewire-0.3-0t64_1.6.2-1ubuntu1.2_amd64.deb' libpipewire-0.3-0t64_1.6.2-1ubuntu1.2_amd64.deb 299756 MD5Sum:0b05e92188fd27ffdabc2dd78fb71ce7
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-base/libqt6openglwidgets6_6.10.2%2bdfsg-7_amd64.deb' libqt6openglwidgets6_6.10.2+dfsg-7_amd64.deb 43556 MD5Sum:2dd4958fff60f3fa58ea9883c6d1a58a
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-tools/libqt6uitools6_6.10.2-1_amd64.deb' libqt6uitools6_6.10.2-1_amd64.deb 178286 MD5Sum:c2cd13213ab620739914bb0f1df1bef0
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kwin/kwin-common_6.6.6-0ubuntu0.1_amd64.deb' kwin-common_4%3a6.6.6-0ubuntu0.1_amd64.deb 2165650 MD5Sum:cea66b2f5b4795ed36313b431d9ed67c
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxt/libxt6t64_1.2.1-1.3build1_amd64.deb' libxt6t64_1%3a1.2.1-1.3build1_amd64.deb 172702 MD5Sum:46733f097f62f404d2a4506c16711a2a
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxmu/libxmu6_1.1.3-4_amd64.deb' libxmu6_2%3a1.1.3-4_amd64.deb 48862 MD5Sum:afe13720db9bbe386ed236c48747d6f5
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxpm/libxpm4_3.5.17-1ubuntu0.26.04.2_amd64.deb' libxpm4_1%3a3.5.17-1ubuntu0.26.04.2_amd64.deb 37170 MD5Sum:8e87c05d00b3d5e861b1ad7039f3ac02
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxaw/libxaw7_1.0.16-1build1_amd64.deb' libxaw7_2%3a1.0.16-1build1_amd64.deb 190216 MD5Sum:c2dbb747abc7b27a6fa0e617fee58634
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxkbfile/libxkbfile1_1.1.0-1build5_amd64.deb' libxkbfile1_1%3a1.1.0-1build5_amd64.deb 70116 MD5Sum:a0f2fb56f4d74d1a186f16758c709299
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxrandr/libxrandr2_1.5.4-1build1_amd64.deb' libxrandr2_2%3a1.5.4-1build1_amd64.deb 19622 MD5Sum:c4bdb9d77cde3659980f45b967eebcbd
+'file:/var/tmp/omen-apt-repository/pool/main/x/x11-xkb-utils/x11-xkb-utils_7.7%2b9build1_amd64.deb' x11-xkb-utils_7.7+9build1_amd64.deb 170262 MD5Sum:9f838e7855f20a17356431c1bd7d2815
+'file:/var/tmp/omen-apt-repository/pool/main/x/xorg-server/xserver-common_21.1.22-1ubuntu1.3_all.deb' xserver-common_2%3a21.1.22-1ubuntu1.3_all.deb 30048 MD5Sum:61d5658e7f9980eda41b218c6d4fc483
+'file:/var/tmp/omen-apt-repository/pool/main/libd/libdecor-0/libdecor-0-0_0.2.5-1_amd64.deb' libdecor-0-0_0.2.5-1_amd64.deb 16464 MD5Sum:d42f13246bdebb561e8e95ffa7fd1aaa
+'file:/var/tmp/omen-apt-repository/pool/main/libe/libei/libei1_1.5.0-3_amd64.deb' libei1_1.5.0-3_amd64.deb 42774 MD5Sum:85d6ea058e6678f78f65411b7aca53c0
+'file:/var/tmp/omen-apt-repository/pool/main/libg/libglvnd/libgl1_1.7.0-3_amd64.deb' libgl1_1.7.0-3_amd64.deb 98292 MD5Sum:b1171b3c298c834b03c2cb40899858d9
+'file:/var/tmp/omen-apt-repository/pool/main/libe/libei/liboeffis1_1.5.0-3_amd64.deb' liboeffis1_1.5.0-3_amd64.deb 12760 MD5Sum:052fa98576570451f43c2357a05f367e
+'file:/var/tmp/omen-apt-repository/pool/main/libf/libfontenc/libfontenc1_1.1.8-1build2_amd64.deb' libfontenc1_1%3a1.1.8-1build2_amd64.deb 14052 MD5Sum:758d56b085f23f079f33700200a5a9f8
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxfont/libxfont2_2.0.6-2ubuntu0.2_amd64.deb' libxfont2_1%3a2.0.6-2ubuntu0.2_amd64.deb 96496 MD5Sum:510f9b275ac903c712fc7555cadb25f6
+'file:/var/tmp/omen-apt-repository/pool/main/x/xwayland/xwayland_24.1.10-1_amd64.deb' xwayland_2%3a24.1.10-1_amd64.deb 1006600 MD5Sum:2b4412c2b1dcb0199c56bca82820ff64
+'file:/var/tmp/omen-apt-repository/pool/universe/libq/libqaccessibilityclient/libqaccessibilityclient-qt6-0_0.6.0-4ubuntu1_amd64.deb' libqaccessibilityclient-qt6-0_0.6.0-4ubuntu1_amd64.deb 95412 MD5Sum:755849f4c26b842d97a6ef65e74d62a0
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kwin/kwin-wayland_6.6.6-0ubuntu0.1_amd64.deb' kwin-wayland_4%3a6.6.6-0ubuntu0.1_amd64.deb 464212 MD5Sum:abcc9ac7a8e63c8734ff29c652a5854c
+'file:/var/tmp/omen-apt-repository/pool/universe/l/layer-shell-qt/layer-shell-qt_6.6.4-0ubuntu1_amd64.deb' layer-shell-qt_6.6.4-0ubuntu1_amd64.deb 6692 MD5Sum:1e928ae60553d0bcf77ba7392d5bc2eb
+'file:/var/tmp/omen-apt-repository/pool/main/g/graphene/libgraphene-1.0-0_1.10.8-5build1_amd64.deb' libgraphene-1.0-0_1.10.8-5build1_amd64.deb 46178 MD5Sum:de42d8a9b7d38b4bd3b27e7c5f001bb4
+'file:/var/tmp/omen-apt-repository/pool/main/c/cairo/libcairo-script-interpreter2_1.18.4-3_amd64.deb' libcairo-script-interpreter2_1.18.4-3_amd64.deb 61364 MD5Sum:624876972288bdef3ae826b09de683d2
+'file:/var/tmp/omen-apt-repository/pool/main/c/colord/libcolord2_1.4.8-3_amd64.deb' libcolord2_1.4.8-3_amd64.deb 149688 MD5Sum:37246058cd59333f8ade57dd1ce74364
+'file:/var/tmp/omen-apt-repository/pool/main/g/gst-plugins-base1.0/libgstreamer-gl1.0-0_1.28.2-1ubuntu0.1_amd64.deb' libgstreamer-gl1.0-0_1.28.2-1ubuntu0.1_amd64.deb 229996 MD5Sum:11a4af1d6615bbbb60defc05f4e5658a
+'file:/var/tmp/omen-apt-repository/pool/main/libv/libva/libva2_2.23.0-1ubuntu1_amd64.deb' libva2_2.23.0-1ubuntu1_amd64.deb 76506 MD5Sum:bee7dcf70941d598cf60c3ca35b0fc24
+'file:/var/tmp/omen-apt-repository/pool/main/libv/libva/libva-drm2_2.23.0-1ubuntu1_amd64.deb' libva-drm2_2.23.0-1ubuntu1_amd64.deb 7112 MD5Sum:abba43082f902fdd93d43f92e642230c
+'file:/var/tmp/omen-apt-repository/pool/main/g/gst-plugins-bad1.0/libgstreamer-plugins-extra1.0-0_1.28.2-1ubuntu1.2_amd64.deb' libgstreamer-plugins-extra1.0-0_1.28.2-1ubuntu1.2_amd64.deb 510394 MD5Sum:3aed9ba038c5f72eb8364aba605a44db
+'file:/var/tmp/omen-apt-repository/pool/main/h/harfbuzz/libharfbuzz-subset0_12.3.2-2_amd64.deb' libharfbuzz-subset0_12.3.2-2_amd64.deb 491630 MD5Sum:ea3335e9b39d21fef9ff7ef832d8537a
+'file:/var/tmp/omen-apt-repository/pool/main/libd/libdeflate/libdeflate0_1.23-2ubuntu1_amd64.deb' libdeflate0_1.23-2ubuntu1_amd64.deb 51702 MD5Sum:cc4e430ed5e114b24a8c06be9b9ed6e3
+'file:/var/tmp/omen-apt-repository/pool/main/j/jbigkit/libjbig0_2.1-6.1ubuntu3_amd64.deb' libjbig0_2.1-6.1ubuntu3_amd64.deb 30028 MD5Sum:6996f630c9734dbfff7decfc6a494e29
+'file:/var/tmp/omen-apt-repository/pool/main/l/lerc/liblerc4_4.0.0%2bds-5ubuntu2_amd64.deb' liblerc4_4.0.0+ds-5ubuntu2_amd64.deb 206718 MD5Sum:37a9f98a18139a6cf6224e2a926a034a
+'file:/var/tmp/omen-apt-repository/pool/main/libw/libwebp/libwebp7_1.5.0-0.1build1_amd64.deb' libwebp7_1.5.0-0.1build1_amd64.deb 263542 MD5Sum:24bf5fbfceae930ab7391ea556d076af
+'file:/var/tmp/omen-apt-repository/pool/main/t/tiff/libtiff6_4.7.0-3ubuntu5_amd64.deb' libtiff6_4.7.0-3ubuntu5_amd64.deb 205792 MD5Sum:8b1d9ab1af900393826d627112635433
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcursor/libxcursor1_1.2.3-1build1_amd64.deb' libxcursor1_1%3a1.2.3-1build1_amd64.deb 22108 MD5Sum:3ffd29ab67a3f181cf599502ec160cbe
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxinerama/libxinerama1_1.1.4-3build2_amd64.deb' libxinerama1_2%3a1.1.4-3build2_amd64.deb 6472 MD5Sum:092f58cfcbcea8e5ae29c41ef9a989de
+'file:/var/tmp/omen-apt-repository/pool/main/libg/libglvnd/libgles2_1.7.0-3_amd64.deb' libgles2_1.7.0-3_amd64.deb 17458 MD5Sum:2d9724fdfaaa535941b8e9dbb5791e13
+'file:/var/tmp/omen-apt-repository/pool/main/g/gtk4/libgtk-4-common_4.22.4%2bds-0ubuntu0.1_all.deb' libgtk-4-common_4.22.4+ds-0ubuntu0.1_all.deb 1546346 MD5Sum:132501d18ddbb80f98e8219da4df47f8
+'file:/var/tmp/omen-apt-repository/pool/main/g/gtk4/libgtk-4-1_4.22.4%2bds-0ubuntu0.1_amd64.deb' libgtk-4-1_4.22.4+ds-0ubuntu0.1_amd64.deb 3551986 MD5Sum:2a203b241c4520f0d035df9d5700b20f
+'file:/var/tmp/omen-apt-repository/pool/main/liba/libadwaita-1/libadwaita-1-0_1.9.1-0ubuntu0.2_amd64.deb' libadwaita-1-0_1.9.1-0ubuntu0.2_amd64.deb 529772 MD5Sum:f6344c139e4d17886283bdfb655bb9e2
+'file:/var/tmp/omen-apt-repository/pool/universe/libu/libunibreak/libunibreak6_6.1-3build1_amd64.deb' libunibreak6_6.1-3build1_amd64.deb 24978 MD5Sum:ce6abe8de8d5e72b94b5b796fa8efd10
+'file:/var/tmp/omen-apt-repository/pool/universe/liba/libass/libass9_0.17.4-2_amd64.deb' libass9_1%3a0.17.4-2_amd64.deb 114418 MD5Sum:44f6dd8a7fb962e3afcdd092ec76771f
+'file:/var/tmp/omen-apt-repository/pool/universe/libv/libva/libva-x11-2_2.23.0-1ubuntu1_amd64.deb' libva-x11-2_2.23.0-1ubuntu1_amd64.deb 12176 MD5Sum:c6bb22ce50a54405894380fc6c3fa245
+'file:/var/tmp/omen-apt-repository/pool/main/libv/libvdpau/libvdpau1_1.5-4_amd64.deb' libvdpau1_1.5-4_amd64.deb 27750 MD5Sum:e3cd30bf5c39e77ad99daad31db7448d
+'file:/var/tmp/omen-apt-repository/pool/universe/libv/libvpl/libvpl2_2.16.0-1_amd64.deb' libvpl2_1%3a2.16.0-1_amd64.deb 133788 MD5Sum:dc295b590c6d71e7ce94710efde78b0c
+'file:/var/tmp/omen-apt-repository/pool/main/o/ocl-icd/ocl-icd-libopencl1_2.3.4-1_amd64.deb' ocl-icd-libopencl1_2.3.4-1_amd64.deb 40916 MD5Sum:5bb4b515f5166323b5b4047966a94b21
+'file:/var/tmp/omen-apt-repository/pool/universe/f/ffmpeg/libavutil60_8.0.1-3ubuntu2_amd64.deb' libavutil60_7%3a8.0.1-3ubuntu2_amd64.deb 449290 MD5Sum:d1ceed98c0cba4de17b709906f7cad3e
+'file:/var/tmp/omen-apt-repository/pool/universe/c/codec2/libcodec2-1.2_1.2.0-4_amd64.deb' libcodec2-1.2_1.2.0-4_amd64.deb 9014894 MD5Sum:99dd3c1638dd090ed7faaba703dcb606
+'file:/var/tmp/omen-apt-repository/pool/universe/d/dav1d/libdav1d7_1.5.3-1_amd64.deb' libdav1d7_1.5.3-1_amd64.deb 626070 MD5Sum:8d43624a38507d3ea4e08c54a0dc07b4
+'file:/var/tmp/omen-apt-repository/pool/universe/libg/libgsm/libgsm1_1.0.23-2_amd64.deb' libgsm1_1.0.23-2_amd64.deb 28948 MD5Sum:51ec403b73ab1ece5316f389ad66f1a2
+'file:/var/tmp/omen-apt-repository/pool/main/o/openjpeg2/libopenjp2-7_2.5.4-1ubuntu0.1_amd64.deb' libopenjp2-7_2.5.4-1ubuntu0.1_amd64.deb 186936 MD5Sum:1841cf61a6fe7e180de34b3e85930f51
+'file:/var/tmp/omen-apt-repository/pool/universe/r/rust-rav1e/librav1e0.8_0.8.1-7_amd64.deb' librav1e0.8_0.8.1-7_amd64.deb 1062212 MD5Sum:94b68c5af8e6b9aa9fa13092e57568ff
+'file:/var/tmp/omen-apt-repository/pool/universe/s/shine/libshine3_3.1.1-3build1_amd64.deb' libshine3_3.1.1-3build1_amd64.deb 23472 MD5Sum:d1c8eef52f344974584f120937cf9476
+'file:/var/tmp/omen-apt-repository/pool/main/s/snappy/libsnappy1v5_1.2.2-2_amd64.deb' libsnappy1v5_1.2.2-2_amd64.deb 30830 MD5Sum:ca279ecca73ff4aa34e44ab1871e30dc
+'file:/var/tmp/omen-apt-repository/pool/universe/s/svt-av1/libsvtav1enc2_2.3.0%2bdfsg-1build1_amd64.deb' libsvtav1enc2_2.3.0+dfsg-1build1_amd64.deb 2742484 MD5Sum:dc480eb44c1543774e79c434c2eb08fa
+'file:/var/tmp/omen-apt-repository/pool/universe/libs/libsoxr/libsoxr0_0.1.3-4.1_amd64.deb' libsoxr0_0.1.3-4.1_amd64.deb 82730 MD5Sum:5ae1541e859f00d2bb31949a93aee18f
+'file:/var/tmp/omen-apt-repository/pool/universe/f/ffmpeg/libswresample6_8.0.1-3ubuntu2_amd64.deb' libswresample6_7%3a8.0.1-3ubuntu2_amd64.deb 76950 MD5Sum:ce1302df417a0f512e5622fb0280efc0
+'file:/var/tmp/omen-apt-repository/pool/main/libw/libwebp/libwebpmux3_1.5.0-0.1build1_amd64.deb' libwebpmux3_1.5.0-0.1build1_amd64.deb 26446 MD5Sum:e822295af20ab20f360c317b108c8149
+'file:/var/tmp/omen-apt-repository/pool/universe/x/x264/libx264-165_0.165.3222%2bgitb35605ac-3build1_amd64.deb' libx264-165_2%3a0.165.3222+gitb35605ac-3build1_amd64.deb 608898 MD5Sum:c075cbfa9efae00d31968a27b329632b
+'file:/var/tmp/omen-apt-repository/pool/universe/x/x265/libx265-215_4.1-4_amd64.deb' libx265-215_4.1-4_amd64.deb 1330674 MD5Sum:366e73a0ab8f552b7316702246b6da4b
+'file:/var/tmp/omen-apt-repository/pool/universe/x/xvidcore/libxvidcore4_1.3.7-3_amd64.deb' libxvidcore4_2%3a1.3.7-3_amd64.deb 219576 MD5Sum:34047ce79fa124dec176ae7c447161e7
+'file:/var/tmp/omen-apt-repository/pool/universe/z/zvbi/libzvbi-common_0.2.44-1ubuntu2_all.deb' libzvbi-common_0.2.44-1ubuntu2_all.deb 42974 MD5Sum:86cbb592db736d7e1ee691b0ef7d1ee5
+'file:/var/tmp/omen-apt-repository/pool/universe/z/zvbi/libzvbi0t64_0.2.44-1ubuntu2_amd64.deb' libzvbi0t64_0.2.44-1ubuntu2_amd64.deb 263544 MD5Sum:9a5a191f7861b4e55014622622248f47
+'file:/var/tmp/omen-apt-repository/pool/universe/f/ffmpeg/libavcodec62_8.0.1-3ubuntu2_amd64.deb' libavcodec62_7%3a8.0.1-3ubuntu2_amd64.deb 9710932 MD5Sum:7b6d179438feff96ef892aecd277c39d
+'file:/var/tmp/omen-apt-repository/pool/universe/libu/libudfread/libudfread3_1.2.0-2_amd64.deb' libudfread3_1.2.0-2_amd64.deb 17332 MD5Sum:5a6441af75795c7da194abc0dbb69a79
+'file:/var/tmp/omen-apt-repository/pool/universe/libb/libbluray/libbluray3_1.4.1-1_amd64.deb' libbluray3_1%3a1.4.1-1_amd64.deb 132558 MD5Sum:09810d8a64fec0f2aa31fb37e1f0d107
+'file:/var/tmp/omen-apt-repository/pool/universe/c/chromaprint/libchromaprint1_1.6.0-2build1_amd64.deb' libchromaprint1_1.6.0-2build1_amd64.deb 33416 MD5Sum:7666396c8e968da23183f2245c65e178
+'file:/var/tmp/omen-apt-repository/pool/universe/libd/libdvdread/libdvdread8t64_7.0.1-1_amd64.deb' libdvdread8t64_7.0.1-1_amd64.deb 63272 MD5Sum:1ea3a490b01a9de89665962da24281ff
+'file:/var/tmp/omen-apt-repository/pool/universe/libd/libdvdnav/libdvdnav4_7.0.0-2_amd64.deb' libdvdnav4_7.0.0-2_amd64.deb 40296 MD5Sum:75ca7d4532db1a958f83190a5ba27679
+'file:/var/tmp/omen-apt-repository/pool/universe/g/game-music-emu/libgme0_0.6.4-1_amd64.deb' libgme0_0.6.4-1_amd64.deb 146074 MD5Sum:83675163d7add8a172c3c900fffcd39c
+'file:/var/tmp/omen-apt-repository/pool/universe/libo/libopenmpt/libopenmpt0t64_0.8.4-1_amd64.deb' libopenmpt0t64_0.8.4-1_amd64.deb 744406 MD5Sum:f4c7b02a157271ec32f1550889220f8c
+'file:/var/tmp/omen-apt-repository/pool/main/libr/librabbitmq/librabbitmq4_0.15.0-1ubuntu0.26.04.2_amd64.deb' librabbitmq4_0.15.0-1ubuntu0.26.04.2_amd64.deb 37666 MD5Sum:6d976382eb625596005f496d5b1fafa6
+'file:/var/tmp/omen-apt-repository/pool/universe/c/cjson/libcjson1_1.7.19-2_amd64.deb' libcjson1_1.7.19-2_amd64.deb 22806 MD5Sum:3c09064f5d4ef98156d345873cbf1bf8
+'file:/var/tmp/omen-apt-repository/pool/universe/m/mbedtls/libmbedcrypto16_3.6.5-0.1ubuntu2_amd64.deb' libmbedcrypto16_3.6.5-0.1ubuntu2_amd64.deb 258752 MD5Sum:a84f6105f35588293472bb9b914405bf
+'file:/var/tmp/omen-apt-repository/pool/universe/libr/librist/librist4_0.2.11%2bdfsg-1build1_amd64.deb' librist4_0.2.11+dfsg-1build1_amd64.deb 76030 MD5Sum:d9baae0a680d89d85ff39afd6dc0d599
+'file:/var/tmp/omen-apt-repository/pool/universe/s/srt/libsrt1.5-gnutls_1.5.4-3_amd64.deb' libsrt1.5-gnutls_1.5.4-3_amd64.deb 333656 MD5Sum:638a57817e6e2f118a033f366d7474ca
+'file:/var/tmp/omen-apt-repository/pool/main/libs/libssh/libssh-4_0.11.3-1ubuntu2.1_amd64.deb' libssh-4_0.11.3-1ubuntu2.1_amd64.deb 208302 MD5Sum:41ddb138ccb4eb5466864be340201b9c
+'file:/var/tmp/omen-apt-repository/pool/universe/n/norm/libnorm1t64_1.5.9%2bdfsg-4_amd64.deb' libnorm1t64_1.5.9+dfsg-4_amd64.deb 157596 MD5Sum:233960202aa2f16c6b4749959e89829f
+'file:/var/tmp/omen-apt-repository/pool/universe/libp/libpgm/libpgm-5.3-0t64_5.3.128%7edfsg-2.1build2_amd64.deb' libpgm-5.3-0t64_5.3.128~dfsg-2.1build2_amd64.deb 167660 MD5Sum:775338d24e799e46afe25b3d39275aa5
+'file:/var/tmp/omen-apt-repository/pool/universe/z/zeromq3/libzmq5_4.3.5-1build3_amd64.deb' libzmq5_4.3.5-1build3_amd64.deb 261944 MD5Sum:c1e769aad66fdc789e98c5659a4fdfc4
+'file:/var/tmp/omen-apt-repository/pool/universe/f/ffmpeg/libavformat62_8.0.1-3ubuntu2_amd64.deb' libavformat62_7%3a8.0.1-3ubuntu2_amd64.deb 1291070 MD5Sum:8d4701df864945453ecba1ee0290a163
+'file:/var/tmp/omen-apt-repository/pool/universe/libb/libbs2b/libbs2b0_3.1.0%2bdfsg-8build1_amd64.deb' libbs2b0_3.1.0+dfsg-8build1_amd64.deb 11682 MD5Sum:2b0c90f0ed65ac2d71856cc2fe266bf8
+'file:/var/tmp/omen-apt-repository/pool/universe/f/flite/libflite1_2.2-7build1_amd64.deb' libflite1_2.2-7build1_amd64.deb 13529000 MD5Sum:7f6135aebcf2adc77594302ef7069b8f
+'file:/var/tmp/omen-apt-repository/pool/universe/s/serd/libserd-0-0_0.32.6-1_amd64.deb' libserd-0-0_0.32.6-1_amd64.deb 44694 MD5Sum:479437714a601313a4773dbbfe3bad20
+'file:/var/tmp/omen-apt-repository/pool/universe/z/zix/libzix-0-0_0.8.0-1_amd64.deb' libzix-0-0_0.8.0-1_amd64.deb 24898 MD5Sum:b867d29b7d70594afd9be7b826ade5d6
+'file:/var/tmp/omen-apt-repository/pool/universe/s/sord/libsord-0-0_0.16.20-1_amd64.deb' libsord-0-0_0.16.20-1_amd64.deb 16044 MD5Sum:b075ece9bd3b7b5c5d7a4c6f347ed8d2
+'file:/var/tmp/omen-apt-repository/pool/universe/s/sratom/libsratom-0-0_0.6.20-1_amd64.deb' libsratom-0-0_0.6.20-1_amd64.deb 17758 MD5Sum:edcc468db0aac28e814a886d190d64bb
+'file:/var/tmp/omen-apt-repository/pool/universe/l/lilv/liblilv-0-0_0.26.2-1_amd64.deb' liblilv-0-0_0.26.2-1_amd64.deb 44152 MD5Sum:5858205e22499d17622dd23a680d6503
+'file:/var/tmp/omen-apt-repository/pool/universe/libm/libmysofa/libmysofa1_1.3.3%2bdfsg-1ubuntu2_amd64.deb' libmysofa1_1.3.3+dfsg-1ubuntu2_amd64.deb 1158428 MD5Sum:1001d79288d6b17bb62fe322567f0b7f
+'file:/var/tmp/omen-apt-repository/pool/universe/libp/libplacebo/libplacebo360_7.360.0-3_amd64.deb' libplacebo360_7.360.0-3_amd64.deb 2982500 MD5Sum:d56173d62a744f36d358dc34503d8e38
+'file:/var/tmp/omen-apt-repository/pool/main/f/fftw3/libfftw3-double3_3.3.10-2fakesync1build3_amd64.deb' libfftw3-double3_3.3.10-2fakesync1build3_amd64.deb 832504 MD5Sum:00fdad0666dec6fa76596d97b057eb68
+'file:/var/tmp/omen-apt-repository/pool/main/libs/libsamplerate/libsamplerate0_0.2.2-4build2_amd64.deb' libsamplerate0_0.2.2-4build2_amd64.deb 1342514 MD5Sum:60dfe4788c7a70875b6a909e8ab6ca27
+'file:/var/tmp/omen-apt-repository/pool/universe/r/rubberband/librubberband3_4.0.0%2bdfsg-2ubuntu1_amd64.deb' librubberband3_4.0.0+dfsg-2ubuntu1_amd64.deb 152154 MD5Sum:dae856593710dd87edead30d661ae433
+'file:/var/tmp/omen-apt-repository/pool/universe/f/ffmpeg/libswscale9_8.0.1-3ubuntu2_amd64.deb' libswscale9_7%3a8.0.1-3ubuntu2_amd64.deb 411078 MD5Sum:a0153d62181dc0e8c7a71bc1b9b5aea6
+'file:/var/tmp/omen-apt-repository/pool/universe/libv/libvidstab/libvidstab1.1_1.1.0-2.1_amd64.deb' libvidstab1.1_1.1.0-2.1_amd64.deb 38426 MD5Sum:596e3fd8224ceb0f2b1c1e9b2c974a0e
+'file:/var/tmp/omen-apt-repository/pool/universe/z/zimg/libzimg2_3.0.6%2bds1-1_amd64.deb' libzimg2_3.0.6+ds1-1_amd64.deb 204864 MD5Sum:f8b4c29b44abe3a069411c3c20c96c93
+'file:/var/tmp/omen-apt-repository/pool/universe/f/ffmpeg/libavfilter11_8.0.1-3ubuntu2_amd64.deb' libavfilter11_7%3a8.0.1-3ubuntu2_amd64.deb 4872524 MD5Sum:ff555b4e42bddbbbe3feef771aee0f83
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-workspace/libbatterycontrol6_6.6.6-0ubuntu0.1_amd64.deb' libbatterycontrol6_4%3a6.6.6-0ubuntu0.1_amd64.deb 80152 MD5Sum:85e85f45b06bc1f520c0e29d5e100e4f
+'file:/var/tmp/omen-apt-repository/pool/universe/libd/libdmtx/libdmtx0t64_0.7.8-1_amd64.deb' libdmtx0t64_0.7.8-1_amd64.deb 56680 MD5Sum:bbcd4e3a81fad3b69dce5199fff59e23
+'file:/var/tmp/omen-apt-repository/pool/main/e/editorconfig-core/libeditorconfig0_0.12.10%2b%7e0.17.1-3ubuntu0.1_amd64.deb' libeditorconfig0_0.12.10+~0.17.1-3ubuntu0.1_amd64.deb 14184 MD5Sum:819dfb715e8579260e4e87014468d8d6
+'file:/var/tmp/omen-apt-repository/pool/main/libi/libinih/libinireader0_61-1ubuntu1_amd64.deb' libinireader0_61-1ubuntu1_amd64.deb 13134 MD5Sum:bd9d8a860107cd529f94143589e9879c
+'file:/var/tmp/omen-apt-repository/pool/main/e/exiv2/libexiv2-data_0.28.8%2bdfsg-1_all.deb' libexiv2-data_0.28.8+dfsg-1_all.deb 5700 MD5Sum:48a4b41cd46476eed5c4c972c34974df
+'file:/var/tmp/omen-apt-repository/pool/main/e/exiv2/libexiv2-28_0.28.8%2bdfsg-1_amd64.deb' libexiv2-28_0.28.8+dfsg-1_amd64.deb 976560 MD5Sum:bf0c6713313914964a693c28fbff0d14
+'file:/var/tmp/omen-apt-repository/pool/main/g/geoclue-2.0/libgeoclue-2-0_2.7.2-2ubuntu3_amd64.deb' libgeoclue-2-0_2.7.2-2ubuntu3_amd64.deb 33694 MD5Sum:f38e482b15d8225484d813c35e132f51
+'file:/var/tmp/omen-apt-repository/pool/main/h/hunspell/libhunspell-1.7-0_1.7.2%2breally1.7.2-11_amd64.deb' libhunspell-1.7-0_1.7.2+really1.7.2-11_amd64.deb 315810 MD5Sum:82d41152b87ec9b60c371d156dec3cd0
+'file:/var/tmp/omen-apt-repository/pool/main/i/ibus/libibus-1.0-5_1.5.34%7erc2-1_amd64.deb' libibus-1.0-5_1.5.34~rc2-1_amd64.deb 180936 MD5Sum:bbb7a4262bd2762b5c686077aabae596
+'file:/var/tmp/omen-apt-repository/pool/main/u/underscore/libjs-underscore_1.13.8%7edfsg%2b%7e1.13.0-1_all.deb' libjs-underscore_1.13.8~dfsg+~1.13.0-1_all.deb 86384 MD5Sum:b0861774c2f1a51bcd9abce9dc118ef2
+'file:/var/tmp/omen-apt-repository/pool/universe/libk/libkexiv2/libkexiv2qt6-0_25.12.3-0ubuntu1_amd64.deb' libkexiv2qt6-0_25.12.3-0ubuntu1_amd64.deb 143884 MD5Sum:1bcaae6ddd20af14ca79cbb249c4358c
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-baloo/libkf6balooengine6_6.24.0-0ubuntu1_amd64.deb' libkf6balooengine6_6.24.0-0ubuntu1_amd64.deb 81308 MD5Sum:9ac83c3b078e5f743a7aced2151c77b1
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kfilemetadata/libkf6filemetadata-data_6.24.0-0ubuntu1_all.deb' libkf6filemetadata-data_6.24.0-0ubuntu1_all.deb 85530 MD5Sum:a397ff70888be2f81c86ee36307cce26
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kfilemetadata/libkf6filemetadata3_6.24.0-0ubuntu1_amd64.deb' libkf6filemetadata3_6.24.0-0ubuntu1_amd64.deb 74036 MD5Sum:25a6e9d8d47a35aea6b78a7a111bbf0b
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-baloo/libkf6baloo6_6.24.0-0ubuntu1_amd64.deb' libkf6baloo6_6.24.0-0ubuntu1_amd64.deb 83976 MD5Sum:e51a7e9530d3fd1dc8c06474944fba11
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kdeclarative/libkf6declarative-data_6.24.0-0ubuntu1_all.deb' libkf6declarative-data_6.24.0-0ubuntu1_all.deb 56078 MD5Sum:7603b0300c53348f23d53e1a2fa105d7
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kdeclarative/libkf6calendarevents6_6.24.0-0ubuntu1_amd64.deb' libkf6calendarevents6_6.24.0-0ubuntu1_amd64.deb 14280 MD5Sum:c651ce0cf3e36900dcd6e249ab640cc2
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kconfig/libkf6config-bin_6.24.0-0ubuntu1_amd64.deb' libkf6config-bin_6.24.0-0ubuntu1_amd64.deb 31316 MD5Sum:19930edb7b1564e37b4a83e8a9d898b4
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-ki18n/libkf6i18nlocaledata6_6.24.0-0ubuntu1_amd64.deb' libkf6i18nlocaledata6_6.24.0-0ubuntu1_amd64.deb 367586 MD5Sum:a1467412321fe1ae7f927f4ad2699453
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kitemmodels/libkf6itemmodels6_6.24.0-0ubuntu1_amd64.deb' libkf6itemmodels6_6.24.0-0ubuntu1_amd64.deb 131428 MD5Sum:7375c7ba085fc5c0dddf5358aea02f6a
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-networkmanager-qt/libkf6networkmanagerqt6_6.24.0-0ubuntu1_amd64.deb' libkf6networkmanagerqt6_6.24.0-0ubuntu1_amd64.deb 402630 MD5Sum:0d1f1a54b58c7ea832fc47d74b7028b9
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-knotifyconfig/libkf6notifyconfig-data_6.24.0-0ubuntu1_all.deb' libkf6notifyconfig-data_6.24.0-0ubuntu1_all.deb 31304 MD5Sum:49d0ae75ecefe8c068aa3695fb481e4a
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-knotifyconfig/libkf6notifyconfig6_6.24.0-0ubuntu1_amd64.deb' libkf6notifyconfig6_6.24.0-0ubuntu1_amd64.deb 32538 MD5Sum:fd32d758cc949f4e23858ea05aced101
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kparts/libkf6parts-data_6.24.0-0ubuntu1_all.deb' libkf6parts-data_6.24.0-0ubuntu1_all.deb 44206 MD5Sum:a9d5db5f7dc574257c758af255c40be3
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kparts/libkf6parts6_6.24.0-0ubuntu1_amd64.deb' libkf6parts6_6.24.0-0ubuntu1_amd64.deb 90186 MD5Sum:d78284f20ce0fb762b89a23beaf1ddea
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qrencode/libqrencode4_4.1.1-2build1_amd64.deb' libqrencode4_4.1.1-2build1_amd64.deb 25928 MD5Sum:82bd8930778cdb59932d82205e086ded
+'file:/var/tmp/omen-apt-repository/pool/universe/z/zxing-cpp/libzxing3_2.3.0-5_amd64.deb' libzxing3_2.3.0-5_amd64.deb 606156 MD5Sum:207bb86ee7e0485246fe9046427b5fd4
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-prison/libkf6prison6_6.24.0-0ubuntu1_amd64.deb' libkf6prison6_6.24.0-0ubuntu1_amd64.deb 42626 MD5Sum:9e55c10ff37f5c4a41362930e954dc95
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-multimedia/libqt6multimedia6_6.10.2-2_amd64.deb' libqt6multimedia6_6.10.2-2_amd64.deb 831090 MD5Sum:1da5c95da90177a917f0e36ecca2fc3c
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-prison/libkf6prisonscanner6_6.24.0-0ubuntu1_amd64.deb' libkf6prisonscanner6_6.24.0-0ubuntu1_amd64.deb 24730 MD5Sum:cb88eeecd6103cbb914e23b7138ec198
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kpty/libkf6pty-data_6.24.0-0ubuntu1_all.deb' libkf6pty-data_6.24.0-0ubuntu1_all.deb 28062 MD5Sum:416d669f7b12402444214d5d303db97a
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kpty/libkf6pty6_6.24.0-0ubuntu1_amd64.deb' libkf6pty6_6.24.0-0ubuntu1_amd64.deb 23228 MD5Sum:015541aef259ec4f53a7cb0018869146
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-qqc2-desktop-style/libkf6qqc2desktopstyle-data_6.24.0-0ubuntu1_all.deb' libkf6qqc2desktopstyle-data_6.24.0-0ubuntu1_all.deb 16686 MD5Sum:f64d669a7cdcaa0d71658951d6306a24
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-krunner/libkf6runner6_6.24.0-0ubuntu1_amd64.deb' libkf6runner6_6.24.0-0ubuntu1_amd64.deb 121232 MD5Sum:f8a7e95770af0a9c26c3166f4cf544a6
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-sonnet/libkf6sonnet-data_6.24.0-0ubuntu1_all.deb' libkf6sonnet-data_6.24.0-0ubuntu1_all.deb 115816 MD5Sum:68eb8a8159116664eb1ba4318088c49a
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-sonnet/libkf6sonnetcore6_6.24.0-0ubuntu1_amd64.deb' libkf6sonnetcore6_6.24.0-0ubuntu1_amd64.deb 167006 MD5Sum:bb9b3b01ec76e409edefd2bd366f9559
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-sonnet/libkf6sonnetui6_6.24.0-0ubuntu1_amd64.deb' libkf6sonnetui6_6.24.0-0ubuntu1_amd64.deb 57532 MD5Sum:0603d3f6da3565004eb8b79be306044d
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kstatusnotifieritem/libkf6statusnotifieritem-data_6.24.0-0ubuntu1_all.deb' libkf6statusnotifieritem-data_6.24.0-0ubuntu1_all.deb 7144 MD5Sum:bf81cddadf1cc587c27767035435b0c3
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kstatusnotifieritem/libkf6statusnotifieritem6_6.24.0-0ubuntu1_amd64.deb' libkf6statusnotifieritem6_6.24.0-0ubuntu1_amd64.deb 112062 MD5Sum:212ed5ddb36a526c91eb05e444b4f82f
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-frameworkintegration/libkf6style6_6.24.0-0ubuntu1_amd64.deb' libkf6style6_6.24.0-0ubuntu1_amd64.deb 18818 MD5Sum:0cc99b328f8c4ece38b0f24483a59cf2
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kdesu/libkf6su-data_6.24.0-0ubuntu1_all.deb' libkf6su-data_6.24.0-0ubuntu1_all.deb 16666 MD5Sum:607bb489de63bbf86ae454c72a065972
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kdesu/libkf6su6_6.24.0-0ubuntu1_amd64.deb' libkf6su6_6.24.0-0ubuntu1_amd64.deb 31104 MD5Sum:4ca238f941697bbac8aa35e57b12ded3
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kdesu/libkf6su-bin_6.24.0-0ubuntu1_amd64.deb' libkf6su-bin_6.24.0-0ubuntu1_amd64.deb 28840 MD5Sum:797b9fc893733a4dccef2b5ccb40ad20
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-syntax-highlighting/libkf6syntaxhighlighting-data_6.24.0-0ubuntu1_all.deb' libkf6syntaxhighlighting-data_6.24.0-0ubuntu1_all.deb 107418 MD5Sum:f45e8607fda0344cb089a3fd17564934
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-syntax-highlighting/libkf6syntaxhighlighting6_6.24.0-0ubuntu1_amd64.deb' libkf6syntaxhighlighting6_6.24.0-0ubuntu1_amd64.deb 1644552 MD5Sum:5886812c07b6c51881e1db48b071deda
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-ktexteditor/libkf6texteditor-data_6.24.0-0ubuntu1_all.deb' libkf6texteditor-data_6.24.0-0ubuntu1_all.deb 1414054 MD5Sum:03d921a96f111f53b6ae9ad090aee05d
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-speech/libqt6texttospeech6_6.10.2-1_amd64.deb' libqt6texttospeech6_6.10.2-1_amd64.deb 45694 MD5Sum:98ccfedd34194ad8059e1c25e42107b3
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-ktexteditor/libkf6texteditor6_6.24.0-0ubuntu1_amd64.deb' libkf6texteditor6_6.24.0-0ubuntu1_amd64.deb 1450088 MD5Sum:2a1a8ad19e6b1b19789037d1dab6c75e
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-ktexteditor/libkf6texteditor-bin_6.24.0-0ubuntu1_amd64.deb' libkf6texteditor-bin_6.24.0-0ubuntu1_amd64.deb 94040 MD5Sum:92d81254439f6ae67ef100ec1825d466
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-ktextwidgets/libkf6textwidgets-data_6.24.0-0ubuntu1_all.deb' libkf6textwidgets-data_6.24.0-0ubuntu1_all.deb 205190 MD5Sum:5f59290f1f7316830cd21bf70ea215a2
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-ktextwidgets/libkf6textwidgets6_6.24.0-0ubuntu1_amd64.deb' libkf6textwidgets6_6.24.0-0ubuntu1_amd64.deb 90922 MD5Sum:875156cfeea996b212e550fa662eaf33
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kunitconversion/libkf6unitconversion-data_6.24.0-0ubuntu1_all.deb' libkf6unitconversion-data_6.24.0-0ubuntu1_all.deb 961980 MD5Sum:52f1785873c4cb3195e251efff9000cf
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kunitconversion/libkf6unitconversion6_6.24.0-0ubuntu1_amd64.deb' libkf6unitconversion6_6.24.0-0ubuntu1_amd64.deb 99218 MD5Sum:d9ba3f1d534492dd13e50dc8177c8bf6
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kuserfeedback/libkf6userfeedback-data_6.24.0-0ubuntu1_all.deb' libkf6userfeedback-data_6.24.0-0ubuntu1_all.deb 176092 MD5Sum:38195f032e1882151708ea5b3b718f60
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kuserfeedback/libkf6userfeedbackcore6_6.24.0-0ubuntu1_amd64.deb' libkf6userfeedbackcore6_6.24.0-0ubuntu1_amd64.deb 102722 MD5Sum:9f54bdb489b973dd340e007722487627
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-workspace/libkfontinst6_6.6.6-0ubuntu0.1_amd64.deb' libkfontinst6_4%3a6.6.6-0ubuntu0.1_amd64.deb 83252 MD5Sum:69ec54e3334201113f85f9113ba67b5e
+'file:/var/tmp/omen-apt-repository/pool/main/x/xft/libxft2_2.3.6-1build2_amd64.deb' libxft2_2.3.6-1build2_amd64.deb 45110 MD5Sum:8d8916d45cea4dca69ba7604677b02a9
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-workspace/libkfontinstui6_6.6.6-0ubuntu0.1_amd64.deb' libkfontinstui6_4%3a6.6.6-0ubuntu0.1_amd64.deb 58584 MD5Sum:3807531d58ae9f5bbe37cbb012ac6b12
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-workspace/libklipper6_6.6.6-0ubuntu0.1_amd64.deb' libklipper6_4%3a6.6.6-0ubuntu0.1_amd64.deb 173064 MD5Sum:bc4b7a0a482ff770891f41d464e3d388
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-workspace/libklookandfeel6_6.6.6-0ubuntu0.1_amd64.deb' libklookandfeel6_4%3a6.6.6-0ubuntu0.1_amd64.deb 103056 MD5Sum:e19cd77f3f4e8cc9dea360c66ecde83e
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-workspace/libkmpris6_6.6.6-0ubuntu0.1_amd64.deb' libkmpris6_4%3a6.6.6-0ubuntu0.1_amd64.deb 126274 MD5Sum:82c59f7a9487e6f5290329af2e21d23f
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kpipewire/libkpipewire-data_6.6.4-0ubuntu1_all.deb' libkpipewire-data_6.6.4-0ubuntu1_all.deb 16466 MD5Sum:fc252693901bd57c321350ba296b19a3
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kpipewire/libkpipewire6_6.6.4-0ubuntu1_amd64.deb' libkpipewire6_6.6.4-0ubuntu1_amd64.deb 68520 MD5Sum:9a830ef7f181b74b3563179acea2c7f7
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kpipewire/libkpipewiredmabuf6_6.6.4-0ubuntu1_amd64.deb' libkpipewiredmabuf6_6.6.4-0ubuntu1_amd64.deb 10678 MD5Sum:0f61f334ac8205cf3f2d5411beadd824
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kpipewire/libkpipewirerecord6_6.6.4-0ubuntu1_amd64.deb' libkpipewirerecord6_6.6.4-0ubuntu1_amd64.deb 91226 MD5Sum:56da50192951e54f8dcb4cbac0c2c2af
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kdeclarative/libkquickcontrolsprivate0_6.24.0-0ubuntu1_amd64.deb' libkquickcontrolsprivate0_6.24.0-0ubuntu1_amd64.deb 28742 MD5Sum:5ee5a7555d5067396c46f71b8afcee48
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/qml6-module-qtcore_6.10.2%2bdfsg-3_amd64.deb' qml6-module-qtcore_6.10.2+dfsg-3_amd64.deb 52288 MD5Sum:03c8cb283ec6ff876469d612dcc1c834
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kitemmodels/qml6-module-org-kde-kitemmodels_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-kitemmodels_6.24.0-0ubuntu1_amd64.deb 33216 MD5Sum:663aa9a1e440eb6614a8b4d266a48acd
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kquickcharts/libquickcharts1_6.24.0-0ubuntu1_amd64.deb' libquickcharts1_6.24.0-0ubuntu1_amd64.deb 129208 MD5Sum:02f383d15a93d803fe09c61dbe20bfe2
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kquickcharts/libquickchartscontrols1_6.24.0-0ubuntu1_amd64.deb' libquickchartscontrols1_6.24.0-0ubuntu1_amd64.deb 71018 MD5Sum:a8a6a05d9a01c9f7dc80f7c7ea872852
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kquickcharts/qml6-module-org-kde-quickcharts_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-quickcharts_6.24.0-0ubuntu1_amd64.deb 17418 MD5Sum:479485ff058740ac3e575305b867befe
+'file:/var/tmp/omen-apt-repository/pool/universe/libk/libksysguard/libksysguard-data_6.6.5-0ubuntu0.1_all.deb' libksysguard-data_4%3a6.6.5-0ubuntu0.1_all.deb 210430 MD5Sum:57a2f376d9b76d87a3e5c46ee16e25d3
+'file:/var/tmp/omen-apt-repository/pool/universe/libk/libksysguard/libksysguardformatter2_6.6.5-0ubuntu0.1_amd64.deb' libksysguardformatter2_4%3a6.6.5-0ubuntu0.1_amd64.deb 21274 MD5Sum:7f79445ef4c728aefd3f0339aae6b897
+'file:/var/tmp/omen-apt-repository/pool/universe/libk/libksysguard/libksysguardsystemstats2_6.6.5-0ubuntu0.1_amd64.deb' libksysguardsystemstats2_4%3a6.6.5-0ubuntu0.1_amd64.deb 64350 MD5Sum:876b2f6e4acfaf0ed1d11089076a6a80
+'file:/var/tmp/omen-apt-repository/pool/universe/libk/libksysguard/libksysguardsensors2_6.6.5-0ubuntu0.1_amd64.deb' libksysguardsensors2_4%3a6.6.5-0ubuntu0.1_amd64.deb 110198 MD5Sum:3432acb0384d4fcfae5811e38fd52d1a
+'file:/var/tmp/omen-apt-repository/pool/universe/libk/libksysguard/libksysguardsensorfaces2_6.6.5-0ubuntu0.1_amd64.deb' libksysguardsensorfaces2_4%3a6.6.5-0ubuntu0.1_amd64.deb 130710 MD5Sum:e4911c618101a07f78e4f49de42272fe
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-workspace/libkworkspace6-6_6.6.6-0ubuntu0.1_amd64.deb' libkworkspace6-6_4%3a6.6.6-0ubuntu0.1_amd64.deb 127060 MD5Sum:2e8e8dab833c229b733bd9f748838a5f
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-base/libqt6test6_6.10.2%2bdfsg-7_amd64.deb' libqt6test6_6.10.2+dfsg-7_amd64.deb 193650 MD5Sum:5b4e1c87392ac0411daaff3e9758aa34
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-workspace/libtaskmanager6_6.6.6-0ubuntu0.1_amd64.deb' libtaskmanager6_4%3a6.6.6-0ubuntu0.1_amd64.deb 303918 MD5Sum:15c79719ae1eb6f1f834c2859fdf1284
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-workspace/libnotificationmanager1_6.6.6-0ubuntu0.1_amd64.deb' libnotificationmanager1_4%3a6.6.6-0ubuntu0.1_amd64.deb 254656 MD5Sum:3062fabdd39407b764815232c9ab54cb
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma5support/libplasma-geolocation-interface6_6.6.4-0ubuntu1_amd64.deb' libplasma-geolocation-interface6_4%3a6.6.4-0ubuntu1_amd64.deb 29174 MD5Sum:810795f26dffaa033feffbd142abbd3d
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma5support/libplasma5support-data_6.6.4-0ubuntu1_all.deb' libplasma5support-data_4%3a6.6.4-0ubuntu1_all.deb 532536 MD5Sum:64009b416fb1ebc674ac393a111007d2
+'file:/var/tmp/omen-apt-repository/pool/universe/libk/libksysguard/libprocesscore10_6.6.5-0ubuntu0.1_amd64.deb' libprocesscore10_4%3a6.6.5-0ubuntu0.1_amd64.deb 152640 MD5Sum:7fcecd3842967d0979c867570fd0bd75
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma5support/libweather-ion7_6.6.4-0ubuntu1_amd64.deb' libweather-ion7_4%3a6.6.4-0ubuntu1_amd64.deb 109504 MD5Sum:c29762788b79091bd16b785b0013470c
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma5support/libplasma5support6_6.6.4-0ubuntu1_amd64.deb' libplasma5support6_4%3a6.6.4-0ubuntu1_amd64.deb 523710 MD5Sum:6411bbb8a0aa18578ce25b396b18564d
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-activities-stats/libplasmaactivitiesstats1_6.6.4-0ubuntu1_amd64.deb' libplasmaactivitiesstats1_6.6.4-0ubuntu1_amd64.deb 87120 MD5Sum:9bafa72141ed2022fb11c73b29dbdd6b
+'file:/var/tmp/omen-apt-repository/pool/universe/libq/libqalculate/libqalculate-data_5.9.0-1_all.deb' libqalculate-data_5.9.0-1_all.deb 356202 MD5Sum:b51fbec8da9112b74dc8827d4563adac
+'file:/var/tmp/omen-apt-repository/pool/universe/libq/libqalculate/libqalculate23_5.9.0-1_amd64.deb' libqalculate23_5.9.0-1_amd64.deb 1886256 MD5Sum:62c830cfece7c02fccde85a00508469d
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/libqt6labsplatform6_6.10.2%2bdfsg-3_amd64.deb' libqt6labsplatform6_6.10.2+dfsg-3_amd64.deb 102416 MD5Sum:b5c72e8657464201a1eb01fae6b860ce
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-serialport/libqt6serialport6_6.10.2-1_amd64.deb' libqt6serialport6_6.10.2-1_amd64.deb 44398 MD5Sum:ed90e70fd0906b7860fae7792b10e376
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-positioning/libqt6positioning6-plugins_6.10.2-1_amd64.deb' libqt6positioning6-plugins_6.10.2-1_amd64.deb 68622 MD5Sum:6c7e18c8152dec6affd33612602fa164
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-positioning/libqt6positioningquick6_6.10.2-1_amd64.deb' libqt6positioningquick6_6.10.2-1_amd64.deb 97774 MD5Sum:63424901f534336592286f08939fc457
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-virtualkeyboard/libqt6virtualkeyboard6_6.10.2%2bdfsg-1_amd64.deb' libqt6virtualkeyboard6_6.10.2+dfsg-1_amd64.deb 158560 MD5Sum:df4abb0fdbeb8bc18cdd131b715a8d89
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-wayland/libqt6waylandcompositor6_6.10.2-4_amd64.deb' libqt6waylandcompositor6_6.10.2-4_amd64.deb 470566 MD5Sum:614513a36a13dfbb2841f1e84f548e02
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-base/libqt6wlshellintegration6_6.10.2%2bdfsg-7_amd64.deb' libqt6wlshellintegration6_6.10.2+dfsg-7_amd64.deb 95628 MD5Sum:22263f3cf94677b4e972c7b62f045e48
+'file:/var/tmp/omen-apt-repository/pool/universe/s/scim/libscim8v5_1.4.18%2bgit20211204-0.5_amd64.deb' libscim8v5_1.4.18+git20211204-0.5_amd64.deb 258728 MD5Sum:403f6cbe1b8fb03c6943d3bcabecce17
+'file:/var/tmp/omen-apt-repository/pool/main/libs/libsdl2/libsdl2-classic_2.32.10%2bdfsg-6_amd64.deb' libsdl2-classic_2.32.10+dfsg-6_amd64.deb 709950 MD5Sum:9f30f9aff6eb01b5d5cb8a6ea9c5f8fe
+'file:/var/tmp/omen-apt-repository/pool/main/libs/libsdl2/libsdl2-2.0-0_2.32.10%2bdfsg-6_amd64.deb' libsdl2-2.0-0_2.32.10+dfsg-6_amd64.deb 14028 MD5Sum:e587c5e1d3310636d9ee9a27e4b7fd8a
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcomposite/libxcomposite1_0.4.6-1build1_amd64.deb' libxcomposite1_1%3a0.4.6-1build1_amd64.deb 6664 MD5Sum:c2f6b4996ed42395af649f73e1d7158c
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxkbcommon/libxkbregistry0_1.13.1-1_amd64.deb' libxkbregistry0_1.13.1-1_amd64.deb 16622 MD5Sum:fb7fb9bf6e88a420f782294b383de583
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxv/libxv1_1.0.13-1_amd64.deb' libxv1_2%3a1.0.13-1_amd64.deb 10826 MD5Sum:d44a120bbc35f33a8ef2beaa5ede67e2
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxxf86dga/libxxf86dga1_1.1.5-1build2_amd64.deb' libxxf86dga1_2%3a1.1.5-1build2_amd64.deb 11864 MD5Sum:2ac3c8f3079bfd2be4bba19341fd23a2
+'file:/var/tmp/omen-apt-repository/pool/universe/o/ocean-sound-theme/ocean-sound-theme_6.6.4-0ubuntu1_all.deb' ocean-sound-theme_6.6.4-0ubuntu1_all.deb 2014004 MD5Sum:8ecd19b84499517f5b0eab837b803060
+'file:/var/tmp/omen-current.deb' omen-linux_0.1.0-20_amd64.deb 3599952 
+'file:/var/tmp/omen-apt-repository/pool/universe/b/breeze/breeze-cursor-theme_6.6.5-0ubuntu0.1_all.deb' breeze-cursor-theme_4%3a6.6.5-0ubuntu0.1_all.deb 1362120 MD5Sum:f15b19cd5005fa4b71a03df30f91ccc0
+'file:/var/tmp/omen-apt-repository/pool/universe/b/breeze/kde-style-breeze_6.6.5-0ubuntu0.1_amd64.deb' kde-style-breeze_4%3a6.6.5-0ubuntu0.1_amd64.deb 226416 MD5Sum:9dc85fc71b774ed6b5a093e3d153acba
+'file:/var/tmp/omen-apt-repository/pool/universe/b/breeze/kwin-style-breeze_6.6.5-0ubuntu0.1_amd64.deb' kwin-style-breeze_4%3a6.6.5-0ubuntu0.1_amd64.deb 161236 MD5Sum:488b6239e0466061041f035ae3d1c468
+'file:/var/tmp/omen-apt-repository/pool/universe/b/breeze/breeze_6.6.5-0ubuntu0.1_amd64.deb' breeze_4%3a6.6.5-0ubuntu0.1_amd64.deb 29704 MD5Sum:fdbc949f83f9c2d4ce4005a7b88d7e1d
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kde-cli-tools/kde-cli-tools-data_6.6.4-0ubuntu1_all.deb' kde-cli-tools-data_4%3a6.6.4-0ubuntu1_all.deb 707664 MD5Sum:0bdadd97a8aa5134495977f3701ee7de
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kde-cli-tools/kde-cli-tools_6.6.4-0ubuntu1_amd64.deb' kde-cli-tools_4%3a6.6.4-0ubuntu1_amd64.deb 177330 MD5Sum:3fb03aa902a2a7acbfa02adf80114984
+'file:/var/tmp/omen-apt-repository/pool/universe/o/oxygen-sounds/oxygen-sounds_6.6.4-0ubuntu1_all.deb' oxygen-sounds_4%3a6.6.4-0ubuntu1_all.deb 1934012 MD5Sum:4985e86b7e6177309ca6c7dfc0a8c05c
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-desktop/plasma-desktop-data_6.6.6-0ubuntu0.1_all.deb' plasma-desktop-data_4%3a6.6.6-0ubuntu0.1_all.deb 15242418 MD5Sum:8a80b15b444328f7927e182a8415e175
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kguiaddons/qml6-module-org-kde-guiaddons_6.24.0-0ubuntu1.1_amd64.deb' qml6-module-org-kde-guiaddons_6.24.0-0ubuntu1.1_amd64.deb 19390 MD5Sum:8e1dbb9a4f0357d47402856b7050c1bf
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qqc2-breeze-style/qml6-module-org-kde-breeze_6.6.5-0ubuntu0.1_amd64.deb' qml6-module-org-kde-breeze_6.6.5-0ubuntu0.1_amd64.deb 501004 MD5Sum:b7aa54d5e6438d9571ec7affbd2157d7
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-integration/plasma-integration_6.6.5-0ubuntu0.1_amd64.deb' plasma-integration_6.6.5-0ubuntu0.1_amd64.deb 133626 MD5Sum:dbb8dda4e191f2289a93d55dc600950c
+'file:/var/tmp/omen-apt-repository/pool/universe/m/milou/milou_6.6.4-0ubuntu1_amd64.deb' milou_4%3a6.6.4-0ubuntu1_amd64.deb 98602 MD5Sum:48599d91e13f11adf89310c5d1bc568e
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-workspace/plasma-workspace-data_6.6.6-0ubuntu0.1_all.deb' plasma-workspace-data_4%3a6.6.6-0ubuntu0.1_all.deb 15321350 MD5Sum:281c14d26bcbff4e99697d210a4af101
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-tools/qdbus-qt6_6.10.2-1_amd64.deb' qdbus-qt6_6.10.2-1_amd64.deb 30966 MD5Sum:4e7cf149ae268d5b75835bb151758e51
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-activities/qml6-module-org-kde-activities_6.6.4-0ubuntu1_amd64.deb' qml6-module-org-kde-activities_6.6.4-0ubuntu1_amd64.deb 48054 MD5Sum:1b864b90c574402a922c641a185615c4
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kconfig/qml6-module-org-kde-config_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-config_6.24.0-0ubuntu1_amd64.deb 12418 MD5Sum:d05695640339a5a7d27a1c00fe7048ba
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kcoreaddons/qml6-module-org-kde-coreaddons_6.24.0-0ubuntu1.1_amd64.deb' qml6-module-org-kde-coreaddons_6.24.0-0ubuntu1.1_amd64.deb 31778 MD5Sum:715a622dd43ebd5442a97d122d64c36b
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kdeclarative/qml6-module-org-kde-draganddrop_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-draganddrop_6.24.0-0ubuntu1_amd64.deb 36084 MD5Sum:a57e4dc6c97ca2be93ee486c6a26ba71
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kcmutils/qml6-module-org-kde-kcmutils_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-kcmutils_6.24.0-0ubuntu1_amd64.deb 112350 MD5Sum:994731cfa2a8bf9045c283ed51126d37
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kholidays/qml6-module-org-kde-kholidays_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-kholidays_6.24.0-0ubuntu1_amd64.deb 20306 MD5Sum:a13495cf595661e1198ed8af6cd20740
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-sonnet/qml6-module-org-kde-sonnet_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-sonnet_6.24.0-0ubuntu1_amd64.deb 26284 MD5Sum:d55d548f48011ffe582be5058533fb54
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-qqc2-desktop-style/qml6-module-org-kde-desktop_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-desktop_6.24.0-0ubuntu1_amd64.deb 579242 MD5Sum:4f3973ed11fd6004f1c0b29867e2b544
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kirigami-addons/qml6-module-org-kde-kirigamiaddons-treeview_1.11.0-2ubuntu2_amd64.deb' qml6-module-org-kde-kirigamiaddons-treeview_1.11.0-2ubuntu2_amd64.deb 44500 MD5Sum:26f03cb8c36972df3f5968cd6d81aad5
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kirigami-addons/qml6-module-org-kde-kirigamiaddons-delegates_1.11.0-2ubuntu2_amd64.deb' qml6-module-org-kde-kirigamiaddons-delegates_1.11.0-2ubuntu2_amd64.deb 68066 MD5Sum:4f9f511f27b1716f6a483178cb5688b6
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kirigami-addons/qml6-module-org-kde-kirigamiaddons-components_1.11.0-2ubuntu2_amd64.deb' qml6-module-org-kde-kirigamiaddons-components_1.11.0-2ubuntu2_amd64.deb 194874 MD5Sum:74594fd853395b3dbf568ae96013eba0
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/qml6-module-qt-labs-folderlistmodel_6.10.2%2bdfsg-3_amd64.deb' qml6-module-qt-labs-folderlistmodel_6.10.2+dfsg-3_amd64.deb 50994 MD5Sum:6f8a04ff120000b868325199011e433e
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/qml6-module-qtquick-dialogs_6.10.2%2bdfsg-3_amd64.deb' qml6-module-qtquick-dialogs_6.10.2+dfsg-3_amd64.deb 683002 MD5Sum:042a5c6027f15a2ccfd84c9ce8adf55d
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kdeclarative/qml6-module-org-kde-kquickcontrols_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-kquickcontrols_6.24.0-0ubuntu1_amd64.deb 35840 MD5Sum:72e3de515c4f4c4ddc69dcc6fc99d504
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kdeclarative/qml6-module-org-kde-kquickcontrolsaddons_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-kquickcontrolsaddons_6.24.0-0ubuntu1_amd64.deb 41542 MD5Sum:acede82f75373e9dc0ecd40b628f89c1
+'file:/var/tmp/omen-apt-repository/pool/universe/libk/libksysguard/qml6-module-org-kde-ksysguard_6.6.5-0ubuntu0.1_amd64.deb' qml6-module-org-kde-ksysguard_4%3a6.6.5-0ubuntu0.1_amd64.deb 32702 MD5Sum:4d3008918cea39f28817f5e2ce2a0919
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kwindowsystem/qml6-module-org-kde-kwindowsystem_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-kwindowsystem_6.24.0-0ubuntu1_amd64.deb 11694 MD5Sum:47ea935b28f0b7fc0c378a7644c66dc3
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-knewstuff/qml6-module-org-kde-newstuff_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-newstuff_6.24.0-0ubuntu1_amd64.deb 230300 MD5Sum:0ccefc4bb6d70e480022dd0d6150a4fc
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-knotifications/qml6-module-org-kde-notifications_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-notifications_6.24.0-0ubuntu1_amd64.deb 28278 MD5Sum:b282d1d0b088cf10ebf8ab1d45426cc8
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kpipewire/qml6-module-org-kde-pipewire_6.6.4-0ubuntu1_amd64.deb' qml6-module-org-kde-pipewire_6.6.4-0ubuntu1_amd64.deb 29828 MD5Sum:e83dbeb45fac539d9d2d4a82d96cfeab
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma5support/qml6-module-org-kde-plasma-plasma5support_6.6.4-0ubuntu1_amd64.deb' qml6-module-org-kde-plasma-plasma5support_4%3a6.6.4-0ubuntu1_amd64.deb 56358 MD5Sum:228ab85dc966c2cbb996404189571023
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-multimedia/qml6-module-qtmultimedia_6.10.2-2_amd64.deb' qml6-module-qtmultimedia_6.10.2-2_amd64.deb 101972 MD5Sum:3a5cf4e1738365f6b5ec51c2af2ff657
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-prison/qml6-module-org-kde-prison_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-prison_6.24.0-0ubuntu1_amd64.deb 26656 MD5Sum:64b3951945d81267208573f245d38c5f
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kuserfeedback/qml6-module-org-kde-userfeedback_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-userfeedback_6.24.0-0ubuntu1_amd64.deb 26272 MD5Sum:1c4c0a5b26da83c0d702a30338c719bf
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-positioning/qml6-module-qtpositioning_6.10.2-1_amd64.deb' qml6-module-qtpositioning_6.10.2-1_amd64.deb 19878 MD5Sum:431dd8217f4203fa9dc15ca342b1057e
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-virtualkeyboard/qml6-module-qtquick-virtualkeyboard_6.10.2%2bdfsg-1_amd64.deb' qml6-module-qtquick-virtualkeyboard_6.10.2+dfsg-1_amd64.deb 624298 MD5Sum:9514b2e9040d8fa690c8b7c56a57f6a1
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-base/qt6-base-dev-tools_6.10.2%2bdfsg-7_amd64.deb' qt6-base-dev-tools_6.10.2+dfsg-7_amd64.deb 1160062 MD5Sum:6fd2940fe67f2d11944aa2624fdae7d8
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-svg/qt6-svg-plugins_6.10.2-2_amd64.deb' qt6-svg-plugins_6.10.2-2_amd64.deb 32542 MD5Sum:4346513ac31d560ffe82570b487935c8
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-wayland/qt6-wayland_6.10.2-4_amd64.deb' qt6-wayland_6.10.2-4_amd64.deb 105536 MD5Sum:dbf9449b12c78e489a8c9160b6314345
+'file:/var/tmp/omen-apt-repository/pool/main/x/x11-utils/x11-utils_7.7%2b7build1_amd64.deb' x11-utils_7.7+7build1_amd64.deb 191112 MD5Sum:9c8a4f4ed517ee83490f0ee31df57480
+'file:/var/tmp/omen-apt-repository/pool/main/x/x11-xserver-utils/x11-xserver-utils_7.7%2b11build1_amd64.deb' x11-xserver-utils_7.7+11build1_amd64.deb 170654 MD5Sum:f9f6ba109d7e2e74bdd79c8e6e487402
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-workspace/plasma-workspace_6.6.6-0ubuntu0.1_amd64.deb' plasma-workspace_4%3a6.6.6-0ubuntu0.1_amd64.deb 5617886 MD5Sum:9186b008293e7d17441ec33c6287f509
+'file:/var/tmp/omen-apt-repository/pool/universe/p/polkit-kde-agent-1/polkit-kde-agent-1_6.6.4-0ubuntu1_amd64.deb' polkit-kde-agent-1_4%3a6.6.4-0ubuntu1_amd64.deb 73582 MD5Sum:2ee9cf53c5452b972edc86fd7ff20e25
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-baloo/qml6-module-org-kde-baloo_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-baloo_6.24.0-0ubuntu1_amd64.deb 38126 MD5Sum:afa0d6e064fcc26f48e5ed49e2df7070
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kdeclarative/qml6-module-org-kde-graphicaleffects_6.24.0-0ubuntu1_amd64.deb' qml6-module-org-kde-graphicaleffects_6.24.0-0ubuntu1_amd64.deb 31214 MD5Sum:5e4813922d8a96a8e9a7ed3494cddf7a
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kf6-kiconthemes/qml6-module-org-kde-iconthemes_6.24.0-0ubuntu2_amd64.deb' qml6-module-org-kde-iconthemes_6.24.0-0ubuntu2_amd64.deb 14998 MD5Sum:28ed7e5d33ae4f097689f80de367f803
+'file:/var/tmp/omen-apt-repository/pool/universe/k/kirigami-addons/qml6-module-org-kde-kirigamiaddons-tableview_1.11.0-2ubuntu2_amd64.deb' qml6-module-org-kde-kirigamiaddons-tableview_1.11.0-2ubuntu2_amd64.deb 67880 MD5Sum:302e2ea3b7579f65882b4663e1180085
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/qml6-module-qt-labs-platform_6.10.2%2bdfsg-3_amd64.deb' qml6-module-qt-labs-platform_6.10.2+dfsg-3_amd64.deb 17138 MD5Sum:d2a4a3a7f0c5977584be83560c937fc6
+'file:/var/tmp/omen-apt-repository/pool/universe/q/qt6-declarative/qml6-module-qtquick-effects_6.10.2%2bdfsg-3_amd64.deb' qml6-module-qtquick-effects_6.10.2+dfsg-3_amd64.deb 243954 MD5Sum:33706defc44e06c00ecf8e7ded2a346a
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-desktop/plasma-desktop_6.6.6-0ubuntu0.1_amd64.deb' plasma-desktop_4%3a6.6.6-0ubuntu0.1_amd64.deb 2906870 MD5Sum:bce8faa4c7e3b0303894491f40efa3f4
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-workspace/plasma-session-wayland_6.6.6-0ubuntu0.1_amd64.deb' plasma-session-wayland_4%3a6.6.6-0ubuntu0.1_amd64.deb 32040 MD5Sum:c9d46418a2dac12950a9b769fdf669bf
+'file:/var/tmp/omen-apt-repository/pool/universe/p/python-libevdev/python3-libevdev_0.13.1-1_all.deb' python3-libevdev_0.13.1-1_all.deb 26934 MD5Sum:2d9c3f17436cef71f2e2153b56638010
+'file:/var/tmp/omen-apt-repository/pool/universe/s/sddm/sddm_0.21.0%2bgit20250502.4fe234b-2ubuntu3_amd64.deb' sddm_0.21.0+git20250502.4fe234b-2ubuntu3_amd64.deb 763368 MD5Sum:c94dd3f394828c67a6b0800bc03a73f8
+'file:/var/tmp/omen-apt-repository/pool/universe/p/plasma-desktop/sddm-theme-breeze_6.6.6-0ubuntu0.1_amd64.deb' sddm-theme-breeze_4%3a6.6.6-0ubuntu0.1_amd64.deb 615604 MD5Sum:756a70f916d1398a3ddd42c425013b06
+'file:/var/tmp/omen-apt-repository/pool/main/x/xdg-desktop-portal/xdg-desktop-portal_1.21.1%2bds-1ubuntu3.1_amd64.deb' xdg-desktop-portal_1.21.1+ds-1ubuntu3.1_amd64.deb 366860 MD5Sum:0215b72f6a5d7dcbe625b251f5a82a5d
+'file:/var/tmp/omen-apt-repository/pool/universe/x/xdg-desktop-portal-kde/xdg-desktop-portal-kde_6.6.6-0ubuntu0.1_amd64.deb' xdg-desktop-portal-kde_6.6.6-0ubuntu0.1_amd64.deb 647136 MD5Sum:1741c8d8e4ae263d052cbdd1abd479a8
+'file:/var/tmp/omen-apt-repository/pool/main/x/xorg-server/xserver-xorg-core_21.1.22-1ubuntu1.3_amd64.deb' xserver-xorg-core_2%3a21.1.22-1ubuntu1.3_amd64.deb 1525238 MD5Sum:4da8509b2c967ebdd8fd256ddd86b7a7
+'file:/var/tmp/omen-apt-repository/pool/universe/x/xserver-xorg-input-libinput/xserver-xorg-input-libinput_1.5.0-1build1_amd64.deb' xserver-xorg-input-libinput_1.5.0-1build1_amd64.deb 42174 MD5Sum:92a6d715ae4be745e42d31f7158068c7

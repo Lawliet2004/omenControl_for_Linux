@@ -1,0 +1,230 @@
+{
+  "result": "passed",
+  "reused_installed_guest": true,
+  "fresh_install": false,
+  "full_systemd_suite_executed": false,
+  "package_sha256": "62a8d612dceab7395ad01283abf620b88daf04c381c42f8a073d46ec98353cdb",
+  "harness_sha256": "bcbbf95d11975f7133e0e279dd08336627f70c4b1e248aa784cc3dbeac133ef0",
+  "graphical_source_sha256": "d18ca9448d71de3737e3e16de6650830e9fb0cbc9a958b09cb6c880d093eed53",
+  "host_package_installed": false,
+  "physical_hardware_writes": false,
+  "qemu_pid": 76253,
+  "installed_payload": [
+    "516b722be9cd8c57b13f401e714bcb0a2affb2a120e771ff9f14ccce00bd2fc3  /usr/bin/omen-gui",
+    "219780aa03ea5bda0036b402f0231a13cbded8329b8cf1b2dd05e3bc6f4a12cb  /usr/bin/omen-daemon",
+    "f0e5c0b08cfec6f32ecb94e39ca65a990f46af4f4ee7bd0dd74c8c562484cf30  /usr/bin/omen-cli"
+  ],
+  "graphical_captures": [
+    {
+      "path": "target/graphical-auth-v20/graphical-debug-4/graphical-captures/plasma-session-started.png",
+      "sha256": "97256b7175f5a2bb8bd5e3f62f0c01625ddfca213b740deecd8a3b4527085e34"
+    },
+    {
+      "path": "target/graphical-auth-v20/graphical-debug-4/graphical-captures/polkit-approval-prompt.png",
+      "sha256": "b3371c4f64eb770ad8bc23d1be0a5cbd0b27ac67653a1e280ae7e3471ab265ed"
+    },
+    {
+      "path": "target/graphical-auth-v20/graphical-debug-4/graphical-captures/polkit-rejected-password.png",
+      "sha256": "e06def1e5008ad1254c5963396cc3fc43f564d4920d4478f4e7f298bb56a47e3"
+    },
+    {
+      "path": "target/graphical-auth-v20/graphical-debug-4/graphical-captures/polkit-cached-policy-import.png",
+      "sha256": "a253646ba40fa0a134ac5ee667ca26b9be886a2c38142b985ce640e5426dc3ea"
+    },
+    {
+      "path": "target/graphical-auth-v20/graphical-debug-4/graphical-captures/polkit-expired-authorization.png",
+      "sha256": "9615a375db2977744a12c80059cc84965c742e6f56bc85774289f8acd35b33bb"
+    }
+  ],
+  "graphical_authorization": {
+    "result": "passed",
+    "checks_passed": [
+      "installed Wayland GUI uses the real KDE file portal and canceling its disabled-policy preview performs no service write",
+      "canceling the real polkit dialog leaves service policies unchanged and returns GUI error feedback",
+      "an incorrect VM-only password cannot authorize policy import; subsequent cancellation preserves configuration",
+      "the real KDE/PAM prompt authorizes the installed GUI, saves disabled automation and creates a temporary authorization",
+      "a second GUI import uses the observed active-session cache without a new authentication dialog",
+      "natural cache expiry requires a fresh real dialog and canceling it cannot mutate service policy"
+    ],
+    "physical_keyboard_tested": false,
+    "input": "libevdev/uinput in the private guest; no host input devices",
+    "password_recorded": false,
+    "authorization_grant_rule_installed": false,
+    "session": "9",
+    "cache_inspector_cgroup": "/user.slice/user-1000.slice/session-9.scope",
+    "cache_inspector_uid": 1000,
+    "gui_pid": 1945,
+    "retained_authorization": {
+      "action": "com.omenlinux.admin",
+      "obtained": 1793165551,
+      "expires": 1793165850,
+      "id_sha256": "f2151879253e03887dd946081cd5cca2c72c2930c4876461fe96f10c90f1b82b"
+    },
+    "cache_expired_at": 1793165858.283445,
+    "fixture_cleanup_complete": true
+  },
+  "guest_result": {
+    "checks_passed": [
+      "real systemd starts the installed read-only daemon; UID 1000 connects to its production socket",
+      "sandboxed installed service exposes real per-interface network counters and sampled rates to UID 1000",
+      "running process has NoNewPrivileges, seccomp and only CAP_DAC_OVERRIDE",
+      "actual mount namespace enforces read-only system/sysfs, writable service paths, hidden home and private tmp",
+      "sandboxed production pkcheck/polkit denies, grants a VM-only admin save and observes rule revocation",
+      "systemd stop removes the socket and RuntimeDirectory",
+      "systemd start/restart creates a new responding daemon",
+      "Restart=on-failure recovers the read-only service and socket after guest-only SIGKILL",
+      "packaged experimental writer is static and never enabled by installation",
+      "packaged writer sandbox starts without an unowned fixture write",
+      "writer has a separate cgroup and only the exact fixture mode attribute is writable",
+      "killing the controller entire service cgroup leaves independent Automatic recovery alive",
+      "systemd restarts a killed writer and its journal restores Automatic while controller remains stopped",
+      "old controller lease cannot reapply Maximum after writer restart",
+      "normal controller service stop restores Automatic without a broad hwmon sweep",
+      "independently scheduled writer expires a stopped controller lease in the real systemd guest",
+      "package removal hook preserves its executable and refuses to discard pending recovery intent",
+      "static socket activates a capability-free DynamicUser reader behind a root-private PID-1 endpoint",
+      "live client rejects fixture frames and desktop users cannot impersonate or access the control telemetry endpoint",
+      "identified active NVIDIA temperature passes fixture preflight; stale/future data restores Auto and cannot rearm itself",
+      "telemetry service loss restores Automatic without widening the controller device sandbox or using a user cache",
+      "installed service sandbox admits production-polkit-authorized desktop wrapper through peer pidfd and real cgroup v2",
+      "read-only cgroup sandbox observes exit and releases private PPD hold, persisting a root-owned private journal",
+      "installed sandbox restart preserves game execution and recovers Interrupted history without reapplying authority",
+      "installed Wayland GUI uses the real KDE file portal and canceling its disabled-policy preview performs no service write",
+      "canceling the real polkit dialog leaves service policies unchanged and returns GUI error feedback",
+      "an incorrect VM-only password cannot authorize policy import; subsequent cancellation preserves configuration",
+      "the real KDE/PAM prompt authorizes the installed GUI, saves disabled automation and creates a temporary authorization",
+      "a second GUI import uses the observed active-session cache without a new authentication dialog",
+      "natural cache expiry requires a fresh real dialog and canceling it cannot mutate service policy"
+    ],
+    "test_payload_sha256": "a1b4924093af386ab5e754cabd8e05c5642674942e7c2b2cddbbe9994b560b5f",
+    "initial_boot_id": "28aed657-525a-46e1-85e6-bc8e695ddec8",
+    "kernel": "7.0.0-38-generic",
+    "systemd_version": "systemd 259 (259.5-0ubuntu3.4)",
+    "network_monitoring": {
+      "interfaces": [
+        {
+          "ifindex": 2,
+          "link_state": "up",
+          "loopback": false,
+          "name": "enp0s1",
+          "rx_bytes": 429345078,
+          "rx_bytes_per_second": 0.0,
+          "rx_dropped_or_missed": 0,
+          "rx_errors": 0,
+          "tx_bytes": 1700338,
+          "tx_bytes_per_second": 0.0,
+          "tx_dropped": 0,
+          "tx_errors": 0
+        },
+        {
+          "ifindex": 1,
+          "link_state": "unknown",
+          "loopback": true,
+          "name": "lo",
+          "rx_bytes": 33188,
+          "rx_bytes_per_second": 0.0,
+          "rx_dropped_or_missed": 0,
+          "rx_errors": 0,
+          "tx_bytes": 33188,
+          "tx_bytes_per_second": 0.0,
+          "tx_dropped": 0,
+          "tx_errors": 0
+        }
+      ],
+      "interval_ms": 327,
+      "measured_unix_ms": 1793131019448,
+      "omitted_interfaces": 0,
+      "source": "kernel",
+      "unreadable_interfaces": 0
+    },
+    "loaded_sandbox_properties": "FragmentPath=/usr/lib/systemd/system/omen-linux.service\nReadWritePaths=/run/omen-linux /etc/omen-linux\nReadOnlyPaths=\nPrivateTmp=yes\nProtectKernelTunables=yes\nProtectHome=yes\nProtectSystem=strict\n",
+    "manager_mount_namespace": "mnt:[4026531832]",
+    "service_mount_namespace": "mnt:[4026532390]",
+    "sysfs_mountinfo": [
+      "420 414 0:25 / /sys rw,nosuid,nodev,noexec,relatime shared:350 master:5 - sysfs sysfs rw",
+      "421 420 0:8 / /sys/kernel/security rw,nosuid,nodev,noexec,relatime shared:351 master:6 - securityfs securityfs rw",
+      "422 420 0:29 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime shared:352 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting",
+      "423 420 0:30 / /sys/fs/pstore rw,nosuid,nodev,noexec,relatime shared:353 master:8 - pstore none rw",
+      "424 420 0:31 / /sys/fs/bpf rw,nosuid,nodev,noexec,relatime shared:354 master:9 - bpf bpf rw,mode=700",
+      "425 420 0:21 / /sys/kernel/config rw,nosuid,nodev,noexec,relatime shared:355 master:10 - configfs configfs rw",
+      "426 420 0:9 / /sys/kernel/debug rw,nosuid,nodev,noexec,relatime shared:356 master:16 - debugfs debugfs rw",
+      "427 420 0:14 / /sys/kernel/tracing rw,nosuid,nodev,noexec,relatime shared:357 master:19 - tracefs tracefs rw",
+      "428 420 0:36 / /sys/fs/fuse/connections rw,nosuid,nodev,noexec,relatime shared:358 master:20 - fusectl fusectl rw",
+      "436 420 0:25 / /sys ro,nosuid,nodev,noexec,relatime shared:359 master:5 - sysfs sysfs rw",
+      "437 436 0:8 / /sys/kernel/security ro,nosuid,nodev,noexec,relatime shared:360 master:6 - securityfs securityfs rw",
+      "438 436 0:29 / /sys/fs/cgroup ro,nosuid,nodev,noexec,relatime shared:361 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting",
+      "457 436 0:30 / /sys/fs/pstore ro,nosuid,nodev,noexec,relatime shared:363 master:8 - pstore none rw",
+      "458 436 0:31 / /sys/fs/bpf ro,nosuid,nodev,noexec,relatime shared:364 master:9 - bpf bpf rw,mode=700",
+      "459 436 0:21 / /sys/kernel/config ro,nosuid,nodev,noexec,relatime shared:365 master:10 - configfs configfs rw",
+      "460 436 0:9 / /sys/kernel/debug ro,nosuid,nodev,noexec,relatime shared:366 master:16 - debugfs debugfs rw",
+      "461 436 0:14 / /sys/kernel/tracing ro,nosuid,nodev,noexec,relatime shared:367 master:19 - tracefs tracefs rw",
+      "462 436 0:36 / /sys/fs/fuse/connections ro,nosuid,nodev,noexec,relatime shared:368 master:20 - fusectl fusectl rw",
+      "463 438 0:29 /system.slice/omen-linux.service/memory.pressure /sys/fs/cgroup/system.slice/omen-linux.service/memory.pressure rw,nosuid,nodev,noexec,relatime shared:362 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting"
+    ],
+    "service_mount_options": {
+      "/sys": {
+        "options": "rw,nosuid,nodev,noexec,relatime\nro,nosuid,nodev,noexec,relatime",
+        "statvfs_readonly": true,
+        "expected_writable": false
+      },
+      "/etc/hostname": {
+        "options": "ro,nosuid,relatime",
+        "statvfs_readonly": true,
+        "expected_writable": false
+      },
+      "/etc/omen-linux": {
+        "options": "rw,nosuid,relatime",
+        "statvfs_readonly": false,
+        "expected_writable": true
+      },
+      "/run/omen-linux": {
+        "options": "rw,nosuid,nodev",
+        "statvfs_readonly": false,
+        "expected_writable": true
+      }
+    },
+    "coarse_recovery_fixture_only": true,
+    "coarse_recovery_cleanup_complete": true,
+    "isolated_nvidia_fixture_only": true,
+    "isolated_nvidia_cleanup_complete": true,
+    "managed_session_fixture": {
+      "helper_sha256": "1af6ca2cc16173953d24cea78168f889896427c3bb639075c59ba2dc796508fa",
+      "private_ppd": true,
+      "physical_hardware_writes": false,
+      "production_polkit": true,
+      "installed_service_sandbox": true,
+      "cleanup_complete": true
+    },
+    "graphical_authorization_source_sha256": "d18ca9448d71de3737e3e16de6650830e9fb0cbc9a958b09cb6c880d093eed53",
+    "graphical_authorization": {
+      "result": "passed",
+      "checks_passed": [
+        "installed Wayland GUI uses the real KDE file portal and canceling its disabled-policy preview performs no service write",
+        "canceling the real polkit dialog leaves service policies unchanged and returns GUI error feedback",
+        "an incorrect VM-only password cannot authorize policy import; subsequent cancellation preserves configuration",
+        "the real KDE/PAM prompt authorizes the installed GUI, saves disabled automation and creates a temporary authorization",
+        "a second GUI import uses the observed active-session cache without a new authentication dialog",
+        "natural cache expiry requires a fresh real dialog and canceling it cannot mutate service policy"
+      ],
+      "physical_keyboard_tested": false,
+      "input": "libevdev/uinput in the private guest; no host input devices",
+      "password_recorded": false,
+      "authorization_grant_rule_installed": false,
+      "session": "9",
+      "cache_inspector_cgroup": "/user.slice/user-1000.slice/session-9.scope",
+      "cache_inspector_uid": 1000,
+      "gui_pid": 1945,
+      "retained_authorization": {
+        "action": "com.omenlinux.admin",
+        "obtained": 1793165551,
+        "expires": 1793165850,
+        "id_sha256": "f2151879253e03887dd946081cd5cca2c72c2930c4876461fe96f10c90f1b82b"
+      },
+      "cache_expired_at": 1793165858.283445,
+      "fixture_cleanup_complete": true
+    }
+  },
+  "vm_exited": true,
+  "vm_exit_code": 0,
+  "private_inputs_retained_for_debug": true
+}

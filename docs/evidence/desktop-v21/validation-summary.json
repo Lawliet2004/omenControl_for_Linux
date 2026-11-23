@@ -1,0 +1,1175 @@
+{
+  "result": "passed",
+  "recorded_utc": "2026-10-28T06:08:16.287926+00:00",
+  "version": "0.1.0-21",
+  "package": "target/debian/omen-linux_0.1.0-21_amd64.deb",
+  "package_sha256": "25964019083530e3c3e567dca7edd13cb4eebe1ce0ad2eea8aacc7f301ae3edf",
+  "candidate_sha256": "f4fc0a72b90416260755be5e475e9926d8bf0e48a729043b3534bba6b08eaab7",
+  "runtime_control_equivalence": {
+    "reference_package": "target/icon-fallback-v21/candidate/omen-linux_0.1.0-21_amd64.deb",
+    "reference_sha256": "f4fc0a72b90416260755be5e475e9926d8bf0e48a729043b3534bba6b08eaab7",
+    "runtime_payload_identical": true,
+    "maintainer_scripts_and_control_identical": true,
+    "documentation_changes": [
+      "usr/share/doc/omen-linux/ACCESSIBILITY.md",
+      "usr/share/doc/omen-linux/APPLICATION_AUDIT_IMPLEMENTATION.md",
+      "usr/share/doc/omen-linux/CONTINUATION_CHECKLIST.md",
+      "usr/share/doc/omen-linux/DESKTOP_VALIDATION_2026-10-28.md",
+      "usr/share/doc/omen-linux/INSTALLATION.md",
+      "usr/share/doc/omen-linux/MANAGED_GAME_SESSIONS.md",
+      "usr/share/doc/omen-linux/PACKAGE_VALIDATION.md",
+      "usr/share/doc/omen-linux/README.md",
+      "usr/share/doc/omen-linux/TEST_REPORT.md",
+      "usr/share/doc/omen-linux/VM_VALIDATION.md"
+    ]
+  },
+  "fresh_vm_checks": 39,
+  "graphical_authorization_checks": 6,
+  "native_checks": {
+    "x11": 31,
+    "wayland": 31
+  },
+  "observed_native_selections_per_backend": 9,
+  "icon_scenes": 4,
+  "mapped_icon_observations": 71,
+  "active_label_contrast_samples": 142,
+  "rust_release_tests": 264,
+  "strict_clippy": true,
+  "fmt": true,
+  "host_installation": false,
+  "physical_hardware_validated": false,
+  "english_only": true,
+  "historical_evidence_preserved": true,
+  "source_files": 128,
+  "evidence_files": [
+    {
+      "path": "collect-evidence.py",
+      "sha256": "7e6dfb5b0207e2a4662099c66d48bc10a7ef7553a9b8d67db7aeaba0c7831b34",
+      "bytes": 7417
+    },
+    {
+      "path": "current/build-candidate-relative-fixed.log",
+      "sha256": "5205c8030a8eb33db961b5c30b0c0b7c177154fab2fd8d65d7ecb371b56ef9ae",
+      "bytes": 2186
+    },
+    {
+      "path": "current/build-candidate.log",
+      "sha256": "7e29c396f906a13c9d2b01bf0b5e781aeab5ed99e8d0a59247cb43de22df6f7c",
+      "bytes": 354
+    },
+    {
+      "path": "current/build-final.log",
+      "sha256": "e0b6fb3abeae50e30579a982066c535d20313737b87890dc196359d5f36b8423",
+      "bytes": 2123
+    },
+    {
+      "path": "current/build-release.log",
+      "sha256": "6b5b31741f4ed10e660f17d240dcebb38fe9660cbf3bf879623a9bc6fbd97f9c",
+      "bytes": 132
+    },
+    {
+      "path": "current/candidate-static/desktop-file-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "current/candidate-static/package-checksums.log",
+      "sha256": "e69c763f7ccf1392926ff5001b05050001fc1063755132454e69d2aeaaa2d0ae",
+      "bytes": 3884
+    },
+    {
+      "path": "current/candidate-static/package-cli-diagnostics.json",
+      "sha256": "260b7d89bc7e6469cf153ae393ab32ad0764e0cfad9e2f5d99dab0036bd62b7a",
+      "bytes": 12967
+    },
+    {
+      "path": "current/candidate-static/package-runtime-linkage.log",
+      "sha256": "3806f0e3f5d2c0a360c4218c0e8856c012c28e6b9dca5ba870182a56389ecabf",
+      "bytes": 10945
+    },
+    {
+      "path": "current/candidate-static/package-validation.json",
+      "sha256": "6471fa58bb7687b633163235b01d908aac46205bd4042a68be936ea7e831965d",
+      "bytes": 1142
+    },
+    {
+      "path": "current/candidate-static/systemd-payload-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "current/candidate-static.log",
+      "sha256": "6471fa58bb7687b633163235b01d908aac46205bd4042a68be936ea7e831965d",
+      "bytes": 1142
+    },
+    {
+      "path": "current/clippy.log",
+      "sha256": "cd25ab31ca423ad0ef699be7c8b35a41cf3086c91473d1668faf06e78853ffb2",
+      "bytes": 141
+    },
+    {
+      "path": "current/final-static/desktop-file-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "current/final-static/package-checksums.log",
+      "sha256": "7227a96123dec1e3f4334f315b0b67d22f7658f62f43d7c48bc9544642366cb7",
+      "bytes": 3948
+    },
+    {
+      "path": "current/final-static/package-cli-diagnostics.json",
+      "sha256": "5b79d79ada576088068f8048556d9c6b11aa15bfc8547edea7c2b6fd54dd7cc2",
+      "bytes": 12967
+    },
+    {
+      "path": "current/final-static/package-runtime-linkage.log",
+      "sha256": "dde9a05e5c196968b03293ac8f0aafc2d07c99faa69ec85357a14ce6fa179dd3",
+      "bytes": 10945
+    },
+    {
+      "path": "current/final-static/package-validation.json",
+      "sha256": "00a01636464892c90bb3619b5e999de07c5c938e6f571670680c2ea5c2b86de5",
+      "bytes": 2019
+    },
+    {
+      "path": "current/final-static/systemd-payload-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "current/final-static/vm-systemd.json",
+      "sha256": "f50bc18d64e087864b2018d1480fda445171727d9713e5ab7238bb8e45b28ce0",
+      "bytes": 14142
+    },
+    {
+      "path": "current/final-static.log",
+      "sha256": "00a01636464892c90bb3619b5e999de07c5c938e6f571670680c2ea5c2b86de5",
+      "bytes": 2019
+    },
+    {
+      "path": "current/fmt.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "current/fresh-vm/driver.log",
+      "sha256": "371439267fbcbad78b653e176d2a82974d2bb7fb178a58715267ae86e582272c",
+      "bytes": 14349
+    },
+    {
+      "path": "current/fresh-vm/graphical-captures/plasma-session-started.png",
+      "sha256": "5436db0de901d7ac343b08c945c6a04b999a3ab26ec693380ff8b4547444dac5",
+      "bytes": 5374
+    },
+    {
+      "path": "current/fresh-vm/graphical-captures/polkit-approval-prompt.png",
+      "sha256": "3105af5145e60b1a027f379ecb068337747bea9a122586e65e9374d7fd6b3fda",
+      "bytes": 267523
+    },
+    {
+      "path": "current/fresh-vm/graphical-captures/polkit-cached-policy-import.png",
+      "sha256": "ad742f65f0291e57f8cf301848ab0796bf318708b3e6b46e3ca375c81fdc7592",
+      "bytes": 255776
+    },
+    {
+      "path": "current/fresh-vm/graphical-captures/polkit-expired-authorization.png",
+      "sha256": "ac4e5f886d026c3a91667af19b013db79e9f6f145a043386fabe616253e1c84b",
+      "bytes": 268307
+    },
+    {
+      "path": "current/fresh-vm/graphical-captures/polkit-rejected-password.png",
+      "sha256": "0023445f14bbf2c81664b125e08152e78cb7984530df5a57f320cf82e2384a0d",
+      "bytes": 262249
+    },
+    {
+      "path": "current/fresh-vm/vm-cloud-init-status.json",
+      "sha256": "0df6bd80503a3a3a57a2399233dee13fcc830cdbf163ccc7b8b36128db256eb2",
+      "bytes": 735
+    },
+    {
+      "path": "current/fresh-vm/vm-coarse-journal.log",
+      "sha256": "81e375defc3236e3f8fd278d03b3ef4dc6ca5b2f485a5c90e3b58b3cd8d99808",
+      "bytes": 4948
+    },
+    {
+      "path": "current/fresh-vm/vm-desktop-journal.log",
+      "sha256": "106b2ffaf4ad60873c28e5b049a1f4477932bac77d691f49ac15a8668c648310",
+      "bytes": 122908
+    },
+    {
+      "path": "current/fresh-vm/vm-polkit-journal.log",
+      "sha256": "6f2959949dcddf5c526fcab67acac6cc18cca6b69d432c394392ed3a2c16d2d3",
+      "bytes": 2233
+    },
+    {
+      "path": "current/fresh-vm/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "current/fresh-vm/vm-serial.log",
+      "sha256": "fc7078b93c646a98c6a4c1a1bc3aecc7f19eb6884771fff2774eec8a41d3242d",
+      "bytes": 282547
+    },
+    {
+      "path": "current/fresh-vm/vm-systemd-initial-journal.log",
+      "sha256": "d70bfe5c6891f123d630b0b4415025658302685c468674920bfcde21340d10ab",
+      "bytes": 319808
+    },
+    {
+      "path": "current/fresh-vm/vm-systemd-journal.log",
+      "sha256": "9de074831de7cd740a2c105c1cd6e50fd5d2100419b1abd78d7f976477528905",
+      "bytes": 324200
+    },
+    {
+      "path": "current/fresh-vm/vm-systemd-run.log",
+      "sha256": "67a2910649740dc4fdc917b75c561b69897dbe565543ba1a2214609f8b4fe091",
+      "bytes": 1087317
+    },
+    {
+      "path": "current/fresh-vm/vm-systemd.json",
+      "sha256": "f50bc18d64e087864b2018d1480fda445171727d9713e5ab7238bb8e45b28ce0",
+      "bytes": 14142
+    },
+    {
+      "path": "current/fresh-vm-command.json",
+      "sha256": "c400b93c553952479e2e9df32455358448ba29a4dcfa90d69665afd100878fbc",
+      "bytes": 1196
+    },
+    {
+      "path": "current/icon-themes-run.log",
+      "sha256": "51d138cadd264dd2ffaca8b2dbda501e6900eff28163e3d337dc05fb81d4332e",
+      "bytes": 874
+    },
+    {
+      "path": "current/native-wayland/gui-settings-release-a11y.log",
+      "sha256": "c5bacf06d5c2596576d7e0569aaa5d5ca9ba7375c2ed0cd6ee17f1b4a1420ba7",
+      "bytes": 254
+    },
+    {
+      "path": "current/native-wayland/gui-settings-release-daemon.log",
+      "sha256": "8059a7524c948d6810e9501f9954ab7574f184d22983027b62eac84d5b8c7d9f",
+      "bytes": 50680
+    },
+    {
+      "path": "current/native-wayland/gui-settings-release-gui.log",
+      "sha256": "c1e2144a00e41681f6e27c5fc9bda6a209471a82a7015f96183ce09551425d18",
+      "bytes": 3164
+    },
+    {
+      "path": "current/native-wayland/gui-settings-release-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "current/native-wayland/gui-settings-release.json",
+      "sha256": "87db1d4cc91f4f2f11edf0f32a851d8c835e763b425582e89d1f0dfb53e6ee32",
+      "bytes": 19937
+    },
+    {
+      "path": "current/native-wayland-selection/gui-settings-release-a11y.log",
+      "sha256": "17341a1de169fe9a517b2df9bf160f17c5573d9791eba283d5d565f4057244a0",
+      "bytes": 254
+    },
+    {
+      "path": "current/native-wayland-selection/gui-settings-release-daemon.log",
+      "sha256": "c5e3ba1f80dfe0decc0024c21ef54e06cfafe90bd8584cd640e0ded216d70ec5",
+      "bytes": 41347
+    },
+    {
+      "path": "current/native-wayland-selection/gui-settings-release-gui.log",
+      "sha256": "f542ec6b35c6ffe7408f8a42ae5cf36236e9ee4f7692b09361bf6e372b31cc4e",
+      "bytes": 3850
+    },
+    {
+      "path": "current/native-wayland-selection/gui-settings-release-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "current/native-wayland-selection/gui-settings-release.json",
+      "sha256": "e6e1f818061c73d30edbc83bf31a2f873ebb3ba76a3ead678ba19d0a608eaf90",
+      "bytes": 4549
+    },
+    {
+      "path": "current/native-wayland-selection.log",
+      "sha256": "08f7913cdf1b1ce5de22d595ae23b6868a1555b91b0067877b50515c078ac359",
+      "bytes": 7617
+    },
+    {
+      "path": "current/native-wayland.log",
+      "sha256": "b4bb9dadb920079ec012ec09f6b0b848aaa0811e5fb2d3e75a69c05be702a145",
+      "bytes": 3779
+    },
+    {
+      "path": "current/native-x11/gui-settings-release-a11y.log",
+      "sha256": "0db444161cfcaf36c3f5300f70c28ab3a4fbc87a96c8a0c5503c472383263652",
+      "bytes": 254
+    },
+    {
+      "path": "current/native-x11/gui-settings-release-daemon.log",
+      "sha256": "ea57a8f23df791e287ed0317e3c4edb26068e98feba22d2c53724c61a3b8e0ae",
+      "bytes": 41749
+    },
+    {
+      "path": "current/native-x11/gui-settings-release-gui.log",
+      "sha256": "d1461ff87cd27a59c9577592c656a3922e64e92fa78e9695c48806e9f2642368",
+      "bytes": 3846
+    },
+    {
+      "path": "current/native-x11/gui-settings-release-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "current/native-x11/gui-settings-release.json",
+      "sha256": "57eaa47163f8c7c2aa008d4f48f27f3c22e9e4616a862184f1a08960f66886c2",
+      "bytes": 3392
+    },
+    {
+      "path": "current/native-x11-selection/gui-settings-release-a11y.log",
+      "sha256": "a133b5776b2c56a75abfa39924626c21fd776a4bbb8c3bb53eb1af22c73b79ab",
+      "bytes": 254
+    },
+    {
+      "path": "current/native-x11-selection/gui-settings-release-daemon.log",
+      "sha256": "24bec6290f2b19594d47ef69a15710a95f2f3018307fe0e3f687013bcbd2b804",
+      "bytes": 41106
+    },
+    {
+      "path": "current/native-x11-selection/gui-settings-release-gui.log",
+      "sha256": "d1461ff87cd27a59c9577592c656a3922e64e92fa78e9695c48806e9f2642368",
+      "bytes": 3846
+    },
+    {
+      "path": "current/native-x11-selection/gui-settings-release-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "current/native-x11-selection/gui-settings-release.json",
+      "sha256": "45272bdbe5eac227a18f103d794701bd286f2ded2e6c29f90b96575e90f1a68f",
+      "bytes": 4541
+    },
+    {
+      "path": "current/native-x11-selection.log",
+      "sha256": "89f54569da50f7b4b1a70afb99e4ac3216f374d66b9bdfe5f207fd2ab553586d",
+      "bytes": 7609
+    },
+    {
+      "path": "current/native-x11.log",
+      "sha256": "d66e984b37e0e78b0a92addd22dc02ad63e0d93efcf155867369518f32242335",
+      "bytes": 6460
+    },
+    {
+      "path": "current/presentation-first/adwaita-light-wide.json",
+      "sha256": "f902e99a34db8b18c96210b49c922d6eb50df5ecb78eed4a8b6fd9beb83a2cd9",
+      "bytes": 89379
+    },
+    {
+      "path": "current/presentation-first/adwaita-light-wide.png",
+      "sha256": "ce800d53e7d256807e5623e91431421c8d47763d36fecee22374429445c99222",
+      "bytes": 224120
+    },
+    {
+      "path": "current/presentation-first/breeze-dark-wide.json",
+      "sha256": "a67d49061bfb1bd19a302a21eeb5b2c1533813d4061db120c74be185715a7d33",
+      "bytes": 87674
+    },
+    {
+      "path": "current/presentation-first/breeze-dark-wide.png",
+      "sha256": "ae685fc939e54c5cebb6dd22ed12b21bbe5076791af6f60b67e9979f3fbe2a5e",
+      "bytes": 227554
+    },
+    {
+      "path": "current/presentation-first/icon-themes.json",
+      "sha256": "f92f03822412b6b65d322857a6156ba066cc344fe8573a81b977fdbc30cf7070",
+      "bytes": 167641
+    },
+    {
+      "path": "current/presentation-first/missing-dark-narrow-large.json",
+      "sha256": "1f74d0a88deb3e59993382b7b062df5dac3183b45328775563768c9d119f5342",
+      "bytes": 61818
+    },
+    {
+      "path": "current/presentation-first/missing-dark-narrow-large.png",
+      "sha256": "2e710989dfa6994a0e14631d115ef907d4c240f1fb68b920105cfdc799f2f038",
+      "bytes": 219917
+    },
+    {
+      "path": "current/presentation-first/missing-light-wide.json",
+      "sha256": "87c0b1094c4844b9f5aee48e48c9bd3d6efe776c9aa3735b2b634cdf3f930948",
+      "bytes": 89346
+    },
+    {
+      "path": "current/presentation-first/missing-light-wide.png",
+      "sha256": "2c315996fd2bce8e03bea2e182ba85314cdaab9f9d80f061d28250c80e00c2dd",
+      "bytes": 225371
+    },
+    {
+      "path": "current/presentation-first/process/a11y.log",
+      "sha256": "5d6d5da3f74906b162015af637ae31e8eaeaa2fef5ff3528895cf29a1920184b",
+      "bytes": 334
+    },
+    {
+      "path": "current/presentation-first/process/adwaita-light-wide.log",
+      "sha256": "3d217a906b463ed849dbf4f7449fd77ab9b2b57a40134c1a149a78edf3d7d7ca",
+      "bytes": 516
+    },
+    {
+      "path": "current/presentation-first/process/breeze-dark-wide.log",
+      "sha256": "3d217a906b463ed849dbf4f7449fd77ab9b2b57a40134c1a149a78edf3d7d7ca",
+      "bytes": 516
+    },
+    {
+      "path": "current/presentation-first/process/daemon.log",
+      "sha256": "6d14d019b5e67292b6552af161139d2c88354ed3ea97140849440b180a84a81b",
+      "bytes": 11352
+    },
+    {
+      "path": "current/presentation-first/process/missing-dark-narrow-large.log",
+      "sha256": "9e73d6960278147bc8715b7b6233e2dfdbc94c39e8d232aed1e28dab239aa6f3",
+      "bytes": 800
+    },
+    {
+      "path": "current/presentation-first/process/missing-light-wide.log",
+      "sha256": "3d217a906b463ed849dbf4f7449fd77ab9b2b57a40134c1a149a78edf3d7d7ca",
+      "bytes": 516
+    },
+    {
+      "path": "current/presentation-first/process/session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "current/presentation-first/process/xwayland.log",
+      "sha256": "f78e45a223a47e6934cefeb53901a970ec57751c0e2e4fde85194b88e6741b0e",
+      "bytes": 680
+    },
+    {
+      "path": "current/repository-reproduced/repository-manifest.json",
+      "sha256": "12208a3b0fd76b9917fb4fbf598ecd2cbc19ee70fcceeaf1c685e575f856976b",
+      "bytes": 290777
+    },
+    {
+      "path": "current/repository-reproduced.log",
+      "sha256": "a9632c117bbe38bc437b3a5e3cd05b8ec2f625803057ed0928b99e85c513df7a",
+      "bytes": 223
+    },
+    {
+      "path": "current/run-fresh-vm.py",
+      "sha256": "71a532f716b8a979cb1e6da47ea698f54cc11e785a97654098b4a31345cea7ec",
+      "bytes": 388
+    },
+    {
+      "path": "current/rust-tests-release.log",
+      "sha256": "a231429df1fab9f18b4dda6fbeaf56f9687e84b26bbc1e2bd4472a9967cd07bc",
+      "bytes": 22779
+    },
+    {
+      "path": "documentation-manifest.json",
+      "sha256": "1c37dd947e822d34353e7d11e9460ab77fa47c2991587b78813c7e03872e7816",
+      "bytes": 4480
+    },
+    {
+      "path": "final-integrity.json",
+      "sha256": "33971731e0aa7b3721627b848b1840d246fa22b3f4f1243e465e9ec8bffb04cd",
+      "bytes": 472
+    },
+    {
+      "path": "harness/coarse_recovery_vm_inner.py",
+      "sha256": "0b7b7c833793ff5f741f1c1fdb85833d87b45cf3899ebbcfc1fa9a91ca1b3cbf",
+      "bytes": 7306
+    },
+    {
+      "path": "harness/graphical_polkit_vm_inner.py",
+      "sha256": "d18ca9448d71de3737e3e16de6650830e9fb0cbc9a958b09cb6c880d093eed53",
+      "bytes": 21815
+    },
+    {
+      "path": "harness/gui_icon_themes.py",
+      "sha256": "5c01a1d92d4cf728b7b1b9ece0ab43e269299119701f04b8dbcd85b84b4fc029",
+      "bytes": 4605
+    },
+    {
+      "path": "harness/gui_presentation.py",
+      "sha256": "4f8c991d6a82708e50e85b99111a06c01b4c43a4eabed18d9331cc6965471ddb",
+      "bytes": 8672
+    },
+    {
+      "path": "harness/gui_settings.py",
+      "sha256": "8acc31586e30dcdd363455013a9bdaf7c9ad98164d7333875485cd97e3f75bbf",
+      "bytes": 33334
+    },
+    {
+      "path": "harness/managed_games_vm_inner.py",
+      "sha256": "0f4043e850c3b07025e8b3ab4c6c81cc0fc57ca3edda54276839f4f2f206ecd9",
+      "bytes": 7780
+    },
+    {
+      "path": "harness/native_desktop.py",
+      "sha256": "5b031486b649b7c40161ea4e3bc599389b6764be876075bb8f9e836bd76f619f",
+      "bytes": 12792
+    },
+    {
+      "path": "harness/nvidia_reader_vm_inner.py",
+      "sha256": "6281827745e47200c76cb8a7daede5fd6a17e84a55b3bd01339100774303d41c",
+      "bytes": 7115
+    },
+    {
+      "path": "harness/package.py",
+      "sha256": "32d92dd06be7c917d1435248ccb507713b58998aa015cc1a40c7dd6060fd639e",
+      "bytes": 7418
+    },
+    {
+      "path": "harness/prepare-offline-vm-repository.py",
+      "sha256": "acad965efa2e7cbf285d3000b4f101add860ee47d78f5e33121770980b07d195",
+      "bytes": 7765
+    },
+    {
+      "path": "harness/systemd_vm.py",
+      "sha256": "bcbbf95d11975f7133e0e279dd08336627f70c4b1e248aa784cc3dbeac133ef0",
+      "bytes": 23224
+    },
+    {
+      "path": "harness/systemd_vm_inner.py",
+      "sha256": "a1b4924093af386ab5e754cabd8e05c5642674942e7c2b2cddbbe9994b560b5f",
+      "bytes": 11215
+    },
+    {
+      "path": "indices/archive.ubuntu.com_ubuntu_dists_resolute-updates_InRelease",
+      "sha256": "4c8935f781b121d843c8a4141ab6819732c50872401ab19dddb2ce4b1f3c3b2b",
+      "bytes": 137401
+    },
+    {
+      "path": "indices/archive.ubuntu.com_ubuntu_dists_resolute-updates_main_binary-amd64_Packages.xz",
+      "sha256": "5b79f4259f5440b82f92f897633281661d7a997203f467578f37011de1c48503",
+      "bytes": 751340
+    },
+    {
+      "path": "indices/archive.ubuntu.com_ubuntu_dists_resolute-updates_universe_binary-amd64_Packages.xz",
+      "sha256": "5ba9af76dfba9548c931935723b09188c419bd2bb6cab1d051e4ac832d3d98e9",
+      "bytes": 334172
+    },
+    {
+      "path": "indices/archive.ubuntu.com_ubuntu_dists_resolute_InRelease",
+      "sha256": "45f95ce276cdba3e41870516a130e03c58b8b7a79e9546b0efe9e526d255740c",
+      "bytes": 135549
+    },
+    {
+      "path": "indices/archive.ubuntu.com_ubuntu_dists_resolute_main_binary-amd64_Packages.xz",
+      "sha256": "ed9ac41cb263efaecc5a06a0742dc56570e2fb5ff94c4f2e4b2fbdcddd73cf24",
+      "bytes": 1480032
+    },
+    {
+      "path": "indices/archive.ubuntu.com_ubuntu_dists_resolute_universe_binary-amd64_Packages.xz",
+      "sha256": "1587be86d66d38542325215e0e109f75bd695c8f24d793ace2762038a6ad581e",
+      "bytes": 15960824
+    },
+    {
+      "path": "indices/security.ubuntu.com_ubuntu_dists_resolute-security_InRelease",
+      "sha256": "a09771aa177402e5b8b3464ac309d8e07502eda695687cd7b673d0ffd4d06d04",
+      "bytes": 137403
+    },
+    {
+      "path": "indices/security.ubuntu.com_ubuntu_dists_resolute-security_main_binary-amd64_Packages.xz",
+      "sha256": "7810a08ea76f8601a1431449b4422b667fd1e88998a2c4b2a7768a2f7c155a09",
+      "bytes": 606652
+    },
+    {
+      "path": "indices/security.ubuntu.com_ubuntu_dists_resolute-security_universe_binary-amd64_Packages.xz",
+      "sha256": "eb49764b59f6a8086f992e0c2bb98e6c211913a500a073b04a6c2798bba24773",
+      "bytes": 205528
+    },
+    {
+      "path": "preparation-and-history/bootstrap/repository-manifest.json",
+      "sha256": "76840de959588f7e1dad1a03b505ffc2158660e3f9796122442d3655dade5bdc",
+      "bytes": 2834
+    },
+    {
+      "path": "preparation-and-history/check-icon-fallback-report.log",
+      "sha256": "d71fe9c4884aaa7f5ee22e7933e27b1970d9d55dd6377eac4b628b6db6cb2c07",
+      "bytes": 141
+    },
+    {
+      "path": "preparation-and-history/check-icon-fallback.log",
+      "sha256": "c58912a6cb112e4b56f62c600d534346e2e1dc5d7bb6c36e702cd0cd2d50eddc",
+      "bytes": 463
+    },
+    {
+      "path": "preparation-and-history/complete/repository-manifest.json",
+      "sha256": "01ec2a11a89047fd18768f26abb265e28a788468ec38b02296e823e1b077cdcf",
+      "bytes": 298383
+    },
+    {
+      "path": "preparation-and-history/debug-inputs-cleanup.json",
+      "sha256": "0a4719635268ce2b75bc7e60a5fbd86538c3203749c31744b32efa0aebbb9e29",
+      "bytes": 193
+    },
+    {
+      "path": "preparation-and-history/debug-installed.py",
+      "sha256": "c013fe8082230ee47692d49ae37f547e1b178f8a07b8739dd25a3f146e9debac",
+      "bytes": 5242
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution/vm-cloud-init-status.json",
+      "sha256": "1c6eaa64cc71340ccfacdc14e90ff0fe13670afb733e4a2e316c7ce4e4b32cb5",
+      "bytes": 737
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution/vm-coarse-journal.log",
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e",
+      "bytes": 17
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution/vm-dependency-resolution.txt",
+      "sha256": "025add457062a4fb49e012605e300580f0c9873db9e18624a0475ebe51803714",
+      "bytes": 142532
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution/vm-serial.log",
+      "sha256": "0e82c6e5c1c49a0457ae5d4e551e23577d8280f02b9c63e30951d3d42df04720",
+      "bytes": 98700
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution/vm-systemd-journal.log",
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e",
+      "bytes": 17
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution/vm-systemd-run.log",
+      "sha256": "b2e865037b97d0a85796bc339de7df03287e50df1ca13d199ff3e5d59fc907f3",
+      "bytes": 145009
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution/vm-systemd.json",
+      "sha256": "eded1f5f1ed6a9ba51c3b406bbe69072f7e2a164793fb13b93f46054ee9f9d0a",
+      "bytes": 2469
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution-before-session-packages/vm-cloud-init-status.json",
+      "sha256": "7f5fb38469bbe801703f533ad7e76066be01aaf245b17f00ac604a595bdd5308",
+      "bytes": 734
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution-before-session-packages/vm-coarse-journal.log",
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e",
+      "bytes": 17
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution-before-session-packages/vm-dependency-resolution.txt",
+      "sha256": "edb80c37e67b45a22a857b219389212d3e050ba52eefefe0b39b74f3f831a299",
+      "bytes": 141904
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution-before-session-packages/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution-before-session-packages/vm-serial.log",
+      "sha256": "6332ef153b3f168b683e879cbbddafb3f96d6463eb9ef994103926b9d0e4c93a",
+      "bytes": 97650
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution-before-session-packages/vm-systemd-journal.log",
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e",
+      "bytes": 17
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution-before-session-packages/vm-systemd-run.log",
+      "sha256": "3cd29fa6b56659b9cbb227ec120e92dad2d0212ff42496b7023d86b54fed5f1e",
+      "bytes": 144320
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution-before-session-packages/vm-systemd.json",
+      "sha256": "38464f6070a8b138c49c949f745c84fd9830fb317549194fe85a1a850ca8c6e7",
+      "bytes": 2390
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution-current-driver.log",
+      "sha256": "fb551779af17d5d9bbdcf79593ed37b874f16c0d118ec9699ce132ff1818ef36",
+      "bytes": 207
+    },
+    {
+      "path": "preparation-and-history/dependency-resolution-driver.log",
+      "sha256": "fb551779af17d5d9bbdcf79593ed37b874f16c0d118ec9699ce132ff1818ef36",
+      "bytes": 207
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-1/desktop-journal.log",
+      "sha256": "acb55cbc0eaf75513d19ca402ef74d94927a0798c90520919e5bcffa8dae8d78",
+      "bytes": 59380
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-1/desktop-restart.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-1/graphical-captures/graphical-failure.png",
+      "sha256": "842d691a5d19a72a7167af03b115eff52ef34d47968807dffa92efadf91fd7a8",
+      "bytes": 259791
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-1/graphical-captures/plasma-session-started.png",
+      "sha256": "4040ee19695a62249a24e205c85cf4ac7bd359e7559345eb4c154962cef5af29",
+      "bytes": 20088
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-1/graphical_source.py",
+      "sha256": "a47d3639ccff3557d7b17805cd24b69d1cc7cfe3bb9e535b6bbb9d5eac27d313",
+      "bytes": 21235
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-1/polkit-journal.log",
+      "sha256": "b40b9125e62f66d2dd33899366981d23eb3a81af2f650225a0314298a23d55f1",
+      "bytes": 859
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-1/qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-1/result.json",
+      "sha256": "e1a33b2e856e95fd64dfe52063699494c1ed20877c0dc42a9ba942c85a126df7",
+      "bytes": 13239
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-1/serial.log",
+      "sha256": "38f3c78d5c53648ced025c682076ce14b17bf79cd61c59abf0345fcfe609521f",
+      "bytes": 90959
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-1/systemd_vm_source.py",
+      "sha256": "bcbbf95d11975f7133e0e279dd08336627f70c4b1e248aa784cc3dbeac133ef0",
+      "bytes": 23224
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-1/vm-systemd-run.log",
+      "sha256": "8f3f830fee5731fc0b2ec18e0a5be511002480458d880c0308e73dd9aedf0ed6",
+      "bytes": 107362
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-1-driver.log",
+      "sha256": "3f8b4e1e34319c5f1d18c4d72ffdfb16dcaf1488b244ce7028939c9aa03062f1",
+      "bytes": 443
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-2/desktop-journal.log",
+      "sha256": "749087bd532694a50fd0a48fe83424f8ae427a63229a62c44071bd02643953dd",
+      "bytes": 113233
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-2/graphical-captures/graphical-failure.png",
+      "sha256": "87ab8794afa337f6fcfc2a138393551f230d6792be26df2590f1698074314335",
+      "bytes": 251400
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-2/graphical-captures/plasma-session-started.png",
+      "sha256": "55b7adda36792e473f9db6710a915b6a5538fcf06d6e5b9894fde6d457493aef",
+      "bytes": 19996
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-2/graphical_source.py",
+      "sha256": "3d5cee3156d2a82e037a1c700a9614c1f97c7de5971e883350e331c26abf4e12",
+      "bytes": 21385
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-2/polkit-journal.log",
+      "sha256": "e303539a9a0c7755fb2e56f2b848af8b6e0c80d4ececf2caf5d68b57071844d9",
+      "bytes": 1450
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-2/qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-2/result.json",
+      "sha256": "85b2a044d11138f1d901cd875463337978f87ed94c2f2f4d0440bb02d9b8a7e4",
+      "bytes": 13286
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-2/serial.log",
+      "sha256": "b0e99fddbd340a56cc85e4fb101298e81620c76961c863546135cde3b045120e",
+      "bytes": 90671
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-2/systemd_vm_source.py",
+      "sha256": "bcbbf95d11975f7133e0e279dd08336627f70c4b1e248aa784cc3dbeac133ef0",
+      "bytes": 23224
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-2/vm-systemd-run.log",
+      "sha256": "10414c3ad9c35d6744150bcfff55f8f6ce8c8a06ecd8c555164fc4bb1c4e5ed3",
+      "bytes": 129045
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-2-driver.log",
+      "sha256": "3f8b4e1e34319c5f1d18c4d72ffdfb16dcaf1488b244ce7028939c9aa03062f1",
+      "bytes": 443
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-3/desktop-journal.log",
+      "sha256": "497e66be15d0d1d0716596b5d4cb594545f7ebc44cae0886b4f3d160e01d3a4b",
+      "bytes": 161243
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-3/graphical-captures/graphical-failure.png",
+      "sha256": "28406df34cd12746c3081e2bf934a15781e7292cfbc913d2fbba4ea7804f8ec1",
+      "bytes": 252363
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-3/graphical-captures/plasma-session-started.png",
+      "sha256": "a4b2d2af2afe64a1adb524994c0f2c446b405695e14213ccf4addec4a15b3c2c",
+      "bytes": 19871
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-3/graphical_source.py",
+      "sha256": "9c2eb5c7967aea232d9436053c0ec3e0487ae21003c3881d8d58e7ff7c33028f",
+      "bytes": 21629
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-3/polkit-journal.log",
+      "sha256": "eebbe8b3867873a31190815ad29f5463df8ef42b147cdc8b912d6bfe0f39ae89",
+      "bytes": 2041
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-3/qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-3/result.json",
+      "sha256": "1f182c7307e6723d2c4995aa3bc229353726040bbb44a04242f31054139cb09d",
+      "bytes": 13097
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-3/serial.log",
+      "sha256": "84c7c0a705a837c7c0f277accc4dbe76d8ffe457215d2cc47939c9ab6c059562",
+      "bytes": 91864
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-3/systemd_vm_source.py",
+      "sha256": "bcbbf95d11975f7133e0e279dd08336627f70c4b1e248aa784cc3dbeac133ef0",
+      "bytes": 23224
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-3/vm-systemd-run.log",
+      "sha256": "2be1dd35a92c20d696806c59f6fc6e4197e71b3afc56118981edf0c7907ad3b6",
+      "bytes": 177328
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-3-driver.log",
+      "sha256": "3f8b4e1e34319c5f1d18c4d72ffdfb16dcaf1488b244ce7028939c9aa03062f1",
+      "bytes": 443
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-4/desktop-journal.log",
+      "sha256": "53dbfa72721b3e24618fc134778c57215e120d2c4c4efdbba870b818d26e06db",
+      "bytes": 267258
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-4/graphical-captures/plasma-session-started.png",
+      "sha256": "97256b7175f5a2bb8bd5e3f62f0c01625ddfca213b740deecd8a3b4527085e34",
+      "bytes": 19811
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-4/graphical-captures/polkit-approval-prompt.png",
+      "sha256": "b3371c4f64eb770ad8bc23d1be0a5cbd0b27ac67653a1e280ae7e3471ab265ed",
+      "bytes": 271324
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-4/graphical-captures/polkit-cached-policy-import.png",
+      "sha256": "a253646ba40fa0a134ac5ee667ca26b9be886a2c38142b985ce640e5426dc3ea",
+      "bytes": 254345
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-4/graphical-captures/polkit-expired-authorization.png",
+      "sha256": "9615a375db2977744a12c80059cc84965c742e6f56bc85774289f8acd35b33bb",
+      "bytes": 253683
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-4/graphical-captures/polkit-rejected-password.png",
+      "sha256": "e06def1e5008ad1254c5963396cc3fc43f564d4920d4478f4e7f298bb56a47e3",
+      "bytes": 269273
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-4/graphical_source.py",
+      "sha256": "d18ca9448d71de3737e3e16de6650830e9fb0cbc9a958b09cb6c880d093eed53",
+      "bytes": 21815
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-4/polkit-journal.log",
+      "sha256": "9e53ba759dd87a2baa97b1752ba29103e79de4d92548e0c57b9e3ebf4b27c1d6",
+      "bytes": 3406
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-4/qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-4/result.json",
+      "sha256": "252d38018fe2ae4e6506f3624b1f76698aa307303f8884b5089de81f0feed604",
+      "bytes": 13292
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-4/serial.log",
+      "sha256": "05991c959cd301dfcecc3cf7a0a125646320ce219569959a750f72495e5ff3c7",
+      "bytes": 91176
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-4/systemd_vm_source.py",
+      "sha256": "bcbbf95d11975f7133e0e279dd08336627f70c4b1e248aa784cc3dbeac133ef0",
+      "bytes": 23224
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-4/vm-systemd-run.log",
+      "sha256": "92f5ff686e036ae797bcbeb1e30addee21823fe7b5daf30230b9bc544c818a1d",
+      "bytes": 293831
+    },
+    {
+      "path": "preparation-and-history/graphical-debug-4-driver.log",
+      "sha256": "3f33e76aa45dfc322763774078bbca31216bbaf87b613ef32d9c04035c5ca879",
+      "bytes": 114
+    },
+    {
+      "path": "preparation-and-history/icon-loader-before.json",
+      "sha256": "109919cfcd7225c7e9e76e68fc85ed86612c7f43973e0c2849c16ef7bcfa3987",
+      "bytes": 116
+    },
+    {
+      "path": "preparation-and-history/icon-theme-before-stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "preparation-and-history/icon-theme-before.json",
+      "sha256": "92ac1202729f1c34be3ac5b817f06ad4d8462ca991cde7c2537ab680f032622c",
+      "bytes": 2097
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-1/cleanup-after-inspection.json",
+      "sha256": "75c705bef1e1a3eb1b2a9b642f5648a691ba315f5607f239aaba601b288a75d1",
+      "bytes": 157
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-1/command.json",
+      "sha256": "7c3ed24042494af4ec74e03a2c4ec3f7fab5c4032ebacddd2b89a912b46b195d",
+      "bytes": 1203
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-1/driver.log",
+      "sha256": "c982c4cb4d4694c01601fca322e62c0638cb54081048f46cbcc314a046b217a7",
+      "bytes": 797
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-1/graphical-captures/graphical-failure.png",
+      "sha256": "4e7f57f6af218c602468406765cdfd5a29fac9177a5bbd42001e0add3b62a3ea",
+      "bytes": 260089
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-1/graphical-captures/plasma-session-started.png",
+      "sha256": "e040867318d971312ff6a5ed986a27f2e5b83433f85b58190162f41c8beb6022",
+      "bytes": 259776
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-1/protocol-debug.log",
+      "sha256": "42c415d7b25c8e91b52297f31007045bb5543d03c103e1709482aeb7a09c8282",
+      "bytes": 116
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-1/vm-cloud-init-status.json",
+      "sha256": "fad57c66b884a66f4664852ca6865ca890f25ac30dba017f59f40e2405545309",
+      "bytes": 736
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-1/vm-coarse-journal.log",
+      "sha256": "46253045319e0776bb610b292eea458507137841f61f4a82d9a53e6c27cfd9a0",
+      "bytes": 4948
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-1/vm-desktop-journal.log",
+      "sha256": "94fc21aa238728220fdb8b7516412180ad67efb25eb0bda47d6077fee029068f",
+      "bytes": 51304
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-1/vm-polkit-journal.log",
+      "sha256": "05e0c095b4efb07bf369927069970c142e97d7edb00cf7b0516177c26a4a4381",
+      "bytes": 268
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-1/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-1/vm-serial.log",
+      "sha256": "77c720c088a89ca14ef8975438a893802ce646a633bea6919a8825dfe7c26fbf",
+      "bytes": 99090
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-1/vm-systemd-journal.log",
+      "sha256": "fed3d657165115773fef1118737544ec60aa5311a9d801df3b989e45eaf4d9b7",
+      "bytes": 100589
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-1/vm-systemd-run.log",
+      "sha256": "42adf82ae032b739d57231290b631104ee1205809cc6b9a54e6bb4fe1f1e90d7",
+      "bytes": 451022
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-1/vm-systemd.json",
+      "sha256": "ffcd16585bb2166bc30dfa9d7c04c8fbd3b6685678deafcbaf5dc706b55cf700",
+      "bytes": 14957
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-2/command.json",
+      "sha256": "7c3ed24042494af4ec74e03a2c4ec3f7fab5c4032ebacddd2b89a912b46b195d",
+      "bytes": 1203
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-2/driver.log",
+      "sha256": "e6a1ff7e47e91ad89be485c42b994a370edb202bee8f6bb26e8e66025ef644c5",
+      "bytes": 730
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-2/graphical-captures/graphical-failure.png",
+      "sha256": "5436db0de901d7ac343b08c945c6a04b999a3ab26ec693380ff8b4547444dac5",
+      "bytes": 5374
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-2/graphical-captures/plasma-session-started.png",
+      "sha256": "5436db0de901d7ac343b08c945c6a04b999a3ab26ec693380ff8b4547444dac5",
+      "bytes": 5374
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-2/harness-sources/graphical_polkit_vm_inner.py",
+      "sha256": "3989ffe048aba312248616624f91797de5fac0de415a5a11a7e431ac443e3439",
+      "bytes": 21098
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-2/harness-sources/prepare-offline-vm-repository.py",
+      "sha256": "acad965efa2e7cbf285d3000b4f101add860ee47d78f5e33121770980b07d195",
+      "bytes": 7765
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-2/harness-sources/systemd_vm.py",
+      "sha256": "bcbbf95d11975f7133e0e279dd08336627f70c4b1e248aa784cc3dbeac133ef0",
+      "bytes": 23224
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-2/vm-cloud-init-status.json",
+      "sha256": "11b8487eee197383611970b58467058cec8dffe1ca04b639ab8f81d88d8e546f",
+      "bytes": 739
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-2/vm-coarse-journal.log",
+      "sha256": "64f93c7605e5a40b3dbaca7b29673231f3eb799a3ea255ddf07013c90e873ffb",
+      "bytes": 4948
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-2/vm-desktop-journal.log",
+      "sha256": "cf4d80dd80f553ff4baf0465cb052cc5bcebc45a569930bb50cd26037dd91663",
+      "bytes": 6206
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-2/vm-polkit-journal.log",
+      "sha256": "dae5c165b7494fceb180ed0761d6a9ca0613714b8d2b2caaf459263826a4c759",
+      "bytes": 268
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-2/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-2/vm-serial.log",
+      "sha256": "4e5bd46d95f5113905c4ba36ba7d8e57e856cd7042b26fc191458767c8956bae",
+      "bytes": 98657
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-2/vm-systemd-journal.log",
+      "sha256": "2044e7745920dd7a961f1dcd10ea1502b2ac62f7ce37de2cff856facbd255c21",
+      "bytes": 8189
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-2/vm-systemd-run.log",
+      "sha256": "3c53022b56ef408ba52f98561ba71bb35aba93db7bd2c9ca47c18949804c50e8",
+      "bytes": 308704
+    },
+    {
+      "path": "preparation-and-history/installed-attempt-2/vm-systemd.json",
+      "sha256": "d11d784ad1f34c4b0098864346109a4469be2fcc9a78fea6a4a08ea18620a5ce",
+      "bytes": 11210
+    },
+    {
+      "path": "preparation-and-history/main-only-compat/repository-manifest.json",
+      "sha256": "1a78f52a90fcd7ef6e037b73036ea20a6f79d49a990557f8ad82e2caec73987f",
+      "bytes": 45097
+    },
+    {
+      "path": "preparation-and-history/prepare-complete-resumed.log",
+      "sha256": "4f57e04e967025bae033ea2b6e7a20d1ad64e82e20d1e0fc876c01c7959dab8d",
+      "bytes": 13628
+    },
+    {
+      "path": "preparation-and-history/prepare-complete.log",
+      "sha256": "3cdfcf468b5aeb920aefa3f85c8536950cf21b2834a2a3b584f5b5ff69f9b597",
+      "bytes": 1784
+    },
+    {
+      "path": "preparation-and-history/prepare-main-only-compat.log",
+      "sha256": "04a22000d0cbeeee5a5b81c2c0bcc2825269f8846bb2243454b6cb1e0f2de8cf",
+      "bytes": 218
+    },
+    {
+      "path": "preparation-and-history/prepare-metadata.log",
+      "sha256": "4edff4587cfca9c1dc7d86f0ffd5f718cc45b6e8aa40ce0e3985a84c8de4cc89",
+      "bytes": 210
+    },
+    {
+      "path": "preparation-and-history/probe-icons.py",
+      "sha256": "fcfe1f28ce4b183739a35ec5e81c05f73e374586c1ed53766d8fece8bf29eca5",
+      "bytes": 1810
+    },
+    {
+      "path": "preparation-and-history/protected-host-before.json",
+      "sha256": "1ad4b6be0024548a77a6beedcb2d0a453192be8e4cf573b40323173f5260fc72",
+      "bytes": 1431
+    },
+    {
+      "path": "preparation-and-history/requested-desktop-packages.json",
+      "sha256": "024b46371f9d7e1dac9bb7f64409a68078b22710eb5f7822fcfd6c00a9d2723a",
+      "bytes": 318
+    },
+    {
+      "path": "preparation-and-history/run-installed.py",
+      "sha256": "0ff931189ffd521af76b0441ef9fc46dd730d2d52330507c0e153c3e0e8650c2",
+      "bytes": 1094
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "916df350180eb70ab8db58703ff6d546b23990904b6e837ac9c06c6ecb3019e3",
+      "bytes": 17578
+    }
+  ],
+  "limits": [
+    "real store games/accounts",
+    "managed Flatpak execution",
+    "physical input/focus/display",
+    "full accessibility and all theme states",
+    "other distributions",
+    "physical HP controls and suspend/recovery"
+  ],
+  "failures_retained": "See DESKTOP_VALIDATION_2026-10-28.md and preparation-and-history/; initial native Wayland picker failure retained under current/native-wayland/."
+}

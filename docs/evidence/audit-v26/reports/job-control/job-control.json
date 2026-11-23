@@ -1,0 +1,18 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "system_power_bus_used": false,
+  "checks_passed": [
+    "an inherited nonstandard descriptor reaches the actual command and profile ownership ends after exit",
+    "foreground terminal identity survives managed wrapping; stopping/resuming the process group retains its hold until normal exit"
+  ],
+  "cli_sha256": "ece37eac3e83deb8f6fe4b0ac14815addd9092f91630adab1062357cf8eb9d05",
+  "terminal_identity": {
+    "pid": 831944,
+    "pgid": 831943,
+    "tty": true,
+    "foreground": 831943
+  },
+  "cleanup_complete": true
+}

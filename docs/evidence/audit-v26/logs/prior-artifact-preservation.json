@@ -1,0 +1,15 @@
+{
+  "prior_package_hashes_unchanged": {
+    "21": "25964019083530e3c3e567dca7edd13cb4eebe1ce0ad2eea8aacc7f301ae3edf",
+    "22": "a0745f145d6c8626f9568d1379af2cb10ab6c4a78f1dfaf52a526288c40c0455",
+    "23": "4fafc9356f712be2bbf4d642747daade0e689adbf23fa334f61d41cfb0945abe",
+    "24": "1a7eb732fa5c672c2e920396ccdf163b718bb008008bc4cedd69ac7f8bb226df",
+    "25": "c84e5e60bc2e0b7254cf0430e68030c0e2681ff13913c39336621fe7068f5e54"
+  },
+  "prior_evidence_summary_hashes": {
+    "flatpak-nested-bridge": "7177bb1fb9b8563347625bfc168d54fd53fe81f3fc016b72ed2fff3a5e26419e",
+    "flatpak-bridge-development": "b96506d2d22d2b7dc6ccd02ae65bd36b5abb45fab16dcd1828a4cf5b17918a92",
+    "session-migration-v25": "de7e956bed40d6ad618cd0a38ad143da404b27f15b8b2fa1f9068de058f3327f",
+    "sensor-browser-v24": "579ef9c40d7964dbee2343ec71c43e95cbdabf920eac7faed41999a65dc55254"
+  }
+}

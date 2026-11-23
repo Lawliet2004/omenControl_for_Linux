@@ -1,0 +1,1296 @@
+{
+  "result": "observations_verified",
+  "managed_flatpak_supported": false,
+  "product_changed": false,
+  "package_revision": 24,
+  "package": "target/debian/omen-linux_0.1.0-24_amd64.deb",
+  "package_bytes": 3694524,
+  "package_sha256": "1a7eb732fa5c672c2e920396ccdf163b718bb008008bc4cedd69ac7f8bb226df",
+  "product_sources_unchanged": 132,
+  "final_vm_checks": 40,
+  "flatpak_observation_checks": 7,
+  "physical_hardware_writes": false,
+  "real_flatpak_game_tested": false,
+  "fixture_profile_provider_private": true,
+  "host_preservation": {
+    "protected_processes": [
+      {
+        "pid": 3278700,
+        "start_ticks": 31333165,
+        "command": "/home/papan/Desktop/Projects/omen/target/release/omen-gui --page fan"
+      },
+      {
+        "pid": 2124598,
+        "start_ticks": 18438269,
+        "command": "./target/release/omen-daemon --mock"
+      },
+      {
+        "pid": 2563,
+        "start_ticks": 1676,
+        "command": "/usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1"
+      }
+    ],
+    "vm_runs": [
+      {
+        "directory": "runtime",
+        "result": "failed",
+        "qemu_pid": 369134,
+        "vm_exited": true,
+        "temporary_files_removed": true
+      },
+      {
+        "directory": "attempt-2/runtime",
+        "result": "failed",
+        "qemu_pid": 377456,
+        "vm_exited": true,
+        "temporary_files_removed": true
+      },
+      {
+        "directory": "attempt-3/runtime",
+        "result": "passed",
+        "qemu_pid": 379222,
+        "vm_exited": true,
+        "temporary_files_removed": true
+      },
+      {
+        "directory": "attempt-4/runtime",
+        "result": "failed",
+        "qemu_pid": 382503,
+        "vm_exited": true,
+        "temporary_files_removed": true
+      },
+      {
+        "directory": "attempt-5/runtime",
+        "result": "passed",
+        "qemu_pid": 384029,
+        "vm_exited": true,
+        "temporary_files_removed": true
+      },
+      {
+        "directory": "resolution",
+        "result": "resolved",
+        "qemu_pid": 356154,
+        "vm_exited": true,
+        "temporary_files_removed": true
+      }
+    ],
+    "host_installation_after": {
+      "omen-linux": false,
+      "flatpak": false
+    },
+    "protected_container": {
+      "Running": true,
+      "Paused": false,
+      "Pid": 3101448,
+      "StartedAt": "2026-10-26T19:37:22.265072939Z"
+    }
+  },
+  "prior_source_baseline": "docs/evidence/notification-workflow-v24/source-manifest.json",
+  "prior_source_manifest_sha256": "9dac9d099764dbba1cd8b03aaf43e9ea03eb364afc0b62b71e11c32133bf4dc6",
+  "upstream": {
+    "commit": "e761a8885453c217a931281092a641ebbdd0a0c6",
+    "tag": "1.16.6",
+    "tag_signature_verified": false,
+    "files": [
+      {
+        "path": "common/flatpak-run.c",
+        "source_url": "https://raw.githubusercontent.com/flatpak/flatpak/e761a8885453c217a931281092a641ebbdd0a0c6/common/flatpak-run.c",
+        "bytes": 142330,
+        "sha256": "bd2842b5f1f200e6613b09f11d834f97dcd441217e8178bb2a54c9daf7666164",
+        "matches_downloaded_archive": true
+      },
+      {
+        "path": "app/flatpak-builtins-enter.c",
+        "source_url": "https://raw.githubusercontent.com/flatpak/flatpak/e761a8885453c217a931281092a641ebbdd0a0c6/app/flatpak-builtins-enter.c",
+        "bytes": 10931,
+        "sha256": "26db16a93442972f5b1bdcc01f2c0b2c45ec63952654f5082731167d76734ce5",
+        "matches_downloaded_archive": true
+      },
+      {
+        "path": "tests/make-test-runtime.sh",
+        "source_url": "https://raw.githubusercontent.com/flatpak/flatpak/e761a8885453c217a931281092a641ebbdd0a0c6/tests/make-test-runtime.sh",
+        "bytes": 2288,
+        "sha256": "e81e5f0e9fd5f3bbc4042a2654d3524bc99084dd4ae2bc96048077205a7bfaa2",
+        "matches_downloaded_archive": true
+      }
+    ]
+  },
+  "offline_repository_sha256": "db5a0f709c2957d9d9115cacbfe7f2d608b20725085003448e33a170b90edea7",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 1236,
+      "sha256": "52612e03e79e3a3eb38dab7ba28af3124d062863b2c55931eba07c607f6819b1"
+    },
+    {
+      "path": "collect-evidence.py",
+      "bytes": 7491,
+      "sha256": "642394b7fdf9b78baef3c6079c2b4e38f1939dd8bf0050ca4fe19aede899fe65"
+    },
+    {
+      "path": "documentation-manifest.json",
+      "bytes": 959,
+      "sha256": "d73f7880a8430b48b05a4cade53c20791fb3b50fc62acdf9e8e8477947369f97"
+    },
+    {
+      "path": "inputs/repository-build.log",
+      "bytes": 483,
+      "sha256": "db18d8a0a758bb3dec4aeead4018202d1228540cf3c1122ed0a42913efcd38f7"
+    },
+    {
+      "path": "inputs/repository-independent-verification.json",
+      "bytes": 22394,
+      "sha256": "97250cf4bf43d924c812fc80455533e30c7e43b16126c4ffba36b72a424d65c7"
+    },
+    {
+      "path": "inputs/repository-manifest.json",
+      "bytes": 50366,
+      "sha256": "84c0e89db4c26cc66033829bc99074acf341b03b2c13fc4ddf205413b9284c9c"
+    },
+    {
+      "path": "inputs/upstream/COPYING",
+      "bytes": 26530,
+      "sha256": "dc626520dcd53a22f727af3ee42c770e56c97a64fe3adb063799d8ab032fe551"
+    },
+    {
+      "path": "inputs/upstream/flatpak-1.16.6.tar.gz",
+      "bytes": 2232889,
+      "sha256": "af9df1ab2143afabc345b6af6ef7111fb5ebe8635f08763cfa84e9151c571663"
+    },
+    {
+      "path": "inputs/upstream/pinned-source-verification.json",
+      "bytes": 1157,
+      "sha256": "142bedd649e046b96f3f7ffdd2d08f6c81af47bfb1edda5076b5cdf02848bee3"
+    },
+    {
+      "path": "inputs/upstream/source/app/flatpak-builtins-enter.c",
+      "bytes": 10931,
+      "sha256": "26db16a93442972f5b1bdcc01f2c0b2c45ec63952654f5082731167d76734ce5"
+    },
+    {
+      "path": "inputs/upstream/source/common/flatpak-run.c",
+      "bytes": 142330,
+      "sha256": "bd2842b5f1f200e6613b09f11d834f97dcd441217e8178bb2a54c9daf7666164"
+    },
+    {
+      "path": "inputs/upstream/source/tests/make-test-runtime.sh",
+      "bytes": 2288,
+      "sha256": "e81e5f0e9fd5f3bbc4042a2654d3524bc99084dd4ae2bc96048077205a7bfaa2"
+    },
+    {
+      "path": "inputs/upstream/source.json",
+      "bytes": 245,
+      "sha256": "203e0d72e23810c69fddd332b46499e56e980baa81a3b4d2db32b1373f6995d1"
+    },
+    {
+      "path": "inputs/upstream/upstream-tag-object.json",
+      "bytes": 2813,
+      "sha256": "79516b1664b82de1ce8d51c46d7d2f967cab2be15c030c35753622bf856ab523"
+    },
+    {
+      "path": "inputs/upstream/upstream-tag.json",
+      "bytes": 333,
+      "sha256": "e0e985f4185deb86669ca205563a6f4a7dc650125f1711ef9ab9a1faad5329d8"
+    },
+    {
+      "path": "inputs/verified-signed-indices/resolute-InRelease",
+      "bytes": 135549,
+      "sha256": "45f95ce276cdba3e41870516a130e03c58b8b7a79e9546b0efe9e526d255740c"
+    },
+    {
+      "path": "inputs/verified-signed-indices/resolute-security-InRelease",
+      "bytes": 137403,
+      "sha256": "a09771aa177402e5b8b3464ac309d8e07502eda695687cd7b673d0ffd4d06d04"
+    },
+    {
+      "path": "inputs/verified-signed-indices/resolute-updates-InRelease",
+      "bytes": 137401,
+      "sha256": "4c8935f781b121d843c8a4141ab6819732c50872401ab19dddb2ce4b1f3c3b2b"
+    },
+    {
+      "path": "reports/docs/APPLICATION_AUDIT_IMPLEMENTATION.md",
+      "bytes": 32347,
+      "sha256": "251f4ab9ef226a7db5e8edd86293d0ad66d2f436cb4e0b03219315dd8ec743e3"
+    },
+    {
+      "path": "reports/docs/CONTINUATION_CHECKLIST.md",
+      "bytes": 8702,
+      "sha256": "654c3c348425f86374fb36525115fe28f20b2f99faf1f74708341ca448bd9fb0"
+    },
+    {
+      "path": "reports/docs/FLATPAK_SESSION_BOUNDARIES_2026-10-28.md",
+      "bytes": 7139,
+      "sha256": "8a055f67e4ede40b2799b184ce50cfe300889f5fe7f7f5737a1c626dcbab9646"
+    },
+    {
+      "path": "reports/docs/GAME_LAUNCHERS.md",
+      "bytes": 12496,
+      "sha256": "19ddebafac6d20ac5923ce6c181e4d7d033454555aa6e80493bf57866858caf1"
+    },
+    {
+      "path": "reports/docs/IMPLEMENTATION_STATUS.md",
+      "bytes": 25802,
+      "sha256": "ef58bd7da2cb44c179f0b78cb8b2aa6c2ca57797e8d8f79ea31da7f1fe4b3b86"
+    },
+    {
+      "path": "reports/docs/MANAGED_GAME_SESSIONS.md",
+      "bytes": 14997,
+      "sha256": "545982215980c343250a349ef1e5041925f91851b956801bf1a1485cd698e3e4"
+    },
+    {
+      "path": "reports/docs/TEST_REPORT.md",
+      "bytes": 48241,
+      "sha256": "b205b9afe76f38b4699b9de50d7011799d41f909079f2c3a4bd99c639ee84c7a"
+    },
+    {
+      "path": "runs/attempt-1/command.json",
+      "bytes": 650,
+      "sha256": "28985bd27eeb21ba9be89776c8817a2237ad4b4776a71c3205165bd23d00069e"
+    },
+    {
+      "path": "runs/attempt-1/console.log",
+      "bytes": 1419,
+      "sha256": "df9759afbeb51ae7a02ee2738be887dcfd1b1b87114f45a69250871eaffdc5dc"
+    },
+    {
+      "path": "runs/attempt-1/runtime/vm-cloud-init-status.json",
+      "bytes": 736,
+      "sha256": "278b752b7db5eae748288c87f933110c560717baf3cd7fcef74649599b0253b5"
+    },
+    {
+      "path": "runs/attempt-1/runtime/vm-coarse-journal.log",
+      "bytes": 4948,
+      "sha256": "6781fc1b4455798aea8536ca5104406e68d80ff944841cad1cfbb4ff752ebea7"
+    },
+    {
+      "path": "runs/attempt-1/runtime/vm-qemu.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/attempt-1/runtime/vm-serial.log",
+      "bytes": 98140,
+      "sha256": "e10d0299f09b4e2292690bcebc4f90aaf9948b44765e8b5fce3d3874da254e4b"
+    },
+    {
+      "path": "runs/attempt-1/runtime/vm-systemd-journal.log",
+      "bytes": 7201,
+      "sha256": "12acf0b82daeed1349929e38417e0dd0b00be996f22051681c71ca976b45bb48"
+    },
+    {
+      "path": "runs/attempt-1/runtime/vm-systemd-run.log",
+      "bytes": 102119,
+      "sha256": "0b1e0648e0f5347c35c1d40374f6c6f6afb755099fc98ed7066f18bd88610823"
+    },
+    {
+      "path": "runs/attempt-1/runtime/vm-systemd.json",
+      "bytes": 11067,
+      "sha256": "c7f4b59b9f9246a96706b7f3c90ba7a54ab6441f7e6e3e12a98382977349f473"
+    },
+    {
+      "path": "runs/attempt-1/test-inputs/flatpak_scope_vm_inner.py",
+      "bytes": 11775,
+      "sha256": "01b29bbe17d04aa0678b22d0ace48c5d0dc999eea61676c50dbdf39ab3f51023"
+    },
+    {
+      "path": "runs/attempt-1/test-inputs/manifest.json",
+      "bytes": 293,
+      "sha256": "14106de0da265b82ab8cd0809c439d1c60e227bae8f0d32b1429c429cacb57f1"
+    },
+    {
+      "path": "runs/attempt-1/test-inputs/systemd_vm.py",
+      "bytes": 25563,
+      "sha256": "868f68f5f4f3f0b3699df73dc8485d76192acd9859ea84ffc9b5d275390e4942"
+    },
+    {
+      "path": "runs/attempt-2/command.json",
+      "bytes": 650,
+      "sha256": "28985bd27eeb21ba9be89776c8817a2237ad4b4776a71c3205165bd23d00069e"
+    },
+    {
+      "path": "runs/attempt-2/console.log",
+      "bytes": 1419,
+      "sha256": "99bde6792c1f35ca6441be4a3dffacf949661fa409e90261dabceeb85fb99502"
+    },
+    {
+      "path": "runs/attempt-2/runtime/vm-cloud-init-status.json",
+      "bytes": 734,
+      "sha256": "155ae521447273f36726ef92d77644ec57222e7c7007655f3707411952009490"
+    },
+    {
+      "path": "runs/attempt-2/runtime/vm-coarse-journal.log",
+      "bytes": 4948,
+      "sha256": "bc13643e71f41a62bf6be9167785d77721a1d8ab2a784ae1db1cc9c9df13ec42"
+    },
+    {
+      "path": "runs/attempt-2/runtime/vm-qemu.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/attempt-2/runtime/vm-serial.log",
+      "bytes": 98078,
+      "sha256": "4554df3dbef748134669a96181217300c25bf5ed0d097c6f900ed58bb40d2803"
+    },
+    {
+      "path": "runs/attempt-2/runtime/vm-systemd-journal.log",
+      "bytes": 7199,
+      "sha256": "a547ce683cea993adebae5ad970b858de788c87ff56537fc6e0f6e01e7c05c11"
+    },
+    {
+      "path": "runs/attempt-2/runtime/vm-systemd-run.log",
+      "bytes": 102988,
+      "sha256": "faadcf3db6102c84a99772acf39ba6e281626d7a0560b5413299cd0f22f46a27"
+    },
+    {
+      "path": "runs/attempt-2/runtime/vm-systemd.json",
+      "bytes": 10857,
+      "sha256": "471fb8167b216abdc51d5490165e4ba55605c897ff01f0205991e686883fc621"
+    },
+    {
+      "path": "runs/attempt-2/test-inputs/flatpak_scope_vm_inner.py",
+      "bytes": 12417,
+      "sha256": "c3b566e1f8766d51bb5f495d7f3ce7c0b5a9ec50c424483b94dcb6726abe593b"
+    },
+    {
+      "path": "runs/attempt-2/test-inputs/manifest.json",
+      "bytes": 293,
+      "sha256": "0595b05d3894b7d692e38fb5ffbda33bee266a92baa682278c8960b4ed27a179"
+    },
+    {
+      "path": "runs/attempt-2/test-inputs/systemd_vm.py",
+      "bytes": 25563,
+      "sha256": "868f68f5f4f3f0b3699df73dc8485d76192acd9859ea84ffc9b5d275390e4942"
+    },
+    {
+      "path": "runs/attempt-3/command.json",
+      "bytes": 650,
+      "sha256": "28985bd27eeb21ba9be89776c8817a2237ad4b4776a71c3205165bd23d00069e"
+    },
+    {
+      "path": "runs/attempt-3/console.log",
+      "bytes": 15102,
+      "sha256": "976b0727a79aab0299bd96e85e8f756a6fddfa0c63559b139039f9273768d4a0"
+    },
+    {
+      "path": "runs/attempt-3/runtime/vm-cloud-init-status.json",
+      "bytes": 735,
+      "sha256": "d9e8d00fca73fc7b7613d65a8c56bebbd7d9fb40c1830b73dc7ba15946be40d6"
+    },
+    {
+      "path": "runs/attempt-3/runtime/vm-coarse-journal.log",
+      "bytes": 4948,
+      "sha256": "62590e931baec52740439d8c44b1671ca44d1cc2cf761bf075878c4cabc156ab"
+    },
+    {
+      "path": "runs/attempt-3/runtime/vm-qemu.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/attempt-3/runtime/vm-serial.log",
+      "bytes": 278698,
+      "sha256": "e4899ff2b5a75e76fdeff30c2cc6ff1cb36b1c96d576cb050976f69fec779294"
+    },
+    {
+      "path": "runs/attempt-3/runtime/vm-systemd-initial-journal.log",
+      "bytes": 7198,
+      "sha256": "4946e2ea96336fe41e3562775f5e9779aab5e3aec6aed16764c53c0d69219d61"
+    },
+    {
+      "path": "runs/attempt-3/runtime/vm-systemd-journal.log",
+      "bytes": 11589,
+      "sha256": "b2e5d57fd001727a1cc0592c131959d1a6ec7662230b6c553943888208869b8b"
+    },
+    {
+      "path": "runs/attempt-3/runtime/vm-systemd-run.log",
+      "bytes": 147548,
+      "sha256": "2a21fce4caeeea7531874818f43cd3fde243ce9983447c5f35d1d09eedee8f24"
+    },
+    {
+      "path": "runs/attempt-3/runtime/vm-systemd.json",
+      "bytes": 14895,
+      "sha256": "85e2fada00c4ecd37abdda4c3065c6f4ef6ea2223b7e8e11e8fda731cbf9f7ba"
+    },
+    {
+      "path": "runs/attempt-3/test-inputs/flatpak_scope_vm_inner.py",
+      "bytes": 12591,
+      "sha256": "f395dc6928999e77035df5837659e0fc86b035b3aaee7be25df153b99572032f"
+    },
+    {
+      "path": "runs/attempt-3/test-inputs/manifest.json",
+      "bytes": 293,
+      "sha256": "c11eb2065e96305a6f085747c6d88403aadc27fa90d4875d2f9e88290c7cb43e"
+    },
+    {
+      "path": "runs/attempt-3/test-inputs/systemd_vm.py",
+      "bytes": 25563,
+      "sha256": "868f68f5f4f3f0b3699df73dc8485d76192acd9859ea84ffc9b5d275390e4942"
+    },
+    {
+      "path": "runs/attempt-4/command.json",
+      "bytes": 650,
+      "sha256": "28985bd27eeb21ba9be89776c8817a2237ad4b4776a71c3205165bd23d00069e"
+    },
+    {
+      "path": "runs/attempt-4/console.log",
+      "bytes": 1419,
+      "sha256": "039b9e200495829f419da00d359952a94d14350188a88419d07a577cda024b76"
+    },
+    {
+      "path": "runs/attempt-4/runtime/vm-cloud-init-status.json",
+      "bytes": 737,
+      "sha256": "a64451baebf4ba3a4965cac2cb520ae288423a495560c57ddb0c06a4e5f58b82"
+    },
+    {
+      "path": "runs/attempt-4/runtime/vm-coarse-journal.log",
+      "bytes": 4948,
+      "sha256": "6d556489d6e5dce9ae982092bc7ec7f5c0871c29c2d1f360a1cc6a5abdea6212"
+    },
+    {
+      "path": "runs/attempt-4/runtime/vm-qemu.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/attempt-4/runtime/vm-serial.log",
+      "bytes": 97830,
+      "sha256": "b903feebf8cedd7d40cfbd270b9a3e3d0857bb6caf34ae1e743adc6c3a6a62e7"
+    },
+    {
+      "path": "runs/attempt-4/runtime/vm-systemd-journal.log",
+      "bytes": 7201,
+      "sha256": "0f7b4a0a822396a80b9967087261a3ef02320d1b1915fcf7608fd1523f3ff9c1"
+    },
+    {
+      "path": "runs/attempt-4/runtime/vm-systemd-run.log",
+      "bytes": 113643,
+      "sha256": "e1becb671cbdcaa89941eb8bde59fd3549f38b53e726065eaf9210160e4ce89c"
+    },
+    {
+      "path": "runs/attempt-4/runtime/vm-systemd.json",
+      "bytes": 14174,
+      "sha256": "6e8780218bd051bc072728056b717fd05c34d330384d7af29ffdd481213dc52a"
+    },
+    {
+      "path": "runs/attempt-4/test-inputs/flatpak_scope_vm_inner.py",
+      "bytes": 15997,
+      "sha256": "6e4919d4c0c6dbacf1bab77f4feb118d532b35d07b50b77acd11b9e2a7021b94"
+    },
+    {
+      "path": "runs/attempt-4/test-inputs/manifest.json",
+      "bytes": 293,
+      "sha256": "aa349f8de9eff6170c3794c5b6d62439d8809a269f948c76b46e80a16c54a592"
+    },
+    {
+      "path": "runs/attempt-4/test-inputs/systemd_vm.py",
+      "bytes": 25563,
+      "sha256": "868f68f5f4f3f0b3699df73dc8485d76192acd9859ea84ffc9b5d275390e4942"
+    },
+    {
+      "path": "runs/attempt-5/command.json",
+      "bytes": 650,
+      "sha256": "28985bd27eeb21ba9be89776c8817a2237ad4b4776a71c3205165bd23d00069e"
+    },
+    {
+      "path": "runs/attempt-5/console.log",
+      "bytes": 17960,
+      "sha256": "d77083b6d81a1b6b63097653e58ab1b34069afce0af5f6f21d1ceee515547364"
+    },
+    {
+      "path": "runs/attempt-5/runtime/vm-cloud-init-status.json",
+      "bytes": 736,
+      "sha256": "e05f8ee8507254afb75be62bdd8264d6dffc1850039a558b8e0ee969c5fd08ef"
+    },
+    {
+      "path": "runs/attempt-5/runtime/vm-coarse-journal.log",
+      "bytes": 4991,
+      "sha256": "583239a53253f091dc0045fc489c51c57fbbc289e24d0ea88735ef220cfa53c5"
+    },
+    {
+      "path": "runs/attempt-5/runtime/vm-qemu.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/attempt-5/runtime/vm-serial.log",
+      "bytes": 279608,
+      "sha256": "c28d1b394dd0aae2750e8232a71acdf27a013e5798298c2d77eda912cd946501"
+    },
+    {
+      "path": "runs/attempt-5/runtime/vm-systemd-initial-journal.log",
+      "bytes": 7200,
+      "sha256": "24f0edb029aea7ec8d6ee789c4e07df0c16080672487dcff27a4d5271b207d9b"
+    },
+    {
+      "path": "runs/attempt-5/runtime/vm-systemd-journal.log",
+      "bytes": 11593,
+      "sha256": "67dbb34b69903dffb9348916fbb2f87e55061e2ff535b175c66a39c0f54b79de"
+    },
+    {
+      "path": "runs/attempt-5/runtime/vm-systemd-run.log",
+      "bytes": 185168,
+      "sha256": "37ec7e1f8b39bd1ae85e0517acb3841270f6de2bfcd28217405d28f435015734"
+    },
+    {
+      "path": "runs/attempt-5/runtime/vm-systemd.json",
+      "bytes": 17753,
+      "sha256": "a7778f45afac3d7333e678e871ccd0e70e5977bb981931204d7ecc5a3b5d8b8c"
+    },
+    {
+      "path": "runs/attempt-5/test-inputs/flatpak_scope_vm_inner.py",
+      "bytes": 16075,
+      "sha256": "f5b96d06da9485a1c4293af5a166c8b60ada0eed9cac4af175a5ee65e121484e"
+    },
+    {
+      "path": "runs/attempt-5/test-inputs/manifest.json",
+      "bytes": 293,
+      "sha256": "a6053e7909f4845a34aecc32215590cb0a9287e36b42c1ee46d75892765d9988"
+    },
+    {
+      "path": "runs/attempt-5/test-inputs/systemd_vm.py",
+      "bytes": 25563,
+      "sha256": "868f68f5f4f3f0b3699df73dc8485d76192acd9859ea84ffc9b5d275390e4942"
+    },
+    {
+      "path": "runs/dependency-resolution/command.json",
+      "bytes": 518,
+      "sha256": "fcfafe8b642533a0eca15a2730807eacd385f510d9271a0b812adc58a5583048"
+    },
+    {
+      "path": "runs/dependency-resolution/vm-cloud-init-status.json",
+      "bytes": 734,
+      "sha256": "cde1f8d77682cc8efe8fe6117780645f1593b5fcbde7bc222e95144ab864dd33"
+    },
+    {
+      "path": "runs/dependency-resolution/vm-coarse-journal.log",
+      "bytes": 17,
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e"
+    },
+    {
+      "path": "runs/dependency-resolution/vm-dependency-resolution.txt",
+      "bytes": 23547,
+      "sha256": "7873a2e5c84274a0d636ef4ea57d389be62c1680792169d69d5c98fadd5ac8ca"
+    },
+    {
+      "path": "runs/dependency-resolution/vm-qemu.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/dependency-resolution/vm-serial.log",
+      "bytes": 98293,
+      "sha256": "6211c729a284a053bd8e706cea7c3ef59f46e36d33c4646eaa24ecf633d4b502"
+    },
+    {
+      "path": "runs/dependency-resolution/vm-systemd-journal.log",
+      "bytes": 17,
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e"
+    },
+    {
+      "path": "runs/dependency-resolution/vm-systemd-run.log",
+      "bytes": 25811,
+      "sha256": "658396ef59f10f58abc2a8d089dcc63bf7368b3ef9eaab32b6baa68d49e691fd"
+    },
+    {
+      "path": "runs/dependency-resolution/vm-systemd.json",
+      "bytes": 2290,
+      "sha256": "54b68107f43074dca569d4de3f7a3f090533d5bc644b431a21556501e872c9fc"
+    },
+    {
+      "path": "runs/host-preservation.json",
+      "bytes": 1693,
+      "sha256": "128d23312bceb029929c31b87ed5e9f80a0eabf95d8c8e7d9eba9fa9f8d6e63b"
+    },
+    {
+      "path": "runs/product-unchanged-prepublication.json",
+      "bytes": 655,
+      "sha256": "9edd53a1a6ada93c10038717c30c3732c13da3dcf4769aa23e87f02782902b2f"
+    },
+    {
+      "path": "source-manifest.json",
+      "bytes": 18077,
+      "sha256": "9dac9d099764dbba1cd8b03aaf43e9ea03eb364afc0b62b71e11c32133bf4dc6"
+    },
+    {
+      "path": "sources/Cargo.lock",
+      "bytes": 47008,
+      "sha256": "6d8b45a629cb93f3d4dad9587b40ca59af9e72bb3f534c30d9d7dda5189476d4"
+    },
+    {
+      "path": "sources/Cargo.toml",
+      "bytes": 513,
+      "sha256": "910290a37a6378b9bf6474b1d7d2887226ee3cf9298f11ac9ca1e1e85e021379"
+    },
+    {
+      "path": "sources/crates/cli/Cargo.toml",
+      "bytes": 785,
+      "sha256": "9eb30985fe85f130e212415b5239c65113f7409090293378704b7b35b282d76e"
+    },
+    {
+      "path": "sources/crates/cli/src/main.rs",
+      "bytes": 27268,
+      "sha256": "c5f3c5e4c3719fd4d8943e129faf85bd6d8bfceb9873e96aefb5fa8b7037da15"
+    },
+    {
+      "path": "sources/crates/cli/tests/managed_games_native.rs",
+      "bytes": 29442,
+      "sha256": "c80667343397fd28e6f46127d3883a297226e416531522aeb8f14fcf69d5673e"
+    },
+    {
+      "path": "sources/crates/client/Cargo.toml",
+      "bytes": 415,
+      "sha256": "afd70c75d5ef0735bb05573f356276f37fde69e0423af6d34dd7e4508b9728d2"
+    },
+    {
+      "path": "sources/crates/client/src/game_sessions.rs",
+      "bytes": 5958,
+      "sha256": "2a876a5e4b4075dead63d9e187683be21c992c8a9552616bbd12b2d2a6f862af"
+    },
+    {
+      "path": "sources/crates/client/src/game_supervisor.rs",
+      "bytes": 8360,
+      "sha256": "6dc6489fea15d9f905f222e24d393fa6014511823b61b0d01f89b3576c53fa74"
+    },
+    {
+      "path": "sources/crates/client/src/games.rs",
+      "bytes": 18173,
+      "sha256": "591aa0e6681bda68202530c43ef53cf9f38966d0245e277a048c868ca3d6f946"
+    },
+    {
+      "path": "sources/crates/client/src/launch_issues.rs",
+      "bytes": 23949,
+      "sha256": "030bfd7218cddcf74d51cabb0b585eaeb0ffef6a0fc4a712584e66f126cd405e"
+    },
+    {
+      "path": "sources/crates/client/src/lib.rs",
+      "bytes": 181,
+      "sha256": "a3c3c428e4da76ae09c37b9b709b4449f94821e12b92bc9c578ac6690d8a74eb"
+    },
+    {
+      "path": "sources/crates/client/src/monitoring.rs",
+      "bytes": 10657,
+      "sha256": "068df61152f6119febe782954bffcbe12f8fd767667f13690d4160395183fe72"
+    },
+    {
+      "path": "sources/crates/core/Cargo.toml",
+      "bytes": 365,
+      "sha256": "06e796954d04a68da33188976a76c87b5f346f5ac0c744ba566448dc827e66e5"
+    },
+    {
+      "path": "sources/crates/core/src/capability.rs",
+      "bytes": 7794,
+      "sha256": "5049d1256ca4951db854b33af7b5753cda113bf18e175c6b308f0b7ec50f5529"
+    },
+    {
+      "path": "sources/crates/core/src/compatibility.rs",
+      "bytes": 4008,
+      "sha256": "6651bc6e61327749eec70bdf4b075bb984397f7b9d1fe96d08d227aba38d6396"
+    },
+    {
+      "path": "sources/crates/core/src/config.rs",
+      "bytes": 21044,
+      "sha256": "11d9c34a87aa42167cd4cde09a0c2d62ab0e6de1ea727434b820a6c936ebbe62"
+    },
+    {
+      "path": "sources/crates/core/src/error.rs",
+      "bytes": 3718,
+      "sha256": "f71c35836a958b4938eeee57cb8648e3937054a3645af755a3543228135c62df"
+    },
+    {
+      "path": "sources/crates/core/src/fans.rs",
+      "bytes": 8598,
+      "sha256": "6fad037696be614cd7f4a2415a2e985ff38810051827cf45d2a544301d37b4e9"
+    },
+    {
+      "path": "sources/crates/core/src/games.rs",
+      "bytes": 5201,
+      "sha256": "bac91021c9e7d44a07a8a11660e2d32af56f237cb50dd3df578505e384376137"
+    },
+    {
+      "path": "sources/crates/core/src/lib.rs",
+      "bytes": 1068,
+      "sha256": "229796190fe78f7c3a9a7a110db7ed1fabf9e9b7ff66664fa193ee3d2a82fc63"
+    },
+    {
+      "path": "sources/crates/core/src/lighting.rs",
+      "bytes": 2987,
+      "sha256": "3a10b78767dca8299694cbaa721704997bc99371aad3406b70dfe0d4526b29cc"
+    },
+    {
+      "path": "sources/crates/core/src/machine.rs",
+      "bytes": 4267,
+      "sha256": "8b7a0833fa26d2737fcfc135431e70d267d16ae7912bb85499f52c3dabf7dc78"
+    },
+    {
+      "path": "sources/crates/core/src/network.rs",
+      "bytes": 2412,
+      "sha256": "19a3123861406c8d48defa7d9bb8a59effdf229746c14019d176d088b1b66887"
+    },
+    {
+      "path": "sources/crates/core/src/power.rs",
+      "bytes": 1864,
+      "sha256": "ee5e9cb0fbd8102755768ab2c4dcb9517cc82ddf3e5de3133cc2292d79f8505d"
+    },
+    {
+      "path": "sources/crates/core/src/profile.rs",
+      "bytes": 2573,
+      "sha256": "777cdcb8cf9cfa8d269771336270e4ee6b4475d02b87c4549e5b815dff9492a0"
+    },
+    {
+      "path": "sources/crates/core/src/sensors.rs",
+      "bytes": 5257,
+      "sha256": "855e9bcb5f7100ebe6b6d7ad7c2fef6bf8aa3458bc4b4c0211320a0729e243ae"
+    },
+    {
+      "path": "sources/crates/core/src/settings.rs",
+      "bytes": 7457,
+      "sha256": "3bf147c28d4e67ca02c46e10ed813ebea5d9838a16863181107d34bf8053d3d0"
+    },
+    {
+      "path": "sources/crates/daemon/Cargo.toml",
+      "bytes": 467,
+      "sha256": "b4c810b0d995c3389c8654266dff6a72ce3de35294c701f9ff3422988d24fadf"
+    },
+    {
+      "path": "sources/crates/daemon/src/coarse/actuator.rs",
+      "bytes": 6392,
+      "sha256": "ee66dac1569c4ffa34f5900a8f467beaa661e289d4ed1e280b6aeb34592e0a1b"
+    },
+    {
+      "path": "sources/crates/daemon/src/coarse/mod.rs",
+      "bytes": 24924,
+      "sha256": "9a9c3692c1203c2ef581801d86dd58528574e17ffcbfd890c644b92b618279be"
+    },
+    {
+      "path": "sources/crates/daemon/src/coarse/transport.rs",
+      "bytes": 8038,
+      "sha256": "d75acea1ce5cf5bbd774fc3d8eaf6ed4238f9337cda0265396277d288f32980a"
+    },
+    {
+      "path": "sources/crates/daemon/src/fan_guard/client.rs",
+      "bytes": 7718,
+      "sha256": "c707ea32db38be625b8cd081560b8588c9d9d85381866dc1e8baddb39a1a4dd7"
+    },
+    {
+      "path": "sources/crates/daemon/src/fan_guard/files.rs",
+      "bytes": 8764,
+      "sha256": "73a55444b070dd0513d58ec7ecba7e69bb09332e8117a4098f378c6818d26c90"
+    },
+    {
+      "path": "sources/crates/daemon/src/fan_guard/mod.rs",
+      "bytes": 15428,
+      "sha256": "7b3864edffe2c1aae1161e1ae27bd132fbab1f1c669aa7766df340f3d3852c16"
+    },
+    {
+      "path": "sources/crates/daemon/src/fan_guard/wrapper.rs",
+      "bytes": 6609,
+      "sha256": "e2b1be4902054fba1292a06657c0d36edf3e47d2cb18997548494dbb77189a4f"
+    },
+    {
+      "path": "sources/crates/daemon/src/game_sessions.rs",
+      "bytes": 20980,
+      "sha256": "8ebe9a6291559fd4b9f0a68b7792d6b67ad945c530a94af3f9d0914f5395dc44"
+    },
+    {
+      "path": "sources/crates/daemon/src/lib.rs",
+      "bytes": 310,
+      "sha256": "217412ab0f58693f8e2e9e1fb25a42489f3e99f71c34c02661d4311534adff9b"
+    },
+    {
+      "path": "sources/crates/daemon/src/main.rs",
+      "bytes": 11227,
+      "sha256": "2491712e6a0e8db019d89e32722dcb5565a3329d8b5ffd9aea4c88d692b23e51"
+    },
+    {
+      "path": "sources/crates/daemon/src/nvidia_reader.rs",
+      "bytes": 4289,
+      "sha256": "3b435eeb2bdd14bdff44aac9271018b29bf0bf02c796fe707928153093ed2800"
+    },
+    {
+      "path": "sources/crates/daemon/src/server.rs",
+      "bytes": 22873,
+      "sha256": "9b0f60d597d929bf69cf67383dc2bd375ca8f2a8945c830d3dcbd6fee921ff79"
+    },
+    {
+      "path": "sources/crates/daemon/src/service.rs",
+      "bytes": 58775,
+      "sha256": "a986bdcb7956c921580b2d36a9646ad645144bdf4baa310aec710657257a1b73"
+    },
+    {
+      "path": "sources/crates/daemon/src/thermal.rs",
+      "bytes": 12149,
+      "sha256": "9aabe580cb94d8392304f5bab47f8209a40fe5d74c1adde3687af1233b233b74"
+    },
+    {
+      "path": "sources/crates/hardware/Cargo.toml",
+      "bytes": 735,
+      "sha256": "d9453bacfb851c448278420b8cfbb7231d066c0e469e76453c5c22ab74b5f40a"
+    },
+    {
+      "path": "sources/crates/hardware/src/backend.rs",
+      "bytes": 14847,
+      "sha256": "5b40392abf52b452635744b73d79034486ed1edb71029404366d74b15693d45c"
+    },
+    {
+      "path": "sources/crates/hardware/src/board_tables.rs",
+      "bytes": 4089,
+      "sha256": "6f29c8f31c2ee8be7f4e00aecf1bf0e3a29f0267dce3cb31e1e77124e07eb214"
+    },
+    {
+      "path": "sources/crates/hardware/src/command.rs",
+      "bytes": 2076,
+      "sha256": "cbf5ea202162d2a39ac9f92266051860e728e031f43855fe242fc576b545ef04"
+    },
+    {
+      "path": "sources/crates/hardware/src/detection.rs",
+      "bytes": 17472,
+      "sha256": "67dddca6203781295016fe1a9883362dbb9be650c83ae58a104e20c266367283"
+    },
+    {
+      "path": "sources/crates/hardware/src/fans.rs",
+      "bytes": 12130,
+      "sha256": "bf1e9cd316993ccc81f0b2e501c31dc7340fec3326033e2e3f88f10a47249717"
+    },
+    {
+      "path": "sources/crates/hardware/src/game_scope.rs",
+      "bytes": 9496,
+      "sha256": "f7a58472c7fb476d1ade0c37b18154108bff73587aafd020177af9421f0dca93"
+    },
+    {
+      "path": "sources/crates/hardware/src/games/binary_vdf.rs",
+      "bytes": 4166,
+      "sha256": "8543e5fb51422a2b619faad9070b43224573f56ee3574d6914f6461cf93516a5"
+    },
+    {
+      "path": "sources/crates/hardware/src/games/discovery.rs",
+      "bytes": 34041,
+      "sha256": "4498a48c04c2d34e95938df93bd7b5736dcf299d8977b1cbd2e9258036ed042c"
+    },
+    {
+      "path": "sources/crates/hardware/src/games/vdf.rs",
+      "bytes": 4516,
+      "sha256": "52f19777a875ae7152ec3ff4060053f5eb1f656f253a9ffd022b0b5bdf56680b"
+    },
+    {
+      "path": "sources/crates/hardware/src/games.rs",
+      "bytes": 27056,
+      "sha256": "fed912c04ef6665801fc418632e32e749922986c6c08a6d1674b840856529971"
+    },
+    {
+      "path": "sources/crates/hardware/src/gpu.rs",
+      "bytes": 6516,
+      "sha256": "e69898b1c50edb859d7ea5f4739ad7a2924375fdb5cf3d05391ce934436be6ea"
+    },
+    {
+      "path": "sources/crates/hardware/src/hp_wmi.rs",
+      "bytes": 3016,
+      "sha256": "fa8ba6ba223d501006301697379525a0cfb206e847ff67e139da64a52f128abb"
+    },
+    {
+      "path": "sources/crates/hardware/src/lib.rs",
+      "bytes": 5651,
+      "sha256": "224630aef4b5cd9b7c828c096358d193b47962529988b8071c86a692882fb243"
+    },
+    {
+      "path": "sources/crates/hardware/src/lighting.rs",
+      "bytes": 9787,
+      "sha256": "97289182031d71bbf8da80feba12eac9c87cc6b14223d9ace2ccc3d37ed7071c"
+    },
+    {
+      "path": "sources/crates/hardware/src/mock.rs",
+      "bytes": 14478,
+      "sha256": "b0cdb1c4e481f4697785d0302267c1419326c0af735b5ef94fef7f3fa504f9f9"
+    },
+    {
+      "path": "sources/crates/hardware/src/network.rs",
+      "bytes": 16051,
+      "sha256": "a087fb669228f4b380d9b47fc50b11e0125b7a1120de4f20f8565a906e8263de"
+    },
+    {
+      "path": "sources/crates/hardware/src/nvidia_bridge.rs",
+      "bytes": 5874,
+      "sha256": "05dbf778b5995c69a70e56f8387fc80161d6afac8ecb28d969e42ed2ce9db8b2"
+    },
+    {
+      "path": "sources/crates/hardware/src/power.rs",
+      "bytes": 9009,
+      "sha256": "f259490173b38e5833dfe47a7bdefe29a2d14fc1e077f31a7d8c39f16bfb4718"
+    },
+    {
+      "path": "sources/crates/hardware/src/profiles/holds.rs",
+      "bytes": 7707,
+      "sha256": "4168c9fda01d5860ba6c8d3759bbe131fe2d72d5f1be07b7f810da370ca060ee"
+    },
+    {
+      "path": "sources/crates/hardware/src/profiles.rs",
+      "bytes": 12451,
+      "sha256": "1dff36e241b9f11a18f6b571336f7ab1e71993eaf66d620e9a4f8af3d9565bd0"
+    },
+    {
+      "path": "sources/crates/hardware/src/sensors.rs",
+      "bytes": 25412,
+      "sha256": "b763e797fe63a6e5590610ce6382b0ed1dcc090bb82bcf92e1e0d5e4a8742085"
+    },
+    {
+      "path": "sources/crates/hardware/tests/game_session_native.rs",
+      "bytes": 13764,
+      "sha256": "46639623992cf33ea6f2b636a73b64f4b72f0758fb66f5486b64f95fcd658af4"
+    },
+    {
+      "path": "sources/crates/hardware/tests/support/ppd.rs",
+      "bytes": 5966,
+      "sha256": "23fd758e76835ca63d61212ab512f2e3d4109a614bd7f914647ee6f302eb2162"
+    },
+    {
+      "path": "sources/crates/ipc/Cargo.toml",
+      "bytes": 375,
+      "sha256": "8af67aca780bc0a995b96229bd04ff4d067cdb2ce8fa41404318ff23b93e1e78"
+    },
+    {
+      "path": "sources/crates/ipc/src/client.rs",
+      "bytes": 12109,
+      "sha256": "8e8325104bac2dc203f7f9f55ce439f34592a26658911e9b10416fd18164ecb3"
+    },
+    {
+      "path": "sources/crates/ipc/src/lib.rs",
+      "bytes": 697,
+      "sha256": "aee0f7608ff6b4c9e8e8d20928703bde8ca3f30984c930101c025fa8e7c738a7"
+    },
+    {
+      "path": "sources/crates/ipc/src/peer.rs",
+      "bytes": 4579,
+      "sha256": "d973aef4f403db662121086a765b9d12597a0bd39b15a6b9400b1870a213abe2"
+    },
+    {
+      "path": "sources/crates/ipc/src/protocol.rs",
+      "bytes": 9672,
+      "sha256": "31e6f83a17389b02f81c1d0c60cfd04cf00ee7d76e4de2d5aa28c40791d50688"
+    },
+    {
+      "path": "sources/crates/ipc/src/settings.rs",
+      "bytes": 19239,
+      "sha256": "aa400fae1d6a3dd6be354dd3651fc0eacc8b5dd2d10b8e2adc7a9e4ec06ccee7"
+    },
+    {
+      "path": "sources/gui/Cargo.toml",
+      "bytes": 917,
+      "sha256": "73bacc058f48f7b9fa42be3355264ac6641f83bbd8670b2cd5c078cb23f12ad6"
+    },
+    {
+      "path": "sources/gui/assets/ADWAITA_NOTICE",
+      "bytes": 110653,
+      "sha256": "b8058c6a4e62094c4c4a081b9681b3e67e2ffed995d6b8b5fe43a536745f04ba"
+    },
+    {
+      "path": "sources/gui/assets/COPYING.LGPL-3",
+      "bytes": 7652,
+      "sha256": "e3a994d82e644b03a792a930f574002658412f62407f5fee083f2555c5f23118"
+    },
+    {
+      "path": "sources/gui/assets/PROVENANCE.json",
+      "bytes": 5262,
+      "sha256": "d2fd63218799177a4a9b066cce4ffbd2ba328b20a41a979988617b289bf519fa"
+    },
+    {
+      "path": "sources/gui/assets/README.md",
+      "bytes": 602,
+      "sha256": "cf1a96c45d1dfef598f7192fcc3e7a068b5f9d05ff8f96cfad94f904977930e4"
+    },
+    {
+      "path": "sources/gui/assets/icons/scalable/actions/open-menu-symbolic.svg",
+      "bytes": 314,
+      "sha256": "dd3f1c117437a6f5124905de7212a1a320e76f9b33d8411bf70dbdbefa8e9bad"
+    },
+    {
+      "path": "sources/gui/assets/icons/scalable/actions/sidebar-show-symbolic-rtl.svg",
+      "bytes": 668,
+      "sha256": "6900f21171731e746ef093c05807fe6913d496376880f1134726064f6f61d746"
+    },
+    {
+      "path": "sources/gui/assets/icons/scalable/actions/sidebar-show-symbolic.svg",
+      "bytes": 638,
+      "sha256": "382570905672758fd61b0ec646d8660eecc44001c9a43e3b3de9abb0d45dfaba"
+    },
+    {
+      "path": "sources/gui/assets/icons/scalable/actions/view-grid-symbolic.svg",
+      "bytes": 744,
+      "sha256": "a2995ba7ecafd0a11d654fae79409a158f0132abfe6bdf67edc84892ca7f78a8"
+    },
+    {
+      "path": "sources/gui/assets/icons/scalable/actions/view-refresh-symbolic.svg",
+      "bytes": 1118,
+      "sha256": "43281dccb17fe4ef2d2fd459de33debf0fbd9294dac9275c0f047c9fe7d9ae5c"
+    },
+    {
+      "path": "sources/gui/assets/icons/scalable/actions/window-close-symbolic.svg",
+      "bytes": 767,
+      "sha256": "75668d97d7466b1fafea21767c5de1ba31efd48fb319f43a6e16ddbf455d6465"
+    },
+    {
+      "path": "sources/gui/assets/icons/scalable/actions/window-minimize-symbolic.svg",
+      "bytes": 207,
+      "sha256": "1a34fe49dfb151c80573c947c382bbeca3ac648e2fc3364d8a2d384ab836b54e"
+    },
+    {
+      "path": "sources/gui/assets/icons/scalable/categories/applications-games-symbolic.svg",
+      "bytes": 2131,
+      "sha256": "78abc5e0f13ed6d407fbaf31d6934019b3b04d663b8ed3d12aa32f80a63f04dc"
+    },
+    {
+      "path": "sources/gui/assets/icons/scalable/categories/applications-system-symbolic.svg",
+      "bytes": 4765,
+      "sha256": "76c8e673df6c429c4537a97a981b9089edad086c08a7936212917052a8f678b9"
+    },
+    {
+      "path": "sources/gui/assets/icons/scalable/categories/preferences-system-symbolic.svg",
+      "bytes": 2021,
+      "sha256": "26b069ad21997d1210a5f8e6c34a71595a0c88184597fdf32ac182c39e5352a9"
+    },
+    {
+      "path": "sources/gui/assets/icons/scalable/devices/battery-symbolic.svg",
+      "bytes": 860,
+      "sha256": "e3b54f28cfb1d5525678351c323eeb16d141eebd8d8e1fc7c77c80cb0e85b8af"
+    },
+    {
+      "path": "sources/gui/assets/icons/scalable/devices/computer-symbolic.svg",
+      "bytes": 543,
+      "sha256": "edbcdcbca98efa81f57cdfda0ce01a03c324e27e1d224f82a3b640a5443cbe68"
+    },
+    {
+      "path": "sources/gui/assets/icons/scalable/devices/video-display-symbolic.svg",
+      "bytes": 543,
+      "sha256": "edbcdcbca98efa81f57cdfda0ce01a03c324e27e1d224f82a3b640a5443cbe68"
+    },
+    {
+      "path": "sources/gui/assets/icons/scalable/status/speedometer-symbolic.svg",
+      "bytes": 1203,
+      "sha256": "c6ba4d206e46252b193672b34beb42f82f0c6620811bc969477af5a24c5cee14"
+    },
+    {
+      "path": "sources/gui/assets/icons/scalable/status/weather-clear-night-symbolic.svg",
+      "bytes": 1140,
+      "sha256": "2d99d24310ef681cf024738366fccbd9368bec78da30368bdf0e78210a2f8e08"
+    },
+    {
+      "path": "sources/gui/assets/omen.gresource.xml",
+      "bytes": 1138,
+      "sha256": "8055aec0f1bc3f218c1aa9094f1f39893697b6ac9bb3080863ee64a8c42f325d"
+    },
+    {
+      "path": "sources/gui/build.rs",
+      "bytes": 626,
+      "sha256": "8af8ee8b14efbe425b30b35798aece56a9daec37280862e980ba04f7015d2d7a"
+    },
+    {
+      "path": "sources/gui/src/alerts.rs",
+      "bytes": 6543,
+      "sha256": "4b30aa30bab6a9a63112e173f2840ca43f1de94b6452ec466cf6c5bdc5c9e136"
+    },
+    {
+      "path": "sources/gui/src/charts.rs",
+      "bytes": 29773,
+      "sha256": "583c2869ab301c61655c95fa8a899ab899aa99a6f1b5da1673473ae182ee7593"
+    },
+    {
+      "path": "sources/gui/src/control_pages.rs",
+      "bytes": 28541,
+      "sha256": "383e2f66ec8c3470dcc8049df026364713a49667d987e3d5aea7d099184c6584"
+    },
+    {
+      "path": "sources/gui/src/data.rs",
+      "bytes": 22441,
+      "sha256": "767223c706e814d84420f4a5d7a7c8c94b125502136de9310a3b69d08256f4d0"
+    },
+    {
+      "path": "sources/gui/src/data_tests.rs",
+      "bytes": 6579,
+      "sha256": "cc530ddc68927dda7f82c1d7a0f1eef9a344fd9ba96a7465d89a43ea01eb66b2"
+    },
+    {
+      "path": "sources/gui/src/game_library.rs",
+      "bytes": 18776,
+      "sha256": "cee96097726e2f887cf9d6a5fa68338e70eea24ba7253312d56cca2d2edf1515"
+    },
+    {
+      "path": "sources/gui/src/game_sessions.rs",
+      "bytes": 18120,
+      "sha256": "8c69b95f7146c5d84d775fa3c839eb8844a929c5a9a5b6d01b939a340df73ea9"
+    },
+    {
+      "path": "sources/gui/src/i18n.rs",
+      "bytes": 1945,
+      "sha256": "44ed046c753a31c4e668b0a1844b6f53beed5a9ddec6a8232b887de95f20f6db"
+    },
+    {
+      "path": "sources/gui/src/keyboard.rs",
+      "bytes": 5722,
+      "sha256": "d79ea2bdb4e92acd87b31023ca4f53acfb00d7554396d8f8176f5d4e4a74b0b2"
+    },
+    {
+      "path": "sources/gui/src/launch_issues.rs",
+      "bytes": 12891,
+      "sha256": "c4589c774fa564ee9e86b0174ea87db7ceeee8a7515357da0faa1f612b80d32a"
+    },
+    {
+      "path": "sources/gui/src/main.rs",
+      "bytes": 33071,
+      "sha256": "4da9ba3a8cc418dc63c7172668f26c31db6862742513cd0806f92ffce983bb5d"
+    },
+    {
+      "path": "sources/gui/src/network_view.rs",
+      "bytes": 6629,
+      "sha256": "b8cbd8e6e394ccd9baac5d103e05b588f55be35b8cd1a005c7fa100679435cd4"
+    },
+    {
+      "path": "sources/gui/src/onboarding.rs",
+      "bytes": 3036,
+      "sha256": "d18ff9a0f2a9d1be81354d0cfbd7794577d3658ad5d07bcbc2726356808d4d93"
+    },
+    {
+      "path": "sources/gui/src/overlay.rs",
+      "bytes": 19711,
+      "sha256": "438289ea23984b6704a97af2395c97ca2361d73711427411a21413698bca1568"
+    },
+    {
+      "path": "sources/gui/src/pages.rs",
+      "bytes": 84832,
+      "sha256": "58cbc6c72ec578253e6b35e60ed5efc85cfb71c46e5741139abeece1e26ea9fc"
+    },
+    {
+      "path": "sources/gui/src/sensor_view.rs",
+      "bytes": 25926,
+      "sha256": "72bcd6f811bd1de5e5994bdc1b3eb67427bd7b0eaa13e6964aab6b4565f0e83a"
+    },
+    {
+      "path": "sources/gui/src/shortcuts.rs",
+      "bytes": 34715,
+      "sha256": "6271119949c09e268c5d1622e92dd4edfdbc6b0e584f4cc2449f03e33f138c96"
+    },
+    {
+      "path": "sources/gui/src/tray.rs",
+      "bytes": 10041,
+      "sha256": "d8e24766211c510d5f7f696455639393bbb83aa3dd345421317348f39335a4bc"
+    },
+    {
+      "path": "sources/gui/src/ui_report.rs",
+      "bytes": 4958,
+      "sha256": "d8c0fd21ead2f90b12ce3ce21cde390a625883a16ad95dfa35f149c0d8c06ab9"
+    },
+    {
+      "path": "sources/gui/src/victus.rs",
+      "bytes": 4128,
+      "sha256": "6b675451dcdeffe383bd076acc707efa1a6681345789f4d50309b1915a720bd6"
+    },
+    {
+      "path": "sources/gui/src/widgets.rs",
+      "bytes": 11285,
+      "sha256": "26937ac7b57703df5c0c03ceb0fcca791af362b915d9c40d20de33acc497595c"
+    },
+    {
+      "path": "sources/packaging/__pycache__/generate-notices.cpython-314.pyc",
+      "bytes": 4108,
+      "sha256": "1c06cae88699c4b30328a7f5412b20aa83fe7f9c32512e4d16cd934dac28df73"
+    },
+    {
+      "path": "sources/packaging/build-deb.sh",
+      "bytes": 7479,
+      "sha256": "650d33f75752392d49e4641b3057bd0be4ba68c28b04216ec94a25db49e7423c"
+    },
+    {
+      "path": "sources/packaging/com.omenlinux.Gui.desktop",
+      "bytes": 305,
+      "sha256": "f1f2eb81d37227553ca04119c9a7a09014f0309737c1d9de34a51d9f4a61791a"
+    },
+    {
+      "path": "sources/packaging/com.omenlinux.Gui.svg",
+      "bytes": 1129,
+      "sha256": "53c3ebab76a883198bb7a669a186ccbb27df7b5a333d2a5274323bdfb9533251"
+    },
+    {
+      "path": "sources/packaging/debian/changelog",
+      "bytes": 11762,
+      "sha256": "060ab32e0baa8ff4f3fcca8cf4825dd5ed27add5d7b9cb889c834cc2334f34d4"
+    },
+    {
+      "path": "sources/packaging/debian/control",
+      "bytes": 602,
+      "sha256": "604756ada630c4581b6ef43454f86aaffbca8cf959705f5f907b6ab5de912d42"
+    },
+    {
+      "path": "sources/packaging/debian/control.in",
+      "bytes": 818,
+      "sha256": "c92833acfe30801db59bea471dec701ebd62d2d5eee4042007627fa8cdb15358"
+    },
+    {
+      "path": "sources/packaging/debian/copyright",
+      "bytes": 1834,
+      "sha256": "a7e653d45a923f5d69ac827f0906f2a873b91f457452251381239c14c9da6441"
+    },
+    {
+      "path": "sources/packaging/debian/postinst",
+      "bytes": 1775,
+      "sha256": "db4f780dba8aff37aa0ddd6e4dff5388515bfd5f4f95cbfebfea5ef535d4ddd8"
+    },
+    {
+      "path": "sources/packaging/debian/postrm",
+      "bytes": 543,
+      "sha256": "5215d13a7af268395ef9cbe571863e99f748228460110d4565bee503e25dc97d"
+    },
+    {
+      "path": "sources/packaging/debian/prerm",
+      "bytes": 808,
+      "sha256": "b21baf2b6b44a91c6f3a9dc77faf0c06f019a4554323a71ee5200349e0f42449"
+    },
+    {
+      "path": "sources/packaging/generate-notices.py",
+      "bytes": 2145,
+      "sha256": "bf83ddd692ca0a89bc5e4e06de10a60d72ea5e0c5de315a9fe865b8f3753e138"
+    },
+    {
+      "path": "sources/packaging/polkit/com.omenlinux.policy",
+      "bytes": 1070,
+      "sha256": "f11e09eec43dc7c89f9341917d1524e3846bd8718fac5eacfae094f97353d38f"
+    },
+    {
+      "path": "sources/packaging/systemd/omen-fan-recovery@.service",
+      "bytes": 1033,
+      "sha256": "845bfc92631fe4803b292932820b4471fb8c1ed75fde2af912c7db4e2a0a0df7"
+    },
+    {
+      "path": "sources/packaging/systemd/omen-linux.service",
+      "bytes": 844,
+      "sha256": "2ceaba7ee7739184e1d08bf774bd39b173bcfd927d2bb15f0cf333eb126ca40e"
+    },
+    {
+      "path": "sources/packaging/systemd/omen-nvidia-reader.service",
+      "bytes": 700,
+      "sha256": "95457e542c8dcfeddbdf71a983220c735d2b2c7695f4672b06bfe0dc699cc091"
+    },
+    {
+      "path": "sources/packaging/systemd/omen-nvidia-reader.socket",
+      "bytes": 287,
+      "sha256": "af50a4e0ad5e18f66d775e4b6f32969d20fa574246c92deff8998bfeb74d0581"
+    },
+    {
+      "path": "sources/scripts/prepare-offline-vm-repository.py",
+      "bytes": 7779,
+      "sha256": "56e3bb3d4bc35a1aea7f32b83cb1e6d1b51aa5ce8bce1230a78aa1bd52d01fb2"
+    },
+    {
+      "path": "sources/tests/flatpak_scope_vm_inner.py",
+      "bytes": 16075,
+      "sha256": "f5b96d06da9485a1c4293af5a166c8b60ada0eed9cac4af175a5ee65e121484e"
+    },
+    {
+      "path": "sources/tests/systemd_vm.py",
+      "bytes": 25563,
+      "sha256": "868f68f5f4f3f0b3699df73dc8485d76192acd9859ea84ffc9b5d275390e4942"
+    },
+    {
+      "path": "test-manifest.json",
+      "bytes": 411,
+      "sha256": "e3fd93c63ef3ad369e8f67a227067d5f5c6e0af50fac3b39c095216f07b68647"
+    }
+  ]
+}

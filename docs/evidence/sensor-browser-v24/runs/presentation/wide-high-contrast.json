@@ -1,0 +1,5611 @@
+{
+  "dark": false,
+  "gtk_font_name": "Sans 20",
+  "high_contrast": true,
+  "icon_theme": "Adwaita",
+  "icons": [
+    {
+      "bounds": [
+        11.0,
+        21.0,
+        24.0,
+        16.0
+      ],
+      "file": "file:///usr/share/icons/Adwaita/symbolic/actions/sidebar-show-symbolic.svg",
+      "requested_name": "sidebar-show-symbolic",
+      "resolved_name": "sidebar-show-symbolic",
+      "symbolic": true
+    },
+    {
+      "bounds": [
+        946.0,
+        21.0,
+        24.0,
+        16.0
+      ],
+      "file": "file:///usr/share/icons/Adwaita/symbolic/actions/open-menu-symbolic.svg",
+      "requested_name": "open-menu-symbolic",
+      "resolved_name": "open-menu-symbolic",
+      "symbolic": true
+    },
+    {
+      "bounds": [
+        1121.0,
+        17.0,
+        24.0,
+        24.0
+      ],
+      "file": "file:///usr/share/icons/Adwaita/symbolic/ui/window-minimize-symbolic.svg",
+      "requested_name": "window-minimize-symbolic",
+      "resolved_name": "window-minimize-symbolic",
+      "symbolic": true
+    },
+    {
+      "bounds": [
+        1158.0,
+        17.0,
+        24.0,
+        24.0
+      ],
+      "file": "file:///usr/share/icons/Adwaita/symbolic/ui/window-maximize-symbolic.svg",
+      "requested_name": "window-maximize-symbolic",
+      "resolved_name": "window-maximize-symbolic",
+      "symbolic": true
+    },
+    {
+      "bounds": [
+        1195.0,
+        17.0,
+        24.0,
+        24.0
+      ],
+      "file": "file:///usr/share/icons/Adwaita/symbolic/ui/window-close-symbolic.svg",
+      "requested_name": "window-close-symbolic",
+      "resolved_name": "window-close-symbolic",
+      "symbolic": true
+    },
+    {
+      "bounds": [
+        287.0,
+        732.0,
+        16.0,
+        37.0
+      ],
+      "file": "file:///usr/share/icons/Adwaita/symbolic/actions/system-search-symbolic.svg",
+      "requested_name": "system-search-symbolic",
+      "resolved_name": "system-search-symbolic",
+      "symbolic": true
+    },
+    {
+      "bounds": [
+        20.0,
+        167.0,
+        16.0,
+        37.0
+      ],
+      "file": "file:///usr/share/icons/Adwaita/symbolic/actions/view-grid-symbolic.svg",
+      "requested_name": "view-grid-symbolic",
+      "resolved_name": "view-grid-symbolic",
+      "symbolic": true
+    },
+    {
+      "bounds": [
+        20.0,
+        224.0,
+        16.0,
+        37.0
+      ],
+      "file": "file:///usr/share/icons/Adwaita/symbolic/categories/applications-system-symbolic.svg",
+      "requested_name": "applications-system-symbolic",
+      "resolved_name": "applications-system-symbolic",
+      "symbolic": true
+    },
+    {
+      "bounds": [
+        20.0,
+        325.0,
+        16.0,
+        73.0
+      ],
+      "file": "resource:///com/omenlinux/Gui/icons/scalable/status/speedometer-symbolic.svg",
+      "requested_name": "speedometer-symbolic",
+      "resolved_name": "speedometer-symbolic",
+      "symbolic": true
+    },
+    {
+      "bounds": [
+        20.0,
+        418.0,
+        16.0,
+        37.0
+      ],
+      "file": "file:///usr/share/icons/Adwaita/symbolic/actions/view-refresh-symbolic.svg",
+      "requested_name": "view-refresh-symbolic",
+      "resolved_name": "view-refresh-symbolic",
+      "symbolic": true
+    },
+    {
+      "bounds": [
+        20.0,
+        475.0,
+        16.0,
+        37.0
+      ],
+      "file": "file:///usr/share/icons/Adwaita/symbolic/status/weather-clear-night-symbolic.svg",
+      "requested_name": "weather-clear-night-symbolic",
+      "resolved_name": "weather-clear-night-symbolic",
+      "symbolic": true
+    },
+    {
+      "bounds": [
+        20.0,
+        532.0,
+        16.0,
+        37.0
+      ],
+      "file": "file:///usr/share/icons/Adwaita/symbolic/devices/video-display-symbolic.svg",
+      "requested_name": "video-display-symbolic",
+      "resolved_name": "video-display-symbolic",
+      "symbolic": true
+    },
+    {
+      "bounds": [
+        20.0,
+        589.0,
+        16.0,
+        73.0
+      ],
+      "file": "file:///usr/share/icons/Adwaita/symbolic/devices/battery-symbolic.svg",
+      "requested_name": "battery-symbolic",
+      "resolved_name": "battery-symbolic",
+      "symbolic": true
+    },
+    {
+      "bounds": [
+        20.0,
+        726.0,
+        16.0,
+        37.0
+      ],
+      "file": "file:///usr/share/icons/Adwaita/symbolic/categories/applications-games-symbolic.svg",
+      "requested_name": "applications-games-symbolic",
+      "resolved_name": "applications-games-symbolic",
+      "symbolic": true
+    },
+    {
+      "bounds": [
+        20.0,
+        827.0,
+        16.0,
+        73.0
+      ],
+      "file": "file:///usr/share/icons/Adwaita/symbolic/categories/preferences-system-symbolic.svg",
+      "requested_name": "preferences-system-symbolic",
+      "resolved_name": "preferences-system-symbolic",
+      "symbolic": true
+    }
+  ],
+  "render_bounds": [
+    0.0,
+    0.0,
+    1230.0,
+    1090.0
+  ],
+  "widgets": [
+    {
+      "bounds": [
+        505.0,
+        6.0,
+        220.0,
+        47.0
+      ],
+      "clips": [
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 29.333px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        9,
+        194,
+        30
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        3
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        196,
+        40
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "headerbar.",
+        "windowhandle.",
+        "box.",
+        "widget.",
+        "label.title"
+      ],
+      "sensitive": true,
+      "text": "System Vitals"
+    },
+    {
+      "bounds": [
+        998.0,
+        11.0,
+        95.0,
+        37.0
+      ],
+      "clips": [
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        92,
+        21
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        95,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "headerbar.",
+        "windowhandle.",
+        "box.",
+        "widget.",
+        "box.horizontal.end",
+        "button.text-button",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Fixture"
+    },
+    {
+      "bounds": [
+        295.0,
+        89.0,
+        111.0,
+        33.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 24px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        7,
+        109,
+        19
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        111,
+        33
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "flowbox.horizontal",
+        "flowboxchild.",
+        "box.card",
+        "label.card-title"
+      ],
+      "sensitive": true,
+      "text": "CPU clock"
+    },
+    {
+      "bounds": [
+        295.0,
+        124.0,
+        38.0,
+        51.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 37.333px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        27,
+        35,
+        5
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        38,
+        51
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "flowbox.horizontal",
+        "flowboxchild.",
+        "box.card",
+        "label.card-value"
+      ],
+      "sensitive": true,
+      "text": "—"
+    },
+    {
+      "bounds": [
+        611.0,
+        89.0,
+        165.0,
+        33.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 24px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        7,
+        162,
+        19
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        165,
+        33
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "flowbox.horizontal",
+        "flowboxchild.",
+        "box.card",
+        "label.card-title"
+      ],
+      "sensitive": true,
+      "text": "CPU utilization"
+    },
+    {
+      "bounds": [
+        611.0,
+        124.0,
+        222.0,
+        51.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 37.333px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        3,
+        11,
+        217,
+        30
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        222,
+        51
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "flowbox.horizontal",
+        "flowboxchild.",
+        "box.card",
+        "label.card-value"
+      ],
+      "sensitive": true,
+      "text": "Unavailable"
+    },
+    {
+      "bounds": [
+        926.0,
+        89.0,
+        156.0,
+        33.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 24px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        7,
+        152,
+        25
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        156,
+        33
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "flowbox.horizontal",
+        "flowboxchild.",
+        "box.card",
+        "label.card-title"
+      ],
+      "sensitive": true,
+      "text": "Memory used"
+    },
+    {
+      "bounds": [
+        926.0,
+        124.0,
+        38.0,
+        51.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 37.333px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        27,
+        35,
+        5
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        38,
+        51
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "flowbox.horizontal",
+        "flowboxchild.",
+        "box.card",
+        "label.card-value"
+      ],
+      "sensitive": true,
+      "text": "—"
+    },
+    {
+      "bounds": [
+        295.0,
+        217.0,
+        178.0,
+        33.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 24px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        7,
+        177,
+        25
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        178,
+        33
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "flowbox.horizontal",
+        "flowboxchild.",
+        "box.card",
+        "label.card-title"
+      ],
+      "sensitive": true,
+      "text": "Storage used (/)"
+    },
+    {
+      "bounds": [
+        295.0,
+        252.0,
+        38.0,
+        51.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 37.333px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        27,
+        35,
+        5
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        38,
+        51
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "flowbox.horizontal",
+        "flowboxchild.",
+        "box.card",
+        "label.card-value"
+      ],
+      "sensitive": true,
+      "text": "—"
+    },
+    {
+      "bounds": [
+        278.0,
+        332.0,
+        272.0,
+        39.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 28px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        269,
+        23
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        272,
+        39
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "label.section-title"
+      ],
+      "sensitive": true,
+      "text": "Network interfaces"
+    },
+    {
+      "bounds": [
+        278.0,
+        381.0,
+        934.0,
+        109.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        8,
+        908,
+        100
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 3,
+      "logical": [
+        0,
+        0,
+        912,
+        109
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "label.dim"
+      ],
+      "sensitive": true,
+      "text": "Per-interface rates; VPNs and bridges may count the same traffic. Values are not added. Errors and drops are cumulative; RX drops include missed packets."
+    },
+    {
+      "bounds": [
+        278.0,
+        500.0,
+        934.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        311,
+        21
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        315,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "label.dim"
+      ],
+      "sensitive": true,
+      "text": "Fixture network counters"
+    },
+    {
+      "bounds": [
+        288.0,
+        551.0,
+        914.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        0,
+        8,
+        161,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        162,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.sensor-row",
+        "label.heading"
+      ],
+      "sensitive": true,
+      "text": "fixture0 · up"
+    },
+    {
+      "bounds": [
+        288.0,
+        592.0,
+        914.0,
+        73.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        514,
+        64
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 2,
+      "logical": [
+        0,
+        0,
+        518,
+        73
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.sensor-row",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Receive: 0 B/s  ·  Send: 0 B/s\nErrors RX/TX: 0 / 0  ·  Dropped RX/TX: 0 / 0"
+    },
+    {
+      "bounds": [
+        278.0,
+        683.0,
+        151.0,
+        39.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 28px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        0,
+        8,
+        150,
+        23
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        151,
+        39
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "label.section-title"
+      ],
+      "sensitive": true,
+      "text": "All sensors"
+    },
+    {
+      "bounds": [
+        309.0,
+        732.0,
+        894.0,
+        37.0
+      ],
+      "clips": [
+        [
+          309.0,
+          732.0,
+          894.0,
+          37.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        8,
+        649,
+        24
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        651,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "entry.search",
+        "text.",
+        "placeholder."
+      ],
+      "sensitive": true,
+      "text": "Search sensor names, identifiers, devices or sources"
+    },
+    {
+      "bounds": [
+        278.0,
+        779.0,
+        451.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          779.0,
+          934.0,
+          88.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        0,
+        9,
+        58,
+        26
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        60,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "widget.",
+        "box.horizontal",
+        "box.vertical",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Type"
+    },
+    {
+      "bounds": [
+        288.0,
+        825.0,
+        409.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          779.0,
+          934.0,
+          88.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        0,
+        8,
+        114,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        115,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "widget.",
+        "box.horizontal",
+        "box.vertical",
+        "dropdown.",
+        "button.toggle",
+        "box.horizontal",
+        "stack.",
+        "row.activatable",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "All types"
+    },
+    {
+      "bounds": [
+        737.0,
+        779.0,
+        475.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          779.0,
+          934.0,
+          88.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        79,
+        21
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        83,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "widget.",
+        "box.horizontal",
+        "box.vertical",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Device"
+    },
+    {
+      "bounds": [
+        747.0,
+        825.0,
+        433.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          779.0,
+          934.0,
+          88.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        0,
+        8,
+        139,
+        21
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        140,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "widget.",
+        "box.horizontal",
+        "box.vertical",
+        "dropdown.",
+        "button.toggle",
+        "box.horizontal",
+        "stack.",
+        "row.activatable",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "All devices"
+    },
+    {
+      "bounds": [
+        278.0,
+        877.0,
+        502.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          877.0,
+          934.0,
+          88.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        0,
+        8,
+        135,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        135,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "widget.",
+        "box.horizontal",
+        "box.vertical",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Availability"
+    },
+    {
+      "bounds": [
+        288.0,
+        923.0,
+        460.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          877.0,
+          934.0,
+          88.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        0,
+        8,
+        157,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        158,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "widget.",
+        "box.horizontal",
+        "box.vertical",
+        "dropdown.",
+        "button.toggle",
+        "box.horizontal",
+        "stack.",
+        "row.activatable",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "All readings"
+    },
+    {
+      "bounds": [
+        788.0,
+        877.0,
+        424.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          877.0,
+          934.0,
+          88.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        8,
+        73,
+        21
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        74,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "widget.",
+        "box.horizontal",
+        "box.vertical",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Order"
+    },
+    {
+      "bounds": [
+        798.0,
+        923.0,
+        382.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          877.0,
+          934.0,
+          88.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        9,
+        77,
+        20
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        80,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "widget.",
+        "box.horizontal",
+        "box.vertical",
+        "dropdown.",
+        "button.toggle",
+        "box.horizontal",
+        "stack.",
+        "row.activatable",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Name"
+    },
+    {
+      "bounds": [
+        295.0,
+        980.0,
+        251.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        8,
+        249,
+        21
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        251,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "button.text-button",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Clear sensor filters"
+    },
+    {
+      "bounds": [
+        278.0,
+        1032.0,
+        934.0,
+        109.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        8,
+        873,
+        100
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 3,
+      "logical": [
+        0,
+        0,
+        876,
+        109
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "label.dim"
+      ],
+      "sensitive": true,
+      "text": "Grouped by reported device and measurement type. A provider group means no device identity was reported; labels do not establish device ownership."
+    },
+    {
+      "bounds": [
+        278.0,
+        1151.0,
+        934.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        8,
+        396,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        399,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Showing 6 of 6 sensor readings."
+    },
+    {
+      "bounds": [
+        278.0,
+        1206.0,
+        934.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        459,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        462,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "label.heading"
+      ],
+      "sensitive": true,
+      "text": "Device 0000:03:00.0 · Temperatures"
+    },
+    {
+      "bounds": [
+        288.0,
+        1253.0,
+        914.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        9,
+        321,
+        26
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        323,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.sensor-row",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "GPU temperature: 58.0 °C"
+    },
+    {
+      "bounds": [
+        288.0,
+        1293.0,
+        914.0,
+        31.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 22.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        7,
+        568,
+        23
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        571,
+        31
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.sensor-row",
+        "label.small.dim"
+      ],
+      "sensitive": true,
+      "text": "mock · gpu/temperature · Device 0000:03:00.0 · 0s old"
+    },
+    {
+      "bounds": [
+        278.0,
+        1348.0,
+        934.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        358,
+        21
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        360,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "label.heading"
+      ],
+      "sensitive": true,
+      "text": "Device 0000:03:00.0 · Power"
+    },
+    {
+      "bounds": [
+        288.0,
+        1395.0,
+        914.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        9,
+        239,
+        26
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        240,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.sensor-row",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "GPU power: 17.0 W"
+    },
+    {
+      "bounds": [
+        288.0,
+        1435.0,
+        914.0,
+        31.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 22.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        7,
+        500,
+        23
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        503,
+        31
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.sensor-row",
+        "label.small.dim"
+      ],
+      "sensitive": true,
+      "text": "mock · gpu/power · Device 0000:03:00.0 · 0s old"
+    },
+    {
+      "bounds": [
+        278.0,
+        1490.0,
+        934.0,
+        109.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        918,
+        100
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 3,
+      "logical": [
+        0,
+        0,
+        921,
+        109
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "label.heading"
+      ],
+      "sensitive": true,
+      "text": "Device 0000:05:00.0-reported-device-reported-device-reported-device-reported-device-reported-device-reported-device-reported-device-reported-device-reported-device-reported-device- · Temperatures"
+    },
+    {
+      "bounds": [
+        288.0,
+        1609.0,
+        914.0,
+        73.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        0,
+        8,
+        884,
+        64
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 2,
+      "logical": [
+        0,
+        0,
+        886,
+        73
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.sensor-row",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "A long provider label that remains readable when the device name and sensor identifier wrap: 51.0 °C"
+    },
+    {
+      "bounds": [
+        288.0,
+        1685.0,
+        914.0,
+        155.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 22.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        0,
+        6,
+        906,
+        148
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 5,
+      "logical": [
+        0,
+        0,
+        907,
+        155
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.sensor-row",
+        "label.small.dim"
+      ],
+      "sensitive": true,
+      "text": "mock · long/provider-identifier-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx · Device 0000:05:00.0-reported-device-reported-device-reported-device-reported-device-reported-device-reported-device-reported-device-reported-device-reported-device-reported-device- · 0s old"
+    },
+    {
+      "bounds": [
+        278.0,
+        1864.0,
+        934.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        560,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        563,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "label.heading"
+      ],
+      "sensitive": true,
+      "text": "mock · device not reported · Temperatures"
+    },
+    {
+      "bounds": [
+        288.0,
+        1911.0,
+        914.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        8,
+        430,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        432,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.sensor-row",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "CPU package temperature: 62.0 °C"
+    },
+    {
+      "bounds": [
+        288.0,
+        1951.0,
+        914.0,
+        31.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 22.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        7,
+        565,
+        23
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        568,
+        31
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.sensor-row",
+        "label.small.dim"
+      ],
+      "sensitive": true,
+      "text": "mock · cpu/temperature · Device not reported · 0s old"
+    },
+    {
+      "bounds": [
+        288.0,
+        1994.0,
+        914.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        457,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        460,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.sensor-row",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Previous provider temperature: Stale"
+    },
+    {
+      "bounds": [
+        288.0,
+        2034.0,
+        914.0,
+        31.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 22.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        7,
+        620,
+        23
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        623,
+        31
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.sensor-row",
+        "label.small.dim"
+      ],
+      "sensitive": true,
+      "text": "mock · stale · Device not reported · Stale · 1793178125s old"
+    },
+    {
+      "bounds": [
+        278.0,
+        2089.0,
+        934.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 26.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        491,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        494,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "label.heading"
+      ],
+      "sensitive": true,
+      "text": "mock · device not reported · Currents"
+    },
+    {
+      "bounds": [
+        288.0,
+        2136.0,
+        914.0,
+        37.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        515,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        519,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.sensor-row",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Unavailable provider current: Unavailable"
+    },
+    {
+      "bounds": [
+        288.0,
+        2176.0,
+        914.0,
+        31.0
+      ],
+      "clips": [
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          278.0,
+          74.0,
+          934.0,
+          1002.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 22.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        7,
+        483,
+        23
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        486,
+        31
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.content-pane",
+        "box.vertical",
+        "box.vertical",
+        "stack.",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.vertical",
+        "box.sensor-row",
+        "label.small.dim"
+      ],
+      "sensitive": true,
+      "text": "mock · unknown · Device not reported · 0s old"
+    },
+    {
+      "bounds": [
+        12.0,
+        70.0,
+        199.0,
+        39.0
+      ],
+      "clips": [
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 28px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        8,
+        195,
+        23
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        199,
+        39
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.sidebar-pane",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical.sidebar",
+        "label.section-title"
+      ],
+      "sensitive": true,
+      "text": "OMEN Control"
+    },
+    {
+      "bounds": [
+        46.0,
+        167.0,
+        195.0,
+        37.0
+      ],
+      "clips": [
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        134,
+        21
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        139,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.sidebar-pane",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical.sidebar",
+        "list.nav",
+        "row.activatable",
+        "box.horizontal",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Dashboard"
+    },
+    {
+      "bounds": [
+        46.0,
+        224.0,
+        195.0,
+        37.0
+      ],
+      "clips": [
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        8,
+        163,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        165,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.sidebar-pane",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical.sidebar",
+        "list.nav",
+        "row.activatable",
+        "box.horizontal",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "System Vitals"
+    },
+    {
+      "bounds": [
+        46.0,
+        325.0,
+        195.0,
+        73.0
+      ],
+      "clips": [
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        8,
+        161,
+        58
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 2,
+      "logical": [
+        0,
+        0,
+        163,
+        73
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.sidebar-pane",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical.sidebar",
+        "list.nav",
+        "row.activatable",
+        "box.horizontal",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Performance Control"
+    },
+    {
+      "bounds": [
+        46.0,
+        418.0,
+        195.0,
+        37.0
+      ],
+      "clips": [
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        179,
+        21
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        183,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.sidebar-pane",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical.sidebar",
+        "list.nav",
+        "row.activatable",
+        "box.horizontal",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Fan & Thermal"
+    },
+    {
+      "bounds": [
+        46.0,
+        475.0,
+        195.0,
+        37.0
+      ],
+      "clips": [
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        8,
+        187,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        191,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.sidebar-pane",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical.sidebar",
+        "list.nav",
+        "row.activatable",
+        "box.horizontal",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Lighting Studio"
+    },
+    {
+      "bounds": [
+        46.0,
+        532.0,
+        195.0,
+        37.0
+      ],
+      "clips": [
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        8,
+        108,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        111,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.sidebar-pane",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical.sidebar",
+        "list.nav",
+        "row.activatable",
+        "box.horizontal",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Graphics"
+    },
+    {
+      "bounds": [
+        46.0,
+        589.0,
+        195.0,
+        73.0
+      ],
+      "clips": [
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        9,
+        116,
+        57
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 2,
+      "logical": [
+        0,
+        0,
+        118,
+        73
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.sidebar-pane",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical.sidebar",
+        "list.nav",
+        "row.activatable",
+        "box.horizontal",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Battery & Power"
+    },
+    {
+      "bounds": [
+        46.0,
+        726.0,
+        195.0,
+        37.0
+      ],
+      "clips": [
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        8,
+        168,
+        27
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        169,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.sidebar-pane",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical.sidebar",
+        "list.nav",
+        "row.activatable",
+        "box.horizontal",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Game Library"
+    },
+    {
+      "bounds": [
+        46.0,
+        827.0,
+        195.0,
+        73.0
+      ],
+      "clips": [
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        8,
+        143,
+        64
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 2,
+      "logical": [
+        0,
+        0,
+        146,
+        73
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.sidebar-pane",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical.sidebar",
+        "list.nav",
+        "row.activatable",
+        "box.horizontal",
+        "label."
+      ],
+      "sensitive": true,
+      "text": "Settings & Diagnostics"
+    },
+    {
+      "bounds": [
+        14.0,
+        123.0,
+        245.0,
+        31.0
+      ],
+      "clips": [
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 22.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        7,
+        89,
+        18
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        92,
+        31
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.sidebar-pane",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical.sidebar",
+        "list.nav",
+        "label.navigation-heading"
+      ],
+      "sensitive": true,
+      "text": "Monitor"
+    },
+    {
+      "bounds": [
+        14.0,
+        281.0,
+        245.0,
+        31.0
+      ],
+      "clips": [
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 22.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        1,
+        7,
+        94,
+        18
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        96,
+        31
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.sidebar-pane",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical.sidebar",
+        "list.nav",
+        "label.navigation-heading"
+      ],
+      "sensitive": true,
+      "text": "Controls"
+    },
+    {
+      "bounds": [
+        14.0,
+        682.0,
+        245.0,
+        31.0
+      ],
+      "clips": [
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 22.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        2,
+        7,
+        79,
+        23
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        81,
+        31
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.sidebar-pane",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical.sidebar",
+        "list.nav",
+        "label.navigation-heading"
+      ],
+      "sensitive": true,
+      "text": "Library"
+    },
+    {
+      "bounds": [
+        14.0,
+        783.0,
+        245.0,
+        31.0
+      ],
+      "clips": [
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans Bold 22.667px",
+      "font_weight": 700,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        0,
+        7,
+        128,
+        23
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        130,
+        31
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.sidebar-pane",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical.sidebar",
+        "list.nav",
+        "label.navigation-heading"
+      ],
+      "sensitive": true,
+      "text": "Application"
+    },
+    {
+      "bounds": [
+        12.0,
+        914.0,
+        0.0,
+        37.0
+      ],
+      "clips": [
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 26.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        0,
+        28,
+        0,
+        1
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 1,
+      "logical": [
+        0,
+        0,
+        0,
+        37
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.sidebar-pane",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical.sidebar",
+        "box.vertical",
+        "label."
+      ],
+      "sensitive": true,
+      "text": ""
+    },
+    {
+      "bounds": [
+        12.0,
+        955.0,
+        179.0,
+        93.0
+      ],
+      "clips": [
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          260.0,
+          1030.0
+        ],
+        [
+          0.0,
+          60.0,
+          1230.0,
+          1030.0
+        ],
+        [
+          0.0,
+          0.0,
+          1230.0,
+          1090.0
+        ],
+        [
+          -5.0,
+          -5.0,
+          1240.0,
+          1100.0
+        ]
+      ],
+      "ellipsized": false,
+      "font": "Sans 22.667px",
+      "font_weight": 400,
+      "foreground": [
+        0.0,
+        0.0,
+        0.0235294122248888,
+        0.800000011920929
+      ],
+      "ink": [
+        0,
+        7,
+        178,
+        80
+      ],
+      "kind": "label",
+      "layout_offset": [
+        0,
+        0
+      ],
+      "lines": 3,
+      "logical": [
+        0,
+        0,
+        179,
+        93
+      ],
+      "opacity": 1.0,
+      "path": [
+        "window.background.solid-csd",
+        "dialog-host.",
+        "widget.",
+        "widget.",
+        "box.vertical",
+        "overlay-split-view.",
+        "widget.sidebar-pane",
+        "scrolledwindow.",
+        "viewport.",
+        "box.vertical.sidebar",
+        "box.vertical",
+        "label.small.dim"
+      ],
+      "sensitive": true,
+      "text": "source: MOCK — fixture data, no real hardware"
+    }
+  ],
+  "window_size": [
+    1230,
+    1090
+  ]
+}

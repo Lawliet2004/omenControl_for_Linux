@@ -1,0 +1,65 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "system_power_bus_used": false,
+  "real_shortcuts_or_notifications_enabled": false,
+  "profile": "release",
+  "requested_gtk_backend": "x11",
+  "gui_sha256": "376eb8dd7d0a51b921b574ac616c1dd961553022e196b7c6bc0ed2160e7a9825",
+  "cli_sha256": "9f0d304a347cef947d26104bcae62c864ade37270abd9f1ccea21034b7c52918",
+  "checks_passed": [
+    "native setup saves automatic mode in user settings without starting a hold",
+    "native Launch runs the custom wrapper and renders active ownership with the effective profile",
+    "changing the preference affects future launches and preserves the active session until explicitly released",
+    "native release restores provider selection without stopping the game, and actual exit moves it to history",
+    "SIGKILL of the GUI preserves the running session and the daemon releases its hold after real exit",
+    "wide/light and narrow/dark app-only GTK captures cover active sessions and inline setup"
+  ],
+  "captures": [
+    {
+      "path": "docs/screenshots/library-virtualized/games-active-wide-light.png",
+      "sha256": "00adcd9398a3967e2a6b60de4b99d85e72497fca8eb24e9cea49041c46f6080e",
+      "requested_size": [
+        1240,
+        1100
+      ],
+      "actual_size": [
+        1240,
+        1080
+      ],
+      "theme": "prefer-light",
+      "fixture_only": true
+    },
+    {
+      "path": "docs/screenshots/library-virtualized/games-setup-narrow-dark.png",
+      "sha256": "278d0643926e9ac25b2ffb4de83b0644ecf57549fbfc019ba2b73964ef83c7e1",
+      "requested_size": [
+        600,
+        1100
+      ],
+      "actual_size": [
+        600,
+        1080
+      ],
+      "theme": "prefer-dark",
+      "fixture_only": true
+    }
+  ],
+  "setup_accessible_description": "",
+  "setup_accessible_relations": [
+    {
+      "type": 2,
+      "targets": [
+        "Profile setup"
+      ]
+    },
+    {
+      "type": 18,
+      "targets": [
+        "GUI session fixture\ncustom/gui"
+      ]
+    }
+  ],
+  "cleanup_complete": true
+}

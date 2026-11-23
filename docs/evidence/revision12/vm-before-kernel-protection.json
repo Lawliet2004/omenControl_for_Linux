@@ -1,0 +1,87 @@
+{
+  "started_utc": "2026-10-25T22:30:00.245897+00:00",
+  "package_sha256": "a94651a82aae1441f33e14fccf5016807992813192a7d093b3307dafc1877390",
+  "image_sha256": "5645d0318ad21f643ebb1ac4567514620e9893380b07b0201fda163baa5b7eb5",
+  "qemu_version": "QEMU emulator version 10.2.1 (Debian 1:10.2.1+ds-1ubuntu3.3)",
+  "host_uid": 1000,
+  "host_package_installed": false,
+  "hardware_writes": false,
+  "physical_hardware_validated": false,
+  "result": "failed",
+  "vm_exited": true,
+  "temporary_files_removed": true,
+  "qemu_pid": 2471052,
+  "qemu_arguments": [
+    "-no-user-config",
+    "-nodefaults",
+    "-machine",
+    "q35,accel=kvm,dump-guest-core=off",
+    "-cpu",
+    "host",
+    "-m",
+    "1024",
+    "-smp",
+    "2",
+    "-display",
+    "none",
+    "-vga",
+    "none",
+    "-monitor",
+    "none",
+    "-L",
+    "/home/papan/Desktop/Projects/omen/target/vm-runtime/root/usr/share/qemu",
+    "-bios",
+    "/home/papan/Desktop/Projects/omen/target/vm-runtime/root/usr/share/seabios/bios-256k.bin",
+    "-drive",
+    "file=/home/papan/Desktop/Projects/omen/target/omen-systemd-vm-y__gzabd/disk.qcow2,if=virtio,format=qcow2",
+    "-drive",
+    "file=/home/papan/Desktop/Projects/omen/target/omen-systemd-vm-y__gzabd/seed.iso,media=cdrom,readonly=on,format=raw",
+    "-netdev",
+    "user,id=net0,hostfwd=tcp:127.0.0.1:47227-:22",
+    "-device",
+    "virtio-net-pci,netdev=net0,romfile=",
+    "-device",
+    "virtio-rng-pci",
+    "-serial",
+    "file:/home/papan/Desktop/Projects/omen/target/omen-systemd-vm-y__gzabd/serial.log",
+    "-sandbox",
+    "on,obsolete=deny,elevateprivileges=deny,spawn=deny,resourcecontrol=deny"
+  ],
+  "partial_result": {
+    "checks_passed": [
+      "real systemd starts the installed read-only daemon; UID 1000 connects to its production socket",
+      "running process has NoNewPrivileges, seccomp and only CAP_DAC_OVERRIDE"
+    ],
+    "test_payload_sha256": "1bf80fb130a3e2761654fd8744c20dccd580e3e3b6a4d5e06fe388203e8c6ad7",
+    "initial_boot_id": "0869a2b5-beec-4199-b89c-234038edd2c5",
+    "kernel": "7.0.0-38-generic",
+    "systemd_version": "systemd 259 (259.5-0ubuntu3.4)",
+    "loaded_sandbox_properties": "FragmentPath=/usr/lib/systemd/system/omen-linux.service\nReadWritePaths=/run/omen-linux /etc/omen-linux\nReadOnlyPaths=/sys\nPrivateTmp=yes\nProtectKernelTunables=no\nProtectHome=yes\nProtectSystem=strict\n",
+    "manager_mount_namespace": "mnt:[4026531832]",
+    "service_mount_namespace": "mnt:[4026532252]",
+    "service_mount_options": {
+      "/sys": {
+        "options": "rw,nosuid,nodev,noexec,relatime",
+        "statvfs_readonly": false,
+        "expected_writable": false
+      },
+      "/etc/hostname": {
+        "options": "ro,nosuid,relatime",
+        "statvfs_readonly": true,
+        "expected_writable": false
+      },
+      "/etc/omen-linux": {
+        "options": "rw,nosuid,relatime",
+        "statvfs_readonly": false,
+        "expected_writable": true
+      },
+      "/run/omen-linux": {
+        "options": "rw,nosuid,nodev",
+        "statvfs_readonly": false,
+        "expected_writable": true
+      }
+    }
+  },
+  "vm_exit_code": 0,
+  "finished_utc": "2026-10-25T22:31:15.130965+00:00"
+}

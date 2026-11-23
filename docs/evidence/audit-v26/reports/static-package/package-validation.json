@@ -1,0 +1,36 @@
+{
+  "package": "target/audit-completion/candidate-frozen/omen-linux_0.1.0-26_amd64.deb",
+  "bytes": 3843012,
+  "sha256": "349e8a75326b026b250974a86c33d7b9737b208bc500849f388d9499a7c017d9",
+  "version": "0.1.0-26",
+  "installed_by_verifier": false,
+  "checks": {
+    "root_ownership_and_directory_modes": true,
+    "payload_md5sums": true,
+    "static_flatpak_helper_source_manifest_and_musl_notice": true,
+    "desktop_file_validate": true,
+    "polkit_xml_matches_source": true,
+    "bundled_icon_sources_and_notices": 15,
+    "gui_linkage_current_environment": true,
+    "extracted_cli_readonly_discovery": true
+  },
+  "binaries": {
+    "omen-cli": {
+      "sha256": "ce0737f197fb523dce6aff6894a083f532e1d8ab55e2d3cb8b11b40525ffd7ef",
+      "matches_release": true
+    },
+    "omen-daemon": {
+      "sha256": "bded400560fe459085eb298fae39a3eb49b485db30261118e6fd11c7989c6f1d",
+      "matches_release": true
+    },
+    "omen-gui": {
+      "sha256": "1e331192cdc966823e911ca060787885e38831f94b57349a1d5931d32b26b868",
+      "matches_release": true
+    }
+  },
+  "dependency_notices": 165,
+  "systemd_validation": {
+    "exit_code": 0,
+    "method": "unmodified unit in extracted package root; no unit started"
+  }
+}

@@ -1,0 +1,284 @@
+{
+  "repository": "legendary-gl/legendary",
+  "commit": "42f6bdeadde3a9526dc8eb713763476999ac217b",
+  "archive_url": "https://codeload.github.com/legendary-gl/legendary/zip/42f6bdeadde3a9526dc8eb713763476999ac217b",
+  "archive_sha256": "dc75d911c1e1344cc7220b56eddbb56ef4ec64b36852a0a85c6a80071edb6ba6",
+  "archive_bytes": 205651,
+  "files": [
+    {
+      "path": ".github/FUNDING.yml",
+      "bytes": 14,
+      "sha256": "980a937f1d81179f63bbd047100f07b5940094a3a846d0b7574b89ccdc12a9ed"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.md",
+      "bytes": 1380,
+      "sha256": "ef7508571e53040b59f494db6ab31268c02639a30eb6a097592cfece85855f8f"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "bytes": 546,
+      "sha256": "cc86d118ec91b387b77d3e21ff463c20c37b1167bd0bf7247bab544d0f3de44b"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.md",
+      "bytes": 701,
+      "sha256": "ac70fd7f759b843ae3c39bd1d1d7eee50d2b870224818bf2d10f35ff76196203"
+    },
+    {
+      "path": ".github/workflows/build-base.yml",
+      "bytes": 2232,
+      "sha256": "330fa1b85fd49925055d1889efeb20d0b81d2821c976c06b9028133ad68a7ecf"
+    },
+    {
+      "path": ".github/workflows/lint-ruff.yml",
+      "bytes": 266,
+      "sha256": "d236139b8078737aa427f9e70d36c06446378104239a013f1d5e50ee51c7c038"
+    },
+    {
+      "path": ".github/workflows/python.yml",
+      "bytes": 147,
+      "sha256": "f4334b52d287d02965f5af77e2858539910b8c3ac52e6114a7ed0cb2a69ecbb3"
+    },
+    {
+      "path": ".github/workflows/release.yml",
+      "bytes": 1897,
+      "sha256": "da8c869916772035696ea9d745eb1177c829b9d591152e0c00b0c1a34d1494e7"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 1899,
+      "sha256": "329637d1a1e79b82f8c7e6dbe12d73ee72d9850ce56fadbb088b2c60031d0ce4"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 35149,
+      "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    {
+      "path": "README.md",
+      "bytes": 31223,
+      "sha256": "d22c962a818c5303ed33cc7b1bc6d1d787480c7eeb528b4e2a4ecb5c5b776ebc"
+    },
+    {
+      "path": "assets/windows_icon.ico",
+      "bytes": 25681,
+      "sha256": "8a7cca066762d2e1185bd965de452ac7e1cb929841fcfe005f33f9f84945a306"
+    },
+    {
+      "path": "doc/ue_manifest.ksy",
+      "bytes": 5618,
+      "sha256": "f975c18c5f30944777c5352fa24deea818714760fd0f1ca84bfe1c882d9e31cd"
+    },
+    {
+      "path": "legendary/__init__.py",
+      "bytes": 120,
+      "sha256": "a971d4f4e7f206685e9d3ef20976d43b1aefd09887b6b2bb235248c3b0419824"
+    },
+    {
+      "path": "legendary/api/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "legendary/api/egs.py",
+      "bytes": 16133,
+      "sha256": "e7135e8f3fc96451b5cfc3c6511cf9a56daae8e029a9d6d21cc155ba3fbee8b5"
+    },
+    {
+      "path": "legendary/api/lgd.py",
+      "bytes": 832,
+      "sha256": "8de0acf279c311d5c5dce8f5f010d4b336d3c8c1d62db78da28dd64e3731a972"
+    },
+    {
+      "path": "legendary/cli.py",
+      "bytes": 177157,
+      "sha256": "d2986ecb2fb3f2578d6a9b7b927cd87cc021408432203654cde233b4a1d68900"
+    },
+    {
+      "path": "legendary/core.py",
+      "bytes": 109994,
+      "sha256": "31fd6aa7105506f3e728acb7bd40803ff74392f59f5c100d3703c29ad99b48a0"
+    },
+    {
+      "path": "legendary/downloader/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "legendary/downloader/mp/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "legendary/downloader/mp/manager.py",
+      "bytes": 38600,
+      "sha256": "b53a785c770c518bf5712979f6c2cd1cca09c11426c4054e32554c36470c5c5f"
+    },
+    {
+      "path": "legendary/downloader/mp/workers.py",
+      "bytes": 14342,
+      "sha256": "3ee93e583966a65abad0a510ae38db2d8e85db93061b759ef3ba0f4465b7262f"
+    },
+    {
+      "path": "legendary/lfs/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "legendary/lfs/crossover.py",
+      "bytes": 2154,
+      "sha256": "89966ea2e2c9ff0bdf2dd86410be0a144ac34c406ee7291175079e87c70b0b47"
+    },
+    {
+      "path": "legendary/lfs/egl.py",
+      "bytes": 3475,
+      "sha256": "1174b3b2742381f84088704cc1e154ee5cf212832f7b8aeb5ffc5c447c29c30c"
+    },
+    {
+      "path": "legendary/lfs/eos.py",
+      "bytes": 6761,
+      "sha256": "2c12a26e2fc5f5977ba037375012c8770023cf553738d7ad6d011c5b817583e0"
+    },
+    {
+      "path": "legendary/lfs/lgndry.py",
+      "bytes": 20677,
+      "sha256": "6c1642e2b4c60ddcc95758bbb35bb9bc95cc526c25ec1bfbb898e940e124c0f2"
+    },
+    {
+      "path": "legendary/lfs/utils.py",
+      "bytes": 7184,
+      "sha256": "05630d67982da51d080e405e4beec8d8bca00a40c80c17d5cd02ed9657a247de"
+    },
+    {
+      "path": "legendary/lfs/windows_helpers.py",
+      "bytes": 2920,
+      "sha256": "af80fa59daec9d91026906bf602907daf1e452c103675db6bd2ef8e5a03749ed"
+    },
+    {
+      "path": "legendary/lfs/wine_helpers.py",
+      "bytes": 3634,
+      "sha256": "6917bdd86ffb534df1205e366b9864db8051355d3d29267a5ee8ee969312ecf7"
+    },
+    {
+      "path": "legendary/models/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "legendary/models/chunk.py",
+      "bytes": 5365,
+      "sha256": "724123d068595f52d16c5633748415c062c489079dc8216ad9839e0285282c96"
+    },
+    {
+      "path": "legendary/models/config.py",
+      "bytes": 1287,
+      "sha256": "4efb9c2df7d901009c8f67fe1edc3eaf904cbd52afb3dc63dd755b528b3d253a"
+    },
+    {
+      "path": "legendary/models/downloading.py",
+      "bytes": 3481,
+      "sha256": "9bb40b480c460141b3b770f1f156c4c7237d02e4af58b4abaa98eee9adc79385"
+    },
+    {
+      "path": "legendary/models/egl.py",
+      "bytes": 6570,
+      "sha256": "46399df0c9aaf8a2727d6c5e1db78f005d6da602b63a1ffd5fe317193c391318"
+    },
+    {
+      "path": "legendary/models/exceptions.py",
+      "bytes": 52,
+      "sha256": "fd0276bd407f4a3abf6d13b7e4bce31794a48bd6aae6ef7f6b3e688573e53f2a"
+    },
+    {
+      "path": "legendary/models/game.py",
+      "bytes": 10233,
+      "sha256": "b2bd0d892650e61605b5195a273f4aae751c48e10880272f4f0fdde9d6729718"
+    },
+    {
+      "path": "legendary/models/gql.py",
+      "bytes": 3036,
+      "sha256": "b0bf0bb9dfef46ed384a85a65e9edd1bd88fe31da03d7b62cba8304fd881150c"
+    },
+    {
+      "path": "legendary/models/json_manifest.py",
+      "bytes": 5716,
+      "sha256": "c3684bb96ccfc5ac1d8c9a4f4aacef0f63c3453eb950da001f6fe4dbcd83f78e"
+    },
+    {
+      "path": "legendary/models/manifest.py",
+      "bytes": 36821,
+      "sha256": "908562a3a030c55b11497bd42da0cbd67f15eac9d558630c427a41903365e4bd"
+    },
+    {
+      "path": "legendary/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "legendary/utils/aliasing.py",
+      "bytes": 3334,
+      "sha256": "d09d3ad60b594c337485ddb49ac6f6aa663a1e62a40017c10ec20aa0ad3aa906"
+    },
+    {
+      "path": "legendary/utils/cli.py",
+      "bytes": 2862,
+      "sha256": "027e8669435865dfbceea388d9a4e4b3848e36e49a29a69cd443ba1c6d8cea58"
+    },
+    {
+      "path": "legendary/utils/custom_parser.py",
+      "bytes": 978,
+      "sha256": "91a1a5b26c5614ee96c16cea945e8a0c5ad45b7f3f5360022eb6bbe5c5aacaf9"
+    },
+    {
+      "path": "legendary/utils/egl_crypt.py",
+      "bytes": 9933,
+      "sha256": "5e0d7c7d98b22971e1fbc00e67449b737f20401f1cee7f39f20db16a608fec4a"
+    },
+    {
+      "path": "legendary/utils/env.py",
+      "bytes": 295,
+      "sha256": "12586029f406e8b2ba72484b3f485d731753ee434607faedd5626902bafe9a3b"
+    },
+    {
+      "path": "legendary/utils/game_workarounds.py",
+      "bytes": 1335,
+      "sha256": "47d2fa03001653cad93976dbffd8976ef1e09d04ce0c7ce527b542038332d218"
+    },
+    {
+      "path": "legendary/utils/rolling_hash.py",
+      "bytes": 537,
+      "sha256": "696f14bd7959249c9dcebf13239e6f3f02bf0ee1d92d1bf94c03e763bc72088b"
+    },
+    {
+      "path": "legendary/utils/savegame_helper.py",
+      "bytes": 7905,
+      "sha256": "c75682efdab3ad7feb5e75fe4e88c45898fbd1b8f29c640b9a860b969e1a7f66"
+    },
+    {
+      "path": "legendary/utils/selective_dl.py",
+      "bytes": 1617,
+      "sha256": "7c049950637c299f1f6649b1202b6a630a4beedde01d72595cb11e05a0592421"
+    },
+    {
+      "path": "legendary/utils/webview_login.py",
+      "bytes": 5718,
+      "sha256": "8122ea3d68868d2e685e40fd089680c7e815cb4dce79280a886fa4c367c8b64d"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 1410,
+      "sha256": "715ab15c781fa209d3d6ad30a3c275f6e79743158ec5a6cb785cc5d25394cb9a"
+    },
+    {
+      "path": "uv.lock",
+      "bytes": 94539,
+      "sha256": "99672e740c086c019e46bbde1b9ef6273f104ca1193df790959501e76227e0fc"
+    },
+    {
+      "path": "zipapp_main.py",
+      "bytes": 1562,
+      "sha256": "3d72017d104af95b6ac74a7c976892a52dda6111c794e4b467f970098df05220"
+    }
+  ]
+}

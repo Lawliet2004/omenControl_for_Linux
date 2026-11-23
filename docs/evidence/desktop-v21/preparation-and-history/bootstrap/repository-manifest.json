@@ -1,0 +1,56 @@
+{
+  "archive": "/home/papan/Desktop/Projects/omen/target/graphical-auth-v20/bootstrap/metadata-repository.tar",
+  "archive_bytes": 94617600,
+  "sha256": "f6ba689f0640c3f3cffee3811508604747b5983c1ce8ee6f4395238b1acb39ea",
+  "metadata_only": true,
+  "signed_indices": [
+    {
+      "suite": "resolute",
+      "InRelease_sha256": "45f95ce276cdba3e41870516a130e03c58b8b7a79e9546b0efe9e526d255740c",
+      "component_SHA256": {
+        "main": "92eb335c0ed27983d41a5a0efdf0edce3e67bfa34e8e987af9df260ca72d9bf9",
+        "universe": "9c009342905706a05822f6e751f5b1ac34b687f054bfca9a0a652178445fc44c"
+      },
+      "signature_status": [
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED F6ECB3762474EDA9D21B7022871920D1991BC93C 0",
+        "[GNUPG:] SIG_ID u7N3KdZlUUFKlEUkoinMi3cQWWU 2026-04-23 1776964050",
+        "[GNUPG:] GOODSIG 871920D1991BC93C Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>",
+        "[GNUPG:] VALIDSIG F6ECB3762474EDA9D21B7022871920D1991BC93C 2026-04-23 1776964050 0 4 0 1 10 01 F6ECB3762474EDA9D21B7022871920D1991BC93C"
+      ]
+    },
+    {
+      "suite": "resolute-updates",
+      "InRelease_sha256": "4c8935f781b121d843c8a4141ab6819732c50872401ab19dddb2ce4b1f3c3b2b",
+      "component_SHA256": {
+        "main": "950f05997e0ef159a40b4283a7566484a0376126a60a48f4b33245ea52d33cd5",
+        "universe": "afe221e00fd553d7d6efad6a8a8e32d8a6a48e6a97579fc197215877ac1ec797"
+      },
+      "signature_status": [
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED F6ECB3762474EDA9D21B7022871920D1991BC93C 0",
+        "[GNUPG:] SIG_ID aIIYF28EYn4Ca5eHBp3Ips2sJdY 2026-10-27 1793097745",
+        "[GNUPG:] GOODSIG 871920D1991BC93C Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>",
+        "[GNUPG:] VALIDSIG F6ECB3762474EDA9D21B7022871920D1991BC93C 2026-10-27 1793097745 0 4 0 1 10 01 F6ECB3762474EDA9D21B7022871920D1991BC93C"
+      ]
+    },
+    {
+      "suite": "resolute-security",
+      "InRelease_sha256": "a09771aa177402e5b8b3464ac309d8e07502eda695687cd7b673d0ffd4d06d04",
+      "component_SHA256": {
+        "main": "78409187ef8d22df55421dd48b016735dbd0121914705426aa5da81aa5aa6849",
+        "universe": "af7f27ac157e040ecf5da4fb2b03f93930bee337715a1f81baec4a296506c0f9"
+      },
+      "signature_status": [
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED F6ECB3762474EDA9D21B7022871920D1991BC93C 0",
+        "[GNUPG:] SIG_ID 1tsPypK8OzFgimfF4/jHTMD/Z2M 2026-10-26 1793034298",
+        "[GNUPG:] GOODSIG 871920D1991BC93C Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>",
+        "[GNUPG:] VALIDSIG F6ECB3762474EDA9D21B7022871920D1991BC93C 2026-10-26 1793034298 0 4 0 1 10 01 F6ECB3762474EDA9D21B7022871920D1991BC93C"
+      ]
+    }
+  ],
+  "packages": [],
+  "host_packages_installed": false,
+  "guest_APT_verifies_again": true
+}

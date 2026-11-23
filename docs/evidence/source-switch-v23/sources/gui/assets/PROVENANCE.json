@@ -1,0 +1,116 @@
+{
+  "project": "GNOME Project",
+  "source": "https://download.gnome.org/sources/adwaita-icon-theme/50/",
+  "archive_package": "adwaita-icon-theme",
+  "archive_version": "50.0-1",
+  "archive_filename": "pool/main/a/adwaita-icon-theme/adwaita-icon-theme_50.0-1_all.deb",
+  "archive_sha256": "db9f11a94f993de589e7d8879664cb371eb8aefc8a2bce100d923951e4ef30c8",
+  "notice": "ADWAITA_NOTICE",
+  "icons": [
+    {
+      "upstream_path": "./usr/share/icons/Adwaita/symbolic/devices/computer-symbolic.svg",
+      "resource_path": "icons/scalable/devices/computer-symbolic.svg",
+      "sha256": "edbcdcbca98efa81f57cdfda0ce01a03c324e27e1d224f82a3b640a5443cbe68",
+      "modified": false,
+      "lookup_alias": null
+    },
+    {
+      "upstream_path": "./usr/share/icons/Adwaita/symbolic/actions/view-grid-symbolic.svg",
+      "resource_path": "icons/scalable/actions/view-grid-symbolic.svg",
+      "sha256": "a2995ba7ecafd0a11d654fae79409a158f0132abfe6bdf67edc84892ca7f78a8",
+      "modified": false,
+      "lookup_alias": null
+    },
+    {
+      "upstream_path": "./usr/share/icons/Adwaita/symbolic/categories/applications-system-symbolic.svg",
+      "resource_path": "icons/scalable/categories/applications-system-symbolic.svg",
+      "sha256": "76c8e673df6c429c4537a97a981b9089edad086c08a7936212917052a8f678b9",
+      "modified": false,
+      "lookup_alias": null
+    },
+    {
+      "upstream_path": "./usr/share/icons/Adwaita/symbolic/actions/view-refresh-symbolic.svg",
+      "resource_path": "icons/scalable/actions/view-refresh-symbolic.svg",
+      "sha256": "43281dccb17fe4ef2d2fd459de33debf0fbd9294dac9275c0f047c9fe7d9ae5c",
+      "modified": false,
+      "lookup_alias": null
+    },
+    {
+      "upstream_path": "./usr/share/icons/Adwaita/symbolic/status/weather-clear-night-symbolic.svg",
+      "resource_path": "icons/scalable/status/weather-clear-night-symbolic.svg",
+      "sha256": "2d99d24310ef681cf024738366fccbd9368bec78da30368bdf0e78210a2f8e08",
+      "modified": false,
+      "lookup_alias": null
+    },
+    {
+      "upstream_path": "./usr/share/icons/Adwaita/symbolic/devices/video-display-symbolic.svg",
+      "resource_path": "icons/scalable/devices/video-display-symbolic.svg",
+      "sha256": "edbcdcbca98efa81f57cdfda0ce01a03c324e27e1d224f82a3b640a5443cbe68",
+      "modified": false,
+      "lookup_alias": null
+    },
+    {
+      "upstream_path": "./usr/share/icons/Adwaita/symbolic/devices/battery-symbolic.svg",
+      "resource_path": "icons/scalable/devices/battery-symbolic.svg",
+      "sha256": "e3b54f28cfb1d5525678351c323eeb16d141eebd8d8e1fc7c77c80cb0e85b8af",
+      "modified": false,
+      "lookup_alias": null
+    },
+    {
+      "upstream_path": "./usr/share/icons/Adwaita/symbolic/categories/applications-games-symbolic.svg",
+      "resource_path": "icons/scalable/categories/applications-games-symbolic.svg",
+      "sha256": "78abc5e0f13ed6d407fbaf31d6934019b3b04d663b8ed3d12aa32f80a63f04dc",
+      "modified": false,
+      "lookup_alias": null
+    },
+    {
+      "upstream_path": "./usr/share/icons/Adwaita/symbolic/categories/preferences-system-symbolic.svg",
+      "resource_path": "icons/scalable/categories/preferences-system-symbolic.svg",
+      "sha256": "26b069ad21997d1210a5f8e6c34a71595a0c88184597fdf32ac182c39e5352a9",
+      "modified": false,
+      "lookup_alias": null
+    },
+    {
+      "upstream_path": "./usr/share/icons/Adwaita/symbolic/actions/sidebar-show-symbolic.svg",
+      "resource_path": "icons/scalable/actions/sidebar-show-symbolic.svg",
+      "sha256": "382570905672758fd61b0ec646d8660eecc44001c9a43e3b3de9abb0d45dfaba",
+      "modified": false,
+      "lookup_alias": null
+    },
+    {
+      "upstream_path": "./usr/share/icons/Adwaita/symbolic/actions/sidebar-show-symbolic-rtl.svg",
+      "resource_path": "icons/scalable/actions/sidebar-show-symbolic-rtl.svg",
+      "sha256": "6900f21171731e746ef093c05807fe6913d496376880f1134726064f6f61d746",
+      "modified": false,
+      "lookup_alias": null
+    },
+    {
+      "upstream_path": "./usr/share/icons/Adwaita/symbolic/ui/window-minimize-symbolic.svg",
+      "resource_path": "icons/scalable/actions/window-minimize-symbolic.svg",
+      "sha256": "1a34fe49dfb151c80573c947c382bbeca3ac648e2fc3364d8a2d384ab836b54e",
+      "modified": false,
+      "lookup_alias": null
+    },
+    {
+      "upstream_path": "./usr/share/icons/Adwaita/symbolic/actions/open-menu-symbolic.svg",
+      "resource_path": "icons/scalable/actions/open-menu-symbolic.svg",
+      "sha256": "dd3f1c117437a6f5124905de7212a1a320e76f9b33d8411bf70dbdbefa8e9bad",
+      "modified": false,
+      "lookup_alias": null
+    },
+    {
+      "upstream_path": "./usr/share/icons/Adwaita/symbolic/ui/window-close-symbolic.svg",
+      "resource_path": "icons/scalable/actions/window-close-symbolic.svg",
+      "sha256": "75668d97d7466b1fafea21767c5de1ba31efd48fb319f43a6e16ddbf455d6465",
+      "modified": false,
+      "lookup_alias": null
+    },
+    {
+      "upstream_path": "./usr/share/icons/Adwaita/symbolic/status/power-profile-performance-symbolic.svg",
+      "resource_path": "icons/scalable/status/speedometer-symbolic.svg",
+      "sha256": "c6ba4d206e46252b193672b34beb42f82f0c6620811bc969477af5a24c5cee14",
+      "modified": false,
+      "lookup_alias": "speedometer-symbolic"
+    }
+  ]
+}

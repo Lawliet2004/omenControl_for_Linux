@@ -1,0 +1,55 @@
+{
+  "recorded_utc": "2026-10-26T13:38:43.212753+00:00",
+  "profile": "release",
+  "gui_sha256": "cba3f16de8307237920da1409943ed8b1e9c8473fd4e170a2cf93871754ba0bc",
+  "method": "GTK widget-tree captures of main and overlay windows only; private bus, separate fixture and live read-only sources",
+  "hardware_control_writes": 0,
+  "cleanup_complete": true,
+  "captures": [
+    {
+      "fixture": true,
+      "requested_scale": 1,
+      "gtk_display_type": "GdkWaylandDisplay",
+      "images": [
+        {
+          "path": "docs/screenshots/overlay-fixture-scale1.png",
+          "sha256": "ef1b31fa0483a9abba419b8b6f3cc82da0c37d8d152ac0a0d2dc992a846c7c94"
+        },
+        {
+          "path": "docs/screenshots/overlay-fixture-scale1-settings.png",
+          "sha256": "6e2f3e1baede9380f4728b5fc2ce09bc7db1450e06b1c236ec82d03dceff8977"
+        }
+      ]
+    },
+    {
+      "fixture": true,
+      "requested_scale": 2,
+      "gtk_display_type": "GdkWaylandDisplay",
+      "images": [
+        {
+          "path": "docs/screenshots/overlay-fixture-scale2.png",
+          "sha256": "ecd714ee8ced59bb43c91586cda5c1630b10f3dff852e29dda434e35509c66fb"
+        },
+        {
+          "path": "docs/screenshots/overlay-fixture-scale2-settings.png",
+          "sha256": "4f06bcf73119ae9324b1b6c07249805d4a0d18e01485c77f0a7a67ee52f1e92c"
+        }
+      ]
+    },
+    {
+      "fixture": false,
+      "requested_scale": 1,
+      "gtk_display_type": "GdkWaylandDisplay",
+      "images": [
+        {
+          "path": "docs/screenshots/overlay-readonly-scale1.png",
+          "sha256": "7598edfee4b094c77ce26a9b535e319fe09942c709fa631b5db31d3d3e62c9a2"
+        },
+        {
+          "path": "docs/screenshots/overlay-readonly-scale1-settings.png",
+          "sha256": "3e26a65a07b68048567b94f9b3a5482012988a1db16728f33dbddca06511946e"
+        }
+      ]
+    }
+  ]
+}

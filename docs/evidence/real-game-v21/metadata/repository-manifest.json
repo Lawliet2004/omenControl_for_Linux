@@ -1,0 +1,59 @@
+{
+  "archive": "/home/papan/Desktop/Projects/omen/target/real-game-v21/metadata/metadata-repository.tar",
+  "archive_bytes": 96512000,
+  "sha256": "c47206cdb1c1a2cec4657a0ef603823dcc0e2a3a5f801844b8aacc06b2cd655c",
+  "metadata_only": true,
+  "signed_indices": [
+    {
+      "suite": "resolute",
+      "InRelease_sha256": "45f95ce276cdba3e41870516a130e03c58b8b7a79e9546b0efe9e526d255740c",
+      "component_SHA256": {
+        "main": "92eb335c0ed27983d41a5a0efdf0edce3e67bfa34e8e987af9df260ca72d9bf9",
+        "universe": "9c009342905706a05822f6e751f5b1ac34b687f054bfca9a0a652178445fc44c",
+        "multiverse": "e1fc663a0e6ca63ea0347f7bb36f1af195c1eea688a481adb721ac1556a70fa1"
+      },
+      "signature_status": [
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED F6ECB3762474EDA9D21B7022871920D1991BC93C 0",
+        "[GNUPG:] SIG_ID u7N3KdZlUUFKlEUkoinMi3cQWWU 2026-04-23 1776964050",
+        "[GNUPG:] GOODSIG 871920D1991BC93C Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>",
+        "[GNUPG:] VALIDSIG F6ECB3762474EDA9D21B7022871920D1991BC93C 2026-04-23 1776964050 0 4 0 1 10 01 F6ECB3762474EDA9D21B7022871920D1991BC93C"
+      ]
+    },
+    {
+      "suite": "resolute-updates",
+      "InRelease_sha256": "ffadda72886e6090941fccdd362961fb646bf1d6b6af232b78adbec07da2da09",
+      "component_SHA256": {
+        "main": "472d35d7eff469c980a2bc201bc8fa66e6cddf10a4fe62ab8677bdf3845dfa4e",
+        "universe": "96b6478f52367fc6c2a529840de6aab76c95883919920f71bd4d3583b4136f7c",
+        "multiverse": "cfd4795cde004b66cfdae9bc203ef879a492fa1f03d4639c8a77198beecf6a94"
+      },
+      "signature_status": [
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED F6ECB3762474EDA9D21B7022871920D1991BC93C 0",
+        "[GNUPG:] SIG_ID TCuVOhrnD7qJX/g7a7jWWaaOMvQ 2026-10-28 1793157912",
+        "[GNUPG:] GOODSIG 871920D1991BC93C Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>",
+        "[GNUPG:] VALIDSIG F6ECB3762474EDA9D21B7022871920D1991BC93C 2026-10-28 1793157912 0 4 0 1 10 01 F6ECB3762474EDA9D21B7022871920D1991BC93C"
+      ]
+    },
+    {
+      "suite": "resolute-security",
+      "InRelease_sha256": "b27e5690bb333faf562eb693c6c9629c35b79dc7d8d7d670bdb45ca000294389",
+      "component_SHA256": {
+        "main": "78409187ef8d22df55421dd48b016735dbd0121914705426aa5da81aa5aa6849",
+        "universe": "af7f27ac157e040ecf5da4fb2b03f93930bee337715a1f81baec4a296506c0f9",
+        "multiverse": "ff2f92fe625d89892843f837fc9c5905d5e4766a98bc6ab7b323815e4963168a"
+      },
+      "signature_status": [
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED F6ECB3762474EDA9D21B7022871920D1991BC93C 0",
+        "[GNUPG:] SIG_ID hp+GeErnoQefP+tA73GZX4uUutc 2026-10-27 1793123186",
+        "[GNUPG:] GOODSIG 871920D1991BC93C Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>",
+        "[GNUPG:] VALIDSIG F6ECB3762474EDA9D21B7022871920D1991BC93C 2026-10-27 1793123186 0 4 0 1 10 01 F6ECB3762474EDA9D21B7022871920D1991BC93C"
+      ]
+    }
+  ],
+  "packages": [],
+  "host_packages_installed": false,
+  "guest_APT_verifies_again": true
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/systemd/systemd/v259/src/core/dbus-scope.c",
+    "sha256": "ade31258700a6b4506b1999923cd1d4d1b0720c7ad8f5bc908cb2466841cf0d8",
+    "bytes": 11076,
+    "license": "LGPL-2.1-or-later",
+    "used_as": "API reference only; not copied into the implementation"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/systemd/systemd/v259/src/shared/bus-unit-util.c",
+    "sha256": "4cab5d7c46ecb178fe7da23f8436382617492165c386809f4a4047ebb984e01b",
+    "bytes": 137176,
+    "license": "LGPL-2.1-or-later",
+    "used_as": "API reference only; not copied into the implementation"
+  }
+]

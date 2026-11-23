@@ -1,0 +1,222 @@
+[
+  {
+    "path": "Cargo.lock",
+    "added": false,
+    "sha256": "6a525ad95a865c9c565351fc0f8de89a02f147b39409a316f2b9bc2959e6329c"
+  },
+  {
+    "path": "README.md",
+    "added": false,
+    "sha256": "ce7364a5859d64c36cb1fd145a928c837754dfcc179bbeac6b4f3e5fa45741da"
+  },
+  {
+    "path": "crates/cli/src/main.rs",
+    "added": false,
+    "sha256": "3e590ab5e5c43f5033426351f208d257f19045a8610b144f63b7e82051152215"
+  },
+  {
+    "path": "crates/client/Cargo.toml",
+    "added": false,
+    "sha256": "d396e14a8f4f533473061b0ef45f2551fc75d0cf0bf6dd7fd7b7e57bc2492e91"
+  },
+  {
+    "path": "crates/client/src/flatpak_bridge.rs",
+    "added": false,
+    "sha256": "4535cb8bebd7ee276a1b15550e4af958d863933cb41dbed33a3ec72f4da244f9"
+  },
+  {
+    "path": "crates/client/src/flatpak_setup.rs",
+    "added": true,
+    "sha256": "f91049add42c80f991c1c9c4a1592628cd05f4cf57a7240f349071c503d5962d"
+  },
+  {
+    "path": "crates/client/src/lib.rs",
+    "added": false,
+    "sha256": "03d7785030a7c18435289ed655125897362686687bd8f43d15efc8e532957eeb"
+  },
+  {
+    "path": "crates/hardware/src/games.rs",
+    "added": false,
+    "sha256": "1b208dcdf198cb8142cf842a930371a6749a81ca750427202842ba92a05e0fee"
+  },
+  {
+    "path": "crates/hardware/src/games/discovery.rs",
+    "added": false,
+    "sha256": "443d237803817129397566849b97684e20c36a09364f3818310b39528bde6e41"
+  },
+  {
+    "path": "crates/ipc/src/settings.rs",
+    "added": false,
+    "sha256": "e04ea7ce24276cd2b2881bd922508ce156d49cf461fb0b1f3aa71a5a05b62d46"
+  },
+  {
+    "path": "docs/ACCESSIBILITY.md",
+    "added": false,
+    "sha256": "ee823d3b2cf6b5075d6d21aacf78ffaf7d8525493b794ff5689bc257984bf2b9"
+  },
+  {
+    "path": "docs/APPLICATION_AUDIT_IMPLEMENTATION.md",
+    "added": false,
+    "sha256": "7831651eab657754fdf9ab20f1dc8d4dbfcb2a5b38d879e6ae8c6b1411a0dcbf"
+  },
+  {
+    "path": "docs/AUDIT_COMPLETION_2026-10-28.md",
+    "added": true,
+    "sha256": "941ef4372657bd2e91dfb7271a473086b80cb02bcd61b89eca66175f2c49b866"
+  },
+  {
+    "path": "docs/CONTINUATION_CHECKLIST.md",
+    "added": false,
+    "sha256": "9d88ab39147b3545754f981c0c75a73a4cebafab3a81de44734259c8179ce8c4"
+  },
+  {
+    "path": "docs/FLATPAK_SETUP.md",
+    "added": true,
+    "sha256": "ce8761541f0baf7244904ec7f1c1f2d781c4aaba9bb4a3eb6bad02341b572454"
+  },
+  {
+    "path": "docs/GAME_LAUNCHERS.md",
+    "added": false,
+    "sha256": "d73e9f231edf477ead12df754e414fdfa36f9dd88ed520bc2e69220c1e9eb3b3"
+  },
+  {
+    "path": "docs/IMPLEMENTATION_STATUS.md",
+    "added": false,
+    "sha256": "ab9fbcb93fbd2e2a62b382526986de8c1b11f68bc505656d78937da93846ae1b"
+  },
+  {
+    "path": "docs/INSTALLATION.md",
+    "added": false,
+    "sha256": "25640e0d82498a64489ac4b9ff2920a9049c192d560fabc3d038eefa8df21bbf"
+  },
+  {
+    "path": "docs/MANAGED_GAME_SESSIONS.md",
+    "added": false,
+    "sha256": "fd5f9737fce88762b1321d724c922b0a9045a9311687adee085d0f53ecb69f48"
+  },
+  {
+    "path": "docs/TEST_REPORT.md",
+    "added": false,
+    "sha256": "87e909e7dac9acaf7ff470b17e6f4a470c696e242cae41af57c40c6b901c847c"
+  },
+  {
+    "path": "gui/src/game_sessions.rs",
+    "added": false,
+    "sha256": "6df17b2b79027afff2b01bd51c4e5774de369d25e1ae0de28d54db59fe4cbc23"
+  },
+  {
+    "path": "gui/src/main.rs",
+    "added": false,
+    "sha256": "9e44833b60cb692317a198081de0b2082cfb628cb8ee8146852fe9c07f8ac5e6"
+  },
+  {
+    "path": "gui/src/ui_report.rs",
+    "added": false,
+    "sha256": "f3161517d32e72c437d8e998b8b55af5b4220614fa0ac10bcb1091eaddb0e2c3"
+  },
+  {
+    "path": "packaging/build-deb.sh",
+    "added": false,
+    "sha256": "ee88e58449290c0e2b44efc97fe16d96e950d1c1fbf7d2c18de23b635870d6ad"
+  },
+  {
+    "path": "packaging/build-flatpak-wrapper.py",
+    "added": false,
+    "sha256": "d808fff395c73c0fe28a398a844d446a370037fe2604a0efb6bc820b258ed3da"
+  },
+  {
+    "path": "packaging/debian/changelog",
+    "added": false,
+    "sha256": "56bffbc56be2fc0f827803c836f9b5cecb9e134e076eb8dfbb2475e4c64724fe"
+  },
+  {
+    "path": "packaging/debian/control",
+    "added": false,
+    "sha256": "aff2b4dc2f8b6b927b96f466db2841f30c238cc12144965fbcb4823aaaec33f1"
+  },
+  {
+    "path": "tests/README.md",
+    "added": false,
+    "sha256": "2699e51acde19dcdc47a12a8a5e151f96a459f338126a61e16c4485556aca457"
+  },
+  {
+    "path": "tests/flathub_prepare_vm_inner.py",
+    "added": false,
+    "sha256": "77094da8f41927130aab5cd85ef615a3f58cba72c48d4d74d7c883cd3e8d06cf"
+  },
+  {
+    "path": "tests/flatpak_setup.py",
+    "added": true,
+    "sha256": "551399245d40504965ed8d50642cd1cdeddb318f53f060bf609233a2a37e411e"
+  },
+  {
+    "path": "tests/flatpak_wrapper_vm_inner.py",
+    "added": false,
+    "sha256": "a07b24a7b258c1811a3905ea30cd6a29af8c6d3eb1dd5914582a550a5a2b5325"
+  },
+  {
+    "path": "tests/game_formats.py",
+    "added": false,
+    "sha256": "c6465ffefd94b1fce2fd08623d084995cb48a14a0a3ac05e1f1bb2443a5ae6e5"
+  },
+  {
+    "path": "tests/game_job_control.py",
+    "added": true,
+    "sha256": "de2967cefd9120e30391ecdfc9c1dd5bca9baae3227c33af9d19e9982e83e0d2"
+  },
+  {
+    "path": "tests/gui_controls_presentation.py",
+    "added": false,
+    "sha256": "56c5517161b7a5b76cf003de8279b47aa3562bf32043d72546f7dfb95c161f37"
+  },
+  {
+    "path": "tests/gui_flatpak_presentation.py",
+    "added": true,
+    "sha256": "f8ffa126b47fbc76da0ee45ecc7774ffe17ea2f00cd17bb3c95eb32addccd2c7"
+  },
+  {
+    "path": "tests/gui_flatpak_setup.py",
+    "added": true,
+    "sha256": "399f2250c0c6bc037d9ec80fa926734accde1bdd5aa7eede7c8c2eeb7a9b2187"
+  },
+  {
+    "path": "tests/gui_game_formats_presentation.py",
+    "added": false,
+    "sha256": "68a9326308f91b090b885a88967ed260f1df7487e1a4aa7dd9bcc02d5d8e45f9"
+  },
+  {
+    "path": "tests/native_desktop.py",
+    "added": false,
+    "sha256": "bfe478e3db9130b712767066feb76d9c19b53482eedc7d603daa7d83a658e02b"
+  },
+  {
+    "path": "tests/package.py",
+    "added": false,
+    "sha256": "e76ab07f3617167b3e04fdd4f4f1552c83324871c9d9397d0447a5c0b8ce22ae"
+  },
+  {
+    "path": "tests/package_lifecycle.py",
+    "added": false,
+    "sha256": "b00528e0dba3e324fc5a6a909f41acb7c3776c8f1955b9f4174d376f2a1f23c2"
+  },
+  {
+    "path": "tests/package_lifecycle_inner.py",
+    "added": false,
+    "sha256": "e5b323807dda3a4a23bcb661a9f774350deab70e6a8d50f5e3a58388a1c8e37b"
+  },
+  {
+    "path": "tests/real_flatpak_game_vm_inner.py",
+    "added": true,
+    "sha256": "01fcb3006ae0c510d50bc331145cac404bb8eadc89c67c90d8aa4650679c32ed"
+  },
+  {
+    "path": "tests/real_game_vm_inner.py",
+    "added": false,
+    "sha256": "9f60c236b17713571163a729d3036a5ccfac372f2fe1d9c025f39ae4ab0257a6"
+  },
+  {
+    "path": "tests/systemd_vm.py",
+    "added": false,
+    "sha256": "c964140d4fafef5277d3a37b7e13e324767251e65639a0a45c6c5a15b11b6f8f"
+  }
+]

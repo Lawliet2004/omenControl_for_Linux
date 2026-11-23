@@ -1,0 +1,29 @@
+{
+  "recorded_utc": "2026-10-26T13:43:28.464598+00:00",
+  "method": "direct CLI detection and independent read-only sysfs identity/interface inventory; no hardware-control requests",
+  "detection_report": "Machine   : HP Victus by HP 15.6 inch Gaming Laptop PC-fb1002AX\nFamily    : 103C_5335M7 HP Victus  Board: 8C30\nBIOS      : F.10 (AMI)  Kernel: 7.0.0-38-generic\nClass     : Victus\n\nCapability                 Status       Detail\nFan monitoring             available    hp-wmi hwmon fan*_input\nFan manual control         unavailable  hp-wmi exposes no pwm1 for board 8C30 (board is not on the hp-wmi fan-control allowlist)\nFan curves                 unavailable  requires manual fan control\nPerformance profiles       read-only    monitoring mode; profile control requires explicit daemon opt-in for this board and BIOS\nLighting zones             unavailable  no kernel keyboard-lighting interface (model without RGB keyboard or module not installed)\nKeyboard backlight         unavailable  no keyboard backlight LED found\nGraphics MUX               unavailable  no mainline kernel MUX interface for this model (status/monitoring only)\nCharge threshold           unavailable  firmware/kernel does not expose charge_control_end_threshold\nBattery-aware              read-only    monitoring mode; profile control requires explicit daemon opt-in for this board and BIOS\nNVIDIA telemetry           available    nvidia-smi interface and NVIDIA device nodes accessible; suspended GPU sampling is skipped\nAMD telemetry              available    hwmon amdgpu\n",
+  "identity": {
+    "product_name": "Victus by HP 15.6 inch Gaming Laptop PC-fb1002AX",
+    "board_name": "8C30",
+    "bios_version": "F.10"
+  },
+  "kernel": "7.0.0-38-generic",
+  "hp_hwmon": [
+    {
+      "path": "/sys/class/hwmon/hwmon7",
+      "attributes": [
+        "pwm1_enable",
+        "fan1_input",
+        "fan2_input"
+      ],
+      "mode_readback": "2"
+    }
+  ],
+  "charging_interfaces": [],
+  "host_package_installed": false,
+  "host_service_file_present": false,
+  "approved_polkit_action_present": true,
+  "preexisting_daemon_2124598_present": true,
+  "cli_sha256": "a385fc6ea674d726d230a2db500a3ffda39ee8c53fbe8bc949c193dcb3c0c5bd",
+  "hardware_control_writes": 0
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "path": "docs/FLATPAK_NESTED_BRIDGE_2026-10-28.md",
+    "sha256": "eaba0f1d41503809a704087dd83a88e166e3831b3109a0c0ae84ee6b98a4f14e"
+  },
+  {
+    "path": "docs/FLATPAK_BRIDGE_DEVELOPMENT_2026-10-28.md",
+    "sha256": "fb01f8a8895730faad438aa1ee8b52168d88458a9507329f8c7a794e7a08f938"
+  },
+  {
+    "path": "docs/APPLICATION_AUDIT_IMPLEMENTATION.md",
+    "sha256": "b89a0fcf479a308ee71bb4570225627c50a9aab1a0b69364c5fb426192adfa16"
+  },
+  {
+    "path": "docs/IMPLEMENTATION_STATUS.md",
+    "sha256": "cdbf4ed78109a51acfc6c1a4d41890db5c4b5fca3c253b96ca2583bb6d1bd526"
+  },
+  {
+    "path": "docs/CONTINUATION_CHECKLIST.md",
+    "sha256": "0027eefcdefdf90322149b9163249fa47e139f74940e3c11a64ab264672e1054"
+  },
+  {
+    "path": "docs/TEST_REPORT.md",
+    "sha256": "74723ca689723c385aa1f1db904666177c4bf1329f466a1a86e56874d851d162"
+  },
+  {
+    "path": "docs/MANAGED_GAME_SESSIONS.md",
+    "sha256": "6d59adc4ddeecc0f7185b15f8d867a61662dbdc59aea96d8dc67d692363fdec8"
+  }
+]

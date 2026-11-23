@@ -1,0 +1,43 @@
+{
+  "result": "failed",
+  "started_utc": "2026-10-27T14:51:28.820126+00:00",
+  "jobs": [
+    {
+      "name": "ui-debug-current",
+      "script": "gui_game_formats",
+      "profile": "debug",
+      "backend": null,
+      "exit_code": 0
+    },
+    {
+      "name": "keyboard-debug",
+      "script": "gui_accessibility",
+      "profile": "debug",
+      "backend": null,
+      "exit_code": 0
+    },
+    {
+      "name": "ui-release-current",
+      "script": "gui_game_formats",
+      "profile": "release",
+      "backend": null,
+      "exit_code": 0
+    },
+    {
+      "name": "keyboard-release",
+      "script": "gui_accessibility",
+      "profile": "release",
+      "backend": null,
+      "exit_code": 0
+    },
+    {
+      "name": "presentation",
+      "script": "gui_game_formats_presentation",
+      "profile": "release",
+      "backend": null,
+      "exit_code": 1
+    }
+  ],
+  "gui_sha256": "c529a826491f04ae02ff8ab69b88210134271b8026b77e62677cdb9871d5d3c5",
+  "finished_utc": "2026-10-27T14:55:45.842917+00:00"
+}

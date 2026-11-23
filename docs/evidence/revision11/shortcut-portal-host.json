@@ -1,0 +1,36 @@
+{
+  "result": "passed",
+  "uid": 1000,
+  "hardware_writes": false,
+  "bind_or_configure_requested": false,
+  "scope": "independent real-portal Register/CreateSession/ListShortcuts/Close probe; no key assignment or activation test",
+  "script_sha256": "22ba12753ec9118d9ed1d1906aa76c46383a559f76144a606eac8d2592f046ab",
+  "installed_desktop_entry": true,
+  "responses": [
+    {
+      "method": "CreateSession",
+      "code": 0,
+      "result_fields": [
+        "session_handle"
+      ]
+    },
+    {
+      "method": "ListShortcuts",
+      "code": 0,
+      "result_fields": [
+        "shortcuts"
+      ]
+    }
+  ],
+  "version": 2,
+  "previous_shortcut_ids": [],
+  "session_closed": true,
+  "connection_closed": true,
+  "recorded_utc": "2026-10-26T02:26:45.555745+00:00",
+  "temporary_user_launcher": {
+    "source_sha256": "a04d446ba46f18dbe2ccff6ea8be2b6790e0e94e4606a2f7cd9e22a41e6ae464",
+    "created_exclusively": true,
+    "removed": true,
+    "host_package_installed": false
+  }
+}

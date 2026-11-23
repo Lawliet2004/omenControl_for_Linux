@@ -1,0 +1,35 @@
+{
+  "method": "release binaries; 5-second windows; CPU percent of one logical core; page-cache-warm launches; live read-only monitoring",
+  "cpu_count": 12,
+  "cli_detect": {
+    "runs_seconds": [
+      0.0828186800063122,
+      0.0722556649998296,
+      0.07345641101710498,
+      0.07576357899233699,
+      0.07116968397167511
+    ],
+    "median_seconds": 0.07345641101710498
+  },
+  "daemon_socket_ready_seconds": 0.010591297992505133,
+  "daemon_idle_no_clients": {
+    "seconds": 5.000525388022652,
+    "rss_kib": 3012,
+    "cpu_pct_one_core": 0.0,
+    "reaped_children_cpu_pct_one_core": 0.0
+  },
+  "gui_window_map_seconds": 0.3646044939814601,
+  "gui_monitoring_dashboard": {
+    "seconds": 5.00061387300957,
+    "rss_kib": 176672,
+    "cpu_pct_one_core": 1.3998281366577738,
+    "reaped_children_cpu_pct_one_core": 1.1998526885638061
+  },
+  "binary_sha256": {
+    "omen-cli": "4a318d72be0960549a54cd7e23762636a8f96304a62d0b2f87c1742ae1283586",
+    "omen-daemon": "f8acd434c80a7ec0739ae7c8b423a4c017c2977c1758e25d430c1b54a36bb195",
+    "omen-gui": "158766cd946e441153ee8743cb2b95c4b0dc1f15182fae9a52d0400fb8a8aa8f"
+  },
+  "kernel": "7.0.0-38-generic",
+  "recorded_utc": "2026-10-25T21:02:17.999041+00:00"
+}

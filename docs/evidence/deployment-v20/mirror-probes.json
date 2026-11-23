@@ -1,0 +1,16 @@
+[
+  {
+    "mirror": "https://mirror.pilotfiber.com/ubuntu/",
+    "url": "https://mirror.pilotfiber.com/ubuntu/pool/main/g/gtk4/libgtk-4-1_4.22.4%2bds-0ubuntu0.1_amd64.deb",
+    "exit_code": 0,
+    "bytes": 131072,
+    "error": ""
+  },
+  {
+    "mirror": "https://mirror.xtom.com.hk/ubuntu/",
+    "url": "https://mirror.xtom.com.hk/ubuntu/pool/main/g/gtk4/libgtk-4-1_4.22.4%2bds-0ubuntu0.1_amd64.deb",
+    "exit_code": 0,
+    "bytes": 131072,
+    "error": ""
+  }
+]

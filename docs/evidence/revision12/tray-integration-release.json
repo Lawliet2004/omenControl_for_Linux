@@ -1,0 +1,15 @@
+{
+  "host": "running KDE StatusNotifierWatcher",
+  "profile": "release",
+  "requested_gtk_backend": "wayland",
+  "gui_sha256": "cba3f16de8307237920da1409943ed8b1e9c8473fd4e170a2cf93871754ba0bc",
+  "live_hardware_writes": false,
+  "checks_passed": [
+    "real KDE tray: read-only menu, Hide, Activate, page navigation, clean Quit",
+    "startup preference hides only after tray registration; menu restores window",
+    "no tray host: start-minimized falls back to a visible GTK window",
+    "private-bus host loss reveals window; host restart re-registers without hiding it again",
+    "fixture only: tray capability changes remove and restore profile actions without a profile or visibility change",
+    "fixture only: tray profile changes reach daemon and restore Balanced"
+  ]
+}

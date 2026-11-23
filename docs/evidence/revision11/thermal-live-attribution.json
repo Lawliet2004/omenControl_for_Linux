@@ -1,0 +1,105 @@
+{
+  "result": "passed",
+  "recorded_utc": "2026-10-26T07:19:20.723466+00:00",
+  "fixture": false,
+  "hardware_control_writes": 0,
+  "uid": 1000,
+  "cli_sha256": "b67f9d8c28218a4a80f31aa2f7c419c613a5bd77acec7ac617c891d64ec9b078",
+  "machine": {
+    "bios_vendor": "AMI",
+    "bios_version": "F.10",
+    "board_name": "8C30",
+    "board_vendor": "HP",
+    "class": "victus",
+    "kernel_version": "7.0.0-38-generic",
+    "product_family": "103C_5335M7 HP Victus",
+    "product_name": "Victus by HP 15.6 inch Gaming Laptop PC-fb1002AX",
+    "sys_vendor": "HP"
+  },
+  "hwmon_samples_checked": [
+    {
+      "device_id": "0000:06:00.0",
+      "id": "hwmon11/amdgpu/temp1_input",
+      "kind": "temperature",
+      "label": "edge (amdgpu)",
+      "measured_unix_ms": 1792999160608,
+      "source": "hwmon",
+      "text": null,
+      "value": 83.0
+    },
+    {
+      "device_id": "0000:00:18.3",
+      "id": "hwmon6/k10temp/temp1_input",
+      "kind": "temperature",
+      "label": "Tctl (k10temp)",
+      "measured_unix_ms": 1792999160609,
+      "source": "hwmon",
+      "text": null,
+      "value": 99.63
+    }
+  ],
+  "nvidia_samples_checked": [
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/name",
+      "kind": "text",
+      "label": "GPU",
+      "measured_unix_ms": 1792999160663,
+      "source": "nvidia_smi",
+      "text": "NVIDIA GeForce RTX 2050",
+      "value": null
+    },
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/temp",
+      "kind": "temperature",
+      "label": "GPU temperature (NVIDIA)",
+      "measured_unix_ms": 1792999160663,
+      "source": "nvidia_smi",
+      "text": null,
+      "value": 82.0
+    },
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/util",
+      "kind": "percent",
+      "label": "GPU utilization (NVIDIA)",
+      "measured_unix_ms": 1792999160663,
+      "source": "nvidia_smi",
+      "text": null,
+      "value": 10.0
+    },
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/power",
+      "kind": "power",
+      "label": "GPU power (NVIDIA)",
+      "measured_unix_ms": 1792999160663,
+      "source": "nvidia_smi",
+      "text": null,
+      "value": 13.99
+    },
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/sm_clock",
+      "kind": "frequency",
+      "label": "GPU SM clock (NVIDIA)",
+      "measured_unix_ms": 1792999160663,
+      "source": "nvidia_smi",
+      "text": null,
+      "value": 1455.0
+    },
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/vram_used_pct",
+      "kind": "percent",
+      "label": "GPU VRAM used (NVIDIA)",
+      "measured_unix_ms": 1792999160663,
+      "source": "nvidia_smi",
+      "text": null,
+      "value": 26.6845703125
+    }
+  ],
+  "nvidia_selected_pci": "0000:01:00.0",
+  "scope": "Provider PCI association on read-only host data, not temperature calibration, physical fan control or curve validation."
+}

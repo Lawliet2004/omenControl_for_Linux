@@ -1,0 +1,6 @@
+{
+  "recorded_utc": "2026-10-26T09:15:55.702373+00:00",
+  "result": "passed",
+  "python_source_files": 25,
+  "scope": "AST parse only; runtime outcomes are separately recorded"
+}

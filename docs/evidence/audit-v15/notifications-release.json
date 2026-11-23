@@ -1,0 +1,13 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "real_desktop_notified": false,
+  "profile": "release",
+  "binary_sha256": "3e9e412a5a2fe60cd50c8181975e6b525056f852922c3dc2e3d04180d1126a93",
+  "checks_passed": [
+    "notifications disabled by default/configuration deliver no message",
+    "fresh fixture temperature delivers one real GNotification on the private bus",
+    "notification identifies fixture origin and informational purpose",
+    "unchanged high readings are suppressed by hysteresis and rate limiting"
+  ]
+}

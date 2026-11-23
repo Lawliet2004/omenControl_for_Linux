@@ -1,0 +1,84 @@
+{
+  "generated_utc": "2026-11-09T05:46:00+00:00",
+  "version": "0.1.0",
+  "goal_complete": false,
+  "scope": "M2 implementable-software gaps: live monitoring-settings apply (history_samples/poll_interval_ms) and diagnostics sensors_error failure path. Preserves historical docs/evidence/validation-summary.json (0.1.0-14, 205 tests) unchanged.",
+  "implementation_scope": {
+    "implemented": [
+      "gui/src/charts.rs History::resize adopts new capacity in place: shrink drops oldest entries in every series, growth keeps existing entries; preserves gaps, original acquisition timestamps and source labels in push()",
+      "gui/src/pages.rs Ui::apply_monitoring_settings calls History::resize and updates poll/freshness consumers; User Import -> Apply settings applies validated general.history_samples / general.poll_interval_ms in the same process; cancellation/invalid/failed write keeps current values; User/Service isolation kept; import feedback states history and poll interval applied immediately",
+      "Shared freshness rule max_age = poll_ms*3 clamp 7000..30000 exercised at 500ms->3000ms (cutoff 7s->9s) via gui/src/charts.rs resize_updates_acquisition_freshness_cutoff",
+      "crates/daemon/src/service.rs diagnostics() retains read_sensors() Result: sensors null + sensors_error string on failure, sensors [] + sensors_error null on empty success; SensorOutcomeBackend test wrapper"
+    ],
+    "remaining_software": [
+      "crates/client/src/monitoring.rs supplement() returns Internal on sensors null for a real device - follow-up (recorded in GOAL.md), shape unchanged in this slice",
+      "M3-M6 gates remain: real games/accounts, physical desktop/accessibility, hardware physical validation, Windows reference, packaging/performance"
+    ],
+    "external_gates": [
+      "exact-target coarse fan trial requires separate approval (docs/COARSE_FAN_VALIDATION_PLAN.md)",
+      "live RGB/charge/MUX/manual fan on 8C30: no verified interface, remains read-only",
+      "main Gaming Hub package / Windows reference unavailable"
+    ]
+  },
+  "hardware": {
+    "control_writes": 0,
+    "host_package_installed": false,
+    "host_service_installed": false,
+    "physical_trial": "not run",
+    "note": "All M2 runs are fixture-only (mock daemon / victus-fb fixture). No live hardware/profile writes."
+  },
+  "binaries": {
+    "debug": {
+      "omen-cli": "10e49c2a7698a57bbed65952a043a8ca4fade8b7495405bb99fa49ada56f4418",
+      "omen-daemon": "d99624ba17899cf7d16501543f2f5a23aa8735a8ac7022ccf2650e547af81c9a",
+      "omen-gui": "a0616e9511e0f26cc56d3af4e3e19867e2623ec02cbf1d7ccc372c10052779d4"
+    },
+    "release": {
+      "omen-cli": "ce0737f197fb523dce6aff6894a083f532e1d8ab55e2d3cb8b11b40525ffd7ef",
+      "omen-daemon": "756e5627e779e1c9be4c12bd25bdc130c221446be89a4b9b5f4fa02a2e1f2c5e",
+      "omen-gui": "04813e1cbc33b14e607e08d463fa175e978e34efb8d35c0c61458573c0deaafd"
+    }
+  },
+  "source_hashes_sha256": {
+    "gui/src/charts.rs": "4c3765f03ba01d83452930eafcf5d5b1a75b0f9a92fb5c4476dfbaa19d04a63e",
+    "gui/src/pages.rs": "ec5c62dd00bec985f447a3dcb8cbc9e730ff2c2d545bc6e07977598e28739500",
+    "gui/src/main.rs": "e9205576322829eaaa4c827a406f886227811b1bfb00b4184c94da9eadcef65d",
+    "gui/src/alerts.rs": "9d4902ba90435b477c228a29a450ace621917cb63c6c2353556f8d8c01c19c1e",
+    "gui/src/overlay.rs": "a46f4668dd8e529d2fd0f53b2b03e6dd0519a62bc1d467f0eb51f6a33d841498",
+    "crates/daemon/src/service.rs": "61eb0d264354403e408f4346e3db78e0fd004845c7ab537991ac51cb72a59f46",
+    "tests/gui_settings.py": "3f8c742c1633aa4efd6159ce6986c3298b92e0b18818e459d76a707479925761",
+    "tests/gui_source_switch.py": "29ff2a3c9bb7b88858717e31be7c15fb6f8c56f9c10f01d0043e414fa68abe00",
+    "tests/gui_notification_workflow.py": "0ea4c983de1fc046c20499f3240ff169b299de32db43783a1988ee91756ae4a7"
+  },
+  "rust_tests": {
+    "command_debug": "cargo test --workspace --locked",
+    "command_release": "cargo test --workspace --release --locked",
+    "debug": {"passed": 287, "failed": 0, "ignored": 0, "breakdown": "24+41+71+41+86+6+18"},
+    "release": {"passed": 287, "failed": 0, "ignored": 0, "breakdown": "24+41+71+41+86+6+18"},
+    "notes": "71 daemon tests include diagnostics success, failing-sensor (sensors null + sensors_error contains fixture failure message), and empty-list (sensors [] + null error) cases through ExportDiagnostics handler. 41 gui tests include history resize shrink/grow with two series, gaps, sample identity, and freshness cutoff change."
+  },
+  "checks": {
+    "formatting": "pass: cargo fmt --check exit 0 (with PKG_CONFIG_PATH from /home/papan/gtk-prefix/env.sh)",
+    "strict_clippy": "pass: cargo clippy --workspace --all-targets --locked -- -D warnings exit 0",
+    "cargo_build_debug": "pass: cargo build --workspace --locked",
+    "cargo_build_release": "pass: cargo build --workspace --release --locked",
+    "smoke_debug": "pass: python3 tests/smoke.py - 7 checks, fixture_only=true",
+    "smoke_release": "pass: OMEN_TEST_PROFILE=release python3 tests/smoke.py - 7 checks, fixture_only=true",
+    "environment_note": "Host has libgtk-4 runtime but not libgtk-4-dev; builds/tests/GUI runs require source /home/papan/gtk-prefix/env.sh (PKG_CONFIG_PATH) and LD_LIBRARY_PATH=/home/papan/gtk-prefix/root/usr/lib/x86_64-linux-gnu for running omen-gui. This prefix was already present and used for the recorded target/ builds; without it cargo fails with 'Package gtk4 was not found'."
+  },
+  "gui_workflows": {
+    "environment": "Ubuntu 26.04.1 LTS, kernel 7.0.0-42-generic, KDE Plasma Wayland (kwin_wayland, WAYLAND_DISPLAY=wayland-0, DISPLAY=:0), GDK_BACKEND=wayland, gtk_display_type=GdkWaylandDisplay, real GTK fallback picker, private fixture daemon, AT-SPI actions only",
+    "gui_settings_debug": {"result": "passed", "evidence": "docs/evidence/m2-live-apply-2026-11-09/gui-settings-debug.json", "checks": 25, "network_checks": 6, "health_checks": 2, "binary_sha256": "a0616e9511e0f26cc56d3af4e3e19867e2623ec02cbf1d7ccc372c10052779d4", "includes": ["imported history cap shrinks the live buffer in the same process without a restart", "imported poll interval slows fresh acquisitions in the same process without a restart", "user import preview displays notification settings and cancellation preserves both configurations", "scope-mismatched/malformed/oversized imports preserve configuration"]},
+    "gui_settings_release": {"result": "passed", "evidence": "docs/evidence/m2-live-apply-2026-11-09/gui-settings-release.json", "checks": 25, "network_checks": 6, "health_checks": 2, "binary_sha256": "04813e1cbc33b14e607e08d463fa175e978e34efb8d35c0c61458573c0deaafd"},
+    "gui_source_switch_debug": {"result": "passed", "evidence": "docs/evidence/m2-live-apply-2026-11-09/source-switch-debug.json", "checks": 6, "gui_sha256": "a0616e9511e0f26cc56d3af4e3e19867e2623ec02cbf1d7ccc372c10052779d4", "includes": ["missing explicit endpoint stays unavailable", "late mock reconnects without restarting GTK", "same-process outage disables writes, reconnect preserves edits"]},
+    "gui_source_switch_release": {"result": "passed", "evidence": "docs/evidence/m2-live-apply-2026-11-09/source-switch-release.json", "checks": 6, "gui_sha256": "04813e1cbc33b14e607e08d463fa175e978e34efb8d35c0c61458573c0deaafd"},
+    "gui_notification_debug": {"result": "passed", "evidence": "docs/evidence/m2-live-apply-2026-11-09/notification-debug.json", "checks": 7, "binary_sha256": "a0616e9511e0f26cc56d3af4e3e19867e2623ec02cbf1d7ccc372c10052779d4", "profile": "debug"},
+    "gui_notification_release": {"result": "passed", "evidence": "docs/evidence/m2-live-apply-2026-11-09/notification-release.json", "checks": 7, "binary_sha256": "04813e1cbc33b14e607e08d463fa175e978e34efb8d35c0c61458573c0deaafd", "profile": "release"},
+    "drift_corrected": "Prior target/omen-live-debug/gui-settings-debug.json (2026-11-08, binary 785f54b4...) predates the final debug GUI binary (a0616e95...); re-run above supersedes it for the debug profile. Prior release gui-settings (04813e1c...) and both source-switch/notification runs already matched current binaries and were re-confirmed with fresh evidence dirs in this run. Two release notification attempts failed with tab_to focus timeouts while an orphaned --server/Xwayland from a timed-out run was alive; after killing orphans the same binary passed cleanly. No code change was made for those failures."
+  },
+  "workspace": {
+    "git_metadata": "none: fatal: not a git repository (checked 2026-11-09)",
+    "package_built": false,
+    "note": "No .deb was built or installed in this step; packaging gate (M6) remains open. Binary hashes above are the attribution for all results in this file."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "cgroup_backend": "real user systemd and kernel cgroup v2",
+  "checks_passed": [
+    "overlapping PPD holds arbitrate Quiet over Performance and release independently",
+    "holds with identical display text remain distinguishable after one is revoked",
+    "provider same-value requests remain no-ops; a real manual/ABA change cancels the hold and old ownership cannot overwrite it",
+    "a failed reply after hold application closes the peer and leaves no orphan profile",
+    "a successful method reply without matching provider state is rejected and cleaned up",
+    "SIGKILL of a real holder process releases its private-bus hold without a recovery write",
+    "service-owner pinning prevents a stale cookie from releasing a replacement PPD hold",
+    "unsupported hold profiles fail explicitly instead of falling back to unowned writes",
+    "scope registration derives the live desktop UID and dedicated unit from procfs, rejecting another UID/token",
+    "the pinned scope remains populated after the wrapper exits while a detached descendant is alive",
+    "the original pinned scope reports empty only after its final descendant exits",
+    "reusing a collected unit name creates a different inode and cannot revive the old tracked scope"
+  ],
+  "cleanup_complete": true,
+  "debug_assertions": true,
+  "hardware_writes": false,
+  "profile_adapter": "real D-Bus requests to a private PPD protocol fixture",
+  "recorded_unix": 1793085804,
+  "result": "passed",
+  "system_power_bus_used": false,
+  "test_binary": "/home/papan/Desktop/Projects/omen/target/debug/deps/game_session_native-58ffc8a07805a855"
+}

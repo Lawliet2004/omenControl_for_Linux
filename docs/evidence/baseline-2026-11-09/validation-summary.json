@@ -1,0 +1,48 @@
+{
+  "generated_utc": "2026-11-09T20:46:00+00:00",
+  "version": "0.1.0",
+  "goal_complete": false,
+  "scope": "M1 Baseline verification, compilation repair in crates/ipc/src/client.rs, source manifest generation, and locked test gates across debug and release profiles.",
+  "workspace": {
+    "git_metadata": "none: fatal: not a git repository (checked 2026-11-09)",
+    "source_manifest": "docs/evidence/baseline-2026-11-09/source-manifest.json",
+    "source_manifest_composite_sha256": "304e3e1501a68b54c1d296ce8d30c203ec580b0a1ae50f3fa47913d00f32d24a",
+    "source_file_count": 205
+  },
+  "binaries": {
+    "debug": {
+      "omen-cli": "8ed5ec83322471571741f899929cf90a6f3c57b950e368413178023f0bdce905",
+      "omen-daemon": "eb705625b0dbb053fc0276378c674cb89799dd9cada74f7e754adcff9d261fe1",
+      "omen-gui": "116b3cc09d577e851735ac4763af3624b7b4a328fd8b008a54b026c371a3c7cc"
+    },
+    "release": {
+      "omen-cli": "7d893686c7449f9cee6998d1188da96aa12d27b201e8c7e4ef38e5e011effa80",
+      "omen-daemon": "80f23151ed5158b8ac782e891ebaa3c4fe0e6d696e8d180a48d5b508f4c04a51",
+      "omen-gui": "dd314f0bdaad6d80fb670f50f94ea0e80f0a7c801d22a53d1ab9948e2ad9bab8"
+    }
+  },
+  "rust_tests": {
+    "command_debug": "cargo test --workspace --locked",
+    "command_release": "cargo test --workspace --release --locked",
+    "debug": {
+      "passed": 294,
+      "failed": 0,
+      "ignored": 0,
+      "breakdown": "omen_client 28, omen_core 43, omen_daemon 71, omen_gui 41, omen_hardware 86, omen_integration_tests 6, omen_ipc 19"
+    },
+    "release": {
+      "passed": 294,
+      "failed": 0,
+      "ignored": 0,
+      "breakdown": "omen_client 28, omen_core 43, omen_daemon 71, omen_gui 41, omen_hardware 86, omen_integration_tests 6, omen_ipc 19"
+    }
+  },
+  "checks": {
+    "formatting": "pass: cargo fmt --check exit 0",
+    "strict_clippy": "pass: cargo clippy --workspace --all-targets --all-features --locked -- -D warnings exit 0",
+    "cargo_build_debug": "pass: cargo build --workspace --locked exit 0",
+    "cargo_build_release": "pass: cargo build --workspace --release --locked exit 0",
+    "smoke_debug": "pass: python3 tests/smoke.py - 7 checks passed, fixture_only=true",
+    "smoke_release": "pass: OMEN_TEST_PROFILE=release python3 tests/smoke.py - 7 checks passed, fixture_only=true"
+  }
+}

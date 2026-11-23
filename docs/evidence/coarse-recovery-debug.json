@@ -1,0 +1,25 @@
+{
+  "result": "passed",
+  "profile": "debug",
+  "fixture_only": true,
+  "physical_writes": 0,
+  "binary_sha256": "eb705625b0dbb053fc0276378c674cb89799dd9cada74f7e754adcff9d261fe1",
+  "checks_passed": [
+    "coarse control requires its independent writer and never grants manual/curve access",
+    "guarded daemon renews standalone writer lease beyond its original deadline",
+    "singleton lock rejects a second writer before startup recovery can touch an active lease",
+    "same-UID foreign executable cannot command or revoke the trusted controller lease",
+    "writer restores Automatic while the controller is stopped; resume does not reapply Maximum",
+    "writer restart restores durable intent before accepting commands while the controller is stopped",
+    "replayed, unsupported, malformed and late commands revoke ownership without resurrecting Maximum",
+    "competing trusted processes cannot take ownership; owner death restores Automatic",
+    "interpreted Victus and FanPilot owners revoke the fixture lease",
+    "independent transport preserves capability conflict checks and CPU/GPU loss recovery",
+    "reviewable trial script stays read-only by default and restores after a five-second approved fixture trial",
+    "independent writer survives controller SIGKILL and restores its exact actuator",
+    "healthy heartbeat cannot extend the independent ten-second physical trial ceiling",
+    "replacement inode is never written; pending intent survives and restart refuses redirection"
+  ],
+  "recorded_utc": "2026-11-09T15:46:20.378660+00:00",
+  "cleanup_complete": true
+}

@@ -1,0 +1,2857 @@
+--- before/Cargo.lock
++++ after/Cargo.lock
+@@ -223,6 +223,15 @@
+ checksum = "3ded4057c258ba199e2d26386d3af3780957ecaee6c4ef4041c6b4b8b97c0b06"
+ 
+ [[package]]
++name = "block-buffer"
++version = "0.10.4"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "3078c7629b62d3f0439517fa394996acacc5cbc91c5a20d8c658e77abd503a71"
++dependencies = [
++ "generic-array",
++]
++
++[[package]]
+ name = "blocking"
+ version = "1.7.0"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+@@ -336,6 +345,15 @@
+ ]
+ 
+ [[package]]
++name = "cpufeatures"
++version = "0.2.17"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "59ed5838eebb26a2bb2e58f6d5b5316989ae9d08bab10e0e6d103e656d1b0280"
++dependencies = [
++ "libc",
++]
++
++[[package]]
+ name = "crossbeam-queue"
+ version = "0.3.14"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+@@ -349,6 +367,26 @@
+ version = "0.8.23"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+ checksum = "a31eee39dddec8330830986fcd7625edb5a24ec90ea038215273bbc3adb08ac6"
++
++[[package]]
++name = "crypto-common"
++version = "0.1.7"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "78c8292055d1c1df0cce5d180393dc8cce0abec0a7102adb6c7b1eef6016d60a"
++dependencies = [
++ "generic-array",
++ "typenum",
++]
++
++[[package]]
++name = "digest"
++version = "0.10.7"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "9ed9a281f7bc9b7576e61468ba615a66a5c8cfdff42420a70aa82701a3b1e292"
++dependencies = [
++ "block-buffer",
++ "crypto-common",
++]
+ 
+ [[package]]
+ name = "endi"
+@@ -620,6 +658,16 @@
+  "glib-sys",
+  "libc",
+  "system-deps",
++]
++
++[[package]]
++name = "generic-array"
++version = "0.14.7"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "85649ca51fd72272d7821adaf274ad91c288277713d9c18820d8499a7ff69e9a"
++dependencies = [
++ "typenum",
++ "version_check",
+ ]
+ 
+ [[package]]
+@@ -1019,6 +1067,7 @@
+  "omen-ipc",
+  "serde",
+  "serde_json",
++ "sha2",
+  "tempfile",
+ ]
+ 
+@@ -1384,6 +1433,17 @@
+ ]
+ 
+ [[package]]
++name = "sha2"
++version = "0.10.9"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "a7507d819769d01a365ab707794a4084392c824f54a7a6a7862f8c3d0892b283"
++dependencies = [
++ "cfg-if",
++ "cpufeatures",
++ "digest",
++]
++
++[[package]]
+ name = "signal-hook-registry"
+ version = "1.4.8"
+ source = "registry+https://github.com/rust-lang/crates.io-index"
+@@ -1616,6 +1676,12 @@
+ dependencies = [
+  "once_cell",
+ ]
++
++[[package]]
++name = "typenum"
++version = "1.20.1"
++source = "registry+https://github.com/rust-lang/crates.io-index"
++checksum = "b6f5e870be6c3b371b77fe0ee0bafb859fa4964b4404c27de1d380043c4dda20"
+ 
+ [[package]]
+ name = "uds_windows"
+--- before/README.md
++++ after/README.md
+@@ -18,7 +18,7 @@
+ | Fans | Real RPM monitoring. Automatic/Maximum buttons are separate from manual percentage/curve controls and fixture-tested; live writes are off by default. An exact-target experimental independent writer supports a ten-second Maximum trial after separate approval; sustained physical control remains unvalidated |
+ | Lighting / charging | Adapters and validation tests exist. **Live writes disabled**; interface absence does not prove missing physical hardware |
+ | Graphics | PCI/driver/runtime-PM status. No implemented MUX/Optimus switching; unknown topology is labeled |
+-| Games | Native/Flatpak/Snap Steam, account-scoped Steam shortcuts, standalone native Legendary, Heroic and Lutris installed-library discovery, rescan/search and selected record locations; custom commands as the desktop user. Opt-in actual-command wrappers hold Performance/Quiet until their process tree exits; manual mode retains submission transactions. Real store/runtime and Flatpak managed execution remain unvalidated. The privileged service refuses game execution |
++| Games | Native/Flatpak/Snap Steam, account-scoped Steam shortcuts, standalone native Legendary, Heroic and Lutris installed-library discovery, rescan/search and selected record locations; custom commands as the desktop user. Opt-in actual-command wrappers hold Performance/Quiet until their process tree exits; manual mode retains submission transactions. Flatpak helper setup, permission checks and shared removal are implemented; real store/runtime compatibility remains separately tracked. The privileged service refuses game execution |
+ | Settings | Versioned TOML, migrations and scoped User/Service JSON backups. Service import previews policy changes; exports use private atomic files |
+ | Desktop integration | KDE StatusNotifier tray; opt-in global Show shortcut through XDG Desktop Portal with native key assignment; cancellation, startup restoration and service-loss recovery. Physical-key/desktop approval validation remains pending |
+ | Packaging | `.deb` build script, systemd service, polkit actions and original desktop assets |
+@@ -85,6 +85,12 @@
+ revision 20 package retains its separate
+ [33-check deployment result](docs/DEPLOYMENT_VALIDATION_2026-10-28.md).
+ 
++Revision 26 adds [Flatpak setup and removal](docs/FLATPAK_SETUP.md), a packaged
++static sandbox helper, installed Heroic sideload discovery/routing and inherited
++wrapper text sizing. The [follow-through report](docs/AUDIT_COMPLETION_2026-10-28.md)
++separates implemented work and new verification from physical and account-specific
++gates. Earlier milestone reports retain their original attribution.
++
+ The [audit implementation tracker](docs/APPLICATION_AUDIT_IMPLEMENTATION.md)
+ records completed changes, verification and the remaining requirements.
+ 
+@@ -104,7 +110,7 @@
+ 
+ ```bash
+ ./packaging/build-deb.sh
+-# Produces target/debian/omen-linux_0.1.0-24_amd64.deb on this host.
++# Produces target/debian/omen-linux_0.1.0-26_amd64.deb on this host.
+ python3 tests/smoke.py
+ ```
+ 
+--- before/crates/cli/src/main.rs
++++ after/crates/cli/src/main.rs
+@@ -28,6 +28,16 @@
+ 
+ #[derive(Subcommand)]
+ enum Cmd {
++    /// Inspect, install or remove your launcher's private Flatpak wrapper.
++    GameFlatpakSetup {
++        id: String,
++        #[arg(long, conflicts_with = "remove")]
++        install: bool,
++        #[arg(long, conflicts_with = "install")]
++        remove: bool,
++        #[arg(long)]
++        json: bool,
++    },
+     /// Prepare a waiting Flatpak wrapper; the game executes inside its original sandbox.
+     #[command(hide = true)]
+     GameFlatpakPrepare {
+@@ -237,6 +247,34 @@
+ 
+ fn run(cli: Cli) -> i32 {
+     match &cli.command {
++        Cmd::GameFlatpakSetup {
++            id,
++            install,
++            remove,
++            json,
++        } => {
++            let result = if *install {
++                omen_client::flatpak_setup::install(id)
++            } else if *remove {
++                omen_client::flatpak_setup::remove(id)
++            } else {
++                omen_client::flatpak_setup::status(id)
++            };
++            return match result {
++                Ok(status) => {
++                    if *json {
++                        println!("{}", serde_json::to_string_pretty(&status).unwrap());
++                    } else {
++                        println!("{}\n{}", status.detail, status.wrapper_command);
++                    }
++                    0
++                }
++                Err(error) => {
++                    eprintln!("{error}");
++                    1
++                }
++            };
++        }
+         Cmd::GameFlatpakPrepare {
+             id,
+             instance,
+@@ -448,6 +486,7 @@
+         | Cmd::GameLaunch { .. }
+         | Cmd::GameRun { .. }
+         | Cmd::GameFlatpakPrepare { .. }
++        | Cmd::GameFlatpakSetup { .. }
+         | Cmd::GameWorker { .. }
+         | Cmd::GameSessions { .. }
+         | Cmd::GameLaunchIssues { .. }
+--- before/crates/client/Cargo.toml
++++ after/crates/client/Cargo.toml
+@@ -12,6 +12,7 @@
+ serde = { workspace = true }
+ serde_json = { workspace = true }
+ libc = "0.2"
++sha2 = "0.10"
+ 
+ [dev-dependencies]
+ tempfile = "3"
+--- before/crates/client/src/flatpak_bridge.rs
++++ after/crates/client/src/flatpak_bridge.rs
+@@ -543,8 +543,6 @@
+             "a valid game, Flatpak instance and sandbox caller are required",
+         ));
+     }
+-    let handoff = Handoff::open(uid, handoff_fd)?;
+-    caller(uid, instance, id, &handoff.caller)?;
+     let token = crate::games::new_transaction_token()?;
+     let history = History::for_config(&OmenConfig::path());
+     let report = |stage, error: &OmenError| {
+@@ -559,6 +557,8 @@
+             ),
+         )
+     };
++    let handoff = Handoff::open(uid, handoff_fd).inspect_err(|e| report(Stage::Scope, e))?;
++    caller(uid, instance, id, &handoff.caller).inspect_err(|e| report(Stage::Scope, e))?;
+     let config = OmenConfig::load().inspect_err(|e| report(Stage::Configuration, e))?;
+     if !config.games.managed_game_ids.contains(id) {
+         return handoff.send(b"O", None);
+--- before/crates/client/src/flatpak_setup.rs
++++ after/crates/client/src/flatpak_setup.rs
+@@ -0,0 +1,484 @@
++//! Desktop-owned Flatpak helper installation. No launcher configuration or
++//! sandbox permission is changed. Whole directories are published atomically.
++use omen_core::{OmenError, Result};
++use serde::{Deserialize, Serialize};
++use sha2::{Digest, Sha256};
++use std::fs::{File, OpenOptions};
++use std::io::{Read, Write};
++use std::os::fd::{AsRawFd, FromRawFd};
++use std::os::unix::fs::{MetadataExt, OpenOptionsExt};
++use std::path::{Path, PathBuf};
++use std::time::Duration;
++
++const LIMIT: u64 = 2 * 1024 * 1024;
++const DIRECTORY: &str = "managed-v1";
++const BINARY: &str = "omen-flatpak-game";
++const MANIFEST: &str = "installation.json";
++
++fn invalid(message: &str) -> OmenError {
++    OmenError::InvalidArgument(message.into())
++}
++
++pub fn application(id: &str) -> Option<&'static str> {
++    if !omen_core::games::valid_game_id(id) {
++        return None;
++    }
++    if id.starts_with("steam/flatpak/") {
++        Some("com.valvesoftware.Steam")
++    } else if id.starts_with("heroic/flatpak/") {
++        Some("com.heroicgameslauncher.hgl")
++    } else if id.starts_with("lutris/flatpak/") {
++        Some("net.lutris.Lutris")
++    } else {
++        None
++    }
++}
++
++fn quote(text: &str) -> String {
++    format!("'{}'", text.replace('\'', "'\\''"))
++}
++
++pub fn prefix(id: &str) -> Result<String> {
++    application(id).ok_or_else(|| invalid("this game is not a supported Flatpak installation"))?;
++    // A literal absolute sandbox path works in launcher fields that do not
++    // expand environment variables. Flatpak's app data is mounted here.
++    let _canonical = home()?;
++    let home = std::env::var_os("HOME")
++        .map(PathBuf::from)
++        .ok_or_else(|| invalid("the desktop home is unavailable"))?;
++    let app = application(id).unwrap();
++    let path = home.join(format!(
++        ".var/app/{app}/data/omen-linux/{DIRECTORY}/{BINARY}"
++    ));
++    Ok(format!(
++        "{} {} --",
++        quote(
++            path.to_str().ok_or_else(|| invalid(
++                "the desktop home must be valid UTF-8 for launcher setup"
++            ))?
++        ),
++        quote(id)
++    ))
++}
++
++#[derive(Debug, Clone, Serialize)]
++pub struct Status {
++    pub application: String,
++    pub helper_installed: bool,
++    pub host_permission: bool,
++    pub ready: bool,
++    pub detail: String,
++    pub wrapper_command: String,
++}
++
++#[derive(Serialize, Deserialize)]
++#[serde(deny_unknown_fields)]
++struct Manifest {
++    version: u32,
++    application: String,
++    sha256: String,
++    size: u64,
++}
++
++fn home() -> Result<PathBuf> {
++    let uid = unsafe { libc::geteuid() };
++    if uid == 0 || uid != unsafe { libc::getuid() } {
++        return Err(OmenError::PermissionDenied(
++            "Flatpak setup must run as the desktop user".into(),
++        ));
++    }
++    let path = std::env::var_os("HOME")
++        .map(PathBuf::from)
++        .filter(|p| p.is_absolute())
++        .ok_or_else(|| invalid("an absolute desktop home is required"))?;
++    let path = path.canonicalize()?;
++    let metadata = path.metadata()?;
++    if metadata.uid() != uid || metadata.mode() & 0o022 != 0 {
++        return Err(invalid("the desktop home must be privately owned"));
++    }
++    Ok(path)
++}
++
++fn open_dir(parent: &File, name: &str, create: bool) -> Result<File> {
++    let name = std::ffi::CString::new(name).map_err(|_| invalid("invalid helper directory"))?;
++    if create && unsafe { libc::mkdirat(parent.as_raw_fd(), name.as_ptr(), 0o700) } != 0 {
++        let e = std::io::Error::last_os_error();
++        if e.kind() != std::io::ErrorKind::AlreadyExists {
++            return Err(e.into());
++        }
++    }
++    let fd = unsafe {
++        libc::openat(
++            parent.as_raw_fd(),
++            name.as_ptr(),
++            libc::O_RDONLY | libc::O_DIRECTORY | libc::O_NOFOLLOW | libc::O_CLOEXEC,
++        )
++    };
++    if fd < 0 {
++        return Err(std::io::Error::last_os_error().into());
++    }
++    let directory = unsafe { File::from_raw_fd(fd) };
++    let metadata = directory.metadata()?;
++    if metadata.uid() != unsafe { libc::geteuid() } || metadata.mode() & 0o022 != 0 {
++        return Err(invalid(
++            "helper directories must be owned by you and not writable by other users",
++        ));
++    }
++    Ok(directory)
++}
++
++fn base(home: &Path, app: &str, create: bool) -> Result<File> {
++    let mut directory = OpenOptions::new()
++        .read(true)
++        .custom_flags(libc::O_DIRECTORY | libc::O_NOFOLLOW)
++        .open(home)?;
++    for name in [".var", "app", app, "data", "omen-linux"] {
++        directory = open_dir(&directory, name, create)?;
++    }
++    Ok(directory)
++}
++
++fn read(directory: &File, name: &str, limit: u64) -> Result<Vec<u8>> {
++    let name = std::ffi::CString::new(name).map_err(|_| invalid("invalid helper filename"))?;
++    let fd = unsafe {
++        libc::openat(
++            directory.as_raw_fd(),
++            name.as_ptr(),
++            libc::O_RDONLY | libc::O_NOFOLLOW | libc::O_CLOEXEC | libc::O_NONBLOCK,
++        )
++    };
++    if fd < 0 {
++        return Err(std::io::Error::last_os_error().into());
++    }
++    let file = unsafe { File::from_raw_fd(fd) };
++    let metadata = file.metadata()?;
++    if !metadata.is_file()
++        || metadata.len() > limit
++        || metadata.nlink() != 1
++        || metadata.uid() != unsafe { libc::geteuid() }
++        || metadata.mode() & 0o022 != 0
++        || (name.as_bytes() == BINARY.as_bytes() && metadata.mode() & 0o100 == 0)
++    {
++        return Err(invalid(
++            "the installed helper is not a private regular file",
++        ));
++    }
++    let mut bytes = Vec::new();
++    file.take(limit + 1).read_to_end(&mut bytes)?;
++    if bytes.len() as u64 > limit {
++        return Err(invalid("helper file exceeds its size limit"));
++    }
++    Ok(bytes)
++}
++
++fn verified(directory: &File, app: &str) -> Result<()> {
++    let manifest: Manifest =
++        serde_json::from_slice(&read(directory, MANIFEST, 4096)?).map_err(|_| {
++            invalid("the helper installation record is invalid; preserve it for manual recovery")
++        })?;
++    let bytes = read(directory, BINARY, LIMIT)?;
++    if manifest.version != 1
++        || manifest.application != app
++        || manifest.size != bytes.len() as u64
++        || manifest.sha256 != format!("{:x}", Sha256::digest(&bytes))
++    {
++        return Err(invalid(
++            "the helper was modified; preserve it and remove or recover it manually",
++        ));
++    }
++    let entries: Vec<_> = std::fs::read_dir(format!("/proc/self/fd/{}", directory.as_raw_fd()))?
++        .take(3)
++        .collect::<std::io::Result<_>>()?;
++    if entries.len() != 2
++        || entries
++            .iter()
++            .any(|e| e.file_name() != BINARY && e.file_name() != MANIFEST)
++    {
++        return Err(invalid(
++            "unrecognized files in the helper directory; preserve them for manual recovery",
++        ));
++    }
++    Ok(())
++}
++
++fn write(directory: &File, name: &str, bytes: &[u8], mode: u32) -> Result<()> {
++    let name = std::ffi::CString::new(name).unwrap();
++    let fd = unsafe {
++        libc::openat(
++            directory.as_raw_fd(),
++            name.as_ptr(),
++            libc::O_WRONLY | libc::O_CREAT | libc::O_EXCL | libc::O_NOFOLLOW | libc::O_CLOEXEC,
++            mode,
++        )
++    };
++    if fd < 0 {
++        return Err(std::io::Error::last_os_error().into());
++    }
++    let mut file = unsafe { File::from_raw_fd(fd) };
++    file.write_all(bytes)?;
++    file.sync_all()?;
++    Ok(())
++}
++
++fn erase(parent: &File, name: &str, directory: &File) -> Result<()> {
++    for file in [BINARY, MANIFEST] {
++        let file = std::ffi::CString::new(file).unwrap();
++        if unsafe { libc::unlinkat(directory.as_raw_fd(), file.as_ptr(), 0) } != 0 {
++            let error = std::io::Error::last_os_error();
++            if error.kind() != std::io::ErrorKind::NotFound {
++                return Err(error.into());
++            }
++        }
++    }
++    let name = std::ffi::CString::new(name).unwrap();
++    if unsafe { libc::unlinkat(parent.as_raw_fd(), name.as_ptr(), libc::AT_REMOVEDIR) } != 0 {
++        return Err(std::io::Error::last_os_error().into());
++    }
++    parent.sync_all()?;
++    Ok(())
++}
++
++fn payload() -> Result<PathBuf> {
++    let sibling = std::env::current_exe()?.with_file_name(BINARY);
++    let path = if sibling.is_file() {
++        sibling
++    } else {
++        PathBuf::from("/usr/libexec/omen-linux/omen-flatpak-game")
++    };
++    if !path.is_file() {
++        return Err(OmenError::NotFound(
++            "the packaged Flatpak helper is missing; install the current OMEN package".into(),
++        ));
++    }
++    Ok(path)
++}
++
++fn install_at(home: &Path, app: &str, source: &Path) -> Result<()> {
++    let mut bytes = Vec::new();
++    let file = OpenOptions::new()
++        .read(true)
++        .custom_flags(libc::O_NOFOLLOW | libc::O_NONBLOCK)
++        .open(source)?;
++    if !file.metadata()?.is_file() {
++        return Err(invalid("the packaged helper is not a regular file"));
++    }
++    file.take(LIMIT + 1).read_to_end(&mut bytes)?;
++    if bytes.len() as u64 > LIMIT || !bytes.starts_with(b"\x7fELF") {
++        return Err(invalid("invalid packaged Flatpak helper"));
++    }
++    let parent = base(home, app, true)?;
++    if unsafe { libc::flock(parent.as_raw_fd(), libc::LOCK_EX | libc::LOCK_NB) } != 0 {
++        return Err(invalid("another helper setup is running; retry"));
++    }
++    let existing = match open_dir(&parent, DIRECTORY, false) {
++        Ok(directory) => {
++            verified(&directory, app)?;
++            Some(directory)
++        }
++        Err(OmenError::NotFound(_)) => None,
++        Err(e) => return Err(e),
++    };
++    let temporary = format!(".setup-{}", crate::games::new_transaction_token()?);
++    let staged = open_dir(&parent, &temporary, true)?;
++    let mut published = false;
++    let result = (|| {
++        write(&staged, BINARY, &bytes, 0o700)?;
++        let manifest = Manifest {
++            version: 1,
++            application: app.into(),
++            sha256: format!("{:x}", Sha256::digest(&bytes)),
++            size: bytes.len() as u64,
++        };
++        write(
++            &staged,
++            MANIFEST,
++            &serde_json::to_vec_pretty(&manifest).map_err(|e| invalid(&e.to_string()))?,
++            0o600,
++        )?;
++        staged.sync_all()?;
++        let from = std::ffi::CString::new(temporary.as_str()).unwrap();
++        let to = std::ffi::CString::new(DIRECTORY).unwrap();
++        let flags = if existing.is_some() {
++            libc::RENAME_EXCHANGE
++        } else {
++            libc::RENAME_NOREPLACE
++        };
++        if unsafe {
++            libc::renameat2(
++                parent.as_raw_fd(),
++                from.as_ptr(),
++                parent.as_raw_fd(),
++                to.as_ptr(),
++                flags,
++            )
++        } != 0
++        {
++            return Err(std::io::Error::last_os_error().into());
++        }
++        published = true;
++        parent.sync_all()?;
++        if let Some(old) = existing {
++            erase(&parent, &temporary, &old)?;
++        }
++        Ok(())
++    })();
++    if result.is_err() && !published {
++        let _ = erase(&parent, &temporary, &staged);
++    }
++    result
++}
++
++fn permission(text: &str) -> bool {
++    let mut session = false;
++    let mut allowed = false;
++    for line in text.lines().map(str::trim) {
++        if line.starts_with('[') {
++            session = line == "[Session Bus Policy]";
++        } else if session {
++            if let Some((name, value)) = line.split_once('=') {
++                if name == "org.freedesktop.Flatpak" {
++                    allowed = matches!(value, "talk" | "own");
++                }
++            }
++        }
++    }
++    allowed
++}
++
++pub fn status(id: &str) -> Result<Status> {
++    let app = application(id).ok_or_else(|| invalid("unsupported Flatpak game installation"))?;
++    let home = home()?;
++    let helper = base(&home, app, false)
++        .and_then(|d| open_dir(&d, DIRECTORY, false))
++        .and_then(|d| verified(&d, app));
++    let info = omen_hardware::command::output(
++        std::process::Command::new("flatpak").args(["info", "--show-permissions", app]),
++        Duration::from_secs(4),
++    );
++    let host_permission = info
++        .as_ref()
++        .is_ok_and(|o| o.status.success() && permission(&String::from_utf8_lossy(&o.stdout)));
++    let installed = info.as_ref().is_ok_and(|o| o.status.success());
++    let helper_installed = helper.is_ok();
++    let ready = installed && host_permission && helper_installed;
++    let detail = if !installed {
++        "Flatpak or this launcher is unavailable. Install the launcher, then check again.".into()
++    } else if !host_permission {
++        format!("{app} cannot use flatpak-spawn --host. Review its org.freedesktop.Flatpak session-bus permission in your desktop's Flatpak settings, then restart the launcher. OMEN does not change sandbox permissions.")
++    } else if helper
++        .as_ref()
++        .is_err_and(|e| !matches!(e, OmenError::NotFound(_)))
++    {
++        format!(
++            "Helper recovery needed: {}. Preserve changed files; setup will not overwrite them.",
++            helper.as_ref().unwrap_err()
++        )
++    } else if !helper_installed {
++        "Install the launcher helper, then put the wrapper command below in the game's launcher settings. Kernel/cgroup support and profile authorization are checked on each launch.".into()
++    } else {
++        "Helper and host-command permission are ready. Configure the wrapper in the launcher. Each launch still verifies its sandbox, cgroup and authorized profile hold.".into()
++    };
++    Ok(Status {
++        application: app.into(),
++        helper_installed,
++        host_permission,
++        ready,
++        detail,
++        wrapper_command: prefix(id)?,
++    })
++}
++
++pub fn install(id: &str) -> Result<Status> {
++    let app = application(id).ok_or_else(|| invalid("unsupported Flatpak game installation"))?;
++    install_at(&home()?, app, &payload()?)?;
++    status(id)
++}
++
++pub fn remove(id: &str) -> Result<Status> {
++    let app = application(id).ok_or_else(|| invalid("unsupported Flatpak game installation"))?;
++    let parent = base(&home()?, app, false)?;
++    if unsafe { libc::flock(parent.as_raw_fd(), libc::LOCK_EX | libc::LOCK_NB) } != 0 {
++        return Err(invalid("another helper setup is running; retry"));
++    }
++    let directory = open_dir(&parent, DIRECTORY, false)?;
++    verified(&directory, app)?;
++    let path = omen_core::config::OmenConfig::path();
++    let prefix = match app {
++        "com.valvesoftware.Steam" => "steam/flatpak/",
++        "com.heroicgameslauncher.hgl" => "heroic/flatpak/",
++        "net.lutris.Lutris" => "lutris/flatpak/",
++        _ => return Err(invalid("unsupported launcher")),
++    };
++    omen_ipc::settings::SettingsController::new(None, path).clear_managed_game_prefix(prefix)?;
++    let retired = format!(".remove-{}", crate::games::new_transaction_token()?);
++    let from = std::ffi::CString::new(DIRECTORY).unwrap();
++    let to = std::ffi::CString::new(retired.as_str()).unwrap();
++    if unsafe {
++        libc::renameat2(
++            parent.as_raw_fd(),
++            from.as_ptr(),
++            parent.as_raw_fd(),
++            to.as_ptr(),
++            libc::RENAME_NOREPLACE,
++        )
++    } != 0
++    {
++        return Err(std::io::Error::last_os_error().into());
++    }
++    parent.sync_all()?;
++    erase(&parent, &retired, &directory)?;
++    status(id)
++}
++
++#[cfg(test)]
++mod tests {
++    use super::*;
++    #[test]
++    fn permissions_are_session_scoped_and_explicit_denial_wins() {
++        assert!(permission(
++            "[Session Bus Policy]\norg.freedesktop.Flatpak=talk\n"
++        ));
++        assert!(!permission(
++            "[System Bus Policy]\norg.freedesktop.Flatpak=talk\n"
++        ));
++        assert!(!permission(
++            "[Session Bus Policy]\norg.freedesktop.Flatpak=talk\norg.freedesktop.Flatpak=none\n"
++        ));
++    }
++    #[test]
++    fn install_update_and_remove_preserve_other_files_and_refuse_changed_helpers() {
++        let home = tempfile::tempdir().unwrap();
++        let source = home.path().join("payload");
++        std::fs::write(&source, b"\x7fELFfirst fixture").unwrap();
++        install_at(home.path(), "net.lutris.Lutris", &source).unwrap();
++        let parent = base(home.path(), "net.lutris.Lutris", false).unwrap();
++        verified(
++            &open_dir(&parent, DIRECTORY, false).unwrap(),
++            "net.lutris.Lutris",
++        )
++        .unwrap();
++        std::fs::write(&source, b"\x7fELFupdated fixture").unwrap();
++        install_at(home.path(), "net.lutris.Lutris", &source).unwrap();
++        let installed = home
++            .path()
++            .join(".var/app/net.lutris.Lutris/data/omen-linux/managed-v1");
++        std::fs::write(installed.join(BINARY), b"user change").unwrap();
++        assert!(install_at(home.path(), "net.lutris.Lutris", &source).is_err());
++        assert_eq!(
++            std::fs::read(installed.join(BINARY)).unwrap(),
++            b"user change"
++        );
++        std::fs::remove_file(installed.join(BINARY)).unwrap();
++        std::os::unix::fs::symlink(&source, installed.join(BINARY)).unwrap();
++        assert!(install_at(home.path(), "net.lutris.Lutris", &source).is_err());
++        assert_eq!(std::fs::read(source).unwrap(), b"\x7fELFupdated fixture");
++    }
++    #[test]
++    fn ancestor_links_are_never_followed() {
++        let home = tempfile::tempdir().unwrap();
++        let other = tempfile::tempdir().unwrap();
++        std::os::unix::fs::symlink(other.path(), home.path().join(".var")).unwrap();
++        assert!(base(home.path(), "net.lutris.Lutris", true).is_err());
++        assert_eq!(std::fs::read_dir(other.path()).unwrap().count(), 0);
++    }
++}
+--- before/crates/client/src/lib.rs
++++ after/crates/client/src/lib.rs
+@@ -1,5 +1,6 @@
+ //! Unprivileged application controllers. Never called by the hardware daemon.
+ pub mod flatpak_bridge;
++pub mod flatpak_setup;
+ pub mod game_sessions;
+ mod game_supervisor;
+ pub mod games;
+--- before/crates/hardware/src/games.rs
++++ after/crates/hardware/src/games.rs
+@@ -245,7 +245,7 @@
+                 let (runner, id) = id
+                     .split_once('/')
+                     .filter(|(runner, id)| {
+-                        matches!(*runner, "legendary" | "gog" | "nile")
++                        matches!(*runner, "legendary" | "gog" | "nile" | "sideload")
+                             && discovery::safe_component(id)
+                     })
+                     .ok_or_else(|| {
+@@ -623,6 +623,22 @@
+                 vec!["heroic://launch/nile/amzn1.adg.fixture"],
+             ),
+             (
++                GameSource::Heroic,
++                "heroic/sideload/local-game",
++                "heroic",
++                vec!["heroic://launch/sideload/local-game"],
++            ),
++            (
++                GameSource::Heroic,
++                "heroic/flatpak/sideload/local-game",
++                "flatpak",
++                vec![
++                    "run",
++                    "com.heroicgameslauncher.hgl",
++                    "heroic://launch/sideload/local-game",
++                ],
++            ),
++            (
+                 GameSource::Lutris,
+                 "lutris/9",
+                 "lutris",
+--- before/crates/hardware/src/games/discovery.rs
++++ after/crates/hardware/src/games/discovery.rs
+@@ -441,6 +441,29 @@
+                 }
+                 if let Some(id) = record.get("appName").and_then(Json::as_str) {
+                     add("gog", id, &format!("GOG {id}"));
++                }
++            }
++        }
++        // Heroic's pinned sideload store contains installed games and web apps.
++        // Use its own protocol route; never execute metadata paths ourselves.
++        if let Some(entries) = json(&root.join("sideload_apps/library.json"))
++            .and_then(|value| value.get("games").and_then(Json::as_array).cloned())
++        {
++            for record in entries.into_iter().take(MAX_GAMES) {
++                if record.get("runner").and_then(Json::as_str) != Some("sideload")
++                    || record.get("is_installed").and_then(Json::as_bool) != Some(true)
++                    || record.pointer("/install/is_dlc").and_then(Json::as_bool) == Some(true)
++                {
++                    continue;
++                }
++                if let (Some(id), Some(name)) = (
++                    record.get("app_name").and_then(Json::as_str),
++                    record
++                        .get("title")
++                        .and_then(Json::as_str)
++                        .filter(|name| !name.trim().is_empty()),
++                ) {
++                    add("sideload", id, name);
+                 }
+             }
+         }
+@@ -820,6 +843,25 @@
+         );
+     }
+     #[test]
++    fn heroic_sideload_uses_installed_records_without_interpreting_commands() {
++        let home = tempfile::tempdir().unwrap();
++        let root = home.path().join(".config/heroic");
++        std::fs::create_dir_all(root.join("sideload_apps")).unwrap();
++        std::fs::write(root.join("sideload_apps/library.json"), r#"{"games":[
++          {"runner":"sideload","app_name":"native-id","title":"Local game","is_installed":true,"install":{"executable":"$(do not execute)"}},
++          {"runner":"sideload","app_name":"removed","title":"Removed","is_installed":false},
++          {"runner":"sideload","app_name":"missing","title":"Unknown"},
++          {"runner":"gog","app_name":"wrong","title":"Wrong store","is_installed":true},
++          {"runner":"sideload","app_name":"bad/uri","title":"Invalid","is_installed":true},
++          {"runner":"sideload","app_name":"dlc","title":"DLC","is_installed":true,"install":{"is_dlc":true}}
++        ]}"#).unwrap();
++        let games = detect_heroic(home.path());
++        assert_eq!(games.len(), 1);
++        assert_eq!(games[0].id, "heroic/sideload/native-id");
++        assert!(games[0].launch_cmd.is_empty());
++    }
++
++    #[test]
+     fn heroic_reads_only_installed_records_and_keeps_installations_distinct() {
+         let home = tempfile::tempdir().unwrap();
+         let native = home.path().join("native");
+--- before/crates/ipc/src/settings.rs
++++ after/crates/ipc/src/settings.rs
+@@ -110,6 +110,21 @@
+             }
+         })
+     }
++    /// Disable a shared launcher integration in the same user-settings write
++    /// transaction as other desktop edits. Manual profile bindings are retained.
++    pub fn clear_managed_game_prefix(&self, prefix: &str) -> Result<()> {
++        if prefix.is_empty() || !prefix.ends_with('/') || prefix.chars().any(char::is_control) {
++            return Err(OmenError::InvalidArgument(
++                "a nonempty launcher prefix ending in / is required".into(),
++            ));
++        }
++        self.edit_user(|user| {
++            user.games
++                .managed_game_ids
++                .retain(|id| !id.starts_with(prefix))
++        })
++    }
++
+     pub fn set_library_locations(
+         &self,
+         locations: Vec<omen_core::games::LibraryLocation>,
+@@ -237,6 +252,36 @@
+         assert_eq!(before, std::fs::read(&path).unwrap());
+     }
+     #[test]
++    fn removing_a_shared_launcher_preserves_other_user_preferences_and_manual_bindings() {
++        let temp = tempfile::tempdir().unwrap();
++        let path = temp.path().join("config.toml");
++        let controller = SettingsController::new(None, path.clone());
++        for id in ["lutris/flatpak/1", "lutris/flatpak/2", "lutris/3"] {
++            controller
++                .set_game_profile(id, Some(ProfileKind::Performance))
++                .unwrap();
++            controller.set_game_managed(id, true).unwrap();
++        }
++        controller.set_start_minimized(true).unwrap();
++        controller
++            .clear_managed_game_prefix("lutris/flatpak/")
++            .unwrap();
++        let saved = OmenConfig::load_from(&path).unwrap();
++        assert_eq!(
++            saved
++                .games
++                .managed_game_ids
++                .iter()
++                .map(String::as_str)
++                .collect::<Vec<_>>(),
++            ["lutris/3"]
++        );
++        assert_eq!(saved.games.per_game_profiles.len(), 3);
++        assert!(saved.general.start_minimized);
++        assert!(controller.clear_managed_game_prefix("").is_err());
++    }
++
++    #[test]
+     fn onboarding_preference_is_user_scoped_and_preserves_other_settings() {
+         let temp = tempfile::tempdir().unwrap();
+         let path = temp.path().join("config.toml");
+--- before/docs/ACCESSIBILITY.md
++++ after/docs/ACCESSIBILITY.md
+@@ -177,3 +177,11 @@
+ detaches collapsed children while its focus path checks child visibility. The
+ application workaround is also verified by actual Tab input on the installed
+ GTK runtime; the source inspection alone is not its validation.
++
++Revision 26 adds seven keyboard-driven Flatpak setup/permission/recovery/removal
++workflows per build profile. Read-only wrapper command views now inherit the
++configured application text size while retaining their monospace family. The
++own-window report records text-view font/geometry, with point/pixel conversion
++in its size assertions. Five expanded setup/error/permission scenes and twelve
++additional high-contrast control scenes extend the defined presentation matrix;
++see `AUDIT_COMPLETION_2026-10-28.md` for exact evidence and retained limits.
+--- before/docs/APPLICATION_AUDIT_IMPLEMENTATION.md
++++ after/docs/APPLICATION_AUDIT_IMPLEMENTATION.md
+@@ -1,13 +1,21 @@
+ # Application audit implementation
+ 
+-Revision 26 development now keeps Flatpak games in a nested cgroup beneath the
++Revision 26 follow-through now implements per-launcher Flatpak helper setup,
++permission checks, safe update/removal, static-helper packaging, Heroic sideload
++records and further keyboard/high-contrast/process-lifetime coverage. Debug and
++release pass 283 Rust tests each; the fresh fixture VM passes 48 checks, including
++fifteen Flatpak workflows and two reboots. Real Flathub launcher/game validation
++is being completed separately. See `AUDIT_COMPLETION_2026-10-28.md` and
++`FLATPAK_SETUP.md` for behavior, evidence scope and the external gates.
++
++The earlier revision 26 development milestone kept Flatpak games in a nested cgroup beneath the
+ original app scope, preserving its aggregate resource limits. A static sandbox
+ wrapper uses a private descriptor handoff and executes the original command in
+ place. Debug/release each pass 278 Rust tests; a 45-check VM suite covers 12
+ Flatpak workflows, two reboots and cleanup, including exit 7, paired SIGTERM,
+-ignored SIGCHLD, automatic-off and explicit memory/CPU/task limits. No revision
+-26 package is delivered. Automatic GUI setup remains disabled pending real
+-Flatpak game/launcher tests and further integration. See
++ignored SIGCHLD, automatic-off and explicit memory/CPU/task limits. At that milestone no revision
++26 package was delivered and automatic GUI setup remained disabled. The current
++follow-through above supersedes that software boundary. See
+ `FLATPAK_NESTED_BRIDGE_2026-10-28.md` and its separate evidence publication.
+ 
+ Revision 25 fixes misleading managed-session completion after the registered
+@@ -40,7 +48,8 @@
+ 
+ This tracks the full scope of `APPLICATION_AUDIT_2026-10-27.md`. The original
+ audit remains a baseline; implemented code and passing fixtures do not close
+-physical validation requirements. The latest finalized package is development revision 25; revision 26 is in progress.
++physical validation requirements. Current revision 26 verification is recorded above; the historical milestones
++below retain their original package and evidence attribution.
+ 
+ The unchanged revision 24 app also passes seven native notification workflows
+ per debug/release profile: direct checkbox and field editing, delayed activation
+@@ -173,38 +182,40 @@
+ | Monitoring notifications | Off by default; configurable threshold/hysteresis/cooldown, fresh data only, no hardware control. Actual GNotification delivery, fixture attribution and suppression passed against a private notification server. Seven direct keyboard checkbox/field/save/action/error-recovery/restart workflows now pass in debug and release for the unchanged revision 24 app. See `NOTIFICATION_WORKFLOW_2026-10-28.md`. Physical desktop display remains unverified. |
+ | Onboarding/help | Integrated skippable Dashboard welcome, diagnostics route, persistent dismissal, error/retry and reopening from the menu. Existing configurations do not unexpectedly show it. |
+ | Compatibility evidence | Exact model/board/BIOS/kernel historical evidence is shown separately from current capability. Fixtures and unknown sources receive no physical attribution; updated firmware/kernel combinations do not inherit results. The table currently contains the one documented reference target, so wider model coverage remains open. |
+-| Managed game sessions | Automatic Performance/Quiet holds for actual-command wrappers, final-descendant release, bounded daemon sessions and private restart history are implemented. Native setup, requested/effective profile, release and stable session rows are integrated. Native store wrappers require manual setup; real store execution and managed Flatpak remain open. |
+-| Broader integrations | Native Legendary, Steam Snap auto-detection and modern binary Steam shortcuts are implemented. Pinned upstream Legendary executes synthetic offline games; real store accounts/games, managed sandbox execution and further third-party formats remain open. |
++| Managed game sessions | Automatic Performance/Quiet holds for actual-command wrappers, final-descendant release, bounded daemon sessions and private restart history are implemented. Native setup, requested/effective profile, release and stable session rows are integrated. Native store wrappers require manual setup. Revision 26 adds private Flatpak helper setup and removal; real store/game compatibility remains individually tracked. |
++| Broader integrations | Native Legendary, Steam Snap auto-detection and modern binary Steam shortcuts are implemented. Pinned upstream Legendary executes synthetic offline games; revision 26 adds installed Heroic sideload routing and sandbox helper setup. Real store accounts/games and further third-party formats remain individually tracked. |
+ | Language | English only, per the user’s instruction. French catalogs and the gettext build dependency have been removed. Native system dialogs follow desktop settings. |
+ 
+ ## Remaining software and experience work
+ 
+-1. Native Lutris/OpenTTD now passes real-game launch/exit/release/restart checks in
+-   a private desktop VM. Verify additional Lutris games, native Steam/Proton and
+-   Heroic, then add managed Flatpak support only with established environment and
+-   lifetime behavior. Persistent pre-registration/late failure reports are now
+-   implemented and verified with private fixtures; actual store/runtime delivery
+-   and the observer's complete job-control compatibility remain unvalidated.
+-2. Extend keyboard/screen-reader and presentation coverage beyond the verified
+-   navigation, chart range/export, setup, recovery and network-copy workflows.
+-   Expanded/transient states, additional themes/accents, other screen readers,
+-   audible synthesis and physical focus/DPI remain open; the defined scene matrix
+-   does not establish complete contrast or accessibility conformance.
+-3. Complete physical focus/selection testing for the retained network rows.
+-   Library virtualization and 10,000-entry interaction checks are implemented;
+-   broader hardware/library-size performance coverage remains useful. Refine
+-   further control-page states beyond revision 22's verified disclosure,
+-   current/requested values and effective large-text scenes.
+-4. Verify real launcher/account/game behavior for the added Steam shortcuts,
+-   Snap and Legendary formats. Heroic sideload/Zoom/third-party formats,
+-   sandboxed Legendary and AppImages without a matching PATH runtime remain
+-   outside automatic routing. Preserve pinned formats and literal arguments.
+-5. Complete physical desktop authorization/shortcut/full-screen overlay trials
+-   and declared distribution compatibility. Retain the separate physical gates
+-   below for hardware controls and suspend/resume.
+-6. Revision 23 completes source migration/provenance software recovery and its
+-   private native/installed-VM validation. Broaden physical desktop and
+-   distribution coverage; those remain separate external gates.
++Revision 26 implements the local software portions below. The item-by-item
++disposition is in `AUDIT_COMPLETION_2026-10-28.md`; physical, account-dependent
++and broader compatibility requirements remain open. Historical milestone text
++below retains its original attribution.
++
++1. Broaden actual launcher/game execution beyond the verified native
++   Lutris/OpenTTD path. Revision 26 adds managed Flatpak setup, packaging,
++   permission/recovery workflows and process-lifetime checks; real Flathub game
++   verification is tracked in `AUDIT_COMPLETION_2026-10-28.md`. Native Steam/Proton,
++   Heroic store accounts and further Lutris games still need individual runs.
++2. Extend assistive-technology coverage beyond the passing keyboard/Orca and
++   expanded high-contrast/setup/error scene matrices. Other screen readers,
++   audible output, physical focus/DPI and complete accessibility certification
++   remain external requirements.
++3. Perform physical network-row focus/selection and representative hardware
++   performance measurements. Existing virtualized-library and twelve control
++   recovery workflows pass; revision 26 adds twelve high-contrast control scenes.
++4. Validate real account/game behavior for Steam shortcuts, Snap and Legendary.
++   Heroic sideload parsing and native/Flatpak routing are now implemented against
++   pinned upstream sources. Zoom, sandboxed Legendary and arbitrary AppImage/
++   third-party runtime routing still need verified interfaces and execution
++   evidence; custom commands remain available for explicit user setup.
++5. Complete physical desktop authorization, shortcut activation, compositor/
++   fullscreen overlay placement, suspend/resume and additional distribution
++   validation. Current Ubuntu container/VM results have separate exact identities.
++6. Broaden physical desktop/distribution coverage of the implemented source
++   recovery. Software source migration/provenance is retained and regression
++   tested; it does not close physical behavior requirements.
+ 
+ ## Hardware and release gates retained
+ 
+--- before/docs/AUDIT_COMPLETION_2026-10-28.md
++++ after/docs/AUDIT_COMPLETION_2026-10-28.md
+@@ -0,0 +1,106 @@
++# Audit implementation follow-through
++
++Revision 26 adds the remaining locally implementable Flatpak setup and package
++integration, installed Heroic sideload records, and further native accessibility
++and process-lifetime coverage. It does not turn fixture evidence into physical
++hardware support or claim compatibility with accounts/games that were not run.
++
++## Product changes
++
++- Game Library Profile setup installs, checks and removes a launcher-scoped
++  static helper. The same operations are in `omen-cli game-flatpak-setup`.
++  Native launcher configuration remains user controlled; the UI provides the
++  exact actual-command prefix and permission/restart/recovery guidance.
++- Effective host-command permission is inspected off GTK's main thread. A
++  failed check keeps automatic mode unavailable even after switching to manual
++  mode. Launch-time sandbox identity, kernel, cgroup and authorization checks
++  remain authoritative. A setup check is not game execution evidence.
++- Helpers and SHA-256 installation records are published as one directory.
++  Copied commands retain the sandbox-visible home path when the host home is a
++  symlink; bounded verification refuses unexpected directory contents.
++  Updates and removal preserve modified files, symlinks and unrelated data.
++  Shared removal disables that launcher's automatic bindings through the same
++  serialized settings transaction as other preferences. It preserves manual
++  profile choices and active sessions.
++- Debian packaging builds the static PIE helper from an explicit musl sysroot,
++  accepts both an installed system musl toolchain and an extracted musl sysroot,
++  checks dynamic dependencies and stack permissions, and ships its source,
++  build manifest and complete musl notice. The service still never executes
++  games or receives a PID/command/path authority from this workflow.
++- Heroic sideload discovery requires the pinned store's `runner=sideload`,
++  explicit installed flag, valid ID and nonempty title. Native/Flatpak records
++  remain separate and use Heroic's own URI protocol. Executable metadata never
++  becomes an OMEN shell command.
++- Native and Flatpak wrapper command views inherit the configured text size;
++  their monospace font no longer stays small when the application font grows.
++  Developer captures can use a bounded 4–30 second staging delay. UI reports
++  include read-only command text geometry and actual computed font size.
++
++## Verification
++
++Evidence is published under `docs/evidence/audit-v26/`. Its index records exact
++binary/package identities and keeps each VM run separately attributed. Raw
++preparation caches remain under `target/audit-completion/`.
++
++- Debug and release: 283 Rust tests each. Strict all-target/all-feature Clippy
++  passes. User-settings shared removal has a scoped preservation regression.
++- Nine CLI setup/recovery workflows cover installation, updates, permission loss,
++  modified content, unexpected files/links, a symlinked home, pre-registration
++  handoff reporting and launcher-scoped removal.
++- Seven actual keyboard setup workflows pass per debug/release, including repeated
++  native row rebindings. The existing
++  thirteen keyboard/Orca workflows and twelve control recovery workflows pass.
++- Five expanded Flatpak setup/permission/recovery scenes pass geometry and
++  active-text contrast checks; actual command-font scaling is checked in points
++  after conversion from GTK's computed pixel units. Five additional native launcher/location scenes include large wrapper text.
++  Twelve additional control scenes pass high-contrast geometry/contrast checks with the software renderer.
++- Fifteen launcher-format checks pass per debug/release profile, including
++  exact native and Flatpak Heroic sideload URI routing without executing
++  executable metadata; the installed package repeats all fifteen.
++- Twenty-one native managed-session checks pass. Two further private-PPD checks
++  verify inherited descriptors, foreground PTY identity, process-group stop/
++  resume, retained ownership while stopped and release after normal exit.
++- A fresh installed sandbox VM passes 48 checks including fifteen Flatpak
++  workflows, overlapping holds, wrapper death during authorization, inherited
++  descriptors, original resource limits, two reboots and complete cleanup.
++  It uses local Flatpak fixtures, not a store game. The final rerun uses the
++  frozen candidate; its CLI and daemon match the tested package.
++
++A separate fresh Ubuntu/Plasma Wayland VM passes 50 checks on the preceding
++packaged candidate (before the final setup-row callback lifetime fix): six real KDE/PAM authorization workflows including natural
++cache expiry, five source-recovery workflows, six actual native Lutris/OpenTTD
++workflows, installed-service/lifecycle/isolation checks and two reboots. The
++fixture preparation installs its desktop dependencies from signed local APT
++indexes. The frozen candidate also passes twenty lifecycle and fifteen installed format
++checks in a clean Ubuntu container with networking disabled and signed local
++package indexes. Neither environment uses a host power provider.
++
++Real signed Flathub Lutris/OpenTTD validation is being completed separately.
++The earlier native Lutris/OpenTTD result remains separately attributed. No
++real Steam/Proton, Epic/Legendary account, Heroic game, Snap execution, graphics
++acceleration or full job-control conformance is implied by these checks.
++
++## Original remaining-work items
++
++| Tracker item | Implemented or verified here | External work still required |
++| --- | --- | --- |
++| Managed games / Flatpak | Private helper setup, package integration, permission/readiness gating, recovery/removal, overlaps and additional process semantics | Real launcher/game matrix, store accounts, additional controller/cgroup-namespace variants |
++| Keyboard / screen readers / presentation | Further keyboard setup/recovery, inherited text sizing, expanded permission/error/high-contrast scenes and existing Orca regressions | Additional assistive technology, audible synthesis, physical focus/DPI and complete accessibility certification |
++| Retained rows / control states | Existing twelve control recovery workflows and expanded high-contrast scenes | Physical network selection/focus and representative hardware performance measurements |
++| Added launcher formats | Installed Heroic sideload inventory and native/Flatpak protocol routing, pinned source provenance | Real store/account execution; Zoom and arbitrary third-party routing need a verified upstream interface |
++| Desktop and distribution integration | Current Ubuntu VM/package checks; per-desktop behavior remains explicit | Physical shortcut activation, physical polkit input, compositor/fullscreen placement, physical suspend and other distributions |
++| Source recovery | Existing implementation retained; regression suite remains available | Physical desktop/distribution coverage |
++
++The pinned Heroic protocol runner enum includes sideload and excludes Zoom.
++Guessing a Zoom URI would not establish compatibility; it remains outside
++automatic routing. Source fingerprints are in the evidence publication.
++
++## Hardware gates
++
++Live fan/RGB/charge support requires suitable physical interfaces and measured
++model/BIOS-specific settling, thermal coverage, suspend/resume and independent
++crash recovery. Per-key lighting and MUX switching require verified interfaces
++that are absent from the reference target's demonstrated capabilities. Traffic
++priority requires a separate designed and authorized policy interface. These
++remain open; device-specific writes are still disabled. No host package was
++installed and no physical control write was performed for this work.
+--- before/docs/CONTINUATION_CHECKLIST.md
++++ after/docs/CONTINUATION_CHECKLIST.md
+@@ -1,13 +1,22 @@
+ # Continuation requirements and evidence
+ 
+-Revision 26 development now keeps Flatpak games in a nested cgroup beneath the
++Revision 26 follow-through adds private Flatpak helper setup/update/removal,
++permission gating, static-helper packaging, installed Heroic sideload records
++and further native keyboard, text-scaling, high-contrast and process-lifetime
++coverage. Debug/release pass 283 Rust tests each; a fresh fixture VM passes 48
++checks and two reboots. Real Flathub game verification is being completed
++separately. See `AUDIT_COMPLETION_2026-10-28.md` and `FLATPAK_SETUP.md` for current
++scope and the physical/account-dependent requirements that remain open.
++
++
++The earlier revision 26 development milestone kept Flatpak games in a nested cgroup beneath the
+ original app scope, preserving its aggregate resource limits. A static sandbox
+ wrapper uses a private descriptor handoff and executes the original command in
+ place. Debug/release each pass 278 Rust tests; a 45-check VM suite covers 12
+ Flatpak workflows, two reboots and cleanup, including exit 7, paired SIGTERM,
+-ignored SIGCHLD, automatic-off and explicit memory/CPU/task limits. No revision
+-26 package is delivered. Automatic GUI setup remains disabled pending real
+-Flatpak game/launcher tests and further integration. See
++ignored SIGCHLD, automatic-off and explicit memory/CPU/task limits. At that milestone no revision
++26 package was delivered, and automatic GUI setup remained disabled. The current
++follow-through above supersedes that software boundary. See
+ `FLATPAK_NESTED_BRIDGE_2026-10-28.md` and its separate evidence publication.
+ 
+ Revision 25 fixes misleading managed-session completion after the registered
+--- before/docs/FLATPAK_SETUP.md
++++ after/docs/FLATPAK_SETUP.md
+@@ -0,0 +1,58 @@
++# Automatic profiles inside Flatpak games
++
++OMEN wraps the actual game command inside its original Flatpak sandbox. It
++creates a nested game cgroup beneath the launcher's app scope, retaining its
++ancestor resource limits, environment, directory and argument vector. The
++privileged service never launches the command or enters the sandbox.
++
++In Game Library, select Performance or Quiet and open **Profile setup**:
++
++1. **Install launcher helper** copies the packaged static helper into this
++   launcher's private app data. **Check Flatpak setup** reads the effective
++   host-command permission. It does not change permissions or launcher settings.
++2. **Copy wrapper command** and put it around the actual game command in Steam
++   Launch Options, Lutris Command prefix, or Heroic's wrapper fields. Keep
++   required existing arguments. Steam needs its `%command%` placeholder.
++3. Enable automatic restore. On the next launch, approve the ordinary profile
++   authorization if asked. If canceled, denied, unsupported or unavailable, the
++   wrapped command fails without starting the game. Review Game sessions and
++   saved launch issues for the result.
++
++Use the CLI for the same desktop-owned operations:
++
++```sh
++omen-cli game-flatpak-setup lutris/flatpak/1 --json
++omen-cli game-flatpak-setup lutris/flatpak/1 --install
++omen-cli game-flatpak-setup lutris/flatpak/1 --remove
++```
++
++The helper requires Linux socket peer process descriptors (Linux 6.5+), unified
++cgroup v2 with a user-owned app group, a user systemd session, an enabled profile
++provider and authorized OMEN service. Launch-time identity/delegation checks are
++authoritative; a successful setup check does not establish game compatibility.
++The launcher must include `flatpak-spawn` at `/usr/bin/flatpak-spawn` and allow
++`org.freedesktop.Flatpak` on its session bus. That permission allows host command
++execution and is broader than game profiles. Review it in the desktop's Flatpak
++settings before enabling it. Restart the launcher after changing permissions.
++OMEN neither grants nor revokes sandbox permissions.
++
++The copied helper lives at
++`~/.var/app/APP_ID/data/omen-linux/managed-v1/omen-flatpak-game`. Setup publishes
++its executable and SHA-256 installation record together. Updates/removal refuse
++changed executables, symlinks, unexpected files or directories writable by other
++users. If files were edited, preserve them and recover the dedicated directory
++manually before retrying. The app's other data and launcher config are retained.
++
++**Use manual restore** disables automatic profiles for future launches and keeps
++the wrapper in place as a pass-through while host-command permission and the
++helper remain available. To play without those dependencies, remove the command
++prefix from the launcher. **Remove launcher helper** disables all
++managed game IDs for that Flatpak launcher and removes only the verified helper
++and record. Remove the command prefix from its games before launching again.
++An existing game continues running; its existing profile hold lasts until exit
++or **Release profile hold**. Releasing a hold never terminates the game.
++
++Known routes are Steam, Heroic and Lutris Flatpak. Each launcher/runtime/game
++combination needs its own execution evidence. Native games, Snap, sandboxed
++Legendary, physical controls and full accessibility have separate requirements.
++Current verification and exact scope are in `APPLICATION_AUDIT_IMPLEMENTATION.md`.
+--- before/docs/GAME_LAUNCHERS.md
++++ after/docs/GAME_LAUNCHERS.md
+@@ -14,6 +14,13 @@
+ [the fix and validation](SESSION_SCOPE_MIGRATION_2026-10-28.md).
+ The pinned Legendary CLI is separately exercised with synthetic
+ offline games; this does not establish real Epic game/account compatibility.
++
++Revision 26 adds installed Heroic sideload entries from `sideload_apps/library.json`
++and `heroic://launch/sideload/ID` routing for native and Flatpak installations.
++OMEN requires the explicit installed flag and never executes the record's
++executable field itself. Per-launcher Flatpak helper setup, permission checks and
++removal are documented in [Flatpak setup](FLATPAK_SETUP.md). Real game/store
++compatibility is recorded separately from parsing and routing tests.
+ 
+ ## Discovery
+ 
+@@ -155,7 +162,7 @@
+ is visible in the row/JSON inventory. Additional locations do not switch the
+ active configuration of Steam, Heroic or Lutris.
+ 
+-Heroic sideload/Zoom/third-party records, Legendary sandbox installations and
++Heroic Zoom/other third-party records, Legendary sandbox installations and
+ AppImages without a matching PATH launcher remain outside automatic routing.
+ See [expanded launcher support](LAUNCHER_EXPANSION.md) for source identities,
+ configuration behavior, verification and remaining runtime limits.
+@@ -180,3 +187,9 @@
+ `evidence/launcher-sources.json`. Rust fixtures and 16 real-process fixture
+ scenarios validate parsing/routing/recovery. They do not establish compatibility
+ with every launcher version or prove actual game execution.
++
++Heroic sideload records are checked against pinned upstream
++[`sideload/library.ts`](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/sideload/library.ts)
++and [`sideload/electronStores.ts`](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/sideload/electronStores.ts).
++That commit's protocol supports the sideload runner. Its Zoom store has installed
++records but no corresponding protocol runner; OMEN does not invent a route.
+--- before/docs/IMPLEMENTATION_STATUS.md
++++ after/docs/IMPLEMENTATION_STATUS.md
+@@ -1,13 +1,22 @@
+ # Goal status and continuation
+ 
+-Revision 26 development now keeps Flatpak games in a nested cgroup beneath the
++Revision 26 follow-through adds private Flatpak helper setup/update/removal,
++permission gating, static-helper packaging, installed Heroic sideload records
++and further native keyboard, text-scaling, high-contrast and process-lifetime
++coverage. Debug/release pass 283 Rust tests each; a fresh fixture VM passes 48
++checks and two reboots. Real Flathub game verification is being completed
++separately. See `AUDIT_COMPLETION_2026-10-28.md` and `FLATPAK_SETUP.md` for current
++scope and the physical/account-dependent requirements that remain open.
++
++
++The earlier revision 26 development milestone kept Flatpak games in a nested cgroup beneath the
+ original app scope, preserving its aggregate resource limits. A static sandbox
+ wrapper uses a private descriptor handoff and executes the original command in
+ place. Debug/release each pass 278 Rust tests; a 45-check VM suite covers 12
+ Flatpak workflows, two reboots and cleanup, including exit 7, paired SIGTERM,
+-ignored SIGCHLD, automatic-off and explicit memory/CPU/task limits. No revision
+-26 package is delivered. Automatic GUI setup remains disabled pending real
+-Flatpak game/launcher tests and further integration. See
++ignored SIGCHLD, automatic-off and explicit memory/CPU/task limits. At that milestone no revision
++26 package was delivered, and automatic GUI setup remained disabled. The current
++follow-through above supersedes that software boundary. See
+ `FLATPAK_NESTED_BRIDGE_2026-10-28.md` and its separate evidence publication.
+ 
+ Revision 25 fixes misleading managed-session completion after the registered
+--- before/docs/INSTALLATION.md
++++ after/docs/INSTALLATION.md
+@@ -9,7 +9,7 @@
+ 26.04 binary runs on 24.04 or Debian stable.
+ 
+ ```bash
+-sudo apt install build-essential pkg-config libgtk-4-dev libadwaita-1-dev libglib2.0-dev-bin libsqlite3-dev python3 dpkg-dev
++sudo apt install build-essential pkg-config libgtk-4-dev libadwaita-1-dev libglib2.0-dev-bin libsqlite3-dev musl-dev gcc binutils python3 dpkg-dev
+ cargo build --workspace --locked
+ cargo test --workspace --locked
+ cargo clippy --workspace --all-targets --locked -- -D warnings
+@@ -31,14 +31,20 @@
+ The package does not bundle that prefix
+ or change the user's library loader. Normal installations use distribution libs.
+ 
++The Debian build also needs static musl headers/libraries and GNU binutils for
++the Flatpak helper. A distribution `musl-dev` installation uses `/` as its
++sysroot. For an extracted local toolchain, set `OMEN_MUSL_SYSROOT` to that root;
++this build does not install packages on the host. On this development host the
++verified extracted root is `target/flatpak-nested-bridge/musl/root`.
++
+ ## Build and inspect a Debian package
+ 
+ ```bash
+ ./packaging/build-deb.sh
+-# Artifact: target/debian/omen-linux_0.1.0-24_amd64.deb on this host
++# Artifact: target/debian/omen-linux_0.1.0-26_amd64.deb on this host
+ # Inspect without installing:
+-dpkg-deb --info target/debian/omen-linux_0.1.0-24_amd64.deb
+-dpkg-deb --contents target/debian/omen-linux_0.1.0-24_amd64.deb
++dpkg-deb --info target/debian/omen-linux_0.1.0-26_amd64.deb
++dpkg-deb --contents target/debian/omen-linux_0.1.0-26_amd64.deb
+ ```
+ 
+ The script uses a fresh staging directory, a locked release build, generated shared-library dependencies, and root-owned
+@@ -70,7 +76,7 @@
+ ## Install and run
+ 
+ ```bash
+-sudo apt install ./target/debian/omen-linux_0.1.0-24_amd64.deb
++sudo apt install ./target/debian/omen-linux_0.1.0-26_amd64.deb
+ omen-cli status
+ omen-cli detect
+ omen-gui
+--- before/docs/MANAGED_GAME_SESSIONS.md
++++ after/docs/MANAGED_GAME_SESSIONS.md
+@@ -1,16 +1,22 @@
+ # Managed game sessions
+ 
+-Unreleased revision 26 now has a native Flatpak wrapper that preserves the
+-original app scope's aggregate limits. The 45-check private VM result includes
+-exit/signal, automatic-off, resource-policy and hold-lifetime workflows. Automatic
+-Flatpak GUI setup remains unavailable; no revision 26 package is delivered. See
+-[the nested bridge development report](FLATPAK_NESTED_BRIDGE_2026-10-28.md).
++Revision 26 packages the static Flatpak wrapper and adds per-launcher installation,
++permission checks, safe update/removal and opt-in automatic mode in Profile setup.
++The wrapper preserves the original sandbox and app scope's aggregate limits.
++The frozen candidate passes 48 private VM checks, including fifteen Flatpak
++lifecycle workflows and two reboots. Follow [Flatpak setup](FLATPAK_SETUP.md);
++[the implementation report](AUDIT_COMPLETION_2026-10-28.md) separates local fixture,
++real launcher and physical evidence.
++
++The earlier revision 26 development milestone passed 45 VM checks before GUI
++setup and package integration were delivered. Its separate historical evidence
++is retained in [the nested bridge development report](FLATPAK_NESTED_BRIDGE_2026-10-28.md).
+ 
+ Revision 25 retains the original registered process identity during observation.
+ A live peer moving outside its tracked scope now releases the hold and records
+ Interrupted, rather than Ended; its game may still be running. See
+ [scope migration recovery](SESSION_SCOPE_MIGRATION_2026-10-28.md). Automatic
+-Flatpak setup remains unavailable.
++Flatpak setup was unavailable at that milestone.
+ 
+ Revision 16 connects automatic profile ownership to an actual-command wrapper,
+ daemon supervision, per-game setup and native session history. Manual mode is
+--- before/docs/TEST_REPORT.md
++++ after/docs/TEST_REPORT.md
+@@ -1,13 +1,22 @@
+ # Validation report
+ 
+-Revision 26 development now keeps Flatpak games in a nested cgroup beneath the
++Revision 26 follow-through adds private Flatpak helper setup/update/removal,
++permission gating, static-helper packaging, installed Heroic sideload records
++and further native keyboard, text-scaling, high-contrast and process-lifetime
++coverage. Debug/release pass 283 Rust tests each; a fresh fixture VM passes 48
++checks and two reboots. Real Flathub game verification is being completed
++separately. See `AUDIT_COMPLETION_2026-10-28.md` and `FLATPAK_SETUP.md` for current
++scope and the physical/account-dependent requirements that remain open.
++
++
++The earlier revision 26 development milestone kept Flatpak games in a nested cgroup beneath the
+ original app scope, preserving its aggregate resource limits. A static sandbox
+ wrapper uses a private descriptor handoff and executes the original command in
+ place. Debug/release each pass 278 Rust tests; a 45-check VM suite covers 12
+ Flatpak workflows, two reboots and cleanup, including exit 7, paired SIGTERM,
+-ignored SIGCHLD, automatic-off and explicit memory/CPU/task limits. No revision
+-26 package is delivered. Automatic GUI setup remains disabled pending real
+-Flatpak game/launcher tests and further integration. See
++ignored SIGCHLD, automatic-off and explicit memory/CPU/task limits. At that milestone no revision
++26 package was delivered, and automatic GUI setup remained disabled. The current
++follow-through above supersedes that software boundary. See
+ `FLATPAK_NESTED_BRIDGE_2026-10-28.md` and its separate evidence publication.
+ 
+ Revision 25 fixes misleading managed-session completion after the registered
+--- before/gui/src/game_sessions.rs
++++ after/gui/src/game_sessions.rs
+@@ -51,7 +51,8 @@
+         config.games.per_game_profiles.get(&game.id),
+         Some(ProfileKind::Performance | ProfileKind::Quiet)
+     );
+-    let sandboxed = game.id.contains("/flatpak/") || game.id.starts_with("steam/snap/");
++    let flatpak = omen_client::flatpak_setup::application(&game.id).is_some();
++    let sandboxed = game.id.starts_with("steam/snap/");
+     let mode = label(mode_message(enabled, sandboxed));
+     mode.add_css_class("heading");
+     panel.append(&mode);
+@@ -64,7 +65,7 @@
+         "Enable automatic restore"
+     });
+     toggle.set_halign(gtk::Align::Start);
+-    toggle.set_sensitive(enabled || (supported && !sandboxed));
++    toggle.set_sensitive(enabled || (supported && !sandboxed && !flatpak));
+     if !supported {
+         toggle.set_tooltip_text(Some("Choose Performance or Quiet in the profile selector first. Balanced and Cool cannot be held by Power Profiles Daemon."));
+     }
+@@ -74,16 +75,19 @@
+     }
+     let feedback = label("");
+     crate::widgets::announce_changes(&feedback);
++    let active = Rc::new(std::cell::Cell::new(enabled));
++    let helper_ready = Rc::new(std::cell::Cell::new(false));
+     {
+         let id = game.id.clone();
+         let mode = mode.clone();
+         let feedback = feedback.clone();
+-        let active = std::cell::Cell::new(enabled);
++        let active = active.clone();
++        let helper_ready = helper_ready.clone();
+         toggle.connect_clicked(move|button|{
+             let next=!active.get();
+             let settings=omen_ipc::settings::SettingsController::new(None,omen_core::config::OmenConfig::path());
+             match settings.set_game_managed(&id,next) {
+-                Ok(())=>{active.set(next);button.set_label(if next{"Use manual restore"}else{"Enable automatic restore"});mode.set_text(mode_message(next,sandboxed));feedback.set_text("Saved for future launches. Active sessions keep their current ownership; use Release profile hold to end it now.");}
++                Ok(())=>{active.set(next);button.set_label(if next{"Use manual restore"}else{"Enable automatic restore"});button.set_sensitive(next || (supported && !sandboxed && (!flatpak || helper_ready.get())));mode.set_text(mode_message(next,sandboxed));feedback.set_text("Saved for future launches. Active sessions keep their current ownership; use Release profile hold to end it now.");}
+                 Err(error)=>feedback.set_text(&format!("Profile mode was not saved: {error}")),
+             }
+         });
+@@ -91,6 +95,19 @@
+     panel.append(&toggle);
+     if game.source == GameSource::Custom {
+         panel.append(&label("Custom commands are wrapped automatically when launched here. Use the actual game command; a command that dispatches to an existing launcher outside the managed scope cannot establish game lifetime."));
++    } else if flatpak {
++        flatpak_controls(
++            &panel,
++            game,
++            &toggle,
++            &mode,
++            &feedback,
++            FlatpakMode {
++                active: active.clone(),
++                ready: helper_ready.clone(),
++                supported,
++            },
++        );
+     } else if !sandboxed {
+         let executable = std::env::current_exe()
+             .map(|p| p.with_file_name("omen-cli"))
+@@ -119,6 +136,7 @@
+             .monospace(true)
+             .wrap_mode(gtk::WrapMode::WordChar)
+             .build();
++        command.add_css_class("game-wrapper");
+         command.buffer().set_text(&text);
+         command.update_property(&[gtk::accessible::Property::Label("Game wrapper command")]);
+         panel.append(&command);
+@@ -132,6 +150,179 @@
+     panel.append(&feedback);
+     let _ = ui;
+     panel
++}
++
++#[derive(Clone, Copy)]
++enum SetupAction {
++    Check,
++    Install,
++    Remove,
++}
++
++struct FlatpakMode {
++    active: Rc<std::cell::Cell<bool>>,
++    ready: Rc<std::cell::Cell<bool>>,
++    supported: bool,
++}
++
++fn flatpak_controls(
++    panel: &gtk::Box,
++    game: &Game,
++    toggle: &gtk::Button,
++    mode: &gtk::Label,
++    feedback: &gtk::Label,
++    state: FlatpakMode,
++) {
++    let FlatpakMode {
++        active,
++        ready: helper_ready,
++        supported,
++    } = state;
++    panel.append(&label("Flatpak keeps the actual game inside its existing sandbox and resource limits. Install this launcher's helper, then copy the command into the game's launch settings. A blocked or canceled approval prevents that launch; it never silently runs without the requested hold."));
++    let status = label("Checking Flatpak setup…");
++    crate::widgets::announce_changes(&status);
++    panel.append(&status);
++    let command = gtk::TextView::builder()
++        .editable(false)
++        .accepts_tab(false)
++        .monospace(true)
++        .wrap_mode(gtk::WrapMode::WordChar)
++        .build();
++    command.update_property(&[gtk::accessible::Property::Label("Game wrapper command")]);
++    let prefix = omen_client::flatpak_setup::prefix(&game.id).unwrap_or_default();
++    let prefix = if game.source == GameSource::Steam {
++        format!("{prefix} %command%")
++    } else {
++        prefix
++    };
++    command.add_css_class("game-wrapper");
++    command.buffer().set_text(&prefix);
++    let instructions = match game.source {
++        GameSource::Steam => "Use this in the game's Steam Launch Options, preserving required game arguments and %command%.",
++        GameSource::Lutris => "Use this as the game's Command prefix in Lutris System options. Keep existing required game arguments.",
++        GameSource::Heroic => "Use the helper path as Heroic's wrapper executable and GAME_ID -- as its arguments. It must wrap the actual game command.",
++        _ => unreachable!(),
++    };
++    panel.append(&label(instructions));
++    panel.append(&command);
++    let actions = crate::widgets::action_row();
++    let install = gtk::Button::with_label("Install launcher helper");
++    let check = gtk::Button::with_label("Check Flatpak setup");
++    let remove = gtk::Button::with_label("Remove launcher helper");
++    let copy = gtk::Button::with_label("Copy wrapper command");
++    for button in [&install, &check, &remove, &copy] {
++        crate::widgets::append_action(&actions, button);
++    }
++    panel.append(&actions.widget);
++    let feedback_copy = feedback.clone();
++    copy.connect_clicked(move |button| {
++        button.clipboard().set_text(&prefix);
++        feedback_copy.set_text(
++            "Wrapper command copied. Configure it in the launcher, then enable automatic restore.",
++        );
++    });
++    panel.append(&label("Removing this shared helper disables automatic restore for every game in this Flatpak launcher. Remove the command prefix from those games before launching again. Running games and their holds continue; Release profile hold ends a hold now. Sandbox permissions are managed separately in your desktop's Flatpak settings."));
++    let busy = Rc::new(std::cell::Cell::new(false));
++    let refresh: Rc<dyn Fn(SetupAction)> = Rc::new({
++        let id = game.id.clone();
++        let panel = panel.downgrade();
++        // Signals own refresh; keep its button references weak so recycled
++        // library rows can release their setup widgets after a worker finishes.
++        let buttons = [install.downgrade(), check.downgrade(), remove.downgrade()];
++        let toggle = toggle.clone();
++        let mode = mode.clone();
++        let status = status.clone();
++        let feedback = feedback.clone();
++        let active = active.clone();
++        move |action| {
++            let Some(buttons) = buttons
++                .iter()
++                .map(|button| button.upgrade())
++                .collect::<Option<Vec<_>>>()
++            else {
++                return;
++            };
++            if busy.replace(true) {
++                return;
++            }
++            for button in &buttons {
++                button.set_sensitive(false);
++            }
++            toggle.set_sensitive(false);
++            status.set_text("Checking Flatpak setup…");
++            let (tx, rx) = std::sync::mpsc::channel();
++            let id = id.clone();
++            std::thread::spawn(move || {
++                let result = match action {
++                    SetupAction::Check => omen_client::flatpak_setup::status(&id),
++                    SetupAction::Install => omen_client::flatpak_setup::install(&id),
++                    SetupAction::Remove => omen_client::flatpak_setup::remove(&id),
++                };
++                let _ = tx.send(result);
++            });
++            let panel = panel.clone();
++            let buttons = buttons.clone();
++            let toggle = toggle.clone();
++            let mode = mode.clone();
++            let status = status.clone();
++            let feedback = feedback.clone();
++            let active = active.clone();
++            let helper_ready = helper_ready.clone();
++            let busy = busy.clone();
++            gtk::glib::timeout_add_local(Duration::from_millis(100), move || {
++                if panel.upgrade().is_none() {
++                    return gtk::glib::ControlFlow::Break;
++                }
++                match rx.try_recv() {
++                    Ok(result) => {
++                        busy.set(false);
++                        for button in &buttons {
++                            button.set_sensitive(true);
++                        }
++                        match result {
++                            Ok(state) => {
++                                helper_ready.set(state.ready);
++                                if matches!(action, SetupAction::Remove) {
++                                    active.set(false);
++                                    toggle.set_label("Enable automatic restore");
++                                }
++                                mode.set_text(mode_message(active.get(), false));
++                                status.set_text(&state.detail);
++                                buttons[2].set_sensitive(state.helper_installed);
++                                toggle.set_sensitive(active.get() || (supported && state.ready));
++                                feedback.set_text(match action { SetupAction::Install => "Launcher helper installed. Copy its command into your game settings, then enable automatic restore.", SetupAction::Remove => "Launcher helper removed and automatic profiles disabled for this launcher. Remove its command prefix in the launcher before playing again.", SetupAction::Check => "Setup check complete. Launch-time authorization and kernel checks still apply." });
++                            }
++                            Err(error) => {
++                                helper_ready.set(false);
++                                status.set_text(&format!("Flatpak setup needs attention: {error}. Check setup again after correcting the problem."));
++                                toggle.set_sensitive(active.get());
++                            }
++                        }
++                        gtk::glib::ControlFlow::Break
++                    }
++                    Err(std::sync::mpsc::TryRecvError::Empty) => gtk::glib::ControlFlow::Continue,
++                    Err(_) => {
++                        busy.set(false);
++                        for button in &buttons {
++                            button.set_sensitive(true);
++                        }
++                        status.set_text("Setup check stopped. Use Check Flatpak setup to retry.");
++                        toggle.set_sensitive(active.get());
++                        gtk::glib::ControlFlow::Break
++                    }
++                }
++            });
++        }
++    });
++    for (button, action) in [
++        (&install, SetupAction::Install),
++        (&check, SetupAction::Check),
++        (&remove, SetupAction::Remove),
++    ] {
++        let refresh = refresh.clone();
++        button.connect_clicked(move |_| refresh(action));
++    }
++    refresh(SetupAction::Check);
+ }
+ 
+ struct SessionRow {
+--- before/gui/src/main.rs
++++ after/gui/src/main.rs
+@@ -557,7 +557,12 @@
+         let app = app.clone();
+         let window = window.clone();
+         let overlay = overlay.clone();
+-        let ready_at = Instant::now() + Duration::from_secs(4);
++        let capture_delay = std::env::var("OMEN_CAPTURE_DELAY_SECONDS")
++            .ok()
++            .and_then(|s| s.parse::<u64>().ok())
++            .filter(|s| (4..=30).contains(s))
++            .unwrap_or(4);
++        let ready_at = Instant::now() + Duration::from_secs(capture_delay);
+         let mut attempts = 0;
+         gtk::glib::timeout_add_local(Duration::from_millis(250), move || {
+             if Instant::now() < ready_at {
+@@ -817,6 +822,7 @@
+     .dim { opacity: 0.8; }
+     .small { font-size: 85%; }
+     .game-library { background: transparent; }
++    .game-wrapper { font-size: inherit; }
+     .game-library > row { padding: 0; }
+     .sensor-row { background: alpha(@window_fg_color, 0.04); border-radius: 8px; padding: 4px 10px; }
+     .sensor-val { font-weight: 600; }
+--- before/gui/src/ui_report.rs
++++ after/gui/src/ui_report.rs
+@@ -44,6 +44,22 @@
+             "font_weight":label.pango_context().font_description().map(|f|f.weight().into_glib()),
+             "layout_offset":[offsets.0,offsets.1],"logical":[logical.x(),logical.y(),logical.width(),logical.height()],
+             "ink":[ink.x(),ink.y(),ink.width(),ink.height()], "ellipsized":layout.is_ellipsized(), "lines":layout.line_count()}));
++    } else if let Some(view) = widget.downcast_ref::<gtk::TextView>() {
++        let buffer = view.buffer();
++        let text = buffer.text(&buffer.start_iter(), &buffer.end_iter(), true);
++        let layout = view.create_pango_layout(Some(&text));
++        layout.set_width(
++            (view.width() - view.left_margin() - view.right_margin()).max(1) * gtk::pango::SCALE,
++        );
++        layout.set_wrap(gtk::pango::WrapMode::WordChar);
++        let (ink, logical) = layout.pixel_extents();
++        out.push(json!({"kind":"text_view","text":text.to_string(),"path":path,"bounds":bounds,
++            "clips":clips,"opacity":opacity,"foreground":color(view.color()),"sensitive":view.is_sensitive(),
++            "font":view.pango_context().font_description().map(|f|f.to_string().to_string()),
++            "font_weight":view.pango_context().font_description().map(|f|f.weight().into_glib()),
++            "layout_offset":[view.left_margin(),view.top_margin()],
++            "logical":[logical.x(),logical.y(),logical.width(),logical.height()],
++            "ink":[ink.x(),ink.y(),ink.width(),ink.height()],"ellipsized":false,"lines":layout.line_count()}));
+     } else if widget.is::<gtk::DrawingArea>() && widget.has_css_class("chart") {
+         let layout = widget.create_pango_layout(Some("0123456789"));
+         out.push(
+--- before/packaging/build-deb.sh
++++ after/packaging/build-deb.sh
+@@ -27,6 +27,16 @@
+ install -D -m755 "$ROOT/target/release/omen-daemon" "$PKG/usr/bin/omen-daemon"
+ install -D -m755 "$ROOT/target/release/omen-cli"     "$PKG/usr/bin/omen-cli"
+ install -D -m755 "$ROOT/target/release/omen-gui"     "$PKG/usr/bin/omen-gui"
++# The sandbox helper needs a runtime-independent libc. A supplied sysroot is
++# extracted tooling, not a host installation; / works with distro musl-dev.
++python3 "$ROOT/packaging/build-flatpak-wrapper.py" --musl-sysroot "${OMEN_MUSL_SYSROOT:-/}" --output "$PKG/usr/libexec/omen-linux/omen-flatpak-game"
++chmod 755 "$PKG/usr/libexec/omen-linux/omen-flatpak-game"
++install -D -m644 "$ROOT/packaging/omen-flatpak-game.c" "$PKG/usr/share/doc/omen-linux/flatpak/omen-flatpak-game.c"
++mv "$PKG/usr/libexec/omen-linux/omen-flatpak-game.json" "$PKG/usr/share/doc/omen-linux/flatpak/build-manifest.json"
++install -D -m644 "${OMEN_MUSL_SYSROOT:-/}/usr/share/doc/musl/copyright" "$PKG/usr/share/doc/omen-linux/flatpak/musl-copyright"
++install -D -m644 "$ROOT/packaging/build-flatpak-wrapper.py" "$PKG/usr/share/doc/omen-linux/flatpak/build-flatpak-wrapper.py"
++install -D -m644 "$ROOT/docs/FLATPAK_SETUP.md" "$PKG/usr/share/doc/omen-linux/FLATPAK_SETUP.md"
++install -D -m644 "$ROOT/docs/AUDIT_COMPLETION_2026-10-28.md" "$PKG/usr/share/doc/omen-linux/AUDIT_COMPLETION_2026-10-28.md"
+ install -D -m644 "$ROOT/packaging/systemd/omen-linux.service" "$PKG/usr/lib/systemd/system/omen-linux.service"
+ install -D -m644 "$ROOT/packaging/systemd/omen-fan-recovery@.service" "$PKG/usr/lib/systemd/system/omen-fan-recovery@.service"
+ install -D -m644 "$ROOT/packaging/systemd/omen-nvidia-reader.service" "$PKG/usr/lib/systemd/system/omen-nvidia-reader.service"
+--- before/packaging/build-flatpak-wrapper.py
++++ after/packaging/build-flatpak-wrapper.py
+@@ -1,7 +1,7 @@
+ #!/usr/bin/env python3
+ """Build the sandbox-side helper with an explicitly supplied static musl sysroot.
+ 
+-This development helper is not installed by build-deb.sh. Its libc/loader must
++build-deb.sh installs the helper and its provenance alongside the application. Its libc/loader must
+ not depend on the host distribution or any particular Flatpak runtime.
+ """
+ import argparse
+@@ -45,9 +45,11 @@
+     if not include.is_dir() or any(not path.is_file() for path in inputs):
+         parser.error('incomplete musl sysroot; static libc, headers, startup files and copyright are required')
+     original = specs[0].read_text()
++    if '/usr/include/' + architecture not in original or '/usr/lib/' + architecture not in original:
++        parser.error('unsupported musl compiler specifications')
++    # With the normal system sysroot (/) these paths already match. Requiring
++    # the text to change would incorrectly reject an installed musl-dev toolchain.
+     relocated = original.replace('/usr/include/' + architecture, str(include)).replace('/usr/lib/' + architecture, str(library))
+-    if relocated == original:
+-        parser.error('unsupported musl compiler specifications')
+     output.parent.mkdir(parents=True, exist_ok=True)
+     with tempfile.TemporaryDirectory(prefix='.omen-flatpak-build-', dir=output.parent) as directory:
+         work = Path(directory)
+@@ -68,7 +70,7 @@
+             'inputs': {str(path): digest(path) for path in inputs},
+             'musl_headers': {str(path.relative_to(root)): digest(path) for path in sorted(include.rglob('*')) if path.is_file()},
+             'copyright_notice': str(copyright_file),
+-            'installed_or_packaged': False,
++            'build_only': True,
+         }
+         # Hard-link publication refuses a raced existing destination as well.
+         os.link(binary, output)
+--- before/packaging/debian/changelog
++++ after/packaging/debian/changelog
+@@ -2,7 +2,8 @@
+ 
+   * Develop a descriptor handoff into nested Flatpak game cgroups.
+   * Keep the actual command in its existing sandbox and retain daemon supervision.
+-  * Automatic Flatpak setup remains unavailable pending end-to-end validation.
++  * Add private per-launcher Flatpak helper setup, permission checks and removal.
++  * Package the static wrapper with build provenance and complete musl notices.
+ 
+  -- omen-linux contributors <noreply@example.invalid>  Wed, 28 Oct 2026 17:00:00 +0530
+ 
+--- before/packaging/debian/control
++++ after/packaging/debian/control
+@@ -2,7 +2,7 @@
+ Section: admin
+ Priority: optional
+ Maintainer: omen-linux project <noreply@example.invalid>
+-Build-Depends: cargo, rustc, libgtk-4-dev, libadwaita-1-dev, libglib2.0-dev-bin, pkg-config, python3
++Build-Depends: cargo, rustc, libgtk-4-dev, libadwaita-1-dev, libglib2.0-dev-bin, pkg-config, python3, musl-dev, gcc, binutils, libsqlite3-dev
+ Standards-Version: 4.7.0
+ 
+ Package: omen-linux
+--- before/tests/README.md
++++ after/tests/README.md
+@@ -120,7 +120,7 @@
+ 
+ ## Expanded launcher formats
+ 
+-`python3 tests/game_formats.py` checks 13 isolated discovery/routing and rollback
++`python3 tests/game_formats.py` checks 15 isolated discovery/routing and rollback
+ scenarios through the actual CLI and fixture daemon. `OMEN_TEST_PROFILE=release`
+ selects release binaries; `OMEN_TEST_EVIDENCE_DIR` selects an output directory.
+ `OMEN_TEST_BIN_DIR` and `OMEN_TEST_TEMP_DIR` support installed-container checks.
+@@ -142,7 +142,7 @@
+ `tests/gui_game_formats.py` uses private XTEST input and read-only AT-SPI
+ observation for six keyboard workflows, including GTK folder selection. It
+ verifies the selected installation and exact entered path before accepting them.
+-`tests/gui_game_formats_presentation.py` stages four expanded setup/location
++`tests/gui_game_formats_presentation.py` stages five expanded setup/location
+ captures through native accessibility actions, then measures actual font, text
+ bounds and sampled label contrast. It requires an explicit evidence directory.
+ Its staging actions are separate from the actual keyboard checks.
+@@ -150,7 +150,7 @@
+ For an explicitly selected image with existing distribution dependencies,
+ `tests/package_lifecycle.py --offline-dependencies --game-format-fixtures ...`
+ purges only that new test container's old OMEN package, installs the local package
+-with dpkg, validates dependencies without downloads and runs 13 format checks as
++with dpkg, validates dependencies without downloads and runs 15 format checks as
+ UID 1000. Use a pre-helper baseline such as revision 1. Reused dependencies do not
+ establish a pristine distribution install, a systemd VM or graphical behavior.
+ 
+@@ -210,3 +210,25 @@
+ daemon data and configuration are private fixtures; screenshots capture only the
+ app's own widget tree. Valid theme icons must retain priority over bundled
+ hicolor fallbacks. Visual inspection remains a separate bounded batch.
++
++`tests/flatpak_setup.py` tests the real CLI against a private home and an explicit
++permission-report fixture. It checks private installation, repeated update,
++permission denial, modified-file/link refusal and launcher-scoped removal.
++`tests/gui_flatpak_setup.py` drives the same workflow using XTEST keyboard events
++on a private native desktop. `tests/gui_flatpak_presentation.py` measures five
++expanded setup/permission/recovery scenes in light, dark, high contrast and large
++text. Set `OMEN_CONTROL_HIGH_CONTRAST=1` for the control-page scene matrix in
++high contrast. These are bounded app-only captures, not desktop screenshots.
++
++`tests/game_job_control.py` uses the real CLI, private PPD and actual user scopes
++to check inherited descriptors and foreground PTY stop/resume behavior. Set
++`OMEN_NATIVE_GAME_TEST_BIN` to the release `managed-games-native` test executable.
++
++`tests/systemd_vm.py --real-flatpak-game ARCHIVE` installs signed Flathub Lutris
++using a previously verified sideload export and a restricted HTTPS metadata
++relay, then runs actual distro OpenTTD/OpenGFX inside that sandbox. The guest's
++provider stays private. The game libraries are copied unchanged to app data to
++match the distro ABI; no host package, user library or physical profile is
++changed. This path requires the complete graphical/Flatpak/game dependency
++repository and a disposable 24 GiB guest. It does not establish Steam/Proton,
++Heroic, graphics acceleration or physical control compatibility.
+--- before/tests/flathub_prepare_vm_inner.py
++++ after/tests/flathub_prepare_vm_inner.py
+@@ -5,6 +5,7 @@
+ import os
+ from pathlib import Path
+ import subprocess
++import signal
+ import time
+ 
+ BASE=Path('/var/tmp/omen-flathub-prepare')
+@@ -14,10 +15,20 @@
+ 
+ def run(*command, timeout=90, capture=True):
+     print('+', ' '.join(map(str,command)), flush=True)
+-    result=subprocess.run(list(map(str,command)),capture_output=capture,text=True,timeout=timeout)
+-    if capture:print(result.stdout,result.stderr,flush=True)
+-    result.check_returncode()
+-    return result.stdout if capture else ''
++    process=subprocess.Popen(list(map(str,command)), stdout=subprocess.PIPE if capture else None,
++        stderr=subprocess.PIPE if capture else None, text=True, start_new_session=True)
++    try:
++        stdout,stderr=process.communicate(timeout=timeout)
++    except subprocess.TimeoutExpired:
++        os.killpg(process.pid,signal.SIGTERM)
++        try:process.communicate(timeout=10)
++        except subprocess.TimeoutExpired:
++            os.killpg(process.pid,signal.SIGKILL);process.communicate(timeout=10)
++        raise
++    if capture:print(stdout,stderr,flush=True)
++    if process.returncode:raise subprocess.CalledProcessError(process.returncode,command,stdout,stderr)
++    return stdout if capture else ''
++
+ 
+ 
+ def main():
+@@ -36,7 +47,11 @@
+         'source_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
+     try:
+         user('flatpak','remote-add','--user','flathub','https://dl.flathub.org/repo/flathub.flatpakrepo',timeout=180)
+-        user('flatpak','install','--user','--assumeyes','--noninteractive','flathub',APP,timeout=1800,capture=False)
++        # The official https://dl.flathub.org/repo/config declares this
++        # collection. Explicitly bind it for verified offline USB exports;
++        # flathub.flatpakrepo does not set it by default.
++        user('flatpak','remote-modify','--user','--collection-id=org.flathub.Stable','flathub')
++        user('flatpak','install','--user','--assumeyes','--noninteractive','--no-related','flathub',APP,timeout=3600,capture=False)
+         data['app_info']=user('flatpak','info','--user',APP)
+         data['app_commit']=user('flatpak','info','--user','--show-commit',APP).strip()
+         data['app_metadata']=user('flatpak','info','--user','--show-metadata',APP)
+--- before/tests/flatpak_setup.py
++++ after/tests/flatpak_setup.py
+@@ -0,0 +1,83 @@
++#!/usr/bin/env python3
++"""Exercise private setup, upgrades, refusal and shared removal via the real CLI."""
++import hashlib
++import json
++import os
++from pathlib import Path
++import shutil
++import subprocess
++import tempfile
++import tomllib
++
++ROOT=Path(__file__).resolve().parents[1]
++PROFILE=os.environ.get('OMEN_TEST_PROFILE','debug')
++OUT=Path(os.environ.get('OMEN_TEST_EVIDENCE_DIR',ROOT/'target/flatpak-setup-tests'))
++
++def main():
++    OUT.mkdir(parents=True,exist_ok=True)
++    result={'result':'failed','checks_passed':[],'fixture_only':True,'physical_hardware_writes':False}
++    try:
++        with tempfile.TemporaryDirectory(prefix='omen-setup-',dir=ROOT/'target') as directory:
++            root=Path(directory);home=root/'home';home.mkdir(mode=0o700)
++            bins=root/'bin';bins.mkdir();config=root/'config';config.mkdir()
++            for name in ['omen-cli','omen-flatpak-game']:shutil.copy2(ROOT/'target'/PROFILE/name,bins/name)
++            (bins/'flatpak').write_text('#!/bin/sh\ncat "$OMEN_SETUP_PERMISSIONS"\n')
++            (bins/'flatpak').chmod(0o700)
++            permissions=root/'permissions';permissions.write_text('[Session Bus Policy]\norg.freedesktop.Flatpak=talk\n')
++            env=dict(os.environ,HOME=str(home),PATH=str(bins)+os.pathsep+os.defpath,
++                OMEN_CONFIG_DIR=str(config),OMEN_SETUP_PERMISSIONS=str(permissions))
++            def run(*args,ok=True):
++                r=subprocess.run([str(bins/'omen-cli'),'game-flatpak-setup','lutris/flatpak/1',*args,'--json'],env=env,capture_output=True,text=True,timeout=10)
++                assert (r.returncode==0)==ok,(r.returncode,r.stdout,r.stderr)
++                return json.loads(r.stdout) if ok else r.stderr
++            def passed(message):result['checks_passed'].append(message);print('PASS',message,flush=True)
++            assert not run()['helper_installed']
++            state=run('--install');assert state['ready'] and state['host_permission']
++            app=home/'.var/app/net.lutris.Lutris/data';installed=app/'omen-linux/managed-v1'
++            helper=installed/'omen-flatpak-game';manifest=installed/'installation.json'
++            assert helper.read_bytes()==(bins/'omen-flatpak-game').read_bytes()
++            assert helper.stat().st_mode&0o777==0o700 and manifest.stat().st_mode&0o777==0o600
++            assert json.loads(manifest.read_text())['sha256']==hashlib.sha256(helper.read_bytes()).hexdigest()
++            passed('real CLI installs the exact packaged static helper and private SHA-256 record without changing launcher config or permissions')
++            run('--install');assert run()['ready']
++            passed('repeat installation publishes a complete verified replacement without leftover staging files')
++            permissions.write_text('[Session Bus Policy]\norg.freedesktop.Flatpak=none\n')
++            state=run();assert not state['ready'] and not state['host_permission'] and state['helper_installed']
++            assert 'does not change sandbox permissions' in state['detail']
++            passed('effective host-command denial disables readiness and gives permission/restart guidance without adding an override')
++            permissions.write_text('[Session Bus Policy]\norg.freedesktop.Flatpak=talk\n')
++            original=helper.read_bytes();helper.write_bytes(b'user edited content')
++            assert 'modified' in run('--install',ok=False)
++            assert 'modified' in run('--remove',ok=False)
++            assert helper.read_bytes()==b'user edited content'
++            helper.write_bytes(original)
++            passed('edited user executables survive both update and removal attempts with a recovery error')
++            extra=installed/'user-notes';extra.write_text('preserve me')
++            assert 'unrecognized files' in run('--remove',ok=False) and extra.read_text()=='preserve me'
++            extra.unlink();helper.unlink();helper.symlink_to(bins/'omen-flatpak-game')
++            run('--install',ok=False);run('--remove',ok=False)
++            assert helper.is_symlink();helper.unlink();helper.write_bytes(original);helper.chmod(0o700)
++            passed('unrecognized files and symlink replacements are retained; setup never follows them')
++            (config/'config.toml').write_text('version=1\n[games]\nmanaged_game_ids=["lutris/flatpak/1","lutris/flatpak/2","steam/620"]\n[games.per_game_profiles]\n"lutris/flatpak/1"="performance"\n"lutris/flatpak/2"="quiet"\n"steam/620"="performance"\n')
++            keep=app/'existing-launcher-data';keep.write_text('keep')
++            state=run('--remove');assert not state['helper_installed'] and not installed.exists()
++            saved=tomllib.loads((config/'config.toml').read_text())
++            assert saved['games']['managed_game_ids']==['steam/620']
++            assert saved['games']['per_game_profiles']['lutris/flatpak/1']=='performance' and keep.read_text()=='keep'
++            passed('shared helper removal disables only this launcher automatic bindings and retains manual bindings and unrelated app data')
++            alias=root/'visible-home';alias.symlink_to(home,target_is_directory=True)
++            env['HOME']=str(alias)
++            state=run('--install');assert str(alias) in state['wrapper_command'] and state['ready']
++            run('--remove');env['HOME']=str(home)
++            passed('a symlinked host home keeps its visible sandbox path in the copied command while filesystem operations use the verified home')
++            assert not list((app/'omen-linux').iterdir())
++            passed('successful update/removal leaves no temporary or retired helper directories')
++            rejected=subprocess.run([str(bins/'omen-cli'),'game-flatpak-prepare','lutris/flatpak/1','--instance','42','--handoff-fd','0'],env=env,capture_output=True,text=True,timeout=5)
++            assert rejected.returncode!=0
++            reports=json.loads(subprocess.check_output([str(bins/'omen-cli'),'game-launch-issues','--json'],env=env,text=True))
++            assert any(i['game_id']=='lutris/flatpak/1' and i['stage']=='scope' and i['reason']['kind']=='scope_setup' for i in reports)
++            passed('pre-registration handoff failures are retained as private closed-reason launch issues without contacting a profile service')
++            result['cleanup_complete']=True
++        result['result']='passed'
++    finally:(OUT/'flatpak-setup.json').write_text(json.dumps(result,indent=2)+'\n')
++if __name__=='__main__':main()
+--- before/tests/flatpak_wrapper_vm_inner.py
++++ after/tests/flatpak_wrapper_vm_inner.py
+@@ -115,7 +115,7 @@
+     def kill(process,row):
+         user('flatpak','kill',row['instance'],check=False)
+         process.wait(timeout=15);instances.discard(row['instance'])
+-        wait(lambda:not running(),'fixture instance did not exit')
++        wait(lambda:not any(item['instance']==row['instance'] for item in running()),'fixture instance did not exit')
+     def held():
+         return next((s for s in request('get_game_sessions')['sessions'] if s['profile_held']),None)
+     def terminal(token,phase='ended'):
+@@ -154,6 +154,10 @@
+ if [ "$OMEN_BRIDGE_WAIT" = 1 ]; then
+   while [ ! -f "$XDG_DATA_HOME/bridge-ready" ]; do sleep 0.1; done
+ fi
++if [ "$1" = descriptors ]; then
++  printf 'INHERITED_DESCRIPTOR_OK\\n' > "$XDG_DATA_HOME/descriptor-input"
++  exec 9< "$XDG_DATA_HOME/descriptor-input"
++fi
+ /app/bin/omen-flatpak-game custom/wrapper -- /app/bin/game "$@"
+ status=$?
+ printf 'LAUNCHER_EXIT=%s\n' "$status"
+@@ -170,6 +174,8 @@
+  normal) sleep 3; exit 7 ;;
+  detached) sleep 6 & exit 7 ;;
+  long) sleep 8; exit 7 ;;
++ overlap) sleep 20; exit 7 ;;
++ descriptors) cat <&9; sleep 3; exit 7 ;;
+  signal) sleep 3; kill -TERM "$$" ;;
+  *) exit 2 ;;
+ esac
+@@ -321,6 +327,35 @@
+         assert request('get_profile')=='balanced'
+         kill(process,row)
+         passed('service restart releases the private provider peer and records Interrupted without stopping the sandbox game or reapplying a profile')
++        process,row,log=begin('descriptors',mode='descriptors')
++        wait(lambda:'INHERITED_DESCRIPTOR_OK' in log.read_text(),'inherited descriptor was lost')
++        active=wait(held,'descriptor case did not acquire a hold')
++        wait(lambda:terminal(active['token']) and request('get_profile')=='balanced','descriptor exit leaked its hold')
++        kill(process,row)
++        passed('an inherited nonstandard descriptor reaches the original sandbox command without leaking the handoff socket into it')
++        process1,row1,log1=begin('overlap-one',mode='overlap')
++        wait(lambda:'GAME_PID=' in log1.read_text(),'first overlapping game did not start')
++        first=wait(held,'first overlapping game has no hold')
++        process2,row2,log2=begin('overlap-two',mode='overlap')
++        wait(lambda:'GAME_PID=' in log2.read_text(),'second overlapping game did not start')
++        second=wait(lambda:next((s for s in request('get_game_sessions')['sessions'] if s['profile_held'] and s['token']!=first['token']),None),'second overlapping hold absent')
++        assert second['token']!=first['token']
++        kill(process1,row1)
++        wait(lambda:not next(s for s in request('get_game_sessions')['sessions'] if s['token']==first['token'])['profile_held'],'first overlap did not release')
++        assert request('get_profile')=='performance' and next(s for s in request('get_game_sessions')['sessions'] if s['token']==second['token'])['profile_held']
++        kill(process2,row2)
++        wait(lambda:not held() and request('get_profile')=='balanced','last overlapping hold did not release')
++        passed('overlapping Flatpak games use distinct nested groups; ending one preserves the other hold and the final exit restores Balanced')
++        # A deliberately slow guest-only polkit rule makes wrapper death during
++        # preparation reproducible. It changes no host policy or physical state.
++        RULE.write_text('polkit.addRule(function(action, subject) { if (subject.user == "ubuntu" && action.id == "com.omenlinux.control") { polkit.spawn(["/usr/bin/sleep", "4"]); return polkit.Result.YES; } });\n')
++        time.sleep(1)
++        process,row,log=begin('preparation-death',direct=True,mode='long')
++        wait(lambda:any('game-flatpak-prepare' in (p/'cmdline').read_text(errors='replace') for p in Path('/proc').iterdir() if p.name.isdigit() and (p/'cmdline').exists()),'preparation helper did not start')
++        kill(process,row)
++        wait(lambda:not held() and request('get_profile')=='balanced','dead wrapper retained a hold',timeout=20)
++        assert 'GAME_PID=' not in log.read_text()
++        passed('wrapper death while authorization is pending never executes the game and leaves no profile hold')
+         RULE.unlink();time.sleep(1)
+         process,row,log=begin('authorization-denied')
+         wait(lambda:'LAUNCHER_EXIT=' in log.read_text(),'authorization refusal did not complete')
+--- before/tests/game_formats.py
++++ after/tests/game_formats.py
+@@ -75,9 +75,18 @@
+         legendary(default, game, {'Fixture': 'Offline fixture', '--literal': 'Literal fixture'})
+         legendary(selected, game, {'Other': 'Selected configuration'})
+         legendary(decoy, game, {'Wrong': 'Inherited configuration must be ignored'})
++        for root in [home / '.config/heroic', home / '.var/app/com.heroicgameslauncher.hgl/config/heroic']:
++            put(root / 'sideload_apps/library.json', json.dumps({'games': [
++                {'runner': 'sideload', 'app_name': 'local-game', 'title': 'Sideload fixture', 'is_installed': True,
++                 'install': {'executable': 'untrusted; metadata must never be executed'}},
++                {'runner': 'sideload', 'app_name': 'removed', 'title': 'Removed', 'is_installed': False},
++                {'runner': 'sideload', 'app_name': 'unknown', 'title': 'Unknown installed state'},
++                {'runner': 'sideload', 'app_name': 'invalid/id', 'title': 'Invalid', 'is_installed': True},
++            ]}))
+         ids = ['steam/620', 'steam/shortcut/7/4045620583', 'steam/flatpak/shortcut/7/4045620583',
+                'steam/snap/620', 'steam/snap/shortcut/7/4045620583',
+-               'legendary/Fixture', 'legendary/--literal', 'legendary/Other']
++               'legendary/Fixture', 'legendary/--literal', 'legendary/Other',
++               'heroic/sideload/local-game', 'heroic/flatpak/sideload/local-game']
+         config = user / 'config.toml'
+         preferences = 'version=1\n[games.per_game_profiles]\n' + ''.join(json.dumps(i) + '="performance"\n' for i in ids)
+         preferences += '[[games.library_locations]]\nsource="legendary"\npath=' + json.dumps(str(selected)) + '\n'
+@@ -91,7 +100,7 @@
+  f.write(json.dumps({'program':sys.argv[0],'args':sys.argv[1:],'uid':os.getuid(),'configuration':os.environ.get('LEGENDARY_CONFIG_PATH')})+'\\n')
+ sys.exit(37 if os.environ.get('OMEN_FAIL_LAUNCH')=='1' else 0)
+ """
+-        for binary in ['steam', 'snap', 'flatpak', 'legendary']:
++        for binary in ['steam', 'snap', 'flatpak', 'legendary', 'heroic']:
+             put(bins / binary, helper_text)
+             (bins / binary).chmod(0o700)
+         env = dict(os.environ, HOME=str(home), OMEN_HOME=str(home), OMEN_CONFIG_DIR=str(user),
+@@ -150,6 +159,8 @@
+                 ('steam/snap/shortcut/7/4045620583', 'snap', ['run', 'steam', 'steam://rungameid/' + encoded], None),
+                 ('legendary/--literal', 'legendary', ['launch', '--', '--literal'], default),
+                 ('legendary/Other', 'legendary', ['launch', '--', 'Other'], selected),
++                ('heroic/sideload/local-game', 'heroic', ['heroic://launch/sideload/local-game'], None),
++                ('heroic/flatpak/sideload/local-game', 'flatpak', ['run', 'com.heroicgameslauncher.hgl', 'heroic://launch/sideload/local-game'], None),
+             ]:
+                 call(endpoint, 'set_profile', {'profile': 'balanced'})
+                 receipt = launch(identifier, endpoint)
+--- before/tests/game_job_control.py
++++ after/tests/game_job_control.py
+@@ -0,0 +1,77 @@
++#!/usr/bin/env python3
++"""Real managed CLI, private PPD, inherited descriptors and foreground PTYs."""
++import fcntl
++import hashlib
++import json
++import os
++from pathlib import Path
++import pty
++import signal
++import subprocess
++import tempfile
++import termios
++import time
++
++from game_formats import call, wait
++
++ROOT=Path(__file__).resolve().parents[1]
++PROFILE=os.environ.get('OMEN_TEST_PROFILE','release')
++CLI=ROOT/'target'/PROFILE/'omen-cli'
++HELPER=Path(os.environ['OMEN_NATIVE_GAME_TEST_BIN'])
++OUT=Path(os.environ['OMEN_TEST_EVIDENCE_DIR'])
++
++def main():
++    OUT.mkdir(parents=True,exist_ok=True)
++    result={'result':'failed','fixture_only':True,'physical_hardware_writes':False,'system_power_bus_used':False,
++        'checks_passed':[],'cli_sha256':hashlib.file_digest(CLI.open('rb'),'sha256').hexdigest()}
++    children=[];logs=[];ptys=[]
++    try:
++        with tempfile.TemporaryDirectory(prefix='omen-job-control-',dir=ROOT/'target') as folder:
++            root=Path(folder);user=root/'user';user.mkdir();system=root/'system';system.mkdir()
++            env=dict(os.environ,OMEN_CONFIG_DIR=str(user),OMEN_SYSTEM_CONFIG_DIR=str(system))
++            (user/'config.toml').write_text('version=1\n[games]\nmanaged_game_ids=["custom/job"]\n[games.per_game_profiles]\n"custom/job"="performance"\n')
++            def start(command,name,pipe=False,**kwargs):
++                log=(root/(name+'.log')).open('w');logs.append(log)
++                p=subprocess.Popen(list(map(str,command)),env=env,stdout=subprocess.PIPE if pipe else log,stderr=log,text=True,**kwargs);children.append(p);return p
++            bus=start(['dbus-daemon','--session','--nofork','--print-address=1'],'bus',True);address=bus.stdout.readline().strip()
++            ppd=start([HELPER,'ppd-service',address],'ppd',True);assert ppd.stdout.readline().strip()=='READY'
++            endpoint=root/'control.sock';service=start([HELPER,'fixture-service',endpoint,root/'sessions.json',address,'mock'],'daemon',True)
++            assert service.stdout.readline().strip()=='READY';env['OMEN_SOCK']=str(endpoint)
++            def passed(message):result['checks_passed'].append(message);print('PASS',message,flush=True)
++            def held():return any(s['profile_held'] for s in call(endpoint,'get_game_sessions')['sessions'])
++            def released():return not held() and call(endpoint,'get_profile')=='balanced'
++            script=root/'game.py';marker=root/'identity.json';done=root/'done';descriptor=root/'descriptor'
++            script.write_text('import json,os,pathlib,signal,sys,time\n'
++                'p=pathlib.Path(sys.argv[1]); data={"pid":os.getpid(),"pgid":os.getpgrp(),"tty":os.isatty(0)}\n'
++                'if len(sys.argv)>3:data["descriptor"]=os.read(int(sys.argv[3]),128).decode()\n'
++                'if data["tty"]:data["foreground"]=os.tcgetpgrp(0)\n'
++                'p.write_text(json.dumps(data))\n'
++                'while not pathlib.Path(sys.argv[2]).exists():time.sleep(.05)\n')
++            descriptor.write_text('inherited descriptor bytes')
++            with descriptor.open('rb') as fd:
++                p=start([CLI,'game-run','custom/job','--','python3',script,marker,done,str(fd.fileno())],'descriptor',pass_fds=(fd.fileno(),))
++                wait(marker.exists,'managed command did not inherit its file descriptor');identity=json.loads(marker.read_text());assert identity['descriptor']=='inherited descriptor bytes'
++                wait(held,'descriptor command has no hold');done.touch();assert p.wait(timeout=10)==0;wait(released,'descriptor exit leaked profile')
++            passed('an inherited nonstandard descriptor reaches the actual command and profile ownership ends after exit')
++            marker.unlink();done.unlink();master,slave=pty.openpty();ptys.extend([master,slave])
++            def terminal():os.setsid();fcntl.ioctl(slave,termios.TIOCSCTTY,0)
++            p=subprocess.Popen([str(CLI),'game-run','custom/job','--','python3',str(script),str(marker),str(done)],env=env,
++                stdin=slave,stdout=slave,stderr=slave,preexec_fn=terminal);children.append(p)
++            wait(marker.exists,'managed command did not inherit the foreground terminal');identity=json.loads(marker.read_text())
++            assert identity['tty'] and identity['pgid']==identity['foreground']
++            wait(held,'terminal command has no hold')
++            os.killpg(identity['pgid'],signal.SIGSTOP)
++            wait(lambda:Path('/proc/'+str(identity['pid'])+'/status').read_text().split('State:')[1].lstrip().startswith('T'),'game did not stop')
++            assert held();os.killpg(identity['pgid'],signal.SIGCONT)
++            wait(lambda:not Path('/proc/'+str(identity['pid'])+'/status').read_text().split('State:')[1].lstrip().startswith('T'),'game did not resume')
++            done.touch();assert p.wait(timeout=10)==0;wait(released,'resumed exit leaked profile')
++            passed('foreground terminal identity survives managed wrapping; stopping/resuming the process group retains its hold until normal exit')
++            result['terminal_identity']=identity;result['result']='passed'
++    finally:
++        for p in reversed(children):
++            if p.poll() is None:
++                p.send_signal(signal.SIGCONT);p.terminate();p.wait(timeout=8)
++        for fd in ptys:os.close(fd)
++        for stream in logs:stream.close()
++        result['cleanup_complete']=True;(OUT/'job-control.json').write_text(json.dumps(result,indent=2)+'\n')
++if __name__=='__main__':main()
+--- before/tests/gui_controls_presentation.py
++++ after/tests/gui_controls_presentation.py
+@@ -11,6 +11,7 @@
+ from gui_control_recovery import ipc
+ 
+ PROFILE = os.environ.get('OMEN_TEST_PROFILE', 'release')
++HIGH_CONTRAST = os.environ.get('OMEN_CONTROL_HIGH_CONTRAST') == '1'
+ OUT = Path(os.environ['OMEN_TEST_EVIDENCE_DIR']).resolve()
+ 
+ 
+@@ -42,13 +43,14 @@
+                 for font,width,dark,bottom in [(10,1240,False,False),(20,600,True,False)]]
+             matrix += [('fan',10,1240,False,True),('fan',20,600,True,True)]
+             for page,font,width,dark,bottom in matrix:
+-                name = page + ('-narrow-large-dark' if dark else '-wide-light') + ('-curve-bottom' if bottom else '')
++                name = page + ('-narrow-large-dark' if dark else '-wide-light') + ('-curve-bottom' if bottom else '') + ('-high-contrast' if HIGH_CONTRAST else '')
+                 (settings/'settings.ini').write_text('[Settings]\ngtk-font-name=Sans '+str(font)+'\n')
+                 png, report_path = OUT/(name+'.png'), OUT/(name+'.json')
+                 gui = d.launch([str(ROOT/'target'/PROFILE/'omen-gui'),'--new-instance','--page',page],name,
+                     extra={'OMEN_CAPTURE_PATH':str(png),'OMEN_UI_REPORT_PATH':str(report_path),
+-                        'OMEN_CAPTURE_WIDTH':str(width),'OMEN_CAPTURE_HEIGHT':'1100',
+-                        'ADW_DEBUG_COLOR_SCHEME':'prefer-dark' if dark else 'prefer-light'})
++                        'OMEN_CAPTURE_WIDTH':str(width),'OMEN_CAPTURE_HEIGHT':'1100','OMEN_CAPTURE_DELAY_SECONDS':'8',
++                        'ADW_DEBUG_COLOR_SCHEME':'prefer-dark' if dark else 'prefer-light',
++                        'ADW_DEBUG_HIGH_CONTRAST':'1' if HIGH_CONTRAST else '0'})
+                 app = d.attach(gui)
+                 if page == 'fan':
+                     expander = d.wait(lambda:next(n for n in d.walk(app) if n.get_name()=='Edit fan curve'), 'curve disclosure absent')
+@@ -63,6 +65,7 @@
+                 assert gui.returncode==0
+                 report=json.loads(report_path.read_text())
+                 assert report['gtk_font_name']=='Sans '+str(font) and report['dark']==dark
++                assert report['high_contrast']==HIGH_CONTRAST
+                 analysis=measure(report,Image.open(png).convert('RGBA'))
+                 result['cases'].append({'name':name,'page':page,'font':report['gtk_font_name'],'window_size':report['window_size'],
+                     'capture':png.name,'report':report_path.name,'capture_sha256':hashlib.file_digest(png.open('rb'),'sha256').hexdigest(),**analysis})
+--- before/tests/gui_flatpak_presentation.py
++++ after/tests/gui_flatpak_presentation.py
+@@ -0,0 +1,77 @@
++#!/usr/bin/env python3
++"""Bounded expanded Flatpak setup scenes, with measured text and layout."""
++import hashlib
++import json
++import os
++from pathlib import Path
++import sqlite3
++import subprocess
++
++from PIL import Image
++from gui_presentation import measure
++from native_desktop import Desktop, ROOT
++
++PROFILE=os.environ.get('OMEN_TEST_PROFILE','release')
++BIN=ROOT/'target'/PROFILE
++OUT=Path(os.environ['OMEN_TEST_EVIDENCE_DIR']).resolve()
++
++def main():
++    os.umask(0o077);OUT.mkdir(parents=True,exist_ok=True)
++    result={'result':'failed','fixture_only':True,'physical_hardware_writes':False,
++        'gui_sha256':hashlib.file_digest((BIN/'omen-gui').open('rb'),'sha256').hexdigest(),'cases':[]}
++    try:
++        with Desktop(OUT/'process') as d:
++            home=d.root/'home';home.mkdir();d.env['HOME']=str(home)
++            settings=d.root/'config/gtk-4.0';settings.mkdir()
++            catalog=home/'.var/app/net.lutris.Lutris/data/lutris';catalog.mkdir(parents=True)
++            with sqlite3.connect(catalog/'pga.db') as db:
++                db.execute('create table games (id integer, name text, installed integer)')
++                db.execute('insert into games values (1,"A Flatpak game with a long descriptive name for setup and recovery",1)')
++            (d.root/'user/config.toml').write_text('version=1\n[general]\nonboarding_dismissed=true\npoll_interval_ms=500\n[games.per_game_profiles]\n"lutris/flatpak/1"="performance"\n')
++            bins=d.root/'bin';bins.mkdir();permission=d.root/'permissions'
++            (bins/'flatpak').write_text('#!/bin/sh\ncat "$OMEN_SETUP_PERMISSIONS"\n');(bins/'flatpak').chmod(0o700)
++            d.env.update(PATH=str(bins)+os.pathsep+os.defpath,OMEN_SETUP_PERMISSIONS=str(permission))
++            service=d.launch([str(BIN/'omen-daemon'),'--mock-omen'],'daemon',True);d.env['OMEN_SOCK']=service.stdout.readline().strip()
++            for case,font,width,dark,hc,bottom in [
++                ('setup-light',10,1240,False,False,False),
++                ('setup-dark',10,1240,True,False,True),
++                ('permission-high-contrast',10,1240,False,True,True),
++                ('setup-large-narrow',20,600,False,False,True),
++                ('recovery-large-dark',20,600,True,False,True),
++            ]:
++                permission.write_text('[Session Bus Policy]\norg.freedesktop.Flatpak='+('none' if hc else 'talk')+'\n')
++                helper=home/'.var/app/net.lutris.Lutris/data/omen-linux/managed-v1/omen-flatpak-game'
++                if case=='setup-dark':subprocess.run([str(BIN/'omen-cli'),'game-flatpak-setup','lutris/flatpak/1','--install'],env=d.env,check=True,capture_output=True)
++                if case=='recovery-large-dark':helper.write_bytes(b'edited user file')
++                (settings/'settings.ini').write_text('[Settings]\ngtk-font-name=Sans '+str(font)+'\n')
++                png,report=OUT/(case+'.png'),OUT/(case+'.json')
++                gui=d.launch([str(BIN/'omen-gui'),'--new-instance','--page','games'],case,extra={
++                    'OMEN_CAPTURE_PATH':str(png),'OMEN_UI_REPORT_PATH':str(report),'OMEN_CAPTURE_WIDTH':str(width),
++                    'OMEN_CAPTURE_HEIGHT':'1100','OMEN_CAPTURE_DELAY_SECONDS':'12','ADW_DEBUG_COLOR_SCHEME':'prefer-dark' if dark else 'prefer-light',
++                    'ADW_DEBUG_HIGH_CONTRAST':'1' if hc else '0'})
++                app=d.attach(gui)
++                search=d.wait(lambda:next(n for n in d.walk(app) if n.get_name()=='Search games' and n.get_role_name() in ['text','entry']),'search absent')
++                search.get_editable_text_iface().set_text_contents('lutris/flatpak/1')
++                node=d.wait(lambda:next(n for n in d.walk(app) if n.get_name()=='Profile setup' and n.get_role_name()=='button'),'setup button absent')
++                assert node.get_action_iface().do_action(0)
++                d.wait(lambda:any('Check Flatpak setup'==n.get_name() for n in d.walk(app)),'setup did not expand')
++                d.drain(.4)
++                if bottom:
++                    for n in d.walk(app):
++                        if n.get_role_name()=='scroll bar' and n.get_state_set().contains(d.Atspi.StateType.VERTICAL) and n.get_state_set().contains(d.Atspi.StateType.SHOWING):
++                            value=n.get_value_iface();value.set_current_value(value.get_maximum_value())
++                d.park_pointer()
++                gui.wait(timeout=20);assert gui.returncode==0
++                data=json.loads(report.read_text());assert data['dark']==dark and data['high_contrast']==hc
++                wrapper=next(w for w in data['widgets'] if w['kind']=='text_view' and 'omen-flatpak-game' in w['text'])
++                import re
++                actual=float(re.search(r'([0-9.]+)(?:px)?$',wrapper['font']).group(1))
++                points=actual*72/96 if wrapper['font'].endswith('px') else actual
++                assert abs(points-font)<.02,wrapper['font']
++                analysis=measure(data,Image.open(png).convert('RGBA'))
++                result['cases'].append({'name':case,'capture':png.name,'report':report.name,'capture_sha256':hashlib.file_digest(png.open('rb'),'sha256').hexdigest(),**analysis})
++                print(case,'clipping',len(analysis['horizontal_clipping']),'contrast',len(analysis['contrast_failures']),flush=True)
++        result['cleanup_complete']=True
++        result['result']='passed' if all(not c['horizontal_clipping'] and not c['contrast_failures'] and not c['collapsed_text_allocations'] for c in result['cases']) else 'issues-found'
++    finally:(OUT/'presentation.json').write_text(json.dumps(result,indent=2)+'\n')
++if __name__=='__main__':main()
+--- before/tests/gui_flatpak_setup.py
++++ after/tests/gui_flatpak_setup.py
+@@ -0,0 +1,85 @@
++#!/usr/bin/env python3
++"""Keyboard-driven Flatpak setup in a private desktop; no host Flatpak changes."""
++import hashlib
++import json
++import os
++from pathlib import Path
++import shutil
++import tomllib
++
++from native_desktop import Desktop, ROOT
++
++PROFILE=os.environ.get('OMEN_TEST_PROFILE','debug')
++BIN=ROOT/'target'/PROFILE
++OUT=Path(os.environ.get('OMEN_TEST_EVIDENCE_DIR',ROOT/'target/flatpak-setup-ui'))
++
++def main():
++    os.umask(0o077)
++    OUT.mkdir(parents=True,exist_ok=True)
++    result={'result':'failed','checks_passed':[],'fixture_only':True,'physical_hardware_writes':False,
++        'host_keyboard_events':False,'gui_sha256':hashlib.file_digest((BIN/'omen-gui').open('rb'),'sha256').hexdigest()}
++    with Desktop(OUT/'process') as d:
++        home=d.root/'home';home.mkdir();d.env['HOME']=str(home)
++        catalog=home/'.var/app/net.lutris.Lutris/data/lutris';catalog.mkdir(parents=True)
++        import sqlite3
++        with sqlite3.connect(catalog/'pga.db') as db:
++            db.execute('create table games (id integer, name text, installed integer)')
++            db.execute('insert into games values (1, "Flatpak keyboard fixture", 1)')
++        config=d.root/'user/config.toml'
++        config.write_text('version=1\n[general]\nonboarding_dismissed=true\npoll_interval_ms=500\n[games.per_game_profiles]\n"lutris/flatpak/1"="performance"\n')
++        bins=d.root/'bin';bins.mkdir();permission=d.root/'permission'
++        permission.write_text('[Session Bus Policy]\norg.freedesktop.Flatpak=talk\n')
++        (bins/'flatpak').write_text('#!/bin/sh\ncat "$OMEN_SETUP_PERMISSIONS"\n');(bins/'flatpak').chmod(0o700)
++        d.env.update(PATH=str(bins)+os.pathsep+os.defpath,OMEN_SETUP_PERMISSIONS=str(permission))
++        def passed(message):result['checks_passed'].append(message);print('PASS',message,flush=True)
++        def named(name):return lambda n:n.get_name()==name and n.get_role_name()!='table cell'
++        def visible(fragment):return any(fragment in n.get_name() and n.get_state_set().contains(d.Atspi.StateType.SHOWING) for n in d.walk(app))
++        def click(name):d.tab_to(app,named(name),'keyboard action unreachable: '+name);d.key('Return')
++        def ids():return tomllib.loads(config.read_text()).get('games',{}).get('managed_game_ids',[])
++        try:
++            service=d.launch([str(BIN/'omen-daemon'),'--mock-omen'],'daemon',True);d.env['OMEN_SOCK']=service.stdout.readline().strip()
++            gui=d.launch([str(BIN/'omen-gui'),'--new-instance','--page','games'],'gui');app=d.attach(gui);d.focus_window()
++            d.key('f','Control_L');d.type_text('lutris/flatpak/1')
++            d.wait(lambda:sum(n.get_name()=='Profile setup' and n.get_role_name()=='button' for n in d.walk(app))==1,'search result absent')
++            d.tab_to(app,named('Profile setup'),'setup disclosure unreachable');d.key('space')
++            d.wait(lambda:any('Install the launcher helper' in n.get_name() for n in d.walk(app)),'setup result absent')
++            passed('actual keyboard search/disclosure reaches Flatpak setup and its permission guidance')
++            click('Install launcher helper')
++            d.wait(lambda:visible('Helper and host-command permission are ready'),'helper installation did not settle')
++            helper=home/'.var/app/net.lutris.Lutris/data/omen-linux/managed-v1/omen-flatpak-game'
++            assert helper.read_bytes()==(BIN/'omen-flatpak-game').read_bytes()
++            passed('keyboard installation copies the exact shipped helper without stalling GTK')
++            click('Copy wrapper command');d.wait(lambda:visible('Wrapper command copied.'),'copy feedback absent')
++            d.tab_to(app,named('Game wrapper command'),'wrapper text unreachable');d.key('Tab')
++            assert d.describe_focus(app)['name']!='Game wrapper command'
++            passed('copy action and named wrapper text are keyboard accessible and Tab escapes the read-only command')
++            click('Enable automatic restore');d.wait(lambda:'lutris/flatpak/1' in ids(),'automatic mode was not saved')
++            passed('keyboard enables automatic mode only after helper and permission readiness')
++            permission.write_text('[Session Bus Policy]\norg.freedesktop.Flatpak=none\n')
++            click('Check Flatpak setup');d.wait(lambda:visible('cannot use flatpak-spawn --host'),'denied permission not explained')
++            click('Use manual restore');d.wait(lambda:'lutris/flatpak/1' not in ids(),'manual mode was not saved')
++            button=next(n for n in d.walk(app) if n.get_role_name()=='button' and n.get_name()=='Enable automatic restore')
++            # Returning to manual mode must retain the failed readiness gate.
++            assert not button.get_state_set().contains(d.Atspi.StateType.SENSITIVE),'permission denial can be bypassed by toggling manual mode'
++            passed('permission loss is recoverable and manual mode retains the unavailable automatic-mode gate')
++            permission.write_text('[Session Bus Policy]\norg.freedesktop.Flatpak=talk\n')
++            click('Check Flatpak setup');d.wait(lambda:visible('Helper and host-command permission are ready'),'permission recovery did not settle')
++            click('Enable automatic restore');d.wait(lambda:'lutris/flatpak/1' in ids(),'reenable did not save')
++            click('Remove launcher helper');d.wait(lambda:not helper.exists() and 'lutris/flatpak/1' not in ids(),'removal did not finish')
++            assert visible('Remove its command prefix in the launcher')
++            passed('keyboard recheck, reenable and shared removal recover without changing other app data')
++            for cycle in range(3):
++                d.key('f','Control_L');d.key('a','Control_L');d.key('BackSpace');d.type_text('no-matching-game')
++                d.wait(lambda:not any(n.get_role_name()=='button' and n.get_name()=='Profile setup' for n in d.walk(app)),'filtered setup row did not detach')
++                d.key('a','Control_L');d.key('BackSpace');d.type_text('lutris/flatpak/1')
++                d.wait(lambda:any(n.get_role_name()=='button' and n.get_name()=='Install launcher helper' for n in d.walk(app)),'expanded setup did not rebind')
++                click('Install launcher helper');d.wait(lambda:helper.exists() and visible('Helper and host-command permission are ready'),'recycled setup install did not finish')
++                click('Remove launcher helper');d.wait(lambda:not helper.exists(),'recycled setup removal did not finish')
++            passed('expanded setup detaches during filtering and remains interactive after three native row rebindings')
++            gui.terminate();gui.wait(timeout=8)
++            result['keys']=d.keys;result['result']='passed'
++        finally:
++            if result['result']!='passed':result['failure_tree']=[{'role':n.get_role_name(),'name':n.get_name()} for n in d.walk(locals().get('app'))]
++            (OUT/'keyboard.json').write_text(json.dumps(result,indent=2)+'\n')
++    result['cleanup_complete']=True;(OUT/'keyboard.json').write_text(json.dumps(result,indent=2)+'\n')
++if __name__=='__main__':main()
+--- before/tests/gui_game_formats_presentation.py
++++ after/tests/gui_game_formats_presentation.py
+@@ -47,6 +47,7 @@
+         try:
+             for case, font, width, dark, query in [
+                 ('legendary-wide-light', 10, 1240, False, 'legendary/Fixture'),
++                ('legendary-narrow-large-dark', 20, 600, True, 'legendary/Fixture'),
+                 ('snap-narrow-large-dark', 20, 600, True, 'steam/snap/shortcut/7/4045620583'),
+                 ('locations-wide-light', 10, 1240, False, None),
+                 ('locations-narrow-large-dark', 20, 600, True, None),
+@@ -58,7 +59,7 @@
+                 report.unlink(missing_ok=True)
+                 gui = d.launch([str(ROOT / 'target' / PROFILE / 'omen-gui'), '--new-instance', '--page', 'games'], case,
+                     extra={'OMEN_CAPTURE_PATH': str(png.resolve()), 'OMEN_UI_REPORT_PATH': str(report.resolve()),
+-                           'OMEN_CAPTURE_WIDTH': str(width), 'OMEN_CAPTURE_HEIGHT': '1100',
++                           'OMEN_CAPTURE_WIDTH': str(width), 'OMEN_CAPTURE_HEIGHT': '1100','OMEN_CAPTURE_DELAY_SECONDS':'8',
+                            'ADW_DEBUG_COLOR_SCHEME': 'prefer-dark' if dark else 'prefer-light'})
+                 app = d.attach(gui)
+                 search = d.wait(lambda: next(n for n in d.walk(app) if n.get_role_name() in ['text', 'entry']
+@@ -93,12 +94,19 @@
+                             destination = min(destination, value.get_current_value() + max(0, bounds.y - 140))
+                         value.set_current_value(destination)
+                         d.drain(.15)
+-                gui.wait(timeout=15)
++                d.park_pointer()
++                gui.wait(timeout=20)
+                 assert gui.returncode == 0
+                 data = json.loads(report.read_text())
+                 assert data['gtk_font_name'] == 'Sans ' + str(font) and data['dark'] == dark
+                 texts = '\n'.join(w.get('text', '') for w in data['widgets'])
+                 assert required in texts, (case, 'expanded content missing from captured tree')
++                if query and query.startswith('legendary/'):
++                    import re
++                    view=next(w for w in data['widgets'] if w['kind']=='text_view' and 'game-run' in w['text'])
++                    size=float(re.search(r'([0-9.]+)(?:px)?$',view['font']).group(1))
++                    points=size*72/96 if view['font'].endswith('px') else size
++                    assert abs(points-font)<.02,view['font']
+                 analysis = measure(data, Image.open(png).convert('RGBA'))
+                 result['cases'].append({'case': case, 'font': data['gtk_font_name'], 'window_size': data['window_size'],
+                     'capture': png.name, 'report': report.name, 'capture_sha256': hashlib.file_digest(png.open('rb'), 'sha256').hexdigest(), **analysis})
+--- before/tests/native_desktop.py
++++ after/tests/native_desktop.py
+@@ -218,6 +218,15 @@
+         if not paced:
+             self.drain(.2)
+ 
++    def park_pointer(self):
++        # Move only this private X server's pointer off application controls.
++        # Long capture staging must not accidentally sample a hover tooltip.
++        self.xt.XTestFakeMotionEvent.argtypes = [C.c_void_p, C.c_int, C.c_int, C.c_int, C.c_ulong]
++        self.xt.XTestFakeMotionEvent.restype = C.c_int
++        assert self.xt.XTestFakeMotionEvent(self.display, -1, 1399, 1099, 0)
++        self.x.XFlush(self.display)
++        self.drain(.15)
++
+     def tab_to(self, app, predicate, message, limit=100):
+         trail = []
+         for _ in range(limit):
+--- before/tests/package.py
++++ after/tests/package.py
+@@ -85,6 +85,19 @@
+             assert os.access(path, os.X_OK)
+             assert digest == hashlib.sha256((ROOT / "target/release" / name).read_bytes()).hexdigest()
+             result["binaries"][name] = {"sha256": digest, "matches_release": True}
++        wrapper = stage / "usr/libexec/omen-linux/omen-flatpak-game"
++        manifest = json.loads((stage / "usr/share/doc/omen-linux/flatpak/build-manifest.json").read_text())
++        assert hashlib.sha256(wrapper.read_bytes()).hexdigest() == manifest["binary_sha256"]
++        assert hashlib.sha256((ROOT / "packaging/omen-flatpak-game.c").read_bytes()).hexdigest() == manifest["source_sha256"]
++        headers = run("readelf", "-lW", str(wrapper)).stdout
++        dynamic = run("readelf", "-dW", str(wrapper)).stdout
++        assert "INTERP" not in headers and "(NEEDED)" not in dynamic
++        assert any("GNU_STACK" in line and " RW " in line and "RWE" not in line for line in headers.splitlines())
++        flatpak_docs = stage / "usr/share/doc/omen-linux/flatpak"
++        assert (flatpak_docs / "omen-flatpak-game.c").read_bytes() == (ROOT / "packaging/omen-flatpak-game.c").read_bytes()
++        assert "MIT" in (flatpak_docs / "musl-copyright").read_text()
++        assert (stage / "usr/share/doc/omen-linux/FLATPAK_SETUP.md").is_file()
++        result["checks"]["static_flatpak_helper_source_manifest_and_musl_notice"] = True
+         desktop = run("desktop-file-validate", str(stage / "usr/share/applications/com.omenlinux.Gui.desktop"))
+         (EVIDENCE / "desktop-file-validation.log").write_text(desktop.stdout + desktop.stderr)
+         result["checks"]["desktop_file_validate"] = True
+--- before/tests/package_lifecycle.py
++++ after/tests/package_lifecycle.py
+@@ -36,9 +36,19 @@
+     parser.add_argument("--keep-failed", action="store_true", help="Debug only: retain a failed container; its ID is recorded for explicit cleanup")
+     parser.add_argument("--apt-mirror", default="https://archive.ubuntu.com/ubuntu", help="HTTPS Ubuntu archive mirror for the container only")
+     parser.add_argument("--apt-cache-archive", type=Path, help="Optional cached .deb files; APT still verifies signed-index hashes")
++    parser.add_argument("--resolve-only", action="store_true", help="Resolve exact container dependencies from a signed offline repository without installing")
++    parser.add_argument("--offline-repository", type=Path, help="Signed Ubuntu repository archive; container networking is disabled and APT verifies its indexes")
+     parser.add_argument("--offline-dependencies", action="store_true", help="Use an explicitly selected image with existing distro dependencies; purge its old OMEN package first and forbid downloads")
+     parser.add_argument("--game-format-fixtures", action="store_true", help="Run the installed CLI/daemon launcher-format fixtures as the desktop UID")
+     args = parser.parse_args()
++    assert not args.resolve_only or args.offline_repository
++    if args.offline_repository:
++        assert not args.offline_dependencies
++        with tarfile.open(args.offline_repository) as archive:
++            members=archive.getmembers()
++            assert len(members)<=2048 and sum(m.size for m in members)<=512*1024*1024
++            assert all(not Path(m.name).is_absolute() and '..' not in Path(m.name).parts
++                and (m.isdir() or m.isfile()) and Path(m.name).parts[0] in ['dists','pool'] for m in members)
+     if args.apt_cache_archive:
+         with tarfile.open(args.apt_cache_archive) as cache:
+             assert all(m.isfile() and '/' not in m.name and m.name.endswith('.deb') for m in cache.getmembers())
+@@ -55,14 +65,16 @@
+     container = output("run", "--detach", "--init", "--pull=never", "--name", name,
+                        "--label", "com.omenlinux.test=package-lifecycle",
+                        "--cap-drop=SYS_ADMIN", "--security-opt=no-new-privileges",
+-                       "--pids-limit=256", "--memory=1536m", "--cpus=2", image["Id"], "sleep", "infinity")
++                       "--pids-limit=256", "--memory=1536m", "--cpus=2", *(["--network=none"] if args.offline_repository else []), image["Id"], "sleep", "infinity")
+     result = {"started_utc": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+               "base_image": image["Id"], "base_digests": image["RepoDigests"],
+               "package_sha256": hashlib.sha256(package.read_bytes()).hexdigest(),
+               "baseline_sha256": hashlib.sha256(baseline.read_bytes()).hexdigest(),
+-              "host_package_installed": False, "container_removed": False,
++              "host_package_installed": False,
++              "dependency_resolution_only": args.resolve_only, "container_removed": False,
+               "apt_mirror": args.apt_mirror,
+               "offline_dependency_reuse": args.offline_dependencies,
++              "offline_signed_repository_sha256": hashlib.file_digest(args.offline_repository.open("rb"), "sha256").hexdigest() if args.offline_repository else None,
+               "installed_game_format_fixtures": args.game_format_fixtures,
+               "apt_cache_sha256": hashlib.file_digest(args.apt_cache_archive.open("rb"), "sha256").hexdigest() if args.apt_cache_archive else None,
+               "isolation": "default Docker namespaces/devices; SYS_ADMIN absent; no-new-privileges; no explicit host mounts, bus, sockets or device passthrough",
+@@ -106,8 +118,29 @@
+ dpkg --install /test/current.deb
+ apt-get --no-download check
+ '''
++        if args.offline_repository:
++            command("cp", str(args.offline_repository.resolve()), container + ":/test/repository.tar")
++            setup = """set -eu
++export DEBIAN_FRONTEND=noninteractive
++mkdir /test/repository
++tar -xf /test/repository.tar -C /test/repository
++for source in /etc/apt/sources.list /etc/apt/sources.list.d/*.sources /etc/apt/sources.list.d/*.list; do
++ if [ -f "$source" ]; then mv "$source" "$source.omen-disabled"; fi
++done
++for suite in resolute resolute-updates resolute-security; do
++ echo "deb [signed-by=/usr/share/keyrings/ubuntu-archive-keyring.gpg] file:/test/repository $suite main universe" >> /etc/apt/sources.list.d/omen-offline.list
++done
++printf 'Acquire::Languages "none";\\n' > /etc/apt/apt.conf.d/99-omen-offline
++apt-get -o APT::Update::Error-Mode=any update
++apt-get install -y --no-install-recommends /test/current.deb python3 dbus dbus-bin procps desktop-file-utils
++"""
++        if args.resolve_only:
++            setup=setup.replace("apt-get install -y", "apt-get --print-uris --download-only install -y")
+         with (EVIDENCE / "package-lifecycle-setup.log").open("w") as log:
+             command("exec", "-i", container, "sh", input=setup, text=True, stdout=log, stderr=subprocess.STDOUT)
++        if args.resolve_only:
++            result.update(result="resolved",application_tests_executed=False)
++            return
+         with (EVIDENCE / "package-lifecycle-run.log").open("w") as log:
+             command("exec", "--env", "OMEN_LIFECYCLE_CONTAINER=1", "--env", "OMEN_GAME_FORMAT_FIXTURES=" + ("1" if args.game_format_fixtures else "0"), container,
+                     "python3", "/test/lifecycle.py", text=True, stdout=log, stderr=subprocess.STDOUT)
+@@ -115,7 +148,7 @@
+         if args.game_format_fixtures:
+             formats = json.loads(output("exec", container, "cat", "/test/work/formats/game-formats.json"))
+             assert formats["result"] == "passed" and formats["cleanup_complete"]
+-            assert len(formats["checks_passed"]) == 13 and not formats["upstream_legendary_tested"]
++            assert len(formats["checks_passed"]) == 15 and not formats["upstream_legendary_tested"]
+             (EVIDENCE / "installed-game-formats.json").write_text(json.dumps(formats, indent=2) + "\n")
+         result["distro_packages"] = output("exec", container, "dpkg-query", "-W", "systemd", "polkitd", "libgtk-4-1", "libadwaita-1-0", "libsqlite3-0")
+         result["result"] = "passed"
+--- before/tests/package_lifecycle_inner.py
++++ after/tests/package_lifecycle_inner.py
+@@ -291,7 +291,7 @@
+         assert checked.returncode == 0, checked.stdout + checked.stderr
+         formats = json.loads((work / "formats/game-formats.json").read_text())
+         assert formats["result"] == "passed" and formats["cleanup_complete"]
+-        assert len(formats["checks_passed"]) == 13
++        assert len(formats["checks_passed"]) == 15
+         passed("installed launcher-format discovery, routing and recovery pass as the desktop UID on private fixtures")
+     run("dpkg", "--purge", "omen-linux")
+     return {"checks_passed": CHECKS, "current_version": expected, "baseline_version": baseline,
+--- before/tests/real_flatpak_game_vm_inner.py
++++ after/tests/real_flatpak_game_vm_inner.py
+@@ -0,0 +1,34 @@
++#!/usr/bin/env python3
++"""Restore verified Flathub sideload objects, then exercise actual Lutris/OpenTTD."""
++import importlib.util
++import os
++from pathlib import Path
++import pwd
++import subprocess
++
++
++def main():
++    assert os.geteuid()==0 and os.environ.get('OMEN_REAL_FLATPAK_VM')=='1'
++    home=Path(pwd.getpwnam('ubuntu').pw_dir)
++    cache=Path('/var/tmp/omen-real-flathub-cache');assert not cache.exists()
++    cache.mkdir(mode=0o755);os.chown(cache,1000,1000)
++    env={'HOME':str(home),'XDG_RUNTIME_DIR':'/run/user/1000','DBUS_SESSION_BUS_ADDRESS':'unix:path=/run/user/1000/bus',
++        'http_proxy':'http://127.0.0.1:49177','https_proxy':'http://127.0.0.1:49177',
++        'HTTP_PROXY':'http://127.0.0.1:49177','HTTPS_PROXY':'http://127.0.0.1:49177','NO_PROXY':'','LC_ALL':'C.UTF-8'}
++    def user(*args,timeout=600):
++        subprocess.run(['runuser','-u','ubuntu','--','env',*[k+'='+v for k,v in env.items()],*map(str,args)],check=True,timeout=timeout)
++    subprocess.run(['loginctl','enable-linger','ubuntu'],check=True)
++    subprocess.run(['systemctl','start','user@1000.service'],check=True)
++    user('tar','--no-same-owner','-xzf','/var/tmp/omen-flathub-lutris-cache.tar.gz','-C',cache)
++    user('flatpak','remote-add','--user','flathub','/var/tmp/omen-flathub.flatpakrepo')
++    user('flatpak','remote-modify','--user','--collection-id=org.flathub.Stable','flathub')
++    # Metadata is fetched over a restricted HTTPS tunnel; object installation is
++    # from the cache. TLS, Flathub GPG signatures and commit verification remain on.
++    user('flatpak','install','--user','--assumeyes','--noninteractive','--no-related','--sideload-repo='+str(cache),
++        'flathub','net.lutris.Lutris',timeout=1200)
++    user('ostree','fsck','--repo='+str(home/'.local/share/flatpak/repo'),timeout=300)
++    spec=importlib.util.spec_from_file_location('native_game','/var/tmp/omen-native-real-game.py')
++    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
++    module.main()
++
++if __name__=='__main__':main()
+--- before/tests/real_game_vm_inner.py
++++ after/tests/real_game_vm_inner.py
+@@ -26,6 +26,9 @@
+ OVERRIDE = Path('/run/systemd/system/omen-linux.service.d')
+ RULE = Path('/etc/polkit-1/rules.d/00-omen-real-game-vm-test.rules')
+ JOURNAL = Path('/etc/omen-linux/managed-game-sessions.json')
++FLATPAK = os.environ.get('OMEN_REAL_FLATPAK_VM') == '1'
++GAME_ID = 'lutris/flatpak/1' if FLATPAK else 'lutris/1'
++APP = 'net.lutris.Lutris'
+ 
+ 
+ def run(*args, check=True, input=None, timeout=40):
+@@ -55,7 +58,7 @@
+ 
+ 
+ def main():
+-    assert os.geteuid() == 0 and os.environ.get('OMEN_REAL_GAME_VM') == '1'
++    assert os.geteuid() == 0 and (os.environ.get('OMEN_REAL_GAME_VM') == '1' or FLATPAK)
+     assert run('systemd-detect-virt', '--vm').stdout.strip() in ['kvm', 'qemu']
+     assert HELPER.is_file() and RESULT.is_file()
+     assert not BASE.exists() and not OVERRIDE.exists() and not RULE.exists() and not JOURNAL.exists()
+@@ -64,7 +67,7 @@
+     data = {'result': 'failed', 'checks_passed': [], 'private_ppd': True,
+         'physical_hardware_writes': False, 'physical_keyboard_tested': False,
+         'input': 'guest-only libevdev/uinput', 'real_game': 'OpenTTD with OpenGFX',
+-        'launcher': 'native Lutris Linux runner', 'store_account_tested': False,
++        'launcher': 'signed Flathub Lutris Linux runner' if FLATPAK else 'native Lutris Linux runner', 'store_account_tested': False,
+         'source_sha256': hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+         'helper_sha256': hashlib.file_digest(HELPER.open('rb'), 'sha256').hexdigest(),
+         'authorization': 'guest-only com.omenlinux.control grant; no admin grant',
+@@ -72,8 +75,8 @@
+     account = pwd.getpwnam('ubuntu')
+     home = Path(account.pw_dir)
+     BASE.mkdir(mode=0o755)
+-    prefs = BASE / 'user'
+-    prefs.mkdir(mode=0o700)
++    prefs = home / '.config/omen-linux' if FLATPAK else BASE / 'user'
++    prefs.mkdir(mode=0o700, parents=True)
+     os.chown(prefs, account.pw_uid, account.pw_gid)
+     children, owned, logs = [], [], []
+     keyboard = None
+@@ -114,7 +117,7 @@
+ 
+     def passed(label):
+         data['checks_passed'].append(label)
+-        state['real_game'] = data
++        state['real_flatpak_game' if FLATPAK else 'real_game'] = data
+         RESULT.write_text(json.dumps(state, indent=2) + '\n')
+         print('PASS', label, flush=True)
+ 
+@@ -123,7 +126,18 @@
+             if not proc.name.isdigit():
+                 continue
+             try:
+-                if proc.stat().st_uid == account.pw_uid and (proc / 'exe').resolve() == Path('/usr/games/openttd'):
++                if proc.stat().st_uid != account.pw_uid:
++                    continue
++                executable = (proc / 'exe').resolve()
++                if FLATPAK:
++                    # The unmodified distro game uses its copied distro loader.
++                    # Linux reports that loader as /proc/PID/exe; require both
++                    # its exact private path and the actual game argument.
++                    directory = home / '.var/app' / APP / 'data/omen-openttd'
++                    argv = (proc / 'cmdline').read_bytes().split(b'\0')
++                    if executable.parent == directory / 'lib' and executable.name.startswith('ld-linux-') and str(directory / 'openttd').encode() in argv:
++                        return int(proc.name)
++                elif executable == Path('/usr/games/openttd'):
+                     return int(proc.name)
+             except (OSError, RuntimeError):
+                 pass
+@@ -135,8 +149,13 @@
+         clients = re.findall(r'0x[0-9a-f]+', xprop('-root', '_NET_CLIENT_LIST_STACKING'))
+         for xid in clients:
+             properties = xprop('-id', xid, '_NET_WM_PID', '_NET_WM_NAME', '_NET_WM_STATE')
+-            if re.search(r'_NET_WM_PID\(CARDINAL\) = ' + str(pid) + r'\b', properties):
+-                return {'xid': xid, 'properties': properties}
++            namespace_pid = pid
++            if FLATPAK:
++                match = re.search(r'^NSpid:\s+(.+)$', Path('/proc/' + str(pid) + '/status').read_text(), re.M)
++                assert match, 'sandbox process has no namespace identity'
++                namespace_pid = int(match[1].split()[-1])
++            if re.search(r'_NET_WM_PID\(CARDINAL\) = ' + str(namespace_pid) + r'\b', properties):
++                return {'xid': xid, 'properties': properties, 'host_pid': pid, 'namespace_pid': namespace_pid}
+ 
+     def keys(*names):
+         import libevdev
+@@ -163,7 +182,7 @@
+         before = {s['token'] for s in request('get_game_sessions')['sessions']}
+         error_path = BASE / ('launch-' + str(index) + '.log')
+         with error_path.open('w') as errors:
+-            call = subprocess.run(user_args('/usr/bin/omen-cli', 'game-launch', 'lutris/1', '--json'),
++            call = subprocess.run(user_args('/usr/bin/omen-cli', 'game-launch', GAME_ID, '--json'),
+                 stdout=subprocess.PIPE, stderr=errors, text=True, timeout=25)
+         call.check_returncode()
+         receipt = json.loads(call.stdout)
+@@ -173,7 +192,7 @@
+         pid = wait(game_process, 'actual OpenTTD process was not launched', timeout=80)
+         session = wait(lambda: next((s for s in request('get_game_sessions')['sessions']
+             if s['token'] not in before and s['profile_held']), None), 'real game has no verified profile hold')
+-        assert session['game_id'] == 'lutris/1' and session['requested_profile'] == 'performance'
++        assert session['game_id'] == GAME_ID and session['requested_profile'] == 'performance'
+         assert request('get_profile') == 'performance'
+         cgroup = Path('/proc/' + str(pid) + '/cgroup').read_text().strip()
+         assert '/omen-game-' + session['token'] + '.scope' in cgroup, cgroup
+@@ -184,7 +203,8 @@
+         # Require the actual game's screenshot hotkey to create a native file
+         # before later console commands or recovery actions are sent.
+         def game_images():
+-            return {p for p in home.rglob('*.png') if '/openttd/' in str(p).lower()}
++            root=home/'.var/app'/APP if FLATPAK else home
++            return {p for p in root.rglob('*.png') if '/openttd/' in str(p).lower()}
+         previous_images = game_images()
+         native_image = None
+         for _ in range(12):
+@@ -217,13 +237,13 @@
+         wait(lambda: not Path('/proc/' + str(pid)).exists(), 'OpenTTD did not exit through its own console', timeout=35)
+         # The Lutris run URI asks its application to quit when this game stops.
+         wait(lambda: not any(p.name.isdigit() and p.stat().st_uid == account.pw_uid and
+-            b'/usr/games/lutris\0' in (p / 'cmdline').read_bytes()
++            (b'/app/bin/lutris' if FLATPAK else b'/usr/games/lutris\0') in (p / 'cmdline').read_bytes()
+             for p in Path('/proc').iterdir() if (p / 'cmdline').exists()), 'Lutris did not finish its game run', timeout=40)
+ 
+     try:
+         run('systemctl', 'stop', 'sddm.service')
+         user_file(prefs / 'config.toml', 'version=1\n[general]\nonboarding_dismissed=true\n'
+-            '[games]\nmanaged_game_ids=["lutris/1"]\n[games.per_game_profiles]\n"lutris/1"="performance"\n')
++            '[games]\nmanaged_game_ids=['+json.dumps(GAME_ID)+']\n[games.per_game_profiles]\n'+json.dumps(GAME_ID)+'="performance"\n')
+         user_file(home / '.config/plasma-workspace/env/omen-real-game.sh',
+             'export QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1 GTK_A11Y=atspi LIBGL_ALWAYS_SOFTWARE=1 QT_QUICK_BACKEND=software\n')
+         user_file(home / '.config/autostart/omen-real-game.desktop', '[Desktop Entry]\nType=Application\nName=OMEN real game validation\n'
+@@ -297,11 +317,43 @@
+ assert game_id==1,game_id
+ print(config)
+ '''
+-        user_run('python3', '-c', setup)
++        if FLATPAK:
++            game_dir = home / '.var/app' / APP / 'data/omen-openttd'
++            game_dir.mkdir(parents=True, mode=0o700)
++            library_dir = game_dir / 'lib'; library_dir.mkdir()
++            shutil.copy2('/usr/games/openttd', game_dir / 'openttd')
++            libraries=set()
++            for line in run('ldd','/usr/games/openttd').stdout.splitlines():
++                match=re.search(r'(/[^ ()]+)',line)
++                if match:libraries.add(Path(match[1]))
++            for source in libraries:shutil.copy2(source,library_dir/source.name)
++            # The game and loader are unmodified distro binaries. Bundle their
++            # exact libraries because a Flatpak runtime has a different ABI set.
++            loader=next(p for p in libraries if p.name.startswith('ld-linux-'))
++            launch=game_dir/'run-game'
++            launch.write_text('#!/bin/sh\nexec "'+str(library_dir/loader.name)+'" --library-path "'+str(library_dir)+'" "'+str(game_dir/'openttd')+'" "$@"\n')
++            launch.chmod(0o700)
++            assets=home/'.var/app'/APP/'data/openttd/baseset';assets.mkdir(parents=True)
++            shutil.copytree('/usr/share/games/openttd/baseset',assets,dirs_exist_ok=True)
++            shutil.copytree('/usr/share/games/openttd/lang',game_dir/'lang')
++            shutil.copytree('/usr/share/games/openttd/lang',assets.parent/'lang')
++            game_cfg=game_dir/'openttd.cfg';game_cfg.write_bytes((home/'.config/openttd/openttd.cfg').read_bytes())
++            run('chown','-R','1000:1000',home/'.var/app'/APP)
++            setup=setup.replace("sys.path[0]='/usr/games'", "# Flatpak Python supplies its own module search path")
++            setup=setup.replace('/usr/games/openttd',str(launch)).replace('/home/ubuntu/.config/openttd/openttd.cfg',str(game_cfg))
++            prefix=json.loads(user_run('/usr/bin/omen-cli','game-flatpak-setup',GAME_ID,'--install','--json').stdout)
++            assert prefix['ready'],prefix
++            setup=setup.replace("'prefix_command':'/usr/bin/omen-cli game-run lutris/1 --'", "'prefix_command':"+repr(prefix['wrapper_command']))
++            user_run('flatpak','run','--command=python3',APP,'-c',setup)
++            data['flatpak_info']=user_run('flatpak','info','--user',APP).stdout
++            data['flatpak_commit']=user_run('flatpak','info','--user','--show-commit',APP).stdout.strip()
++            data['bundled_game_inputs']={str(p.relative_to(game_dir)):hashlib.file_digest(p.open('rb'),'sha256').hexdigest() for p in game_dir.rglob('*') if p.is_file()}
++        else:
++            user_run('python3', '-c', setup)
+         inventory = json.loads(user_run('/usr/bin/omen-cli', 'games', '--json').stdout)
+-        assert any(g['id'] == 'lutris/1' and g['name'] == 'OpenTTD' for g in inventory), inventory
++        assert any(g['id'] == GAME_ID and g['name'] == 'OpenTTD' for g in inventory), inventory
+         data['inventory'] = inventory
+-        passed('installed OMEN discovers actual native Lutris database and the signed OpenTTD/OpenGFX game is below 2 GB')
++        passed(('installed OMEN discovers actual Flatpak Lutris database' if FLATPAK else 'installed OMEN discovers actual native Lutris database') + ' and the signed OpenTTD/OpenGFX game is below 2 GB')
+         bus_log = (BASE / 'bus.log').open('w')
+         ppd_log = (BASE / 'ppd.log').open('w')
+         logs.extend([bus_log, ppd_log])
+@@ -362,6 +414,37 @@
+         quit_game(pid, window)
+         assert request('get_profile') == 'balanced'
+         passed('service restart releases the hold, records Interrupted and preserves actual game execution until normal quit')
++        if FLATPAK:
++            RULE.write_text('polkit.addRule(function(action, subject) { if (subject.user == "ubuntu" && action.id == "com.omenlinux.control") return polkit.Result.AUTH_ADMIN; });\n')
++            data['cancellation_policy']='guest-only AUTH_ADMIN challenge for com.omenlinux.control'
++            time.sleep(1)
++            receipt=json.loads(user_run('/usr/bin/omen-cli','game-launch',GAME_ID,'--json').stdout)
++            assert receipt['launch']['managed'] and not game_process()
++            probe="""import os,gi,json
++gi.require_version('Atspi','2.0')
++from gi.repository import Atspi,Gio,GLib
++bus=Gio.bus_get_sync(Gio.BusType.SESSION,None)
++os.environ['AT_SPI_BUS_ADDRESS']=bus.call_sync('org.a11y.Bus','/org/a11y/bus','org.a11y.Bus','GetAddress',None,None,Gio.DBusCallFlags.NONE,5000,None).unpack()[0]
++Atspi.init();Atspi.set_timeout(1000,2000)
++def walk(n):
++ yield n
++ for i in range(n.get_child_count()):
++  c=n.get_child_at_index(i)
++  if c is not None:yield from walk(c)
++d=Atspi.get_desktop(0)
++print(json.dumps(any(n.get_role()==Atspi.Role.PASSWORD_TEXT and n.get_state_set().contains(Atspi.StateType.SHOWING)
++ for i in range(d.get_child_count()) if (a:=d.get_child_at_index(i)) is not None and a.get_name()=='polkit-kde-authentication-agent-1' for n in walk(a))))
++"""
++            wait(lambda:json.loads(user_run('python3','-c',probe).stdout),'Flatpak profile approval dialog did not appear',timeout=60)
++            capture('flatpak-profile-approval-cancel')
++            keys('ESC')
++            def canceled():
++                reports=json.loads(user_run('/usr/bin/omen-cli','game-launch-issues','--json').stdout)
++                return any(r['game_id']==GAME_ID and r['stage']=='registration' for r in reports)
++            wait(canceled,'canceled Flatpak authorization was not recorded',timeout=30)
++            assert not game_process() and request('get_profile')=='balanced'
++            assert not any(s['profile_held'] for s in request('get_game_sessions')['sessions'])
++            passed('canceling the real KDE profile prompt prevents the Flatpak game command, records the registration failure and leaves no hold')
+         data['final_sessions'] = request('get_game_sessions')
+         data['result'] = 'passed'
+     except BaseException as error:
+@@ -402,7 +485,7 @@
+         shutil.rmtree(BASE)
+         HELPER.unlink(missing_ok=True)
+         data['fixture_cleanup_complete'] = True
+-        state['real_game'] = data
++        state['real_flatpak_game' if FLATPAK else 'real_game'] = data
+         if data['result'] == 'passed':
+             state['checks_passed'].extend(data['checks_passed'])
+         RESULT.write_text(json.dumps(state, indent=2) + '\n')
+--- before/tests/systemd_vm.py
++++ after/tests/systemd_vm.py
+@@ -39,10 +39,11 @@
+     parser.add_argument("--flatpak-scope-probe", action="store_true", help="Observe real Flatpak scope/namespace boundaries in the disposable guest")
+     parser.add_argument("--flatpak-wrapper-probe", action="store_true", help="Exercise real Flatpak HostCommand with an isolated development CLI overlay, then restore installed bytes")
+     parser.add_argument("--flatpak-bridge-cli", type=Path, help="Development CLI for isolated Flatpak fixtures; wrapper mode overlays and restores only the guest CLI")
+-    parser.add_argument("--flatpak-bridge-wrapper", type=Path, help="Unchanged sandbox wrapper source for the isolated HostCommand fixture")
++    parser.add_argument("--flatpak-bridge-wrapper", type=Path, help="Static sandbox wrapper binary for the isolated HostCommand fixture")
+     parser.add_argument("--flatpak-migration-phase", choices=["ended", "interrupted"], default="interrupted", help="Expected installed session result after the Flatpak peer leaves its scope; use ended for the historical revision 24 baseline")
+     parser.add_argument("--source-switch", action="store_true", help="Exercise installed default source transitions in the private guest desktop")
+     parser.add_argument("--real-game", action="store_true", help="Exercise native Lutris/OpenTTD with a private profile provider in the guest desktop")
++    parser.add_argument("--real-flatpak-game", type=Path, help="Signed Flathub Lutris sideload archive; exercise an actual sandboxed game with private PPD")
+     parser.add_argument("--keep-failed", action="store_true", help="Debug only: stop the failed VM but retain its disk and inputs for inspection")
+     parser.add_argument("--apt-mirror", default="https://archive.ubuntu.com/ubuntu", help="HTTPS Ubuntu archive mirror for the guest only")
+     args = parser.parse_args()
+@@ -58,8 +59,25 @@
+     assert not args.flatpak_scope_probe or args.managed_game_helper
+     assert not args.flatpak_bridge_cli or args.flatpak_scope_probe or args.flatpak_wrapper_probe
+     assert not args.flatpak_wrapper_probe or (args.managed_game_helper and args.flatpak_bridge_cli and args.flatpak_bridge_wrapper)
++    if args.flatpak_wrapper_probe:
++        with args.flatpak_bridge_wrapper.open("rb") as binary:
++            assert binary.read(4) == b"\x7fELF", "--flatpak-bridge-wrapper requires the built static ELF helper"
+     assert not args.source_switch or (args.offline_repository and args.memory_mib >= 2048)
+     assert not args.real_game or (args.offline_repository and args.memory_mib >= 2048 and args.managed_game_helper)
++    assert not args.real_flatpak_game or (args.offline_repository and args.memory_mib >= 2048 and args.managed_game_helper)
++    if args.graphical_authorization or args.real_game or args.source_switch or args.real_flatpak_game:
++        # These suites require an actual desktop and its native authorization,
++        # portal and input services even with APT recommendations disabled.
++        args.extra_package = sorted(set(args.extra_package) | {
++            "plasma-desktop", "sddm", "polkit-kde-agent-1", "xdg-desktop-portal-kde",
++            "python3-gi", "gir1.2-atspi-2.0", "at-spi2-core", "dbus-user-session",
++            "xwayland", "xauth", "xserver-xorg-core", "xserver-xorg-input-libinput",
++            "plasma-session-wayland", "sddm-theme-breeze", "python3-libevdev", "x11-utils",
++        })
++        if args.real_game or args.real_flatpak_game:
++            args.extra_package = sorted(set(args.extra_package) | {"lutris", "openttd", "openttd-opengfx"})
++        if args.real_flatpak_game:
++            args.extra_package = sorted(set(args.extra_package) | {"flatpak", "ostree", "flatpak-xdg-utils"})
+     assert all(re.fullmatch(r"[a-z0-9][a-z0-9+.-]*(?::[a-z0-9]+)?", name) for name in args.extra_package)
+     components = sorted(set(args.repository_component or ["main"]))
+     extra_packages = ' ' + shlex.join(args.extra_package) if args.extra_package else ''
+@@ -107,6 +125,7 @@
+               "repository_components": components,
+               "graphical_authorization_requested": args.graphical_authorization,
+               "real_game_requested": args.real_game,
++              "real_flatpak_game_requested": bool(args.real_flatpak_game),
+               "source_switch_requested": args.source_switch,
+               "flatpak_scope_probe_requested": args.flatpak_scope_probe,
+               "flatpak_wrapper_probe_requested": args.flatpak_wrapper_probe,
+@@ -167,7 +186,7 @@
+                    "-netdev", "user,id=net0," + ("restrict=on," if args.offline_repository else "") + f"hostfwd=tcp:127.0.0.1:{port}-:22", "-device", "virtio-net-pci,netdev=net0,romfile=,mac=52:54:00:12:34:56",
+                    "-device", "virtio-rng-pci", "-serial", "file:" + str(work / "serial.log"),
+                    "-sandbox", "on,obsolete=deny,elevateprivileges=deny,spawn=deny,resourcecontrol=deny"]
+-        if args.graphical_authorization or args.real_game or args.source_switch:
++        if args.graphical_authorization or args.real_game or args.source_switch or args.real_flatpak_game:
+             command += ["-device", "virtio-vga,xres=1280,yres=900,romfile=" + str(runtime / "usr/share/seabios/vgabios-virtio.bin"),
+                         "-qmp", "unix:" + str(work / "qmp") + ",server=on,wait=off"]
+         with (work / "qemu.log").open("w") as qemu_log, (EVIDENCE / "vm-systemd-run.log").open("w") as log:
+@@ -382,6 +401,22 @@
+                     graphical_tests("real_game_vm_inner.py", "OMEN_REAL_GAME_VM", 900)
+                     artifacts = ssh("sudo -n cat /var/tmp/omen-real-game-artifacts.json").stdout
+                     (EVIDENCE / "real-game-artifacts.json").write_text(artifacts)
++                if args.real_flatpak_game:
++                    from flathub_proxy import FlathubProxy
++                    copy(args.real_flatpak_game, "/var/tmp/omen-flathub-lutris-cache.tar.gz")
++                    copy(ROOT / "target/flatpak-real-game-v26/inputs/flathub.flatpakrepo", "/var/tmp/omen-flathub.flatpakrepo")
++                    copy(ROOT / "tests/real_game_vm_inner.py", "/var/tmp/omen-native-real-game.py")
++                    ssh("sudo -n install -D -m755 /var/tmp/omen-managed-helper /usr/local/libexec/omen-managed-fixture")
++                    with FlathubProxy() as proxy:
++                        tunnel_command = [*ssh_base[:-1], "-N", "-o", "ExitOnForwardFailure=yes", "-R",
++                            "127.0.0.1:49177:127.0.0.1:" + str(proxy.port), ssh_base[-1]]
++                        tunnel = subprocess.Popen(tunnel_command, stdout=log, stderr=log)
++                        try:
++                            graphical_tests("real_flatpak_game_vm_inner.py", "OMEN_REAL_FLATPAK_VM", 1800)
++                        finally:
++                            tunnel.terminate(); tunnel.wait(timeout=15)
++                        result['flathub_metadata_connections'] = len(proxy.requests)
++                    (EVIDENCE / "real-flatpak-game-artifacts.json").write_text(ssh("sudo -n cat /var/tmp/omen-real-game-artifacts.json").stdout)
+                 (EVIDENCE / "vm-coarse-journal.log").write_text(ssh("sudo -n journalctl --no-pager -u omen-fan-recovery@hwmon0.service -u omen-coarse-controller-fixture.service").stdout)
+                 (EVIDENCE / "vm-systemd-initial-journal.log").write_text(ssh("sudo -n journalctl --no-pager -u omen-linux.service").stdout)
+                 ssh("sudo -n systemctl reboot", check=False)
+@@ -399,7 +434,7 @@
+                         partial = ssh("sudo -n cat /var/tmp/omen-vm-result.json", timeout=15, check=False)
+                         if partial.returncode == 0 and result["result"] != "passed":
+                             result["partial_result"] = json.loads(partial.stdout)
+-                        if args.graphical_authorization or args.real_game or args.source_switch:
++                        if args.graphical_authorization or args.real_game or args.source_switch or args.real_flatpak_game:
+                             desktop_journal = ssh("sudo -n journalctl --no-pager -u sddm.service -u user@1000.service", timeout=20, check=False)
+                             (EVIDENCE / "vm-desktop-journal.log").write_text(desktop_journal.stdout + desktop_journal.stderr)
+                             auth_journal = ssh("sudo -n journalctl --no-pager -u polkit.service", timeout=15, check=False)

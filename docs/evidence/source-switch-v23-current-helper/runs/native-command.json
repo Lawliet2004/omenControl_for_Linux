@@ -1,0 +1,8 @@
+{
+  "command": [
+    "/home/papan/Desktop/Projects/omen/target/release/deps/managed_games_native-4cff964311c5e5ac"
+  ],
+  "OMEN_TEST_EVIDENCE_DIR": "/home/papan/Desktop/Projects/omen/target/source-switch-v23-current-helper/managed-release",
+  "helper_sha256": "f5e322fdb994d9e9bc0f209b7c67c8159a4f33560f52ba659a3fb6a73013a6ad",
+  "profile": "release"
+}

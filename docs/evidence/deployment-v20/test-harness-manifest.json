@@ -1,0 +1,33 @@
+{
+  "sha256": "a2a62cf797b04864abb9eaece3b0042780df4e8ac14d98bd2843a49b561bd405",
+  "files": [
+    {
+      "path": "crates/cli/tests/managed_games_native.rs",
+      "sha256": "c80667343397fd28e6f46127d3883a297226e416531522aeb8f14fcf69d5673e"
+    },
+    {
+      "path": "scripts/prepare-offline-vm-repository.py",
+      "sha256": "c500abc9e21706531bd4eaff97aa1dbdce03904813a5f0bd2778c532c49ea3e3"
+    },
+    {
+      "path": "tests/coarse_recovery_vm_inner.py",
+      "sha256": "0b7b7c833793ff5f741f1c1fdb85833d87b45cf3899ebbcfc1fa9a91ca1b3cbf"
+    },
+    {
+      "path": "tests/managed_games_vm_inner.py",
+      "sha256": "0f4043e850c3b07025e8b3ab4c6c81cc0fc57ca3edda54276839f4f2f206ecd9"
+    },
+    {
+      "path": "tests/nvidia_reader_vm_inner.py",
+      "sha256": "6281827745e47200c76cb8a7daede5fd6a17e84a55b3bd01339100774303d41c"
+    },
+    {
+      "path": "tests/systemd_vm.py",
+      "sha256": "e351323aff3adcf0626b7fc65226a8f86f95b3c73e3142a5d4cbd15bd337c963"
+    },
+    {
+      "path": "tests/systemd_vm_inner.py",
+      "sha256": "a1b4924093af386ab5e754cabd8e05c5642674942e7c2b2cddbbe9994b560b5f"
+    }
+  ]
+}

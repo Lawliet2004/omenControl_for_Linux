@@ -1,0 +1,70 @@
+[
+  {
+    "path": "tests/coarse_recovery_vm_inner.py",
+    "sha256": "0b7b7c833793ff5f741f1c1fdb85833d87b45cf3899ebbcfc1fa9a91ca1b3cbf"
+  },
+  {
+    "path": "tests/graphical_polkit_vm_inner.py",
+    "sha256": "d18ca9448d71de3737e3e16de6650830e9fb0cbc9a958b09cb6c880d093eed53"
+  },
+  {
+    "path": "tests/gui_accessibility.py",
+    "sha256": "8d69e1c35455c53b25713b2ac5ca74c4a476b784c48f562616ed4e675494c64f"
+  },
+  {
+    "path": "tests/gui_control_recovery.py",
+    "sha256": "59b70358aa0ef447fb69933e6a75c7f749ef16badfb873ab5a4186d36d129b90"
+  },
+  {
+    "path": "tests/gui_presentation.py",
+    "sha256": "4f8c991d6a82708e50e85b99111a06c01b4c43a4eabed18d9331cc6965471ddb"
+  },
+  {
+    "path": "tests/gui_sensor_browser.py",
+    "sha256": "b2f2532f0583ce21d54b378e8078476d7e50013428bc0d7d929690f58d8ce9cd"
+  },
+  {
+    "path": "tests/gui_sensor_presentation.py",
+    "sha256": "ff2bafe7cb6ad3776c6917f1bb9ec9817076a4316b15873ffc893b25b6ce62f5"
+  },
+  {
+    "path": "tests/gui_settings.py",
+    "sha256": "8ecf77c042e1af3a424e5ff286fad8067aa27afbd7146d4f46d191a55afefa59"
+  },
+  {
+    "path": "tests/gui_source_presentation.py",
+    "sha256": "f7cb3f93454152b5e71f610b5e48a7434391fdc1d4111ff7637188d87abaf7bf"
+  },
+  {
+    "path": "tests/gui_source_switch.py",
+    "sha256": "29ff2a3c9bb7b88858717e31be7c15fb6f8c56f9c10f01d0043e414fa68abe00"
+  },
+  {
+    "path": "tests/managed_games_vm_inner.py",
+    "sha256": "0f4043e850c3b07025e8b3ab4c6c81cc0fc57ca3edda54276839f4f2f206ecd9"
+  },
+  {
+    "path": "tests/native_desktop.py",
+    "sha256": "5b031486b649b7c40161ea4e3bc599389b6764be876075bb8f9e836bd76f619f"
+  },
+  {
+    "path": "tests/nvidia_reader_vm_inner.py",
+    "sha256": "6281827745e47200c76cb8a7daede5fd6a17e84a55b3bd01339100774303d41c"
+  },
+  {
+    "path": "tests/package.py",
+    "sha256": "32d92dd06be7c917d1435248ccb507713b58998aa015cc1a40c7dd6060fd639e"
+  },
+  {
+    "path": "tests/source_switch_vm_inner.py",
+    "sha256": "fb642bf72cd8cc6f4eaa308a2f18bac3d58642f9f41f2e2b80f67cc19bca356c"
+  },
+  {
+    "path": "tests/systemd_vm.py",
+    "sha256": "22d5b164da99c40adea8257c741212f752a29301559d6a5895951c6d7e981c6d"
+  },
+  {
+    "path": "tests/systemd_vm_inner.py",
+    "sha256": "a1b4924093af386ab5e754cabd8e05c5642674942e7c2b2cddbbe9994b560b5f"
+  }
+]

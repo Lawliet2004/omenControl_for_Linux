@@ -1,0 +1,41 @@
+{
+  "fixture_only": false,
+  "started_unix": 1792955253.5959096,
+  "events": [
+    "Balanced verified"
+  ],
+  "machine": {
+    "bios_vendor": "AMI",
+    "bios_version": "F.10",
+    "board_name": "8C30",
+    "board_vendor": "HP",
+    "class": "victus",
+    "kernel_version": "7.0.0-38-generic",
+    "product_family": "103C_5335M7 HP Victus",
+    "product_name": "Victus by HP 15.6 inch Gaming Laptop PC-fb1002AX",
+    "sys_vendor": "HP"
+  },
+  "original": "performance",
+  "daemon_mock": false,
+  "capability": {
+    "detail": "power-profiles-daemon (powerprofilesctl)",
+    "status": "available"
+  },
+  "client_uid": 1000,
+  "independent_original": "performance",
+  "ac": {
+    "online": true
+  },
+  "balanced_readback": {
+    "daemon": "balanced",
+    "independent": "balanced",
+    "unix": 1792955254.276472
+  },
+  "restored_readback": {
+    "daemon": "performance",
+    "independent": "performance",
+    "unix": 1792955254.5925457
+  },
+  "restored": true,
+  "finished_unix": 1792955254.5925481
+}

@@ -1,0 +1,41 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: omen-linux
+Source: omen-linux project
+
+Files: *
+Copyright: 2026 omen-linux contributors
+License: GPL-3.0-or-later
+
+Files: gui/assets/icons/*
+Copyright: GNOME Project
+License: LGPL-3
+Comment: Unchanged Adwaita Icon Theme 50.0 symbolic artwork. Exact upstream
+ attribution and alternative license notices are preserved in
+ gui/assets/ADWAITA_NOTICE; per-file hashes and lookup aliases are in
+ gui/assets/PROVENANCE.json. These notices, SVGs and the LGPL text are included
+ in /usr/share/doc/omen-linux/icon-fallback/ in the binary package.
+
+License: LGPL-3
+ The full GNU Lesser General Public License version 3 is included in
+ gui/assets/COPYING.LGPL-3 and installed in icon-fallback/COPYING.LGPL-3.
+ On Debian systems it is also available in /usr/share/common-licenses/LGPL-3.
+
+License: GPL-3.0-or-later
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+Comment: Board allowlists in crates/hardware/src/board_tables.rs are factual
+ data transcribed from the GPL-2.0+ upstream Linux kernel driver
+ drivers/platform/x86/hp/hp-wmi.c for interoperability; attribution given
+ in source and docs/REVERSE_ENGINEERING_REPORT.md. No HP proprietary code
+ or assets are included.

@@ -1,0 +1,265 @@
+{
+  "result": "failed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "host_keyboard_events": false,
+  "profile": "debug",
+  "checks_passed": [],
+  "gui_sha256": "5dcaa41708f927dd31a936024dbf5ad1cb5609948c8606ba9c8b0b49fe9d425c",
+  "error": "Legendary setup unreachable: [{'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}, {'role': 'entry', 'name': 'Search games'}]",
+  "focus": {
+    "role": "entry",
+    "name": "Search games"
+  },
+  "saved_preferences": {
+    "version": 1,
+    "general": {
+      "onboarding_dismissed": true,
+      "poll_interval_ms": 500
+    },
+    "games": {
+      "per_game_profiles": {
+        "legendary/Fixture": "performance",
+        "steam/snap/shortcut/7/4045620583": "performance"
+      }
+    }
+  },
+  "visible_labels": [
+    "Game Library",
+    "Fixture",
+    "Game library",
+    "Rescan library",
+    "Library locations",
+    "Game sessions",
+    "Refresh sessions",
+    "Current system profile: Balanced",
+    "No tracked sessions yet. Open a game's Profile setup to enable automatic restoration. Launcher submission alone does not create a session.",
+    "Found 2 games from Steam, Heroic, Lutris, Legendary and custom entries. Missing or unreadable store records are skipped.",
+    "",
+    "About launch and profile modes",
+    "Offline fixture\nlegendary/Fixture\nLibrary: /home/papan/Desktop/Projects/omen/target/omen-native-1easi1da/home/.config/legendary",
+    "Performance",
+    "Launch",
+    "Profile setup",
+    "Snap shortcut\nsteam/snap/shortcut/7/4045620583\nLibrary: /home/papan/Desktop/Projects/omen/target/omen-native-1easi1da/home/snap/steam/common/.local/share/Steam",
+    "Performance",
+    "Launch",
+    "Profile setup",
+    "OMEN Control",
+    "Dashboard",
+    "System Vitals",
+    "Performance Control",
+    "Fan & Thermal",
+    "Lighting Studio",
+    "Graphics",
+    "Battery & Power",
+    "Game Library",
+    "Settings & Diagnostics",
+    "Monitor",
+    "Controls",
+    "Library",
+    "Application",
+    "",
+    "source: MOCK \u2014 fixture data, no real hardware"
+  ],
+  "visible_controls": [
+    {
+      "role": "button",
+      "name": "Show or hide navigation"
+    },
+    {
+      "role": "button",
+      "name": "Application actions"
+    },
+    {
+      "role": "button",
+      "name": "Fixture"
+    },
+    {
+      "role": "button",
+      "name": "Minimize"
+    },
+    {
+      "role": "button",
+      "name": "Maximize"
+    },
+    {
+      "role": "button",
+      "name": "Close"
+    },
+    {
+      "role": "entry",
+      "name": "Search games"
+    },
+    {
+      "role": "button",
+      "name": "Rescan library"
+    },
+    {
+      "role": "button",
+      "name": "Library locations"
+    },
+    {
+      "role": "button",
+      "name": "Refresh sessions"
+    },
+    {
+      "role": "button",
+      "name": "About launch and profile modes"
+    },
+    {
+      "role": "combo box",
+      "name": "Performance"
+    },
+    {
+      "role": "toggle button",
+      "name": "Performance"
+    },
+    {
+      "role": "button",
+      "name": "Launch"
+    },
+    {
+      "role": "button",
+      "name": "Profile setup"
+    },
+    {
+      "role": "combo box",
+      "name": "Performance"
+    },
+    {
+      "role": "toggle button",
+      "name": "Performance"
+    },
+    {
+      "role": "button",
+      "name": "Launch"
+    },
+    {
+      "role": "button",
+      "name": "Profile setup"
+    }
+  ],
+  "key_events": [
+    "Control_L+f",
+    "Control_L+a",
+    "BackSpace",
+    "l",
+    "e",
+    "g",
+    "e",
+    "n",
+    "d",
+    "a",
+    "r",
+    "y",
+    "slash",
+    "Shift_L+F",
+    "i",
+    "x",
+    "t",
+    "u",
+    "r",
+    "e",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab"
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "generated_utc": "2026-10-25T21:10:52.543171+00:00",
+  "version": "0.1.0",
+  "goal_complete": false,
+  "rust_tests": {
+    "debug": {
+      "passed": 132,
+      "failed": 0,
+      "ignored": 0
+    },
+    "release": {
+      "passed": 132,
+      "failed": 0,
+      "ignored": 0
+    }
+  },
+  "checks": {
+    "strict_clippy": "pass",
+    "cargo_fmt": "pass",
+    "release_workspace_build": "pass",
+    "python_and_shell_syntax": "pass",
+    "desktop_file_validate": "pass",
+    "systemd_verify_extracted_payload": "pass",
+    "package_checksums_and_release_binary_match": "pass",
+    "mock_process_smoke_debug": "pass",
+    "mock_process_smoke_release": "pass",
+    "tray_gtk_dbus_debug": "pass",
+    "tray_gtk_dbus_release": "pass",
+    "dependency_notices": "142 locked crate notices included",
+    "settings_process_debug": "pass",
+    "settings_process_release": "pass",
+    "scoped_service_admin_action": "unit mapping verified; no new live admin import test",
+    "game_launch_process_debug": "pass",
+    "game_launch_process_release": "pass",
+    "profile_policy_and_shutdown_serialization": "fixture unit tests passed"
+  },
+  "package": {
+    "package": "target/debian/omen-linux_0.1.0-1_amd64.deb",
+    "bytes": 2436038,
+    "sha256": "fad9efb6639d96997245aa9a7362a9e69b4fe8c7e6bd0aa86f4178e13d5a6f23",
+    "version": "0.1.0-1",
+    "installed_by_verifier": false,
+    "checks": {
+      "root_ownership_and_directory_modes": true,
+      "payload_md5sums": true,
+      "desktop_file_validate": true,
+      "polkit_xml_matches_source": true,
+      "gui_linkage_current_environment": true,
+      "extracted_cli_readonly_discovery": true
+    },
+    "binaries": {
+      "omen-cli": {
+        "sha256": "4a318d72be0960549a54cd7e23762636a8f96304a62d0b2f87c1742ae1283586",
+        "matches_release": true
+      },
+      "omen-daemon": {
+        "sha256": "f8acd434c80a7ec0739ae7c8b423a4c017c2977c1758e25d430c1b54a36bb195",
+        "matches_release": true
+      },
+      "omen-gui": {
+        "sha256": "158766cd946e441153ee8743cb2b95c4b0dc1f15182fae9a52d0400fb8a8aa8f",
+        "matches_release": true
+      }
+    },
+    "dependency_notices": 142,
+    "systemd_validation": {
+      "exit_code": 0,
+      "method": "unmodified unit in extracted package root; no unit started"
+    }
+  },
+  "live_profile_test": {
+    "result": "passed",
+    "fixture_only": false,
+    "board": "8C30",
+    "bios": "F.10",
+    "kernel": "7.0.0-38-generic",
+    "original": "performance",
+    "requested": "balanced",
+    "restored": "performance",
+    "uid": 1000,
+    "authorization": "installed polkit com.omenlinux.control active-session action; production IPC",
+    "scope": "one standard PPD transaction, amd_pstate CPU backend; no firmware thermal-mode equivalence claimed",
+    "evidence": "live-profile-test.json",
+    "daemon_exited_cleanly": true,
+    "tested_daemon_sha256": "11c02e6206a6bd37678cb3e8dbcc89455ffd26797e665bb4a938705b49cc89a4",
+    "repeated_after_tray_changes": false,
+    "note": "Earlier approved transaction; not repeated after launch-controller/profile-ownership/shutdown changes. Current package has a different fingerprint; live automation and launch-bound profiles remain unverified."
+  },
+  "host_changes": {
+    "rea_config": "approved setup; existing Node 24.22.1, no engines installed",
+    "polkit_action": "/usr/share/polkit-1/actions/com.omenlinux.policy installed root:root 0644",
+    "deb_installed": false,
+    "systemd_service_installed": false,
+    "test_daemon_running": false
+  },
+  "performance": {
+    "method": "release binaries; 5-second windows; CPU percent of one logical core; page-cache-warm launches; live read-only monitoring",
+    "cpu_count": 12,
+    "cli_detect": {
+      "runs_seconds": [
+        0.0828186800063122,
+        0.0722556649998296,
+        0.07345641101710498,
+        0.07576357899233699,
+        0.07116968397167511
+      ],
+      "median_seconds": 0.07345641101710498
+    },
+    "daemon_socket_ready_seconds": 0.010591297992505133,
+    "daemon_idle_no_clients": {
+      "seconds": 5.000525388022652,
+      "rss_kib": 3012,
+      "cpu_pct_one_core": 0.0,
+      "reaped_children_cpu_pct_one_core": 0.0
+    },
+    "gui_window_map_seconds": 0.3646044939814601,
+    "gui_monitoring_dashboard": {
+      "seconds": 5.00061387300957,
+      "rss_kib": 176672,
+      "cpu_pct_one_core": 1.3998281366577738,
+      "reaped_children_cpu_pct_one_core": 1.1998526885638061
+    },
+    "binary_sha256": {
+      "omen-cli": "4a318d72be0960549a54cd7e23762636a8f96304a62d0b2f87c1742ae1283586",
+      "omen-daemon": "f8acd434c80a7ec0739ae7c8b423a4c017c2977c1758e25d430c1b54a36bb195",
+      "omen-gui": "158766cd946e441153ee8743cb2b95c4b0dc1f15182fae9a52d0400fb8a8aa8f"
+    },
+    "kernel": "7.0.0-38-generic",
+    "recorded_utc": "2026-10-25T21:02:17.999041+00:00"
+  },
+  "screenshots": {
+    "battery.png": "d6c857fe5c852a890d73095276215d5147d359caa93446416a4a7bd15e00a27c",
+    "dashboard.png": "aef8977bd8e23de51a8b620fd413bba329449e0a320bdd7ecdd74a9e149af7b5",
+    "fan-mock.png": "39897cd0fe9160338f0434282918c61e7e8986d0e87a4e53e016d57704205a5d",
+    "fan.png": "a49f1070bb73e9a43d74573bb85c5439875157c8ab86e7fef9d7124387ce6b1b",
+    "games-mock.png": "857d955138b68da48dc6e7d4db8d14cbe11765264e5102745f391465d5da8535",
+    "games.png": "f45a2ff37e0e1911efd0f2f6d396f47b6380d567438061dd489fd9a528bd9fb2",
+    "graphics.png": "5aebe425bf11dfdf909c4247febbfa47caf5e3b7307b6a91310f60b0fadc95e2",
+    "lighting.png": "e86ff12c200d2ee7a6e2d90bd78fa3473a388e99cf7ac8759f788aa43c01291c",
+    "performance.png": "22ef4e9d6a1bc72df9e4190fc0562bb435fbab4dd83d77597ec9a0411fd935c4",
+    "settings-mock.png": "fc9c753fcfa27e0f409d071e735a8f91b47f07a0d1de7499ca62f059ae3d1854",
+    "settings.png": "8f8976c22ae126640224bf648917861ef6e0812ffaa6e5b5ce0ad1ab1158dbdf",
+    "vitals.png": "3eb8f23daef40e45322658204bf7727f6bd100d348f13801578b3bda2f935575"
+  },
+  "limits": [
+    "One profile switch/restore is not thermal or Windows parity validation",
+    "Live fan/RGB/charging/graphics/firmware writes were not tested and device-specific paths remain disabled",
+    "No clean-system package install/upgrade/remove, full polkit lifecycle, suspend/resume or fan crash-recovery validation",
+    "Warm startup and short resource windows; no cold-start benchmark",
+    "Main Windows Store application and compatible Windows behavioral reference unavailable",
+    "Configured REA needs chat reconnect for direct tools; standalone MCP was used successfully",
+    "Global hotkeys/overlay and several optional integrations remain unimplemented",
+    "Tray verified with KDE Wayland and a private-bus watcher fixture; GNOME/X11 shell behavior and global shortcuts remain unverified",
+    "Native file-picker selection/cancel and service-preview button activation are not automated; shared controller/CLI and production IPC fixture workflows are tested",
+    "Game/Steam execution, late-exit restoration, global atomic profile ownership and client-crash recovery are not verified or implemented; launcher tests use fixture scripts/hardware only"
+  ],
+  "tray_integration": {
+    "host": "running KDE StatusNotifierWatcher",
+    "live_hardware_writes": false,
+    "checks_passed": [
+      "real KDE tray: read-only menu, Hide, Activate, page navigation, clean Quit",
+      "startup preference hides only after tray registration; menu restores window",
+      "no tray host: start-minimized falls back to a visible GTK window",
+      "private-bus host loss reveals window; host restart re-registers without hiding it again",
+      "fixture only: tray profile changes reach daemon and restore Balanced"
+    ]
+  },
+  "settings_integration": {
+    "fixture_only": true,
+    "live_hardware_writes": false,
+    "checks_passed": [
+      "missing service config never loads the desktop user's config",
+      "connected CLI user import changes only the user file and creates a backup",
+      "reviewed service import uses typed IPC, writes the service file and preserves desktop data",
+      "scope mismatch and desktop fields in service backups are rejected without file changes",
+      "nullable AC policy remains unchanged after daemon restart",
+      "oversized input and corrupt local config fail without replacing data"
+    ]
+  },
+  "game_launch_integration": {
+    "fixture_only": true,
+    "live_hardware_writes": false,
+    "desktop_uid": 1000,
+    "checks_passed": [
+      "missing launcher is rejected before any profile write",
+      "spawn failure after profile application restores and verifies Balanced",
+      "an already-active profile is not mutated or claimed for rollback",
+      "early nonzero launcher exit is reported and rolls back the applied profile",
+      "a different profile selected by a second IPC writer is preserved",
+      "successful fixture Steam submission uses one URI argument and the desktop UID",
+      "battery automation and bound per-game profiles cannot compete",
+      "lost daemon during rollback reports recovery as unverified",
+      "unbound game commands work without a daemon and cannot pollute JSON stdout",
+      "longer-running launcher returns a process receipt without claiming game execution"
+    ]
+  }
+}

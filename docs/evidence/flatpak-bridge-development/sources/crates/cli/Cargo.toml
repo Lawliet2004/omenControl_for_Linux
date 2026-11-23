@@ -1,0 +1,33 @@
+[package]
+name = "omen-cli"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Command-line interface for omen-linux"
+
+[[bin]]
+name = "omen-cli"
+path = "src/main.rs"
+
+[dependencies]
+omen-core = { path = "../core" }
+omen-ipc = { path = "../ipc" }
+omen-hardware = { path = "../hardware" }
+omen-client = { path = "../client" }
+clap = { workspace = true }
+serde_json = { workspace = true }
+
+[dev-dependencies]
+omen-daemon = { path = "../daemon" }
+tempfile = "3"
+libc = "0.2"
+zbus = { version = "5.19.0", default-features = false, features = ["async-io", "blocking-api"] }
+
+[features]
+native-session-tests = []
+
+[[test]]
+name = "managed-games-native"
+path = "tests/managed_games_native.rs"
+harness = false
+required-features = ["native-session-tests"]

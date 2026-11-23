@@ -1,0 +1,18 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "host_keyboard_input": false,
+  "checks_passed": [
+    "missing explicit endpoint stays unavailable and never falls back to host hardware",
+    "a late mock service reconnects without restarting GTK and enables service backup tools",
+    "same-process outage disables writes and reconnect preserves unsaved manual and curve edits",
+    "an open service-policy preview stays bound to the original peer and sends no mutation to its replacement",
+    "a replacement source reloads manual, curve, lighting and threshold editors without an implicit write",
+    "same-socket metadata changes update Dashboard and sidebar labels; untrusted nonmock service remains unverified"
+  ],
+  "gui_sha256": "04813e1cbc33b14e607e08d463fa175e978e34efb8d35c0c61458573c0deaafd",
+  "test_script_sha256": "29ff2a3c9bb7b88858717e31be7c15fb6f8c56f9c10f01d0043e414fa68abe00",
+  "write_operations": [],
+  "cleanup_complete": true
+}

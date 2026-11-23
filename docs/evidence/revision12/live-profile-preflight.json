@@ -1,0 +1,211 @@
+{
+  "test": "approved Balanced then restore",
+  "daemon_uid": 1000,
+  "service_installation": "not systemd-installed; isolated real daemon and installed polkit action",
+  "live_device_specific_writes": "disabled",
+  "related_processes_before": [
+    {
+      "pid": 2124598,
+      "name": "omen-daemon",
+      "command": "./target/release/omen-daemon --mock "
+    }
+  ],
+  "ppd": {
+    "ActiveProfile": {
+      "type": "s",
+      "data": "performance"
+    },
+    "Profiles": {
+      "type": "aa{sv}",
+      "data": [
+        {
+          "Profile": {
+            "type": "s",
+            "data": "power-saver"
+          },
+          "CpuDriver": {
+            "type": "s",
+            "data": "amd_pstate"
+          },
+          "PlatformDriver": {
+            "type": "s",
+            "data": "placeholder"
+          },
+          "Driver": {
+            "type": "s",
+            "data": "multiple"
+          }
+        },
+        {
+          "Profile": {
+            "type": "s",
+            "data": "balanced"
+          },
+          "CpuDriver": {
+            "type": "s",
+            "data": "amd_pstate"
+          },
+          "PlatformDriver": {
+            "type": "s",
+            "data": "placeholder"
+          },
+          "Driver": {
+            "type": "s",
+            "data": "multiple"
+          }
+        },
+        {
+          "Profile": {
+            "type": "s",
+            "data": "performance"
+          },
+          "CpuDriver": {
+            "type": "s",
+            "data": "amd_pstate"
+          },
+          "Driver": {
+            "type": "s",
+            "data": "amd_pstate"
+          }
+        }
+      ]
+    },
+    "ActiveProfileHolds": {
+      "type": "aa{sv}",
+      "data": []
+    }
+  },
+  "polkit": "com.omenlinux.control:\n  description:       Control OMEN/Victus hardware (fans, profiles, lighting)\n  message:           Authentication is required to change hardware settings through omen-linux\n  vendor:            omen-linux\n  vendor_url:        \n  icon:              \n  implicit any:      auth_admin_keep\n  implicit inactive: auth_admin_keep\n  implicit active:   yes\n\n",
+  "info": {
+    "daemon_version": "0.1.0",
+    "machine": {
+      "bios_vendor": "AMI",
+      "bios_version": "F.10",
+      "board_name": "8C30",
+      "board_vendor": "HP",
+      "class": "victus",
+      "kernel_version": "7.0.0-38-generic",
+      "product_family": "103C_5335M7 HP Victus",
+      "product_name": "Victus by HP 15.6 inch Gaming Laptop PC-fb1002AX",
+      "sys_vendor": "HP"
+    },
+    "mock": false,
+    "protocol_version": 1,
+    "started_unix": 1792955253
+  },
+  "capabilities": {
+    "amd_telemetry": {
+      "detail": "hwmon amdgpu",
+      "status": "available"
+    },
+    "battery_aware_profiles": {
+      "detail": "userspace battery-aware profile switching",
+      "status": "available"
+    },
+    "charge_threshold": {
+      "detail": "firmware/kernel does not expose charge_control_end_threshold",
+      "status": "unavailable"
+    },
+    "fan_control": {
+      "detail": "hp-wmi exposes no pwm1 for board 8C30 (board is not on the hp-wmi fan-control allowlist)",
+      "status": "unavailable"
+    },
+    "fan_curve": {
+      "detail": "requires manual fan control",
+      "status": "unavailable"
+    },
+    "fan_monitoring": {
+      "detail": "hp-wmi hwmon fan*_input",
+      "status": "available"
+    },
+    "graphics_mux": {
+      "detail": "no mainline kernel MUX interface for this model (status/monitoring only)",
+      "status": "unavailable"
+    },
+    "keyboard_backlight": {
+      "detail": "no keyboard backlight LED found",
+      "status": "unavailable"
+    },
+    "lighting_zone_count": null,
+    "lighting_zones": {
+      "detail": "no kernel keyboard-lighting interface (model without RGB keyboard or module not installed)",
+      "status": "unavailable"
+    },
+    "machine": {
+      "bios_vendor": "AMI",
+      "bios_version": "F.10",
+      "board_name": "8C30",
+      "board_vendor": "HP",
+      "class": "victus",
+      "kernel_version": "7.0.0-38-generic",
+      "product_family": "103C_5335M7 HP Victus",
+      "product_name": "Victus by HP 15.6 inch Gaming Laptop PC-fb1002AX",
+      "sys_vendor": "HP"
+    },
+    "nvidia_telemetry": {
+      "detail": "nvidia-smi",
+      "status": "available"
+    },
+    "performance_profiles": {
+      "detail": "power-profiles-daemon (powerprofilesctl)",
+      "status": "available"
+    },
+    "profile_choices": [
+      "quiet",
+      "balanced",
+      "performance"
+    ],
+    "profile_plane": "power_profiles_daemon"
+  },
+  "config": {
+    "fan": {
+      "curve": {
+        "points": [
+          {
+            "duty_pct": 25,
+            "temp_c": 40
+          },
+          {
+            "duty_pct": 40,
+            "temp_c": 55
+          },
+          {
+            "duty_pct": 60,
+            "temp_c": 65
+          },
+          {
+            "duty_pct": 80,
+            "temp_c": 75
+          },
+          {
+            "duty_pct": 100,
+            "temp_c": 85
+          }
+        ]
+      },
+      "startup_mode": "auto"
+    },
+    "games": {
+      "custom_games": [],
+      "per_game_profiles": {}
+    },
+    "general": {
+      "history_samples": 300,
+      "poll_interval_ms": 1000,
+      "start_minimized": false
+    },
+    "lighting": {
+      "presets": [],
+      "startup_preset": null
+    },
+    "power": {
+      "battery_aware": false,
+      "on_ac_profile": "balanced",
+      "on_battery_profile": "quiet"
+    },
+    "version": 1
+  },
+  "ac": {
+    "online": true
+  }
+}

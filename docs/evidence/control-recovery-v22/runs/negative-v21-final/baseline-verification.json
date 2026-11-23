@@ -1,0 +1,7 @@
+{
+  "result": "expected-regression-reproduced",
+  "exit_code": 1,
+  "gui_sha256": "212c0cb61a18bbcd07652d846e4e3e38fcf50d4afcda1ff0121b53797bb3b7ee",
+  "test_script_sha256": "b5cb1a6db773c8e73b538df9ee928a322bccede5578d1378718d6f772221f0ac",
+  "failure": "RuntimeError: profile choices did not recover after initial unavailability"
+}

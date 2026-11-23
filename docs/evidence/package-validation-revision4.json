@@ -1,0 +1,58 @@
+{
+  "package": "target/debian/omen-linux_0.1.0-4_amd64.deb",
+  "bytes": 2492710,
+  "sha256": "d091a427cd8577aa05bded60c5d13ecf031fad5dbb21c385932fa0f19a31e87b",
+  "version": "0.1.0-4",
+  "installed_by_verifier": false,
+  "checks": {
+    "root_ownership_and_directory_modes": true,
+    "payload_md5sums": true,
+    "desktop_file_validate": true,
+    "polkit_xml_matches_source": true,
+    "gui_linkage_current_environment": true,
+    "extracted_cli_readonly_discovery": true
+  },
+  "binaries": {
+    "omen-cli": {
+      "sha256": "462b43449c9ca0dea798dd0dc966bedd55bcd5d4f45513a9b43ba23fd91f1ae3",
+      "matches_release": true
+    },
+    "omen-daemon": {
+      "sha256": "346100745deedb7d857a1bbf08658ca54eae004df1ee836ddf8041157a949707",
+      "matches_release": true
+    },
+    "omen-gui": {
+      "sha256": "acda0c3e76640bb46f3ecfab68dbea545f2c3211224cf9b79af88de58e7bfde1",
+      "matches_release": true
+    }
+  },
+  "lifecycle_equivalence": {
+    "reference_package": "target/debian/runtime-tested_omen-linux_0.1.0-4_amd64.deb",
+    "reference_sha256": "64ce6314dc0560116b51697374e377e5881de7ac149b7b7023003a5f16928d2c",
+    "runtime_payload_identical": true,
+    "maintainer_scripts_and_control_identical": true,
+    "documentation_changes": [
+      "usr/share/doc/omen-linux/ARCHITECTURE.md",
+      "usr/share/doc/omen-linux/PACKAGE_VALIDATION.md",
+      "usr/share/doc/omen-linux/TEST_REPORT.md",
+      "usr/share/doc/omen-linux/VM_VALIDATION.md"
+    ]
+  },
+  "vm_equivalence": {
+    "reference_package": "target/debian/runtime-tested_omen-linux_0.1.0-4_amd64.deb",
+    "reference_sha256": "64ce6314dc0560116b51697374e377e5881de7ac149b7b7023003a5f16928d2c",
+    "runtime_payload_identical": true,
+    "maintainer_scripts_and_control_identical": true,
+    "documentation_changes": [
+      "usr/share/doc/omen-linux/ARCHITECTURE.md",
+      "usr/share/doc/omen-linux/PACKAGE_VALIDATION.md",
+      "usr/share/doc/omen-linux/TEST_REPORT.md",
+      "usr/share/doc/omen-linux/VM_VALIDATION.md"
+    ]
+  },
+  "dependency_notices": 152,
+  "systemd_validation": {
+    "exit_code": 0,
+    "method": "unmodified unit in extracted package root; no unit started"
+  }
+}

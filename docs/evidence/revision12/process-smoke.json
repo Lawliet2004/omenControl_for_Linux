@@ -1,0 +1,12 @@
+{
+  "fixture_only": true,
+  "checks_passed": [
+    "private mock socket and explicit mock identity",
+    "unsupported protocol version denied",
+    "curve applies synchronously; Auto survives subsequent ticks",
+    "privileged game execution refused",
+    "real CLI consumes daemon fan-state response",
+    "profile-test supervisor restores original fixture state",
+    "SIGTERM exits cleanly and removes owned socket"
+  ]
+}

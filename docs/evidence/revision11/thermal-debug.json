@@ -1,0 +1,26 @@
+{
+  "result": "passed",
+  "profile": "debug",
+  "fixture_only": true,
+  "hardware_control_writes": 0,
+  "checks_passed": [
+    "fixed max requires CPU/GPU preflight, recovers on data loss and does not resume without rearming",
+    "fixed manual requires CPU/GPU preflight, recovers on data loss and does not resume without rearming",
+    "curve arms with identified CPU and GPU inputs; diagnostics retain the guarded cohort",
+    "a hot GPU raises the real fixture adapter to full curve duty while CPU temperature stays fixed",
+    "invalid GPU data stops and restores the curve; returning data does not rearm it",
+    "missing GPU association fails preflight without claiming or restoring an external fixture override",
+    "GPU power-state changes invalidate the pinned cohort and require explicit rearming",
+    "a real process scheduling gap is detected after continuation and returns the fixture to Auto",
+    "a blocked Auto recovery remains owned and retries after pinned controller identity returns",
+    "the named power worker is blocked on fixture profile IO while independent fan ticks still follow GPU heat",
+    "shutdown restores Auto before profile IO drains and performs no late profile write after the blocked read returns"
+  ],
+  "daemon_sha256": "9cd637b0c1d27763fff9bcdb676ed5e15e70ba972a366e213595184c6b344d83",
+  "blocked_power_worker": {
+    "tid": 2885048,
+    "wchan": "wait_for_partner"
+  },
+  "cleanup_complete": true,
+  "recorded_utc": "2026-10-26T13:29:50.863118+00:00"
+}

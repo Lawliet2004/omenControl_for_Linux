@@ -1,0 +1,979 @@
+
+7-Zip 26.00 (x64) : Copyright (c) 1999-2026 Igor Pavlov : 2026-02-12
+ 64-bit locale=C.UTF-8 Threads:12 OPEN_MAX:524288, ASM
+
+Scanning the drive for archives:
+1 file, 221403808 bytes (212 MiB)
+
+Listing archive: /tmp/omen-windows-reference/sp166157.complete.exe
+
+--
+Path = /tmp/omen-windows-reference/sp166157.complete.exe
+Type = PE
+Physical Size = 221403808
+CPU = x64
+64-bit = +
+Characteristics = Executable LargeAddress
+Created = 2023-07-11 13:36:21
+Headers Size = 1024
+Checksum = 221433695
+Name = hpsoftpaqwrapper.exe
+Image Size = 647168
+Section Alignment = 4096
+File Alignment = 512
+Code Size = 390144
+Initialized Data Size = 228864
+Uninitialized Data Size = 0
+Linker Version = 14.16
+OS Version = 6.0
+Image Version = 0.0
+Subsystem Version = 6.0
+Subsystem = Windows GUI
+DLL Characteristics = HighEntropyVA Relocated NX-Compatible TerminalServerAware
+Stack Reserve = 1048576
+Stack Commit = 4096
+Heap Reserve = 1048576
+Heap Commit = 4096
+Virtual Address = 0x140000000
+Comment = 
+{
+FileVersion: 0.2.78.55519
+ProductVersion: 0.2.0.0
+ProductVersion: 1.0.91
+CompanyName: HP Inc.
+FileDescription: SDK Pack for OMEN Command Center
+InternalName: hpsoftpaqwrapper
+OriginalFilename: hpsoftpaqwrapper.exe
+ProductName: SDK Pack for OMEN Command Center
+LegalCopyright: Copyright (c) 2024 HP Development Company, L.P.
+Data Directories: 16
+{
+index=1 name=IMPORT VA=0x80C50 Size=220
+index=2 name=RESOURCE VA=0x8F000 Size=57068
+index=3 name=EXCEPTION VA=0x8A000 Size=18012
+index=4 name=SECURITY VA=0xD322C98 Size=11784
+index=5 name=BASERELOC VA=0x9D000 Size=3680
+index=6 name=DEBUG VA=0x70460 Size=112
+index=9 name=TLS VA=0x704D0 Size=40
+index=10 name=LOAD_CONFIG VA=0x62E90 Size=256
+index=12 name=IAT VA=0x61000 Size=2136
+index=13 name=DELAY_IMPORT VA=0x80B48 Size=64
+}
+}
+----
+Path = [0]
+Size = 220771992
+Packed Size = 220771992
+Virtual Size = 220771992
+Offset = 620032
+--
+Path = [0]
+Type = 7z
+Offset = 15724
+Physical Size = 220756268
+Headers Size = 1810
+Method = LZMA2:24 BCJ
+Solid = +
+Blocks = 2
+
+----------
+Path = AMD
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:41:12.3948086
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = CapDriver
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:43:40.7889828
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = CapDriver/OMENCap
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:41:21.6870609
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = CapDriver/SysCap
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:43:39.1840674
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = CapDriver/UTIL
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:43:55.7918963
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = HyperX
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:44:02.7974820
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = IntelXTU
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:44:23.5846611
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = IntelXTU/XTU-7.14.2.14
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:44:23.8967890
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:46:26.3736317
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IccWdtDriver
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:45:58.5652185
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IccWdtDriver/ICCWDT_Driver
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:46:05.1876331
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IccWdtDriver/ICCWDT_Driver/x64
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:46:07.4990616
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IocDriver
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:46:15.4531492
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IocDriver/64bit
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:46:18.4205986
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IocDriverExtension
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:46:25.0769771
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/x64
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:46:29.4965582
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = Realtek
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:46:45.8812518
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = Realtek/bin
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:46:35.1840811
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = Realtek/bin/driver
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:46:35.5126786
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = Realtek/bin/driver/x64
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:46:44.5689438
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = Realtek/DLL
+Size = 0
+Packed Size = 0
+Modified = 2025-12-05 15:47:01.0676596
+Attributes = D
+CRC = 
+Encrypted = -
+Method = 
+Block = 
+
+Path = AMD/setup.cmd
+Size = 5603
+Packed Size = 200525664
+Modified = 2025-02-11 21:05:49.0000000
+Attributes = A
+CRC = 98EB3C3D
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = CapDriver/OMENCap/1.0.836.0.zip
+Size = 2496737
+Packed Size = 
+Modified = 2025-07-23 03:10:50.0000000
+Attributes = A
+CRC = F2D0AC1F
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = CapDriver/OMENCap/Setup.bat
+Size = 5692
+Packed Size = 
+Modified = 2025-07-25 07:17:55.0000000
+Attributes = A
+CRC = FDF50DB3
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = CapDriver/SysCap/1.82.4285.0.zip
+Size = 200563829
+Packed Size = 
+Modified = 2025-08-20 07:15:42.0000000
+Attributes = A
+CRC = FDECFD99
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = CapDriver/SysCap/Setup.bat
+Size = 5730
+Packed Size = 
+Modified = 2025-08-20 07:18:09.0000000
+Attributes = A
+CRC = 3CFDEEFC
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = CapDriver/UTIL/CheckWUSA.cmd
+Size = 3686
+Packed Size = 
+Modified = 2023-10-16 07:09:48.0000000
+Attributes = A
+CRC = 5470CDAC
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = CapDriver/UTIL/Check_DRV.cmd
+Size = 1581
+Packed Size = 
+Modified = 2023-10-16 07:10:24.0000000
+Attributes = A
+CRC = B686703E
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = CapDriver/UTIL/Clean_DRV.cmd
+Size = 1956
+Packed Size = 
+Modified = 2023-10-16 07:09:28.0000000
+Attributes = A
+CRC = DB8DBBAA
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = CapDriver/UTIL/Scan_Dev.cmd
+Size = 184
+Packed Size = 
+Modified = 2023-06-04 03:40:54.0000000
+Attributes = A
+CRC = 9A2F616E
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = HyperX/setup.cmd
+Size = 1571
+Packed Size = 
+Modified = 2023-06-04 03:39:30.0000000
+Attributes = A
+CRC = 5E4C61D7
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = Install.cmd
+Size = 16440
+Packed Size = 
+Modified = 2025-12-05 15:47:08.0611092
+Attributes = A
+CRC = 3B70E528
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = IntelXTU/Exclusion.lst
+Size = 34
+Packed Size = 
+Modified = 2025-10-31 14:18:46.7518439
+Attributes = A
+CRC = 37154A6E
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = IntelXTU/removeXTUReg.cmd
+Size = 2324
+Packed Size = 
+Modified = 2023-06-04 03:39:12.0000000
+Attributes = A
+CRC = 0DEB0FE6
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = IntelXTU/restoreXTUReg.cmd
+Size = 1790
+Packed Size = 
+Modified = 2023-06-04 03:38:54.0000000
+Attributes = A
+CRC = 18753B85
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = IntelXTU/Setup.cmd
+Size = 8739
+Packed Size = 
+Modified = 2025-10-31 14:50:36.2700654
+Attributes = A
+CRC = 77599990
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = IntelXTU/UninstallXTU.cmd
+Size = 4278
+Packed Size = 
+Modified = 2023-10-16 07:11:32.0000000
+Attributes = A
+CRC = 5673A0AE
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = IntelXTU/UninstallXTUTool.ps1
+Size = 842
+Packed Size = 
+Modified = 2022-03-12 04:09:20.0000000
+Attributes = A
+CRC = F9213447
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IccWdtDriver/ICCWDT_Driver/iccwdt.cat
+Size = 11544
+Packed Size = 
+Modified = 2024-06-28 07:37:08.0000000
+Attributes = A
+CRC = 3B3EAD6B
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IccWdtDriver/ICCWDT_Driver/ICCWDT.inf
+Size = 2340
+Packed Size = 
+Modified = 2024-06-28 07:37:08.0000000
+Attributes = A
+CRC = A810524E
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IocDriver/iocbios2.cat
+Size = 11061
+Packed Size = 
+Modified = 2024-06-28 07:37:08.0000000
+Attributes = A
+CRC = D76B9FC0
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IocDriver/iocbios2.inf
+Size = 1804
+Packed Size = 
+Modified = 2024-06-28 07:37:08.0000000
+Attributes = A
+CRC = 387C21D3
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IocDriverExtension/xtuextension.cat
+Size = 12218
+Packed Size = 
+Modified = 2024-06-28 07:37:08.0000000
+Attributes = A
+CRC = 9C3BD4B5
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IocDriverExtension/XTUExtension.inf
+Size = 9358
+Packed Size = 
+Modified = 2024-06-28 07:37:08.0000000
+Attributes = A
+CRC = 421DC4D4
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/xtucomponent.cat
+Size = 20648
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = E5ABE47A
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/xtucomponent.inf
+Size = 6856
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = 18E6EF4E
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/XtuService.exe.config
+Size = 264
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = 3CE296EF
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = OMEN_SDK_Check
+Size = 1393
+Packed Size = 
+Modified = 2023-07-22 07:07:04.0000000
+Attributes = A
+CRC = 3E4C1359
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = Package.cat
+Size = 38280
+Packed Size = 
+Modified = 2025-12-05 15:49:19.4653515
+Attributes = A
+CRC = A4C1B97A
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = PBDConfig.xml
+Size = 379
+Packed Size = 
+Modified = 2023-03-27 00:51:22.0000000
+Attributes = A
+CRC = 9BF9D3E8
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = Realtek/bin/driver/x64/rtf64x64.cat
+Size = 12237
+Packed Size = 
+Modified = 2025-12-02 12:15:55.4484209
+Attributes = A
+CRC = C5528418
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = Realtek/bin/driver/x64/rtf64x64.inf
+Size = 5620
+Packed Size = 
+Modified = 2025-12-02 12:15:55.4603606
+Attributes = A
+CRC = E63AA5C3
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = Realtek/Setup.cmd
+Size = 5850
+Packed Size = 
+Modified = 2025-08-09 07:00:11.0000000
+Attributes = A
+CRC = 346BB7A4
+Encrypted = -
+Method = LZMA2:24
+Block = 0
+
+Path = AMD/AMD RyzenMaster SDK_2.14.2.3330.exe
+Size = 18653000
+Packed Size = 20228794
+Modified = 2024-11-23 00:14:04.0000000
+Attributes = A
+CRC = E808E0CA
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = CapDriver/UTIL/HPDM_x64.exe
+Size = 91128
+Packed Size = 
+Modified = 2022-03-13 03:40:02.0000000
+Attributes = A
+CRC = 330DFEA1
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = HPUP.exe
+Size = 264712
+Packed Size = 
+Modified = 2025-07-04 19:56:16.0000000
+Attributes = A
+CRC = EAC3EEBE
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = HyperX/UninstDrv.exe
+Size = 13504
+Packed Size = 
+Modified = 2022-03-12 04:09:20.0000000
+Attributes = A
+CRC = 9FDE2CD6
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/HardwareAccess.dll
+Size = 277352
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = F903AB61
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/HardwareAccessInterfaces.dll
+Size = 34664
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = B167A0BC
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/HardwareServiceInterfaces.dll
+Size = 90984
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = 907024D6
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/HardwareServices.dll
+Size = 99688
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = 8971BDB1
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IccSdk.dll
+Size = 799592
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = 83A8F9CF
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IccWdtDriver/ICCWDT_Driver/x64/ICCWDT.sys
+Size = 44008
+Packed Size = 
+Modified = 2024-06-28 07:37:08.0000000
+Attributes = A
+CRC = 7A2FF323
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IntelBenchmarkSDK.dll
+Size = 60264
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = 50C31A98
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IntelOverclockingSDK.dll
+Size = 768872
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = CE192FA8
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/Interop.IccProxy.dll
+Size = 33640
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = 00DD64FD
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/iocbios2.sys
+Size = 55896
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = CA07AEC6
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/IocDriver/64bit/iocbios2.sys
+Size = 46088
+Packed Size = 
+Modified = 2024-06-28 07:37:08.0000000
+Attributes = A
+CRC = C6461AEE
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/Microsoft.Practices.Unity.dll
+Size = 162464
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = 71591833
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/msvcp110.dll
+Size = 536808
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = 78A24A7A
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/msvcr110.dll
+Size = 877288
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = D240980E
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/PerfTuneAppMutex.dll
+Size = 41320
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = 047CD1E2
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/PlatformDetection.dll
+Size = 29032
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = 5C6044B6
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/ProfileHelperModel.dll
+Size = 29544
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = 641AC935
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/x64/XtuBenchmark.dll
+Size = 219928
+Packed Size = 
+Modified = 2024-06-28 07:38:30.0000000
+Attributes = A
+CRC = B7097510
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/XtuApplication.dll
+Size = 256872
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = 2F7A3626
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/XtuApplicationInterfaces.dll
+Size = 29544
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = 7A9DD30C
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/XtuCommon.dll
+Size = 279400
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = FEC665B1
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/XtuCoreServer.dll
+Size = 60264
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = F69805DF
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/XtuInterface.dll
+Size = 33128
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = 9048F570
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = IntelXTU/XTU-7.14.2.14/Drivers/XtuService.exe
+Size = 30056
+Packed Size = 
+Modified = 2024-06-28 07:37:18.0000000
+Attributes = A
+CRC = BBAC30F2
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = msvcp140.dll
+Size = 687512
+Packed Size = 
+Modified = 2023-03-27 00:51:22.0000000
+Attributes = A
+CRC = 6EA49817
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = OMENSDK_Ver.exe
+Size = 228368
+Packed Size = 
+Modified = 2024-08-11 06:17:00.0000000
+Attributes = A
+CRC = 0BE323FA
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = ProgressDialog.exe
+Size = 234536
+Packed Size = 
+Modified = 2023-04-15 01:24:46.0000000
+Attributes = A
+CRC = 16D98CEF
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = Realtek/bin/driver/x64/rtf64x64.sys
+Size = 72344
+Packed Size = 
+Modified = 2025-12-02 12:15:55.4763440
+Attributes = A
+CRC = 79AA03A9
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = Realtek/DLL/RtBWCtrl.dll
+Size = 421280
+Packed Size = 
+Modified = 2025-07-26 07:19:45.0000000
+Attributes = A
+CRC = 4A18032A
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = Realtek/DLL/RtFDrvIOCtrl.dll
+Size = 148320
+Packed Size = 
+Modified = 2025-07-26 07:19:45.0000000
+Attributes = A
+CRC = DFD1D9A3
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = Realtek/DLL/wlanCliDLL.dll
+Size = 2232728
+Packed Size = 
+Modified = 2023-03-27 00:51:04.0000000
+Attributes = A
+CRC = A870DF72
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = vccorlib140.dll
+Size = 392088
+Packed Size = 
+Modified = 2023-03-27 00:51:22.0000000
+Attributes = A
+CRC = 70554C92
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+
+Path = vcruntime140.dll
+Size = 90032
+Packed Size = 
+Modified = 2023-03-27 00:51:22.0000000
+Attributes = A
+CRC = 8177495A
+Encrypted = -
+Method = BCJ LZMA2:24
+Block = 1
+

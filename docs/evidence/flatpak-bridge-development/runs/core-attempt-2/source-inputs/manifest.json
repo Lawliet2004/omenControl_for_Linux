@@ -1,0 +1,26 @@
+[
+  {
+    "path": "Cargo.lock",
+    "sha256": "0ad5bce1f0809a5d66ae1075f1fcb891cc6fb5fc36a3db7ea628afb2ad3a3e04"
+  },
+  {
+    "path": "crates/client/Cargo.toml",
+    "sha256": "4cf1384e7f1fcc7ec86d511be7e4e10f4871d00857490339be0cf55bb0646ec9"
+  },
+  {
+    "path": "crates/client/src/lib.rs",
+    "sha256": "acd55dcc9a3a6ce507ad82c87c76854181aae99ce1a3f42e7212af587e698bc4"
+  },
+  {
+    "path": "crates/client/src/flatpak_bridge.rs",
+    "sha256": "83cd9e9867473a58eea4408278056f789f69727878ac6be4b7cd37badd9280a5"
+  },
+  {
+    "path": "crates/cli/src/main.rs",
+    "sha256": "180839e5c750c2aa664cdc68be32b83f5752853e8811a555256768f4f52ad660"
+  },
+  {
+    "path": "packaging/omen-flatpak-game",
+    "sha256": "a1bb5b6a4d2f0965794e60a3ef718b512ae908cb4b92d2c46e8a73060f7186ce"
+  }
+]

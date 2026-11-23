@@ -1,0 +1,85 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "host_keyboard_input": false,
+  "gui_sha256": "4490112e91355a50d70009fbceb4fb173b39fe5400bc2ce982ded7b1a87a86df",
+  "test_script_sha256": "afbacc084698e7419bd3d9a35bfca673af3077c56fb807a8db7a6288e39aec3f",
+  "profile": "release",
+  "checks_passed": [
+    "Performance choices recover from an empty first report and a user click reaches the actual fixture backend",
+    "profile choices add and remove currently advertised options without restarting or submitting a write",
+    "manual and curve editors recover; saving reaches the real daemon and unsaved changes immediately block curve activation",
+    "lighting initializes from a valid fresh readback, preserves edits through read failure and applies the observed animation without resetting it",
+    "charge threshold appears after startup, follows actual readback and preserves a distinct requested edit",
+    "stalled daemon expires every dependent action; recovery retains native editors and edits without implicit writes",
+    "a new zone layout refreshes matching controls and explains that current values were loaded",
+    "graphics inventory and runtime state refresh from actual fixture PCI files and incomplete discovery remains explicit"
+  ],
+  "write_operations": [
+    {
+      "op": "set_profile",
+      "args": {
+        "profile": "quiet"
+      }
+    },
+    {
+      "op": "set_fan_curve",
+      "args": {
+        "curve": {
+          "points": [
+            {
+              "temp_c": 40,
+              "duty_pct": 30
+            },
+            {
+              "temp_c": 55,
+              "duty_pct": 40
+            },
+            {
+              "temp_c": 65,
+              "duty_pct": 60
+            },
+            {
+              "temp_c": 75,
+              "duty_pct": 80
+            },
+            {
+              "temp_c": 85,
+              "duty_pct": 100
+            }
+          ]
+        }
+      }
+    },
+    {
+      "op": "set_lighting",
+      "args": {
+        "state": {
+          "zones": 2,
+          "colors": [
+            {
+              "r": 255,
+              "g": 0,
+              "b": 0
+            },
+            {
+              "r": 0,
+              "g": 255,
+              "b": 0
+            }
+          ],
+          "brightness_pct": 75,
+          "animation": "static"
+        }
+      }
+    },
+    {
+      "op": "set_charge_threshold",
+      "args": {
+        "pct": 85
+      }
+    }
+  ],
+  "cleanup_complete": true
+}

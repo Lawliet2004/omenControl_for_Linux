@@ -1,0 +1,17 @@
+{
+  "crates/core/src/capability.rs": "5049d1256ca4951db854b33af7b5753cda113bf18e175c6b308f0b7ec50f5529",
+  "crates/hardware/src/detection.rs": "dda444357a884bb26ff4672c975d657a4187e54e4ec408a0d328199c1ca735fb",
+  "crates/hardware/src/backend.rs": "70c8558e11966596f0465663b978c9f3d110761d9da30e75794b598d51161ed3",
+  "crates/hardware/src/fans.rs": "bf1e9cd316993ccc81f0b2e501c31dc7340fec3326033e2e3f88f10a47249717",
+  "crates/hardware/src/mock.rs": "b0cdb1c4e481f4697785d0302267c1419326c0af735b5ef94fef7f3fa504f9f9",
+  "crates/daemon/src/service.rs": "cac5cc502a2ec765696838c9b4d32e8630c68195cac9684f94a01bddabf3100b",
+  "crates/daemon/src/fan_guard/files.rs": "73a55444b070dd0513d58ec7ecba7e69bb09332e8117a4098f378c6818d26c90",
+  "crates/daemon/src/fan_guard/wrapper.rs": "aaa8939cf1da6951ff946c8f973ea033ec69c09dc2a8031a6cfec529da9e38e7",
+  "gui/src/data.rs": "8dfbd49229c89526453d1061e0ebb3af96c4e739865068fcc741cf2f1b59af3e",
+  "gui/src/pages.rs": "82d5c03a659e4a85de6f20660809728633ef06adbed6073bbd7a4060e07dd632",
+  "tests/fan_modes.py": "9e0de8d73d79431d28d1ef81d3ce715c484dfd58e672ba1542f89e7d8d265ff1",
+  "tests/fan_monitoring.py": "d67085e81c5e828104651927c4a73dfff366192af40186441344a3e2a983cc87",
+  "tests/fan_guardian.py": "000bc86fefe73ee513af1aae21724a98146237adc1379f98ae623a319dfd08e1",
+  "packaging/build-deb.sh": "87f7efdb6ee6f6930f58a407f9e3c6fd21e3d01b6604eb63de69043c1130471c",
+  "packaging/debian/changelog": "bbd7da1cbf1e04ec634e48bfebf04d08d3a36ae4dfac8b678cab120b45c87ef6"
+}

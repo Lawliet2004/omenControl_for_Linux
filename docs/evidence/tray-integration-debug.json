@@ -1,0 +1,15 @@
+{
+  "host": "running KDE StatusNotifierWatcher",
+  "profile": "debug",
+  "requested_gtk_backend": "auto",
+  "gui_sha256": "5846b75a234214e7fa33322fb202527b5a3adfdff36796909adacae049191109",
+  "live_hardware_writes": false,
+  "checks_passed": [
+    "real KDE tray: read-only menu, Hide, Activate, page navigation, clean Quit",
+    "startup preference hides only after tray registration; menu restores window",
+    "no tray host: start-minimized falls back to a visible GTK window",
+    "private-bus host loss reveals window; host restart re-registers without hiding it again",
+    "fixture only: tray capability changes remove and restore profile actions without a profile or visibility change",
+    "fixture only: tray profile changes reach daemon and restore Balanced"
+  ]
+}

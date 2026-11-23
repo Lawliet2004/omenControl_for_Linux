@@ -1,0 +1,752 @@
+[
+  {
+    "path": "omencap/1.0.836.0/Setup.bat",
+    "bytes": 4537,
+    "sha256": "f28e03ea718bb83bf0caee34d7752fe9c64935101db9f8aae22da30ce3bc1a6c"
+  },
+  {
+    "path": "omencap/1.0.836.0/base/hpomencustomcapdriver.inf",
+    "bytes": 3709,
+    "sha256": "17a21c43f2d8ea81777cb91c4ee1275f40e5aa9699828369a98ec1c23878eec8"
+  },
+  {
+    "path": "omencap/1.0.836.0/base/hpomencustomcapdriverx64.cat",
+    "bytes": 11712,
+    "sha256": "d5406a66e6ffca14bafb48236b5f747103e712642ea6176a9baa4b29a67149ea"
+  },
+  {
+    "path": "omencap/1.0.836.0/base/hpomencustomcapdriverx86.cat",
+    "bytes": 11804,
+    "sha256": "56cb6fbc7ef889896e1d042c75fa120697129af582b06907df9817e7c2a81923"
+  },
+  {
+    "path": "omencap/1.0.836.0/base/x64/hpomencustomcapdriver.sys",
+    "bytes": 24968,
+    "sha256": "31c1473b664119d84165a90f79fba6d95f5407ec1680518fd1bf434941b27f42"
+  },
+  {
+    "path": "omencap/1.0.836.0/base/x86/hpomencustomcapdriver.sys",
+    "bytes": 23432,
+    "sha256": "6b1b8dc6e9c730ed1fc55312b1eb9d7cc865d216ef0b97058e99d700625418b7"
+  },
+  {
+    "path": "omencap/1.0.836.0/drvinst.cmd",
+    "bytes": 2352,
+    "sha256": "9a8a64183154515e7de7953481fec37968711442d4cbd98a200c743bd0ce880b"
+  },
+  {
+    "path": "omencap/1.0.836.0/ext/hpomencustomcapext.inf",
+    "bytes": 2897,
+    "sha256": "aad7482c236c69c0516dc7755bdf31382934bb97c8e4aad1a200ed0b20cfb783"
+  },
+  {
+    "path": "omencap/1.0.836.0/ext/hpomencustomcapextx64.cat",
+    "bytes": 10734,
+    "sha256": "d294733a06d1d0d3d90e2992d866fecf98953642fe2891c03684ad435892acba"
+  },
+  {
+    "path": "omencap/1.0.836.0/ext/hpomencustomcapextx86.cat",
+    "bytes": 10823,
+    "sha256": "c0b2b4b11c84e40fb3907b5cb7e7a097a01afef19b79dab004240ec27842c589"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/hpomencustomcapcomp.inf",
+    "bytes": 6884,
+    "sha256": "fbe151f0bebf2e4680673fced56b8ce214dcde33c65cf426e17d4f4ade70f2c0"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/hpomencustomcapcompx64.cat",
+    "bytes": 21860,
+    "sha256": "44a67935a0e40e95831cd958a098ae276a610f86630ceb4c29e2e4fded0eea67"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/AmdRyzenOverclockingService.dll",
+    "bytes": 147552,
+    "sha256": "b4e57225c590f7c13ed9b7b4a905f04e221cf4fc9dad3d02dd2658a3bc9f8c6b"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/Device.dll",
+    "bytes": 1032480,
+    "sha256": "643b8cd29ef42d9a79b95a966fb52cab7528911fa7351a492d4b1f748d01309f"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/HIDService.dll",
+    "bytes": 83040,
+    "sha256": "f461a50fc75760e3fba61d8409487e72e04b39a564cd975d136a1f7343acc38d"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/HPAnalyticsNativeClientLib.dll",
+    "bytes": 176704,
+    "sha256": "802f089e79fe599afc6643639e0219da5a5d14133bafd1ec5fccef4a50fbbbba"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/HomeInfoService.dll",
+    "bytes": 121408,
+    "sha256": "e6a2970da9710d3333eba0e4dfd778100d012c739cea23c0db5d310e42d0fde4"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/IntelBenchmarkSDK.dll",
+    "bytes": 70032,
+    "sha256": "3af6f7820ffbadb554d751b437c69b2da42d217b3ad48e50cf335c8909836e27"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/IntelOverclockingSDK.dll",
+    "bytes": 778640,
+    "sha256": "90d671c4323ff31e8ce36a38bd3e54f57f4621bf053c1d8324a356ebffea18fb"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/IntelXTUOverclockingService.dll",
+    "bytes": 109632,
+    "sha256": "7fd68a5bcb47d67077e6f01f57b91eee79f8f3e868d7fa7be53dd02c87ce0735"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/Logging.dll",
+    "bytes": 70232,
+    "sha256": "97bf697bc0cdf66fe94b8ad5ddafaf7276165b3dc7e2a90385080cbe46f1483d"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/OmenCap.exe",
+    "bytes": 876616,
+    "sha256": "b82df6308adb65f41783b09f4982e6a54a854214af0825135ec75120e3e402d8"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/Platform.dll",
+    "bytes": 73480,
+    "sha256": "073f17ab56b6580ab81d6f776d8b55622e02b824ad5e6025ea08abbb3c03fb0c"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/ProfileHelperModel.dll",
+    "bytes": 39336,
+    "sha256": "6a89b8989b00631d693840079b46d4b9adae76e2c4a2a32b908ac7c731086504"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/RealtekNetworkingService.dll",
+    "bytes": 83552,
+    "sha256": "d257813dc63ed191eb7dc29a390c9be5eb82fb0b689709e596aae2a5f5a0dd8c"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/RpcClient.Native.dll",
+    "bytes": 111200,
+    "sha256": "71e387ac793dffe7b84bd727799e088134ed053d47932f7f16636f1c2412320f"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/SdkWrapperForNativeCode.dll",
+    "bytes": 414280,
+    "sha256": "297b8ad03967087885a4f71cabf8b8008149d937a69f02476e1e2a2cd4b2a3c5"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/XtuBenchmark.dll",
+    "bytes": 229744,
+    "sha256": "9be38d9044903f1a7ef89b469422c452d517dc30202bdcdb5267032bacba2332"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/XtuCommon.dll",
+    "bytes": 289160,
+    "sha256": "4b0dda4392bd5a495747a5894804453bdde23b14de3ba761825c2f11a5bbdc87"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/concrt140.dll",
+    "bytes": 323648,
+    "sha256": "a1136c7003308f44e80f91a5c7a98d407efb2c8815d365ced764edd5ae527417"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/msvcp140.dll",
+    "bytes": 576576,
+    "sha256": "dc9e99f556c0aeef31de52e0a69389f297a09c96f482e6430378fd4a3e6eec6a"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/msvcp140_1.dll",
+    "bytes": 36928,
+    "sha256": "2029efdea12248492d800d61eecb6a1293d8ab352c48d55bce73fb9e653bf5e4"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/msvcp140_2.dll",
+    "bytes": 268864,
+    "sha256": "8e385eca88bfd0da364f3bf93d9d417589ecb434f0ed45707d6eacfb211b09a5"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/vccorlib140.dll",
+    "bytes": 352864,
+    "sha256": "02557ed9dfa00d569e345ac956356640423f74fef7364770c4e89b589161b385"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/vcruntime140.dll",
+    "bytes": 121440,
+    "sha256": "d2ca1acd08f80f267d3c1aac6de76a64d1f8ff780c5ec794d41e242841e51d58"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/vcruntime140_1.dll",
+    "bytes": 50760,
+    "sha256": "f8c629a93c708c96bc60092098fa9dd775ee6dc82d57872679509c0d1d853dd7"
+  },
+  {
+    "path": "omencap/1.0.836.0/hsa/x64/OmenCap/vcruntime140_threads.dll",
+    "bytes": 39496,
+    "sha256": "1f343add6b31a7c835cd99115e873441e9f2f7a2814a7a6eca7bd7343af08261"
+  },
+  {
+    "path": "syscap/1.82.4285.0/drvinst.cmd",
+    "bytes": 2986,
+    "sha256": "a0bea60f1df8ac415e85f413a12bee8353aae704c4450456eb915e68d9a38a42"
+  },
+  {
+    "path": "syscap/1.82.4285.0/hpcustomcapcomp.inf",
+    "bytes": 28442,
+    "sha256": "0ab8965397bda49fe7acc5af4f45c0b625718f7647f762f65e5c316d25e4b0b3"
+  },
+  {
+    "path": "syscap/1.82.4285.0/hpcustomcapcompx64.cat",
+    "bytes": 55470,
+    "sha256": "8b359d6f5986a7498ebf5bd21759ebd5725c08913a44434a8c92a2dc9ff6543f"
+  },
+  {
+    "path": "syscap/1.82.4285.0/hpcustomcapdriver.inf",
+    "bytes": 5161,
+    "sha256": "9b9c08640ae90a50034286792c21e8d64fd3c1134e82810c160af8abfec46a59"
+  },
+  {
+    "path": "syscap/1.82.4285.0/hpcustomcapdriverx64.cat",
+    "bytes": 11464,
+    "sha256": "3a2d6804be50ade492e823a8eb2c03a9355d6b44497f274d5a4c19dadd7cd731"
+  },
+  {
+    "path": "syscap/1.82.4285.0/hpcustomcapext.inf",
+    "bytes": 3630,
+    "sha256": "0bc4399a258c981b8ac76d96e3a14b4c808250d090211d6bb3f2972a674e8991"
+  },
+  {
+    "path": "syscap/1.82.4285.0/hpcustomcapextx64.cat",
+    "bytes": 10854,
+    "sha256": "a9bd1a55af391193278c5407c2848c51065a195016bd2c55429bdc73d7466097"
+  },
+  {
+    "path": "syscap/1.82.4285.0/oobeparts/oobe1.txt",
+    "bytes": 2390,
+    "sha256": "e16b500b5419677b3f192d79a24f58fcb1f145a253e155aa00c11a601b94edcb"
+  },
+  {
+    "path": "syscap/1.82.4285.0/oobeparts/oobe2.txt",
+    "bytes": 2390,
+    "sha256": "87dac11d2ebfcea68b549a5aa3959f965c1eb2d150a245c962e1639034ecd6e4"
+  },
+  {
+    "path": "syscap/1.82.4285.0/oobeparts/oobe3.txt",
+    "bytes": 2390,
+    "sha256": "326306c297ff8e02b94b8abac4c52e5a5a68ac251c8dc60bbf5215a0ca15aa42"
+  },
+  {
+    "path": "syscap/1.82.4285.0/oobeparts/oobe4.txt",
+    "bytes": 2390,
+    "sha256": "db87183b6b6a792809e69ecf276fe1b8ed575d0d3c5f59d4736759b632cc4f89"
+  },
+  {
+    "path": "syscap/1.82.4285.0/oobeparts/sub1.txt",
+    "bytes": 70,
+    "sha256": "31779d9e77625e88347289df3a6f29eb79b39692c75190d2d400e12bbd2dd027"
+  },
+  {
+    "path": "syscap/1.82.4285.0/oobeparts/sub2.txt",
+    "bytes": 70,
+    "sha256": "24cc0309f0cfcb6133c44613f03dacc1a28bf82abc8220d256b6a910cd96e003"
+  },
+  {
+    "path": "syscap/1.82.4285.0/oobeparts/sub3.txt",
+    "bytes": 70,
+    "sha256": "2df52232a52f2aed4bd972b167e801f6dc55d51716da2f6faf7928f754804cb0"
+  },
+  {
+    "path": "syscap/1.82.4285.0/oobeparts/sub4.txt",
+    "bytes": 70,
+    "sha256": "3a3f82b21bfc59df8847bdfad521c1e753509fc5d0c8ced30d3b4423619442dc"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/AnalyticsService.dll",
+    "bytes": 766648,
+    "sha256": "6df222f6cd8c9cf99bc4042a4ec7590db7a810948c2bece734ec9da2e101af4c"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/AppHelperCap.exe",
+    "bytes": 909488,
+    "sha256": "b094b95aa22f107dcbc9c38401f875af2dced3ee4d87531494a6652e97a1aeff"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/AppHelperCap_HPManifest.p7s",
+    "bytes": 10450,
+    "sha256": "2fcc2f114fe3bbbc9ee841da9c490110f8065de2f8e46181b90c279230e2eab5"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/AppHelperCap_HPManifest.xml",
+    "bytes": 2113,
+    "sha256": "ba67f87e043456cbef8a81919b71fa9349015b808447e3666b149078f852df67"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/AppServiceProxy.dll",
+    "bytes": 60576,
+    "sha256": "a0db6d599debb691956e0771d3cab9b191ac7bde5318b4abb2ebacaf999d9640"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/AppServiceProxySDK.dll",
+    "bytes": 470680,
+    "sha256": "5cf190a61f68b2228919a546d459e425cd93d8d08c07449dec47743867be342e"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/AudioService.dll",
+    "bytes": 119456,
+    "sha256": "d4d6267064fe3f3830289a1fe31fc70c215634577fca1103f4c458a22ae731d1"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/BatteryService.dll",
+    "bytes": 104632,
+    "sha256": "75ba24027f0066c1b6516c06c594140e4f3d9aca2f1462b7b51e70855932079c"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/BertService.dll",
+    "bytes": 72054456,
+    "sha256": "6a1055af5f1508d8b23d92c7bfbd7a09eaf062c8924ef38fd6efebb31273bc54"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/BertServiceComponentTests.exe",
+    "bytes": 73127600,
+    "sha256": "126d0d0f657691134093d9da0aa6c72cedadcc00ac7a8c00bb55c02adf597763"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/BertServiceGTests.exe",
+    "bytes": 1079968,
+    "sha256": "e79622ced570c627abdb4ea1bf53d2a45d5f5ed298ceb894e4fe8b6ad3dfe4f0"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/BingService.dll",
+    "bytes": 139424,
+    "sha256": "7c6ac60c8bd92621366548965a7dc385b4b13def3e651d6088e23c9c0da4c475"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/BingServiceLib.dll",
+    "bytes": 235672,
+    "sha256": "31287a574db4455d07907c9aeb8f61e6d7c16a40eb3e50b173841291c6622c8e"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/BridgeCommunication.exe",
+    "bytes": 840880,
+    "sha256": "64565d277abc952aab68cc02a57e1afab9f3febbf4c8d31b111ab469cbeedda7"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/CDXDeviceDetectionService.dll",
+    "bytes": 81072,
+    "sha256": "9c2ea17752ff029a73b076686b45f0646efa8f951d51ae780535bb74687e5873"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/CDXService.dll",
+    "bytes": 72368,
+    "sha256": "7de0855abc64fbf4d7b9f98819ceb952be1a7d52bf833097a50c0dbd20bbe525"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/CPUService.dll",
+    "bytes": 71320,
+    "sha256": "813d6aa5f14991d7f021123bdb3da1aeacada507ca3017f94118514807ad6d7f"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/CameraService.dll",
+    "bytes": 73912,
+    "sha256": "ef84bb990b4a43771616924eeec02fdd4db270b47e82996ae6391a7bee26748c"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/CryptographyUtilityService.dll",
+    "bytes": 146592,
+    "sha256": "9091fbf4c14ec9f49d4b726d7ab72c023466acbb73b3e39c0cb5318489938d70"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/CustomTriggerService.dll",
+    "bytes": 91808,
+    "sha256": "e5b1dfbeead5df7e734cb57e319467dd86e1ba0a01e03bdae6acefaef4d69a2f"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/DeviceControlService.dll",
+    "bytes": 795288,
+    "sha256": "5d44f6d64369572bd15d083b4263f2f85a140865f4583dfb01ac9011a3e17d81"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/DeviceControlTool.exe",
+    "bytes": 523416,
+    "sha256": "9167dc5316878bacba7d949264f221de3c612701215f21176c7c10f26df8531e"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/DeviceDetectionService.dll",
+    "bytes": 341664,
+    "sha256": "96166d5c710c9cce84c44410fce57c37eba8b80179d6001e04e677ab4ea6c603"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/DeviceService.dll",
+    "bytes": 80544,
+    "sha256": "d0a6c4b4c8eb1844b078061d1f463d2e6551d21336bcfcafbedb334d1816497f"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/DiagsCap.exe",
+    "bytes": 907936,
+    "sha256": "d469339709b3c98897d1bf26b464112ea1367b968fefb1e07c992508031c5af0"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/DisplayControlService.dll",
+    "bytes": 443552,
+    "sha256": "16a3bbf41643fa4a050fcc8165a8c4ded4108ecf71062e3ded4f5d89a3da3c6c"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/EasyCleanService.dll",
+    "bytes": 71832,
+    "sha256": "7de423b4de9ca356877c709a7df7c77557b19da3b54747f03d03464573b5720d"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/FileSystemService.dll",
+    "bytes": 559256,
+    "sha256": "51544cde1d163447df0cdbb17cdcf692dc53626271474f2b21040d4e4cf39a1f"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/FirewallService.dll",
+    "bytes": 77984,
+    "sha256": "f759a435886e94f7b5664d214d21c7f885e60b7d038581c7b2d67cdcf4dca0db"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/HPCDXSrvcMgr.dll",
+    "bytes": 2840456,
+    "sha256": "ed46e9910662044592ffbb2b689ab2efedcca9b2004c1ab39b77597d407d8bc1"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/HPCDXTestsAudio.dll",
+    "bytes": 717128,
+    "sha256": "6d5147fcea9d648adf6d57773b1fc414183942f4084fd1ba3272ad73885bf309"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/HPCDXTestsCamera.dll",
+    "bytes": 175920,
+    "sha256": "d7ff6ba4348d24c3992848a344bbea5bcc683ad4235a930322c9bc505c50adb6"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/HPCDXTestsCpu.dll",
+    "bytes": 824680,
+    "sha256": "87b077c5f68c4c3c3381f40a361c9c52a12e17b1b52d36327e1ca58cecd9f4d1"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/HPCDXTestsHDD.dll",
+    "bytes": 855848,
+    "sha256": "efdbdf513893c177c9fa8ecd84013d75ba3538163dc1aafc50491671473b92f1"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/HPCDXTestsMBD.dll",
+    "bytes": 785704,
+    "sha256": "3069abb06c6cc63976ef05938258ffcb892dfce90f0bb19f3614d5c1408fc5a4"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/HPCDXTestsNIC.dll",
+    "bytes": 927048,
+    "sha256": "4a9be043072f2c96f1fe77f88c7667635857211f3e5d06c281d758772967a553"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/HPCDXTestsVideo.dll",
+    "bytes": 1080200,
+    "sha256": "9417f45055c01e75dbe9692fcac3e3a302477edf99c5f33c093073af8ab7c06b"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/HPDCSetup.exe",
+    "bytes": 5496088,
+    "sha256": "75a5ee4781bd402fadb6ba9f3671831e76f6bfaf326974719c05cbc8f67ebbe6"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/HPOneAgent.exe",
+    "bytes": 72310440,
+    "sha256": "b3410c0c363f8de3d198f18116b3e5eccc175a024c2f95c07c91938f1ad8a244"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/HapticTouchpadService.dll",
+    "bytes": 70328,
+    "sha256": "0475a730aa1565fd2069cd8ca377017daca51dd7e46febe26dab19289af29375"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/HomeInfoService.dll",
+    "bytes": 130232,
+    "sha256": "80351ae9d5c5a8a1c3066e24c674bf5de1d3684e50a5efa33e701c817ec7373b"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/HttpService.dll",
+    "bytes": 418976,
+    "sha256": "a3745560b0da52a9aa96b59d1a16f24358adfbf8cd55f2156d86f1cc82b025bb"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/IntelICService.dll",
+    "bytes": 133816,
+    "sha256": "1ee1df61c3a8ea938af3f136f5dad8ee5955b1d8a282b257b4b1cc3b5907aeae"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/InternetProxy.dll",
+    "bytes": 909984,
+    "sha256": "2169d0b0bf7971818158511239a6e6509fdfe16ec3580f235eaae347fd365f54"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/LauncherService.dll",
+    "bytes": 514208,
+    "sha256": "8dc0313fc1a411fa2a4055462374b5799c75bb8925adeaace7b2eee543aeab8e"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/Logging.dll",
+    "bytes": 62616,
+    "sha256": "e94cba40743b320fa50f7158f6c34f0ec8cbf89b4ad305fb339317dab5804b57"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/MOZFileDecompressor.dll",
+    "bytes": 49328,
+    "sha256": "b045003e65f265140c60feb30a1440dee48bdcdd7387017e5783f34e35b954f8"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/MassStorageService.dll",
+    "bytes": 71864,
+    "sha256": "e408f2881c7c54fca38fe98812d16cf2099dfe462f705c3cdbc3f6eafb4b73ec"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/NDFService.dll",
+    "bytes": 86176,
+    "sha256": "2a39a38aa8c2794cee37b9382f323d9166be09ce43374e95ed0617ac39806678"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/NetworkBoosterService.dll",
+    "bytes": 103072,
+    "sha256": "19fa9df1e7dcbe0d8ef1faeefcb660bcac579cc0aff1b3e5b24a33ef6553cc02"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/NetworkCap.exe",
+    "bytes": 903832,
+    "sha256": "36bac9d782ea87cb98715bbcb8ceffaa28f85c252adcf08f5c65ab52a5d777e2"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/NetworkCap_HPManifest.p7s",
+    "bytes": 10450,
+    "sha256": "7ff483c3c12ce34bd302810038f8de3509412e401bb814ed884ada21c4269804"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/NetworkCap_HPManifest.xml",
+    "bytes": 2202,
+    "sha256": "15de052109005fd3f7ba2655c7d2dda495b2ac6ae0d138dee4b274ade8916ae3"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/OneCAInstallerService.dll",
+    "bytes": 591032,
+    "sha256": "0043bf330c4ee60e01c98da3e6b752adcc6f7d7135f8be26f0e5e4c98825cd69"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/PowerManagerService.dll",
+    "bytes": 165024,
+    "sha256": "d56fe0f190bd880ced34a823c482c83b5def83314424c191ca0273356a119382"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/RegistrationService.dll",
+    "bytes": 813240,
+    "sha256": "a3c5c7156fc482784fbaa6dcec8863415fc5787f15f287599c0277d684cfb1e1"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/RpcClient.Native.dll",
+    "bytes": 117424,
+    "sha256": "6a37cac0a5fe7ed58a6ca93fa44af47efe4d135e2c7d12dc7b2eba9d6da2962b"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/SMBiosService.dll",
+    "bytes": 100536,
+    "sha256": "671c7dccea5a918c010cef9c8035cd9d7fc098a2ce72ea53563b10b371df8e4b"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/SmartCameraService.dll",
+    "bytes": 128160,
+    "sha256": "02eeb62d73f7ee4cb4cd5e4b5305c7e541317c73a73eb8eb965516bc9e610f7a"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/SysInfoCap.exe",
+    "bytes": 909496,
+    "sha256": "d98687f11ac8777086de9a08fb421a59ccf46c6335d01edb91dfacebbe4d8297"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/SysInfoCap_HPManifest.p7s",
+    "bytes": 10444,
+    "sha256": "23cdb519cbab209645e54c475c55c9b3bf9fdc0b4a4ef3519e7d60a268f70386"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/SysInfoCap_HPManifest.xml",
+    "bytes": 2372,
+    "sha256": "fbebb5fe2217027a52c4d149232e1e1cab688aad32bcfed17a355e0cc53c9f70"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/SystemPropertiesService.dll",
+    "bytes": 831664,
+    "sha256": "efa192db8b068e565a1ba84f9d5d385bc9041542d97a7361f3009bc094101555"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/TimeOfFlightService.dll",
+    "bytes": 47776,
+    "sha256": "8b0cb3f48cf8d52f628b65fa75267fa779f10a9a2266d0ff87d1366316bb748e"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/UserInfoService.dll",
+    "bytes": 66208,
+    "sha256": "f7290274247254aebbfc4166301bdfc4d12c0944b6464c284b749a16e37ca9ab"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/VideoService.dll",
+    "bytes": 71864,
+    "sha256": "810016a0248b41c7338e049087ff66413cb09a4c953728dd4347ceaf966eb516"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/WMIService.dll",
+    "bytes": 204984,
+    "sha256": "72db299433f7744e24439fff263d1fab1478bc2557d1deff28d3f206176a7c1b"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/WindowsNTService.dll",
+    "bytes": 80032,
+    "sha256": "899813432fe7614a790dc029268a8378cbfc2c3e7684bd09f4e96367bad31e4b"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/WindowsRegistryService.dll",
+    "bytes": 122528,
+    "sha256": "e77b550f7063884f4b604d27fffa91f6cc13f4f95b45642932d69af5f7e54167"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/concrt140.dll",
+    "bytes": 334512,
+    "sha256": "b0c8fc7741b4a90535962468034c3eb4672f3be39a1c592a85e17aafac559271"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/eAIService.dll",
+    "bytes": 234144,
+    "sha256": "6275446b60a662e033b2b58c0c04f054e1b986c7e9a659ea4877e127bd31f55f"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/glew32.dll",
+    "bytes": 485024,
+    "sha256": "d0bea29fd5b4d1f8edc1e562a86144d68ab85c4e4bab7b7293b99c37deb536d5"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/glfw3.dll",
+    "bytes": 252576,
+    "sha256": "0472f9f7753fccfeaf5e5e1e5e247ccfbab44e56072f4f1e5f40129287a91da1"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/hpcustomcapdriver.sys",
+    "bytes": 36424,
+    "sha256": "4185515ef51a3e6ad018e768cf3b077d3e8b1e884d85c3a2db31f43a086f2bdf"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/hpdc.dll",
+    "bytes": 253536,
+    "sha256": "9d464e7d2c046d96ef96d2d791421859b805b77d4ad18ef7edf73a366c17888b"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/msvcp140.dll",
+    "bytes": 567416,
+    "sha256": "c1b7026ab45bc577ff18eb36024b2bcd79f0604f22e49e00f556a5b3530411d3"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/msvcp140_1.dll",
+    "bytes": 45744,
+    "sha256": "db95885ae03ba0faf6ef8b8ecc1ff411ba5c29914592ba3c6a75f23dab801c60"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/msvcp140_2.dll",
+    "bytes": 289944,
+    "sha256": "262041eb0d393bc7eef404d5a929988c76ddbdbf13e193ab847a7edeaea6a806"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/msvcp140_atomic_wait.dll",
+    "bytes": 60056,
+    "sha256": "32929975092b5b8251663b1ad6f7d7b3ff556024b00e8aa39317fe8baafc7571"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/msvcp140_codecvt_ids.dll",
+    "bytes": 41648,
+    "sha256": "5c70dafb698113fe8623f93383bb59e6fac32bb11897cb3dc0d5cc2ec144f0b2"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/nvml.dll",
+    "bytes": 1193104,
+    "sha256": "1a47c09331d350dc55cc6b00fa6796b5f9bc4b1ed4344eca31e8ae787b104921"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/onnxruntime.dll",
+    "bytes": 11579480,
+    "sha256": "a198673192891fd445663892d61d8b1972b3ba3a0ddbbc6670cbf639f2ef7f26"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/onnxruntime_providers_shared.dll",
+    "bytes": 31832,
+    "sha256": "8eff8112784e9f2a7399960d01b83408cba331ceeaeec87934f500480e6e24bf"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/openvino.dll",
+    "bytes": 14312864,
+    "sha256": "d40c4a8df9b2ef8028ba0745182fb0109a49181f4a4ea7ab710eab7fcef91ef2"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/openvino_auto_plugin.dll",
+    "bytes": 467016,
+    "sha256": "44f0b24b77dd7234f81e2314b4f9eced837c7c2117289a50cc83f9a75d481aa6"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/openvino_c.dll",
+    "bytes": 200768,
+    "sha256": "efbbefed5337a4b8a547b09a760280fb121d12a76ce4c4c826c6f39c294a592b"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/openvino_cd.dll",
+    "bytes": 1027504,
+    "sha256": "e32c436598e2e723b00a00eeea5b7b105900836d2f496a136b4c75b489d734df"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/openvino_intel_npu_plugin.dll",
+    "bytes": 2836896,
+    "sha256": "0d85de2114e4c3c21a3708977b4faca7ac70ddb512aa4a71469b99b31c1d00db"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/openvino_intel_npu_plugind.dll",
+    "bytes": 12324256,
+    "sha256": "64e71dcf89fccd5c1690202fffcd3a7168ad2eac3ee05b819f1c07e9b8d69cc5"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/openvino_ir_frontend.dll",
+    "bytes": 446392,
+    "sha256": "227499952685976f340e818419b28335094e29e116aecdc076e63090d1e9d7c2"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/openvino_ir_frontendd.dll",
+    "bytes": 2447776,
+    "sha256": "06cf14cfc7bf790dafee7240ea3a15b2121ecf33b2cc476c98a6fde97528cabd"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/openvinod.dll",
+    "bytes": 45822904,
+    "sha256": "48869b3c237054405a213982d0324bc57a9a1458a8bd7a6a92c03864b65a0a38"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/tbb12.dll",
+    "bytes": 202680,
+    "sha256": "970a66fd01b08b3f9b55d4f9d867f2b73db82b1fb71b1f76ee3c04b03c6d09a8"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/tbb12_debug.dll",
+    "bytes": 785312,
+    "sha256": "ca4799c2030b477b33112f39bcf3ef01112d62c78fd9d69ece294fa4a7b09c6a"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/vccorlib140.dll",
+    "bytes": 362104,
+    "sha256": "7e75428ec05b25942d39fe206b74843c5400399ada1d8e0c366a872bd9d02a1f"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/vcruntime140.dll",
+    "bytes": 134264,
+    "sha256": "025a0b64209d3baa92c84c1f690035d4d983150f471eaacb4f4ff762530fe4e9"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/vcruntime140_1.dll",
+    "bytes": 59512,
+    "sha256": "452635fff38ea537b860a792fa4b5af44a3c540bc136a67204d84540e051eb9a"
+  },
+  {
+    "path": "syscap/1.82.4285.0/x64/vcruntime140_threads.dll",
+    "bytes": 48248,
+    "sha256": "8870e981b2cc81f24feef4f22638fc935d6722a571f0129b49459836fc7afd5a"
+  }
+]

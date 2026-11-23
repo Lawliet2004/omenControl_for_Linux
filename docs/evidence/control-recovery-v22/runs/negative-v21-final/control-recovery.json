@@ -1,0 +1,390 @@
+{
+  "result": "failed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "host_keyboard_input": false,
+  "gui_sha256": "212c0cb61a18bbcd07652d846e4e3e38fcf50d4afcda1ff0121b53797bb3b7ee",
+  "test_script_sha256": "b5cb1a6db773c8e73b538df9ee928a322bccede5578d1378718d6f772221f0ac",
+  "profile": "debug",
+  "checks_passed": [],
+  "last_nodes": [
+    {
+      "role": "application",
+      "name": "omen-gui"
+    },
+    {
+      "role": "frame",
+      "name": "OMEN Control"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Show or hide navigation"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Performance Control"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Application actions"
+    },
+    {
+      "role": "button",
+      "name": "Fixture"
+    },
+    {
+      "role": "label",
+      "name": "Fixture"
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Minimize"
+    },
+    {
+      "role": "button",
+      "name": "Maximize"
+    },
+    {
+      "role": "button",
+      "name": "Close"
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": "System Vitals"
+    },
+    {
+      "role": "panel",
+      "name": "Performance Control"
+    },
+    {
+      "role": "scroll pane",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Performance profile"
+    },
+    {
+      "role": "label",
+      "name": "Backend: platform_profile sysfs \u2014 sysfs platform_profile (hp-wmi thermal profiles)"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Profiles are offered by the selected Linux backend. Their effects depend on the driver, AC power and firmware."
+    },
+    {
+      "role": "panel",
+      "name": "Fan & Thermal"
+    },
+    {
+      "role": "panel",
+      "name": "Lighting Studio"
+    },
+    {
+      "role": "panel",
+      "name": "Graphics"
+    },
+    {
+      "role": "panel",
+      "name": "Battery & Power"
+    },
+    {
+      "role": "panel",
+      "name": "Game Library"
+    },
+    {
+      "role": "panel",
+      "name": "Settings & Diagnostics"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "scroll pane",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "OMEN Control"
+    },
+    {
+      "role": "list",
+      "name": "Pages"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Dashboard"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "System Vitals"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Performance Control"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Fan & Thermal"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Lighting Studio"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Graphics"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Battery & Power"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Game Library"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Settings & Diagnostics"
+    },
+    {
+      "role": "label",
+      "name": "Monitor"
+    },
+    {
+      "role": "label",
+      "name": "Controls"
+    },
+    {
+      "role": "label",
+      "name": "Library"
+    },
+    {
+      "role": "label",
+      "name": "Application"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "source: MOCK \u2014 fixture data, no real hardware"
+    }
+  ],
+  "write_operations": [],
+  "error": "RuntimeError: profile choices did not recover after initial unavailability"
+}

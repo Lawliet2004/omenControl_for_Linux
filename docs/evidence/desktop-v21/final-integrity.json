@@ -1,0 +1,19 @@
+{
+  "3278700": {
+    "cmdline_unchanged": true,
+    "start_time_unchanged": true
+  },
+  "2124598": {
+    "cmdline_unchanged": true,
+    "start_time_unchanged": true
+  },
+  "2563": {
+    "cmdline_unchanged": true,
+    "start_time_unchanged": true
+  },
+  "container_unchanged": true,
+  "launcher-expansion_evidence_files_verified": 202,
+  "deployment-v20_evidence_files_verified": 48,
+  "original_unknown_overlay_preserved": true,
+  "own_prior_debug_inputs_removed": true
+}

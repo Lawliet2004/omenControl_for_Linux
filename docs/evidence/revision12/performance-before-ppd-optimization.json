@@ -1,0 +1,28 @@
+{
+  "method": "release binaries; 5-second windows; CPU percent of one logical core; page-cache-warm launches; live read-only monitoring",
+  "cpu_count": 12,
+  "cli_detect": {
+    "runs_seconds": [
+      0.2736239710066002,
+      0.22442236199276522,
+      0.22513802701723762,
+      0.22737529300502501,
+      0.22628864599391818
+    ],
+    "median_seconds": 0.22628864599391818
+  },
+  "daemon_socket_ready_seconds": 0.010861264978302643,
+  "daemon_idle_no_clients": {
+    "seconds": 5.000656668009469,
+    "rss_kib": 2596,
+    "cpu_pct_one_core": 0.0,
+    "reaped_children_cpu_pct_one_core": 0.0
+  },
+  "gui_window_map_seconds": 0.9986639330163598,
+  "gui_monitoring_dashboard": {
+    "seconds": 5.000702485005604,
+    "rss_kib": 161412,
+    "cpu_pct_one_core": 2.599634759112335,
+    "reaped_children_cpu_pct_one_core": 28.595982350235687
+  }
+}

@@ -1,0 +1,542 @@
+{
+  "result": "failed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "host_keyboard_input": false,
+  "gui_sha256": "f3f40987481c430ca2af7edb94860dd169fa66585a70e3a8ba134c95e9957782",
+  "test_script_sha256": "5d257412a751b4e3c9611c42136e2a8ca20265e0d565f5b015d6e3c664a2845a",
+  "profile": "debug",
+  "checks_passed": [
+    "Performance choices recover from an empty first report and a user click reaches the actual fixture backend",
+    "profile choices add and remove currently advertised options without restarting or submitting a write",
+    "manual and curve editors recover; saving reaches the real daemon and unsaved changes immediately block curve activation",
+    "lighting initializes from a valid fresh readback, preserves edits through read failure and applies the observed animation without resetting it",
+    "charge threshold appears after startup, follows actual readback and preserves a distinct requested edit"
+  ],
+  "last_nodes": [
+    {
+      "role": "application",
+      "name": "omen-gui"
+    },
+    {
+      "role": "frame",
+      "name": "OMEN Control"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Show or hide navigation"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Battery & Power"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Application actions"
+    },
+    {
+      "role": "button",
+      "name": "Data stale"
+    },
+    {
+      "role": "label",
+      "name": "Data stale"
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Minimize"
+    },
+    {
+      "role": "button",
+      "name": "Maximize"
+    },
+    {
+      "role": "button",
+      "name": "Close"
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": "System Vitals"
+    },
+    {
+      "role": "panel",
+      "name": "Graphics"
+    },
+    {
+      "role": "panel",
+      "name": "Battery & Power"
+    },
+    {
+      "role": "scroll pane",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Battery and power"
+    },
+    {
+      "role": "table",
+      "name": ""
+    },
+    {
+      "role": "table cell",
+      "name": "State Unavailable"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "State"
+    },
+    {
+      "role": "label",
+      "name": "Unavailable"
+    },
+    {
+      "role": "table cell",
+      "name": "Charge \u2014"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Charge"
+    },
+    {
+      "role": "label",
+      "name": "\u2014"
+    },
+    {
+      "role": "table cell",
+      "name": "Health \u2014"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Health"
+    },
+    {
+      "role": "label",
+      "name": "\u2014"
+    },
+    {
+      "role": "table cell",
+      "name": "Power draw \u2014"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Power draw"
+    },
+    {
+      "role": "label",
+      "name": "\u2014"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Charge threshold"
+    },
+    {
+      "role": "label",
+      "name": "Current charge threshold: unavailable"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Requested charge threshold: 85 %"
+    },
+    {
+      "role": "slider",
+      "name": "Charge threshold (%)"
+    },
+    {
+      "role": "button",
+      "name": "Apply threshold"
+    },
+    {
+      "role": "label",
+      "name": "Apply threshold"
+    },
+    {
+      "role": "label",
+      "name": "Charge threshold control unavailable: capabilities unreadable. Review the device report in Settings & Diagnostics."
+    },
+    {
+      "role": "panel",
+      "name": "Game Library"
+    },
+    {
+      "role": "panel",
+      "name": "Settings & Diagnostics"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Apply lighting: complete"
+    },
+    {
+      "role": "button",
+      "name": "Dismiss message"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "scroll pane",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "OMEN Control"
+    },
+    {
+      "role": "list",
+      "name": "Pages"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Dashboard"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "System Vitals"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Performance Control"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Fan & Thermal"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Lighting Studio"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Graphics"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Battery & Power"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Game Library"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Settings & Diagnostics"
+    },
+    {
+      "role": "label",
+      "name": "Monitor"
+    },
+    {
+      "role": "label",
+      "name": "Controls"
+    },
+    {
+      "role": "label",
+      "name": "Library"
+    },
+    {
+      "role": "label",
+      "name": "Application"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Monitoring data is stale; waiting for an update."
+    },
+    {
+      "role": "label",
+      "name": "source: monitoring source unavailable"
+    }
+  ],
+  "write_operations": [
+    {
+      "op": "set_profile",
+      "args": {
+        "profile": "quiet"
+      }
+    },
+    {
+      "op": "set_fan_curve",
+      "args": {
+        "curve": {
+          "points": [
+            {
+              "temp_c": 0,
+              "duty_pct": 30
+            },
+            {
+              "temp_c": 55,
+              "duty_pct": 40
+            },
+            {
+              "temp_c": 65,
+              "duty_pct": 60
+            },
+            {
+              "temp_c": 75,
+              "duty_pct": 80
+            },
+            {
+              "temp_c": 110,
+              "duty_pct": 100
+            }
+          ]
+        }
+      }
+    },
+    {
+      "op": "set_lighting",
+      "args": {
+        "state": {
+          "zones": 2,
+          "colors": [
+            {
+              "r": 255,
+              "g": 0,
+              "b": 0
+            },
+            {
+              "r": 0,
+              "g": 255,
+              "b": 0
+            }
+          ],
+          "brightness_pct": 75,
+          "animation": "static"
+        }
+      }
+    }
+  ],
+  "error": "RuntimeError: stalled worker did not expire controls"
+}

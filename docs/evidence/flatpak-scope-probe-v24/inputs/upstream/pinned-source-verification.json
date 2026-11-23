@@ -1,0 +1,28 @@
+{
+  "commit": "e761a8885453c217a931281092a641ebbdd0a0c6",
+  "tag": "1.16.6",
+  "tag_signature_verified": false,
+  "files": [
+    {
+      "path": "common/flatpak-run.c",
+      "source_url": "https://raw.githubusercontent.com/flatpak/flatpak/e761a8885453c217a931281092a641ebbdd0a0c6/common/flatpak-run.c",
+      "bytes": 142330,
+      "sha256": "bd2842b5f1f200e6613b09f11d834f97dcd441217e8178bb2a54c9daf7666164",
+      "matches_downloaded_archive": true
+    },
+    {
+      "path": "app/flatpak-builtins-enter.c",
+      "source_url": "https://raw.githubusercontent.com/flatpak/flatpak/e761a8885453c217a931281092a641ebbdd0a0c6/app/flatpak-builtins-enter.c",
+      "bytes": 10931,
+      "sha256": "26db16a93442972f5b1bdcc01f2c0b2c45ec63952654f5082731167d76734ce5",
+      "matches_downloaded_archive": true
+    },
+    {
+      "path": "tests/make-test-runtime.sh",
+      "source_url": "https://raw.githubusercontent.com/flatpak/flatpak/e761a8885453c217a931281092a641ebbdd0a0c6/tests/make-test-runtime.sh",
+      "bytes": 2288,
+      "sha256": "e81e5f0e9fd5f3bbc4042a2654d3524bc99084dd4ae2bc96048077205a7bfaa2",
+      "matches_downloaded_archive": true
+    }
+  ]
+}

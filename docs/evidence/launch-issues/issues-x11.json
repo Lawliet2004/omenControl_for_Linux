@@ -1,0 +1,65 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "system_power_bus_used": false,
+  "profile": "release",
+  "requested_gtk_backend": "x11",
+  "gui_sha256": "1f50e2f2b6e48fcc925fe5535f535319bb1e6a8bf34ecfafc15d8f109f285e69",
+  "cli_sha256": "42f2241c4862c51cd6e28daf1ec659b320fca6ae05fde7bc6fe7978af203961b",
+  "checks_passed": [
+    "a denial after the submission receipt appears in native Launch issues without execution or profile changes",
+    "worker and GUI observers coalesce to one private reason without captured errors, command arguments or output",
+    "native Clear launch issues resets desktop reports and leaves games, daemon history and profiles unchanged",
+    "a wrapper failure while the GUI is closed is visible when Game Library reopens",
+    "damaged saved data is preserved, late failures remain live in the GUI, and explicit reset recovers",
+    "app-only wide/light and narrow/dark captures cover persisted launch recovery",
+    "CLI inspection and clearing require no hardware discovery, game execution or profile write"
+  ],
+  "captures": [
+    {
+      "path": "docs/screenshots/launch-issues/launch-issues-wide-light.png",
+      "sha256": "5d40e7a5ad9c603fa16ad0115976300b83ed68633177a476b2c64c7a0da76b26",
+      "requested_size": [
+        1240,
+        1100
+      ],
+      "actual_size": [
+        1240,
+        1080
+      ],
+      "theme": "prefer-light"
+    },
+    {
+      "path": "docs/screenshots/launch-issues/launch-issues-narrow-dark.png",
+      "sha256": "1490ada471c1702c8bd66a0ada573ac313306b32295f89b3f428d2f1abf214f7",
+      "requested_size": [
+        600,
+        1100
+      ],
+      "actual_size": [
+        600,
+        1080
+      ],
+      "theme": "prefer-dark"
+    }
+  ],
+  "closed_wrapper_stderr": "permission denied: SECRET_PRIVATE_ERROR\n",
+  "closed_wrapper_saved_issues": {
+    "version": 1,
+    "uid": 1000,
+    "issues": [
+      {
+        "id": "3f26439d25e0a4c3b0251062b9388d94",
+        "game_id": "custom/denied",
+        "scope_token": "4b54697d95e33715984dc9b2cf2001ed",
+        "stage": "registration",
+        "reason": {
+          "kind": "authorization"
+        },
+        "occurred_unix_ms": 1793099242333
+      }
+    ]
+  },
+  "cleanup_complete": true
+}

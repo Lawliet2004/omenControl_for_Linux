@@ -1,0 +1,132 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "system_power_bus_used": false,
+  "profile": "release",
+  "checks_passed": [
+    "desktop-only JSON inventory finds all routes, keeps provenance and ignores inherited paths under OMEN_HOME",
+    "the real-home Legendary override is honored without merging a different default configuration",
+    "steam/shortcut/7/4045620583: exact route, literal arguments and desktop UID verified",
+    "steam/flatpak/shortcut/7/4045620583: exact route, literal arguments and desktop UID verified",
+    "steam/snap/620: exact route, literal arguments and desktop UID verified",
+    "steam/snap/shortcut/7/4045620583: exact route, literal arguments and desktop UID verified",
+    "legendary/--literal: exact route, literal arguments and desktop UID verified",
+    "legendary/Other: exact route, literal arguments and desktop UID verified",
+    "a missing Snap executable fails before profile mutation or command execution",
+    "a changed recent Steam account invalidates the old shortcut before profile mutation",
+    "early Snap submission failure restores only the owned fixture profile change",
+    "a malformed binary shortcut file does not hide independent store or launcher inventories",
+    "an older Legendary that ignores configuration routing is rejected before profile mutation",
+    "legendary/--literal: pinned upstream Legendary executes the synthetic offline game from its selected configuration",
+    "legendary/Other: pinned upstream Legendary executes the synthetic offline game from its selected configuration",
+    "upstream Legendary applies its configured actual-command wrapper and holds the fixture profile while the game is alive",
+    "the real synthetic game exit releases only its owned private-PPD hold; offline execution makes no network attempt"
+  ],
+  "cli_sha256": "f0e5c0b08cfec6f32ecb94e39ca65a990f46af4f4ee7bd0dd74c8c562484cf30",
+  "daemon_sha256": "219780aa03ea5bda0036b402f0231a13cbded8329b8cf1b2dd05e3bc6f4a12cb",
+  "upstream_legendary_tested": true,
+  "managed_live_sessions": [
+    {
+      "detail": "Tracking the wrapped process tree. PPD releases this hold when the final process exits; effective profile may be selected by another hold.",
+      "game_id": "legendary/Fixture",
+      "phase": "tracking",
+      "profile_held": true,
+      "requested_profile": "performance",
+      "started_unix": 1793112215,
+      "token": "5f970ff12103b8ec005db9274197b6d9",
+      "updated_unix": 1793112218
+    }
+  ],
+  "upstream_source_commit": "42f6bdeadde3a9526dc8eb713763476999ac217b",
+  "upstream_runtime_invocations": [
+    {
+      "module": "/home/papan/Desktop/Projects/omen/target/launcher-expansion/upstream/legendary-42f6bdeadde3a9526dc8eb713763476999ac217b/legendary/cli.py",
+      "sha256": "d2986ecb2fb3f2578d6a9b7b927cd87cc021408432203654cde233b4a1d68900",
+      "args": [
+        "--version"
+      ],
+      "configuration": "/home/papan/Desktop/Projects/omen/target/omen-formats-yy3alzyu/home/.config/legendary"
+    },
+    {
+      "module": "/home/papan/Desktop/Projects/omen/target/launcher-expansion/upstream/legendary-42f6bdeadde3a9526dc8eb713763476999ac217b/legendary/cli.py",
+      "sha256": "d2986ecb2fb3f2578d6a9b7b927cd87cc021408432203654cde233b4a1d68900",
+      "args": [
+        "launch",
+        "--",
+        "--literal"
+      ],
+      "configuration": "/home/papan/Desktop/Projects/omen/target/omen-formats-yy3alzyu/home/.config/legendary"
+    },
+    {
+      "module": "/home/papan/Desktop/Projects/omen/target/launcher-expansion/upstream/legendary-42f6bdeadde3a9526dc8eb713763476999ac217b/legendary/cli.py",
+      "sha256": "d2986ecb2fb3f2578d6a9b7b927cd87cc021408432203654cde233b4a1d68900",
+      "args": [
+        "--version"
+      ],
+      "configuration": "/home/papan/Desktop/Projects/omen/target/omen-formats-yy3alzyu/Selected Legendary"
+    },
+    {
+      "module": "/home/papan/Desktop/Projects/omen/target/launcher-expansion/upstream/legendary-42f6bdeadde3a9526dc8eb713763476999ac217b/legendary/cli.py",
+      "sha256": "d2986ecb2fb3f2578d6a9b7b927cd87cc021408432203654cde233b4a1d68900",
+      "args": [
+        "launch",
+        "--",
+        "Other"
+      ],
+      "configuration": "/home/papan/Desktop/Projects/omen/target/omen-formats-yy3alzyu/Selected Legendary"
+    },
+    {
+      "module": "/home/papan/Desktop/Projects/omen/target/launcher-expansion/upstream/legendary-42f6bdeadde3a9526dc8eb713763476999ac217b/legendary/cli.py",
+      "sha256": "d2986ecb2fb3f2578d6a9b7b927cd87cc021408432203654cde233b4a1d68900",
+      "args": [
+        "--version"
+      ],
+      "configuration": "/home/papan/Desktop/Projects/omen/target/omen-formats-yy3alzyu/home/.config/legendary"
+    },
+    {
+      "module": "/home/papan/Desktop/Projects/omen/target/launcher-expansion/upstream/legendary-42f6bdeadde3a9526dc8eb713763476999ac217b/legendary/cli.py",
+      "sha256": "d2986ecb2fb3f2578d6a9b7b927cd87cc021408432203654cde233b4a1d68900",
+      "args": [
+        "launch",
+        "--",
+        "Fixture"
+      ],
+      "configuration": "/home/papan/Desktop/Projects/omen/target/omen-formats-yy3alzyu/home/.config/legendary"
+    }
+  ],
+  "synthetic_game": {
+    "pid": 4004848,
+    "uid": 1000,
+    "cwd": "/home/papan/Desktop/Projects/omen/target/omen-formats-yy3alzyu/game",
+    "args": [
+      "-AUTH_LOGIN=unused",
+      "-AUTH_PASSWORD=",
+      "-AUTH_TYPE=exchangecode",
+      "-epicapp=Fixture",
+      "-epicenv=Prod",
+      "-EpicPortal",
+      "-epicusername=Offline fixture",
+      "-epicuserid=fixture-account",
+      "-epiclocale=en",
+      "-epicsandboxid=fixture"
+    ],
+    "request_env": null
+  },
+  "managed_ended_sessions": [
+    {
+      "detail": "Wrapped process tree ended. Its profile hold is released; later profile choices were preserved.",
+      "game_id": "legendary/Fixture",
+      "phase": "ended",
+      "profile_held": false,
+      "requested_profile": "performance",
+      "started_unix": 1793112215,
+      "token": "5f970ff12103b8ec005db9274197b6d9",
+      "updated_unix": 1793112218
+    }
+  ],
+  "upstream_network_attempts": 0,
+  "outbound_network_guard": "process-local socket/DNS rejection; no upstream source modifications",
+  "managed_helper_sha256": "1af6ca2cc16173953d24cea78168f889896427c3bb639075c59ba2dc796508fa",
+  "cleanup_complete": true
+}

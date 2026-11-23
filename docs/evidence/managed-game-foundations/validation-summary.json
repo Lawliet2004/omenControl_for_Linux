@@ -1,0 +1,98 @@
+{
+  "recorded_utc": "2026-10-27T07:27:18.852354+00:00",
+  "status": "backend primitives validated; managed game experience remains incomplete",
+  "implemented": [
+    "PPD-owned profile hold with pinned service owner, state verification, independent connection and crash cleanup",
+    "Real dedicated cgroup v2 identity and fresh recursive lifetime observation"
+  ],
+  "application_launch_or_cli_integration_complete": false,
+  "automatic_game_exit_restoration_available_in_app": false,
+  "source_manifest": "source-manifest.json",
+  "source_sha256": "96f97d211eb661e7edae6e6296e66b5ca1003012f611efdbe7e99c7a2cac396a",
+  "changes_since_packaged_v15": [
+    "Cargo.lock",
+    "crates/daemon/src/fan_guard/wrapper.rs",
+    "crates/hardware/Cargo.toml",
+    "crates/hardware/src/backend.rs",
+    "crates/hardware/src/game_scope.rs",
+    "crates/hardware/src/lib.rs",
+    "crates/hardware/src/profiles.rs",
+    "crates/hardware/src/profiles/holds.rs",
+    "crates/hardware/tests/game_session_native.rs"
+  ],
+  "verification": {
+    "debug": {
+      "workspace_tests_passed": 242,
+      "native_checks_passed": 12,
+      "native_test_binary_sha256": "ed75d93f67b77eca2afea394ae7f8c4d9d89d943e7874bc13f0df8966b3fbdca",
+      "native_evidence": "native-debug.json"
+    },
+    "release": {
+      "workspace_tests_passed": 242,
+      "native_checks_passed": 12,
+      "native_test_binary_sha256": "f22b64a3d2e867fe1de2e03688cb9ea1a6daa7405f2a611781b5062b580488e4",
+      "native_evidence": "native-release.json"
+    }
+  },
+  "format_check": "passed",
+  "strict_clippy": "workspace all-targets all-features -D warnings passed",
+  "upstream": {
+    "url": "https://gitlab.freedesktop.org/upower/power-profiles-daemon/-/blob/1a151ccd8bb42c050960f65ca3dee31effde6b36/src/power-profiles-daemon.c",
+    "sha256": "d60de153c1ff6dfd7db1ec0a163eec5b152791c7dd6ae4d62d432f2079079dea",
+    "commit": "1a151ccd8bb42c050960f65ca3dee31effde6b36"
+  },
+  "fixture_contract_notes": [
+    "PPD same-active-profile requests are no-ops, not ownership revocations.",
+    "A real manual profile change cancels holds, including a subsequent ABA return.",
+    "ReleaseProfile uses a cookie; the private fixture intentionally does not add stronger per-peer release authorization than the reviewed provider.",
+    "Quiet takes priority over Performance; Balanced/Cool holds are unsupported."
+  ],
+  "physical_hardware_writes_performed": false,
+  "system_power_bus_used_by_native_target": false,
+  "host_package_or_service_installed": false,
+  "remaining": "See docs/MANAGED_GAME_SESSIONS.md for peer binding, daemon supervision, CLI/launcher/UI integration, durable recovery status and full validation requirements.",
+  "preserved_v15_package": {
+    "path": "target/debian/omen-linux_0.1.0-15_amd64.deb",
+    "sha256": "c8d546e4f2f52fed11a648819602e0d32ca550285f3f185bb8bd1138f0740fd5",
+    "scope": "earlier packaged implementation, not these new working-tree primitives"
+  },
+  "fixture_scope_cleanup_recheck": "no remaining omen-game scopes",
+  "evidence_files": [
+    {
+      "path": "cargo-clippy.log",
+      "sha256": "697418489fb7c3a946f20cbe644b5431f23b1acf609a6fde7f5564a5b1f8327f"
+    },
+    {
+      "path": "cargo-fmt.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cargo-test-debug.log",
+      "sha256": "d6684951f9b7512711399ad807b3d74af6d3cef686432e1c13ebe9f51a9191ac"
+    },
+    {
+      "path": "cargo-test-release.log",
+      "sha256": "15b3ecc6a5137c6b3477b424e13fe93a512310eb311907d0ae347583a453851a"
+    },
+    {
+      "path": "native-debug.json",
+      "sha256": "be0db423bcce293d540460e1038a2f90453a4eed5f16edb7ff1243fddd505f05"
+    },
+    {
+      "path": "native-debug.log",
+      "sha256": "6b4708b55f93eee41efc7bb668c826991ef3c010e850f93f25fd8fc3bee63469"
+    },
+    {
+      "path": "native-release.json",
+      "sha256": "37092d3e4364c5cc75e6d5cc19a26e15e1dc2602cd82c8830896f8159ce4d1f7"
+    },
+    {
+      "path": "native-release.log",
+      "sha256": "c6e1e3ffe4747ee6a3dc993b0fcf66a29cf708089f5bec204fde85f3ad0e65fa"
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "4277a36579bbf9bbc70d2fb37286c812d6c1826bc42cba6ecf28a588dcee933e"
+    }
+  ]
+}

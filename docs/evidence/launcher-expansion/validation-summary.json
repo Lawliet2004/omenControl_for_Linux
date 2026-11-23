@@ -1,0 +1,1011 @@
+{
+  "revision": "0.1.0-20",
+  "recorded_utc": "2026-10-27T18:30:55.491434+00:00",
+  "status": "verified launcher/keyboard/installed-package milestone; full audit remains incomplete",
+  "application_language": "English only",
+  "source_manifest_sha256": "54c0de1862931702bf8b52daa466ef1190dbff189da36347cb529c9725faead0",
+  "test_harness_manifest_sha256": "203b946d6b075bf7033c1a99f393b7517c9cf97b93930cf383030b35c7336883",
+  "documentation_manifest_sha256": "2f56d1432f4d3aa060e17ab71b05a9a5c12d14a162d180018d6cd0cb862d901b",
+  "rust_workspace": {
+    "debug": {
+      "passed": 264,
+      "failed": 0,
+      "ignored": 0
+    },
+    "release": {
+      "passed": 264,
+      "failed": 0,
+      "ignored": 0
+    }
+  },
+  "format_check": "passed",
+  "strict_all_target_all_feature_clippy": "passed",
+  "release_binaries": {
+    "omen-cli": {
+      "sha256": "f0e5c0b08cfec6f32ecb94e39ca65a990f46af4f4ee7bd0dd74c8c562484cf30",
+      "matches_release": true
+    },
+    "omen-daemon": {
+      "sha256": "219780aa03ea5bda0036b402f0231a13cbded8329b8cf1b2dd05e3bc6f4a12cb",
+      "matches_release": true
+    },
+    "omen-gui": {
+      "sha256": "516b722be9cd8c57b13f401e714bcb0a2affb2a120e771ff9f14ccce00bd2fc3",
+      "matches_release": true
+    }
+  },
+  "integration": {
+    "debug": {
+      "launcher_format_checks": 17,
+      "managed_session_checks": 20,
+      "launcher_keyboard_workflows": 6,
+      "cli_sha256": "ed9f5148125345e8da625b4c9192318bfde97d99acd2ee48a42234ca4097325a",
+      "daemon_sha256": "6194d0c1a19571f657ab368ffd67295cda6ce4bae83d24014c2cf765cd22ca02",
+      "managed_helper_sha256": "22d57ec9d0de032e57d0ec87fe09ef9bbf2abc431308a139f6debdd77f657240"
+    },
+    "release": {
+      "launcher_format_checks": 17,
+      "managed_session_checks": 20,
+      "launcher_keyboard_workflows": 6,
+      "cli_sha256": "f0e5c0b08cfec6f32ecb94e39ca65a990f46af4f4ee7bd0dd74c8c562484cf30",
+      "daemon_sha256": "219780aa03ea5bda0036b402f0231a13cbded8329b8cf1b2dd05e3bc6f4a12cb",
+      "managed_helper_sha256": "1af6ca2cc16173953d24cea78168f889896427c3bb639075c59ba2dc796508fa"
+    }
+  },
+  "keyboard_and_orca": {
+    "debug": {
+      "workflows": 13,
+      "generated_utterances": 376,
+      "audible_synthesis_tested": false,
+      "host_keyboard_events": false
+    },
+    "release": {
+      "workflows": 13,
+      "generated_utterances": 430,
+      "audible_synthesis_tested": false,
+      "host_keyboard_events": false
+    }
+  },
+  "native_ui": {
+    "x11": {
+      "native_regressions": 31,
+      "library_entries": 10000,
+      "library_workflows": 5,
+      "managed_workflows": 5,
+      "launch_issue_workflows": 6,
+      "shortcut_overlay_checks": 32,
+      "scan_and_first_accessible_response_seconds": 2.3093691620160826,
+      "loaded_rss_kib": 358040,
+      "peak_observed_rss_kib": 423560
+    },
+    "wayland": {
+      "native_regressions": 31,
+      "library_entries": 10000,
+      "library_workflows": 5,
+      "managed_workflows": 5,
+      "launch_issue_workflows": 6,
+      "shortcut_overlay_checks": 32,
+      "scan_and_first_accessible_response_seconds": 1.8989530929829925,
+      "loaded_rss_kib": 293156,
+      "peak_observed_rss_kib": 330628
+    }
+  },
+  "presentation": {
+    "scenes": 4,
+    "text_label_contrast_samples": 91,
+    "horizontal_clipping_detected": 0,
+    "collapsed_text_allocations": 0,
+    "measured_contrast_failures": 0,
+    "captures": [
+      {
+        "path": "docs/screenshots/launcher-expansion/legendary-wide-light.png",
+        "sha256": "633a573418873e8cd7b389534bd714414f0443ae618df68cf5fdadfbf3f3c4a2",
+        "case": "legendary-wide-light"
+      },
+      {
+        "path": "docs/screenshots/launcher-expansion/snap-narrow-large-dark.png",
+        "sha256": "ecb7a2c645d476e09f4ef97476562848063a14949375efdfe957cd4f77d511c9",
+        "case": "snap-narrow-large-dark"
+      },
+      {
+        "path": "docs/screenshots/launcher-expansion/locations-wide-light.png",
+        "sha256": "83f93b41c089080fab8fb24f222ecaa475ad6b756d0c21fc1b420109222f7e50",
+        "case": "locations-wide-light"
+      },
+      {
+        "path": "docs/screenshots/launcher-expansion/locations-narrow-large-dark.png",
+        "sha256": "42e5ea03bb252301fc41d75e54904279a770231b5f91b0a3567ce091eb94deba",
+        "case": "locations-narrow-large-dark"
+      }
+    ],
+    "measurement": "Actual Pango geometry, computed foreground/effective opacity and sampled uniform rendered backgrounds; fully visible labels only",
+    "full_accessibility_certification": false
+  },
+  "visual_review": {
+    "batch_count": 2,
+    "confirmation_batches": 1,
+    "scope": "Four final wide/light and narrow/Sans 20/dark expanded launcher/location captures",
+    "correction": "Center Remove buttons beside wrapped paths and replace the long all-launcher paragraph with selected-launcher folder guidance",
+    "before_capture": "docs/screenshots/launcher-expansion/before-locations-narrow-large-dark.png"
+  },
+  "upstream_legendary": {
+    "commit": "42f6bdeadde3a9526dc8eb713763476999ac217b",
+    "verified_archive_files": 55,
+    "synthetic_offline_games": true,
+    "actual_command_wrapper_and_user_scope": true,
+    "outbound_attempts": 0,
+    "real_Epic_account_or_game_tested": false
+  },
+  "manual_launch_checks": 16,
+  "process_smoke_checks": 7,
+  "package": {
+    "path": "target/debian/omen-linux_0.1.0-20_amd64.deb",
+    "sha256": "62a8d612dceab7395ad01283abf620b88daf04c381c42f8a073d46ec98353cdb",
+    "lifecycle_candidate_sha256": "0de7317eb686780894e7215fa32b895704c78d6596e4680773eb00d2aed9daee",
+    "documentation_only_equivalence": {
+      "reference_package": "target/launcher-expansion/omen-linux_0.1.0-20_candidate-final-ui.deb",
+      "reference_sha256": "0de7317eb686780894e7215fa32b895704c78d6596e4680773eb00d2aed9daee",
+      "runtime_payload_identical": true,
+      "maintainer_scripts_and_control_identical": true,
+      "documentation_changes": [
+        "usr/share/doc/omen-linux/ACCESSIBILITY.md",
+        "usr/share/doc/omen-linux/APPLICATION_AUDIT_IMPLEMENTATION.md",
+        "usr/share/doc/omen-linux/LAUNCHER_EXPANSION.md",
+        "usr/share/doc/omen-linux/TEST_REPORT.md"
+      ]
+    },
+    "installed_lifecycle_checks": 20,
+    "installed_format_checks": 13,
+    "reused_distribution_dependencies": true,
+    "pristine_distribution_resolution_claimed": false,
+    "systemd_VM_tested": false
+  },
+  "cleanup": {
+    "fixture_processes_and_directories_removed": true,
+    "package_test_container_removed": true,
+    "dependency_image_removed": true,
+    "original_dependency_container_unchanged": true
+  },
+  "physical_hardware_writes": false,
+  "host_package_or_service_installed": false,
+  "preserved_packages": {
+    "15": {
+      "path": "target/debian/omen-linux_0.1.0-15_amd64.deb",
+      "sha256": "c8d546e4f2f52fed11a648819602e0d32ca550285f3f185bb8bd1138f0740fd5"
+    },
+    "16": {
+      "path": "target/debian/omen-linux_0.1.0-16_amd64.deb",
+      "sha256": "f83ff12dbdcb73ffa0a79c5d8bc004148773405546cf8e97b8ac8985b97767af"
+    },
+    "17": {
+      "path": "target/debian/omen-linux_0.1.0-17_amd64.deb",
+      "sha256": "c202e767f998a143e78f59ce3264fd429c19fd4f8fd190f1f61ebec7520186d3"
+    },
+    "18": {
+      "path": "target/debian/omen-linux_0.1.0-18_amd64.deb",
+      "sha256": "b6484a11f92e40c9ef18f67d7b07490a5e5af071ec412291cfc13fa40bd3e767"
+    },
+    "19": {
+      "path": "target/debian/omen-linux_0.1.0-19_amd64.deb",
+      "sha256": "0fa1a2209946d4b82aa15cc119dac3167f6165fb1717284cf43e7ed59448dee6"
+    }
+  },
+  "remaining": [
+    "Real Steam/Proton, Heroic, Lutris and Epic/Snap game/account runtime validation",
+    "Managed sandbox execution and complete job-control behavior",
+    "Heroic sideload/Zoom/third-party formats and other launcher installations",
+    "Complete accessibility/state/theme/input/selection contrast and physical focus/DPI",
+    "Current systemd VM, graphical authorization and distribution installation",
+    "Physical fan/RGB/charging/graphics/suspend and desktop shortcut/full-screen overlay gates"
+  ],
+  "evidence_files": [
+    {
+      "path": "clippy.log",
+      "sha256": "5df01a8f8e4890086da07404d862d063218eed315321c8704f4fe2dd53676706"
+    },
+    {
+      "path": "collect-evidence.py",
+      "sha256": "957206d7461eddaa068a6c90c5d85375169a5970483f1660e80527d0427c6fb5"
+    },
+    {
+      "path": "dependency-reuse-cleanup.log",
+      "sha256": "bffb79d4cca47eaa8800ab1c664ce9cadc477d4302dc2710bc7781583e9bddd4"
+    },
+    {
+      "path": "dependency-snapshot.json",
+      "sha256": "ecd0f035f103f3677a56b3ba5c815510e3c998d4d059967d43acf6fddb31bc71"
+    },
+    {
+      "path": "desktop-file-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "documentation-manifest.json",
+      "sha256": "20e0a0e6449b1506947a2f7a5a16897f2c8beaa6be8c430f78aabaffeb0ca0f9"
+    },
+    {
+      "path": "format.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formats-debug-mock-daemon.log",
+      "sha256": "375e81674efdec02ff2d7fd6338715ebf78bfb1360980aa606d22439414262c2"
+    },
+    {
+      "path": "formats-debug-private-ppd-bus.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formats-debug-private-ppd.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formats-debug-production-service.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formats-debug.json",
+      "sha256": "b10eeefedc13e863ff5d89ca2fad46b89118f54620e498b861d5dc8d19543dfd"
+    },
+    {
+      "path": "formats-debug.log",
+      "sha256": "661c4f87c35dfb92877558077c7b16b20522d61b4bb36b6e68e360f01b761db3"
+    },
+    {
+      "path": "formats-release-mock-daemon.log",
+      "sha256": "c1a867db2562f40af53c0effed626ecf293128dbfe0a00dfe21f8211d29171f5"
+    },
+    {
+      "path": "formats-release-private-ppd-bus.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formats-release-private-ppd.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formats-release-production-service.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "formats-release.json",
+      "sha256": "c8508aa1d3f665aaaf7f50859e799ab3e222e65267c724cbb30a245773c62e4f"
+    },
+    {
+      "path": "formats-release.log",
+      "sha256": "661c4f87c35dfb92877558077c7b16b20522d61b4bb36b6e68e360f01b761db3"
+    },
+    {
+      "path": "game_launch.log",
+      "sha256": "2c0b14de6ee58f8b6d6477b597257953d660e5842e4498167933a0ce3da20be4"
+    },
+    {
+      "path": "initial-harness-failures/native-popup-focus-selection.log",
+      "sha256": "99e58ff47f3deac09ac532de79edc380fea2fadb6840504d793136685dcdf643"
+    },
+    {
+      "path": "initial-harness-failures/native-runner-presentation-search-string-failure.json",
+      "sha256": "93bfb71e74948833b96b5d9f782653f308b0da63e11d084abd16483c38c8547d"
+    },
+    {
+      "path": "initial-harness-failures/native-runner-presentation-staging-failure.json",
+      "sha256": "193b939e87b7e8096852ccecac2af37ebf3a5f418391a203be61ad261f053b9b"
+    },
+    {
+      "path": "initial-harness-failures/package-lifecycle-apt-path-failure/dependency-reuse-cleanup.log",
+      "sha256": "bffb79d4cca47eaa8800ab1c664ce9cadc477d4302dc2710bc7781583e9bddd4"
+    },
+    {
+      "path": "initial-harness-failures/package-lifecycle-apt-path-failure/package-lifecycle-setup.log",
+      "sha256": "fd6e112096c2ec0d4bafd4704175e934a57e3ac35b5a7a3c15ac7e9be84b1d59"
+    },
+    {
+      "path": "initial-harness-failures/package-lifecycle-apt-path-failure/package-lifecycle.json",
+      "sha256": "f4b964b4205e40546495ad60f32564cec57c8bda4209399054374925d4f66040"
+    },
+    {
+      "path": "initial-harness-failures/package-lifecycle-wrong-baseline-failure/dependency-reuse-cleanup.log",
+      "sha256": "bffb79d4cca47eaa8800ab1c664ce9cadc477d4302dc2710bc7781583e9bddd4"
+    },
+    {
+      "path": "initial-harness-failures/package-lifecycle-wrong-baseline-failure/package-lifecycle-daemon.log",
+      "sha256": "06c9b5a58c90e2a9e1b03d18552c8c4ec8d228b136b0545ae709959b56d7030f"
+    },
+    {
+      "path": "initial-harness-failures/package-lifecycle-wrong-baseline-failure/package-lifecycle-dbus.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "initial-harness-failures/package-lifecycle-wrong-baseline-failure/package-lifecycle-polkit.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "initial-harness-failures/package-lifecycle-wrong-baseline-failure/package-lifecycle-run.log",
+      "sha256": "29209261fc76b2dd435208d3494c0f2e98e758b8b8311c20955fb286eff1ac66"
+    },
+    {
+      "path": "initial-harness-failures/package-lifecycle-wrong-baseline-failure/package-lifecycle-setup.log",
+      "sha256": "0ef915cda70b78f6292a208d1714d65b5a056ab56e48ddf772243e363dc974c9"
+    },
+    {
+      "path": "initial-harness-failures/package-lifecycle-wrong-baseline-failure/package-lifecycle.json",
+      "sha256": "7b2c63af4eef6fbe458f44fd80792d891ce9e6886492ae5db0c3476c2b010a7f"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-arrow-selection-failure/a11y.log",
+      "sha256": "54838687d297fd646c65cd9c93b6c2d81772af570eb16eaf6db9bb60a15d7180"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-arrow-selection-failure/daemon.log",
+      "sha256": "516f77a9242f34e4c59552320e2d75b7c26ec3b97c0b4fae2bf58237e4e50217"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-arrow-selection-failure/gui-game-formats.json",
+      "sha256": "7dfff50e3936c9b8e0db30d95176e6de512ce21982ed1890a0364d1a15e64bab"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-arrow-selection-failure/gui.log",
+      "sha256": "cdf6ed620315a112b4212a15be4d0f4edd7f666320bda117f633cfdeecbd4e05"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-arrow-selection-failure/session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-arrow-selection-failure/xwayland.log",
+      "sha256": "f78e45a223a47e6934cefeb53901a970ec57751c0e2e4fde85194b88e6741b0e"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-end-selection-failure/a11y.log",
+      "sha256": "b8a8a5a170d82e54d1dea962d2df3a3794b452561767083b4737e6dbab21c9f3"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-end-selection-failure/daemon.log",
+      "sha256": "36ae6cadb3e46016b91c8c4f2174e7ddb5096bcb3cf9d9408342d821f88c75d1"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-end-selection-failure/gui-game-formats.json",
+      "sha256": "bc7ed0271800aa70bf95e7243cc87aae6dfb0a0cafe7d2775783dedbf3b1845b"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-end-selection-failure/gui.log",
+      "sha256": "cdf6ed620315a112b4212a15be4d0f4edd7f666320bda117f633cfdeecbd4e05"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-end-selection-failure/session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-end-selection-failure/xwayland.log",
+      "sha256": "f78e45a223a47e6934cefeb53901a970ec57751c0e2e4fde85194b88e6741b0e"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-focus-selection-failure/a11y.log",
+      "sha256": "4ed3b48a0e92cac03b825fccf215f7c2fc51cb2e8cb78e1194fb94ab1f5d7a4b"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-focus-selection-failure/daemon.log",
+      "sha256": "e087a4e58d07ec6b7bc914f53e678ec9103cd451afaf9273b37d2b4b9ef6c05c"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-focus-selection-failure/gui-game-formats.json",
+      "sha256": "a3e723529fc2261e38c23b32cef1c50d4b74cc97ba10b82a936d9ea027fdf250"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-focus-selection-failure/gui.log",
+      "sha256": "cdf6ed620315a112b4212a15be4d0f4edd7f666320bda117f633cfdeecbd4e05"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-focus-selection-failure/session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-focus-selection-failure/xwayland.log",
+      "sha256": "f78e45a223a47e6934cefeb53901a970ec57751c0e2e4fde85194b88e6741b0e"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-input-focus-failure/a11y.log",
+      "sha256": "3a7a741cfad7bd9a66bbc0b037d7f88941b19f4df1276c1fa76acdae5069b7f6"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-input-focus-failure/daemon.log",
+      "sha256": "bf956fc01ce85c7aa5d6058ef3c8ef633b0be053d265b3f9d183772004bcb7f6"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-input-focus-failure/gui-game-formats.json",
+      "sha256": "a399af789166376133c628b8e207f0f200ce3bd0ce45980761600bb85e5f06a2"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-input-focus-failure/gui.log",
+      "sha256": "3d217a906b463ed849dbf4f7449fd77ab9b2b57a40134c1a149a78edf3d7d7ca"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-input-focus-failure/session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-input-focus-failure/xwayland.log",
+      "sha256": "f78e45a223a47e6934cefeb53901a970ec57751c0e2e4fde85194b88e6741b0e"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-selector-failure/a11y.log",
+      "sha256": "e634866f3235731bc17f2daaca9d1254def7e4d0c925e8c8a50e5b84c04c6982"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-selector-failure/daemon.log",
+      "sha256": "b4661936090f442a95bb000751226fc0689c3fe1f5a70821ecdf6fa819e3fa88"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-selector-failure/gui-game-formats.json",
+      "sha256": "f924e2797589f849491ca4f5c1efaddb745db8e06a50e0261380ecd3068155c0"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-selector-failure/gui.log",
+      "sha256": "9ac909fbd923d4dc0c5da99386199a5dcab0b7e48bbbe6f45f3126c2084d032e"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-selector-failure/session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "initial-harness-failures/ui-debug-selector-failure/xwayland.log",
+      "sha256": "f78e45a223a47e6934cefeb53901a970ec57751c0e2e4fde85194b88e6741b0e"
+    },
+    {
+      "path": "installed-game-formats.json",
+      "sha256": "010bee1c51105795df5bf3b4d3f9b838138d573b0bcd8ed1982737d004699013"
+    },
+    {
+      "path": "installed-game-formats.log",
+      "sha256": "a5f830bf10c16763f18bf05afa8f9a02baea47fd04e25cf02ea45ac22e3204aa"
+    },
+    {
+      "path": "issues-ui-wayland-a11y.log",
+      "sha256": "73b29408b8a95b79e8fc983ef14faf3b0ce1ab2ba4abe6cb616d923bf61d28b7"
+    },
+    {
+      "path": "issues-ui-wayland-daemon.log",
+      "sha256": "7cd4d38c5c05daadb7459e1a070356b5946a9e7c818f9d20c72bec28933c66b1"
+    },
+    {
+      "path": "issues-ui-wayland-gui.log",
+      "sha256": "6b018177fe885c68d3fe9e66c4d5e77ab38517b74b1bae29e45f01af82020fc8"
+    },
+    {
+      "path": "issues-ui-wayland-reopened.log",
+      "sha256": "61559d1472edd05e96cb53ec900b5d9c140150f76ae3fa10c45b45fc31296c67"
+    },
+    {
+      "path": "issues-ui-wayland.json",
+      "sha256": "193683ed8f3c3895dcafa44442e61458d004f015d859ea7ad85b9ca5271209aa"
+    },
+    {
+      "path": "issues-ui-wayland.log",
+      "sha256": "b2538473cd8ba855d27ccd5e57fcbd9fc6d4f9515f16fd81105d35fd2cfa0df1"
+    },
+    {
+      "path": "issues-ui-x11-a11y.log",
+      "sha256": "0eca65bf7c6ce5705b3d1465ce7bc165422e287cd3521a90ad08648f841fad39"
+    },
+    {
+      "path": "issues-ui-x11-daemon.log",
+      "sha256": "8a1b082216a7a72164b77f68b20413781d2e5587940fc85297bcaeb0546dbf08"
+    },
+    {
+      "path": "issues-ui-x11-gui.log",
+      "sha256": "345287f300c2c8b27410de3b62fbdeb5f64d6522f2f379d667ddd8e7f11480a1"
+    },
+    {
+      "path": "issues-ui-x11-reopened.log",
+      "sha256": "2cfbfa8cb65eb2f8d8e0ac0c8d62ff92cd3a201b4e0a791f541c290162051c89"
+    },
+    {
+      "path": "issues-ui-x11.json",
+      "sha256": "b49d5215e665f584ec5521bb73cea5fafff7737d585170f78b6b883db30bce9a"
+    },
+    {
+      "path": "issues-ui-x11.log",
+      "sha256": "7f09d46587a60fe7e3406698e5d72ff5dbbf280d0ab60d7046347853a0b86018"
+    },
+    {
+      "path": "keyboard-debug-a11y.log",
+      "sha256": "45082d3290a2d4adccd368af035d1abf06fc5caa31ed42df8ebc12a0023f8ca9"
+    },
+    {
+      "path": "keyboard-debug-daemon.log",
+      "sha256": "dfdb5eb8f29ca7ab7355d1c5b8ea90cfd513e776ab422cf9a1a4d832e12c52b7"
+    },
+    {
+      "path": "keyboard-debug-gui.log",
+      "sha256": "65d5ac4b4b15f924585b848c4cc5e84dff39dfec5700f3857f859cec19b588c1"
+    },
+    {
+      "path": "keyboard-debug-orca.log",
+      "sha256": "d74747db67b9b08952dabf4702dfae7401cbf07f0d7ef3bae1aead932b752974"
+    },
+    {
+      "path": "keyboard-debug-orca.log.gz",
+      "sha256": "d77cb8ac622f799504d48d9e004178ec6106b4de79918fc6ed0490a545db097e"
+    },
+    {
+      "path": "keyboard-debug-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "keyboard-debug-xwayland.log",
+      "sha256": "f78e45a223a47e6934cefeb53901a970ec57751c0e2e4fde85194b88e6741b0e"
+    },
+    {
+      "path": "keyboard-debug.json",
+      "sha256": "4a9c3f99fa4b50f66e16e76ca83abebcacda26efc255d8991392ce9366187308"
+    },
+    {
+      "path": "keyboard-debug.log",
+      "sha256": "f829b65635b92b40bb6f980f16556eed8af5c83030632bd5a512fc2ac26e4b31"
+    },
+    {
+      "path": "keyboard-release-a11y.log",
+      "sha256": "2175e91792aec9a8495316d5ff58c927456e6b8d93633925ae48a6b9d26270ee"
+    },
+    {
+      "path": "keyboard-release-daemon.log",
+      "sha256": "c6179e145af4449bcfbd3c515d0e62620a68104c5da46ba6e52eb84d53a847e1"
+    },
+    {
+      "path": "keyboard-release-gui.log",
+      "sha256": "65d5ac4b4b15f924585b848c4cc5e84dff39dfec5700f3857f859cec19b588c1"
+    },
+    {
+      "path": "keyboard-release-orca.log",
+      "sha256": "d0aa3903061dfd57837c9ceb7262ed9cdec14426d9dab38261595e1c3b485216"
+    },
+    {
+      "path": "keyboard-release-orca.log.gz",
+      "sha256": "bb6bff9bc09e58dd553d3d5441c6acd85a88ff975e6ff0d89e20ec4225f198fd"
+    },
+    {
+      "path": "keyboard-release-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "keyboard-release-xwayland.log",
+      "sha256": "f78e45a223a47e6934cefeb53901a970ec57751c0e2e4fde85194b88e6741b0e"
+    },
+    {
+      "path": "keyboard-release.json",
+      "sha256": "5a5a6b767dbe3dcdd3e7c000457c4e10b6faef99bdedf7b1d13f743bfb4997e0"
+    },
+    {
+      "path": "keyboard-release.log",
+      "sha256": "b783543d4c64a8562bcbe83cc07d238887eca5bc30802556cefb56ad3af262d7"
+    },
+    {
+      "path": "launcher-sources.json",
+      "sha256": "372309a4915fde0911c64ce7671508d8aa4084df15072c12701e6b7d49cdb009"
+    },
+    {
+      "path": "launcher-ui-debug-a11y.log",
+      "sha256": "f369e102966283ada75c712bd989fabec52727a633ffe690f57884795f098212"
+    },
+    {
+      "path": "launcher-ui-debug-daemon.log",
+      "sha256": "3c2d2369d44b7ee3448f4847059324ee6ebd91989ec7ab36df65176ab51ecb5e"
+    },
+    {
+      "path": "launcher-ui-debug-gui.log",
+      "sha256": "dcc62ea5e13d131eac03c0050fc0f86c59b14b37cbab58bf19b51896a5490fef"
+    },
+    {
+      "path": "launcher-ui-debug-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "launcher-ui-debug-xwayland.log",
+      "sha256": "f78e45a223a47e6934cefeb53901a970ec57751c0e2e4fde85194b88e6741b0e"
+    },
+    {
+      "path": "launcher-ui-debug.json",
+      "sha256": "fdde9909ebaa2697e7f6e93a0aa947a5e5793af1f2202c0ef8d16521f1fc44c6"
+    },
+    {
+      "path": "launcher-ui-debug.log",
+      "sha256": "da3e4fd0cfc54c97e75299024e1a6549290baa4743ffd6575eb3cf92caf50274"
+    },
+    {
+      "path": "launcher-ui-release-a11y.log",
+      "sha256": "c62455e2ff4fcfd9b220f98e404907d2da2039f1ef903dd6bbedbdc162d31493"
+    },
+    {
+      "path": "launcher-ui-release-daemon.log",
+      "sha256": "6600a87799002087781848057bd33bfc3a4c22bf538cf6f0ac7f839e09e8a6b1"
+    },
+    {
+      "path": "launcher-ui-release-gui.log",
+      "sha256": "f3566da95d7e4753736a3e46c979e467c5eafa0913264be18bf5898cf9fa4a73"
+    },
+    {
+      "path": "launcher-ui-release-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "launcher-ui-release-xwayland.log",
+      "sha256": "f78e45a223a47e6934cefeb53901a970ec57751c0e2e4fde85194b88e6741b0e"
+    },
+    {
+      "path": "launcher-ui-release.json",
+      "sha256": "d4448383819735e8dc44d63283fc113615e2b6ceb7a7bfcd9dda345f47978b8d"
+    },
+    {
+      "path": "launcher-ui-release.log",
+      "sha256": "b82ee0dd265912bdf233efbfd8fcde816cd04f8ae5ff9b286dc9f3994b1a6367"
+    },
+    {
+      "path": "legendary-tree.json",
+      "sha256": "0cda7b1eb050f2077fc632d16aede6e6ce8771ef4efa74822d3d38a63e3c6346"
+    },
+    {
+      "path": "legendary-version-compatibility.json",
+      "sha256": "5a26a356c1f76f9df470052c2a8e7d51d7ab0a5252981f52a6d55d1ffe06a205"
+    },
+    {
+      "path": "library-wayland-a11y.log",
+      "sha256": "b50aaf247732c408c660b8af0fbf1dcac995cc660045d66603756e52379a0375"
+    },
+    {
+      "path": "library-wayland-daemon.log",
+      "sha256": "7a6fe99deb16c15e1df85fe9ad0588290eb8193d45de2f6e0847f457892d42d8"
+    },
+    {
+      "path": "library-wayland-gui.log",
+      "sha256": "cefcfd020a99d500691f6f36cb27e3f587eb025ec6b4d7394921092029cbc56b"
+    },
+    {
+      "path": "library-wayland-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "library-wayland.json",
+      "sha256": "b3091ded50215f5e70555af50ead1f0b78e910923fc771d93407fbb7f3b899b6"
+    },
+    {
+      "path": "library-wayland.log",
+      "sha256": "f1e5bfc03d6324d1bfab0900bc640a35e11eeb3916f3879f79883f6a3e585f0e"
+    },
+    {
+      "path": "library-x11-a11y.log",
+      "sha256": "e56d46fd652fe42076f417d0a70f598236ecff8ae942a706282543b960e70886"
+    },
+    {
+      "path": "library-x11-daemon.log",
+      "sha256": "f865df69e07c88338c3fd009f8f7996471a5b32c20b065dfdb73c63e5336cff8"
+    },
+    {
+      "path": "library-x11-gui.log",
+      "sha256": "ae61660913dbcace4dbbbcffe02b58a60c79d4796601f5d3f1f840e63cb38221"
+    },
+    {
+      "path": "library-x11-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "library-x11.json",
+      "sha256": "11ce899d6a4848935f590062452e0759b10307f3b7f00f76aca6439972dd1228"
+    },
+    {
+      "path": "library-x11.log",
+      "sha256": "bc7338bcca28808a70956c32916a4726e0fe5f31e641f5f313ecf0147f4e2e25"
+    },
+    {
+      "path": "managed-debug.json",
+      "sha256": "6b21e6247c8720d5e84b0a05c3cd93dc2150f8921d18fbe232113927c2f10a4d"
+    },
+    {
+      "path": "managed-debug.log",
+      "sha256": "b9324a38e5892d9e4d76a1cc9ca5f3c267eda2b445cddaf45c7a21c1972f85dd"
+    },
+    {
+      "path": "managed-release.json",
+      "sha256": "e11c54c8d1a2e6ddb17b2c7ed31e86dfb629d10c272811cac0389698dbdb0553"
+    },
+    {
+      "path": "managed-release.log",
+      "sha256": "3350065b32a4a222314aae4142e1692b09081daf08ddc262c4edd158feb49c91"
+    },
+    {
+      "path": "managed-ui-wayland-a11y.log",
+      "sha256": "61e8d7416ae3483bc45d284041fa50c9aefaccf7eb2623f42a38e2421c14e400"
+    },
+    {
+      "path": "managed-ui-wayland-gui.log",
+      "sha256": "cc40bd5e3b7829129c6fa2e5f041171035376514ee26d5e6d888ef94dcc38b9f"
+    },
+    {
+      "path": "managed-ui-wayland-power-bus.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-ui-wayland-ppd.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-ui-wayland-service.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-ui-wayland.json",
+      "sha256": "0fa1b77a62f0d72d300b2b5da52f0413e8fc4ff1593044c2734c8c794766bf18"
+    },
+    {
+      "path": "managed-ui-wayland.log",
+      "sha256": "a2b70cf2046811c267e0df63a082c7b76c86adf22cdad3db30701b1beb6a17e2"
+    },
+    {
+      "path": "managed-ui-x11-a11y.log",
+      "sha256": "c14b17c941a4993189bef243598de1a756a2964b27d4f9f39809fc5f8a696410"
+    },
+    {
+      "path": "managed-ui-x11-gui.log",
+      "sha256": "28db6b04452b9669a40a6e937dd08b4b4e25bbf396b3f43ba83813406c4c21d7"
+    },
+    {
+      "path": "managed-ui-x11-power-bus.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-ui-x11-ppd.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-ui-x11-service.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-ui-x11.json",
+      "sha256": "ae0452f4d8639c0e9eea0a123d6566948fafb9d60948c4654aecea0f8f089825"
+    },
+    {
+      "path": "managed-ui-x11.log",
+      "sha256": "c05dec445f8d77bc285f65ca5013304ca91810ecbb466e198d527816b1b3e0bc"
+    },
+    {
+      "path": "native-runner.json",
+      "sha256": "211efa4a91e032fbb47d6cac74588ece4922cece9592da3ee7e2021e8ef7fdb4"
+    },
+    {
+      "path": "native-wayland-gui-settings-release-a11y.log",
+      "sha256": "3f5eb000cf082a9b1fea4d1398c3f9d7575e5c1dd650eba530da87b2166557e7"
+    },
+    {
+      "path": "native-wayland-gui-settings-release-daemon.log",
+      "sha256": "c04a337b57f08a6db3bd2e16b20457841460d722ff599ad60c3c65d2adb710bf"
+    },
+    {
+      "path": "native-wayland-gui-settings-release-gui.log",
+      "sha256": "f542ec6b35c6ffe7408f8a42ae5cf36236e9ee4f7692b09361bf6e372b31cc4e"
+    },
+    {
+      "path": "native-wayland-gui-settings-release-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "native-wayland.json",
+      "sha256": "fe4120518d4b1b3ae9784442ed3f3443ed8e5a7ee9f9e35d7e1b6b9d1b7c7f32"
+    },
+    {
+      "path": "native-wayland.log",
+      "sha256": "a06831e7421a131ff784c86b1ba082d987975a5335a77b858c5fd3a51f5c8100"
+    },
+    {
+      "path": "native-x11-gui-settings-release-a11y.log",
+      "sha256": "88daa18bfa80f61e941c479a949993056900153c20a839226e28aba50d44c453"
+    },
+    {
+      "path": "native-x11-gui-settings-release-daemon.log",
+      "sha256": "e61030327510e7f5bf5d0e8dfb928a2f46099ea2e7521e6f83daa2562be2bc08"
+    },
+    {
+      "path": "native-x11-gui-settings-release-gui.log",
+      "sha256": "d1461ff87cd27a59c9577592c656a3922e64e92fa78e9695c48806e9f2642368"
+    },
+    {
+      "path": "native-x11-gui-settings-release-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "native-x11.json",
+      "sha256": "0b939c81b89880678d01a5ea10def7caeef162dc2a67bbd4162a646fd888192f"
+    },
+    {
+      "path": "native-x11.log",
+      "sha256": "73344c7ac955cf05c24fc6c3e169e086064f3ae441b635826c8d92fd4b66d10f"
+    },
+    {
+      "path": "package-checksums.log",
+      "sha256": "f7afe2afeaadd1958170df4c9ead49470d0921acfb1c6599b5e718011f77656a"
+    },
+    {
+      "path": "package-cli-diagnostics.json",
+      "sha256": "ccaadb813556407bb90900f3a0d67b051b5144fed62650075d545a983d932f51"
+    },
+    {
+      "path": "package-final-build.log",
+      "sha256": "26c431a9afe83c03780b7d0506a6b07e9bb36a5e075f3cabc261e279312aa836"
+    },
+    {
+      "path": "package-lifecycle-daemon.log",
+      "sha256": "2742cd7752b6d633e33842490b6b4ac20c015df4cccb0af20a27d69df4b0ca86"
+    },
+    {
+      "path": "package-lifecycle-dbus.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "package-lifecycle-polkit.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "package-lifecycle-run.log",
+      "sha256": "55e363474ff809d2da65321d7d07eae51a7a5295f2ba0f7590b57508e036236e"
+    },
+    {
+      "path": "package-lifecycle-setup.log",
+      "sha256": "0ef915cda70b78f6292a208d1714d65b5a056ab56e48ddf772243e363dc974c9"
+    },
+    {
+      "path": "package-lifecycle.json",
+      "sha256": "a2f3747e8fa1ee41331327cb011d7a16ea46a84201971835584010b9ad2b91d6"
+    },
+    {
+      "path": "package-runtime-linkage.log",
+      "sha256": "0c8712f7374bf1a000ea67bd9c3c707782a1071bd7dd1ebf00ec093d4e441b5c"
+    },
+    {
+      "path": "package-static-final.log",
+      "sha256": "2ae1193446bd87513ec54b9bbc91c42f8d5f095ef6fdd318786668d30c282c16"
+    },
+    {
+      "path": "package-validation.json",
+      "sha256": "2ae1193446bd87513ec54b9bbc91c42f8d5f095ef6fdd318786668d30c282c16"
+    },
+    {
+      "path": "presentation/before-location-alignment.json",
+      "sha256": "be519baa5cf52264484f6f1259b0117f42a47540398cea031d042bfde0f2bf39"
+    },
+    {
+      "path": "presentation/legendary-wide-light.json",
+      "sha256": "734cd186fa18d45b4083f98073dfd3eb915d2aec03b0b4daa8128537edd24a6f"
+    },
+    {
+      "path": "presentation/locations-narrow-large-dark.json",
+      "sha256": "6ec346cd108ab797fec63b273c56400a2105fa152b5ef5ef7a1e5906df052bb0"
+    },
+    {
+      "path": "presentation/locations-wide-light.json",
+      "sha256": "f1391bd2a5f0350fb1960072690d450961efdc86b5f56d0d11fd13925966f54b"
+    },
+    {
+      "path": "presentation/presentation.json",
+      "sha256": "fd7c75485a33109441957c24f82f37ed29c2428520c26163b2bd4f2aa7ada860"
+    },
+    {
+      "path": "presentation/snap-narrow-large-dark.json",
+      "sha256": "89baafefb1a2a5460d0606afd4d477b4a2a840956a8388d009851d6bea5ec2e1"
+    },
+    {
+      "path": "presentation.log",
+      "sha256": "deaaf63f55bc3bf1ca182106b2a28daf0df7cd4cee30ee61a31256ee90e9bf25"
+    },
+    {
+      "path": "previous-dependency-snapshot.json",
+      "sha256": "6618c593542b66d20729a13ff6d07b48850512a8a74ccd959d1d35ee3f963af2"
+    },
+    {
+      "path": "run-native-validation.py",
+      "sha256": "dcea74b25fd6238696adfaf95ecbf53d437ae22152ab37d76b559b71383ee967"
+    },
+    {
+      "path": "shortcuts-wayland-shortcuts-release-wayland-a11y.log",
+      "sha256": "f52ff5875f4d65f468a306ad69b69718168a5d79927f49367621bea32c18d90b"
+    },
+    {
+      "path": "shortcuts-wayland-shortcuts-release-wayland-bus.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "shortcuts-wayland-shortcuts-release-wayland-daemon.log",
+      "sha256": "a1072e684042167fd046427c5b310d779c61a68c48070eb507f9c2460780cd2e"
+    },
+    {
+      "path": "shortcuts-wayland-shortcuts-release-wayland-first-gui.log",
+      "sha256": "2e7ca9ec8e6ecfc36447f6ad19de2cb2b7a90ca421d30ea4bf16a3bab444a868"
+    },
+    {
+      "path": "shortcuts-wayland-shortcuts-release-wayland-gui.log",
+      "sha256": "a879f65ed6740099db04a5158bba2d4cc1d96f3e649c850179b6a5baaf45016b"
+    },
+    {
+      "path": "shortcuts-wayland-shortcuts-release-wayland-portal.log",
+      "sha256": "4362ecd68b0f570ceb0ff372c463b641e82838793d33ceeb31999c3ee00ffd37"
+    },
+    {
+      "path": "shortcuts-wayland-shortcuts-release-wayland-restored-gui.log",
+      "sha256": "51bb7fae0033d4b0211d100ecdd7805b217294e1cb564f4943fe71b7a1218feb"
+    },
+    {
+      "path": "shortcuts-wayland.json",
+      "sha256": "5b167312cb5a92b184f2afa18710443ef207ebd1e8a02afa596357c26208155a"
+    },
+    {
+      "path": "shortcuts-wayland.log",
+      "sha256": "0f87b0e4fb09c2236b27de3e59539d37e51dbc099fdd4743b37b7ac61ce1a769"
+    },
+    {
+      "path": "shortcuts-x11-shortcuts-release-x11-a11y.log",
+      "sha256": "c2f71664eef81a81a2d317ae7558aa7b1533b9b58e412ba5f7752553108a205d"
+    },
+    {
+      "path": "shortcuts-x11-shortcuts-release-x11-bus.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "shortcuts-x11-shortcuts-release-x11-daemon.log",
+      "sha256": "a4d59863fb10de9b1471590d5e9227d6fd844147bb11f4b259a0bcb357d6b2e6"
+    },
+    {
+      "path": "shortcuts-x11-shortcuts-release-x11-first-gui.log",
+      "sha256": "7bec2b909423c45f53ac6ec6feca2146efc0e5b64fec85acd6cade6bd56f0737"
+    },
+    {
+      "path": "shortcuts-x11-shortcuts-release-x11-gui.log",
+      "sha256": "79a7f9ddace877bd59519be74e0dc4eb8d72b2f41acb7c0b1aa7fb5866951126"
+    },
+    {
+      "path": "shortcuts-x11-shortcuts-release-x11-portal.log",
+      "sha256": "4362ecd68b0f570ceb0ff372c463b641e82838793d33ceeb31999c3ee00ffd37"
+    },
+    {
+      "path": "shortcuts-x11-shortcuts-release-x11-restored-gui.log",
+      "sha256": "e9fc1b6d8cc1cf5e8c0aedabaeff4b6439a3f7dc0b386201ac15449a62ea07b2"
+    },
+    {
+      "path": "shortcuts-x11.json",
+      "sha256": "6813ad1db18c5010d7817f84603da5dc175e5d8ef5640d74d5ef8519abd9d2e3"
+    },
+    {
+      "path": "shortcuts-x11.log",
+      "sha256": "b248477a91aa1a93ed5d067995ac4d77bfbaddec50800d9e6a9812e36821f065"
+    },
+    {
+      "path": "smoke.log",
+      "sha256": "27618add4320c57fb1f9f810d94a33546c13d8da93d437f90871f3f7ce8c4cea"
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "8cddf8d2434ca3aac7b78d1e8a482604528118c34ee83bb4d44b0daee60d93a7"
+    },
+    {
+      "path": "systemd-payload-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test-dependency.json",
+      "sha256": "90ea30946afed07b75978765b861e2b44c4ff370368ea0dcefbba175f61c9777"
+    },
+    {
+      "path": "test-harness-manifest.json",
+      "sha256": "bb97239e2891f903db1c1828a8962f99bef79d07a947f8fa3e79c67b39f17ea0"
+    },
+    {
+      "path": "tests-debug.log",
+      "sha256": "e4bc31cdecc2fb92bafbded495cedd8391f4a58d41ca51291884ad7def0d4fc3"
+    },
+    {
+      "path": "tests-release.log",
+      "sha256": "9fa7e7909e922a0d7cf2eaca9a007778daca4fba2b0984df8b86af5fa076f46b"
+    },
+    {
+      "path": "upstream-archive.json",
+      "sha256": "bb3ccf88572498530d9830ed2941790fd1b2e0bb2db429e59cc4970b1f0714ad"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "method": "release binaries; 5-second windows; CPU percent of one logical core; page-cache-warm launches; live read-only monitoring",
+  "cpu_count": 12,
+  "cli_detect": {
+    "runs_seconds": [
+      0.08902405999833718,
+      0.07320979601354338,
+      0.07314776899875142,
+      0.0727830370014999,
+      0.07879043999128044
+    ],
+    "median_seconds": 0.07320979601354338
+  },
+  "daemon_socket_ready_seconds": 0.010798450006404892,
+  "daemon_idle_no_clients": {
+    "seconds": 5.000482217001263,
+    "rss_kib": 3624,
+    "cpu_pct_one_core": 0.0,
+    "reaped_children_cpu_pct_one_core": 0.0
+  },
+  "gui_without_overlay": {
+    "overlay_enabled": false,
+    "main_window_visible": true,
+    "window_map_seconds": 0.6802740090060979,
+    "gtk_display_type": "GdkWaylandDisplay",
+    "resources": {
+      "seconds": 5.000520478992257,
+      "rss_kib": 196528,
+      "cpu_pct_one_core": 2.3997501960872545,
+      "reaped_children_cpu_pct_one_core": 1.3998542810508983
+    }
+  },
+  "gui_with_overlay": {
+    "overlay_enabled": true,
+    "main_window_visible": true,
+    "window_map_seconds": 0.36786819400731474,
+    "gtk_display_type": "GdkWaylandDisplay",
+    "resources": {
+      "seconds": 5.0004953739990015,
+      "rss_kib": 202764,
+      "cpu_pct_one_core": 2.199782057033095,
+      "reaped_children_cpu_pct_one_core": 1.1998811220180519
+    }
+  },
+  "gui_window_map_seconds": 0.6802740090060979,
+  "gtk_display_type": "GdkWaylandDisplay",
+  "gui_monitoring_dashboard": {
+    "seconds": 5.000520478992257,
+    "rss_kib": 196528,
+    "cpu_pct_one_core": 2.3997501960872545,
+    "reaped_children_cpu_pct_one_core": 1.3998542810508983
+  },
+  "binary_sha256": {
+    "omen-cli": "a385fc6ea674d726d230a2db500a3ffda39ee8c53fbe8bc949c193dcb3c0c5bd",
+    "omen-daemon": "7a9fc552ea88a8f3fa578b359ab8040b16b73ce05fe7ae86ef85323c564a65be",
+    "omen-gui": "cba3f16de8307237920da1409943ed8b1e9c8473fd4e170a2cf93871754ba0bc"
+  },
+  "cleanup_complete": true,
+  "kernel": "7.0.0-38-generic",
+  "recorded_utc": "2026-10-26T13:55:17.677755+00:00",
+  "session_bus": "private minimal bus without host tray, portal or accessibility bus; package tests completed beforehand",
+  "limits": "Warm launches and five-second CPU/RSS observations; main visible in both modes, other host workloads uncontrolled; no cold-start or causal incremental-overhead claim"
+}

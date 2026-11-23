@@ -1,0 +1,17 @@
+{
+  "purpose": "complete fresh graphical fixture before any graphical tests",
+  "packages": [
+    "plasma-desktop",
+    "polkit-kde-agent-1",
+    "xdg-desktop-portal-kde",
+    "at-spi2-core",
+    "dbus-user-session",
+    "xserver-xorg-core",
+    "xserver-xorg-input-libinput",
+    "plasma-session-wayland",
+    "sddm-theme-breeze"
+  ],
+  "command": "sudo -n env DEBIAN_FRONTEND=noninteractive apt-get -o DPkg::Lock::Timeout=240 install -y --no-install-recommends plasma-desktop polkit-kde-agent-1 xdg-desktop-portal-kde at-spi2-core dbus-user-session xserver-xorg-core xserver-xorg-input-libinput plasma-session-wayland sddm-theme-breeze",
+  "signed_offline_repository": true,
+  "host_packages_installed": false
+}

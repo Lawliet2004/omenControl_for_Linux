@@ -1,0 +1,22 @@
+{
+  "control-recovery-v22": {
+    "summary_sha256": "e0c256ddb220ad5bbd82ed65c86032d253a68c5d2b028aab009030e4eb2ec536",
+    "evidence_files_rehashed": 416
+  },
+  "desktop-v21": {
+    "summary_sha256": "c0c45c13e710a58aa70f8dff67a3c8950a35d783bd9fc0c1dbe9b938f8b8dd29",
+    "evidence_files_rehashed": 224
+  },
+  "real-game-v21": {
+    "summary_sha256": "df9187f3e1ce894701dcc0e31b05c88ac38fe2fdb9f74a748217fef60c06c5a1",
+    "evidence_files_rehashed": 109
+  },
+  "deployment-v20": {
+    "summary_sha256": "b2d981abbf150e5bac2f74573136bb21293bda849cf2d0071191ec7a639cc8bd",
+    "evidence_files_rehashed": 48
+  },
+  "launcher-expansion": {
+    "summary_sha256": "3f029792b8d30f99b5fa53b555f41f16e0573fbfd21d4d44328d88e52fbed278",
+    "evidence_files_rehashed": 202
+  }
+}

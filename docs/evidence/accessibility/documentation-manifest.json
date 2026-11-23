@@ -1,0 +1,130 @@
+{
+  "hash_method": "SHA-256 of sorted sha256 + two spaces + relative path + newline records",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "a86bf7df30f37a04b9816352b300e1197e9c142eef5b0b8b68fbf0a8dede6a11"
+    },
+    {
+      "path": "docs/ACCESSIBILITY.md",
+      "sha256": "30444fb5338490eef8eca7d445e97647f524872ab1f55277122bde1514aa5b11"
+    },
+    {
+      "path": "docs/APPLICATION_AUDIT_2026-10-27.md",
+      "sha256": "48d72fa86fe1fec5db8b30536c9fe5d22967b88e515e195c64b56d4bae7534a8"
+    },
+    {
+      "path": "docs/APPLICATION_AUDIT_IMPLEMENTATION.md",
+      "sha256": "1fefce5fcd7dc1e8315efa4a7fbdfd03fea8e6b07324bf951ff37a606316ee8f"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "sha256": "c84da56f4b63cec63de77d2135e6842f8164919d927bb0045c0a852c677e453b"
+    },
+    {
+      "path": "docs/COARSE_FAN_VALIDATION_PLAN.md",
+      "sha256": "cd04f032e4c05a37f2d72512115c1e7e241d0754e097dd5cb70605593ca3599b"
+    },
+    {
+      "path": "docs/CONTINUATION_CHECKLIST.md",
+      "sha256": "05fcebde931231816cc4dea682feff875ae02e50776d9d463f9c646f99fa8092"
+    },
+    {
+      "path": "docs/FAN_GUARDIAN.md",
+      "sha256": "5b5fe27a415448a8be2ab06684c0a3476705210801582078e02abaf327c6e6d6"
+    },
+    {
+      "path": "docs/FAN_MODES.md",
+      "sha256": "cabfaae0184ea92969f7a800cc8af379a45ea0bdee587af2ebcf08f8cde19b75"
+    },
+    {
+      "path": "docs/FAN_MONITORING.md",
+      "sha256": "611fe072f002f0f533198a3ebfc500035279d977e9d78b6f35d02fe6017d1726"
+    },
+    {
+      "path": "docs/GAME_LAUNCHERS.md",
+      "sha256": "f74a1425b65863d9ecb714ab34cc5b80fe174a0a6a8eadda34ffd8a60d699729"
+    },
+    {
+      "path": "docs/GLOBAL_SHORTCUTS.md",
+      "sha256": "1fa0f6c560861ea2ba6f980c6c6431d4f4fdd4ba4e17d02f5bfb4707bad295e6"
+    },
+    {
+      "path": "docs/GPU_MONITORING.md",
+      "sha256": "da00792e9dd7cc8b43770f9552092605e3fd326079dedccd0a5d6f1f5899eeff"
+    },
+    {
+      "path": "docs/HARDWARE_COMPATIBILITY.md",
+      "sha256": "12c6334a9f9ecfca4b42f58cdb229d6613b247a6a77b309ff4aa3b928ebdb5ac"
+    },
+    {
+      "path": "docs/HARDWARE_SAFETY.md",
+      "sha256": "d2581dc2fea6ae3d1578900cc6e2ebaa49982dc508da1eadd6508837b96de6ea"
+    },
+    {
+      "path": "docs/IMPLEMENTATION_STATUS.md",
+      "sha256": "3b434a99a138c62c7ba0970c9a99db3b96a0210b74651a33f541c56dc0e68aa6"
+    },
+    {
+      "path": "docs/INSTALLATION.md",
+      "sha256": "ba9b735007bfb450cde7eff735754953c258c12de4e8006df3a6d0e8a5b899cf"
+    },
+    {
+      "path": "docs/MANAGED_GAME_SESSIONS.md",
+      "sha256": "660127dbfaf1ba4185978a92f6ea1622c6c693ca1948ffccc5592114148208fb"
+    },
+    {
+      "path": "docs/NETWORK_MONITORING.md",
+      "sha256": "21be936b762f03d50a53a56121557afb7634faf85c26b985821a34f2c40af575"
+    },
+    {
+      "path": "docs/OMENCORE_REVIEW.md",
+      "sha256": "165bd3c3e4138f6e3bb0be318e585818128adaade64c9f796fdc015bca26ea24"
+    },
+    {
+      "path": "docs/OMEN_FAN_INTEGRATION_PLAN.md",
+      "sha256": "7bcba26c9ba1a21f27bd68b5e78f52732697afd4437c247a06f291781658a711"
+    },
+    {
+      "path": "docs/PACKAGE_VALIDATION.md",
+      "sha256": "e6261c9a9f957055b3f1762dd807cc1f386ef634d54f9733fdbc816be25c5c50"
+    },
+    {
+      "path": "docs/PROFILE_VALIDATION_PLAN.md",
+      "sha256": "d10c45e4e8225c6c892f8c0a46c3fae270a4b9edff44c01f003a78b107f18a1f"
+    },
+    {
+      "path": "docs/REA_SETUP_PLAN.md",
+      "sha256": "d374986e5d3c701ee3586cdfd84ef38de3987ecc8b31f771294d4d6620d99395"
+    },
+    {
+      "path": "docs/REVERSE_ENGINEERING_REPORT.md",
+      "sha256": "759ae2d89719583899fe25c080a3773eebde1721e76d13b3f0f42b5c81180065"
+    },
+    {
+      "path": "docs/STATUS_OVERLAY.md",
+      "sha256": "3b71ab98122985389a88546ea0cfabcc0bfcfa84e26e47a1305b9c906ddc9d4d"
+    },
+    {
+      "path": "docs/TEST_REPORT.md",
+      "sha256": "d1808bb484a450072f92332cb2f63f2a7b29d09dacebb32608f2b0e4aedaf87f"
+    },
+    {
+      "path": "docs/THERMAL_GUARD.md",
+      "sha256": "d4539731950d4e346b2ad72ef54e1a66ed08c42fc028ec235cd3cf9cb4207fd7"
+    },
+    {
+      "path": "docs/THIRD_PARTY.md",
+      "sha256": "04912648cb20aa21e2cec776cbbc196e63217428a2aec21e5593e785b42b14ff"
+    },
+    {
+      "path": "docs/VM_VALIDATION.md",
+      "sha256": "7f4981f988ed7217109ed70842f1719e027e84a388f4e6dd20cd3e1fcc254801"
+    },
+    {
+      "path": "docs/WINDOWS_ARTIFACTS.md",
+      "sha256": "0c3d9a12dcc45bfa789e78cc208f12d88ea232a0f92a3b83c2d6f83a30c7a261"
+    }
+  ],
+  "sha256": "76e04f52ed7171a344ee2ac44bec177a08a67aa6f7047764a11b7133dccbcc19"
+}

@@ -1,0 +1,269 @@
+{
+  "recorded_utc": "2026-10-27T06:59:37.009515+00:00",
+  "revision": "0.1.0-15",
+  "status": "verified development revision; audit implementation incomplete",
+  "checkout_has_git_metadata": false,
+  "source_manifest": "source-manifest.json",
+  "source_sha256": "388515dbf0b1b52f63032cf3314a338d7c2c2fa328a792b9374927a6d1196505",
+  "test_harness_manifest": "test-harness-manifest.json",
+  "language": {
+    "application": "English only",
+    "user_instruction": "no only english",
+    "additional_translations_in_scope": false,
+    "catalogs_shipped": [],
+    "gettext_build_requirement": false,
+    "native_system_dialogs": "follow desktop settings"
+  },
+  "rust_workspace": {
+    "debug": {
+      "passed": 240,
+      "failed": 0,
+      "ignored": 0,
+      "log": "cargo-test-debug.log"
+    },
+    "release": {
+      "passed": 240,
+      "failed": 0,
+      "ignored": 0,
+      "log": "cargo-test-release.log"
+    }
+  },
+  "quality": {
+    "format_check": "passed",
+    "strict_all_target_clippy": "passed",
+    "logs": [
+      "cargo-fmt.log",
+      "cargo-clippy.log"
+    ]
+  },
+  "release_binaries": {
+    "omen-cli": {
+      "sha256": "6890afafce77d769ec6641204f74746471e6d4ff2992c4fed5b09ae346ee812f",
+      "matches_release": true
+    },
+    "omen-daemon": {
+      "sha256": "7b7df9f838ce93582a1e81ab6175f68bd6915f20c3024f666a16b786992e8c5e",
+      "matches_release": true
+    },
+    "omen-gui": {
+      "sha256": "3e9e412a5a2fe60cd50c8181975e6b525056f852922c3dc2e3d04180d1126a93",
+      "matches_release": true
+    }
+  },
+  "process_and_native_checks": {
+    "gui_x11": {
+      "general": 23,
+      "network": 4,
+      "health": 2,
+      "gtk_display_type": "GdkX11Display",
+      "evidence": "gui-x11-release.json"
+    },
+    "shortcuts_x11": {
+      "passed": 32,
+      "evidence": "shortcuts-x11-release.json"
+    },
+    "gui_wayland": {
+      "general": 23,
+      "network": 4,
+      "health": 2,
+      "gtk_display_type": "GdkWaylandDisplay",
+      "evidence": "gui-wayland-release.json"
+    },
+    "shortcuts_wayland": {
+      "passed": 32,
+      "evidence": "shortcuts-wayland-release.json"
+    },
+    "notifications": {
+      "passed": 4,
+      "evidence": "notifications-release.json",
+      "real_desktop_notified": false
+    },
+    "game_processes": {
+      "passed": 16,
+      "evidence": "games-release.json"
+    },
+    "process_smoke": {
+      "passed": 7,
+      "evidence": "smoke-release.json"
+    },
+    "container_lifecycle": {
+      "passed": 19,
+      "evidence": "package-lifecycle.json",
+      "package_sha256": "a7c176d60ebbb7240095865a40036d7c4c8a82ba99cdcc667748eead4651b942",
+      "cleanup_complete": true
+    },
+    "systemd_vm": {
+      "passed": 30,
+      "evidence": "vm-systemd.json",
+      "package_sha256": "a7c176d60ebbb7240095865a40036d7c4c8a82ba99cdcc667748eead4651b942",
+      "cleanup_complete": true
+    }
+  },
+  "visual_review": {
+    "captures": 6,
+    "evidence": "visual-captures.json",
+    "contrast_sample": "contrast-sample.json",
+    "effective_large_text_and_physical_dpi_verified": false,
+    "full_screen_reader_audit_completed": false
+  },
+  "package": {
+    "package": "target/debian/omen-linux_0.1.0-15_amd64.deb",
+    "bytes": 2912218,
+    "sha256": "c8d546e4f2f52fed11a648819602e0d32ca550285f3f185bb8bd1138f0740fd5",
+    "version": "0.1.0-15",
+    "installed_by_verifier": false,
+    "checks": {
+      "root_ownership_and_directory_modes": true,
+      "payload_md5sums": true,
+      "desktop_file_validate": true,
+      "polkit_xml_matches_source": true,
+      "gui_linkage_current_environment": true,
+      "extracted_cli_readonly_discovery": true
+    },
+    "binaries": {
+      "omen-cli": {
+        "sha256": "6890afafce77d769ec6641204f74746471e6d4ff2992c4fed5b09ae346ee812f",
+        "matches_release": true
+      },
+      "omen-daemon": {
+        "sha256": "7b7df9f838ce93582a1e81ab6175f68bd6915f20c3024f666a16b786992e8c5e",
+        "matches_release": true
+      },
+      "omen-gui": {
+        "sha256": "3e9e412a5a2fe60cd50c8181975e6b525056f852922c3dc2e3d04180d1126a93",
+        "matches_release": true
+      }
+    },
+    "lifecycle_equivalence": {
+      "reference_package": "target/audit-2026-10-27/deployment/tested-runtime.deb",
+      "reference_sha256": "a7c176d60ebbb7240095865a40036d7c4c8a82ba99cdcc667748eead4651b942",
+      "runtime_payload_identical": true,
+      "maintainer_scripts_and_control_identical": true,
+      "documentation_changes": [
+        "usr/share/doc/omen-linux/APPLICATION_AUDIT_IMPLEMENTATION.md",
+        "usr/share/doc/omen-linux/ARCHITECTURE.md",
+        "usr/share/doc/omen-linux/CONTINUATION_CHECKLIST.md",
+        "usr/share/doc/omen-linux/README.md",
+        "usr/share/doc/omen-linux/STATUS_OVERLAY.md",
+        "usr/share/doc/omen-linux/TEST_REPORT.md"
+      ]
+    },
+    "vm_equivalence": {
+      "reference_package": "target/audit-2026-10-27/deployment/tested-runtime.deb",
+      "reference_sha256": "a7c176d60ebbb7240095865a40036d7c4c8a82ba99cdcc667748eead4651b942",
+      "runtime_payload_identical": true,
+      "maintainer_scripts_and_control_identical": true,
+      "documentation_changes": [
+        "usr/share/doc/omen-linux/APPLICATION_AUDIT_IMPLEMENTATION.md",
+        "usr/share/doc/omen-linux/ARCHITECTURE.md",
+        "usr/share/doc/omen-linux/CONTINUATION_CHECKLIST.md",
+        "usr/share/doc/omen-linux/README.md",
+        "usr/share/doc/omen-linux/STATUS_OVERLAY.md",
+        "usr/share/doc/omen-linux/TEST_REPORT.md"
+      ]
+    },
+    "dependency_notices": 156,
+    "systemd_validation": {
+      "exit_code": 0,
+      "method": "unmodified unit in extracted package root; no unit started"
+    }
+  },
+  "hardware_writes_performed": false,
+  "host_package_or_service_installation_performed": false,
+  "scope_notes": [
+    "GUI, launcher and notification changes use fixture hardware and private buses.",
+    "The systemd VM and container establish their recorded isolation and package behavior, not physical hardware response.",
+    "The final archive differs from the deployment-tested archive only in listed documentation files; runtime payload, maintainer scripts and control metadata are identical.",
+    "The previously approved physical PPD transaction remains historical evidence for its exact model/BIOS/kernel only."
+  ],
+  "remaining_requirements": [
+    "Reliable actual game-lifetime identification, automatic exit restoration and durable crash recovery.",
+    "Broader tested launcher formats and actual store/game execution.",
+    "Complete keyboard/screen-reader, effective large-text and contrast validation; network-row focus retention.",
+    "Physical global-key activation, graphical authorization and compositor/full-screen overlay validation.",
+    "Cross-distribution graphical installation, physical suspend/reboot and hardware response validation.",
+    "Validated live fan/RGB/charging controls, per-key lighting and verified MUX interfaces remain gated."
+  ],
+  "evidence_files": [
+    {
+      "path": "cargo-clippy.log",
+      "sha256": "2ae922d3385a7b1f0db826f32e98e22e066acb75c7c224f334909e4da49ad39a"
+    },
+    {
+      "path": "cargo-fmt.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cargo-test-debug.log",
+      "sha256": "42b762c08b5c0255fc188f12278cbbe50839900049982770ca8f6585a4565fbc"
+    },
+    {
+      "path": "cargo-test-release.log",
+      "sha256": "8b1f117967dad74dbb9e0cd26df9cc9b0450268c26c4aa2ed68abf6e5f2871e7"
+    },
+    {
+      "path": "contrast-sample.json",
+      "sha256": "9b1f085a91c90be2062f27a6cc30295cf116e8d858fd259a53e9200f5e5edbd3"
+    },
+    {
+      "path": "games-release.json",
+      "sha256": "2c0b14de6ee58f8b6d6477b597257953d660e5842e4498167933a0ce3da20be4"
+    },
+    {
+      "path": "gui-wayland-release.json",
+      "sha256": "63d222e1c13da2c4f0db22b9a1cefa8d0d4de60c1c3f40444de1c91b17e33ca3"
+    },
+    {
+      "path": "gui-x11-release.json",
+      "sha256": "59a4e4dacd82d04ced22b17efc6144e2b550c75235c0a6875371849c8968f36c"
+    },
+    {
+      "path": "notifications-release.json",
+      "sha256": "25b249ea254c7dbe7bff1f795133f70cb64288ddad2891f67bd6d1a9cde517fa"
+    },
+    {
+      "path": "package-build.log",
+      "sha256": "f206db9a89ea1f8b12113a706e3ca629a640d23f176ff3b96c1d9ee54a49188d"
+    },
+    {
+      "path": "package-lifecycle.json",
+      "sha256": "51ca29045cda65222f0f55c2b13045b8c7d7a4d56b32b74f40f7de3698ba88b2"
+    },
+    {
+      "path": "package-validation.json",
+      "sha256": "6beed1e71ca5603dec2dca0972fe9afe6d3aa1a514381391ee4528d3206fea41"
+    },
+    {
+      "path": "package-verification.log",
+      "sha256": "6beed1e71ca5603dec2dca0972fe9afe6d3aa1a514381391ee4528d3206fea41"
+    },
+    {
+      "path": "shortcuts-wayland-release.json",
+      "sha256": "11d2b6225e42381feb16b4824949d56741ebfff0a07158ae13ab9a21c58d0860"
+    },
+    {
+      "path": "shortcuts-x11-release.json",
+      "sha256": "73b93f4bc3927dc64935fec1cae9b27ef45e3183b4a67493081da8bde6784b07"
+    },
+    {
+      "path": "smoke-release.json",
+      "sha256": "27618add4320c57fb1f9f810d94a33546c13d8da93d437f90871f3f7ce8c4cea"
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "52a9542ff77065c2cf0cf20fb1b960ca16a1867deffedaa19560dd85d9faa28f"
+    },
+    {
+      "path": "test-harness-manifest.json",
+      "sha256": "51b568f1265ff61f53625b0d5ce63456bce0f89ef14ea63c5517a0dce011a98b"
+    },
+    {
+      "path": "visual-captures.json",
+      "sha256": "644c9ef65fb583f28750e19c1752e935dd2d31faff33dfd6d45e845f14109bbc"
+    },
+    {
+      "path": "vm-systemd.json",
+      "sha256": "a5616f49157f2a2450585c0542a160c34ff191c9a5e82ed7a15314431dea73da"
+    }
+  ]
+}

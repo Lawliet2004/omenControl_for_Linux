@@ -1,0 +1,151 @@
+{
+  "generated_utc": "2026-10-25T19:29:29.161847+00:00",
+  "version": "0.1.0",
+  "goal_complete": false,
+  "rust_tests": {
+    "debug": {
+      "passed": 101,
+      "failed": 0,
+      "ignored": 0
+    },
+    "release": {
+      "passed": 101,
+      "failed": 0,
+      "ignored": 0
+    }
+  },
+  "checks": {
+    "strict_clippy": "pass",
+    "cargo_fmt": "pass",
+    "release_workspace_build": "pass",
+    "python_and_shell_syntax": "pass",
+    "desktop_file_validate": "pass",
+    "systemd_verify_extracted_payload": "pass",
+    "package_checksums_and_release_binary_match": "pass",
+    "mock_process_smoke_debug": "pass",
+    "mock_process_smoke_release": "pass",
+    "tray_gtk_dbus_debug": "pass",
+    "tray_gtk_dbus_release": "pass",
+    "dependency_notices": "142 locked crate notices included"
+  },
+  "package": {
+    "package": "target/debian/omen-linux_0.1.0-1_amd64.deb",
+    "bytes": 2235310,
+    "sha256": "864e1bea9483e425c6ef1321ffd0b5787f195334082c7538ed9a26558c727da3",
+    "version": "0.1.0-1",
+    "installed_by_verifier": false,
+    "checks": {
+      "root_ownership_and_directory_modes": true,
+      "payload_md5sums": true,
+      "desktop_file_validate": true,
+      "polkit_xml_matches_source": true,
+      "gui_linkage_current_environment": true,
+      "extracted_cli_readonly_discovery": true
+    },
+    "binaries": {
+      "omen-cli": {
+        "sha256": "488ac933d2b91994a44cd5ea99208790c976e931f200a3f62bf6f70d0d479ff9",
+        "matches_release": true
+      },
+      "omen-daemon": {
+        "sha256": "93450a012545d53ab99c43256456dd588db0df7eb560e1c14a7cfd98c2e8f503",
+        "matches_release": true
+      },
+      "omen-gui": {
+        "sha256": "c5c6422bcc9cc310563211bbb008798c71ac687cb5224581db0a32c8cafcb14c",
+        "matches_release": true
+      }
+    },
+    "dependency_notices": 142,
+    "systemd_validation": {
+      "exit_code": 0,
+      "method": "unmodified unit in extracted package root; no unit started"
+    }
+  },
+  "live_profile_test": {
+    "result": "passed",
+    "fixture_only": false,
+    "board": "8C30",
+    "bios": "F.10",
+    "kernel": "7.0.0-38-generic",
+    "original": "performance",
+    "requested": "balanced",
+    "restored": "performance",
+    "uid": 1000,
+    "authorization": "installed polkit com.omenlinux.control active-session action; production IPC",
+    "scope": "one standard PPD transaction, amd_pstate CPU backend; no firmware thermal-mode equivalence claimed",
+    "evidence": "live-profile-test.json",
+    "daemon_exited_cleanly": true,
+    "tested_daemon_sha256": "11c02e6206a6bd37678cb3e8dbcc89455ffd26797e665bb4a938705b49cc89a4",
+    "repeated_after_tray_changes": false,
+    "note": "Earlier approved transaction; current package has a new build fingerprint. Hardware profile implementation was not edited by the tray change; no further live controls were tested."
+  },
+  "host_changes": {
+    "rea_config": "approved setup; existing Node 24.22.1, no engines installed",
+    "polkit_action": "/usr/share/polkit-1/actions/com.omenlinux.policy installed root:root 0644",
+    "deb_installed": false,
+    "systemd_service_installed": false,
+    "test_daemon_running": false
+  },
+  "performance": {
+    "method": "release binaries; 5-second windows; CPU percent of one logical core; page-cache-warm launches; live read-only monitoring",
+    "cpu_count": 12,
+    "cli_detect": {
+      "runs_seconds": [
+        0.1021803779876791,
+        0.07932853000238538,
+        0.0825202229898423,
+        0.08063782399403863,
+        0.08215917000779882
+      ],
+      "median_seconds": 0.08215917000779882
+    },
+    "daemon_socket_ready_seconds": 0.01212637301068753,
+    "daemon_idle_no_clients": {
+      "seconds": 5.0007689490157645,
+      "rss_kib": 2848,
+      "cpu_pct_one_core": 0.0,
+      "reaped_children_cpu_pct_one_core": 0.0
+    },
+    "gui_window_map_seconds": 0.6292095329845324,
+    "gui_monitoring_dashboard": {
+      "seconds": 5.00100528501207,
+      "rss_kib": 172176,
+      "cpu_pct_one_core": 2.5994773568747838,
+      "reaped_children_cpu_pct_one_core": 1.799638170144081
+    }
+  },
+  "screenshots": {
+    "battery.png": "d6c857fe5c852a890d73095276215d5147d359caa93446416a4a7bd15e00a27c",
+    "dashboard.png": "aef8977bd8e23de51a8b620fd413bba329449e0a320bdd7ecdd74a9e149af7b5",
+    "fan-mock.png": "39897cd0fe9160338f0434282918c61e7e8986d0e87a4e53e016d57704205a5d",
+    "fan.png": "a49f1070bb73e9a43d74573bb85c5439875157c8ab86e7fef9d7124387ce6b1b",
+    "games.png": "f45a2ff37e0e1911efd0f2f6d396f47b6380d567438061dd489fd9a528bd9fb2",
+    "graphics.png": "5aebe425bf11dfdf909c4247febbfa47caf5e3b7307b6a91310f60b0fadc95e2",
+    "lighting.png": "e86ff12c200d2ee7a6e2d90bd78fa3473a388e99cf7ac8759f788aa43c01291c",
+    "performance.png": "22ef4e9d6a1bc72df9e4190fc0562bb435fbab4dd83d77597ec9a0411fd935c4",
+    "settings.png": "c3abc7b57f2cbe1b4ee3b7f5ad6de839205b12deb0f976ce03a01c4bab326983",
+    "vitals.png": "3eb8f23daef40e45322658204bf7727f6bd100d348f13801578b3bda2f935575"
+  },
+  "limits": [
+    "One profile switch/restore is not thermal or Windows parity validation",
+    "Live fan/RGB/charging/graphics/firmware writes were not tested and device-specific paths remain disabled",
+    "No clean-system package install/upgrade/remove, full polkit lifecycle, suspend/resume or fan crash-recovery validation",
+    "Warm startup and short resource windows; no cold-start benchmark",
+    "Main Windows Store application and compatible Windows behavioral reference unavailable",
+    "Configured REA needs chat reconnect for direct tools; standalone MCP was used successfully",
+    "Global hotkeys/overlay and several optional integrations remain unimplemented",
+    "Tray verified with KDE Wayland and a private-bus watcher fixture; GNOME/X11 shell behavior and global shortcuts remain unverified"
+  ],
+  "tray_integration": {
+    "host": "running KDE StatusNotifierWatcher",
+    "live_hardware_writes": false,
+    "checks_passed": [
+      "real KDE tray: read-only menu, Hide, Activate, page navigation, clean Quit",
+      "startup preference hides only after tray registration; menu restores window",
+      "no tray host: start-minimized falls back to a visible GTK window",
+      "private-bus host loss reveals window; host restart re-registers without hiding it again",
+      "fixture only: tray profile changes reach daemon and restore Balanced"
+    ]
+  }
+}

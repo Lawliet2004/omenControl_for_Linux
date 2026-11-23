@@ -1,0 +1,22 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "count": 10000,
+  "profile": "release",
+  "benchmark_only": false,
+  "gui_sha256": "7185605a8b202217be1a346b31497a7eef828df2c3ebe3dd6a42ad3ef0231697",
+  "checks_passed": [
+    "profile availability follows current capabilities without rewriting the saved binding",
+    "search across the complete library launches the final matching game with its own identity",
+    "empty search retains controls and returning to a game preserves expanded setup",
+    "rescan preserves the current search and expanded game setup",
+    "a removed game disappears after rescan and its old action is not retained"
+  ],
+  "requested_backend": "x11",
+  "scan_and_first_accessible_response_seconds": 2.5587026689900085,
+  "loaded_rss_kib": 351208,
+  "search_final_entry_seconds": 0.4004691290319897,
+  "peak_observed_rss_kib": 417364,
+  "cleanup_complete": true
+}

@@ -1,0 +1,493 @@
+{
+  "result": "failed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "host_keyboard_events": false,
+  "profile": "debug",
+  "checks_passed": [
+    "Legendary search, provenance and actual-command setup are keyboard reachable; wrapper text releases Tab",
+    "native Legendary Launch preserves its selected configuration and exposes working manual profile restoration",
+    "Snap shortcut setup explains its unsupported automatic wrapping and keeps that action disabled"
+  ],
+  "gui_sha256": "11e031873ff70bf843cb7c350c4e0c4d5467b07ac21bba0bbe8f59c0fe233407",
+  "location_selections": [
+    {
+      "requested": "/home/papan/Desktop/Projects/omen/target/omen-native-008jo0fp/Additional catalog",
+      "chosen_control": {
+        "role": "toggle button",
+        "name": "Steam \u00b7 Snap"
+      },
+      "saved_after_return": [
+        {
+          "source": "steam",
+          "path": "/home/papan/Desktop/Projects/omen/target/omen-native-008jo0fp/Additional catalog",
+          "flatpak": false,
+          "snap": true
+        }
+      ],
+      "dialog_present": false
+    }
+  ],
+  "error": "",
+  "focus": {
+    "role": "button",
+    "name": "Add library location\u2026"
+  },
+  "saved_preferences": {
+    "version": 1,
+    "general": {
+      "poll_interval_ms": 500,
+      "history_samples": 300,
+      "start_minimized": false,
+      "onboarding_dismissed": true,
+      "dashboard_metrics": [
+        "cpu_temperature",
+        "gpu_temperature",
+        "cpu_fan",
+        "gpu_fan",
+        "gpu_power",
+        "battery"
+      ],
+      "alerts": {
+        "enabled": false,
+        "temperature_c": 90,
+        "hysteresis_c": 5,
+        "cooldown_seconds": 300
+      }
+    },
+    "fan": {
+      "startup_mode": "auto",
+      "curve": {
+        "points": [
+          {
+            "temp_c": 40,
+            "duty_pct": 25
+          },
+          {
+            "temp_c": 55,
+            "duty_pct": 40
+          },
+          {
+            "temp_c": 65,
+            "duty_pct": 60
+          },
+          {
+            "temp_c": 75,
+            "duty_pct": 80
+          },
+          {
+            "temp_c": 85,
+            "duty_pct": 100
+          }
+        ]
+      }
+    },
+    "lighting": {
+      "presets": []
+    },
+    "power": {
+      "battery_aware": false,
+      "on_battery_profile": "quiet",
+      "on_ac_profile": "balanced"
+    },
+    "games": {
+      "custom_games": [],
+      "managed_game_ids": [],
+      "per_game_profiles": {
+        "legendary/Fixture": "performance",
+        "steam/snap/shortcut/7/4045620583": "performance"
+      },
+      "library_locations": [
+        {
+          "source": "steam",
+          "path": "/home/papan/Desktop/Projects/omen/target/omen-native-008jo0fp/Additional catalog",
+          "flatpak": false,
+          "snap": true
+        }
+      ]
+    }
+  },
+  "visible_labels": [
+    "Game Library",
+    "Fixture",
+    "Game library",
+    "Rescan library",
+    "Library locations",
+    "Add a Steam directory containing steamapps, a Heroic configuration directory, a Lutris directory containing pga.db, or a Legendary directory containing installed.json. Records are read as your desktop user. Legendary uses the selected configuration. Steam, Heroic and Lutris use the selected installation's active configuration. Adding a location doe",
+    "Steam \u00b7 Snap",
+    "Add library location\u2026",
+    "Steam (Snap)\n/home/papan/Desktop/Projects/omen/target/omen-native-008jo0fp/Additional catalog",
+    "Remove",
+    "Game sessions",
+    "Refresh sessions",
+    "Current system profile: Balanced",
+    "No tracked sessions yet. Open a game's Profile setup to enable automatic restoration. Launcher submission alone does not create a session.",
+    "This launch selected Performance. Restore the previous Balanced profile when you finish. Another game may still be using the current profile.",
+    "Restore Balanced",
+    "Found 2 games from Steam, Heroic, Lutris, Legendary and custom entries. Missing or unreadable store records are skipped.",
+    "",
+    "About launch and profile modes",
+    "Offline fixture\nlegendary/Fixture\nLibrary: /home/papan/Desktop/Projects/omen/target/omen-native-008jo0fp/home/.config/legendary",
+    "Performance",
+    "Launch",
+    "Profile setup",
+    "Manual restore is selected. Enable automatic restore after choosing Performance or Quiet and setting up the wrapper below.",
+    "Automatic restore uses Power Profiles Daemon and a dedicated systemd user scope. It needs an enabled, authorized daemon, a user systemd session and a supported kernel. A canceled hold is never automatically reapplied. Other profile holds can change the effective profile.",
+    "Enable automatic restore",
+    "Set this as the game's wrapper in Legendary's configuration. It must wrap the actual game command; wrapping a Legendary launch request alone is not lifetime evidence.",
+    "Copy wrapper command",
+    "Launcher/runtime compatibility still needs verification for your game. If setup cannot establish a profile hold, the wrapped command reports an error; switch to manual restore to run without this integration.",
+    "",
+    "Restore game profile: restored Balanced",
+    "OMEN Control",
+    "Dashboard",
+    "System Vitals",
+    "Performance Control",
+    "Fan & Thermal",
+    "Lighting Studio",
+    "Graphics",
+    "Battery & Power",
+    "Game Library",
+    "Settings & Diagnostics",
+    "Monitor",
+    "Controls",
+    "Library",
+    "Application",
+    "",
+    "source: MOCK \u2014 fixture data, no real hardware"
+  ],
+  "visible_controls": [
+    {
+      "role": "button",
+      "name": "Show or hide navigation"
+    },
+    {
+      "role": "button",
+      "name": "Application actions"
+    },
+    {
+      "role": "button",
+      "name": "Fixture"
+    },
+    {
+      "role": "button",
+      "name": "Minimize"
+    },
+    {
+      "role": "button",
+      "name": "Maximize"
+    },
+    {
+      "role": "button",
+      "name": "Close"
+    },
+    {
+      "role": "entry",
+      "name": "Search games"
+    },
+    {
+      "role": "button",
+      "name": "Rescan library"
+    },
+    {
+      "role": "button",
+      "name": "Library locations"
+    },
+    {
+      "role": "combo box",
+      "name": "Steam \u00b7 Snap"
+    },
+    {
+      "role": "toggle button",
+      "name": "Steam \u00b7 Snap"
+    },
+    {
+      "role": "button",
+      "name": "Add library location\u2026"
+    },
+    {
+      "role": "button",
+      "name": "Remove"
+    },
+    {
+      "role": "button",
+      "name": "Refresh sessions"
+    },
+    {
+      "role": "button",
+      "name": "Restore Balanced"
+    },
+    {
+      "role": "button",
+      "name": "About launch and profile modes"
+    },
+    {
+      "role": "combo box",
+      "name": "Performance"
+    },
+    {
+      "role": "toggle button",
+      "name": "Performance"
+    },
+    {
+      "role": "button",
+      "name": "Launch"
+    },
+    {
+      "role": "button",
+      "name": "Profile setup"
+    },
+    {
+      "role": "button",
+      "name": "Enable automatic restore"
+    },
+    {
+      "role": "text",
+      "name": "Game wrapper command"
+    },
+    {
+      "role": "button",
+      "name": "Copy wrapper command"
+    },
+    {
+      "role": "button",
+      "name": "Dismiss message"
+    }
+  ],
+  "key_events": [
+    "Control_L+f",
+    "Control_L+a",
+    "BackSpace",
+    "l",
+    "e",
+    "g",
+    "e",
+    "n",
+    "d",
+    "a",
+    "r",
+    "y",
+    "slash",
+    "Shift_L+F",
+    "i",
+    "x",
+    "t",
+    "u",
+    "r",
+    "e",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "space",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Return",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Return",
+    "Control_L+f",
+    "Control_L+a",
+    "BackSpace",
+    "s",
+    "t",
+    "e",
+    "a",
+    "m",
+    "slash",
+    "s",
+    "n",
+    "a",
+    "p",
+    "slash",
+    "s",
+    "h",
+    "o",
+    "r",
+    "t",
+    "c",
+    "u",
+    "t",
+    "slash",
+    "7",
+    "slash",
+    "4",
+    "0",
+    "4",
+    "5",
+    "6",
+    "2",
+    "0",
+    "5",
+    "8",
+    "3",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "space",
+    "Control_L+f",
+    "Control_L+a",
+    "BackSpace",
+    "Tab",
+    "Tab",
+    "space",
+    "Control_L+f",
+    "Control_L+a",
+    "BackSpace",
+    "Tab",
+    "Tab",
+    "Tab",
+    "space",
+    "End",
+    "Return",
+    "Tab",
+    "Return",
+    "Control_L+l",
+    "Control_L+a",
+    "BackSpace",
+    "slash",
+    "h",
+    "o",
+    "m",
+    "e",
+    "slash",
+    "p",
+    "a",
+    "p",
+    "a",
+    "n",
+    "slash",
+    "Shift_L+D",
+    "e",
+    "s",
+    "k",
+    "t",
+    "o",
+    "p",
+    "slash",
+    "Shift_L+P",
+    "r",
+    "o",
+    "j",
+    "e",
+    "c",
+    "t",
+    "s",
+    "slash",
+    "o",
+    "m",
+    "e",
+    "n",
+    "slash",
+    "t",
+    "a",
+    "r",
+    "g",
+    "e",
+    "t",
+    "slash",
+    "o",
+    "m",
+    "e",
+    "n",
+    "minus",
+    "n",
+    "a",
+    "t",
+    "i",
+    "v",
+    "e",
+    "minus",
+    "0",
+    "0",
+    "8",
+    "j",
+    "o",
+    "0",
+    "f",
+    "p",
+    "slash",
+    "Shift_L+A",
+    "d",
+    "d",
+    "i",
+    "t",
+    "i",
+    "o",
+    "n",
+    "a",
+    "l",
+    "space",
+    "c",
+    "a",
+    "t",
+    "a",
+    "l",
+    "o",
+    "g",
+    "Return"
+  ]
+}

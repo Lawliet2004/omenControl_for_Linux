@@ -1,0 +1,113 @@
+{
+  "result": "passed",
+  "started_utc": "2026-10-27T18:21:40.461839+00:00",
+  "jobs": [
+    {
+      "name": "ui-debug-current",
+      "script": "gui_game_formats",
+      "profile": "debug",
+      "backend": null,
+      "exit_code": 0
+    },
+    {
+      "name": "keyboard-debug",
+      "script": "gui_accessibility",
+      "profile": "debug",
+      "backend": null,
+      "exit_code": 0
+    },
+    {
+      "name": "ui-release-current",
+      "script": "gui_game_formats",
+      "profile": "release",
+      "backend": null,
+      "exit_code": 0
+    },
+    {
+      "name": "keyboard-release",
+      "script": "gui_accessibility",
+      "profile": "release",
+      "backend": null,
+      "exit_code": 0
+    },
+    {
+      "name": "presentation",
+      "script": "gui_game_formats_presentation",
+      "profile": "release",
+      "backend": null,
+      "exit_code": 0
+    },
+    {
+      "name": "native-x11",
+      "script": "gui_settings",
+      "profile": "release",
+      "backend": "x11",
+      "exit_code": 0
+    },
+    {
+      "name": "library-x11",
+      "script": "gui_library",
+      "profile": "release",
+      "backend": "x11",
+      "exit_code": 0
+    },
+    {
+      "name": "managed-ui-x11",
+      "script": "gui_game_sessions",
+      "profile": "release",
+      "backend": "x11",
+      "exit_code": 0
+    },
+    {
+      "name": "issues-ui-x11",
+      "script": "gui_launch_issues",
+      "profile": "release",
+      "backend": "x11",
+      "exit_code": 0
+    },
+    {
+      "name": "shortcuts-x11",
+      "script": "shortcuts",
+      "profile": "release",
+      "backend": "x11",
+      "exit_code": 0
+    },
+    {
+      "name": "native-wayland",
+      "script": "gui_settings",
+      "profile": "release",
+      "backend": "wayland",
+      "exit_code": 0
+    },
+    {
+      "name": "library-wayland",
+      "script": "gui_library",
+      "profile": "release",
+      "backend": "wayland",
+      "exit_code": 0
+    },
+    {
+      "name": "managed-ui-wayland",
+      "script": "gui_game_sessions",
+      "profile": "release",
+      "backend": "wayland",
+      "exit_code": 0
+    },
+    {
+      "name": "issues-ui-wayland",
+      "script": "gui_launch_issues",
+      "profile": "release",
+      "backend": "wayland",
+      "exit_code": 0
+    },
+    {
+      "name": "shortcuts-wayland",
+      "script": "shortcuts",
+      "profile": "release",
+      "backend": "wayland",
+      "exit_code": 0
+    }
+  ],
+  "gui_sha256": "516b722be9cd8c57b13f401e714bcb0a2affb2a120e771ff9f14ccce00bd2fc3",
+  "finished_utc": "2026-10-27T18:30:45.118122+00:00"
+}

@@ -1,0 +1,1146 @@
+{
+  "recorded_utc": "2026-10-27T12:58:33.707278+00:00",
+  "revision": "0.1.0-19",
+  "status": "verified keyboard/presentation milestone; full application audit remains incomplete",
+  "language": {
+    "application": "English only",
+    "additional_translations_in_scope": false
+  },
+  "source_manifest": "source-manifest.json",
+  "source_sha256": "e2d59d3985eefc166889430e0965e7f5d4fb7b97c77d5022fa9d89f37da90e93",
+  "test_harness_manifest": "test-harness-manifest.json",
+  "test_harness_sha256": "be1a705ac95ea6eccc83d518482d8713c18ad973bdf9109f06e5ca68c9912ee9",
+  "documentation_manifest": "documentation-manifest.json",
+  "documentation_sha256": "76e04f52ed7171a344ee2ac44bec177a08a67aa6f7047764a11b7133dccbcc19",
+  "rust_workspace": {
+    "debug": {
+      "passed": 253,
+      "failed": 0,
+      "ignored": 0
+    },
+    "release": {
+      "passed": 253,
+      "failed": 0,
+      "ignored": 0
+    }
+  },
+  "format_check": "passed",
+  "strict_clippy": "workspace all-targets all-features -D warnings passed",
+  "release_binaries": {
+    "omen-cli": {
+      "sha256": "42f2241c4862c51cd6e28daf1ec659b320fca6ae05fde7bc6fe7978af203961b",
+      "matches_release": true
+    },
+    "omen-daemon": {
+      "sha256": "70d31df0b6dba20e73a3925451345f48bd93ee0cf5166d3b4bc2423e54d2ba5d",
+      "matches_release": true
+    },
+    "omen-gui": {
+      "sha256": "787c518933909bf40aacb9d738e46971f9d9fd471ec755acdc54b53774f47de3",
+      "matches_release": true
+    }
+  },
+  "runtime": {
+    "gtk": "4.22.4",
+    "libadwaita": "1.9.1",
+    "packages": [
+      "orca 50.2-0ubuntu0.1",
+      "xwayland 2:24.1.10-1"
+    ]
+  },
+  "keyboard_and_orca": {
+    "debug": {
+      "workflows": 13,
+      "evidence": "keyboard-debug.json",
+      "generated_speech_utterances": 391,
+      "private_XTEST_input": true,
+      "host_keyboard_events": false,
+      "audible_synthesis_tested": false
+    },
+    "release": {
+      "workflows": 13,
+      "evidence": "keyboard-release.json",
+      "generated_speech_utterances": 385,
+      "private_XTEST_input": true,
+      "host_keyboard_events": false,
+      "audible_synthesis_tested": false
+    }
+  },
+  "native_ui": {
+    "x11": {
+      "native_regressions": 31,
+      "library_workflows": 5,
+      "library_entries": 10000,
+      "managed_workflows": 5,
+      "launch_recovery_workflows": 6,
+      "shortcut_overlay_workflows": 32,
+      "gtk_display_type": "GdkX11Display",
+      "scan_and_first_accessible_response_seconds": 2.2504810980171897,
+      "loaded_rss_kib": 359292,
+      "peak_observed_rss_kib": 427676,
+      "additional_capture_checks": 2
+    },
+    "wayland": {
+      "native_regressions": 31,
+      "library_workflows": 5,
+      "library_entries": 10000,
+      "managed_workflows": 5,
+      "launch_recovery_workflows": 6,
+      "shortcut_overlay_workflows": 32,
+      "gtk_display_type": "GdkWaylandDisplay",
+      "scan_and_first_accessible_response_seconds": 1.8659693339723162,
+      "loaded_rss_kib": 295468,
+      "peak_observed_rss_kib": 331348,
+      "additional_capture_checks": 2
+    }
+  },
+  "presentation": {
+    "default_scenes": 36,
+    "selected_network_scenes": 2,
+    "default_text_contrast_samples": 1041,
+    "selected_state_surrounding_text_samples": 59,
+    "horizontal_clipping_detected": 0,
+    "collapsed_text_allocations": 0,
+    "measured_contrast_failures": 0,
+    "cases": [
+      "light",
+      "dark",
+      "high contrast",
+      "Sans 20 / narrow light"
+    ],
+    "minimum_default_font": "Sans 10",
+    "measurement": "Pango geometry and computed foreground/effective opacity; modal rendered background within visible uniform label allocations",
+    "excluded": "Unsupported/nonuniform/partially visible contrast samples, native selection foreground, non-label input text, all unvisited/transient states",
+    "full_accessibility_or_contrast_certification": false,
+    "captures": [
+      {
+        "path": "docs/screenshots/accessibility/presentation/light-dashboard.png",
+        "sha256": "14db646b4a23a55882156a654c2a3792d6cb51f3a773e7152aac0c07daf8ca76",
+        "case": "light",
+        "report": "docs/evidence/accessibility/presentation/light-dashboard.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/light-vitals.png",
+        "sha256": "044ef33bdbed50f4f9e431c5f753b3615825c1cf74a0842ee2d4124769950e6c",
+        "case": "light",
+        "report": "docs/evidence/accessibility/presentation/light-vitals.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/light-performance.png",
+        "sha256": "a982e2cb60056db13b87deaa53172faf9a00026bea6db85a21db0c412859d4e1",
+        "case": "light",
+        "report": "docs/evidence/accessibility/presentation/light-performance.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/light-fan.png",
+        "sha256": "9d84d2a667a86145ab15986d89667204db4959b3628a486b2382b1aa0646aff4",
+        "case": "light",
+        "report": "docs/evidence/accessibility/presentation/light-fan.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/light-lighting.png",
+        "sha256": "87da2d3351868c4c9d1f22ba17f20963112419c315559b3d0cf2af6b6667c9cc",
+        "case": "light",
+        "report": "docs/evidence/accessibility/presentation/light-lighting.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/light-graphics.png",
+        "sha256": "506b8e76aa7bb90e0f7212ca61657d9ab5589dd4a298dbba0f29bddb1f1cdedf",
+        "case": "light",
+        "report": "docs/evidence/accessibility/presentation/light-graphics.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/light-battery.png",
+        "sha256": "b413627d458759c38f6849d3695a17e5da398a51e63016d81317a0459e0deb95",
+        "case": "light",
+        "report": "docs/evidence/accessibility/presentation/light-battery.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/light-games.png",
+        "sha256": "fb356177dd7d51ff2d0646511e91539564c68d2a16ced4a5f4201bea7d740955",
+        "case": "light",
+        "report": "docs/evidence/accessibility/presentation/light-games.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/light-settings.png",
+        "sha256": "00343faa2d41b3102d165415213baa89a6a1fc5384d01cbc1dd1829ab151face",
+        "case": "light",
+        "report": "docs/evidence/accessibility/presentation/light-settings.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/dark-dashboard.png",
+        "sha256": "4a9fec466f9f2365f7af4aff58835bfa5adfc145e5b0697131ed9544a64db964",
+        "case": "dark",
+        "report": "docs/evidence/accessibility/presentation/dark-dashboard.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/dark-vitals.png",
+        "sha256": "7986e8b66242228f198565bc16ff828e6a4f18f467ba13a7cbedec22af30f3dd",
+        "case": "dark",
+        "report": "docs/evidence/accessibility/presentation/dark-vitals.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/dark-performance.png",
+        "sha256": "0b57c6fc5aea91c1e4a5619e31a871b08f2cc1908bbaf309b1cf5e952ca0d5d8",
+        "case": "dark",
+        "report": "docs/evidence/accessibility/presentation/dark-performance.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/dark-fan.png",
+        "sha256": "c450e68089d86bd4321c63df82ff07c8d5d1a98ec1052a2d5eaeb198f62f027c",
+        "case": "dark",
+        "report": "docs/evidence/accessibility/presentation/dark-fan.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/dark-lighting.png",
+        "sha256": "d4f484060d5cf645ffeb8c2589c1c0b18889780ebac93b56cb2ba3b4ba26f14c",
+        "case": "dark",
+        "report": "docs/evidence/accessibility/presentation/dark-lighting.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/dark-graphics.png",
+        "sha256": "98813c5117ce3ea64cda320526126b18dd6eb44e95964dc3eda47bbddd1e8a0f",
+        "case": "dark",
+        "report": "docs/evidence/accessibility/presentation/dark-graphics.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/dark-battery.png",
+        "sha256": "2157bed1deae01ce38e24b80bb58bef5bf8647e522e360986fd6655a46d54555",
+        "case": "dark",
+        "report": "docs/evidence/accessibility/presentation/dark-battery.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/dark-games.png",
+        "sha256": "d7b46d86e6b950b36e09620ec9917fcab6254803ca16f362a2d2da99f19280ab",
+        "case": "dark",
+        "report": "docs/evidence/accessibility/presentation/dark-games.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/dark-settings.png",
+        "sha256": "cab50ca5067b1262469214841dc22035fcec9064efb83be01e1b3cde535b526d",
+        "case": "dark",
+        "report": "docs/evidence/accessibility/presentation/dark-settings.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/high-contrast-dashboard.png",
+        "sha256": "5c151003650a374b7f3ea22816ce538215a2ac19fd87ac2f3fa3d5678e391671",
+        "case": "high-contrast",
+        "report": "docs/evidence/accessibility/presentation/high-contrast-dashboard.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/high-contrast-vitals.png",
+        "sha256": "b97de85ffe27ec3d222c93c6f6c3376c5d1cec966af11c83a37648e4a9433c68",
+        "case": "high-contrast",
+        "report": "docs/evidence/accessibility/presentation/high-contrast-vitals.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/high-contrast-performance.png",
+        "sha256": "0f6ec8abf62d10b321fd7df41bb3107df693d1f6c918600ba15b7968a43e8c23",
+        "case": "high-contrast",
+        "report": "docs/evidence/accessibility/presentation/high-contrast-performance.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/high-contrast-fan.png",
+        "sha256": "7f8cdd526bec645ea40d82c14a628f846040c0008762607afb8085b4827a081a",
+        "case": "high-contrast",
+        "report": "docs/evidence/accessibility/presentation/high-contrast-fan.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/high-contrast-lighting.png",
+        "sha256": "fbbcd7f1938b583f1ce2b44453d2c1e440bcc231685dc4ca365d593d6db9cb2e",
+        "case": "high-contrast",
+        "report": "docs/evidence/accessibility/presentation/high-contrast-lighting.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/high-contrast-graphics.png",
+        "sha256": "512c9606e0a4fcff3fae8aa0648bc954aa97ec9b49c13620160db549e5ca345e",
+        "case": "high-contrast",
+        "report": "docs/evidence/accessibility/presentation/high-contrast-graphics.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/high-contrast-battery.png",
+        "sha256": "c4cc21c2bb7cf92459f952c9d84d2a987c84721c7cb4c91e6d03d3f93c5f7e03",
+        "case": "high-contrast",
+        "report": "docs/evidence/accessibility/presentation/high-contrast-battery.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/high-contrast-games.png",
+        "sha256": "6fd1192be94f80a46793bab5b870b68e5b017d8714db062e4bc444d8955cf4b8",
+        "case": "high-contrast",
+        "report": "docs/evidence/accessibility/presentation/high-contrast-games.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/high-contrast-settings.png",
+        "sha256": "846ff2b0c0041e8de71d78b45bf3f4d46ae1e1b6eceef11f0fdc3bbcc662c58c",
+        "case": "high-contrast",
+        "report": "docs/evidence/accessibility/presentation/high-contrast-settings.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/large-light-dashboard.png",
+        "sha256": "097daccce75c4ca4591e810464fdeb88cfbbb37da59061194b2f36432639aa00",
+        "case": "large-light",
+        "report": "docs/evidence/accessibility/presentation/large-light-dashboard.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/large-light-vitals.png",
+        "sha256": "ff76005b272670b89ee21ad5d03316396e866db72243a99c0a561c2ba0566c0a",
+        "case": "large-light",
+        "report": "docs/evidence/accessibility/presentation/large-light-vitals.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/large-light-performance.png",
+        "sha256": "3c833b4b8080ee75bf7329bf9d850b9ac28b0525e4ef7accaf372526f1c2f76d",
+        "case": "large-light",
+        "report": "docs/evidence/accessibility/presentation/large-light-performance.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/large-light-fan.png",
+        "sha256": "3a99bbac09910e4e37d77fd86e01f76f4001801cdfd1cf03ff23fe2fe7c13454",
+        "case": "large-light",
+        "report": "docs/evidence/accessibility/presentation/large-light-fan.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/large-light-lighting.png",
+        "sha256": "7857508c07de538a97706e3b279fbe143ebfb48728e77c4d0ecac1383ef92fa2",
+        "case": "large-light",
+        "report": "docs/evidence/accessibility/presentation/large-light-lighting.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/large-light-graphics.png",
+        "sha256": "04c41b8bf20e8d41760b70291abad4fab4b4daf4453a5c389f1b533432ce5a91",
+        "case": "large-light",
+        "report": "docs/evidence/accessibility/presentation/large-light-graphics.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/large-light-battery.png",
+        "sha256": "c89c62fed747270432fce5a42718498af537ae681be7531020e6449b6fea59b8",
+        "case": "large-light",
+        "report": "docs/evidence/accessibility/presentation/large-light-battery.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/large-light-games.png",
+        "sha256": "32bf0c32891f0744ea1bc031b0cc921e5ea13bae3b017a849282d66e683c5b2f",
+        "case": "large-light",
+        "report": "docs/evidence/accessibility/presentation/large-light-games.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/presentation/large-light-settings.png",
+        "sha256": "22f6ed3320583f9893edc4e85abdc8a41cd702982f12ad9e70b9f6e76c84405e",
+        "case": "large-light",
+        "report": "docs/evidence/accessibility/presentation/large-light-settings.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/network-selection/wide-light.png",
+        "sha256": "225514dd5b84b3154b789abd371b1ad519f19cef3dde6fbc9798233369738bf2",
+        "case": "wide-light",
+        "report": "docs/evidence/accessibility/network-selection/wide-light.json"
+      },
+      {
+        "path": "docs/screenshots/accessibility/network-selection/narrow-large-light.png",
+        "sha256": "75494ee27fb4baaf0bfaf646e26bdb3ee73f25489da870acb0eb9b59e2e1ab60",
+        "case": "narrow-large-light",
+        "report": "docs/evidence/accessibility/network-selection/narrow-large-light.json"
+      }
+    ]
+  },
+  "visual_review": {
+    "batch_count": 1,
+    "confirmation_batches": 0,
+    "needed_UI_corrections": false,
+    "reviewed": [
+      "presentation/dark-dashboard.png",
+      "presentation/large-light-settings.png",
+      "network-selection/wide-light.png",
+      "network-selection/narrow-large-light.png"
+    ],
+    "scope": "Four final own-app wide/narrow captures inspected together once; no further visual edits"
+  },
+  "additional_native_captures": [
+    {
+      "path": "docs/evidence/accessibility/native-captures/managed/x11/games-active-wide-light.png",
+      "sha256": "413070aa5a5845c948ad63dd1cf249d5a5b98261085dd36808505dcc3945e06a",
+      "backend": "x11",
+      "category": "managed",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/evidence/accessibility/native-captures/managed/x11/games-setup-narrow-dark.png",
+      "sha256": "4a143d27f83d37b8c8d3f35f50e76185830d204dec17ad9691d7581c7db1ea47",
+      "backend": "x11",
+      "category": "managed",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/evidence/accessibility/native-captures/issues/x11/launch-issues-wide-light.png",
+      "sha256": "f669e954dc123cec6316a681e81eb8d1ddab51ddabd1fe444d972c341c6d43cc",
+      "backend": "x11",
+      "category": "issues",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/evidence/accessibility/native-captures/issues/x11/launch-issues-narrow-dark.png",
+      "sha256": "229bb2dfdfd41a349ad08ab9d8f29fe53ca472cb5a43964e90988961809ac629",
+      "backend": "x11",
+      "category": "issues",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/evidence/accessibility/native-captures/managed/wayland/games-active-wide-light.png",
+      "sha256": "aa6b9eb68f387d662d1a16c57a95a78e8b7b04b419a1025b22b8405d6e0ee190",
+      "backend": "wayland",
+      "category": "managed",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/evidence/accessibility/native-captures/managed/wayland/games-setup-narrow-dark.png",
+      "sha256": "8f314f0e063644e60c4195e381d2152d48c685f8c69142cb3706ba2c143e13cd",
+      "backend": "wayland",
+      "category": "managed",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/evidence/accessibility/native-captures/issues/wayland/launch-issues-wide-light.png",
+      "sha256": "f669e954dc123cec6316a681e81eb8d1ddab51ddabd1fe444d972c341c6d43cc",
+      "backend": "wayland",
+      "category": "issues",
+      "visually_reviewed": false
+    },
+    {
+      "path": "docs/evidence/accessibility/native-captures/issues/wayland/launch-issues-narrow-dark.png",
+      "sha256": "229bb2dfdfd41a349ad08ab9d8f29fe53ca472cb5a43964e90988961809ac629",
+      "backend": "wayland",
+      "category": "issues",
+      "visually_reviewed": false
+    }
+  ],
+  "historical_capture_integrity": {
+    "expected": {
+      "5d40e7a5ad9c603fa16ad0115976300b83ed68633177a476b2c64c7a0da76b26": "docs/screenshots/launch-issues/launch-issues-wide-light.png",
+      "1490ada471c1702c8bd66a0ada573ac313306b32295f89b3f428d2f1abf214f7": "docs/screenshots/launch-issues/launch-issues-narrow-dark.png",
+      "54115eb872dd26b7ef03ceaff130aa14246eb0cf3f51e53f62c692ad880775da": "docs/screenshots/managed-games/games-active-wide-light.png",
+      "f45618db20f343d4fb59ad2d58624d8b0a6f5d3c6b7f2295da4298d4369e4b0e": "docs/screenshots/managed-games/games-setup-narrow-dark.png"
+    },
+    "recovered": {
+      "54115eb872dd26b7ef03ceaff130aa14246eb0cf3f51e53f62c692ad880775da": "target/a11y-historical-recovery/games-active-wide-light.png",
+      "f45618db20f343d4fb59ad2d58624d8b0a6f5d3c6b7f2295da4298d4369e4b0e": "target/a11y-historical-recovery/games-setup-narrow-dark.png",
+      "5d40e7a5ad9c603fa16ad0115976300b83ed68633177a476b2c64c7a0da76b26": "target/a11y-historical-recovery/launch-issues-wide-light.png",
+      "1490ada471c1702c8bd66a0ada573ac313306b32295f89b3f428d2f1abf214f7": "target/a11y-historical-recovery/launch-issues-narrow-dark.png"
+    }
+  },
+  "package": {
+    "path": "target/debian/omen-linux_0.1.0-19_amd64.deb",
+    "sha256": "0fa1a2209946d4b82aa15cc119dac3167f6165fb1717284cf43e7ed59448dee6",
+    "static_validation": "package-validation.json",
+    "matches_final_verified_executables": true,
+    "installed_by_verifier": false,
+    "container_or_installed_VM_validated": false
+  },
+  "managed_debug_integration": {
+    "checks_passed": 20,
+    "evidence": "native-debug.json",
+    "cli_sha256": "fe9e6d6f0ff2c8cb84c4298c10f39862e852c109ff1914406db221a3fd748e29",
+    "helper_sha256": "c4582de35b68540511010e9ccb442d95b3bd96bcb98131fc05fb72bff750c615"
+  },
+  "backend_source_equivalence": {
+    "compared_files": 65,
+    "changed": 0,
+    "reference": "../launch-issues/source-manifest.json"
+  },
+  "carried_evidence": {
+    "source": "../launch-issues/validation-summary.json",
+    "sha256": "fb002120ba9bb3c17fbbb853c9569167277aa45e1c4f00d6230a5742a0cfa33d",
+    "release_CLI_and_daemon_byte_identical": true,
+    "release_managed_integration_checks": 20,
+    "manual_launch_checks": 16,
+    "process_smoke_checks": 7,
+    "new_runs_of_these_backend_checks_claimed": false
+  },
+  "earlier_timeout": {
+    "failed": "initial-library-timeout.json",
+    "same_binary_isolated_pass": "initial-library-isolated.json",
+    "final_binary_sequential_runs": "library-x11.json and library-wayland.json",
+    "load_as_cause_established": false
+  },
+  "cleanup": {
+    "native_fixture_processes_and_temporary_directories_removed": true,
+    "remaining_system_managed_dump": {
+      "path": "/var/lib/systemd/coredump/core.at-spi-bus-laun.1000.5b4da494bc594ba0be135cf635baebd9.3741191.1793100245000000.zst",
+      "bytes": 103860,
+      "owner": "root",
+      "trigger": "unexpected abort when probing installed at-spi-bus-launcher --help",
+      "unprivileged_removal_refused": true,
+      "privilege_changes_or_unrelated_dumps_modified": false
+    }
+  },
+  "preserved_packages": {
+    "15": {
+      "path": "target/debian/omen-linux_0.1.0-15_amd64.deb",
+      "sha256": "c8d546e4f2f52fed11a648819602e0d32ca550285f3f185bb8bd1138f0740fd5"
+    },
+    "16": {
+      "path": "target/debian/omen-linux_0.1.0-16_amd64.deb",
+      "sha256": "f83ff12dbdcb73ffa0a79c5d8bc004148773405546cf8e97b8ac8985b97767af"
+    },
+    "17": {
+      "path": "target/debian/omen-linux_0.1.0-17_amd64.deb",
+      "sha256": "c202e767f998a143e78f59ce3264fd429c19fd4f8fd190f1f61ebec7520186d3"
+    },
+    "18": {
+      "path": "target/debian/omen-linux_0.1.0-18_amd64.deb",
+      "sha256": "b6484a11f92e40c9ef18f67d7b07490a5e5af071ec412291cfc13fa40bd3e767"
+    }
+  },
+  "physical_hardware_writes_performed": false,
+  "host_package_or_service_installed": false,
+  "remaining": [
+    "Expanded/transient/hover/pressed presentation states, other themes/accents and all input-text/selection contrast",
+    "Other screen readers, audible synthesis, physical keyboard/focus and effective display DPI",
+    "Real native Steam/Proton, Heroic and Lutris execution; managed Flatpak and complete job-control compatibility",
+    "Broader launcher formats and actual routing evidence",
+    "Current revision installed-container/VM and graphical distribution installation",
+    "Physical graphical authorization, global shortcuts, compositor/full-screen overlay and suspend/resume",
+    "Physical fan/RGB/charging/graphics release gates"
+  ],
+  "evidence_files": [
+    {
+      "path": "cargo-clippy.log",
+      "sha256": "5ad38ebaaf085bbc27fee928ff0c43c5b98fb1d3321ef862cd6a6948d749792a"
+    },
+    {
+      "path": "cargo-fmt.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cargo-test-debug.log",
+      "sha256": "85d037ff018669d3903e8a90b765a84b3cba00b341c58d71529aa6d2b65c4f0e"
+    },
+    {
+      "path": "cargo-test-release.log",
+      "sha256": "4a0f29e234b2cb7bfbc16f2f2b8547dd1d2da21e3bf69c78501701086e1e3d47"
+    },
+    {
+      "path": "collect-evidence.py",
+      "sha256": "3dbabe9cfad97c589b0bae16a851c38e37126cb02c365d12c89aae8ec4b19ef1"
+    },
+    {
+      "path": "desktop-file-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "documentation-manifest.json",
+      "sha256": "ec4eb6185ee1793f88ef9e92008b239f1a756525aa6156786c263ad9cf69ad21"
+    },
+    {
+      "path": "initial-library-isolated.json",
+      "sha256": "5950887798e6f020e1cb275ca5945152365bf17c7464d187e672deb8515cd041"
+    },
+    {
+      "path": "initial-library-timeout.json",
+      "sha256": "f4b453f0b94ed2ee94e7367d5f20686618aae66773df351e3e52fb84965f9cae"
+    },
+    {
+      "path": "initial-network-selection-loss.json",
+      "sha256": "c58e3bb42f33e4e40a333c79b1a31dbc1b633e897529c868a2a8bfd9041974f5"
+    },
+    {
+      "path": "issues-wayland-a11y.log",
+      "sha256": "be1fddb42386d2a367791ac9d05f5911a656b0f5e46457c31261ee2df2d26763"
+    },
+    {
+      "path": "issues-wayland-daemon.log",
+      "sha256": "499b4ce090c40a9dc65cbc3fff4088f4555a6b8a27d9727706a6a93409fd4b7d"
+    },
+    {
+      "path": "issues-wayland-gui.log",
+      "sha256": "c5323df984394521388a47dbdfdafd34153be29945f73689f85ced0fddf2bfff"
+    },
+    {
+      "path": "issues-wayland-launch-issues-narrow-dark.log",
+      "sha256": "b765dd7a5a8e154493d3e6bf05eb9858147f82ff08c1d02702aa798ecf522f5d"
+    },
+    {
+      "path": "issues-wayland-launch-issues-wide-light.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "issues-wayland-reopened.log",
+      "sha256": "c281f2e4793750c9603c41956a57f4a7b9a91850652412938e3042e02f21144f"
+    },
+    {
+      "path": "issues-wayland.json",
+      "sha256": "ea6397d72fad2272d9b4bea40e92a7df4ca48c0189a67e48a1423dedaafcf4b2"
+    },
+    {
+      "path": "issues-wayland.log",
+      "sha256": "5203f2487e0f16649bb5fd1767ef9ff55c32522fe8dd88bbfc29df904f04c2f0"
+    },
+    {
+      "path": "issues-x11-a11y.log",
+      "sha256": "1f27021546f34e7147821ab792df1abe60a3e89dd149cfdbfbd7d73f97334972"
+    },
+    {
+      "path": "issues-x11-daemon.log",
+      "sha256": "77b6c373d0e9de62c96646fadf054c4305a1e411adcb02439224d2e846541620"
+    },
+    {
+      "path": "issues-x11-gui.log",
+      "sha256": "558a6a55945a07bd0c4111316bc3cd15e32746881112aaecaaf8d884f3005f9b"
+    },
+    {
+      "path": "issues-x11-launch-issues-narrow-dark.log",
+      "sha256": "dead795cb5c1a476e7107c075981431a1793b14c1b8bc5a9086793bc9f8aac7d"
+    },
+    {
+      "path": "issues-x11-launch-issues-wide-light.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "issues-x11-reopened.log",
+      "sha256": "0eac85d84f12701f8cf3c72c7241d60feefc3948638fd96a5108b98e20c17674"
+    },
+    {
+      "path": "issues-x11.json",
+      "sha256": "729dd8dbe1f9124ff9c51a1b0ccb611ce39754f3f28dfb505c8004a7f48e17af"
+    },
+    {
+      "path": "issues-x11.log",
+      "sha256": "e1c61a87fc98b64a5a4927ed69ecb08c3d77abc0de8a25d3b8ffc49044e670d3"
+    },
+    {
+      "path": "keyboard-debug-gui.log",
+      "sha256": "65d5ac4b4b15f924585b848c4cc5e84dff39dfec5700f3857f859cec19b588c1"
+    },
+    {
+      "path": "keyboard-debug.json",
+      "sha256": "9161e024eb6e6e0681c8fca39e141cd7550ea7043a283075bd444c3aa02d16dc"
+    },
+    {
+      "path": "keyboard-release-gui.log",
+      "sha256": "65d5ac4b4b15f924585b848c4cc5e84dff39dfec5700f3857f859cec19b588c1"
+    },
+    {
+      "path": "keyboard-release.json",
+      "sha256": "fe171affddec954e8f4409af858c5102b699f59bb7c9159dedde3f2fb258a1f6"
+    },
+    {
+      "path": "library-wayland-a11y.log",
+      "sha256": "8a992802209a2aabe268ca1155d07a69c405ad7faa4cd6d1aeccc308796bef12"
+    },
+    {
+      "path": "library-wayland-daemon.log",
+      "sha256": "86e7871a0e26a6e6b0523ff73159edffb3319bdbdde47dc363d2924d25b32d7c"
+    },
+    {
+      "path": "library-wayland-gui.log",
+      "sha256": "cefcfd020a99d500691f6f36cb27e3f587eb025ec6b4d7394921092029cbc56b"
+    },
+    {
+      "path": "library-wayland-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "library-wayland.json",
+      "sha256": "f452d4bfa8fe106a3c3f6fe963a2995578eb7fa207b0b87dc37f75f3e947b33d"
+    },
+    {
+      "path": "library-wayland.log",
+      "sha256": "1682b53932cba2406f7e17f2580ad7989520777290d33e0dcebef7c3e75eb8cd"
+    },
+    {
+      "path": "library-x11-a11y.log",
+      "sha256": "061522df99ac01871f3a169477a448814a406731ea72d806145f053c40b72157"
+    },
+    {
+      "path": "library-x11-daemon.log",
+      "sha256": "25a36c25b2acf7b33ef960e0e7bfe00a48b57be18238f26dd359b02f6f2f9674"
+    },
+    {
+      "path": "library-x11-gui.log",
+      "sha256": "ae61660913dbcace4dbbbcffe02b58a60c79d4796601f5d3f1f840e63cb38221"
+    },
+    {
+      "path": "library-x11-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "library-x11.json",
+      "sha256": "7b057f42faf94326b0681a80913dc9ec38b74fe7259f4a6ab2179f93bd36582c"
+    },
+    {
+      "path": "library-x11.log",
+      "sha256": "dfa4dc801260f1cfdc0d715a36e9b3c8555dcb599a017763f69d18263954972b"
+    },
+    {
+      "path": "managed-wayland-a11y.log",
+      "sha256": "cd82b0d562f655805e41c9271b06e4dc858b01c5d588196a2ff50962d289ca9a"
+    },
+    {
+      "path": "managed-wayland-games-active-wide-light-command.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-wayland-games-active-wide-light.log",
+      "sha256": "c8ba5dda476e233164d45956a5b5f6910ca713d3eff30f7999cc0812726cb9fa"
+    },
+    {
+      "path": "managed-wayland-games-setup-narrow-dark-command.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-wayland-games-setup-narrow-dark.log",
+      "sha256": "71a96d77b6f78ecb76d9952721ac9bed5df0827b15f2c4cb0850b01fe9561ac9"
+    },
+    {
+      "path": "managed-wayland-gui.log",
+      "sha256": "fab159be36c103fcfd9615d0c16cd34ed02ad479e5641c7c841be94dbc79e50d"
+    },
+    {
+      "path": "managed-wayland-power-bus.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-wayland-ppd.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-wayland-service.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-wayland.json",
+      "sha256": "0245b101c5da98a2f3473c3709bf2cfe368d80d5fe71bee3f32200891bf7f9f7"
+    },
+    {
+      "path": "managed-wayland.log",
+      "sha256": "45eb49d0314c7a67c183a378e45c79ca826f3545be21f9f6ae5437f8b8c8c366"
+    },
+    {
+      "path": "managed-x11-a11y.log",
+      "sha256": "f703f50825bad21f65a30d8a804f412ce9f3e0f16e35117b3271c33532e58f63"
+    },
+    {
+      "path": "managed-x11-games-active-wide-light-command.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-x11-games-active-wide-light.log",
+      "sha256": "c8ba5dda476e233164d45956a5b5f6910ca713d3eff30f7999cc0812726cb9fa"
+    },
+    {
+      "path": "managed-x11-games-setup-narrow-dark-command.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-x11-games-setup-narrow-dark.log",
+      "sha256": "7d1ea1a0c023233bf7312187a596211e620f57d20ebf993e312cf2e24fd631a0"
+    },
+    {
+      "path": "managed-x11-gui.log",
+      "sha256": "28db6b04452b9669a40a6e937dd08b4b4e25bbf396b3f43ba83813406c4c21d7"
+    },
+    {
+      "path": "managed-x11-power-bus.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-x11-ppd.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-x11-service.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-x11.json",
+      "sha256": "1d054307985a3f81c0f3a93e1053341273676ada52a594c7ef7ee8f25ceed75f"
+    },
+    {
+      "path": "managed-x11.log",
+      "sha256": "e8a3c9463187c2f4e070fb3b974116d39eccea78b8246318d0efe4c0226c0a41"
+    },
+    {
+      "path": "native-captures/issues/wayland/launch-issues-narrow-dark.png",
+      "sha256": "229bb2dfdfd41a349ad08ab9d8f29fe53ca472cb5a43964e90988961809ac629"
+    },
+    {
+      "path": "native-captures/issues/wayland/launch-issues-wide-light.png",
+      "sha256": "f669e954dc123cec6316a681e81eb8d1ddab51ddabd1fe444d972c341c6d43cc"
+    },
+    {
+      "path": "native-captures/issues/x11/launch-issues-narrow-dark.png",
+      "sha256": "229bb2dfdfd41a349ad08ab9d8f29fe53ca472cb5a43964e90988961809ac629"
+    },
+    {
+      "path": "native-captures/issues/x11/launch-issues-wide-light.png",
+      "sha256": "f669e954dc123cec6316a681e81eb8d1ddab51ddabd1fe444d972c341c6d43cc"
+    },
+    {
+      "path": "native-captures/managed/wayland/games-active-wide-light.png",
+      "sha256": "aa6b9eb68f387d662d1a16c57a95a78e8b7b04b419a1025b22b8405d6e0ee190"
+    },
+    {
+      "path": "native-captures/managed/wayland/games-setup-narrow-dark.png",
+      "sha256": "8f314f0e063644e60c4195e381d2152d48c685f8c69142cb3706ba2c143e13cd"
+    },
+    {
+      "path": "native-captures/managed/x11/games-active-wide-light.png",
+      "sha256": "413070aa5a5845c948ad63dd1cf249d5a5b98261085dd36808505dcc3945e06a"
+    },
+    {
+      "path": "native-captures/managed/x11/games-setup-narrow-dark.png",
+      "sha256": "4a143d27f83d37b8c8d3f35f50e76185830d204dec17ad9691d7581c7db1ea47"
+    },
+    {
+      "path": "native-debug.json",
+      "sha256": "6b21e6247c8720d5e84b0a05c3cd93dc2150f8921d18fbe232113927c2f10a4d"
+    },
+    {
+      "path": "native-debug.log",
+      "sha256": "3370ac3098ceab3fe88233cc9330f8f31a68de970f8a316173eff38261fe0960"
+    },
+    {
+      "path": "network-selection/narrow-large-light.json",
+      "sha256": "496a0056eb10271bbb070febb18a990bbedbca1ac3a053c9fed5328ef430ca66"
+    },
+    {
+      "path": "network-selection/network-selection.json",
+      "sha256": "53d50420d6d094cf45188dbfb4f73c0a9a6fea71b7e818827073eb155dd48972"
+    },
+    {
+      "path": "network-selection/wide-light.json",
+      "sha256": "92b91d6b488168b1031f262ade02e80c853826830ef2d785562038ffa4961967"
+    },
+    {
+      "path": "network-selection.log",
+      "sha256": "ce0e1c24530f1170ed7f7f9632515cc967fa9795337d71d51edf8fde6b2b49fd"
+    },
+    {
+      "path": "orca-debug.log.gz",
+      "sha256": "0c46f554fb469b769ce8bfeab8dbf8f2d7bcd70e2013c4a48b1f2bc6fd96ee35"
+    },
+    {
+      "path": "orca-release.log.gz",
+      "sha256": "ebf13cfb52ef33804d4511b780cbf6dbd3df53fdd245677dcda155d7a53870af"
+    },
+    {
+      "path": "package-build.log",
+      "sha256": "0f1fff5633263c774eadbedde66d98d664bf774716c051d8209ffe96ec0a20f6"
+    },
+    {
+      "path": "package-checksums.log",
+      "sha256": "3499b96b76209959bfd06213ed3ee4d84a355e588f2a81d45ab56fa5c5cd069d"
+    },
+    {
+      "path": "package-cli-diagnostics.json",
+      "sha256": "58afe02575d1006f83ddf90b735d60a5396b6e21a629e96b425f69348919be31"
+    },
+    {
+      "path": "package-runtime-linkage.log",
+      "sha256": "0c5109728d60b074a71bdd5bf1d58a258996f193a795b6d0ef5dc1378e45e2ab"
+    },
+    {
+      "path": "package-static.log",
+      "sha256": "7936af711b1d3d3af6920891af8fa903850c1b0c1f9dfda81ea190a938537ab0"
+    },
+    {
+      "path": "package-validation.json",
+      "sha256": "7936af711b1d3d3af6920891af8fa903850c1b0c1f9dfda81ea190a938537ab0"
+    },
+    {
+      "path": "presentation/dark-battery.json",
+      "sha256": "eb04d464cc87c21da70eac7c3d314890489e9b0503486ce4e59f30f046f954cb"
+    },
+    {
+      "path": "presentation/dark-dashboard.json",
+      "sha256": "7c9283101d062605cf1bfe2ffa5654379213ac9d9288d99217699a1c6adbcf39"
+    },
+    {
+      "path": "presentation/dark-fan.json",
+      "sha256": "b12eadb4949db6b3cdf51090f7c97ca98607023f1ae33ffd1daf2c61b016875f"
+    },
+    {
+      "path": "presentation/dark-games.json",
+      "sha256": "ee18dd12c8093cc5ceb6f18150c2b210d30a87e7a9eb414123ca2741467c1f82"
+    },
+    {
+      "path": "presentation/dark-graphics.json",
+      "sha256": "8f5a80c841c5ca77313614fce57fbe0b0a578dd72a13f2afc6af03c12a6c7a28"
+    },
+    {
+      "path": "presentation/dark-lighting.json",
+      "sha256": "3a18bebaa9c7fc31dac77837769aa9b810661526bb36bf63c5ccd09ae783641c"
+    },
+    {
+      "path": "presentation/dark-performance.json",
+      "sha256": "2ef3d350f7b670c00f32aedb8202b4885f1685aa93fbe2793097746b74b44491"
+    },
+    {
+      "path": "presentation/dark-settings.json",
+      "sha256": "7ff1c909fd1cb7aedfe88c62e09343fa9c0c6afcd15a3b54f70616b709b15b1d"
+    },
+    {
+      "path": "presentation/dark-vitals.json",
+      "sha256": "911992ed35a62148674bb9d20d5d124fd914818f0af3250678db6707670467d5"
+    },
+    {
+      "path": "presentation/high-contrast-battery.json",
+      "sha256": "a3c6b30cd3f9c8544907b2c55b826e4a59d73b3bf6a32817ae7cfe5654fe7af0"
+    },
+    {
+      "path": "presentation/high-contrast-dashboard.json",
+      "sha256": "092a9b7d0f74e9a9a79619c6d28062d3f30d2973a8d5f13c77dc8d7e0d9fa563"
+    },
+    {
+      "path": "presentation/high-contrast-fan.json",
+      "sha256": "4a1a759cc6728589e47273a630a2c9744ae89affd5dc3cb1b85dcbf3dabf96ec"
+    },
+    {
+      "path": "presentation/high-contrast-games.json",
+      "sha256": "243b85c14f52ebdce2ca3b4fe31ae4b7927071b25a591bdaa3c932a13027682e"
+    },
+    {
+      "path": "presentation/high-contrast-graphics.json",
+      "sha256": "02ff3a03585033f77917aa85fb5a5f1b08bf24fdd004e5e147fb7766c7692cf8"
+    },
+    {
+      "path": "presentation/high-contrast-lighting.json",
+      "sha256": "f5974dd8b45274183917179243e7516d0cbf2c0425a8185ec7528af2bf0600ee"
+    },
+    {
+      "path": "presentation/high-contrast-performance.json",
+      "sha256": "9911e9573033e3f2f33b5a487fc4b9cb3f0501207ef3144ae7de6597cb206229"
+    },
+    {
+      "path": "presentation/high-contrast-settings.json",
+      "sha256": "1f8baeb193ae0b3a2cb4bd3a6bb5e159404b45df0bc5e78cddce6943c126fef6"
+    },
+    {
+      "path": "presentation/high-contrast-vitals.json",
+      "sha256": "3be83f7a2ae10384dc3dc512883889beeaa2e8d0c194f3f165199a6848cb49df"
+    },
+    {
+      "path": "presentation/large-light-battery.json",
+      "sha256": "98f47218f76612d169dad8800012b3932545e141dd56bc1dd9af25d05e691b1d"
+    },
+    {
+      "path": "presentation/large-light-dashboard.json",
+      "sha256": "c9071643862538d819a6e3e61598ae9750060161586c3ef4a506448d3d583680"
+    },
+    {
+      "path": "presentation/large-light-fan.json",
+      "sha256": "b2c103ddcd1d33bc6f600756471887747b7e8910767e7ca823415a1fc345a43a"
+    },
+    {
+      "path": "presentation/large-light-games.json",
+      "sha256": "85a40346052f85b2ee7ba69a020ff402a2b770d1c6ec0b16c87ee75d772d8950"
+    },
+    {
+      "path": "presentation/large-light-graphics.json",
+      "sha256": "d4738b5b51a4d2b8d279f827c0ab5fbdc74a2aa9e39010ae395f9c85f0bd5325"
+    },
+    {
+      "path": "presentation/large-light-lighting.json",
+      "sha256": "d4e0db5bf84e27f5f03e84464cc4f01f0189412e8111f5f87acda15718e94a88"
+    },
+    {
+      "path": "presentation/large-light-performance.json",
+      "sha256": "af7e819fbf1430e33c272b81e12e65f72198cf019c25b68a257d7e20f16ad5fb"
+    },
+    {
+      "path": "presentation/large-light-settings.json",
+      "sha256": "b7954e3b494fde595dc8c85733102e5ee74e062661c468e721f4cd630c98f777"
+    },
+    {
+      "path": "presentation/large-light-vitals.json",
+      "sha256": "fe9b39fc1a0729962dd1d2f03e770d4235e59bcb702bf275a051ab6f53b6b8c1"
+    },
+    {
+      "path": "presentation/light-battery.json",
+      "sha256": "cc1da923abb0f5852230edead94c7dbc9d0f255bd4800f5a7625e183cd0d3824"
+    },
+    {
+      "path": "presentation/light-dashboard.json",
+      "sha256": "a1b95755b3e58b9c1b7d3919953bc96b2194c097f32f02e925ff4f4c7322ad1b"
+    },
+    {
+      "path": "presentation/light-fan.json",
+      "sha256": "2e9e08be7f2fd967e37cc65da41284b7c38872b58d099ed1916c813e5439e051"
+    },
+    {
+      "path": "presentation/light-games.json",
+      "sha256": "ed33793fee68cba9b2db0e215e97520103cdef4a245acfa5847424b5b1c44d0d"
+    },
+    {
+      "path": "presentation/light-graphics.json",
+      "sha256": "95e23f903259bb8f3d668e3163f10e89ddf85c81fa995d0d7a8182651a1dc2bc"
+    },
+    {
+      "path": "presentation/light-lighting.json",
+      "sha256": "4016724328f387730f7ad39306d59fa46c6ea6fee26ea258c49484265e9455d9"
+    },
+    {
+      "path": "presentation/light-performance.json",
+      "sha256": "375c31143eb18121b96decf7d85023b3c9df4fa4adbb62317fb51a35991d368a"
+    },
+    {
+      "path": "presentation/light-settings.json",
+      "sha256": "60aeb1cb7fa1872e31520af139cdf374994d327617fe082fb2e6e9c9ee27bf52"
+    },
+    {
+      "path": "presentation/light-vitals.json",
+      "sha256": "b93b440b2594b347b90662812c09645bd57a7ebb9922c6fd330b8863de2e4971"
+    },
+    {
+      "path": "presentation/presentation.json",
+      "sha256": "59523150133e1381c46f89332f917d52b9e62d3186b1ca8cfc6dbb6de293f425"
+    },
+    {
+      "path": "presentation.log",
+      "sha256": "fa65a85a8e00b05e0f8ec4801221cb16d5aaebbacf2030a9594c18ce8dc22ed4"
+    },
+    {
+      "path": "run-release-validation.py",
+      "sha256": "9fffb0645811ed62533117fd849354a86ce2ffce06dac4c0b16eca08057e9136"
+    },
+    {
+      "path": "runner.json",
+      "sha256": "acb808137732f51b02807b6ebbd6d5f2365c36caed36fdd4cb0b4fd5b2b16eb4"
+    },
+    {
+      "path": "runtime-versions.json",
+      "sha256": "11938899d07da2431716f07b36183eeee6e886e0f602053cce278bbfa97f8580"
+    },
+    {
+      "path": "settings-wayland-gui-settings-release-a11y.log",
+      "sha256": "23fece5897dced13331a51c28ffd957f7dc0e3e0a7e2df525125b3bc53e71c2e"
+    },
+    {
+      "path": "settings-wayland-gui-settings-release-daemon.log",
+      "sha256": "b43631b2649cddd795544c5c57e088b3ffa327bf7747ef55518b7240bec5139b"
+    },
+    {
+      "path": "settings-wayland-gui-settings-release-gui.log",
+      "sha256": "f542ec6b35c6ffe7408f8a42ae5cf36236e9ee4f7692b09361bf6e372b31cc4e"
+    },
+    {
+      "path": "settings-wayland-gui-settings-release-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "settings-wayland.json",
+      "sha256": "484e992b82bcc8242c02b71e45dfd65c318b607ff029f4d30c5cdb163b8caab4"
+    },
+    {
+      "path": "settings-wayland.log",
+      "sha256": "7ad14d2ccdf7c0bebf00201b068de1580f7ad5dd6660b5782c4ca51410267d17"
+    },
+    {
+      "path": "settings-x11-gui-settings-release-a11y.log",
+      "sha256": "1c59f5e13d6a620e4fd115afe9911e1c3842ad848e106c1ee3e0a1b81a5ee0b1"
+    },
+    {
+      "path": "settings-x11-gui-settings-release-daemon.log",
+      "sha256": "7dbf0532d150c224173036785300b068627e50af3d508a498590e3fcbef8a780"
+    },
+    {
+      "path": "settings-x11-gui-settings-release-gui.log",
+      "sha256": "d1461ff87cd27a59c9577592c656a3922e64e92fa78e9695c48806e9f2642368"
+    },
+    {
+      "path": "settings-x11-gui-settings-release-session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "settings-x11.json",
+      "sha256": "53a6b0e812d2da0c3230dd5fc7c759e25dc2e46b849fe814f1fc2cd1207e9a83"
+    },
+    {
+      "path": "settings-x11.log",
+      "sha256": "25bada1edb4890c7b9b3db3a7e07b79329241bdb4394275a11744b100786e9f5"
+    },
+    {
+      "path": "shortcuts-wayland-shortcuts-release-wayland-a11y.log",
+      "sha256": "47f2a924cc2fa2a1d952b7c9a4852e0ca0c3ec9efae87ed9ca349fe2ee10b3fe"
+    },
+    {
+      "path": "shortcuts-wayland-shortcuts-release-wayland-bus.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "shortcuts-wayland-shortcuts-release-wayland-daemon.log",
+      "sha256": "954bb10ebf3a152583280c2673fad389610b8d43ce5854027d0601c48e52a523"
+    },
+    {
+      "path": "shortcuts-wayland-shortcuts-release-wayland-first-gui.log",
+      "sha256": "7324d59592d7da9911a1b6fd567fa9a51d0a083bcc9904397df93552f85fcd93"
+    },
+    {
+      "path": "shortcuts-wayland-shortcuts-release-wayland-gui.log",
+      "sha256": "a879f65ed6740099db04a5158bba2d4cc1d96f3e649c850179b6a5baaf45016b"
+    },
+    {
+      "path": "shortcuts-wayland-shortcuts-release-wayland-portal.log",
+      "sha256": "4362ecd68b0f570ceb0ff372c463b641e82838793d33ceeb31999c3ee00ffd37"
+    },
+    {
+      "path": "shortcuts-wayland-shortcuts-release-wayland-restored-gui.log",
+      "sha256": "308f4762a4fbb9c5863dfd4e08288f16bc7cc26f1163fffd490367feb24ef39c"
+    },
+    {
+      "path": "shortcuts-wayland.json",
+      "sha256": "a980675705871512623f48c1d7ad6b49896f449ba183b4045accf8bef4045496"
+    },
+    {
+      "path": "shortcuts-wayland.log",
+      "sha256": "8d3a6a1f08fe497acffa9df45d239d2e53af6f158165f610a1836f8ce3a9f38e"
+    },
+    {
+      "path": "shortcuts-x11-shortcuts-release-x11-a11y.log",
+      "sha256": "a2f3578b3e19f287aca1a15585f1de276d70ecc8cee8de61f5ecfe70e829e209"
+    },
+    {
+      "path": "shortcuts-x11-shortcuts-release-x11-bus.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "shortcuts-x11-shortcuts-release-x11-daemon.log",
+      "sha256": "a116d0c69342a30a53ffa16f7dd8ee5af23dbf4c6d2bb094acd53658d584ab58"
+    },
+    {
+      "path": "shortcuts-x11-shortcuts-release-x11-first-gui.log",
+      "sha256": "0928e97e63feee3df063d78f249b1126af52663cdf2f10c4310aba527912b025"
+    },
+    {
+      "path": "shortcuts-x11-shortcuts-release-x11-gui.log",
+      "sha256": "79a7f9ddace877bd59519be74e0dc4eb8d72b2f41acb7c0b1aa7fb5866951126"
+    },
+    {
+      "path": "shortcuts-x11-shortcuts-release-x11-portal.log",
+      "sha256": "4362ecd68b0f570ceb0ff372c463b641e82838793d33ceeb31999c3ee00ffd37"
+    },
+    {
+      "path": "shortcuts-x11-shortcuts-release-x11-restored-gui.log",
+      "sha256": "7bdb7adc9c18433e3d9ee990f1de909d492b126d83c3460c6ccd6fd324fef81b"
+    },
+    {
+      "path": "shortcuts-x11.json",
+      "sha256": "efdba02d047caf02526d4bf54a0dfc945fd8fb8457d8fe01dff14dc15452aad4"
+    },
+    {
+      "path": "shortcuts-x11.log",
+      "sha256": "c8e8fe26d7f20ab4a34b7e303a222cd1b3bcfa209a4998298ea1272fad0a8360"
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "348be1596d33e1fa3302ba6aa81bebe90391483ee2fb0bfc386b5cd368347873"
+    },
+    {
+      "path": "systemd-payload-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test-harness-manifest.json",
+      "sha256": "f88aa9c567ef4bd2835fc992ef2088ea3e7d2cd43f82e508f7027241a68afb77"
+    }
+  ]
+}

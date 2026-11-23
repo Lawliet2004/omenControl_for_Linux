@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-10-26T13:44:09.646144+00:00",
+  "review": "Independent Impeccable finish review and documenter audit of scoped native extension; no web detector applies",
+  "initial_disposition": "fix",
+  "final_disposition": "ship at reviewed fix-list scope",
+  "findings": [
+    {
+      "finding": "Source-specific service recovery copy used in direct monitoring",
+      "status": "resolved",
+      "resolution": "Source-neutral sensor error text directs user to OMEN Control"
+    },
+    {
+      "finding": "Ellipsized unavailable power value lacked complete text access",
+      "status": "resolved",
+      "resolution": "Every value receives a full-text tooltip during refresh"
+    }
+  ],
+  "capture_manifest": "overlay-captures.json",
+  "capture_manifest_sha256": "ce5738c6fbcec2aa38f6bbc226874b753a6b24bcab2ea152b5c1414d58359460",
+  "design_audit": "Native dark incumbent system and all nine pages preserved; no new identity/design artifacts required",
+  "limits": [
+    "requested scale only; logical widget-tree exports",
+    "no physical global-key, fullscreen/compositor, complete screen-reader or translated-catalog validation"
+  ]
+}

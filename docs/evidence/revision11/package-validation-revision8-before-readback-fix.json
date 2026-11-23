@@ -1,0 +1,64 @@
+{
+  "package": "target/debian/omen-linux_0.1.0-8_amd64.deb",
+  "bytes": 2620602,
+  "sha256": "5a7734a06a12b1c35638634e0ffdb6c2e98fa465c94e7ca5f17150aa1d20f0fc",
+  "version": "0.1.0-8",
+  "installed_by_verifier": false,
+  "checks": {
+    "root_ownership_and_directory_modes": true,
+    "payload_md5sums": true,
+    "desktop_file_validate": true,
+    "polkit_xml_matches_source": true,
+    "gui_linkage_current_environment": true,
+    "extracted_cli_readonly_discovery": true
+  },
+  "binaries": {
+    "omen-cli": {
+      "sha256": "584761b8db8f395a2c9ec04ec0b794ebe0ed543e7126b2bba63607886c76c51f",
+      "matches_release": true
+    },
+    "omen-daemon": {
+      "sha256": "650bdba161c728cc76c5babb0193a79f2cf7a9c5821b9cc5b2aa529229556fd3",
+      "matches_release": true
+    },
+    "omen-gui": {
+      "sha256": "cf8586e103e3c0ecc5a0f4c60283609ce4e78a178a6146485885bea5ce087757",
+      "matches_release": true
+    }
+  },
+  "lifecycle_equivalence": {
+    "reference_package": "target/debian/runtime-tested_omen-linux_0.1.0-8_amd64.deb",
+    "reference_sha256": "2eb4aa6ab1d00abd04531bd1aedfd602e13d064f67d8f6e469eb6b72d2fd534f",
+    "runtime_payload_identical": true,
+    "maintainer_scripts_and_control_identical": true,
+    "documentation_changes": [
+      "usr/share/doc/omen-linux/ARCHITECTURE.md",
+      "usr/share/doc/omen-linux/FAN_MONITORING.md",
+      "usr/share/doc/omen-linux/HARDWARE_COMPATIBILITY.md",
+      "usr/share/doc/omen-linux/INSTALLATION.md",
+      "usr/share/doc/omen-linux/PACKAGE_VALIDATION.md",
+      "usr/share/doc/omen-linux/TEST_REPORT.md",
+      "usr/share/doc/omen-linux/VM_VALIDATION.md"
+    ]
+  },
+  "vm_equivalence": {
+    "reference_package": "target/debian/runtime-tested_omen-linux_0.1.0-8_amd64.deb",
+    "reference_sha256": "2eb4aa6ab1d00abd04531bd1aedfd602e13d064f67d8f6e469eb6b72d2fd534f",
+    "runtime_payload_identical": true,
+    "maintainer_scripts_and_control_identical": true,
+    "documentation_changes": [
+      "usr/share/doc/omen-linux/ARCHITECTURE.md",
+      "usr/share/doc/omen-linux/FAN_MONITORING.md",
+      "usr/share/doc/omen-linux/HARDWARE_COMPATIBILITY.md",
+      "usr/share/doc/omen-linux/INSTALLATION.md",
+      "usr/share/doc/omen-linux/PACKAGE_VALIDATION.md",
+      "usr/share/doc/omen-linux/TEST_REPORT.md",
+      "usr/share/doc/omen-linux/VM_VALIDATION.md"
+    ]
+  },
+  "dependency_notices": 156,
+  "systemd_validation": {
+    "exit_code": 0,
+    "method": "unmodified unit in extracted package root; no unit started"
+  }
+}

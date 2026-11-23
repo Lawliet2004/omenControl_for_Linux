@@ -1,0 +1,21 @@
+{
+  "result": "failed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "host_keyboard_input": false,
+  "gui_sha256": "ad9ee131ff6ab701951d21ff00268e30dc1d69fd39b9e6e6e814dfb59d1a280c",
+  "profile": "debug",
+  "checks_passed": [
+    "Performance choices recover from an empty first report and a user click reaches the actual fixture backend",
+    "profile choices add and remove currently advertised options without restarting or submitting a write"
+  ],
+  "write_operations": [
+    {
+      "op": "set_profile",
+      "args": {
+        "profile": "quiet"
+      }
+    }
+  ],
+  "error": "RuntimeError: missing button Fan & Thermal"
+}

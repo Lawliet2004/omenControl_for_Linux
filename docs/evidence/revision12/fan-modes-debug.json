@@ -1,0 +1,18 @@
+{
+  "result": "passed",
+  "profile": "debug",
+  "fixture_only": true,
+  "live_hardware_writes": false,
+  "interaction": "native AT-SPI button actions; private bus; no injected application test actions",
+  "requested_gtk_backend": "wayland",
+  "checks_passed": [
+    "mode-only fixture offers Automatic/Maximum without manual percentage controls",
+    "native buttons switch Maximum then Automatic through production IPC",
+    "fresh competing-controller capability disables both actions with a visible reason",
+    "rearmed Maximum returns to Automatic when identified GPU temperature is lost"
+  ],
+  "binary_sha256": "93cb53937339f1017bf7d203d0086a41290a75b4796e5841e213ec02131edbde",
+  "gtk_display_type": "GdkWaylandDisplay",
+  "cleanup_complete": true,
+  "recorded_utc": "2026-10-26T17:33:27.732259+00:00"
+}

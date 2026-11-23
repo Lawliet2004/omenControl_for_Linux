@@ -1,0 +1,593 @@
+{
+  "result": "passed",
+  "recorded_utc": "2026-10-28T06:52:12.362661+00:00",
+  "version": "0.1.0-21",
+  "package": "target/debian/omen-linux_0.1.0-21_amd64.deb",
+  "package_sha256": "25964019083530e3c3e567dca7edd13cb4eebe1ce0ad2eea8aacc7f301ae3edf",
+  "product_runtime_unchanged": true,
+  "fresh_vm_checks": 39,
+  "real_game_checks": 6,
+  "game": {
+    "name": "OpenTTD with OpenGFX",
+    "installed_kib": 32194,
+    "versions": "lutris\t0.5.22-1\t6303\nopenttd\t15.1-1\t12856\nopenttd-data\t15.1-1\t14164\nopenttd-opengfx\t7.1-3\t5174\nplasma-workspace\t4:6.6.6-0ubuntu0.1\t25699\n",
+    "native_launcher": "Lutris Linux runner"
+  },
+  "guest_fullscreen": "Plasma Wayland with an Xwayland/SDL game; guest uinput only",
+  "private_profile_provider": true,
+  "host_package_or_service_installation": false,
+  "physical_hardware_writes": false,
+  "english_only": true,
+  "historical_evidence_preserved": {
+    "desktop-v21": {
+      "validation_summary_sha256": "c0c45c13e710a58aa70f8dff67a3c8950a35d783bd9fc0c1dbe9b938f8b8dd29",
+      "evidence_files_rehashed": 224
+    },
+    "deployment-v20": {
+      "validation_summary_sha256": "b2d981abbf150e5bac2f74573136bb21293bda849cf2d0071191ec7a639cc8bd",
+      "evidence_files_rehashed": 48
+    },
+    "launcher-expansion": {
+      "validation_summary_sha256": "3f029792b8d30f99b5fa53b555f41f16e0573fbfd21d4d44328d88e52fbed278",
+      "evidence_files_rehashed": 202
+    }
+  },
+  "failed_runs_preserved": [
+    "game-vm",
+    "game-vm-retry",
+    "game-vm-ready",
+    "game-vm-final"
+  ],
+  "limits": [
+    "One native free game and Linux runner; no store-account, Steam/Proton, Heroic or Flatpak compatibility claim.",
+    "Private PPD fixture and production session/service code under installed sandbox; no physical profile write.",
+    "Game fullscreen transition does not establish OMEN overlay placement, global shortcuts or physical input."
+  ],
+  "evidence_files": [
+    {
+      "path": "collect-evidence.py",
+      "sha256": "de8e95df97b0878465a6c04f25c7a1fc2d57bf8b5cba9809efa87e0278f39e6c",
+      "bytes": 5384
+    },
+    {
+      "path": "complete/repository-manifest.json",
+      "sha256": "41b949ed9fce220d9f491346a86f14b10c63035a33976ddfde7c84e835046d84",
+      "bytes": 312759
+    },
+    {
+      "path": "game-vm/graphical-captures/real-game-failure.png",
+      "sha256": "5436db0de901d7ac343b08c945c6a04b999a3ab26ec693380ff8b4547444dac5",
+      "bytes": 5374
+    },
+    {
+      "path": "game-vm/real_game_vm_inner.py",
+      "sha256": "fb57ad24c407fb479bc0fd4ec44fd11ac0d9ed9189d4b7b9b6fa4745e74bd575",
+      "bytes": 19749
+    },
+    {
+      "path": "game-vm/systemd_vm_observer_after_failure.py",
+      "sha256": "5c6d41d584b763cf691b3b5b744ac4d02c4c02f1b6aa16e8e4f82b4d1b717986",
+      "bytes": 24414
+    },
+    {
+      "path": "game-vm/vm-cloud-init-status.json",
+      "sha256": "c62227a77586e16fbfa255a8281f71d38c234b6650839ff3bdeabf5ed2bf3b49",
+      "bytes": 736
+    },
+    {
+      "path": "game-vm/vm-coarse-journal.log",
+      "sha256": "f2fbca9279cfa599cdb96e9f8588dfbc32b429811310ff327f02f581ff472f58",
+      "bytes": 4948
+    },
+    {
+      "path": "game-vm/vm-desktop-journal.log",
+      "sha256": "2d9e16754ce8167940f2b70a066e184cebc08e01a06e5ece201594b10274e69f",
+      "bytes": 19963
+    },
+    {
+      "path": "game-vm/vm-polkit-journal.log",
+      "sha256": "a2705d526bd0ca9b3ec6274949ba5c299d7c978c4e55bd2364c81ba1c31e24ae",
+      "bytes": 268
+    },
+    {
+      "path": "game-vm/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "game-vm/vm-serial.log",
+      "sha256": "035f18e2c107ecb589993be6a46fdcf5d1cee90783c68de1a3b40168180428d2",
+      "bytes": 99586
+    },
+    {
+      "path": "game-vm/vm-systemd-journal.log",
+      "sha256": "2a741b03d45ab3bd18f2fd30122270d2ca53734a028f445ea29c4a8ea3290755",
+      "bytes": 7949
+    },
+    {
+      "path": "game-vm/vm-systemd-run.log",
+      "sha256": "8440ec9a1d5d1eaf2dbd7e2c89ece5c3fa4321491e7c6675ca8b5c27f44f55e1",
+      "bytes": 341869
+    },
+    {
+      "path": "game-vm/vm-systemd.json",
+      "sha256": "95e2794e169bf21347aaeb2a35ea6225fd0b09bda20085f32d44964d58866f99",
+      "bytes": 11500
+    },
+    {
+      "path": "game-vm-command.json",
+      "sha256": "ed5afedb80ba1c713fc6a4b0af8a18fb8ecfac66ee0f6d9503eb023825fc2ad5",
+      "bytes": 1207
+    },
+    {
+      "path": "game-vm-confirmation/graphical-captures/openttd-lutris-fullscreen.png",
+      "sha256": "817d10a8057deeda7528307bb2cd878ac933cc9166c11b7e861d8ff3ce5a77fa",
+      "bytes": 1072878
+    },
+    {
+      "path": "game-vm-confirmation/graphical-captures/openttd-lutris-windowed.png",
+      "sha256": "38912d4f1297c58934fb90731f66e01a9062178b1f003626c8568d522a6525cd",
+      "bytes": 656535
+    },
+    {
+      "path": "game-vm-confirmation/graphical-captures/openttd-normal-exit.png",
+      "sha256": "9ac7bd8575eb951db363f94a92e36b73d1238fc12bdd4908c66b547b1af7f79e",
+      "bytes": 182691
+    },
+    {
+      "path": "game-vm-confirmation/real-game-artifacts.json",
+      "sha256": "fa6bcc81932c25d5184a08f4a60de9934ee12128fdbb74ab13302101a02b8c22",
+      "bytes": 6629
+    },
+    {
+      "path": "game-vm-confirmation/vm-cloud-init-status.json",
+      "sha256": "44b4e51bdf538ec5e659329e1e49dc280d627490c2773013212dd20233d62ae5",
+      "bytes": 734
+    },
+    {
+      "path": "game-vm-confirmation/vm-coarse-journal.log",
+      "sha256": "416fb49b1a0579e646d201fc56ad45a1ae0944b70a3ff0e3c5d929385fba03b0",
+      "bytes": 4948
+    },
+    {
+      "path": "game-vm-confirmation/vm-desktop-journal.log",
+      "sha256": "014a64c302d0a120eeaf1f9126a36005eef688b9b072df5f6b34d6d50293ca1e",
+      "bytes": 67343
+    },
+    {
+      "path": "game-vm-confirmation/vm-polkit-journal.log",
+      "sha256": "5d1b68c39ddb65156230ec6ee53aebd21cb9195959484dc5f6983c8d490dd779",
+      "bytes": 1450
+    },
+    {
+      "path": "game-vm-confirmation/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "game-vm-confirmation/vm-serial.log",
+      "sha256": "e13c045441579a40573f43586941541428161809290572e96ab38fa504bc3945",
+      "bytes": 283926
+    },
+    {
+      "path": "game-vm-confirmation/vm-systemd-initial-journal.log",
+      "sha256": "9af6bd73d4ba6e0052f771bb990379e1ad5804b087d67b7cc6d77cf790d1338c",
+      "bytes": 8941
+    },
+    {
+      "path": "game-vm-confirmation/vm-systemd-journal.log",
+      "sha256": "0b05e74359548a7d98dfb99f5904b68ac04d844fffed41bdc7c97cfa3db8dfad",
+      "bytes": 13333
+    },
+    {
+      "path": "game-vm-confirmation/vm-systemd-run.log",
+      "sha256": "c440455694d83eb41da3997c2fbbe26d5e0120b345e906397d8d33770440585a",
+      "bytes": 499611
+    },
+    {
+      "path": "game-vm-confirmation/vm-systemd.json",
+      "sha256": "742519ed732a672be4f95f6438cac17f12a29664f41409758447e3ea4e2cc5c0",
+      "bytes": 21417
+    },
+    {
+      "path": "game-vm-final/graphical-captures/openttd-lutris-fullscreen.png",
+      "sha256": "0c5895d924222657aa768254154d73bad61f66e7749d918c8158f7b48a75cd66",
+      "bytes": 994656
+    },
+    {
+      "path": "game-vm-final/graphical-captures/openttd-lutris-windowed.png",
+      "sha256": "31a20390bc6e0082d8c0b06080cd5ce23607f8f10401a2577707473ce0a95b7e",
+      "bytes": 801487
+    },
+    {
+      "path": "game-vm-final/graphical-captures/openttd-normal-exit.png",
+      "sha256": "10cf8d39640ed9f2c7a51a3b298a642243669847940c5f00ad17a6f5868eb216",
+      "bytes": 201518
+    },
+    {
+      "path": "game-vm-final/graphical-captures/real-game-failure.png",
+      "sha256": "c70466a1779e9056127192746cd0025548fa8b1d76c3dec8c40836633ac96df0",
+      "bytes": 834774
+    },
+    {
+      "path": "game-vm-final/real-game-artifacts.json",
+      "sha256": "7c96fc5ed60c378079d3bbb9f13b9aa9a39631901664455cef38569653dd7232",
+      "bytes": 6088
+    },
+    {
+      "path": "game-vm-final/real_game_vm_inner.py",
+      "sha256": "1c25cb1e42683e13cd2c03edf1d2717e746a1cc6e09e10bb36f1307331e65725",
+      "bytes": 21348
+    },
+    {
+      "path": "game-vm-final/vm-cloud-init-status.json",
+      "sha256": "6b15a444417da8be99252343926f0c450c916bbc4bd87cee7c75f29aaf6db12a",
+      "bytes": 733
+    },
+    {
+      "path": "game-vm-final/vm-coarse-journal.log",
+      "sha256": "f2cf4d6759a74ad152c4264b1b677ead790d2318cbc302918904ab9d2a407278",
+      "bytes": 4948
+    },
+    {
+      "path": "game-vm-final/vm-desktop-journal.log",
+      "sha256": "c1a1ffe5c025cf26b890682d9b92aba56b7d875286a9f6f29d431c37e2465b0a",
+      "bytes": 46078
+    },
+    {
+      "path": "game-vm-final/vm-polkit-journal.log",
+      "sha256": "89c3c144b7b33e87be796bd9d0087123124cfb85db7c86991b888c1dfbb5f5aa",
+      "bytes": 268
+    },
+    {
+      "path": "game-vm-final/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "game-vm-final/vm-serial.log",
+      "sha256": "7f7990a8567c1834f3cce8c190a19e0eef6b04bd75fc1cbf869557d372dbe76b",
+      "bytes": 97979
+    },
+    {
+      "path": "game-vm-final/vm-systemd-journal.log",
+      "sha256": "eacec28c32289fa4f34f3b2e112ca4550774019ac0bec6246a7e029bd38c3ca8",
+      "bytes": 8944
+    },
+    {
+      "path": "game-vm-final/vm-systemd-run.log",
+      "sha256": "9a38e90f28c86b3dee4df154e06bf9625bffd1de459dea5a8c80e70ef2564264",
+      "bytes": 427000
+    },
+    {
+      "path": "game-vm-final/vm-systemd.json",
+      "sha256": "c6c6a85bf3abdf2c35c009137f0884c1dab23b87d17d565c635a3195fc8ee08c",
+      "bytes": 18687
+    },
+    {
+      "path": "game-vm-ready/graphical-captures/openttd-lutris-windowed.png",
+      "sha256": "18dc72ba60f0056ee38550683718072c19cd0a282882197f922c2aff6bd7bf19",
+      "bytes": 204716
+    },
+    {
+      "path": "game-vm-ready/graphical-captures/real-game-failure.png",
+      "sha256": "85f101fd05e78a6cc178231e564c6fd14b455a8e61f75dbe19b7a5785ca38e29",
+      "bytes": 204692
+    },
+    {
+      "path": "game-vm-ready/real-game-artifacts.json",
+      "sha256": "81bbb6dc48e79ef95a5c0e2ecd5ee3d6f1f339a2e3316e09e90bd956901dfa71",
+      "bytes": 4739
+    },
+    {
+      "path": "game-vm-ready/real_game_vm_inner.py",
+      "sha256": "c317927ac386c0930a60b894569cee6ba6b3481b673c446907ae63a61addbc49",
+      "bytes": 20992
+    },
+    {
+      "path": "game-vm-ready/vm-cloud-init-status.json",
+      "sha256": "f05b74ed6eb4b19ef446290dfcf196e121d77f9f530756607d943822e4f52113",
+      "bytes": 737
+    },
+    {
+      "path": "game-vm-ready/vm-coarse-journal.log",
+      "sha256": "9355711d19e3ade688fe0f649abad2a30bf2f93ddd1501c4b81c3ac970b7c899",
+      "bytes": 4948
+    },
+    {
+      "path": "game-vm-ready/vm-desktop-journal.log",
+      "sha256": "f134b0c59eb7b92939931e154303b65401921cccf8666ecbe8a15539b8faa377",
+      "bytes": 42877
+    },
+    {
+      "path": "game-vm-ready/vm-polkit-journal.log",
+      "sha256": "b2b98c395102c20c1fa03f8cbed24f82f0c587c5f2f9bd988d827a5fac05b1b2",
+      "bytes": 268
+    },
+    {
+      "path": "game-vm-ready/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "game-vm-ready/vm-serial.log",
+      "sha256": "096015d066301fb17092124df45224e47d159e2ed23b098d925f882aa375e4d0",
+      "bytes": 98787
+    },
+    {
+      "path": "game-vm-ready/vm-systemd-journal.log",
+      "sha256": "e1992b6d2631224c41b9deeeff807653d83af21d23f7aeabcde65ab25d042588",
+      "bytes": 8446
+    },
+    {
+      "path": "game-vm-ready/vm-systemd-run.log",
+      "sha256": "5eaf32713ded3b003fc4a72df8e2cd4fe5fad922be25efbb240f756167978b45",
+      "bytes": 489969
+    },
+    {
+      "path": "game-vm-ready/vm-systemd.json",
+      "sha256": "176b1d79d5e48d3e92f4e5e890fec4c05e73cd332bf490473e929ef9235200f0",
+      "bytes": 14616
+    },
+    {
+      "path": "game-vm-retry/graphical-captures/real-game-failure.png",
+      "sha256": "d806c93cc23e71822a83bce49540d410f25d139908156f18d536a69be729a918",
+      "bytes": 10950
+    },
+    {
+      "path": "game-vm-retry/real-game-artifacts.json",
+      "sha256": "117481e2cb6dbfbe41a063fe34f3c2d190567a4b417b4aa2a0910920933943ef",
+      "bytes": 179
+    },
+    {
+      "path": "game-vm-retry/real_game_vm_inner.py",
+      "sha256": "f6302636f9eaa5e80b1e8e0169b4d7a4b7bf01ed31735fb0125953977d81008e",
+      "bytes": 20688
+    },
+    {
+      "path": "game-vm-retry/vm-cloud-init-status.json",
+      "sha256": "15f6ef785b7b6241c1b51f73947783c5e544a1537e3689ff6cdf07c97a912cdc",
+      "bytes": 734
+    },
+    {
+      "path": "game-vm-retry/vm-coarse-journal.log",
+      "sha256": "8871bc9e47bdf5b90b6259d244735831a6bda15da07c5576332a38c5be8c022a",
+      "bytes": 4948
+    },
+    {
+      "path": "game-vm-retry/vm-desktop-journal.log",
+      "sha256": "b5101532b842996a8b152f264665cdc17675db4039d805609f519f5d33f33734",
+      "bytes": 27480
+    },
+    {
+      "path": "game-vm-retry/vm-polkit-journal.log",
+      "sha256": "70b8e24511fea67cff18d9bfa69e1f6df905f909d5bf58e64a785586c2550664",
+      "bytes": 268
+    },
+    {
+      "path": "game-vm-retry/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "game-vm-retry/vm-serial.log",
+      "sha256": "90f1a97f828729247cfd70738a7b9f9916a355e0d6b05ee00bf3b324ffa38da2",
+      "bytes": 99276
+    },
+    {
+      "path": "game-vm-retry/vm-systemd-journal.log",
+      "sha256": "591354b03e470619e4f17faf78688943e024531e21fc77819270e7bc208df3dd",
+      "bytes": 7950
+    },
+    {
+      "path": "game-vm-retry/vm-systemd-run.log",
+      "sha256": "74b887908e308b3b7c6aede7abdb966030287d137f5fd5904eaa9cdebf37487a",
+      "bytes": 358875
+    },
+    {
+      "path": "game-vm-retry/vm-systemd.json",
+      "sha256": "7dcda8a8e0413c9d4a83c33355aab0a047e89afc3499a24e10f47e6841d83e49",
+      "bytes": 13431
+    },
+    {
+      "path": "host-preservation.json",
+      "sha256": "4c86b52ca84e88cbedbab05bc0e80e12d7105aaa39eb2e7ba7f3278e09e9bb89",
+      "bytes": 1961
+    },
+    {
+      "path": "indices/archive.ubuntu.com_ubuntu_dists_resolute-updates_InRelease",
+      "sha256": "ffadda72886e6090941fccdd362961fb646bf1d6b6af232b78adbec07da2da09",
+      "bytes": 137401
+    },
+    {
+      "path": "indices/archive.ubuntu.com_ubuntu_dists_resolute-updates_main_binary-amd64_Packages.xz",
+      "sha256": "ee6bf189df55899151f820c800801bceec00f210d07f582cbcc91409c67b21dd",
+      "bytes": 792988
+    },
+    {
+      "path": "indices/archive.ubuntu.com_ubuntu_dists_resolute-updates_multiverse_binary-amd64_Packages.xz",
+      "sha256": "badafaf56a17a0e36cd156e6dadbd156942c78c044674c6f43c0e0889cc33eed",
+      "bytes": 21016
+    },
+    {
+      "path": "indices/archive.ubuntu.com_ubuntu_dists_resolute-updates_universe_binary-amd64_Packages.xz",
+      "sha256": "85f999cd5966651a77589c9798283432ca7435a7731d54253951457bcaa6d624",
+      "bytes": 334160
+    },
+    {
+      "path": "indices/archive.ubuntu.com_ubuntu_dists_resolute_InRelease",
+      "sha256": "45f95ce276cdba3e41870516a130e03c58b8b7a79e9546b0efe9e526d255740c",
+      "bytes": 135549
+    },
+    {
+      "path": "indices/archive.ubuntu.com_ubuntu_dists_resolute_main_binary-amd64_Packages.xz",
+      "sha256": "ed9ac41cb263efaecc5a06a0742dc56570e2fb5ff94c4f2e4b2fbdcddd73cf24",
+      "bytes": 1480032
+    },
+    {
+      "path": "indices/archive.ubuntu.com_ubuntu_dists_resolute_multiverse_binary-amd64_Packages.xz",
+      "sha256": "649e6c37f2c1fa6b2d5081bc7714c9e2ad66083005bb80fab34c3c537781a1c9",
+      "bytes": 290412
+    },
+    {
+      "path": "indices/archive.ubuntu.com_ubuntu_dists_resolute_universe_binary-amd64_Packages.xz",
+      "sha256": "1587be86d66d38542325215e0e109f75bd695c8f24d793ace2762038a6ad581e",
+      "bytes": 15960824
+    },
+    {
+      "path": "indices/security.ubuntu.com_ubuntu_dists_resolute-security_InRelease",
+      "sha256": "b27e5690bb333faf562eb693c6c9629c35b79dc7d8d7d670bdb45ca000294389",
+      "bytes": 137403
+    },
+    {
+      "path": "indices/security.ubuntu.com_ubuntu_dists_resolute-security_main_binary-amd64_Packages.xz",
+      "sha256": "7810a08ea76f8601a1431449b4422b667fd1e88998a2c4b2a7768a2f7c155a09",
+      "bytes": 606652
+    },
+    {
+      "path": "indices/security.ubuntu.com_ubuntu_dists_resolute-security_multiverse_binary-amd64_Packages.xz",
+      "sha256": "94870f8cc13dd7606dab2d8ec411b0a3bda858454594a11404a0413c06c00b40",
+      "bytes": 20032
+    },
+    {
+      "path": "indices/security.ubuntu.com_ubuntu_dists_resolute-security_universe_binary-amd64_Packages.xz",
+      "sha256": "eb49764b59f6a8086f992e0c2bb98e6c211913a500a073b04a6c2798bba24773",
+      "bytes": 205528
+    },
+    {
+      "path": "metadata/repository-manifest.json",
+      "sha256": "bbff056c1ec7ad8587907ecc2e721fcc8c556fd3cc811e1011375f4c9e38974a",
+      "bytes": 3098
+    },
+    {
+      "path": "reports/APPLICATION_AUDIT_IMPLEMENTATION.md",
+      "sha256": "8660d1f9a88f2cdc7fda1f8b8e1495cb97efd17b1feee7ce9dc95733330a02df",
+      "bytes": 27200
+    },
+    {
+      "path": "reports/CONTINUATION_CHECKLIST.md",
+      "sha256": "d0f8c045caf1ec3d07a1261a143ba0230709d0cd8fe545dc556a0508b5402523",
+      "bytes": 5892
+    },
+    {
+      "path": "reports/IMPLEMENTATION_STATUS.md",
+      "sha256": "793d30c8b877fbea4c2048851d6b700bae9c1b3d3a55f0aa1f332904548a3299",
+      "bytes": 21636
+    },
+    {
+      "path": "reports/MANAGED_GAME_SESSIONS.md",
+      "sha256": "3b21e4278c55c41915e9f892d296120bfc78886042f7eca45a243af566df695c",
+      "bytes": 14377
+    },
+    {
+      "path": "reports/README.md",
+      "sha256": "0797b208f2fa4882e5dbd3cd4138dfd836671ba5e3b92801cbcfd0ef67e7c8d3",
+      "bytes": 10988
+    },
+    {
+      "path": "reports/REAL_GAME_VALIDATION_2026-10-28.md",
+      "sha256": "ac0617acc974b715d083e2b608f63ecc9dbccada0809b38b885e788c4d248c8d",
+      "bytes": 7761
+    },
+    {
+      "path": "reports/TEST_REPORT.md",
+      "sha256": "02e24778f2b1e41adafa0418bc5719a1be3af83694659a89bc0e29d91aa64251",
+      "bytes": 43596
+    },
+    {
+      "path": "reports/VM_VALIDATION.md",
+      "sha256": "ae329842dbedb00a297db097abb21c3c5277f97355dab4bffe082e2d22747702",
+      "bytes": 9345
+    },
+    {
+      "path": "requested-packages.json",
+      "sha256": "982e2c99ee34db9ee8e1b2aed587d87b772e38b3324aa52e9d1f662d19dd153a",
+      "bytes": 364
+    },
+    {
+      "path": "resolution/vm-cloud-init-status.json",
+      "sha256": "0b6699294f6885129b1c0842e4b5daae74d1e1bb883b40cd18cef45da5c1bab0",
+      "bytes": 734
+    },
+    {
+      "path": "resolution/vm-coarse-journal.log",
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e",
+      "bytes": 17
+    },
+    {
+      "path": "resolution/vm-dependency-resolution.txt",
+      "sha256": "8469e2e379663e8014fbe89540bfaa37bcf4a366e65fcd6c099f72fd2b708fb8",
+      "bytes": 153565
+    },
+    {
+      "path": "resolution/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "resolution/vm-serial.log",
+      "sha256": "eae6341b92ccc6d8062ca3cb50dea4c355d4ab47123f87e64b673016726d1159",
+      "bytes": 98316
+    },
+    {
+      "path": "resolution/vm-systemd-journal.log",
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e",
+      "bytes": 17
+    },
+    {
+      "path": "resolution/vm-systemd-run.log",
+      "sha256": "a924a9e50cb7b6050146a11753912f7ced68a6f95c4f7c8664c52b252a16d2bb",
+      "bytes": 156344
+    },
+    {
+      "path": "resolution/vm-systemd.json",
+      "sha256": "8a4c6309c875a85113621f8960546be2a6818b1e67b06be6781b9ef995e092ba",
+      "bytes": 2586
+    },
+    {
+      "path": "resolution-command.json",
+      "sha256": "55ddfd8f22435d63e695cf1d7d1e94ebe010dae89e0662bf6058f933c3c3ee6f",
+      "bytes": 1092
+    },
+    {
+      "path": "sources/crates/cli/tests/managed_games_native.rs",
+      "sha256": "c80667343397fd28e6f46127d3883a297226e416531522aeb8f14fcf69d5673e",
+      "bytes": 29442
+    },
+    {
+      "path": "sources/scripts/prepare-offline-vm-repository.py",
+      "sha256": "56e3bb3d4bc35a1aea7f32b83cb1e6d1b51aa5ce8bce1230a78aa1bd52d01fb2",
+      "bytes": 7779
+    },
+    {
+      "path": "sources/tests/coarse_recovery_vm_inner.py",
+      "sha256": "0b7b7c833793ff5f741f1c1fdb85833d87b45cf3899ebbcfc1fa9a91ca1b3cbf",
+      "bytes": 7306
+    },
+    {
+      "path": "sources/tests/managed_games_vm_inner.py",
+      "sha256": "0f4043e850c3b07025e8b3ab4c6c81cc0fc57ca3edda54276839f4f2f206ecd9",
+      "bytes": 7780
+    },
+    {
+      "path": "sources/tests/nvidia_reader_vm_inner.py",
+      "sha256": "6281827745e47200c76cb8a7daede5fd6a17e84a55b3bd01339100774303d41c",
+      "bytes": 7115
+    },
+    {
+      "path": "sources/tests/real_game_vm_inner.py",
+      "sha256": "5cfc935b1625bf30bc9fabe3bffba5c7df7fb06bd68510fa406d5044412740f9",
+      "bytes": 22547
+    },
+    {
+      "path": "sources/tests/systemd_vm.py",
+      "sha256": "5c6d41d584b763cf691b3b5b744ac4d02c4c02f1b6aa16e8e4f82b4d1b717986",
+      "bytes": 24414
+    },
+    {
+      "path": "sources/tests/systemd_vm_inner.py",
+      "sha256": "a1b4924093af386ab5e754cabd8e05c5642674942e7c2b2cddbbe9994b560b5f",
+      "bytes": 11215
+    }
+  ]
+}

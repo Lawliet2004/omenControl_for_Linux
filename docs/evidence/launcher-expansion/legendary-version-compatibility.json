@@ -1,0 +1,18 @@
+[
+  {
+    "version": "0.20.34",
+    "commit": "56d439ed2d3d9f34e2b08fa23e627c23a487b8d6",
+    "path": "legendary/lfs/lgndry.py",
+    "sha256": "5d8089533ecdabae136de89460dbe3c29aa958030f3b7908cc3a5c1e2e808fa5",
+    "url": "https://raw.githubusercontent.com/legendary-gl/legendary/56d439ed2d3d9f34e2b08fa23e627c23a487b8d6/legendary/lfs/lgndry.py",
+    "supports_config_path_environment": true
+  },
+  {
+    "version": "0.20.33",
+    "commit": "865dd51e2b9a76e0baa9f8470b693ce2afb966db",
+    "path": "legendary/lfs/lgndry.py",
+    "sha256": "503ef7f879d7a6ba2883572cbd02e01f28bd497abb58b362fccae60561aa3a11",
+    "url": "https://raw.githubusercontent.com/legendary-gl/legendary/865dd51e2b9a76e0baa9f8470b693ce2afb966db/legendary/lfs/lgndry.py",
+    "supports_config_path_environment": false
+  }
+]

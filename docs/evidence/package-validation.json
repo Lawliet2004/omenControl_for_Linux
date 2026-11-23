@@ -1,0 +1,36 @@
+{
+  "package": "target/security-27/omen-linux_0.1.0-27_amd64.deb",
+  "bytes": 6245564,
+  "sha256": "dca2bf6d749dc22dbb0f94cf97ca5227c7fc0c9930187e6182aebc22759048e2",
+  "version": "0.1.0-27",
+  "installed_by_verifier": false,
+  "checks": {
+    "root_ownership_and_directory_modes": true,
+    "payload_md5sums": true,
+    "static_flatpak_helper_source_manifest_and_musl_notice": true,
+    "desktop_file_validate": true,
+    "polkit_xml_matches_source": true,
+    "bundled_icon_sources_and_notices": 15,
+    "gui_linkage_current_environment": true,
+    "extracted_cli_readonly_discovery": true
+  },
+  "binaries": {
+    "omen-cli": {
+      "sha256": "0f88c6a998187505bc0498acb33c4ca8f3accb04a5fac2ed6762ba7f740c629e",
+      "matches_release": true
+    },
+    "omen-daemon": {
+      "sha256": "c9d63b1fa2664f5022914aa39984c5d86c51f0023885bbe2a2e08de646931002",
+      "matches_release": true
+    },
+    "omen-gui": {
+      "sha256": "3566e81ae60be8079fc333645156d8ee363118e5a5ed37d19cdd7270349c71e8",
+      "matches_release": true
+    }
+  },
+  "dependency_notices": 164,
+  "systemd_validation": {
+    "exit_code": 0,
+    "method": "unmodified unit in extracted package root; no unit started"
+  }
+}

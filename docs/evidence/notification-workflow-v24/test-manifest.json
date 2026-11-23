@@ -1,0 +1,10 @@
+[
+  {
+    "path": "tests/gui_notification_workflow.py",
+    "sha256": "0ea4c983de1fc046c20499f3240ff169b299de32db43783a1988ee91756ae4a7"
+  },
+  {
+    "path": "tests/native_desktop.py",
+    "sha256": "5b031486b649b7c40161ea4e3bc599389b6764be876075bb8f9e836bd76f619f"
+  }
+]

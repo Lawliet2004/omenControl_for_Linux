@@ -1,0 +1,291 @@
+{
+  "revision": "0.1.0-20",
+  "recorded_utc": "2026-10-27T19:03:59.593066+00:00",
+  "status": "33 headless installed-service VM checks passed; graphical/physical/full-audit requirements remain open",
+  "package": {
+    "path": "target/debian/omen-linux_0.1.0-20_amd64.deb",
+    "sha256": "62a8d612dceab7395ad01283abf620b88daf04c381c42f8a073d46ec98353cdb",
+    "repackaged_or_installed_on_host": false
+  },
+  "application_and_packaging_sources_unchanged": {
+    "reference": "../launcher-expansion/source-manifest.json",
+    "files_verified": 106
+  },
+  "original_milestone_evidence_unchanged": {
+    "reference": "../launcher-expansion/validation-summary.json",
+    "sha256": "3f029792b8d30f99b5fa53b555f41f16e0573fbfd21d4d44328d88e52fbed278",
+    "files_verified": 202
+  },
+  "release_binaries": {
+    "omen-cli": {
+      "sha256": "f0e5c0b08cfec6f32ecb94e39ca65a990f46af4f4ee7bd0dd74c8c562484cf30",
+      "matches_release": true
+    },
+    "omen-daemon": {
+      "sha256": "219780aa03ea5bda0036b402f0231a13cbded8329b8cf1b2dd05e3bc6f4a12cb",
+      "matches_release": true
+    },
+    "omen-gui": {
+      "sha256": "516b722be9cd8c57b13f401e714bcb0a2affb2a120e771ff9f14ccce00bd2fc3",
+      "matches_release": true
+    }
+  },
+  "test_harness_manifest_sha256": "a2a62cf797b04864abb9eaece3b0042780df4e8ac14d98bd2843a49b561bd405",
+  "documentation_manifest_sha256": "b5dab8272391c08563d10c39b1441f88daf7c25231548655a2619288e018edc7",
+  "runtime": {
+    "kernel": "7.0.0-38-generic",
+    "systemd": "systemd 259 (259.5-0ubuntu3.4)",
+    "QEMU": "QEMU emulator version 10.2.1 (Debian 1:10.2.1+ds-1ubuntu3.3)",
+    "cloud_image_sha256": "5645d0318ad21f643ebb1ac4567514620e9893380b07b0201fda163baa5b7eb5",
+    "host_uid": 1000
+  },
+  "checks": {
+    "installed_service_and_lifecycle": 17,
+    "independent_coarse_recovery": 9,
+    "isolated_NVIDIA_reader": 4,
+    "managed_sessions_in_installed_sandbox": 3,
+    "total": 33,
+    "guest_reboots": 2
+  },
+  "managed_fixture": {
+    "helper_sha256": "1af6ca2cc16173953d24cea78168f889896427c3bb639075c59ba2dc796508fa",
+    "private_ppd": true,
+    "physical_hardware_writes": false,
+    "production_polkit": true,
+    "installed_service_sandbox": true,
+    "cleanup_complete": true
+  },
+  "offline_repository": {
+    "path": "target/deployment-v20/complete-repository.tar",
+    "sha256": "8aeeeb8cb5bef30b8086256fc95a5b0dd2e6cd9af9139fb8c4f33e89863fdefd",
+    "bytes": 53473280,
+    "archives": 95,
+    "assembly_local_cache_hits": 66,
+    "assembly_downloads": 29,
+    "assembly_download_bytes": 16961004,
+    "GTK_preflight_full_download_bytes": 3551986,
+    "total_full_archives_downloaded_this_turn": 30,
+    "total_full_archive_download_bytes": 20512990,
+    "signed_indices_verified_on_host_and_by_guest_APT": true,
+    "strong_package_SHA256_from_signed_indices": true,
+    "APT_signature_or_freshness_checks_disabled": false,
+    "guest_network_restricted_to_explicit_SSH_forward": true,
+    "exact_archive_reproduced_from_retained_inputs": true
+  },
+  "bootstrap_attempts": {
+    "optional_index_failure": "initial-optional-index-failure/vm-systemd.json",
+    "NIC_rename_warning": "initial-network-rename-failure/vm-systemd.json",
+    "successful_dependency_resolution": "dependency-resolution/vm-systemd.json",
+    "application_tests_run_in_bootstraps": false,
+    "all_guests_exited_and_private_inputs_removed": true
+  },
+  "cleanup": {
+    "VM_exit_code": 0,
+    "temporary_disk_seed_private_key_removed": true,
+    "fixture_overrides_rules_and_helpers_removed": true
+  },
+  "physical_hardware_writes": false,
+  "host_package_or_service_installation": false,
+  "remaining": [
+    "Graphical polkit prompts, cancellation and authorization cache behavior",
+    "Complete graphical desktop/distribution installation",
+    "Real game/store/runtime and managed sandbox execution",
+    "Physical shortcuts/focus and compositor/full-screen placement",
+    "Complete accessibility and physical DPI",
+    "HP fan/RGB/charging/graphics/thermal/recovery/suspend release gates"
+  ],
+  "evidence_files": [
+    {
+      "path": "collect-evidence.py",
+      "sha256": "007a61aced8b83a5fa6a9fa312d5047467dc8275d13e2d0efeecb7159b1b4763"
+    },
+    {
+      "path": "dependency-cache-audit.json",
+      "sha256": "e1c298039642b07a5f6cf8716afee2dd772075b3351e87e2882802cd24318447"
+    },
+    {
+      "path": "dependency-resolution/vm-cloud-init-status.json",
+      "sha256": "944a68132cd34eeac2ca9088f158897f8c7c1a1200229bfb65a4ff80b9d141cb"
+    },
+    {
+      "path": "dependency-resolution/vm-coarse-journal.log",
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e"
+    },
+    {
+      "path": "dependency-resolution/vm-dependency-resolution.txt",
+      "sha256": "d3a897fd73ac6c66a3476084d052d7b64e2d6d9a8b7616a4fe848dd45b81b676"
+    },
+    {
+      "path": "dependency-resolution/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "dependency-resolution/vm-serial.log",
+      "sha256": "cad4d71b41c54b8b0627b45c2ca76c93848514fbbf42314761d5e30ee6f69cd0"
+    },
+    {
+      "path": "dependency-resolution/vm-systemd-journal.log",
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e"
+    },
+    {
+      "path": "dependency-resolution/vm-systemd-run.log",
+      "sha256": "8267b8f44add3d08194ca43338bbd2acad5004915264f434760cfd61b7059c7f"
+    },
+    {
+      "path": "dependency-resolution/vm-systemd.json",
+      "sha256": "9bc5389a0f2338c6bbbc540f9368f11542ce0abf5b4b58a4c5863c8f145b14f9"
+    },
+    {
+      "path": "dependency-resolution-current-driver.log",
+      "sha256": "a125eef8481e5f00e92db4004d8399092ed4dc8c166a417a79a74db73e4f8775"
+    },
+    {
+      "path": "dependency-resolution-driver.log",
+      "sha256": "f10d494ca963cfe3f71c7270448595bb9995f67152744f366320786fbdc2a7a9"
+    },
+    {
+      "path": "dependency-resolution-final-driver.log",
+      "sha256": "fb551779af17d5d9bbdcf79593ed37b874f16c0d118ec9699ce132ff1818ef36"
+    },
+    {
+      "path": "documentation-manifest.json",
+      "sha256": "f07c4f86767a9288642a88517d33a6844c4b1eefe93b86ac44a22906cc1cc415"
+    },
+    {
+      "path": "indices/mirrors.edge.kernel.org_ubuntu_dists_resolute-security_InRelease",
+      "sha256": "a09771aa177402e5b8b3464ac309d8e07502eda695687cd7b673d0ffd4d06d04"
+    },
+    {
+      "path": "indices/mirrors.edge.kernel.org_ubuntu_dists_resolute-security_main_binary-amd64_Packages.lz4",
+      "sha256": "16d85c5be4c27de421ca627e6b938d44c07bbc79584924adae43d3ed68ee6479"
+    },
+    {
+      "path": "indices/mirrors.edge.kernel.org_ubuntu_dists_resolute-updates_InRelease",
+      "sha256": "ca00e6847ec2681b1c1554890c857e87915f5bc7d09b3bc9d1e78805a6c18d44"
+    },
+    {
+      "path": "indices/mirrors.edge.kernel.org_ubuntu_dists_resolute-updates_main_binary-amd64_Packages.lz4",
+      "sha256": "b2226b10c6cf3afb108e9685217b20fa5d00739ca94e878313f1a69d31e82405"
+    },
+    {
+      "path": "indices/mirrors.edge.kernel.org_ubuntu_dists_resolute_InRelease",
+      "sha256": "45f95ce276cdba3e41870516a130e03c58b8b7a79e9546b0efe9e526d255740c"
+    },
+    {
+      "path": "indices/mirrors.edge.kernel.org_ubuntu_dists_resolute_main_binary-amd64_Packages.lz4",
+      "sha256": "154c418d59be0066bc5d4eb6e5f3609a5d3255baeb316fef64dacfe7add16f24"
+    },
+    {
+      "path": "initial-network-rename-failure/vm-coarse-journal.log",
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e"
+    },
+    {
+      "path": "initial-network-rename-failure/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "initial-network-rename-failure/vm-serial.log",
+      "sha256": "536e378c64f775945a933ae055f5f8342880cdd33e51cadaf7b1b95282c280ff"
+    },
+    {
+      "path": "initial-network-rename-failure/vm-systemd-journal.log",
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e"
+    },
+    {
+      "path": "initial-network-rename-failure/vm-systemd-run.log",
+      "sha256": "0ab120ab3c0ef4a07829a7d9e1385a9f21ff02f22ef03e1985587f46c4508464"
+    },
+    {
+      "path": "initial-network-rename-failure/vm-systemd.json",
+      "sha256": "4a252f72bcd7b382d4c3e0a491a22b1eb864ea300576bcf5bcc0eee8855f72b0"
+    },
+    {
+      "path": "initial-optional-index-failure/vm-coarse-journal.log",
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e"
+    },
+    {
+      "path": "initial-optional-index-failure/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "initial-optional-index-failure/vm-serial.log",
+      "sha256": "525401fda7e7c85a13ba96bd99b7f25f937d95b88174e6d56d1530bcff850741"
+    },
+    {
+      "path": "initial-optional-index-failure/vm-systemd-journal.log",
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e"
+    },
+    {
+      "path": "initial-optional-index-failure/vm-systemd-run.log",
+      "sha256": "56aa187e5025e5db13278a92de42e25040a18852fea747adee03a4f4a8db49f0"
+    },
+    {
+      "path": "initial-optional-index-failure/vm-systemd.json",
+      "sha256": "6516a9c0ae3b285821393094abfa09d424c4ac1ba46ae74ec0dfe65f5b54a49e"
+    },
+    {
+      "path": "installed-runtime/vm-cloud-init-status.json",
+      "sha256": "1a66d3256dc1a81dff37fe99b76bfbddeeff61ca3e5922ed0aa2b3dc7462a353"
+    },
+    {
+      "path": "installed-runtime/vm-coarse-journal.log",
+      "sha256": "0000264c7cd11df564b931dd377634af57fd9224c28c729c0b718b823eda2d55"
+    },
+    {
+      "path": "installed-runtime/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "installed-runtime/vm-serial.log",
+      "sha256": "7e3cfa8555888900c1236c9ce85a00a9f3962b8e794a472354598ec57a52a138"
+    },
+    {
+      "path": "installed-runtime/vm-systemd-initial-journal.log",
+      "sha256": "5272f301421a7a0cfc537c312c11551be5ba1ac0947c46923f87cf065771f3e0"
+    },
+    {
+      "path": "installed-runtime/vm-systemd-journal.log",
+      "sha256": "f574f164a6671b8d1f2bc43faaeb2595462ac8326ff50559b1ceaf45f66ab360"
+    },
+    {
+      "path": "installed-runtime/vm-systemd-run.log",
+      "sha256": "cf7156148d95c442f7e69c9189d8b246d600a21910500d6f8eaa0a62d462513d"
+    },
+    {
+      "path": "installed-runtime/vm-systemd.json",
+      "sha256": "d22206b41f09d34d36812859504b8813f5722e01e1d6a304c987993033cf5606"
+    },
+    {
+      "path": "installed-runtime-driver.log",
+      "sha256": "684cc52e97041fa37cbd3dd738ff755d9d589b516a9fadcecdfc3cf257d3b2dd"
+    },
+    {
+      "path": "mirror-probes.json",
+      "sha256": "8b5aab98c82b3dcdd31a0d1566ffdd7ba2e8f8fdef63f1dab7a68cb8306d4b4b"
+    },
+    {
+      "path": "offline-repository-manifest.json",
+      "sha256": "f5fc353394b8d1cfbc94a891fd25c132993887c7e47495359ca234b9c5cc331b"
+    },
+    {
+      "path": "prepare-offline-vm-repository.py",
+      "sha256": "c500abc9e21706531bd4eaff97aa1dbdce03904813a5f0bd2778c532c49ea3e3"
+    },
+    {
+      "path": "reproduced-repository-manifest.json",
+      "sha256": "85ebb3fa4757f38b77e75086da736015c954ef03b4a3a080b85b58c5242600c7"
+    },
+    {
+      "path": "reproducibility-check.log",
+      "sha256": "0dc162deb9602ad3d2567b39d9d8e1160b9c2e6bd24d29510d48ad3ab37e7627"
+    },
+    {
+      "path": "required-packages.json",
+      "sha256": "c189d6226ddf6cca0a060b2fa3253f05ab09a7304bd737089f65e123bd8e5d76"
+    },
+    {
+      "path": "test-harness-manifest.json",
+      "sha256": "a6cd1d6092364e327f1d74cc0fe1507c68c25864b2811823b88197863d11b57e"
+    }
+  ]
+}

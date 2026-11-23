@@ -1,0 +1,65 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "system_power_bus_used": false,
+  "real_shortcuts_or_notifications_enabled": false,
+  "profile": "release",
+  "requested_gtk_backend": "x11",
+  "gui_sha256": "f7b5687fff85b9255a0206db1605f5a6dee2c414ecbe64a369342fc3c0c22ccb",
+  "cli_sha256": "dd99bb807b388a83b0c17b487aa981e8072e10dd8544437ef682def10190899c",
+  "checks_passed": [
+    "native setup saves automatic mode in user settings without starting a hold",
+    "native Launch runs the custom wrapper and renders active ownership with the effective profile",
+    "changing the preference affects future launches and preserves the active session until explicitly released",
+    "native release restores provider selection without stopping the game, and actual exit moves it to history",
+    "SIGKILL of the GUI preserves the running session and the daemon releases its hold after real exit",
+    "wide/light and narrow/dark app-only GTK captures cover active sessions and inline setup"
+  ],
+  "captures": [
+    {
+      "path": "docs/screenshots/managed-games/games-active-wide-light.png",
+      "sha256": "54115eb872dd26b7ef03ceaff130aa14246eb0cf3f51e53f62c692ad880775da",
+      "requested_size": [
+        1240,
+        1100
+      ],
+      "actual_size": [
+        1240,
+        1080
+      ],
+      "theme": "prefer-light",
+      "fixture_only": true
+    },
+    {
+      "path": "docs/screenshots/managed-games/games-setup-narrow-dark.png",
+      "sha256": "f45618db20f343d4fb59ad2d58624d8b0a6f5d3c6b7f2295da4298d4369e4b0e",
+      "requested_size": [
+        600,
+        1100
+      ],
+      "actual_size": [
+        600,
+        1080
+      ],
+      "theme": "prefer-dark",
+      "fixture_only": true
+    }
+  ],
+  "setup_accessible_description": "",
+  "setup_accessible_relations": [
+    {
+      "type": 2,
+      "targets": [
+        "Profile setup"
+      ]
+    },
+    {
+      "type": 18,
+      "targets": [
+        "GUI session fixture\ncustom/gui"
+      ]
+    }
+  ],
+  "cleanup_complete": true
+}

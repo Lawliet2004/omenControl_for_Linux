@@ -1,0 +1,526 @@
+{
+  "generated_utc": "2026-10-26T00:20:47.431703+00:00",
+  "version": "0.1.0",
+  "goal_complete": false,
+  "rust_tests": {
+    "debug": {
+      "passed": 140,
+      "failed": 0,
+      "ignored": 0
+    },
+    "release": {
+      "passed": 140,
+      "failed": 0,
+      "ignored": 0
+    }
+  },
+  "checks": {
+    "strict_clippy": "pass",
+    "cargo_fmt": "pass",
+    "release_workspace_build": "pass",
+    "python_and_shell_syntax": "pass",
+    "desktop_file_validate": "pass",
+    "systemd_verify_extracted_payload": "pass",
+    "package_checksums_and_release_binary_match": "pass",
+    "mock_process_smoke_debug": "pass",
+    "mock_process_smoke_release": "pass",
+    "tray_gtk_dbus_debug": "6 checks passed; dynamic profile availability covered",
+    "tray_gtk_dbus_release": "6 checks passed; dynamic profile availability covered",
+    "dependency_notices": "152 locked crate notices included",
+    "settings_process_debug": "pass",
+    "settings_process_release": "pass",
+    "scoped_service_admin_action": "production IPC/pkcheck/polkit with UID 1000 and container-only rule grants; no hardware-control requests",
+    "game_launch_process_debug": "pass",
+    "game_launch_process_release": "pass",
+    "profile_policy_and_shutdown_serialization": "fixture unit tests passed",
+    "store_discovery": "native/Flatpak Steam, Heroic Epic/GOG/Amazon and Lutris; pinned source and parsing/WAL fixtures",
+    "games_empty_state": "current GTK widget screenshot inspected",
+    "package_lifecycle_container": "18 checks passed for revision 4; container removed",
+    "package_lifecycle_final_equivalence": "documentation-only changes from the exact container- and VM-tested revision 4 package",
+    "legacy_service_migration": "helper-managed state preserved; old 0.1.0-1 running prerm can erase enabled state and now reports a manual check",
+    "systemd_vm": "16 checks passed for revision 4, including two reboots; guest exited and private disk/key removed",
+    "kernel_filesystem_protection": "actual visible sysfs path read-only with BindReadOnlyPaths; kernel tunables protected",
+    "native_settings_gtk_atspi_debug": "16 workflows passed; private fixture daemon and buses; native GTK fallback picker",
+    "native_settings_gtk_atspi_release": "16 workflows passed; private fixture daemon and buses; native GTK fallback picker",
+    "profile_capability_refresh": "native GTK and tray respond to automation ownership/release and service loss; fixture hardware only",
+    "native_profile_capability_visuals": "enabled and read-only app-only screenshots inspected; fixture labels visible"
+  },
+  "package": {
+    "package": "target/debian/omen-linux_0.1.0-4_amd64.deb",
+    "bytes": 2492710,
+    "sha256": "d091a427cd8577aa05bded60c5d13ecf031fad5dbb21c385932fa0f19a31e87b",
+    "version": "0.1.0-4",
+    "installed_by_verifier": false,
+    "checks": {
+      "root_ownership_and_directory_modes": true,
+      "payload_md5sums": true,
+      "desktop_file_validate": true,
+      "polkit_xml_matches_source": true,
+      "gui_linkage_current_environment": true,
+      "extracted_cli_readonly_discovery": true
+    },
+    "binaries": {
+      "omen-cli": {
+        "sha256": "462b43449c9ca0dea798dd0dc966bedd55bcd5d4f45513a9b43ba23fd91f1ae3",
+        "matches_release": true
+      },
+      "omen-daemon": {
+        "sha256": "346100745deedb7d857a1bbf08658ca54eae004df1ee836ddf8041157a949707",
+        "matches_release": true
+      },
+      "omen-gui": {
+        "sha256": "acda0c3e76640bb46f3ecfab68dbea545f2c3211224cf9b79af88de58e7bfde1",
+        "matches_release": true
+      }
+    },
+    "lifecycle_equivalence": {
+      "reference_package": "target/debian/runtime-tested_omen-linux_0.1.0-4_amd64.deb",
+      "reference_sha256": "64ce6314dc0560116b51697374e377e5881de7ac149b7b7023003a5f16928d2c",
+      "runtime_payload_identical": true,
+      "maintainer_scripts_and_control_identical": true,
+      "documentation_changes": [
+        "usr/share/doc/omen-linux/ARCHITECTURE.md",
+        "usr/share/doc/omen-linux/PACKAGE_VALIDATION.md",
+        "usr/share/doc/omen-linux/TEST_REPORT.md",
+        "usr/share/doc/omen-linux/VM_VALIDATION.md"
+      ]
+    },
+    "vm_equivalence": {
+      "reference_package": "target/debian/runtime-tested_omen-linux_0.1.0-4_amd64.deb",
+      "reference_sha256": "64ce6314dc0560116b51697374e377e5881de7ac149b7b7023003a5f16928d2c",
+      "runtime_payload_identical": true,
+      "maintainer_scripts_and_control_identical": true,
+      "documentation_changes": [
+        "usr/share/doc/omen-linux/ARCHITECTURE.md",
+        "usr/share/doc/omen-linux/PACKAGE_VALIDATION.md",
+        "usr/share/doc/omen-linux/TEST_REPORT.md",
+        "usr/share/doc/omen-linux/VM_VALIDATION.md"
+      ]
+    },
+    "dependency_notices": 152,
+    "systemd_validation": {
+      "exit_code": 0,
+      "method": "unmodified unit in extracted package root; no unit started"
+    }
+  },
+  "live_profile_test": {
+    "result": "passed",
+    "fixture_only": false,
+    "board": "8C30",
+    "bios": "F.10",
+    "kernel": "7.0.0-38-generic",
+    "original": "performance",
+    "requested": "balanced",
+    "restored": "performance",
+    "uid": 1000,
+    "authorization": "installed polkit com.omenlinux.control active-session action; production IPC",
+    "scope": "one standard PPD transaction, amd_pstate CPU backend; no firmware thermal-mode equivalence claimed",
+    "evidence": "live-profile-test.json",
+    "daemon_exited_cleanly": true,
+    "tested_daemon_sha256": "11c02e6206a6bd37678cb3e8dbcc89455ffd26797e665bb4a938705b49cc89a4",
+    "repeated_after_tray_changes": false,
+    "note": "Earlier approved physical transaction; not repeated after launch-controller, serialization or packaged-unit changes. VM/fixture tests do not validate physical profile automation or thermal behavior."
+  },
+  "host_changes": {
+    "rea_config": "approved setup; existing Node 24.22.1, no engines installed",
+    "polkit_action": "/usr/share/polkit-1/actions/com.omenlinux.policy installed root:root 0644",
+    "deb_installed": false,
+    "systemd_service_installed": false,
+    "test_daemon_running": false,
+    "package_test_containers": "removed; no host package or systemd service installed",
+    "vm_runtime": "19 signed-archive-checksummed Ubuntu packages extracted locally; no host installation",
+    "vm_runs": "all stopped; private VM disks/keys removed; signed base image/runtime cached under target",
+    "preexisting_mock_daemon": "left running and untouched (PID 2124598); unrelated to these tests"
+  },
+  "performance": {
+    "method": "release binaries; 5-second windows; CPU percent of one logical core; page-cache-warm launches; live read-only monitoring",
+    "cpu_count": 12,
+    "cli_detect": {
+      "runs_seconds": [
+        0.07907172900740989,
+        0.07182091299910098,
+        0.10167541800183244,
+        0.07204143100534566,
+        0.0720623399829492
+      ],
+      "median_seconds": 0.0720623399829492
+    },
+    "daemon_socket_ready_seconds": 0.018857461982406676,
+    "daemon_idle_no_clients": {
+      "seconds": 5.000976770010311,
+      "rss_kib": 3432,
+      "cpu_pct_one_core": 0.0,
+      "reaped_children_cpu_pct_one_core": 0.0
+    },
+    "gui_window_map_seconds": 0.38580750999972224,
+    "gui_monitoring_dashboard": {
+      "seconds": 5.000552425015485,
+      "rss_kib": 153456,
+      "cpu_pct_one_core": 1.9997790544049807,
+      "reaped_children_cpu_pct_one_core": 1.3998453380834865
+    },
+    "binary_sha256": {
+      "omen-cli": "462b43449c9ca0dea798dd0dc966bedd55bcd5d4f45513a9b43ba23fd91f1ae3",
+      "omen-daemon": "346100745deedb7d857a1bbf08658ca54eae004df1ee836ddf8041157a949707",
+      "omen-gui": "acda0c3e76640bb46f3ecfab68dbea545f2c3211224cf9b79af88de58e7bfde1"
+    },
+    "kernel": "7.0.0-38-generic",
+    "recorded_utc": "2026-10-26T00:18:13.499016+00:00"
+  },
+  "screenshots": {
+    "battery.png": "d6c857fe5c852a890d73095276215d5147d359caa93446416a4a7bd15e00a27c",
+    "dashboard.png": "aef8977bd8e23de51a8b620fd413bba329449e0a320bdd7ecdd74a9e149af7b5",
+    "fan-mock.png": "39897cd0fe9160338f0434282918c61e7e8986d0e87a4e53e016d57704205a5d",
+    "fan.png": "a49f1070bb73e9a43d74573bb85c5439875157c8ab86e7fef9d7124387ce6b1b",
+    "games-mock.png": "857d955138b68da48dc6e7d4db8d14cbe11765264e5102745f391465d5da8535",
+    "games.png": "21796b7ce73f40ba72ecad70595571beaf4527344b0671cd442dd77e857b29f5",
+    "graphics.png": "5aebe425bf11dfdf909c4247febbfa47caf5e3b7307b6a91310f60b0fadc95e2",
+    "lighting.png": "e86ff12c200d2ee7a6e2d90bd78fa3473a388e99cf7ac8759f788aa43c01291c",
+    "performance.png": "22ef4e9d6a1bc72df9e4190fc0562bb435fbab4dd83d77597ec9a0411fd935c4",
+    "settings-mock.png": "fc9c753fcfa27e0f409d071e735a8f91b47f07a0d1de7499ca62f059ae3d1854",
+    "settings.png": "8f8976c22ae126640224bf648917861ef6e0812ffaa6e5b5ce0ad1ab1158dbdf",
+    "vitals.png": "3eb8f23daef40e45322658204bf7727f6bd100d348f13801578b3bda2f935575",
+    "performance-fixture.png": "51fffd0aa77d148a9a7dd3284dc50fa0784c22d78deea246a4ae1c529acd9e8e",
+    "performance-automation-fixture.png": "dbd73eba6487b2c7ef6eea45443828687073d4c4b42572955ae8dbfb0bc9e22b"
+  },
+  "limits": [
+    "One profile switch/restore is not thermal or Windows parity validation",
+    "Live fan/RGB/charging/graphics/firmware writes were not tested and device-specific paths remain disabled",
+    "Warm startup and short resource windows; no cold-start benchmark",
+    "Main Windows Store application and compatible Windows behavioral reference unavailable",
+    "Configured REA needs chat reconnect for direct tools; standalone MCP was used successfully",
+    "Global hotkeys/overlay and several optional integrations remain unimplemented",
+    "Tray verified with KDE Wayland and a private-bus watcher fixture; GNOME/X11 shell behavior and global shortcuts remain unverified",
+    "Native GTK fallback chooser and preview actions passed; KDE portal dialogs, full keyboard/pointer coverage and graphical authorization remain unverified",
+    "Game/Steam execution, late-exit restoration, global atomic profile ownership and client-crash recovery are not verified or implemented; launcher tests use fixture scripts/hardware only",
+    "Store routing uses fixture clients only; GOG titles fall back to IDs, and nonstandard launcher paths/unsupported formats are listed in GAME_LAUNCHERS.md",
+    "Graphical polkit prompts/cancellation/cache expiry, logind session classification, full KDE desktop deployment and upgrade rollback remain unverified",
+    "VM startup, mount and process recovery tests do not prove physical hardware recovery; monitoring with real GPU device access under the hardened service remains unverified",
+    "A running-system upgrade from old development revision 0.1.0-1 can lose enabled state in its own prerm; the installer reports an explicit administrator check"
+  ],
+  "tray_integration": {
+    "host": "running KDE StatusNotifierWatcher",
+    "profile": "release",
+    "gui_sha256": "acda0c3e76640bb46f3ecfab68dbea545f2c3211224cf9b79af88de58e7bfde1",
+    "live_hardware_writes": false,
+    "checks_passed": [
+      "real KDE tray: read-only menu, Hide, Activate, page navigation, clean Quit",
+      "startup preference hides only after tray registration; menu restores window",
+      "no tray host: start-minimized falls back to a visible GTK window",
+      "private-bus host loss reveals window; host restart re-registers without hiding it again",
+      "fixture only: tray capability changes remove and restore profile actions without a profile or visibility change",
+      "fixture only: tray profile changes reach daemon and restore Balanced"
+    ]
+  },
+  "settings_integration": {
+    "fixture_only": true,
+    "live_hardware_writes": false,
+    "checks_passed": [
+      "missing service config never loads the desktop user's config",
+      "connected CLI user import changes only the user file and creates a backup",
+      "reviewed service import uses typed IPC, writes the service file and preserves desktop data",
+      "scope mismatch and desktop fields in service backups are rejected without file changes",
+      "nullable AC policy remains unchanged after daemon restart",
+      "oversized input and corrupt local config fail without replacing data"
+    ]
+  },
+  "game_launch_integration": {
+    "fixture_only": true,
+    "live_hardware_writes": false,
+    "desktop_uid": 1000,
+    "checks_passed": [
+      "missing launcher is rejected before any profile write",
+      "spawn failure after profile application restores and verifies Balanced",
+      "an already-active profile is not mutated or claimed for rollback",
+      "early nonzero launcher exit is reported and rolls back the applied profile",
+      "a different profile selected by a second IPC writer is preserved",
+      "successful fixture Steam submission uses one URI argument and the desktop UID",
+      "missing Flatpak launcher fails before a bound profile is changed",
+      "steam/flatpak/620: discovered fixture submits exact arguments as desktop UID",
+      "heroic/legendary/Quail: discovered fixture submits exact arguments as desktop UID",
+      "heroic/flatpak/legendary/Quail: discovered fixture submits exact arguments as desktop UID",
+      "lutris/9: discovered fixture submits exact arguments as desktop UID",
+      "lutris/flatpak/9: discovered fixture submits exact arguments as desktop UID",
+      "battery automation and bound per-game profiles cannot compete",
+      "lost daemon during rollback reports recovery as unverified",
+      "unbound game commands work without a daemon and cannot pollute JSON stdout",
+      "longer-running launcher returns a process receipt without claiming game execution"
+    ]
+  },
+  "launcher_source_evidence": "launcher-sources.json",
+  "package_lifecycle": {
+    "started_utc": "2026-10-26T00:14:51.624936+00:00",
+    "base_image": "sha256:c098726dd9b9733f3e885f8de0ef375206a311b0a317eadc40d347b1115fb944",
+    "base_digests": [
+      "ubuntu@sha256:c098726dd9b9733f3e885f8de0ef375206a311b0a317eadc40d347b1115fb944"
+    ],
+    "package_sha256": "64ce6314dc0560116b51697374e377e5881de7ac149b7b7023003a5f16928d2c",
+    "baseline_sha256": "c98e29c045c4f8fbae013bf49555b7102d5774cdec89ac2e823c7257bc6448eb",
+    "host_package_installed": false,
+    "container_removed": true,
+    "apt_mirror": "https://mirrors.edge.kernel.org/ubuntu",
+    "isolation": "default Docker namespaces/devices; SYS_ADMIN absent; no-new-privileges; no explicit host mounts, bus, sockets or device passthrough",
+    "result": "passed",
+    "checks_passed": [
+      "fresh Ubuntu package install resolves distro libraries, creates private config and enables the unit offline",
+      "installed production daemon permits UID 1000 reads and fails closed without a system bus",
+      "installed polkit actions deny non-session UID 1000 admin/control requests without an authentication agent",
+      "a container-only control grant reaches the daemon refusal and cannot authorize admin settings",
+      "a container-only admin grant saves disabled automation through production IPC as UID 1000",
+      "removing the temporary polkit rule revokes subsequent admin requests",
+      "loss of the authorization bus leaves reads working and mutations denied",
+      "SIGTERM removes the production socket; no mock authorization bypass was used",
+      "same-version reinstall preserves a disabled unit and administrator configuration",
+      "same-version reinstall preserves an enabled unit without rewriting configuration",
+      "same-version reinstall preserves an administrator mask",
+      "policy-rc.d denial prevents runtime restart; upgrades do not disable or enable the unit directly",
+      "remove/reinstall retains service-disable state, system configuration and desktop settings",
+      "purge removes package settings, policy and helper links while retaining desktop settings",
+      "real legacy-version upgrade bootstraps helper state without enabling an administrator-disabled service",
+      "real legacy-version upgrade preserves an administrator-enabled service",
+      "real legacy-version upgrade preserves an administrator-masked service",
+      "purge followed by a fresh install restores the default enablement and private configuration"
+    ],
+    "current_version": "0.1.0-4",
+    "baseline_version": "0.1.0-1",
+    "fixture_policy_only": true,
+    "hardware_writes": false,
+    "systemd_pid1_tested": false,
+    "gui_authentication_prompt_tested": false,
+    "test_payload_sha256": "a13356c12baad5e409cff16112d85bc12964856759f04a44e30167e83fe24b4a",
+    "configuration_sha256": "6649779aaef4a32afca5cc7262556cf108a45d9f5836c4591bf56734b084e14d",
+    "distro_packages": "libadwaita-1-0:amd64\t1.9.1-0ubuntu0.2\nlibgtk-4-1:amd64\t4.22.4+ds-0ubuntu0.1\nlibsqlite3-0:amd64\t3.46.1-9ubuntu0.3\npolkitd\t127-2ubuntu1.1\nsystemd\t259.9-0ubuntu0.1",
+    "finished_utc": "2026-10-26T00:17:30.727118+00:00"
+  },
+  "systemd_vm": {
+    "started_utc": "2026-10-26T00:14:52.078552+00:00",
+    "package_sha256": "64ce6314dc0560116b51697374e377e5881de7ac149b7b7023003a5f16928d2c",
+    "image_sha256": "5645d0318ad21f643ebb1ac4567514620e9893380b07b0201fda163baa5b7eb5",
+    "qemu_version": "QEMU emulator version 10.2.1 (Debian 1:10.2.1+ds-1ubuntu3.3)",
+    "host_uid": 1000,
+    "host_package_installed": false,
+    "apt_mirror": "https://mirrors.edge.kernel.org/ubuntu",
+    "hardware_writes": false,
+    "physical_hardware_validated": false,
+    "result": "passed",
+    "vm_exited": true,
+    "temporary_files_removed": true,
+    "qemu_pid": 2508260,
+    "qemu_arguments": [
+      "-no-user-config",
+      "-nodefaults",
+      "-machine",
+      "q35,accel=kvm,dump-guest-core=off",
+      "-cpu",
+      "host",
+      "-m",
+      "1024",
+      "-smp",
+      "2",
+      "-display",
+      "none",
+      "-vga",
+      "none",
+      "-monitor",
+      "none",
+      "-L",
+      "/home/papan/Desktop/Projects/omen/target/vm-runtime/root/usr/share/qemu",
+      "-bios",
+      "/home/papan/Desktop/Projects/omen/target/vm-runtime/root/usr/share/seabios/bios-256k.bin",
+      "-drive",
+      "file=/home/papan/Desktop/Projects/omen/target/omen-systemd-vm-dglflcnv/disk.qcow2,if=virtio,format=qcow2",
+      "-drive",
+      "file=/home/papan/Desktop/Projects/omen/target/omen-systemd-vm-dglflcnv/seed.iso,media=cdrom,readonly=on,format=raw",
+      "-netdev",
+      "user,id=net0,hostfwd=tcp:127.0.0.1:55433-:22",
+      "-device",
+      "virtio-net-pci,netdev=net0,romfile=",
+      "-device",
+      "virtio-rng-pci",
+      "-serial",
+      "file:/home/papan/Desktop/Projects/omen/target/omen-systemd-vm-dglflcnv/serial.log",
+      "-sandbox",
+      "on,obsolete=deny,elevateprivileges=deny,spawn=deny,resourcecontrol=deny"
+    ],
+    "checks_passed": [
+      "real systemd starts the installed read-only daemon; UID 1000 connects to its production socket",
+      "running process has NoNewPrivileges, seccomp and only CAP_DAC_OVERRIDE",
+      "actual mount namespace enforces read-only system/sysfs, writable service paths, hidden home and private tmp",
+      "sandboxed production pkcheck/polkit denies, grants a VM-only admin save and observes rule revocation",
+      "systemd stop removes the socket and RuntimeDirectory",
+      "systemd start/restart creates a new responding daemon",
+      "Restart=on-failure recovers the read-only service and socket after guest-only SIGKILL",
+      "a real guest reboot starts the enabled service and retains system configuration",
+      "administrator disable --now stops the service and removes its socket",
+      "a guest reboot respects administrator-disabled service state",
+      "real systemd package reinstall preserves a disabled service and configuration",
+      "real systemd package reinstall preserves an administrator mask",
+      "enabled running-service reinstall performs a real restart and retains configuration",
+      "dpkg removal stops the actual service and preserves system configuration",
+      "reinstall after removal starts the formerly enabled service",
+      "dpkg purge stops the service and removes its config, policy and enablement link"
+    ],
+    "test_payload_sha256": "08ebb6587d634e6dae87d9fba46d5c001d729c6c964bfea8fc1a3e53771a84e2",
+    "initial_boot_id": "2ae3d002-d703-4ecb-914d-c3f10a8d660d",
+    "kernel": "7.0.0-38-generic",
+    "systemd_version": "systemd 259 (259.5-0ubuntu3.4)",
+    "loaded_sandbox_properties": "FragmentPath=/usr/lib/systemd/system/omen-linux.service\nReadWritePaths=/run/omen-linux /etc/omen-linux\nReadOnlyPaths=\nPrivateTmp=yes\nProtectKernelTunables=yes\nProtectHome=yes\nProtectSystem=strict\n",
+    "manager_mount_namespace": "mnt:[4026531832]",
+    "service_mount_namespace": "mnt:[4026532252]",
+    "sysfs_mountinfo": [
+      "373 367 0:25 / /sys rw,nosuid,nodev,noexec,relatime shared:289 master:5 - sysfs sysfs rw",
+      "374 373 0:8 / /sys/kernel/security rw,nosuid,nodev,noexec,relatime shared:290 master:6 - securityfs securityfs rw",
+      "375 373 0:29 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime shared:291 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting",
+      "376 373 0:30 / /sys/fs/pstore rw,nosuid,nodev,noexec,relatime shared:292 master:8 - pstore none rw",
+      "377 373 0:31 / /sys/fs/bpf rw,nosuid,nodev,noexec,relatime shared:293 master:9 - bpf bpf rw,mode=700",
+      "378 373 0:21 / /sys/kernel/config rw,nosuid,nodev,noexec,relatime shared:294 master:10 - configfs configfs rw",
+      "379 373 0:9 / /sys/kernel/debug rw,nosuid,nodev,noexec,relatime shared:295 master:14 - debugfs debugfs rw",
+      "380 373 0:14 / /sys/kernel/tracing rw,nosuid,nodev,noexec,relatime shared:296 master:16 - tracefs tracefs rw",
+      "381 373 0:36 / /sys/fs/fuse/connections rw,nosuid,nodev,noexec,relatime shared:297 master:20 - fusectl fusectl rw",
+      "389 373 0:25 / /sys ro,nosuid,nodev,noexec,relatime shared:298 master:5 - sysfs sysfs rw",
+      "390 389 0:8 / /sys/kernel/security ro,nosuid,nodev,noexec,relatime shared:299 master:6 - securityfs securityfs rw",
+      "391 389 0:29 / /sys/fs/cgroup ro,nosuid,nodev,noexec,relatime shared:300 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting",
+      "410 389 0:30 / /sys/fs/pstore ro,nosuid,nodev,noexec,relatime shared:302 master:8 - pstore none rw",
+      "411 389 0:31 / /sys/fs/bpf ro,nosuid,nodev,noexec,relatime shared:303 master:9 - bpf bpf rw,mode=700",
+      "412 389 0:21 / /sys/kernel/config ro,nosuid,nodev,noexec,relatime shared:304 master:10 - configfs configfs rw",
+      "413 389 0:9 / /sys/kernel/debug ro,nosuid,nodev,noexec,relatime shared:305 master:14 - debugfs debugfs rw",
+      "414 389 0:14 / /sys/kernel/tracing ro,nosuid,nodev,noexec,relatime shared:306 master:16 - tracefs tracefs rw",
+      "415 389 0:36 / /sys/fs/fuse/connections ro,nosuid,nodev,noexec,relatime shared:307 master:20 - fusectl fusectl rw",
+      "416 391 0:29 /system.slice/omen-linux.service/memory.pressure /sys/fs/cgroup/system.slice/omen-linux.service/memory.pressure rw,nosuid,nodev,noexec,relatime shared:301 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting"
+    ],
+    "service_mount_options": {
+      "/sys": {
+        "options": "rw,nosuid,nodev,noexec,relatime\nro,nosuid,nodev,noexec,relatime",
+        "statvfs_readonly": true,
+        "expected_writable": false
+      },
+      "/etc/hostname": {
+        "options": "ro,nosuid,relatime",
+        "statvfs_readonly": true,
+        "expected_writable": false
+      },
+      "/etc/omen-linux": {
+        "options": "rw,nosuid,relatime",
+        "statvfs_readonly": false,
+        "expected_writable": true
+      },
+      "/run/omen-linux": {
+        "options": "rw,nosuid,nodev",
+        "statvfs_readonly": false,
+        "expected_writable": true
+      }
+    },
+    "disabled_boot_id": "55e1c656-fc0b-4758-83bc-919d313f2811",
+    "vm_exit_code": 0,
+    "finished_utc": "2026-10-26T00:17:19.107448+00:00"
+  },
+  "native_settings_integration": {
+    "debug": {
+      "result": "passed",
+      "profile": "debug",
+      "fixture_only": true,
+      "live_hardware_writes": false,
+      "interaction": "AT-SPI actions, editable text and native file-list selection; no injected application test actions",
+      "picker": "real GTK fallback on Wayland; private bus has no desktop portal",
+      "checks_passed": [
+        "native export picker cancellation leaves user and service settings unchanged",
+        "native user export writes private, scoped JSON without changing either configuration",
+        "native import picker cancellation leaves both configurations unchanged",
+        "native user import saves the selected preferences only to the desktop file",
+        "native service export reads production IPC and writes a private service-only backup",
+        "scope-mismatched native user import displays an error without configuration changes",
+        "malformed native import preserves existing configuration and reports failure",
+        "oversized native import reports its size limit and preserves configuration",
+        "service preview shows selected automation and cancellation never sends a mutation",
+        "explicit native Apply persists service policy through IPC while leaving desktop settings unchanged",
+        "profile controls become read-only after the imported battery policy takes ownership",
+        "restoring service policies re-enables profile controls without restarting the application",
+        "native diagnostics export identifies fixture hardware and writes private JSON",
+        "daemon loss during service preview reports failure without saving to either configuration",
+        "daemon loss disables profile controls and explains the missing capability",
+        "desktop settings export remains usable after the service disconnects"
+      ],
+      "binary_sha256": "4faf82ca0fd92246c54e26286719eb2278b7ea47be97cc153566f918a44fb597",
+      "cleanup_complete": true,
+      "recorded_utc": "2026-10-26T00:12:28.529036+00:00"
+    },
+    "release": {
+      "result": "passed",
+      "profile": "release",
+      "fixture_only": true,
+      "live_hardware_writes": false,
+      "interaction": "AT-SPI actions, editable text and native file-list selection; no injected application test actions",
+      "picker": "real GTK fallback on Wayland; private bus has no desktop portal",
+      "checks_passed": [
+        "native export picker cancellation leaves user and service settings unchanged",
+        "native user export writes private, scoped JSON without changing either configuration",
+        "native import picker cancellation leaves both configurations unchanged",
+        "native user import saves the selected preferences only to the desktop file",
+        "native service export reads production IPC and writes a private service-only backup",
+        "scope-mismatched native user import displays an error without configuration changes",
+        "malformed native import preserves existing configuration and reports failure",
+        "oversized native import reports its size limit and preserves configuration",
+        "service preview shows selected automation and cancellation never sends a mutation",
+        "explicit native Apply persists service policy through IPC while leaving desktop settings unchanged",
+        "profile controls become read-only after the imported battery policy takes ownership",
+        "restoring service policies re-enables profile controls without restarting the application",
+        "native diagnostics export identifies fixture hardware and writes private JSON",
+        "daemon loss during service preview reports failure without saving to either configuration",
+        "daemon loss disables profile controls and explains the missing capability",
+        "desktop settings export remains usable after the service disconnects"
+      ],
+      "binary_sha256": "acda0c3e76640bb46f3ecfab68dbea545f2c3211224cf9b79af88de58e7bfde1",
+      "cleanup_complete": true,
+      "recorded_utc": "2026-10-26T00:13:53.641964+00:00"
+    }
+  },
+  "tray_integrations": {
+    "debug": {
+      "host": "running KDE StatusNotifierWatcher",
+      "profile": "debug",
+      "gui_sha256": "4faf82ca0fd92246c54e26286719eb2278b7ea47be97cc153566f918a44fb597",
+      "live_hardware_writes": false,
+      "checks_passed": [
+        "real KDE tray: read-only menu, Hide, Activate, page navigation, clean Quit",
+        "startup preference hides only after tray registration; menu restores window",
+        "no tray host: start-minimized falls back to a visible GTK window",
+        "private-bus host loss reveals window; host restart re-registers without hiding it again",
+        "fixture only: tray capability changes remove and restore profile actions without a profile or visibility change",
+        "fixture only: tray profile changes reach daemon and restore Balanced"
+      ]
+    },
+    "release": {
+      "host": "running KDE StatusNotifierWatcher",
+      "profile": "release",
+      "gui_sha256": "acda0c3e76640bb46f3ecfab68dbea545f2c3211224cf9b79af88de58e7bfde1",
+      "live_hardware_writes": false,
+      "checks_passed": [
+        "real KDE tray: read-only menu, Hide, Activate, page navigation, clean Quit",
+        "startup preference hides only after tray registration; menu restores window",
+        "no tray host: start-minimized falls back to a visible GTK window",
+        "private-bus host loss reveals window; host restart re-registers without hiding it again",
+        "fixture only: tray capability changes remove and restore profile actions without a profile or visibility change",
+        "fixture only: tray profile changes reach daemon and restore Balanced"
+      ]
+    }
+  },
+  "profile_capability_visuals": {
+    "fixture_only": true,
+    "hardware_writes": false,
+    "method": "application-only GTK widget snapshots; no desktop capture",
+    "gui_sha256": "acda0c3e76640bb46f3ecfab68dbea545f2c3211224cf9b79af88de58e7bfde1",
+    "screenshots": [
+      {
+        "path": "docs/screenshots/performance-fixture.png",
+        "battery_automation": false,
+        "sha256": "51fffd0aa77d148a9a7dd3284dc50fa0784c22d78deea246a4ae1c529acd9e8e"
+      },
+      {
+        "path": "docs/screenshots/performance-automation-fixture.png",
+        "battery_automation": true,
+        "sha256": "dbd73eba6487b2c7ef6eea45443828687073d4c4b42572955ae8dbfb0bc9e22b"
+      }
+    ],
+    "cleanup_complete": true
+  }
+}

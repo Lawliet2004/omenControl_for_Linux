@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-10-26T12:15:01.801123+00:00",
+  "result": "passed",
+  "host_deb_installed": false,
+  "host_service_files": {
+    "/usr/lib/systemd/system/omen-linux.service": false,
+    "/etc/systemd/system/omen-linux.service": false
+  },
+  "approved_polkit_action": {
+    "uid": 0,
+    "gid": 0,
+    "mode": "0644"
+  },
+  "remaining_omen_daemons": [
+    {
+      "pid": 2124598,
+      "args": [
+        "./target/release/omen-daemon",
+        "--mock"
+      ]
+    }
+  ],
+  "package_test_containers": [],
+  "scope": "Read-only checks; preexisting user mock daemon preserved"
+}

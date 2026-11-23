@@ -1,0 +1,17 @@
+{
+  "result": "passed",
+  "checks_passed": [
+    "real CLI installs the exact packaged static helper and private SHA-256 record without changing launcher config or permissions",
+    "repeat installation publishes a complete verified replacement without leftover staging files",
+    "effective host-command denial disables readiness and gives permission/restart guidance without adding an override",
+    "edited user executables survive both update and removal attempts with a recovery error",
+    "unrecognized files and symlink replacements are retained; setup never follows them",
+    "shared helper removal disables only this launcher automatic bindings and retains manual bindings and unrelated app data",
+    "a symlinked host home keeps its visible sandbox path in the copied command while filesystem operations use the verified home",
+    "successful update/removal leaves no temporary or retired helper directories",
+    "pre-registration handoff failures are retained as private closed-reason launch issues without contacting a profile service"
+  ],
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "cleanup_complete": true
+}

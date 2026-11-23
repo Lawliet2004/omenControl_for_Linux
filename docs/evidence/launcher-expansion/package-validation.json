@@ -1,0 +1,46 @@
+{
+  "package": "target/debian/omen-linux_0.1.0-20_amd64.deb",
+  "bytes": 3599952,
+  "sha256": "62a8d612dceab7395ad01283abf620b88daf04c381c42f8a073d46ec98353cdb",
+  "version": "0.1.0-20",
+  "installed_by_verifier": false,
+  "checks": {
+    "root_ownership_and_directory_modes": true,
+    "payload_md5sums": true,
+    "desktop_file_validate": true,
+    "polkit_xml_matches_source": true,
+    "gui_linkage_current_environment": true,
+    "extracted_cli_readonly_discovery": true
+  },
+  "binaries": {
+    "omen-cli": {
+      "sha256": "f0e5c0b08cfec6f32ecb94e39ca65a990f46af4f4ee7bd0dd74c8c562484cf30",
+      "matches_release": true
+    },
+    "omen-daemon": {
+      "sha256": "219780aa03ea5bda0036b402f0231a13cbded8329b8cf1b2dd05e3bc6f4a12cb",
+      "matches_release": true
+    },
+    "omen-gui": {
+      "sha256": "516b722be9cd8c57b13f401e714bcb0a2affb2a120e771ff9f14ccce00bd2fc3",
+      "matches_release": true
+    }
+  },
+  "lifecycle_equivalence": {
+    "reference_package": "target/launcher-expansion/omen-linux_0.1.0-20_candidate-final-ui.deb",
+    "reference_sha256": "0de7317eb686780894e7215fa32b895704c78d6596e4680773eb00d2aed9daee",
+    "runtime_payload_identical": true,
+    "maintainer_scripts_and_control_identical": true,
+    "documentation_changes": [
+      "usr/share/doc/omen-linux/ACCESSIBILITY.md",
+      "usr/share/doc/omen-linux/APPLICATION_AUDIT_IMPLEMENTATION.md",
+      "usr/share/doc/omen-linux/LAUNCHER_EXPANSION.md",
+      "usr/share/doc/omen-linux/TEST_REPORT.md"
+    ]
+  },
+  "dependency_notices": 158,
+  "systemd_validation": {
+    "exit_code": 0,
+    "method": "unmodified unit in extracted package root; no unit started"
+  }
+}

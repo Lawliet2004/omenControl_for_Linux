@@ -1,0 +1,68 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "system_power_bus_used": false,
+  "real_shortcuts_or_notifications_enabled": false,
+  "profile": "release",
+  "requested_gtk_backend": "wayland",
+  "gui_sha256": "787c518933909bf40aacb9d738e46971f9d9fd471ec755acdc54b53774f47de3",
+  "cli_sha256": "42f2241c4862c51cd6e28daf1ec659b320fca6ae05fde7bc6fe7978af203961b",
+  "checks_passed": [
+    "native setup saves automatic mode in user settings without starting a hold",
+    "native Launch runs the custom wrapper and renders active ownership with the effective profile",
+    "changing the preference affects future launches and preserves the active session until explicitly released",
+    "native release restores provider selection without stopping the game, and actual exit moves it to history",
+    "SIGKILL of the GUI preserves the running session and the daemon releases its hold after real exit",
+    "wide/light and narrow/dark app-only GTK captures cover active sessions and inline setup"
+  ],
+  "captures": [
+    {
+      "path": "target/a11y-final/managed-wayland/captures/games-active-wide-light.png",
+      "sha256": "aa6b9eb68f387d662d1a16c57a95a78e8b7b04b419a1025b22b8405d6e0ee190",
+      "requested_size": [
+        1240,
+        1100
+      ],
+      "actual_size": [
+        1240,
+        1080
+      ],
+      "theme": "prefer-light",
+      "fixture_only": true,
+      "original_capture_path": "docs/screenshots/managed-games/games-active-wide-light.png"
+    },
+    {
+      "path": "target/a11y-final/managed-wayland/captures/games-setup-narrow-dark.png",
+      "sha256": "8f314f0e063644e60c4195e381d2152d48c685f8c69142cb3706ba2c143e13cd",
+      "requested_size": [
+        600,
+        1100
+      ],
+      "actual_size": [
+        600,
+        1080
+      ],
+      "theme": "prefer-dark",
+      "fixture_only": true,
+      "original_capture_path": "docs/screenshots/managed-games/games-setup-narrow-dark.png"
+    }
+  ],
+  "setup_accessible_description": "",
+  "setup_accessible_relations": [
+    {
+      "type": 2,
+      "targets": [
+        "Profile setup"
+      ]
+    },
+    {
+      "type": 18,
+      "targets": [
+        "GUI session fixture\ncustom/gui"
+      ]
+    }
+  ],
+  "cleanup_complete": true,
+  "captures_relocated_with_verified_bytes": true
+}

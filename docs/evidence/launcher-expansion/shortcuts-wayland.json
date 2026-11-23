@@ -1,0 +1,90 @@
+{
+  "result": "passed",
+  "profile": "release",
+  "host_shortcuts_changed": false,
+  "hardware_writes": false,
+  "requested_gtk_backend": "wayland",
+  "method": "AT-SPI actions on real GTK and DBusMenu actions; private portal protocol and tray fixtures",
+  "gui_sha256": "516b722be9cd8c57b13f401e714bcb0a2affb2a120e771ff9f14ccce00bd2fc3",
+  "checks_passed": [
+    "startup only probes support; no shortcut session or preference write before opt-in",
+    "a second ordinary launch activates the existing window without building another UI or shortcut controller",
+    "native enable registers app identity, parents the portal dialog and saves only after approval; no suggested key",
+    "only the current session and requested Show action reveal the GTK window",
+    "tray opt-in opens accessible compact window with fixture source, measured CPU data and saved preference",
+    "approved portal action toggles overlay while main window remains hidden",
+    "normal second activation reuses main window even with overlay present",
+    "main window and overlay independently mark stalled snapshots stale and recover after service resumes",
+    "native close action saves overlay opt-out without quitting main window",
+    "corrupt preferences are preserved and prevent enabling overlay",
+    "overlay stays closable after preference persistence fails",
+    "version 2 Configure opens asynchronously and preserves a change signal arriving before its reply",
+    "native disable releases the session and saves startup opt-out",
+    "cancel response leaves the shortcut disabled and preferences unchanged",
+    "deny response leaves the shortcut disabled and preferences unchanged",
+    "empty response leaves the shortcut disabled and preferences unchanged",
+    "bad_handle response leaves the shortcut disabled and preferences unchanged",
+    "bad_session response leaves the shortcut disabled and preferences unchanged",
+    "registration_error response leaves the shortcut disabled and preferences unchanged",
+    "cancel during hold_create closes pending work without saving or retaining a session",
+    "cancel during hold_bind closes pending work without saving or retaining a session",
+    "portal loss during approval fails promptly and releases pending sessions",
+    "corrupt preferences fail before creating a portal session and are not overwritten",
+    "failed preference persistence releases the approved session and retains the original file",
+    "version 1 portal binds normally and hides unsupported Configure action",
+    "backend session closure disables activation and retains the requested startup preference",
+    "portal owner loss releases the old session; re-enable registers a fresh connection after recovery",
+    "quitting releases the active portal session without clearing the startup preference",
+    "overlay startup opt-in restores the compact window and closing persists opt-out",
+    "saved opt-in restores a fresh approved session after application restart",
+    "slow portal startup restores the shortcut while minimized and activation reveals the window",
+    "whole-bus loss keeps GTK alive and permits saving startup opt-out while disconnected"
+  ],
+  "portal_state": {
+    "scenario": "slow_registration",
+    "version": 2,
+    "creates": 15,
+    "binds": 12,
+    "configs": 1,
+    "closes": 1,
+    "request_closes": 1,
+    "sessions": {
+      "/org/freedesktop/portal/desktop/session/1_208/omen_4671_2": {
+        "owner": ":1.208"
+      }
+    },
+    "parents": [
+      "wayland:9b3f1203-2bf4-4cf4-894c-c7c84e8de06a",
+      "wayland:b92ae5bc-325e-46e5-ad61-11f9252ba6ca",
+      "wayland:9d0c736c-34ba-424d-b15f-e86a3c447d65",
+      "wayland:25dca562-a141-46a8-9793-f620f30fe396",
+      "wayland:8de5a561-f101-41ce-9adc-4b5e17d42fb4",
+      "wayland:c5adfa0d-f19d-4bbc-a9d9-53155873e7a5",
+      "wayland:ade8d2b0-78bb-4b85-9fb4-f27bcbe099a3",
+      "wayland:02796896-376c-439e-bb57-a50385a92aac",
+      "wayland:0a9e5a8d-8ff3-4d24-aa1d-17a969d22b41",
+      "wayland:89f1234b-2bae-4132-a732-b9ad03c2554e",
+      "wayland:e5ba5970-5d33-440d-b0d7-fc4064fc7849",
+      ""
+    ],
+    "preferred_triggers": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "observed_parent_backends": [
+    "wayland"
+  ],
+  "gtk_display_type": "GdkWaylandDisplay",
+  "cleanup_complete": true
+}

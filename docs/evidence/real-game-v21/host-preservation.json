@@ -1,0 +1,71 @@
+{
+  "recorded_utc": "2026-10-28T06:48:51.614643+00:00",
+  "protected_processes": [
+    {
+      "pid": 3278700,
+      "cmdline": [
+        "/home/papan/Desktop/Projects/omen/target/release/omen-gui",
+        "--page",
+        "fan"
+      ],
+      "start": "Tue Oct 27 10:48:46 2026"
+    },
+    {
+      "pid": 2124598,
+      "cmdline": [
+        "./target/release/omen-daemon",
+        "--mock"
+      ],
+      "start": "Sun Oct 25 22:59:37 2026"
+    },
+    {
+      "pid": 2563,
+      "cmdline": [
+        "/usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1"
+      ],
+      "start": "Fri Oct 23 19:46:51 2026"
+    }
+  ],
+  "original_container": "86ebefddca73f91adea91f764e878e1b3ae94ab7f45069fb9cab17281c19e911 3101448 2026-10-26T19:37:22.265072939Z true false",
+  "unrelated_old_stopped_vm_preserved": true,
+  "release_binaries_unchanged": {
+    "omen-cli": "f0e5c0b08cfec6f32ecb94e39ca65a990f46af4f4ee7bd0dd74c8c562484cf30",
+    "omen-daemon": "219780aa03ea5bda0036b402f0231a13cbded8329b8cf1b2dd05e3bc6f4a12cb",
+    "omen-gui": "212c0cb61a18bbcd07652d846e4e3e38fcf50d4afcda1ff0121b53797bb3b7ee"
+  },
+  "own_vm_cleanup": {
+    "resolution": {
+      "result": "resolved",
+      "vm_exit_code": 0,
+      "temporary_files_removed": true
+    },
+    "game-vm": {
+      "result": "failed",
+      "vm_exit_code": 0,
+      "temporary_files_removed": true
+    },
+    "game-vm-retry": {
+      "result": "failed",
+      "vm_exit_code": 0,
+      "temporary_files_removed": true
+    },
+    "game-vm-ready": {
+      "result": "failed",
+      "vm_exit_code": 0,
+      "temporary_files_removed": true
+    },
+    "game-vm-final": {
+      "result": "failed",
+      "vm_exit_code": 0,
+      "temporary_files_removed": true
+    },
+    "game-vm-confirmation": {
+      "result": "passed",
+      "vm_exit_code": 0,
+      "temporary_files_removed": true
+    }
+  },
+  "no_qemu_running": true,
+  "host_package_or_service_installation": false,
+  "physical_writes": false
+}

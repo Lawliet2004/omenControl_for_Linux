@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/com/omenlinux/Gui">
+    <file>icons/scalable/devices/computer-symbolic.svg</file>
+    <file>icons/scalable/actions/view-grid-symbolic.svg</file>
+    <file>icons/scalable/categories/applications-system-symbolic.svg</file>
+    <file>icons/scalable/actions/view-refresh-symbolic.svg</file>
+    <file>icons/scalable/status/weather-clear-night-symbolic.svg</file>
+    <file>icons/scalable/devices/video-display-symbolic.svg</file>
+    <file>icons/scalable/devices/battery-symbolic.svg</file>
+    <file>icons/scalable/categories/applications-games-symbolic.svg</file>
+    <file>icons/scalable/categories/preferences-system-symbolic.svg</file>
+    <file>icons/scalable/actions/sidebar-show-symbolic.svg</file>
+    <file>icons/scalable/actions/sidebar-show-symbolic-rtl.svg</file>
+    <file>icons/scalable/actions/window-minimize-symbolic.svg</file>
+    <file>icons/scalable/actions/open-menu-symbolic.svg</file>
+    <file>icons/scalable/actions/window-close-symbolic.svg</file>
+    <file>icons/scalable/status/speedometer-symbolic.svg</file>
+  </gresource>
+</gresources>

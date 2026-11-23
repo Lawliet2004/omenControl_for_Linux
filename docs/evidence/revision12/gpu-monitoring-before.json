@@ -1,0 +1,84 @@
+{
+  "result": "failed",
+  "hardware_writes": false,
+  "host_package_installed": false,
+  "method": "transient systemd user service with real GPU/sysfs and PrivateDevices; production read-only IPC and CLI",
+  "uid": 1000,
+  "binary_sha256": {
+    "omen-cli": "462b43449c9ca0dea798dd0dc966bedd55bcd5d4f45513a9b43ba23fd91f1ae3",
+    "omen-daemon": "346100745deedb7d857a1bbf08658ca54eae004df1ee836ddf8041157a949707"
+  },
+  "gpus": [
+    {
+      "pci": "0000:01:00.0",
+      "runtime_status": "active",
+      "driver": "nvidia"
+    }
+  ],
+  "independent_reference": {
+    "args": [
+      "/usr/bin/nvidia-smi",
+      "--id=0000:01:00.0",
+      "--query-gpu=name,temperature.gpu,utilization.gpu,power.draw,clocks.sm,memory.used,memory.total",
+      "--format=csv,noheader,nounits"
+    ],
+    "exit_code": 0,
+    "stdout": "NVIDIA GeForce RTX 2050, 48, 0, 2.68, 210, 1940, 4096\n",
+    "stderr": ""
+  },
+  "properties": [
+    "PrivateDevices=yes",
+    "ProtectSystem=strict",
+    "ProtectHome=yes",
+    "BindReadOnlyPaths=/sys",
+    "ProtectKernelTunables=yes",
+    "ReadWritePaths=/tmp/omen-gpu-probe-kn0sxae3",
+    "PrivateTmp=no",
+    "RestrictAddressFamilies=AF_UNIX",
+    "ProtectKernelModules=yes",
+    "ProtectKernelLogs=yes",
+    "ProtectControlGroups=yes",
+    "NoNewPrivileges=yes",
+    "LockPersonality=yes",
+    "RestrictSUIDSGID=yes",
+    "UMask=0077"
+  ],
+  "namespace": {
+    "uid": 1000,
+    "nvidiactl_visible": false,
+    "sysfs_readonly": true,
+    "mount_namespace": "mnt:[4026533100]"
+  },
+  "daemon_info": {
+    "daemon_version": "0.1.0",
+    "machine": {
+      "bios_vendor": "AMI",
+      "bios_version": "F.10",
+      "board_name": "8C30",
+      "board_vendor": "HP",
+      "class": "victus",
+      "kernel_version": "7.0.0-38-generic",
+      "product_family": "103C_5335M7 HP Victus",
+      "product_name": "Victus by HP 15.6 inch Gaming Laptop PC-fb1002AX",
+      "sys_vendor": "HP"
+    },
+    "mock": false,
+    "protocol_version": 1,
+    "started_unix": 1792974684
+  },
+  "daemon_nvidia_capability": {
+    "detail": "nvidia-smi",
+    "status": "available"
+  },
+  "daemon_nvidia_samples": [],
+  "client_nvidia_capability": {
+    "detail": "nvidia-smi",
+    "status": "available"
+  },
+  "client_nvidia_samples": [],
+  "client_telemetry": null,
+  "error": "connected CLI lost NVIDIA measurements behind the device sandbox",
+  "service_stopped": true,
+  "recorded_utc": "2026-10-26T00:31:25.883206+00:00",
+  "temporary_files_removed": true
+}

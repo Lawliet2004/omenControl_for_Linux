@@ -1,0 +1,23 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+  remove)
+    if [ -d /run/systemd/system ]; then
+      # Stop the daemon (its shutdown path restores firmware fan control).
+      deb-systemd-invoke stop omen-linux.service >/dev/null || true
+      # Only explicitly started template instances can be active. Stop their
+      # writer before removing its executable; retain it on failed recovery.
+      systemctl --system stop 'omen-fan-recovery@*.service' >/dev/null
+      if [ -e /run/omen-fan-recovery/owned.json ] || [ -L /run/omen-fan-recovery/owned.json ]; then
+        printf '%s\n' 'omen-linux: pending fan recovery intent; refusing removal until Automatic is confirmed.' >&2
+        exit 1
+      fi
+      systemctl --system stop omen-nvidia-reader.socket >/dev/null
+    fi
+    ;;
+  failed-upgrade)
+    ;;
+esac
+
+exit 0

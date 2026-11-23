@@ -1,0 +1,25 @@
+{
+  "result": "passed",
+  "profile": "debug",
+  "hardware_control_writes": 0,
+  "binary_sha256": {
+    "omen-daemon": "9cd637b0c1d27763fff9bcdb676ed5e15e70ba972a366e213595184c6b344d83",
+    "omen-cli": "a35284a75be628d055d8e039662ecc6b56a8f74bcccd7657ff47e26e40d92f74"
+  },
+  "checks_passed": [
+    "mode-only Victus exposes Auto through production IPC and CLI without granting control",
+    "fixture mode-only changes are observed without inventing PWM targets",
+    "invalid/missing policy and missing manual duty remain unknown while RPM survives",
+    "mode-only fixture rejects a control request without touching its policy file",
+    "device disappearance fails explicitly and recovers without a host-data fallback",
+    "malformed/out-of-range manual readings are absent and valid duty recovers",
+    "OmenCore process presence blocks fixture writes before mutation and removal releases the gate"
+  ],
+  "live_operations": [
+    "get_info",
+    "get_fan_state",
+    "get_capabilities"
+  ],
+  "cleanup_complete": true,
+  "recorded_utc": "2026-10-26T13:39:14.675782+00:00"
+}

@@ -1,0 +1,12 @@
+{
+  "fixture_only": true,
+  "live_hardware_writes": false,
+  "checks_passed": [
+    "missing service config never loads the desktop user's config",
+    "connected CLI user import changes only the user file and creates a backup",
+    "reviewed service import uses typed IPC, writes the service file and preserves desktop data",
+    "scope mismatch and desktop fields in service backups are rejected without file changes",
+    "nullable AC policy remains unchanged after daemon restart",
+    "oversized input and corrupt local config fail without replacing data"
+  ]
+}

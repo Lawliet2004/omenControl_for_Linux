@@ -1,0 +1,27 @@
+[package]
+name = "omen-gui"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "GTK4/libadwaita desktop application"
+
+[[bin]]
+name = "omen-gui"
+path = "src/main.rs"
+
+[dependencies]
+omen-core = { path = "../crates/core" }
+omen-ipc = { path = "../crates/ipc" }
+omen-client = { path = "../crates/client" }
+omen-hardware = { path = "../crates/hardware" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+log = { workspace = true }
+libc = "0.2"
+gtk = { version = "0.9", package = "gtk4", features = ["v4_12"] }
+libadwaita = { version = "0.7", features = ["v1_4"] }
+ksni = { version = "0.3.6", default-features = false, features = ["blocking", "async-io"] }
+futures-channel = "0.3"
+gdk-wayland = { version = "0.9", package = "gdk4-wayland", features = ["v4_12"] }
+gdk-x11 = { version = "0.9", package = "gdk4-x11" }
+pangocairo = "0.20"

@@ -1,0 +1,9 @@
+{
+  "recorded_utc": "2026-10-26T00:33:20.685779+00:00",
+  "hardware_writes": false,
+  "gui_capture": {
+    "path": "docs/screenshots/dashboard-sandboxed-service.png",
+    "sha256": "35294ac32c0c4e2ec8a0ac4fef1f33b47dde05c6d465561a1ac75e087149882f",
+    "gui_sha256": "6e058c61017d28e731d126280b3c06074675fe001862c5b6e251a9633c44db55"
+  }
+}

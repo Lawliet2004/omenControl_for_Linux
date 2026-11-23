@@ -1,0 +1,25 @@
+{
+  "result": "failed",
+  "profile": "debug",
+  "fixture_only": true,
+  "live_hardware_writes": false,
+  "interaction": "AT-SPI actions, editable text and native file-list selection; no injected application test actions",
+  "picker": "real GTK fallback on Wayland; private bus has no desktop portal",
+  "checks_passed": [
+    "native export picker cancellation leaves user and service settings unchanged",
+    "native user export writes private, scoped JSON without changing either configuration",
+    "native import picker cancellation leaves both configurations unchanged",
+    "native user import saves the selected preferences only to the desktop file",
+    "native service export reads production IPC and writes a private service-only backup",
+    "scope-mismatched native user import displays an error without configuration changes",
+    "malformed native import preserves existing configuration and reports failure",
+    "oversized native import reports its size limit and preserves configuration",
+    "service preview shows selected automation and cancellation never sends a mutation",
+    "explicit native Apply persists service policy through IPC while leaving desktop settings unchanged"
+  ],
+  "binary_sha256": "0975008af36e6cc25b01e354179e27bf2b74d6cccd6a68e80ce9e7e9dee78443",
+  "error": "profile buttons did not reflect automation ownership",
+  "operation_labels": [],
+  "cleanup_complete": true,
+  "recorded_utc": "2026-10-25T23:59:56.280412+00:00"
+}

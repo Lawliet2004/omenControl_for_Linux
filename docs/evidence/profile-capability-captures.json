@@ -1,0 +1,19 @@
+{
+  "fixture_only": true,
+  "hardware_writes": false,
+  "method": "application-only GTK widget snapshots; no desktop capture",
+  "gui_sha256": "acda0c3e76640bb46f3ecfab68dbea545f2c3211224cf9b79af88de58e7bfde1",
+  "screenshots": [
+    {
+      "path": "docs/screenshots/performance-fixture.png",
+      "battery_automation": false,
+      "sha256": "51fffd0aa77d148a9a7dd3284dc50fa0784c22d78deea246a4ae1c529acd9e8e"
+    },
+    {
+      "path": "docs/screenshots/performance-automation-fixture.png",
+      "battery_automation": true,
+      "sha256": "dbd73eba6487b2c7ef6eea45443828687073d4c4b42572955ae8dbfb0bc9e22b"
+    }
+  ],
+  "cleanup_complete": true
+}

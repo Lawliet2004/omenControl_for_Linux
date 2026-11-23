@@ -1,0 +1,52 @@
+{
+  "package": "target/debian/omen-linux_0.1.0-23_amd64.deb",
+  "bytes": 3664646,
+  "sha256": "4fafc9356f712be2bbf4d642747daade0e689adbf23fa334f61d41cfb0945abe",
+  "version": "0.1.0-23",
+  "installed_by_verifier": false,
+  "checks": {
+    "root_ownership_and_directory_modes": true,
+    "payload_md5sums": true,
+    "desktop_file_validate": true,
+    "polkit_xml_matches_source": true,
+    "bundled_icon_sources_and_notices": 15,
+    "gui_linkage_current_environment": true,
+    "extracted_cli_readonly_discovery": true
+  },
+  "binaries": {
+    "omen-cli": {
+      "sha256": "f424b234322a4412b9068b0745e7f9cc774f8004739717a122ce97787e51e814",
+      "matches_release": true
+    },
+    "omen-daemon": {
+      "sha256": "14e377ef88cec82a2a21038fa987c0c10e7d1a68150d123aae72ea9a33cfe6af",
+      "matches_release": true
+    },
+    "omen-gui": {
+      "sha256": "ea30b9e94eabd1396e424f6e5c87f3ac48f5543d779bd85e4cdde8ca7eda2fb8",
+      "matches_release": true
+    }
+  },
+  "vm_equivalence": {
+    "reference_package": "target/source-switch-v23/candidate/omen-linux_0.1.0-23_amd64.deb",
+    "reference_sha256": "4cc66fd9e7a6a97919a5dbe9bc0bc33f1b05446927546ce52c4fd73b592647b2",
+    "runtime_payload_identical": true,
+    "maintainer_scripts_and_control_identical": true,
+    "documentation_changes": [
+      "usr/share/doc/omen-linux/ACCESSIBILITY.md",
+      "usr/share/doc/omen-linux/APPLICATION_AUDIT_IMPLEMENTATION.md",
+      "usr/share/doc/omen-linux/CONTINUATION_CHECKLIST.md",
+      "usr/share/doc/omen-linux/INSTALLATION.md",
+      "usr/share/doc/omen-linux/PACKAGE_VALIDATION.md",
+      "usr/share/doc/omen-linux/README.md",
+      "usr/share/doc/omen-linux/SOURCE_SWITCHING_2026-10-28.md",
+      "usr/share/doc/omen-linux/TEST_REPORT.md",
+      "usr/share/doc/omen-linux/VM_VALIDATION.md"
+    ]
+  },
+  "dependency_notices": 158,
+  "systemd_validation": {
+    "exit_code": 0,
+    "method": "unmodified unit in extracted package root; no unit started"
+  }
+}

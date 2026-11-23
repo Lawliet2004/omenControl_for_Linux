@@ -1,0 +1,14 @@
+{
+  "result": "failed",
+  "profile": "debug",
+  "fixture_only": true,
+  "hardware_control_writes": 0,
+  "checks_passed": [
+    "independent writer keeps a healthy fixed-duty lease alive beyond its four-second deadline",
+    "guardian restores Automatic while its daemon remains SIGSTOPped",
+    "resumed daemon cannot renew the revoked override; explicit rearming creates a fresh writer"
+  ],
+  "daemon_sha256": "69bc0d854147816a4f5ccb4782c2c172ada481725342d86993296b5910131d41",
+  "error": "[Errno 2] No such file or directory: '/home/papan/Desktop/Projects/omen/target/omen-guardian-ufzfe_77/stopped-parent/tmp/.tmpV2GZY6/sys/class/hwmon/hwmon0/pwm1_enable'",
+  "recorded_utc": "2026-10-26T09:00:39.399327+00:00"
+}

@@ -1,0 +1,157 @@
+{
+  "_meta": {
+    "provenance": {
+      "untrusted_content": true,
+      "source": "analysis_target"
+    }
+  },
+  "content": [
+    {
+      "type": "text",
+      "text": "{\"evidence_id\":\"ev_109a1ca2d124d7ba1d4c1c9f4777acd88c676bdc6cda77eee96ecbbbdca884f3\",\"subject\":{\"name\":\"sp166157.complete.exe\",\"digest\":{\"sha256\":\"25e38bb3d94bcf71ef7fec7679ef5100382cb5ce7c14d3522279103d27b4564d\"},\"local_path\":\"/tmp/omen-windows-reference/sp166157.complete.exe\",\"format\":\"pe\",\"architecture\":null},\"provider\":{\"id\":\"rea-analysis-view\",\"name\":\"REA analysis view projection\",\"version\":\"1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis-view\",\"operation\":\"inspect_analysis_view\",\"parameters\":{\"parent_evidence_id\":\"ev_0adf5a64abcd02c5171daf40ec9ab4d0e73a216df9405c4b56de4961100788be\",\"view\":{\"kind\":\"summary\"}},\"raw_result\":null,\"normalized_result\":{\"kind\":\"summary\",\"view\":{\"kind\":\"summary\"},\"parent_evidence_id\":\"ev_0adf5a64abcd02c5171daf40ec9ab4d0e73a216df9405c4b56de4961100788be\",\"parent_operation\":\"inspect_artifact\",\"parent_digest\":\"0adf5a64abcd02c5171daf40ec9ab4d0e73a216df9405c4b56de4961100788be\",\"view_digest\":\"837a0462fecd2bce4c72162ab342f5ff34262315e9dc31e7427d6af9fdce633c\",\"artifact\":{\"path\":\"/tmp/omen-windows-reference/sp166157.complete.exe\",\"sha256\":\"25e38bb3d94bcf71ef7fec7679ef5100382cb5ce7c14d3522279103d27b4564d\"},\"coverage\":{\"status\":\"complete-within-view\",\"examined\":2,\"total\":2,\"next_offset\":null,\"exhausted\":true},\"limitations\":[\"Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.\",\"Inventory covers root bytes only; child container entries were not examined.\"],\"unknowns\":[\"Inventory does not establish application runtime behavior or complete format-specific analysis.\"],\"summary\":{\"source_coverage\":{\"scope\":\"root\",\"status\":\"complete\"},\"manifest\":{\"manifest_id\":\"agm_39230e3e82485ce22b7e5dcca4f0bb729031913c857e66bc84413ade7cde6807\",\"root_artifact_id\":\"art_4037d1d109e62cbf118360af9a51f648592217690d50e038d0ab2d29e042f8db\",\"root_sha256\":\"25e38bb3d94bcf71ef7fec7679ef5100382cb5ce7c14d3522279103d27b4564d\",\"root_format\":\"pe\",\"graph_sha256\":\"11a21db4cb3ccb82957218f366a2d05e0f7570a49244f8a7fd5fc764f30a6f4f\",\"node_count\":1,\"occurrence_count\":1,\"edge_count\":0},\"available_counts\":{\"nodes\":1,\"occurrences\":1,\"edges\":0,\"integrity_contradictions\":0},\"observed_entry_kind_counts\":{\"file\":1,\"directory\":0,\"symlink\":0,\"slice\":0},\"source_complete\":true,\"inventory_evidence_ids\":[\"ev_e622884787fefb242f53a41ad35bcb66309817ff2def8d4ccffc70a3adb623cf\"],\"inspection\":{\"coverage\":{\"status\":\"complete-within-substeps\",\"substeps_completed\":1,\"observations_retained\":1,\"observations_omitted\":0,\"hypotheses_retained\":1,\"hypotheses_omitted\":0,\"unexplored_branches_retained\":2,\"unexplored_branches_omitted\":0,\"next_probes_retained\":2,\"next_probes_omitted\":0},\"unexplored_branches\":[{\"branch_id\":\"aib_418a52961db04a13b1905e85c22b1e2ffc1eb792bc8f87d90e96af71af961147\",\"reason\":\"format-specific-analysis-required\",\"detail\":\"inspect_managed_artifact was not run by provider-neutral artifact inspection.\",\"next_probe\":{\"operation\":\"inspect_managed_artifact\",\"rationale\":\"Check execution-free CLI metadata before choosing a deep native provider.\",\"authority\":\"managed-static-analysis\"},\"evidence_id\":\"ev_e622884787fefb242f53a41ad35bcb66309817ff2def8d4ccffc70a3adb623cf\"},{\"branch_id\":\"aib_cb5a402b7088fd6f06da14d00a36dacb327f68938512b85d6533cc19a4221ad0\",\"reason\":\"format-specific-analysis-required\",\"detail\":\"open_binary was not run by provider-neutral artifact inspection.\",\"next_probe\":{\"operation\":\"open_binary\",\"rationale\":\"Open as native code only when managed inspection reports a native or mixed boundary.\",\"authority\":\"native-analysis-provider\"},\"evidence_id\":\"ev_e622884787fefb242f53a41ad35bcb66309817ff2def8d4ccffc70a3adb623cf\"}]},\"limitation_count\":2}},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.\",\"Inventory covers root bytes only; child container entries were not examined.\"],\"relationship_coverage\":null,\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/tmp/omen-windows-reference/sp166157.complete.exe\"}],\"evidence_links\":[\"ev_0adf5a64abcd02c5171daf40ec9ab4d0e73a216df9405c4b56de4961100788be\"]}"
+    }
+  ],
+  "structuredContent": {
+    "evidence_id": "ev_109a1ca2d124d7ba1d4c1c9f4777acd88c676bdc6cda77eee96ecbbbdca884f3",
+    "subject": {
+      "name": "sp166157.complete.exe",
+      "digest": {
+        "sha256": "25e38bb3d94bcf71ef7fec7679ef5100382cb5ce7c14d3522279103d27b4564d"
+      },
+      "local_path": "/tmp/omen-windows-reference/sp166157.complete.exe",
+      "format": "pe",
+      "architecture": null
+    },
+    "provider": {
+      "id": "rea-analysis-view",
+      "name": "REA analysis view projection",
+      "version": "1"
+    },
+    "analysis_profile": null,
+    "predicate_type": "rea.analysis-view",
+    "operation": "inspect_analysis_view",
+    "parameters": {
+      "parent_evidence_id": "ev_0adf5a64abcd02c5171daf40ec9ab4d0e73a216df9405c4b56de4961100788be",
+      "view": {
+        "kind": "summary"
+      }
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "kind": "summary",
+      "view": {
+        "kind": "summary"
+      },
+      "parent_evidence_id": "ev_0adf5a64abcd02c5171daf40ec9ab4d0e73a216df9405c4b56de4961100788be",
+      "parent_operation": "inspect_artifact",
+      "parent_digest": "0adf5a64abcd02c5171daf40ec9ab4d0e73a216df9405c4b56de4961100788be",
+      "view_digest": "837a0462fecd2bce4c72162ab342f5ff34262315e9dc31e7427d6af9fdce633c",
+      "artifact": {
+        "path": "/tmp/omen-windows-reference/sp166157.complete.exe",
+        "sha256": "25e38bb3d94bcf71ef7fec7679ef5100382cb5ce7c14d3522279103d27b4564d"
+      },
+      "coverage": {
+        "status": "complete-within-view",
+        "examined": 2,
+        "total": 2,
+        "next_offset": null,
+        "exhausted": true
+      },
+      "limitations": [
+        "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.",
+        "Inventory covers root bytes only; child container entries were not examined."
+      ],
+      "unknowns": [
+        "Inventory does not establish application runtime behavior or complete format-specific analysis."
+      ],
+      "summary": {
+        "source_coverage": {
+          "scope": "root",
+          "status": "complete"
+        },
+        "manifest": {
+          "manifest_id": "agm_39230e3e82485ce22b7e5dcca4f0bb729031913c857e66bc84413ade7cde6807",
+          "root_artifact_id": "art_4037d1d109e62cbf118360af9a51f648592217690d50e038d0ab2d29e042f8db",
+          "root_sha256": "25e38bb3d94bcf71ef7fec7679ef5100382cb5ce7c14d3522279103d27b4564d",
+          "root_format": "pe",
+          "graph_sha256": "11a21db4cb3ccb82957218f366a2d05e0f7570a49244f8a7fd5fc764f30a6f4f",
+          "node_count": 1,
+          "occurrence_count": 1,
+          "edge_count": 0
+        },
+        "available_counts": {
+          "nodes": 1,
+          "occurrences": 1,
+          "edges": 0,
+          "integrity_contradictions": 0
+        },
+        "observed_entry_kind_counts": {
+          "file": 1,
+          "directory": 0,
+          "symlink": 0,
+          "slice": 0
+        },
+        "source_complete": true,
+        "inventory_evidence_ids": [
+          "ev_e622884787fefb242f53a41ad35bcb66309817ff2def8d4ccffc70a3adb623cf"
+        ],
+        "inspection": {
+          "coverage": {
+            "status": "complete-within-substeps",
+            "substeps_completed": 1,
+            "observations_retained": 1,
+            "observations_omitted": 0,
+            "hypotheses_retained": 1,
+            "hypotheses_omitted": 0,
+            "unexplored_branches_retained": 2,
+            "unexplored_branches_omitted": 0,
+            "next_probes_retained": 2,
+            "next_probes_omitted": 0
+          },
+          "unexplored_branches": [
+            {
+              "branch_id": "aib_418a52961db04a13b1905e85c22b1e2ffc1eb792bc8f87d90e96af71af961147",
+              "reason": "format-specific-analysis-required",
+              "detail": "inspect_managed_artifact was not run by provider-neutral artifact inspection.",
+              "next_probe": {
+                "operation": "inspect_managed_artifact",
+                "rationale": "Check execution-free CLI metadata before choosing a deep native provider.",
+                "authority": "managed-static-analysis"
+              },
+              "evidence_id": "ev_e622884787fefb242f53a41ad35bcb66309817ff2def8d4ccffc70a3adb623cf"
+            },
+            {
+              "branch_id": "aib_cb5a402b7088fd6f06da14d00a36dacb327f68938512b85d6533cc19a4221ad0",
+              "reason": "format-specific-analysis-required",
+              "detail": "open_binary was not run by provider-neutral artifact inspection.",
+              "next_probe": {
+                "operation": "open_binary",
+                "rationale": "Open as native code only when managed inspection reports a native or mixed boundary.",
+                "authority": "native-analysis-provider"
+              },
+              "evidence_id": "ev_e622884787fefb242f53a41ad35bcb66309817ff2def8d4ccffc70a3adb623cf"
+            }
+          ]
+        },
+        "limitation_count": 2
+      }
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Inspection derives bounded static hypotheses and next probes; it does not execute the artifact or claim format-specific semantics.",
+      "Inventory covers root bytes only; child container entries were not examined."
+    ],
+    "relationship_coverage": null,
+    "locations": [
+      {
+        "kind": "artifact-path",
+        "path": "/tmp/omen-windows-reference/sp166157.complete.exe"
+      }
+    ],
+    "evidence_links": [
+      "ev_0adf5a64abcd02c5171daf40ec9ab4d0e73a216df9405c4b56de4961100788be"
+    ]
+  }
+}

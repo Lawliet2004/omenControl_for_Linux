@@ -1,0 +1,347 @@
+[
+  {
+    "path": "AMD/AMD RyzenMaster SDK_2.14.2.3330.exe",
+    "bytes": 18653000,
+    "sha256": "72a9c2485b81dbef8660039b10ae41c34c8d26f329e9b98dd14bb440b3b95a0f"
+  },
+  {
+    "path": "AMD/setup.cmd",
+    "bytes": 5603,
+    "sha256": "251450d899c274a242af7452594ec9bc9fff76d3d54da0e2f2467c6a91e68a4e"
+  },
+  {
+    "path": "CapDriver/OMENCap/1.0.836.0.zip",
+    "bytes": 2496737,
+    "sha256": "6f94d1aa49fbf304ebbdc7ac335febfdba4a0f7a9e87ee31388c396bd444994a"
+  },
+  {
+    "path": "CapDriver/OMENCap/Setup.bat",
+    "bytes": 5692,
+    "sha256": "61f601defd830bed2291fbf65c38d06f77284a032be4b00b1d6c29147de924e8"
+  },
+  {
+    "path": "CapDriver/SysCap/1.82.4285.0.zip",
+    "bytes": 200563829,
+    "sha256": "bfe2fe555055e3906e81391a5df9a5efe5ed4e7bcb53e9fbd69e411a55fa2632"
+  },
+  {
+    "path": "CapDriver/SysCap/Setup.bat",
+    "bytes": 5730,
+    "sha256": "e557567988884f2fe7fbd7132feeb4a936682b21f2e15d2e6e40216b4f2c4e6b"
+  },
+  {
+    "path": "CapDriver/UTIL/CheckWUSA.cmd",
+    "bytes": 3686,
+    "sha256": "7490bbee0e64aedc482a5c04543093eac2ab3d5884bde04819a1728a46d0d3fc"
+  },
+  {
+    "path": "CapDriver/UTIL/Check_DRV.cmd",
+    "bytes": 1581,
+    "sha256": "8c9af08ee270d09365fa5d1a77e4dbb4d1b8d1d39b6e9b8e6a11246cff328386"
+  },
+  {
+    "path": "CapDriver/UTIL/Clean_DRV.cmd",
+    "bytes": 1956,
+    "sha256": "9d5072894a2ee4c0ed2909cb37b91400b9c75b1d84c23ada40d4255b69feec02"
+  },
+  {
+    "path": "CapDriver/UTIL/HPDM_x64.exe",
+    "bytes": 91128,
+    "sha256": "63a252c3586a5488373fe0d5d36baa30f32439d38e83832b54502b2d8a5ebccf"
+  },
+  {
+    "path": "CapDriver/UTIL/Scan_Dev.cmd",
+    "bytes": 184,
+    "sha256": "840241957a4d8fe49d3856263ca0a2256119159b211e2efa748a55cd66dc8ba3"
+  },
+  {
+    "path": "HPUP.exe",
+    "bytes": 264712,
+    "sha256": "27712044e3fb2157e27f6feb62621cac14ab13413c373400121740fb0162319a"
+  },
+  {
+    "path": "HyperX/UninstDrv.exe",
+    "bytes": 13504,
+    "sha256": "27b33523a9d50e1fd52a1d53204d7896719cbe99ea27c0bc81d39edf747d2f2d"
+  },
+  {
+    "path": "HyperX/setup.cmd",
+    "bytes": 1571,
+    "sha256": "f463c2edad7e0c4b1a07ba67688a96c496d72a4d8849fc77916c161dcb80c6f3"
+  },
+  {
+    "path": "Install.cmd",
+    "bytes": 16440,
+    "sha256": "ebc84316c251c66883b986658bad5f16d283bae2b723c2b1e628ae9ea6ad1bfa"
+  },
+  {
+    "path": "IntelXTU/Exclusion.lst",
+    "bytes": 34,
+    "sha256": "2fd032d6c7578f543b1a1c8a9f332dad157ccba9cf27c613c622c19f03824745"
+  },
+  {
+    "path": "IntelXTU/Setup.cmd",
+    "bytes": 8739,
+    "sha256": "0ed68aee8ce77add79f193077bfa98dff143750f041ee92fae1a5be233b425cf"
+  },
+  {
+    "path": "IntelXTU/UninstallXTU.cmd",
+    "bytes": 4278,
+    "sha256": "da4aee26507336da447c84885aa534eeca8e204bba43768410ce9dfddedd46b9"
+  },
+  {
+    "path": "IntelXTU/UninstallXTUTool.ps1",
+    "bytes": 842,
+    "sha256": "a18e4ce75d8945b3e9eeae84756c76aeed9d614a6e72d06d80a5e5257bed0735"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/HardwareAccess.dll",
+    "bytes": 277352,
+    "sha256": "846d6e3f531d944bc3d34c7a8e7c28ef1fe8e5c6419b25f6281f1ec651a6524d"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/HardwareAccessInterfaces.dll",
+    "bytes": 34664,
+    "sha256": "07433dc587ca8f36ae27d31f9b1c65e311d7b932e1631aee8a1ff50edb8c92d0"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/HardwareServiceInterfaces.dll",
+    "bytes": 90984,
+    "sha256": "c34cb9a6c73c6a5fa81a6a71c38c7739f3ebd1c24265c58846e99df70fd2f48e"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/HardwareServices.dll",
+    "bytes": 99688,
+    "sha256": "38f41b6d1ac2eaa6f5623a26b961872fa942c32af4bfd8c432fe574a5de2eb6d"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/IccSdk.dll",
+    "bytes": 799592,
+    "sha256": "ce2099007ebcc4a2e69dd44793ba19731b48945458da24478ce30e75c60c4ec3"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/IccWdtDriver/ICCWDT_Driver/ICCWDT.inf",
+    "bytes": 2340,
+    "sha256": "be8c642d76d5264bbea3c7aadd0c9c8e71da1317cf8f21b157034f5733f097e0"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/IccWdtDriver/ICCWDT_Driver/iccwdt.cat",
+    "bytes": 11544,
+    "sha256": "80ba019a2cdfa5911d90c356c778ee6fec70a751210dd7dfc2e4c4cc6680c24a"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/IccWdtDriver/ICCWDT_Driver/x64/ICCWDT.sys",
+    "bytes": 44008,
+    "sha256": "c4876b0465f1848b71e6e5334515fea100ffd1b803ffcd6c7cf56abb1128de25"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/IntelBenchmarkSDK.dll",
+    "bytes": 60264,
+    "sha256": "3bfde40022b2238d7988ce05185f6ede9c31981ca0f66b1577f2c12efccf6cb8"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/IntelOverclockingSDK.dll",
+    "bytes": 768872,
+    "sha256": "9d8cc72110bb0f77fad7f2131a79ae0c32416ae8321975ef3099e4828a8b1c63"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/Interop.IccProxy.dll",
+    "bytes": 33640,
+    "sha256": "1572749acad4d9d2d86395bb73c10ea6fabbd608970689a5198b5141d954edbb"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/IocDriver/64bit/iocbios2.sys",
+    "bytes": 46088,
+    "sha256": "248c12ee260b1d73302ba4c465f4ca79cdb13e677231042a78bdb85827a18ebf"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/IocDriver/iocbios2.cat",
+    "bytes": 11061,
+    "sha256": "b5bd276a83c734a9817d71c6df878ff4acee368668ef935e72e76b25eee894d2"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/IocDriver/iocbios2.inf",
+    "bytes": 1804,
+    "sha256": "931f3377283b8b2c6de2816c3b9c3cb90b555848c13fc727f68f2d6a70769be3"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/IocDriverExtension/XTUExtension.inf",
+    "bytes": 9358,
+    "sha256": "11d286687f97166ab097708f2e132185a7ed81830504319dba1e48826fb1d5ff"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/IocDriverExtension/xtuextension.cat",
+    "bytes": 12218,
+    "sha256": "a6f611a4420a016a53f1f84826b23f6c72f35f46d7793c42dd7a01c5677b7bcc"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/Microsoft.Practices.Unity.dll",
+    "bytes": 162464,
+    "sha256": "b88ff88fc4b931cf7836a5c65097498b8a757b8f38195f0b37fd217e58c384c1"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/PerfTuneAppMutex.dll",
+    "bytes": 41320,
+    "sha256": "588fe223ef038a046170e20bb3f6682af6f860739b3aef39196f24fd0eab555c"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/PlatformDetection.dll",
+    "bytes": 29032,
+    "sha256": "b7339ed11c919249179d0c51bf78122ef4865b5f75e77bab28c8988e2182d94b"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/ProfileHelperModel.dll",
+    "bytes": 29544,
+    "sha256": "b792e2dd8586e7c0da65156267440673214d0cbf59f2d26d1819191e8a1b4cfb"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/XtuApplication.dll",
+    "bytes": 256872,
+    "sha256": "5fad231bfa6fdda20ce857ff76c6caffb5a73f0c86dc5cd6b0ca3a813fa6bf82"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/XtuApplicationInterfaces.dll",
+    "bytes": 29544,
+    "sha256": "14d151437e49828f0bce26b1b98620c22ac8f11725785a3a10c4430ffda0a1a2"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/XtuCommon.dll",
+    "bytes": 279400,
+    "sha256": "402e9ccd9195505169a0b83df5d5ba4ca6af3169cae36dea8c7340c406140770"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/XtuCoreServer.dll",
+    "bytes": 60264,
+    "sha256": "f53c5bb660254abe008e060c0645d458f89eb14590431370232d55d81beb64e2"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/XtuInterface.dll",
+    "bytes": 33128,
+    "sha256": "f8d438fd47878680e6669f2d1277f3dbe3355c7bbe1b5aaf58e98dd070839ad6"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/XtuService.exe",
+    "bytes": 30056,
+    "sha256": "bbdbbcbf20dd502aa1bf9dabb4ae223dd1aa4c79abf84e4657eb767157462f02"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/XtuService.exe.config",
+    "bytes": 264,
+    "sha256": "2d6ca957d91a6088ce5eff889d9552e2079b23017f18a06f7e31e083a51e44d9"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/iocbios2.sys",
+    "bytes": 55896,
+    "sha256": "cd99af2797491c8937bf5977366e06fcca0bf4c46f0bb542ec46b3b9cf2f5e14"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/msvcp110.dll",
+    "bytes": 536808,
+    "sha256": "eae1af2dc77803dfd476f2cc9bd1b2d44e79a286889e913a901ca3102af11f1a"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/msvcr110.dll",
+    "bytes": 877288,
+    "sha256": "74085c5dacac4936a9409838d65bc110d34310d717094773a2d2b409c4acd26d"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/x64/XtuBenchmark.dll",
+    "bytes": 219928,
+    "sha256": "e244d765c4c39c995af6d14f409efcb69620912ab72a50326d1cda0b8b254f7b"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/xtucomponent.cat",
+    "bytes": 20648,
+    "sha256": "b5157797e397f30241bd26a0bfa812980b9de3f8080b368fcbb3865c9eaa6e31"
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/xtucomponent.inf",
+    "bytes": 6856,
+    "sha256": "aa663f16f506d61f09e613e9a79f2571336f974bfeba67043e8443e7b6d77a41"
+  },
+  {
+    "path": "IntelXTU/removeXTUReg.cmd",
+    "bytes": 2324,
+    "sha256": "d6ce06547436c67c87b5a7dac10e558c55f22bbdc209d3234af1b640ae45ef50"
+  },
+  {
+    "path": "IntelXTU/restoreXTUReg.cmd",
+    "bytes": 1790,
+    "sha256": "2e573b3a677b9153e78459fcfdcb57a2bc9a63466e3bf754c13d930462724e21"
+  },
+  {
+    "path": "OMENSDK_Ver.exe",
+    "bytes": 228368,
+    "sha256": "6dd9e66f2edbefb125e90fb4e82aaa82b4228498d6418a25da3b6e77c1293571"
+  },
+  {
+    "path": "OMEN_SDK_Check",
+    "bytes": 1393,
+    "sha256": "9e8faad9b0ff5daafbfa5a94f378d90148d9efcf4f6a070d16b00f357ca3f92e"
+  },
+  {
+    "path": "PBDConfig.xml",
+    "bytes": 379,
+    "sha256": "b7078a6e021ebaa18fe1c736186c6428ee62c1e483a2a6fc532da8132dde31d2"
+  },
+  {
+    "path": "Package.cat",
+    "bytes": 38280,
+    "sha256": "fdcb8239ee519f10e5179b9e96e84617fcc15dec8cedbb5be80be74216dda148"
+  },
+  {
+    "path": "ProgressDialog.exe",
+    "bytes": 234536,
+    "sha256": "d0f7743cf8460134b4abfbfd345d50014f407791c342e66181ef30e36a58166c"
+  },
+  {
+    "path": "Realtek/DLL/RtBWCtrl.dll",
+    "bytes": 421280,
+    "sha256": "d8f1997617e8c0cd4313709e45f489207855429bb04c1cefa278d9b1acc415de"
+  },
+  {
+    "path": "Realtek/DLL/RtFDrvIOCtrl.dll",
+    "bytes": 148320,
+    "sha256": "4432effb08186931e4ca8294e8cbe3587303579559ba90294817f82105bd981c"
+  },
+  {
+    "path": "Realtek/DLL/wlanCliDLL.dll",
+    "bytes": 2232728,
+    "sha256": "a36d2a6cd582399858ce875a89ff3007bc6a406c69764ba45a3e229a44fb0a00"
+  },
+  {
+    "path": "Realtek/Setup.cmd",
+    "bytes": 5850,
+    "sha256": "6beff40e58ae91bdb22d684bbe9473edaccc514a82065b37a2691d4a8b918a0e"
+  },
+  {
+    "path": "Realtek/bin/driver/x64/rtf64x64.cat",
+    "bytes": 12237,
+    "sha256": "4fa9b39695a6fa263e994f482f4efbde4ab383397d96635d8df1e0475de6c027"
+  },
+  {
+    "path": "Realtek/bin/driver/x64/rtf64x64.inf",
+    "bytes": 5620,
+    "sha256": "3ff86f994f975a9013958899f0ce3094e06eaed475b64e45fc42877ee2c2e1ec"
+  },
+  {
+    "path": "Realtek/bin/driver/x64/rtf64x64.sys",
+    "bytes": 72344,
+    "sha256": "dfb5842cbf748c9707b7369907c23b73218c58b593f2ed589357753eb36da40e"
+  },
+  {
+    "path": "msvcp140.dll",
+    "bytes": 687512,
+    "sha256": "587625fed3ffe50906addacc69b8354b12577191c010f2ba60d89a0768df563d"
+  },
+  {
+    "path": "vccorlib140.dll",
+    "bytes": 392088,
+    "sha256": "40e24e1c889f5b2a32c5e1defe29842c0a36f92bb2671d0bab2104e1b4e178db"
+  },
+  {
+    "path": "vcruntime140.dll",
+    "bytes": 90032,
+    "sha256": "916a7ff12b9903dcc5cac01c564e1ec1c3a93d0154b9ef8124c9d7be9fb53a50"
+  }
+]

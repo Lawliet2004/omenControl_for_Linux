@@ -1,0 +1,22 @@
+{
+  "sample": "Dashboard CPU temperature label",
+  "foreground_rgb": [
+    92,
+    92,
+    96
+  ],
+  "background_rgb": [
+    255,
+    255,
+    255
+  ],
+  "contrast_ratio": 6.656467810304748,
+  "bounds": [
+    309,
+    242,
+    459,
+    259
+  ],
+  "method": "Solid foreground/background pixels in the final rendered fixture PNG; antialiased edge pixels excluded",
+  "limitation": "One label only; not a complete contrast audit"
+}

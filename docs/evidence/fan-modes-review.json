@@ -1,0 +1,22 @@
+{
+  "disposition": "ship at this scope",
+  "reviewer": "independent Impeccable finish reviewer",
+  "material_findings": [],
+  "evidence": [
+    "gui/src/pages.rs fan_control",
+    "capability refresh and daemon gating",
+    "fan.png and fan-mode-only-fixture.png hashes against fan-captures.json",
+    "debug/release native Wayland workflows against current binaries"
+  ],
+  "scope": "native coarse mode UI and fixture behavior; no physical hardware support claim",
+  "documentation_audit": {
+    "result": "passed",
+    "identity_changes_needed": false,
+    "commands_verified": [
+      "omen-cli fan-set auto",
+      "omen-cli fan-set max"
+    ],
+    "live_disabled_scope_verified": true,
+    "optional_docs_link": "added to README"
+  }
+}

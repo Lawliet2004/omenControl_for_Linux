@@ -1,0 +1,18 @@
+Machine   : HP Victus by HP 15.6 inch Gaming Laptop PC-fb1002AX
+Family    : 103C_5335M7 HP Victus  Board: 8C30
+BIOS      : F.10 (AMI)  Kernel: 7.0.0-38-generic
+Class     : Victus
+
+Capability                 Status       Detail
+Fan monitoring             available    hp-wmi hwmon fan*_input
+Fan manual control         unavailable  hp-wmi exposes no pwm1 for board 8C30 (board is not on the hp-wmi fan-control allowlist)
+Fan curves                 unavailable  requires manual fan control
+Performance profiles       read-only    monitoring mode; profile control requires explicit daemon opt-in for this board and BIOS
+Lighting zones             unavailable  no kernel keyboard-lighting interface (model without RGB keyboard or module not installed)
+Keyboard backlight         unavailable  no keyboard backlight LED found
+Graphics MUX               unavailable  no mainline kernel MUX interface for this model (status/monitoring only)
+Charge threshold           unavailable  firmware/kernel does not expose charge_control_end_threshold
+Battery-aware              read-only    monitoring mode; profile control requires explicit daemon opt-in for this board and BIOS
+NVIDIA telemetry           available    nvidia-smi
+AMD telemetry              available    hwmon amdgpu
+note: daemon absent; direct read-only access

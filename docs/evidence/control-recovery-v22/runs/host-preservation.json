@@ -1,0 +1,54 @@
+{
+  "recorded_utc": "2026-10-28T07:44:53.863497+00:00",
+  "protected_processes": [
+    {
+      "pid": 3278700,
+      "cmdline": [
+        "/home/papan/Desktop/Projects/omen/target/release/omen-gui",
+        "--page",
+        "fan"
+      ],
+      "start": "Tue Oct 27 10:48:46 2026"
+    },
+    {
+      "pid": 2124598,
+      "cmdline": [
+        "./target/release/omen-daemon",
+        "--mock"
+      ],
+      "start": "Sun Oct 25 22:59:37 2026"
+    },
+    {
+      "pid": 2563,
+      "cmdline": [
+        "/usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1"
+      ],
+      "start": "Fri Oct 23 19:46:51 2026"
+    }
+  ],
+  "original_container": "86ebefddca73f91adea91f764e878e1b3ae94ab7f45069fb9cab17281c19e911 3101448 2026-10-26T19:37:22.265072939Z true false",
+  "unrelated_old_stopped_vm_preserved": true,
+  "no_qemu_running": true,
+  "own_vm_cleanup": {
+    "fresh-vm": {
+      "checks_passed": 39,
+      "vm_exit_code": 0,
+      "temporary_files_removed": true,
+      "package_sha256": "1957ec519ccc92a7bfd75867683e82e915bdcff53c69f776e3404c4e2480702d"
+    },
+    "fresh-vm-final": {
+      "checks_passed": 39,
+      "vm_exit_code": 0,
+      "temporary_files_removed": true,
+      "package_sha256": "f32dc1de793ed3d8db1b96fbe038618a67b16a996fa3d5dbbc0f50b22110ced2"
+    }
+  },
+  "release_binaries": {
+    "omen-cli": "f0e5c0b08cfec6f32ecb94e39ca65a990f46af4f4ee7bd0dd74c8c562484cf30",
+    "omen-daemon": "219780aa03ea5bda0036b402f0231a13cbded8329b8cf1b2dd05e3bc6f4a12cb",
+    "omen-gui": "2be2222626f576aa35618ca4573bfded789c4334ba0794cf882264a6d626dc01"
+  },
+  "cli_daemon_unchanged_from_revision21": true,
+  "host_packages_or_services_installed": false,
+  "physical_hardware_writes": false
+}

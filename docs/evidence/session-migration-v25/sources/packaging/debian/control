@@ -1,0 +1,14 @@
+Source: omen-linux
+Section: admin
+Priority: optional
+Maintainer: omen-linux project <noreply@example.invalid>
+Build-Depends: cargo, rustc, libgtk-4-dev, libadwaita-1-dev, libglib2.0-dev-bin, pkg-config, python3
+Standards-Version: 4.7.0
+
+Package: omen-linux
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libadwaita-1-0 (>= 1.4), polkitd, systemd
+Recommends: power-profiles-daemon
+Description: Native Linux system monitoring for HP OMEN and Victus
+ Development snapshot with real monitoring and capability-aware UI.
+ Device-specific live writes are disabled pending hardware validation.

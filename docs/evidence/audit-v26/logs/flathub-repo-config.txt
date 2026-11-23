@@ -1,0 +1,18 @@
+[core]
+repo_version=1
+mode=archive-z2
+collection-id=org.flathub.Stable
+min-free-space-percent=1
+enable-uncompressed-cache=false
+indexed-deltas=true
+
+[flatpak]
+redirect-url=https://dl.flathub.org/repo/
+title=Flathub
+summary-arches=x86_64;i386
+
+[remote "fdo"]
+url=https://cache.sdk.freedesktop.org/releases/
+
+[remote "gnome"]
+url=https://gbm.gnome.org/import/repo

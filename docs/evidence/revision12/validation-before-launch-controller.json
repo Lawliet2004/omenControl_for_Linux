@@ -1,0 +1,169 @@
+{
+  "generated_utc": "2026-10-25T20:04:40.637329+00:00",
+  "version": "0.1.0",
+  "goal_complete": false,
+  "rust_tests": {
+    "debug": {
+      "passed": 117,
+      "failed": 0,
+      "ignored": 0
+    },
+    "release": {
+      "passed": 117,
+      "failed": 0,
+      "ignored": 0
+    }
+  },
+  "checks": {
+    "strict_clippy": "pass",
+    "cargo_fmt": "pass",
+    "release_workspace_build": "pass",
+    "python_and_shell_syntax": "pass",
+    "desktop_file_validate": "pass",
+    "systemd_verify_extracted_payload": "pass",
+    "package_checksums_and_release_binary_match": "pass",
+    "mock_process_smoke_debug": "pass",
+    "mock_process_smoke_release": "pass",
+    "tray_gtk_dbus_debug": "pass",
+    "tray_gtk_dbus_release": "pass",
+    "dependency_notices": "142 locked crate notices included",
+    "settings_process_debug": "pass",
+    "settings_process_release": "pass",
+    "scoped_service_admin_action": "unit mapping verified; no new live admin import test"
+  },
+  "package": {
+    "package": "target/debian/omen-linux_0.1.0-1_amd64.deb",
+    "bytes": 2369340,
+    "sha256": "31f6132c40df9c06c4038f9603941c91f8e1f3fe5208ae6f927ef9374e0d83dd",
+    "version": "0.1.0-1",
+    "installed_by_verifier": false,
+    "checks": {
+      "root_ownership_and_directory_modes": true,
+      "payload_md5sums": true,
+      "desktop_file_validate": true,
+      "polkit_xml_matches_source": true,
+      "gui_linkage_current_environment": true,
+      "extracted_cli_readonly_discovery": true
+    },
+    "binaries": {
+      "omen-cli": {
+        "sha256": "d36ac817b1879d67137c534f39a68886ffeff2f398cdf8443fce3de76a8f7a23",
+        "matches_release": true
+      },
+      "omen-daemon": {
+        "sha256": "27aff24b00a88ec070d63021df2539654fa9cf517e0e02b6cee7125ab43315ef",
+        "matches_release": true
+      },
+      "omen-gui": {
+        "sha256": "a23e3ebc8ceb04981d5f4bca2996ceba9833abb374cb61b69f289af92a99a5b9",
+        "matches_release": true
+      }
+    },
+    "dependency_notices": 142,
+    "systemd_validation": {
+      "exit_code": 0,
+      "method": "unmodified unit in extracted package root; no unit started"
+    }
+  },
+  "live_profile_test": {
+    "result": "passed",
+    "fixture_only": false,
+    "board": "8C30",
+    "bios": "F.10",
+    "kernel": "7.0.0-38-generic",
+    "original": "performance",
+    "requested": "balanced",
+    "restored": "performance",
+    "uid": 1000,
+    "authorization": "installed polkit com.omenlinux.control active-session action; production IPC",
+    "scope": "one standard PPD transaction, amd_pstate CPU backend; no firmware thermal-mode equivalence claimed",
+    "evidence": "live-profile-test.json",
+    "daemon_exited_cleanly": true,
+    "tested_daemon_sha256": "11c02e6206a6bd37678cb3e8dbcc89455ffd26797e665bb4a938705b49cc89a4",
+    "repeated_after_tray_changes": false,
+    "note": "Earlier approved transaction, not repeated after configuration/backup changes; current package has a different fingerprint. Live automation behavior remains unverified."
+  },
+  "host_changes": {
+    "rea_config": "approved setup; existing Node 24.22.1, no engines installed",
+    "polkit_action": "/usr/share/polkit-1/actions/com.omenlinux.policy installed root:root 0644",
+    "deb_installed": false,
+    "systemd_service_installed": false,
+    "test_daemon_running": false
+  },
+  "performance": {
+    "method": "release binaries; 5-second windows; CPU percent of one logical core; page-cache-warm launches; live read-only monitoring",
+    "cpu_count": 12,
+    "cli_detect": {
+      "runs_seconds": [
+        0.08311604501795955,
+        0.07530623499769717,
+        0.0733715399983339,
+        0.07474510802421719,
+        0.07572084499406628
+      ],
+      "median_seconds": 0.07530623499769717
+    },
+    "daemon_socket_ready_seconds": 0.01060299199889414,
+    "daemon_idle_no_clients": {
+      "seconds": 5.0005681320035364,
+      "rss_kib": 3160,
+      "cpu_pct_one_core": 0.0,
+      "reaped_children_cpu_pct_one_core": 0.0
+    },
+    "gui_window_map_seconds": 0.3883122809929773,
+    "gui_monitoring_dashboard": {
+      "seconds": 5.000586326990742,
+      "rss_kib": 172756,
+      "cpu_pct_one_core": 1.799788947032543,
+      "reaped_children_cpu_pct_one_core": 1.1998592980216953
+    }
+  },
+  "screenshots": {
+    "battery.png": "d6c857fe5c852a890d73095276215d5147d359caa93446416a4a7bd15e00a27c",
+    "dashboard.png": "aef8977bd8e23de51a8b620fd413bba329449e0a320bdd7ecdd74a9e149af7b5",
+    "fan-mock.png": "39897cd0fe9160338f0434282918c61e7e8986d0e87a4e53e016d57704205a5d",
+    "fan.png": "a49f1070bb73e9a43d74573bb85c5439875157c8ab86e7fef9d7124387ce6b1b",
+    "games-mock.png": "a1efb54397ef24a4d6c7ab66cd6cf9fb1fadbf4ff01d9f20bb1f7777ebcd0eb8",
+    "games.png": "f45a2ff37e0e1911efd0f2f6d396f47b6380d567438061dd489fd9a528bd9fb2",
+    "graphics.png": "5aebe425bf11dfdf909c4247febbfa47caf5e3b7307b6a91310f60b0fadc95e2",
+    "lighting.png": "e86ff12c200d2ee7a6e2d90bd78fa3473a388e99cf7ac8759f788aa43c01291c",
+    "performance.png": "22ef4e9d6a1bc72df9e4190fc0562bb435fbab4dd83d77597ec9a0411fd935c4",
+    "settings-mock.png": "fc9c753fcfa27e0f409d071e735a8f91b47f07a0d1de7499ca62f059ae3d1854",
+    "settings.png": "8f8976c22ae126640224bf648917861ef6e0812ffaa6e5b5ce0ad1ab1158dbdf",
+    "vitals.png": "3eb8f23daef40e45322658204bf7727f6bd100d348f13801578b3bda2f935575"
+  },
+  "limits": [
+    "One profile switch/restore is not thermal or Windows parity validation",
+    "Live fan/RGB/charging/graphics/firmware writes were not tested and device-specific paths remain disabled",
+    "No clean-system package install/upgrade/remove, full polkit lifecycle, suspend/resume or fan crash-recovery validation",
+    "Warm startup and short resource windows; no cold-start benchmark",
+    "Main Windows Store application and compatible Windows behavioral reference unavailable",
+    "Configured REA needs chat reconnect for direct tools; standalone MCP was used successfully",
+    "Global hotkeys/overlay and several optional integrations remain unimplemented",
+    "Tray verified with KDE Wayland and a private-bus watcher fixture; GNOME/X11 shell behavior and global shortcuts remain unverified",
+    "Native file-picker selection/cancel and service-preview button activation are not automated; shared controller/CLI and production IPC fixture workflows are tested"
+  ],
+  "tray_integration": {
+    "host": "running KDE StatusNotifierWatcher",
+    "live_hardware_writes": false,
+    "checks_passed": [
+      "real KDE tray: read-only menu, Hide, Activate, page navigation, clean Quit",
+      "startup preference hides only after tray registration; menu restores window",
+      "no tray host: start-minimized falls back to a visible GTK window",
+      "private-bus host loss reveals window; host restart re-registers without hiding it again",
+      "fixture only: tray profile changes reach daemon and restore Balanced"
+    ]
+  },
+  "settings_integration": {
+    "fixture_only": true,
+    "live_hardware_writes": false,
+    "checks_passed": [
+      "missing service config never loads the desktop user's config",
+      "connected CLI user import changes only the user file and creates a backup",
+      "reviewed service import uses typed IPC, writes the service file and preserves desktop data",
+      "scope mismatch and desktop fields in service backups are rejected without file changes",
+      "nullable AC policy remains unchanged after daemon restart",
+      "oversized input and corrupt local config fail without replacing data"
+    ]
+  }
+}

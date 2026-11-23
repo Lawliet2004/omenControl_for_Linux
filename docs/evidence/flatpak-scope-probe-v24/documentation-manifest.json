@@ -1,0 +1,30 @@
+[
+  {
+    "path": "docs/FLATPAK_SESSION_BOUNDARIES_2026-10-28.md",
+    "sha256": "8a055f67e4ede40b2799b184ce50cfe300889f5fe7f7f5737a1c626dcbab9646"
+  },
+  {
+    "path": "docs/APPLICATION_AUDIT_IMPLEMENTATION.md",
+    "sha256": "251f4ab9ef226a7db5e8edd86293d0ad66d2f436cb4e0b03219315dd8ec743e3"
+  },
+  {
+    "path": "docs/IMPLEMENTATION_STATUS.md",
+    "sha256": "ef58bd7da2cb44c179f0b78cb8b2aa6c2ca57797e8d8f79ea31da7f1fe4b3b86"
+  },
+  {
+    "path": "docs/CONTINUATION_CHECKLIST.md",
+    "sha256": "654c3c348425f86374fb36525115fe28f20b2f99faf1f74708341ca448bd9fb0"
+  },
+  {
+    "path": "docs/TEST_REPORT.md",
+    "sha256": "b205b9afe76f38b4699b9de50d7011799d41f909079f2c3a4bd99c639ee84c7a"
+  },
+  {
+    "path": "docs/MANAGED_GAME_SESSIONS.md",
+    "sha256": "545982215980c343250a349ef1e5041925f91851b956801bf1a1485cd698e3e4"
+  },
+  {
+    "path": "docs/GAME_LAUNCHERS.md",
+    "sha256": "19ddebafac6d20ac5923ce6c181e4d7d033454555aa6e80493bf57866858caf1"
+  }
+]

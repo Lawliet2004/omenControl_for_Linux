@@ -1,0 +1,23 @@
+{
+  "fixture_only": true,
+  "live_hardware_writes": false,
+  "desktop_uid": 1000,
+  "checks_passed": [
+    "missing launcher is rejected before any profile write",
+    "spawn failure after profile application restores and verifies Balanced",
+    "an already-active profile is not mutated or claimed for rollback",
+    "early nonzero launcher exit is reported and rolls back the applied profile",
+    "a different profile selected by a second IPC writer is preserved",
+    "successful fixture Steam submission uses one URI argument and the desktop UID",
+    "missing Flatpak launcher fails before a bound profile is changed",
+    "steam/flatpak/620: discovered fixture submits exact arguments as desktop UID",
+    "heroic/legendary/Quail: discovered fixture submits exact arguments as desktop UID",
+    "heroic/flatpak/legendary/Quail: discovered fixture submits exact arguments as desktop UID",
+    "lutris/9: discovered fixture submits exact arguments as desktop UID",
+    "lutris/flatpak/9: discovered fixture submits exact arguments as desktop UID",
+    "battery automation and bound per-game profiles cannot compete",
+    "lost daemon during rollback reports recovery as unverified",
+    "unbound game commands work without a daemon and cannot pollute JSON stdout",
+    "longer-running launcher returns a process receipt without claiming game execution"
+  ]
+}

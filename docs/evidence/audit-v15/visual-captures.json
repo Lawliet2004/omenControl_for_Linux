@@ -1,0 +1,106 @@
+{
+  "fixture_only": true,
+  "hardware_writes": false,
+  "capture": "application-owned GTK widget trees; not the desktop framebuffer",
+  "backend": "x11",
+  "profile": "release",
+  "binary_sha256": "3e9e412a5a2fe60cd50c8181975e6b525056f852922c3dc2e3d04180d1126a93",
+  "captures": [
+    {
+      "path": "docs/screenshots/audit-v15/dashboard-light.png",
+      "page": "dashboard",
+      "requested_size": [
+        1240,
+        800
+      ],
+      "actual_size": [
+        1240,
+        800
+      ],
+      "color_scheme": "prefer-light",
+      "requested_text_scale": "1",
+      "requested_high_contrast": false,
+      "sha256": "da162157d818fb3291820e9374e1e167cb8606287655bd124400ae9e2b94fb2a"
+    },
+    {
+      "path": "docs/screenshots/audit-v15/dashboard-dark-narrow.png",
+      "page": "dashboard",
+      "requested_size": [
+        600,
+        900
+      ],
+      "actual_size": [
+        600,
+        900
+      ],
+      "color_scheme": "prefer-dark",
+      "requested_text_scale": "1",
+      "requested_high_contrast": false,
+      "sha256": "236be7e32fc2d8ec39219c94ef4c65787c7dc61b9cc3e20917680e1ae65d7398"
+    },
+    {
+      "path": "docs/screenshots/audit-v15/vitals-large-text.png",
+      "page": "vitals",
+      "requested_size": [
+        900,
+        1000
+      ],
+      "actual_size": [
+        900,
+        1000
+      ],
+      "color_scheme": "prefer-light",
+      "requested_text_scale": "1.5",
+      "requested_high_contrast": false,
+      "sha256": "ae01eb1bf245f7bce9555a687a23d74baf1f56c9ff9bdfc3929adc62a9d93846"
+    },
+    {
+      "path": "docs/screenshots/audit-v15/settings-high-contrast.png",
+      "page": "settings",
+      "requested_size": [
+        1240,
+        900
+      ],
+      "actual_size": [
+        1240,
+        900
+      ],
+      "color_scheme": "prefer-light",
+      "requested_text_scale": "1",
+      "requested_high_contrast": true,
+      "sha256": "b6f970d821ccfd97f7f35ba49d8c161ba5fb4650a41bdb0f66702879649bb0ca"
+    },
+    {
+      "path": "docs/screenshots/audit-v15/fan-narrow.png",
+      "page": "fan",
+      "requested_size": [
+        600,
+        900
+      ],
+      "actual_size": [
+        600,
+        900
+      ],
+      "color_scheme": "prefer-light",
+      "requested_text_scale": "1",
+      "requested_high_contrast": false,
+      "sha256": "e5309ba4e61fecaed30b47545a8a7189e0bfd075b68d37a68671ef9ce84a7e00"
+    },
+    {
+      "path": "docs/screenshots/audit-v15/battery-narrow.png",
+      "page": "battery",
+      "requested_size": [
+        600,
+        900
+      ],
+      "actual_size": [
+        600,
+        900
+      ],
+      "color_scheme": "prefer-dark",
+      "requested_text_scale": "1",
+      "requested_high_contrast": false,
+      "sha256": "472389c3c820943f2aa60181f882e9af95848144560d45d0ffaf5cd2c184b983"
+    }
+  ]
+}

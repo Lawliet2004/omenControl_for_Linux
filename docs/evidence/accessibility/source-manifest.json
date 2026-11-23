@@ -1,0 +1,426 @@
+{
+  "hash_method": "SHA-256 of sorted sha256 + two spaces + relative path + newline records",
+  "files": [
+    {
+      "path": "Cargo.lock",
+      "sha256": "26e2a9c9813c7e198e71b98c3192882945bdd355ed964e86d804769a64dee5ee"
+    },
+    {
+      "path": "Cargo.toml",
+      "sha256": "910290a37a6378b9bf6474b1d7d2887226ee3cf9298f11ac9ca1e1e85e021379"
+    },
+    {
+      "path": "crates/cli/Cargo.toml",
+      "sha256": "9eb30985fe85f130e212415b5239c65113f7409090293378704b7b35b282d76e"
+    },
+    {
+      "path": "crates/cli/src/main.rs",
+      "sha256": "e47c62544b907e2da78c6cce4f0df9dd04f1a49f84ea787dc15a7e866938fc71"
+    },
+    {
+      "path": "crates/client/Cargo.toml",
+      "sha256": "afd70c75d5ef0735bb05573f356276f37fde69e0423af6d34dd7e4508b9728d2"
+    },
+    {
+      "path": "crates/client/src/game_sessions.rs",
+      "sha256": "2a876a5e4b4075dead63d9e187683be21c992c8a9552616bbd12b2d2a6f862af"
+    },
+    {
+      "path": "crates/client/src/game_supervisor.rs",
+      "sha256": "6dc6489fea15d9f905f222e24d393fa6014511823b61b0d01f89b3576c53fa74"
+    },
+    {
+      "path": "crates/client/src/games.rs",
+      "sha256": "591aa0e6681bda68202530c43ef53cf9f38966d0245e277a048c868ca3d6f946"
+    },
+    {
+      "path": "crates/client/src/launch_issues.rs",
+      "sha256": "030bfd7218cddcf74d51cabb0b585eaeb0ffef6a0fc4a712584e66f126cd405e"
+    },
+    {
+      "path": "crates/client/src/lib.rs",
+      "sha256": "a3c3c428e4da76ae09c37b9b709b4449f94821e12b92bc9c578ac6690d8a74eb"
+    },
+    {
+      "path": "crates/client/src/monitoring.rs",
+      "sha256": "0aaac06164e9759abd15c0a2a9522f05de97de4ea0fd960e714d9d060d4a2cb4"
+    },
+    {
+      "path": "crates/core/Cargo.toml",
+      "sha256": "06e796954d04a68da33188976a76c87b5f346f5ac0c744ba566448dc827e66e5"
+    },
+    {
+      "path": "crates/core/src/capability.rs",
+      "sha256": "5049d1256ca4951db854b33af7b5753cda113bf18e175c6b308f0b7ec50f5529"
+    },
+    {
+      "path": "crates/core/src/compatibility.rs",
+      "sha256": "6651bc6e61327749eec70bdf4b075bb984397f7b9d1fe96d08d227aba38d6396"
+    },
+    {
+      "path": "crates/core/src/config.rs",
+      "sha256": "96d3b032165d4a5279de2e39ee6333643e8df0cf7919e0177eb3f99a8407d85b"
+    },
+    {
+      "path": "crates/core/src/error.rs",
+      "sha256": "f71c35836a958b4938eeee57cb8648e3937054a3645af755a3543228135c62df"
+    },
+    {
+      "path": "crates/core/src/fans.rs",
+      "sha256": "6fad037696be614cd7f4a2415a2e985ff38810051827cf45d2a544301d37b4e9"
+    },
+    {
+      "path": "crates/core/src/games.rs",
+      "sha256": "f09580ca4c53c6c294a1c6c49fb25b021c96e0ce23d99b992317ccde6378f865"
+    },
+    {
+      "path": "crates/core/src/lib.rs",
+      "sha256": "229796190fe78f7c3a9a7a110db7ed1fabf9e9b7ff66664fa193ee3d2a82fc63"
+    },
+    {
+      "path": "crates/core/src/lighting.rs",
+      "sha256": "3a10b78767dca8299694cbaa721704997bc99371aad3406b70dfe0d4526b29cc"
+    },
+    {
+      "path": "crates/core/src/machine.rs",
+      "sha256": "8b7a0833fa26d2737fcfc135431e70d267d16ae7912bb85499f52c3dabf7dc78"
+    },
+    {
+      "path": "crates/core/src/network.rs",
+      "sha256": "19a3123861406c8d48defa7d9bb8a59effdf229746c14019d176d088b1b66887"
+    },
+    {
+      "path": "crates/core/src/power.rs",
+      "sha256": "ee5e9cb0fbd8102755768ab2c4dcb9517cc82ddf3e5de3133cc2292d79f8505d"
+    },
+    {
+      "path": "crates/core/src/profile.rs",
+      "sha256": "777cdcb8cf9cfa8d269771336270e4ee6b4475d02b87c4549e5b815dff9492a0"
+    },
+    {
+      "path": "crates/core/src/sensors.rs",
+      "sha256": "855e9bcb5f7100ebe6b6d7ad7c2fef6bf8aa3458bc4b4c0211320a0729e243ae"
+    },
+    {
+      "path": "crates/core/src/settings.rs",
+      "sha256": "3bf147c28d4e67ca02c46e10ed813ebea5d9838a16863181107d34bf8053d3d0"
+    },
+    {
+      "path": "crates/daemon/Cargo.toml",
+      "sha256": "b4c810b0d995c3389c8654266dff6a72ce3de35294c701f9ff3422988d24fadf"
+    },
+    {
+      "path": "crates/daemon/src/coarse/actuator.rs",
+      "sha256": "ee66dac1569c4ffa34f5900a8f467beaa661e289d4ed1e280b6aeb34592e0a1b"
+    },
+    {
+      "path": "crates/daemon/src/coarse/mod.rs",
+      "sha256": "9a9c3692c1203c2ef581801d86dd58528574e17ffcbfd890c644b92b618279be"
+    },
+    {
+      "path": "crates/daemon/src/coarse/transport.rs",
+      "sha256": "d75acea1ce5cf5bbd774fc3d8eaf6ed4238f9337cda0265396277d288f32980a"
+    },
+    {
+      "path": "crates/daemon/src/fan_guard/client.rs",
+      "sha256": "c707ea32db38be625b8cd081560b8588c9d9d85381866dc1e8baddb39a1a4dd7"
+    },
+    {
+      "path": "crates/daemon/src/fan_guard/files.rs",
+      "sha256": "73a55444b070dd0513d58ec7ecba7e69bb09332e8117a4098f378c6818d26c90"
+    },
+    {
+      "path": "crates/daemon/src/fan_guard/mod.rs",
+      "sha256": "7b3864edffe2c1aae1161e1ae27bd132fbab1f1c669aa7766df340f3d3852c16"
+    },
+    {
+      "path": "crates/daemon/src/fan_guard/wrapper.rs",
+      "sha256": "e2b1be4902054fba1292a06657c0d36edf3e47d2cb18997548494dbb77189a4f"
+    },
+    {
+      "path": "crates/daemon/src/game_sessions.rs",
+      "sha256": "8ebe9a6291559fd4b9f0a68b7792d6b67ad945c530a94af3f9d0914f5395dc44"
+    },
+    {
+      "path": "crates/daemon/src/lib.rs",
+      "sha256": "217412ab0f58693f8e2e9e1fb25a42489f3e99f71c34c02661d4311534adff9b"
+    },
+    {
+      "path": "crates/daemon/src/main.rs",
+      "sha256": "2491712e6a0e8db019d89e32722dcb5565a3329d8b5ffd9aea4c88d692b23e51"
+    },
+    {
+      "path": "crates/daemon/src/nvidia_reader.rs",
+      "sha256": "3b435eeb2bdd14bdff44aac9271018b29bf0bf02c796fe707928153093ed2800"
+    },
+    {
+      "path": "crates/daemon/src/server.rs",
+      "sha256": "9b0f60d597d929bf69cf67383dc2bd375ca8f2a8945c830d3dcbd6fee921ff79"
+    },
+    {
+      "path": "crates/daemon/src/service.rs",
+      "sha256": "a986bdcb7956c921580b2d36a9646ad645144bdf4baa310aec710657257a1b73"
+    },
+    {
+      "path": "crates/daemon/src/thermal.rs",
+      "sha256": "9aabe580cb94d8392304f5bab47f8209a40fe5d74c1adde3687af1233b233b74"
+    },
+    {
+      "path": "crates/hardware/Cargo.toml",
+      "sha256": "d9453bacfb851c448278420b8cfbb7231d066c0e469e76453c5c22ab74b5f40a"
+    },
+    {
+      "path": "crates/hardware/src/backend.rs",
+      "sha256": "5b40392abf52b452635744b73d79034486ed1edb71029404366d74b15693d45c"
+    },
+    {
+      "path": "crates/hardware/src/board_tables.rs",
+      "sha256": "6f29c8f31c2ee8be7f4e00aecf1bf0e3a29f0267dce3cb31e1e77124e07eb214"
+    },
+    {
+      "path": "crates/hardware/src/command.rs",
+      "sha256": "cbf5ea202162d2a39ac9f92266051860e728e031f43855fe242fc576b545ef04"
+    },
+    {
+      "path": "crates/hardware/src/detection.rs",
+      "sha256": "67dddca6203781295016fe1a9883362dbb9be650c83ae58a104e20c266367283"
+    },
+    {
+      "path": "crates/hardware/src/fans.rs",
+      "sha256": "bf1e9cd316993ccc81f0b2e501c31dc7340fec3326033e2e3f88f10a47249717"
+    },
+    {
+      "path": "crates/hardware/src/game_scope.rs",
+      "sha256": "f7a58472c7fb476d1ade0c37b18154108bff73587aafd020177af9421f0dca93"
+    },
+    {
+      "path": "crates/hardware/src/games/discovery.rs",
+      "sha256": "8b8e4af892aad1048e7186663637b255e52d1b2332979d7a6f225c0f997ab4ee"
+    },
+    {
+      "path": "crates/hardware/src/games/vdf.rs",
+      "sha256": "52f19777a875ae7152ec3ff4060053f5eb1f656f253a9ffd022b0b5bdf56680b"
+    },
+    {
+      "path": "crates/hardware/src/games.rs",
+      "sha256": "39872d862e91652ac91c6248072b4742377fb757cb5fe551d453a62926f2ffbe"
+    },
+    {
+      "path": "crates/hardware/src/gpu.rs",
+      "sha256": "e69898b1c50edb859d7ea5f4739ad7a2924375fdb5cf3d05391ce934436be6ea"
+    },
+    {
+      "path": "crates/hardware/src/hp_wmi.rs",
+      "sha256": "fa8ba6ba223d501006301697379525a0cfb206e847ff67e139da64a52f128abb"
+    },
+    {
+      "path": "crates/hardware/src/lib.rs",
+      "sha256": "224630aef4b5cd9b7c828c096358d193b47962529988b8071c86a692882fb243"
+    },
+    {
+      "path": "crates/hardware/src/lighting.rs",
+      "sha256": "97289182031d71bbf8da80feba12eac9c87cc6b14223d9ace2ccc3d37ed7071c"
+    },
+    {
+      "path": "crates/hardware/src/mock.rs",
+      "sha256": "b0cdb1c4e481f4697785d0302267c1419326c0af735b5ef94fef7f3fa504f9f9"
+    },
+    {
+      "path": "crates/hardware/src/network.rs",
+      "sha256": "a087fb669228f4b380d9b47fc50b11e0125b7a1120de4f20f8565a906e8263de"
+    },
+    {
+      "path": "crates/hardware/src/nvidia_bridge.rs",
+      "sha256": "05dbf778b5995c69a70e56f8387fc80161d6afac8ecb28d969e42ed2ce9db8b2"
+    },
+    {
+      "path": "crates/hardware/src/power.rs",
+      "sha256": "f259490173b38e5833dfe47a7bdefe29a2d14fc1e077f31a7d8c39f16bfb4718"
+    },
+    {
+      "path": "crates/hardware/src/profiles/holds.rs",
+      "sha256": "4168c9fda01d5860ba6c8d3759bbe131fe2d72d5f1be07b7f810da370ca060ee"
+    },
+    {
+      "path": "crates/hardware/src/profiles.rs",
+      "sha256": "1dff36e241b9f11a18f6b571336f7ab1e71993eaf66d620e9a4f8af3d9565bd0"
+    },
+    {
+      "path": "crates/hardware/src/sensors.rs",
+      "sha256": "b763e797fe63a6e5590610ce6382b0ed1dcc090bb82bcf92e1e0d5e4a8742085"
+    },
+    {
+      "path": "crates/ipc/Cargo.toml",
+      "sha256": "f1e51c78cd41ab2cdfae6f1f42f1d508ccaaa1827b09e169f8a627b428c41517"
+    },
+    {
+      "path": "crates/ipc/src/client.rs",
+      "sha256": "3afaac71775f1c0c08248ae433fcbefbf9f03833559d5a2c2bbff4bdf5daac00"
+    },
+    {
+      "path": "crates/ipc/src/lib.rs",
+      "sha256": "56c56f3f7123b6b418c182c53c48ccf4b124d61ccee9ba386981bc130396189b"
+    },
+    {
+      "path": "crates/ipc/src/protocol.rs",
+      "sha256": "31e6f83a17389b02f81c1d0c60cfd04cf00ee7d76e4de2d5aa28c40791d50688"
+    },
+    {
+      "path": "crates/ipc/src/settings.rs",
+      "sha256": "a303d6c7efe1996e9f3bcb31c0bfceffb342344a8dc04381d5324c2f082382b8"
+    },
+    {
+      "path": "gui/Cargo.toml",
+      "sha256": "3b3fbd3025cada978770885869ddf2122cc78718c3aab860cd645c177a17303a"
+    },
+    {
+      "path": "gui/src/alerts.rs",
+      "sha256": "9e6fb4ca92609e46f1f78f43cd5d0d6c79d11d2c1904a8294c65674694a020ac"
+    },
+    {
+      "path": "gui/src/charts.rs",
+      "sha256": "b157067a9d56e8040320be64e772f8eabf2d67f4011c58fa78b5e61ef0becdc7"
+    },
+    {
+      "path": "gui/src/data.rs",
+      "sha256": "e03b6c20eae0727499376161ca527ee8c77723ec43332dfd09a11b0fcc1312f0"
+    },
+    {
+      "path": "gui/src/game_library.rs",
+      "sha256": "c2f8498d20ed9660a8ab23c5ac67adb5a8165b693195283d46ae70a99cbba10d"
+    },
+    {
+      "path": "gui/src/game_sessions.rs",
+      "sha256": "80d272ac93da44b360c9009e59c48076619b427568df06b4e42a2407fc56c43a"
+    },
+    {
+      "path": "gui/src/i18n.rs",
+      "sha256": "44ed046c753a31c4e668b0a1844b6f53beed5a9ddec6a8232b887de95f20f6db"
+    },
+    {
+      "path": "gui/src/keyboard.rs",
+      "sha256": "d79ea2bdb4e92acd87b31023ca4f53acfb00d7554396d8f8176f5d4e4a74b0b2"
+    },
+    {
+      "path": "gui/src/launch_issues.rs",
+      "sha256": "c4589c774fa564ee9e86b0174ea87db7ceeee8a7515357da0faa1f612b80d32a"
+    },
+    {
+      "path": "gui/src/main.rs",
+      "sha256": "1dfa03849a44fcbfa170bceb03ca4b28ce239ab73699ef74199e75c8b9a41f5c"
+    },
+    {
+      "path": "gui/src/network_view.rs",
+      "sha256": "fe5d0139ddd829a8325be3cb588a9594e91f56037f619fde1e79f891592d8cc6"
+    },
+    {
+      "path": "gui/src/onboarding.rs",
+      "sha256": "d18ff9a0f2a9d1be81354d0cfbd7794577d3658ad5d07bcbc2726356808d4d93"
+    },
+    {
+      "path": "gui/src/overlay.rs",
+      "sha256": "11271074370ef5df506e5a64c2ffccf6cb427a5e11fc59c42910c2a59f93e3da"
+    },
+    {
+      "path": "gui/src/pages.rs",
+      "sha256": "b7c094cbcf9bba1986a4920cd0632f83f251ff3b96cb1d6ca7c91367b52c71ef"
+    },
+    {
+      "path": "gui/src/shortcuts.rs",
+      "sha256": "6271119949c09e268c5d1622e92dd4edfdbc6b0e584f4cc2449f03e33f138c96"
+    },
+    {
+      "path": "gui/src/tray.rs",
+      "sha256": "d8a278d9c855f5843efbe1b9197eb16fbd7377f8e7212621b031b4ec4c8c61bc"
+    },
+    {
+      "path": "gui/src/ui_report.rs",
+      "sha256": "3678e43cd587ce451c9cad42fb2cdb1a77e097723ff13e6791c95653219f4a4d"
+    },
+    {
+      "path": "gui/src/victus.rs",
+      "sha256": "6b675451dcdeffe383bd076acc707efa1a6681345789f4d50309b1915a720bd6"
+    },
+    {
+      "path": "gui/src/widgets.rs",
+      "sha256": "1fb55a688674ad709ae18625b996538bd481c91deabbf6e6aa1da20af0eadb10"
+    },
+    {
+      "path": "packaging/__pycache__/generate-notices.cpython-314.pyc",
+      "sha256": "1c06cae88699c4b30328a7f5412b20aa83fe7f9c32512e4d16cd934dac28df73"
+    },
+    {
+      "path": "packaging/build-deb.sh",
+      "sha256": "99898d26afd2fd8ee51deb870e65a7d379c0432f2b4e691c61063b95e23aa404"
+    },
+    {
+      "path": "packaging/com.omenlinux.Gui.desktop",
+      "sha256": "f1f2eb81d37227553ca04119c9a7a09014f0309737c1d9de34a51d9f4a61791a"
+    },
+    {
+      "path": "packaging/com.omenlinux.Gui.svg",
+      "sha256": "53c3ebab76a883198bb7a669a186ccbb27df7b5a333d2a5274323bdfb9533251"
+    },
+    {
+      "path": "packaging/debian/changelog",
+      "sha256": "d82ec459140232c52697976daafee204b3d20abd84746716d921ed19fd12618a"
+    },
+    {
+      "path": "packaging/debian/control",
+      "sha256": "70e8a7050bbc7f7bf8ed980e1a2e5a5c97ae11e0fe98b6a688c531f4612d77cf"
+    },
+    {
+      "path": "packaging/debian/control.in",
+      "sha256": "c92833acfe30801db59bea471dec701ebd62d2d5eee4042007627fa8cdb15358"
+    },
+    {
+      "path": "packaging/debian/copyright",
+      "sha256": "f99afae2f9c6e0250e7662d7314b8478aa8fc7bafa10b8a2b9b2974cd680f5f8"
+    },
+    {
+      "path": "packaging/debian/postinst",
+      "sha256": "db4f780dba8aff37aa0ddd6e4dff5388515bfd5f4f95cbfebfea5ef535d4ddd8"
+    },
+    {
+      "path": "packaging/debian/postrm",
+      "sha256": "5215d13a7af268395ef9cbe571863e99f748228460110d4565bee503e25dc97d"
+    },
+    {
+      "path": "packaging/debian/prerm",
+      "sha256": "b21baf2b6b44a91c6f3a9dc77faf0c06f019a4554323a71ee5200349e0f42449"
+    },
+    {
+      "path": "packaging/generate-notices.py",
+      "sha256": "bf83ddd692ca0a89bc5e4e06de10a60d72ea5e0c5de315a9fe865b8f3753e138"
+    },
+    {
+      "path": "packaging/polkit/com.omenlinux.policy",
+      "sha256": "f11e09eec43dc7c89f9341917d1524e3846bd8718fac5eacfae094f97353d38f"
+    },
+    {
+      "path": "packaging/systemd/omen-fan-recovery@.service",
+      "sha256": "845bfc92631fe4803b292932820b4471fb8c1ed75fde2af912c7db4e2a0a0df7"
+    },
+    {
+      "path": "packaging/systemd/omen-linux.service",
+      "sha256": "2ceaba7ee7739184e1d08bf774bd39b173bcfd927d2bb15f0cf333eb126ca40e"
+    },
+    {
+      "path": "packaging/systemd/omen-nvidia-reader.service",
+      "sha256": "95457e542c8dcfeddbdf71a983220c735d2b2c7695f4672b06bfe0dc699cc091"
+    },
+    {
+      "path": "packaging/systemd/omen-nvidia-reader.socket",
+      "sha256": "af50a4e0ad5e18f66d775e4b6f32969d20fa574246c92deff8998bfeb74d0581"
+    },
+    {
+      "path": "tests/integration/Cargo.toml",
+      "sha256": "988ea6aef72dfcfcdd92e3cf1ef8747bb467cf5f61357974ff6944dc3849c680"
+    },
+    {
+      "path": "tests/integration/src/lib.rs",
+      "sha256": "5469f1aeb7001ff7a0979bbe76562dbab3c38b1274809fc24f9bb692753b945c"
+    }
+  ],
+  "sha256": "e2d59d3985eefc166889430e0965e7f5d4fb7b97c77d5022fa9d89f37da90e93"
+}

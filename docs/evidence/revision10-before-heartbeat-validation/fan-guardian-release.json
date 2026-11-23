@@ -1,0 +1,20 @@
+{
+  "result": "passed",
+  "profile": "release",
+  "fixture_only": true,
+  "hardware_control_writes": 0,
+  "checks_passed": [
+    "independent writer keeps a healthy fixed-duty lease alive beyond its four-second deadline",
+    "guardian restores Automatic while its daemon remains SIGSTOPped",
+    "resumed daemon cannot renew the revoked override; explicit rearming creates a fresh writer",
+    "ordinary termination restores Automatic and removes the owned endpoint",
+    "parent SIGKILL closes the private channel and the surviving writer restores its pinned fixture",
+    "a live daemon detects writer death and restores through a fresh independent writer",
+    "unlinked pinned actuator reports failed recovery and cannot redirect writes to a replacement path",
+    "internal helper refuses startup without its inherited private channel"
+  ],
+  "daemon_sha256": "2f81e5587054024204a66b9e4f352f015e3a2415c72abf22aed6e0135ec2f1c0",
+  "parent_sigkill_recovery_ms": 1.2,
+  "cleanup_complete": true,
+  "recorded_utc": "2026-10-26T09:06:50.173173+00:00"
+}

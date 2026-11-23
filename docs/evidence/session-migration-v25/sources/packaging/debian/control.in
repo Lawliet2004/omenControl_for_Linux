@@ -1,0 +1,17 @@
+Package: omen-linux
+Architecture: @ARCH@
+Version: @VERSION@
+Section: utils
+Priority: optional
+Maintainer: omen-linux contributors <noreply@example.invalid>
+Depends: @SHLIBS@, libadwaita-1-0 (>= 1.4), polkitd, systemd, init-system-helpers
+Recommends: power-profiles-daemon
+Description: Native Linux system monitoring for HP OMEN and Victus
+ Rust and GTK4 monitoring application with CPU/GPU, fan and battery
+ measurements, history graphs, a CLI and diagnostics. No account or telemetry.
+ .
+ Development snapshot: hardware writes are off by default. A separately
+ managed exact-target writer supports an explicitly approved, bounded
+ Automatic/Maximum trial. Sustained fan control, RGB and charge writes
+ remain unreleased. Standard power profiles require explicit opt-in.
+ Mock adapters are identified as fixture data.

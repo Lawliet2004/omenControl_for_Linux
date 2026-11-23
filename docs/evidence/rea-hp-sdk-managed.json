@@ -1,0 +1,904 @@
+[
+  {
+    "name": "OMENSDK_Ver.exe",
+    "result": {
+      "_meta": {
+        "provenance": {
+          "untrusted_content": true,
+          "source": "analysis_target"
+        }
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"evidence_id\":\"ev_c61ea4a15a2575320850929e218b211a361bf67691e02b66ec1a5cf58a2e28b1\",\"subject\":{\"name\":\"OMENSDK_Ver.exe\",\"digest\":{\"sha256\":\"6dd9e66f2edbefb125e90fb4e82aaa82b4228498d6418a25da3b6e77c1293571\"},\"local_path\":\"/tmp/omen-windows-reference/sdk-extracted/OMENSDK_Ver.exe\",\"format\":\"pe\",\"architecture\":\"x86_64\"},\"provider\":{\"id\":\"rea-analysis-view\",\"name\":\"REA analysis view projection\",\"version\":\"1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis-view\",\"operation\":\"inspect_analysis_view\",\"parameters\":{\"parent_evidence_id\":\"ev_2f5ae1ebbbd4c4554cff6ec6ead147fc8a1c1de666aa589f3b06b14c9673d906\",\"view\":{\"kind\":\"summary\"}},\"raw_result\":null,\"normalized_result\":{\"kind\":\"summary\",\"view\":{\"kind\":\"summary\"},\"parent_evidence_id\":\"ev_2f5ae1ebbbd4c4554cff6ec6ead147fc8a1c1de666aa589f3b06b14c9673d906\",\"parent_operation\":\"inspect_managed_artifact\",\"parent_digest\":\"2f5ae1ebbbd4c4554cff6ec6ead147fc8a1c1de666aa589f3b06b14c9673d906\",\"view_digest\":\"20b8060f7ddc8cbd150417907c4799b7787dbb17f205dc4b71b16f44ac913175\",\"artifact\":{\"path\":\"/tmp/omen-windows-reference/sdk-extracted/OMENSDK_Ver.exe\",\"sha256\":\"6dd9e66f2edbefb125e90fb4e82aaa82b4228498d6418a25da3b6e77c1293571\"},\"coverage\":{\"status\":\"complete-within-view\",\"examined\":12,\"total\":12,\"next_offset\":null,\"exhausted\":true},\"limitations\":[\"Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code.\"],\"unknowns\":[\"Collection counts and pages cover producer-returned rows; metadata completeness remains the original metadata status and coverage, not an absence claim about unreturned rows.\",\"Metadata tokens are build-local coordinates bound to the recorded artifact SHA-256 and module MVID; this view does not load or execute the assembly.\"],\"summary\":{\"artifact\":{\"path\":\"/tmp/omen-windows-reference/sdk-extracted/OMENSDK_Ver.exe\",\"sha256\":\"6dd9e66f2edbefb125e90fb4e82aaa82b4228498d6418a25da3b6e77c1293571\",\"byte_length\":228368,\"format\":\"pe\"},\"pe\":{\"machine\":34404,\"machine_hex\":\"0x8664\",\"architecture\":\"x86_64\",\"optional_header\":\"pe32-plus\",\"section_count\":2,\"characteristics\":34,\"cli\":{\"header_offset\":512,\"header_size\":72,\"runtime_version\":\"2.5\",\"flags\":1,\"flag_names\":[\"il-only\"],\"entry_point\":{\"kind\":\"metadata-token\",\"value\":\"0x06000001\"},\"metadata_rva\":8284,\"metadata_size\":1400,\"resources_rva\":0,\"resources_size\":0,\"strong_name_rva\":0,\"strong_name_size\":0,\"managed_native_header_rva\":0,\"managed_native_header_size\":0,\"ready_to_run_signature\":false}},\"classification\":{\"status\":\"managed\",\"container\":\"pe\",\"runtime_family\":\"dotnet-framework\",\"implementation\":\"cil\",\"managed_architecture\":\"x86_64\",\"evidence\":[{\"code\":\"cli-header-observed\",\"detail\":\"A file-backed PE CLI header and metadata root were admitted.\",\"file_offset\":512},{\"code\":\"target-framework-observed\",\"detail\":\"An assembly-level TargetFrameworkAttribute names .NET Framework.\",\"file_offset\":1006},{\"code\":\"managed-architecture-derived\",\"detail\":\"Managed architecture x86_64 is derived from PE machine and CLI flags.\",\"file_offset\":528}]},\"metadata\":{\"status\":\"complete\",\"version\":\"v4.0.30319\",\"stream_names\":[\"#Blob\",\"#GUID\",\"#Strings\",\"#US\",\"#~\"],\"table_row_counts\":{\"Module\":1,\"TypeRef\":14,\"TypeDef\":2,\"MethodDef\":2,\"Param\":1,\"MemberRef\":13,\"CustomAttribute\":11,\"Assembly\":1,\"AssemblyRef\":1}},\"module\":{\"name\":\"OMENSDKVer.exe\",\"generation\":0,\"mvid\":\"575ec99d-4be6-4b82-8c0a-1f5ccbca287a\",\"enc_id\":null,\"enc_base_id\":null,\"token\":\"0x00000001\",\"row_offset\":772},\"assembly\":{\"name\":\"OMENSDKVer\",\"version\":\"1.0.91.0\",\"culture\":null,\"flags\":0,\"hash_algorithm\":32772,\"public_key\":{\"kind\":\"none\",\"byte_length\":0,\"sha256\":null,\"token\":null},\"token\":\"0x20000001\",\"row_offset\":1072},\"target_frameworks\":[\".NETFramework,Version=v4.6.2\"],\"coverage\":{\"state\":\"complete\",\"issues\":[]},\"limitations\":[\"Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code.\"],\"reported_counts\":{\"references\":1,\"resources\":0,\"attributes\":11},\"identity_scope\":{\"token_identity\":\"build-local\",\"requires_artifact_sha256\":\"6dd9e66f2edbefb125e90fb4e82aaa82b4228498d6418a25da3b6e77c1293571\",\"requires_mvid\":\"575ec99d-4be6-4b82-8c0a-1f5ccbca287a\"}}},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code.\"],\"relationship_coverage\":null,\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/tmp/omen-windows-reference/sdk-extracted/OMENSDK_Ver.exe\"}],\"evidence_links\":[\"ev_2f5ae1ebbbd4c4554cff6ec6ead147fc8a1c1de666aa589f3b06b14c9673d906\"]}"
+        }
+      ],
+      "structuredContent": {
+        "evidence_id": "ev_c61ea4a15a2575320850929e218b211a361bf67691e02b66ec1a5cf58a2e28b1",
+        "subject": {
+          "name": "OMENSDK_Ver.exe",
+          "digest": {
+            "sha256": "6dd9e66f2edbefb125e90fb4e82aaa82b4228498d6418a25da3b6e77c1293571"
+          },
+          "local_path": "/tmp/omen-windows-reference/sdk-extracted/OMENSDK_Ver.exe",
+          "format": "pe",
+          "architecture": "x86_64"
+        },
+        "provider": {
+          "id": "rea-analysis-view",
+          "name": "REA analysis view projection",
+          "version": "1"
+        },
+        "analysis_profile": null,
+        "predicate_type": "rea.analysis-view",
+        "operation": "inspect_analysis_view",
+        "parameters": {
+          "parent_evidence_id": "ev_2f5ae1ebbbd4c4554cff6ec6ead147fc8a1c1de666aa589f3b06b14c9673d906",
+          "view": {
+            "kind": "summary"
+          }
+        },
+        "raw_result": null,
+        "normalized_result": {
+          "kind": "summary",
+          "view": {
+            "kind": "summary"
+          },
+          "parent_evidence_id": "ev_2f5ae1ebbbd4c4554cff6ec6ead147fc8a1c1de666aa589f3b06b14c9673d906",
+          "parent_operation": "inspect_managed_artifact",
+          "parent_digest": "2f5ae1ebbbd4c4554cff6ec6ead147fc8a1c1de666aa589f3b06b14c9673d906",
+          "view_digest": "20b8060f7ddc8cbd150417907c4799b7787dbb17f205dc4b71b16f44ac913175",
+          "artifact": {
+            "path": "/tmp/omen-windows-reference/sdk-extracted/OMENSDK_Ver.exe",
+            "sha256": "6dd9e66f2edbefb125e90fb4e82aaa82b4228498d6418a25da3b6e77c1293571"
+          },
+          "coverage": {
+            "status": "complete-within-view",
+            "examined": 12,
+            "total": 12,
+            "next_offset": null,
+            "exhausted": true
+          },
+          "limitations": [
+            "Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code."
+          ],
+          "unknowns": [
+            "Collection counts and pages cover producer-returned rows; metadata completeness remains the original metadata status and coverage, not an absence claim about unreturned rows.",
+            "Metadata tokens are build-local coordinates bound to the recorded artifact SHA-256 and module MVID; this view does not load or execute the assembly."
+          ],
+          "summary": {
+            "artifact": {
+              "path": "/tmp/omen-windows-reference/sdk-extracted/OMENSDK_Ver.exe",
+              "sha256": "6dd9e66f2edbefb125e90fb4e82aaa82b4228498d6418a25da3b6e77c1293571",
+              "byte_length": 228368,
+              "format": "pe"
+            },
+            "pe": {
+              "machine": 34404,
+              "machine_hex": "0x8664",
+              "architecture": "x86_64",
+              "optional_header": "pe32-plus",
+              "section_count": 2,
+              "characteristics": 34,
+              "cli": {
+                "header_offset": 512,
+                "header_size": 72,
+                "runtime_version": "2.5",
+                "flags": 1,
+                "flag_names": [
+                  "il-only"
+                ],
+                "entry_point": {
+                  "kind": "metadata-token",
+                  "value": "0x06000001"
+                },
+                "metadata_rva": 8284,
+                "metadata_size": 1400,
+                "resources_rva": 0,
+                "resources_size": 0,
+                "strong_name_rva": 0,
+                "strong_name_size": 0,
+                "managed_native_header_rva": 0,
+                "managed_native_header_size": 0,
+                "ready_to_run_signature": false
+              }
+            },
+            "classification": {
+              "status": "managed",
+              "container": "pe",
+              "runtime_family": "dotnet-framework",
+              "implementation": "cil",
+              "managed_architecture": "x86_64",
+              "evidence": [
+                {
+                  "code": "cli-header-observed",
+                  "detail": "A file-backed PE CLI header and metadata root were admitted.",
+                  "file_offset": 512
+                },
+                {
+                  "code": "target-framework-observed",
+                  "detail": "An assembly-level TargetFrameworkAttribute names .NET Framework.",
+                  "file_offset": 1006
+                },
+                {
+                  "code": "managed-architecture-derived",
+                  "detail": "Managed architecture x86_64 is derived from PE machine and CLI flags.",
+                  "file_offset": 528
+                }
+              ]
+            },
+            "metadata": {
+              "status": "complete",
+              "version": "v4.0.30319",
+              "stream_names": [
+                "#Blob",
+                "#GUID",
+                "#Strings",
+                "#US",
+                "#~"
+              ],
+              "table_row_counts": {
+                "Module": 1,
+                "TypeRef": 14,
+                "TypeDef": 2,
+                "MethodDef": 2,
+                "Param": 1,
+                "MemberRef": 13,
+                "CustomAttribute": 11,
+                "Assembly": 1,
+                "AssemblyRef": 1
+              }
+            },
+            "module": {
+              "name": "OMENSDKVer.exe",
+              "generation": 0,
+              "mvid": "575ec99d-4be6-4b82-8c0a-1f5ccbca287a",
+              "enc_id": null,
+              "enc_base_id": null,
+              "token": "0x00000001",
+              "row_offset": 772
+            },
+            "assembly": {
+              "name": "OMENSDKVer",
+              "version": "1.0.91.0",
+              "culture": null,
+              "flags": 0,
+              "hash_algorithm": 32772,
+              "public_key": {
+                "kind": "none",
+                "byte_length": 0,
+                "sha256": null,
+                "token": null
+              },
+              "token": "0x20000001",
+              "row_offset": 1072
+            },
+            "target_frameworks": [
+              ".NETFramework,Version=v4.6.2"
+            ],
+            "coverage": {
+              "state": "complete",
+              "issues": []
+            },
+            "limitations": [
+              "Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code."
+            ],
+            "reported_counts": {
+              "references": 1,
+              "resources": 0,
+              "attributes": 11
+            },
+            "identity_scope": {
+              "token_identity": "build-local",
+              "requires_artifact_sha256": "6dd9e66f2edbefb125e90fb4e82aaa82b4228498d6418a25da3b6e77c1293571",
+              "requires_mvid": "575ec99d-4be6-4b82-8c0a-1f5ccbca287a"
+            }
+          }
+        },
+        "confidence": "derived",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code."
+        ],
+        "relationship_coverage": null,
+        "locations": [
+          {
+            "kind": "artifact-path",
+            "path": "/tmp/omen-windows-reference/sdk-extracted/OMENSDK_Ver.exe"
+          }
+        ],
+        "evidence_links": [
+          "ev_2f5ae1ebbbd4c4554cff6ec6ead147fc8a1c1de666aa589f3b06b14c9673d906"
+        ]
+      }
+    }
+  },
+  {
+    "name": "IntelXTU/XTU-7.14.2.14/Drivers/XtuService.exe",
+    "result": {
+      "_meta": {
+        "provenance": {
+          "untrusted_content": true,
+          "source": "analysis_target"
+        }
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"evidence_id\":\"ev_d3be6411ff787d7422ded05c56842f0fc8d7413d5ffa665e350b13f409e32123\",\"subject\":{\"name\":\"XtuService.exe\",\"digest\":{\"sha256\":\"bbdbbcbf20dd502aa1bf9dabb4ae223dd1aa4c79abf84e4657eb767157462f02\"},\"local_path\":\"/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/XtuService.exe\",\"format\":\"pe\",\"architecture\":\"x86_64\"},\"provider\":{\"id\":\"rea-analysis-view\",\"name\":\"REA analysis view projection\",\"version\":\"1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis-view\",\"operation\":\"inspect_analysis_view\",\"parameters\":{\"parent_evidence_id\":\"ev_b0adb9f9e1164d1e420a82a3c28be967dd6af7846654bf6bc7ddf4185491d5fa\",\"view\":{\"kind\":\"summary\"}},\"raw_result\":null,\"normalized_result\":{\"kind\":\"summary\",\"view\":{\"kind\":\"summary\"},\"parent_evidence_id\":\"ev_b0adb9f9e1164d1e420a82a3c28be967dd6af7846654bf6bc7ddf4185491d5fa\",\"parent_operation\":\"inspect_managed_artifact\",\"parent_digest\":\"b0adb9f9e1164d1e420a82a3c28be967dd6af7846654bf6bc7ddf4185491d5fa\",\"view_digest\":\"c4e8ac1fdc32495cb9aac1d42af6890b76fb778f791dfc10c1fc5b85ce5ad963\",\"artifact\":{\"path\":\"/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/XtuService.exe\",\"sha256\":\"bbdbbcbf20dd502aa1bf9dabb4ae223dd1aa4c79abf84e4657eb767157462f02\"},\"coverage\":{\"status\":\"complete-within-view\",\"examined\":23,\"total\":23,\"next_offset\":null,\"exhausted\":true},\"limitations\":[\"Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code.\"],\"unknowns\":[\"Collection counts and pages cover producer-returned rows; metadata completeness remains the original metadata status and coverage, not an absence claim about unreturned rows.\",\"Metadata tokens are build-local coordinates bound to the recorded artifact SHA-256 and module MVID; this view does not load or execute the assembly.\"],\"summary\":{\"artifact\":{\"path\":\"/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/XtuService.exe\",\"sha256\":\"bbdbbcbf20dd502aa1bf9dabb4ae223dd1aa4c79abf84e4657eb767157462f02\",\"byte_length\":30056,\"format\":\"pe\"},\"pe\":{\"machine\":34404,\"machine_hex\":\"0x8664\",\"architecture\":\"x86_64\",\"optional_header\":\"pe32-plus\",\"section_count\":2,\"characteristics\":34,\"cli\":{\"header_offset\":512,\"header_size\":72,\"runtime_version\":\"2.5\",\"flags\":9,\"flag_names\":[\"il-only\",\"strong-name-signed\"],\"entry_point\":{\"kind\":\"metadata-token\",\"value\":\"0x0600000a\"},\"metadata_rva\":9560,\"metadata_size\":5032,\"resources_rva\":0,\"resources_size\":0,\"strong_name_rva\":14592,\"strong_name_size\":128,\"managed_native_header_rva\":0,\"managed_native_header_size\":0,\"ready_to_run_signature\":false}},\"classification\":{\"status\":\"managed\",\"container\":\"pe\",\"runtime_family\":\"dotnet-framework\",\"implementation\":\"cil\",\"managed_architecture\":\"x86_64\",\"evidence\":[{\"code\":\"cli-header-observed\",\"detail\":\"A file-backed PE CLI header and metadata root were admitted.\",\"file_offset\":512},{\"code\":\"target-framework-observed\",\"detail\":\"An assembly-level TargetFrameworkAttribute names .NET Framework.\",\"file_offset\":3150},{\"code\":\"managed-architecture-derived\",\"detail\":\"Managed architecture x86_64 is derived from PE machine and CLI flags.\",\"file_offset\":528}]},\"metadata\":{\"status\":\"complete\",\"version\":\"v4.0.30319\",\"stream_names\":[\"#Blob\",\"#GUID\",\"#Strings\",\"#US\",\"#~\"],\"table_row_counts\":{\"Module\":1,\"TypeRef\":52,\"TypeDef\":5,\"Field\":3,\"MethodDef\":13,\"Param\":8,\"MemberRef\":75,\"CustomAttribute\":16,\"StandAloneSig\":4,\"TypeSpec\":1,\"Assembly\":1,\"AssemblyRef\":7}},\"module\":{\"name\":\"XtuService.exe\",\"generation\":0,\"mvid\":\"c650b31c-8bf3-4435-a20f-a12048c5da5f\",\"enc_id\":null,\"enc_base_id\":null,\"token\":\"0x00000001\",\"row_offset\":2060},\"assembly\":{\"name\":\"XtuService\",\"version\":\"7.14.2.14\",\"culture\":null,\"flags\":1,\"hash_algorithm\":32772,\"public_key\":{\"kind\":\"public-key\",\"byte_length\":160,\"sha256\":\"12b85e2df49ebc4e42f11299593370f9874f4346dc3e2e3f421450687fc6b098\",\"token\":\"15fcf59f0862f006\"},\"token\":\"0x20000001\",\"row_offset\":3256},\"target_frameworks\":[\".NETFramework,Version=v4.8\"],\"coverage\":{\"state\":\"complete\",\"issues\":[]},\"limitations\":[\"Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code.\"],\"reported_counts\":{\"references\":7,\"resources\":0,\"attributes\":16},\"identity_scope\":{\"token_identity\":\"build-local\",\"requires_artifact_sha256\":\"bbdbbcbf20dd502aa1bf9dabb4ae223dd1aa4c79abf84e4657eb767157462f02\",\"requires_mvid\":\"c650b31c-8bf3-4435-a20f-a12048c5da5f\"}}},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code.\"],\"relationship_coverage\":null,\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/XtuService.exe\"}],\"evidence_links\":[\"ev_b0adb9f9e1164d1e420a82a3c28be967dd6af7846654bf6bc7ddf4185491d5fa\"]}"
+        }
+      ],
+      "structuredContent": {
+        "evidence_id": "ev_d3be6411ff787d7422ded05c56842f0fc8d7413d5ffa665e350b13f409e32123",
+        "subject": {
+          "name": "XtuService.exe",
+          "digest": {
+            "sha256": "bbdbbcbf20dd502aa1bf9dabb4ae223dd1aa4c79abf84e4657eb767157462f02"
+          },
+          "local_path": "/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/XtuService.exe",
+          "format": "pe",
+          "architecture": "x86_64"
+        },
+        "provider": {
+          "id": "rea-analysis-view",
+          "name": "REA analysis view projection",
+          "version": "1"
+        },
+        "analysis_profile": null,
+        "predicate_type": "rea.analysis-view",
+        "operation": "inspect_analysis_view",
+        "parameters": {
+          "parent_evidence_id": "ev_b0adb9f9e1164d1e420a82a3c28be967dd6af7846654bf6bc7ddf4185491d5fa",
+          "view": {
+            "kind": "summary"
+          }
+        },
+        "raw_result": null,
+        "normalized_result": {
+          "kind": "summary",
+          "view": {
+            "kind": "summary"
+          },
+          "parent_evidence_id": "ev_b0adb9f9e1164d1e420a82a3c28be967dd6af7846654bf6bc7ddf4185491d5fa",
+          "parent_operation": "inspect_managed_artifact",
+          "parent_digest": "b0adb9f9e1164d1e420a82a3c28be967dd6af7846654bf6bc7ddf4185491d5fa",
+          "view_digest": "c4e8ac1fdc32495cb9aac1d42af6890b76fb778f791dfc10c1fc5b85ce5ad963",
+          "artifact": {
+            "path": "/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/XtuService.exe",
+            "sha256": "bbdbbcbf20dd502aa1bf9dabb4ae223dd1aa4c79abf84e4657eb767157462f02"
+          },
+          "coverage": {
+            "status": "complete-within-view",
+            "examined": 23,
+            "total": 23,
+            "next_offset": null,
+            "exhausted": true
+          },
+          "limitations": [
+            "Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code."
+          ],
+          "unknowns": [
+            "Collection counts and pages cover producer-returned rows; metadata completeness remains the original metadata status and coverage, not an absence claim about unreturned rows.",
+            "Metadata tokens are build-local coordinates bound to the recorded artifact SHA-256 and module MVID; this view does not load or execute the assembly."
+          ],
+          "summary": {
+            "artifact": {
+              "path": "/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/XtuService.exe",
+              "sha256": "bbdbbcbf20dd502aa1bf9dabb4ae223dd1aa4c79abf84e4657eb767157462f02",
+              "byte_length": 30056,
+              "format": "pe"
+            },
+            "pe": {
+              "machine": 34404,
+              "machine_hex": "0x8664",
+              "architecture": "x86_64",
+              "optional_header": "pe32-plus",
+              "section_count": 2,
+              "characteristics": 34,
+              "cli": {
+                "header_offset": 512,
+                "header_size": 72,
+                "runtime_version": "2.5",
+                "flags": 9,
+                "flag_names": [
+                  "il-only",
+                  "strong-name-signed"
+                ],
+                "entry_point": {
+                  "kind": "metadata-token",
+                  "value": "0x0600000a"
+                },
+                "metadata_rva": 9560,
+                "metadata_size": 5032,
+                "resources_rva": 0,
+                "resources_size": 0,
+                "strong_name_rva": 14592,
+                "strong_name_size": 128,
+                "managed_native_header_rva": 0,
+                "managed_native_header_size": 0,
+                "ready_to_run_signature": false
+              }
+            },
+            "classification": {
+              "status": "managed",
+              "container": "pe",
+              "runtime_family": "dotnet-framework",
+              "implementation": "cil",
+              "managed_architecture": "x86_64",
+              "evidence": [
+                {
+                  "code": "cli-header-observed",
+                  "detail": "A file-backed PE CLI header and metadata root were admitted.",
+                  "file_offset": 512
+                },
+                {
+                  "code": "target-framework-observed",
+                  "detail": "An assembly-level TargetFrameworkAttribute names .NET Framework.",
+                  "file_offset": 3150
+                },
+                {
+                  "code": "managed-architecture-derived",
+                  "detail": "Managed architecture x86_64 is derived from PE machine and CLI flags.",
+                  "file_offset": 528
+                }
+              ]
+            },
+            "metadata": {
+              "status": "complete",
+              "version": "v4.0.30319",
+              "stream_names": [
+                "#Blob",
+                "#GUID",
+                "#Strings",
+                "#US",
+                "#~"
+              ],
+              "table_row_counts": {
+                "Module": 1,
+                "TypeRef": 52,
+                "TypeDef": 5,
+                "Field": 3,
+                "MethodDef": 13,
+                "Param": 8,
+                "MemberRef": 75,
+                "CustomAttribute": 16,
+                "StandAloneSig": 4,
+                "TypeSpec": 1,
+                "Assembly": 1,
+                "AssemblyRef": 7
+              }
+            },
+            "module": {
+              "name": "XtuService.exe",
+              "generation": 0,
+              "mvid": "c650b31c-8bf3-4435-a20f-a12048c5da5f",
+              "enc_id": null,
+              "enc_base_id": null,
+              "token": "0x00000001",
+              "row_offset": 2060
+            },
+            "assembly": {
+              "name": "XtuService",
+              "version": "7.14.2.14",
+              "culture": null,
+              "flags": 1,
+              "hash_algorithm": 32772,
+              "public_key": {
+                "kind": "public-key",
+                "byte_length": 160,
+                "sha256": "12b85e2df49ebc4e42f11299593370f9874f4346dc3e2e3f421450687fc6b098",
+                "token": "15fcf59f0862f006"
+              },
+              "token": "0x20000001",
+              "row_offset": 3256
+            },
+            "target_frameworks": [
+              ".NETFramework,Version=v4.8"
+            ],
+            "coverage": {
+              "state": "complete",
+              "issues": []
+            },
+            "limitations": [
+              "Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code."
+            ],
+            "reported_counts": {
+              "references": 7,
+              "resources": 0,
+              "attributes": 16
+            },
+            "identity_scope": {
+              "token_identity": "build-local",
+              "requires_artifact_sha256": "bbdbbcbf20dd502aa1bf9dabb4ae223dd1aa4c79abf84e4657eb767157462f02",
+              "requires_mvid": "c650b31c-8bf3-4435-a20f-a12048c5da5f"
+            }
+          }
+        },
+        "confidence": "derived",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code."
+        ],
+        "relationship_coverage": null,
+        "locations": [
+          {
+            "kind": "artifact-path",
+            "path": "/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/XtuService.exe"
+          }
+        ],
+        "evidence_links": [
+          "ev_b0adb9f9e1164d1e420a82a3c28be967dd6af7846654bf6bc7ddf4185491d5fa"
+        ]
+      }
+    }
+  },
+  {
+    "name": "IntelXTU/XTU-7.14.2.14/Drivers/XtuCoreServer.dll",
+    "result": {
+      "_meta": {
+        "provenance": {
+          "untrusted_content": true,
+          "source": "analysis_target"
+        }
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"evidence_id\":\"ev_80183abeac8c7da087a17f04079e13b653f9ae7c4846ccf0b15010b75e427314\",\"subject\":{\"name\":\"XtuCoreServer.dll\",\"digest\":{\"sha256\":\"f53c5bb660254abe008e060c0645d458f89eb14590431370232d55d81beb64e2\"},\"local_path\":\"/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/XtuCoreServer.dll\",\"format\":\"pe\",\"architecture\":\"x86_64\"},\"provider\":{\"id\":\"rea-analysis-view\",\"name\":\"REA analysis view projection\",\"version\":\"1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis-view\",\"operation\":\"inspect_analysis_view\",\"parameters\":{\"parent_evidence_id\":\"ev_a62240af2721c19c66603d94a541d03b5b8587fc10a46be03cf4db2c817a1126\",\"view\":{\"kind\":\"summary\"}},\"raw_result\":null,\"normalized_result\":{\"kind\":\"summary\",\"view\":{\"kind\":\"summary\"},\"parent_evidence_id\":\"ev_a62240af2721c19c66603d94a541d03b5b8587fc10a46be03cf4db2c817a1126\",\"parent_operation\":\"inspect_managed_artifact\",\"parent_digest\":\"a62240af2721c19c66603d94a541d03b5b8587fc10a46be03cf4db2c817a1126\",\"view_digest\":\"46edf730768ca2ef5b388782ed9f40a4cd6c56945a60d795336cffb875177586\",\"artifact\":{\"path\":\"/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/XtuCoreServer.dll\",\"sha256\":\"f53c5bb660254abe008e060c0645d458f89eb14590431370232d55d81beb64e2\"},\"coverage\":{\"status\":\"complete-within-view\",\"examined\":65,\"total\":65,\"next_offset\":null,\"exhausted\":true},\"limitations\":[\"Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code.\"],\"unknowns\":[\"Collection counts and pages cover producer-returned rows; metadata completeness remains the original metadata status and coverage, not an absence claim about unreturned rows.\",\"Metadata tokens are build-local coordinates bound to the recorded artifact SHA-256 and module MVID; this view does not load or execute the assembly.\"],\"summary\":{\"artifact\":{\"path\":\"/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/XtuCoreServer.dll\",\"sha256\":\"f53c5bb660254abe008e060c0645d458f89eb14590431370232d55d81beb64e2\",\"byte_length\":60264,\"format\":\"pe\"},\"pe\":{\"machine\":34404,\"machine_hex\":\"0x8664\",\"architecture\":\"x86_64\",\"optional_header\":\"pe32-plus\",\"section_count\":2,\"characteristics\":8226,\"cli\":{\"header_offset\":512,\"header_size\":72,\"runtime_version\":\"2.5\",\"flags\":9,\"flag_names\":[\"il-only\",\"strong-name-signed\"],\"entry_point\":{\"kind\":\"none\",\"value\":null},\"metadata_rva\":18816,\"metadata_size\":26780,\"resources_rva\":0,\"resources_size\":0,\"strong_name_rva\":45596,\"strong_name_size\":128,\"managed_native_header_rva\":0,\"managed_native_header_size\":0,\"ready_to_run_signature\":false}},\"classification\":{\"status\":\"managed\",\"container\":\"pe\",\"runtime_family\":\"dotnet-framework\",\"implementation\":\"cil\",\"managed_architecture\":\"x86_64\",\"evidence\":[{\"code\":\"cli-header-observed\",\"detail\":\"A file-backed PE CLI header and metadata root were admitted.\",\"file_offset\":512},{\"code\":\"target-framework-observed\",\"detail\":\"An assembly-level TargetFrameworkAttribute names .NET Framework.\",\"file_offset\":16948},{\"code\":\"managed-architecture-derived\",\"detail\":\"Managed architecture x86_64 is derived from PE machine and CLI flags.\",\"file_offset\":528}]},\"metadata\":{\"status\":\"complete\",\"version\":\"v4.0.30319\",\"stream_names\":[\"#Blob\",\"#GUID\",\"#Strings\",\"#US\",\"#~\"],\"table_row_counts\":{\"Module\":1,\"TypeRef\":115,\"TypeDef\":17,\"Field\":61,\"MethodDef\":145,\"Param\":113,\"InterfaceImpl\":8,\"MemberRef\":254,\"Constant\":2,\"CustomAttribute\":57,\"FieldMarshal\":5,\"StandAloneSig\":47,\"EventMap\":3,\"Event\":3,\"PropertyMap\":4,\"Property\":8,\"MethodSemantics\":17,\"MethodImpl\":2,\"ModuleRef\":1,\"TypeSpec\":36,\"ImplMap\":5,\"Assembly\":1,\"AssemblyRef\":8,\"NestedClass\":9,\"MethodSpec\":34}},\"module\":{\"name\":\"XtuCoreServer.dll\",\"generation\":0,\"mvid\":\"da5df5ec-2cda-4195-99f5-bccbed42a5e8\",\"enc_id\":null,\"enc_base_id\":null,\"token\":\"0x00000001\",\"row_offset\":11368},\"assembly\":{\"name\":\"XtuCoreServer\",\"version\":\"7.14.2.14\",\"culture\":null,\"flags\":1,\"hash_algorithm\":32772,\"public_key\":{\"kind\":\"public-key\",\"byte_length\":160,\"sha256\":\"fd573255a5b7bc362cd93510223e199a17d400be5c7525d8a8428046186401ae\",\"token\":\"60b984ca3eec5585\"},\"token\":\"0x20000001\",\"row_offset\":17726},\"target_frameworks\":[\".NETFramework,Version=v4.8\"],\"coverage\":{\"state\":\"complete\",\"issues\":[]},\"limitations\":[\"Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code.\"],\"reported_counts\":{\"references\":8,\"resources\":0,\"attributes\":57},\"identity_scope\":{\"token_identity\":\"build-local\",\"requires_artifact_sha256\":\"f53c5bb660254abe008e060c0645d458f89eb14590431370232d55d81beb64e2\",\"requires_mvid\":\"da5df5ec-2cda-4195-99f5-bccbed42a5e8\"}}},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code.\"],\"relationship_coverage\":null,\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/XtuCoreServer.dll\"}],\"evidence_links\":[\"ev_a62240af2721c19c66603d94a541d03b5b8587fc10a46be03cf4db2c817a1126\"]}"
+        }
+      ],
+      "structuredContent": {
+        "evidence_id": "ev_80183abeac8c7da087a17f04079e13b653f9ae7c4846ccf0b15010b75e427314",
+        "subject": {
+          "name": "XtuCoreServer.dll",
+          "digest": {
+            "sha256": "f53c5bb660254abe008e060c0645d458f89eb14590431370232d55d81beb64e2"
+          },
+          "local_path": "/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/XtuCoreServer.dll",
+          "format": "pe",
+          "architecture": "x86_64"
+        },
+        "provider": {
+          "id": "rea-analysis-view",
+          "name": "REA analysis view projection",
+          "version": "1"
+        },
+        "analysis_profile": null,
+        "predicate_type": "rea.analysis-view",
+        "operation": "inspect_analysis_view",
+        "parameters": {
+          "parent_evidence_id": "ev_a62240af2721c19c66603d94a541d03b5b8587fc10a46be03cf4db2c817a1126",
+          "view": {
+            "kind": "summary"
+          }
+        },
+        "raw_result": null,
+        "normalized_result": {
+          "kind": "summary",
+          "view": {
+            "kind": "summary"
+          },
+          "parent_evidence_id": "ev_a62240af2721c19c66603d94a541d03b5b8587fc10a46be03cf4db2c817a1126",
+          "parent_operation": "inspect_managed_artifact",
+          "parent_digest": "a62240af2721c19c66603d94a541d03b5b8587fc10a46be03cf4db2c817a1126",
+          "view_digest": "46edf730768ca2ef5b388782ed9f40a4cd6c56945a60d795336cffb875177586",
+          "artifact": {
+            "path": "/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/XtuCoreServer.dll",
+            "sha256": "f53c5bb660254abe008e060c0645d458f89eb14590431370232d55d81beb64e2"
+          },
+          "coverage": {
+            "status": "complete-within-view",
+            "examined": 65,
+            "total": 65,
+            "next_offset": null,
+            "exhausted": true
+          },
+          "limitations": [
+            "Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code."
+          ],
+          "unknowns": [
+            "Collection counts and pages cover producer-returned rows; metadata completeness remains the original metadata status and coverage, not an absence claim about unreturned rows.",
+            "Metadata tokens are build-local coordinates bound to the recorded artifact SHA-256 and module MVID; this view does not load or execute the assembly."
+          ],
+          "summary": {
+            "artifact": {
+              "path": "/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/XtuCoreServer.dll",
+              "sha256": "f53c5bb660254abe008e060c0645d458f89eb14590431370232d55d81beb64e2",
+              "byte_length": 60264,
+              "format": "pe"
+            },
+            "pe": {
+              "machine": 34404,
+              "machine_hex": "0x8664",
+              "architecture": "x86_64",
+              "optional_header": "pe32-plus",
+              "section_count": 2,
+              "characteristics": 8226,
+              "cli": {
+                "header_offset": 512,
+                "header_size": 72,
+                "runtime_version": "2.5",
+                "flags": 9,
+                "flag_names": [
+                  "il-only",
+                  "strong-name-signed"
+                ],
+                "entry_point": {
+                  "kind": "none",
+                  "value": null
+                },
+                "metadata_rva": 18816,
+                "metadata_size": 26780,
+                "resources_rva": 0,
+                "resources_size": 0,
+                "strong_name_rva": 45596,
+                "strong_name_size": 128,
+                "managed_native_header_rva": 0,
+                "managed_native_header_size": 0,
+                "ready_to_run_signature": false
+              }
+            },
+            "classification": {
+              "status": "managed",
+              "container": "pe",
+              "runtime_family": "dotnet-framework",
+              "implementation": "cil",
+              "managed_architecture": "x86_64",
+              "evidence": [
+                {
+                  "code": "cli-header-observed",
+                  "detail": "A file-backed PE CLI header and metadata root were admitted.",
+                  "file_offset": 512
+                },
+                {
+                  "code": "target-framework-observed",
+                  "detail": "An assembly-level TargetFrameworkAttribute names .NET Framework.",
+                  "file_offset": 16948
+                },
+                {
+                  "code": "managed-architecture-derived",
+                  "detail": "Managed architecture x86_64 is derived from PE machine and CLI flags.",
+                  "file_offset": 528
+                }
+              ]
+            },
+            "metadata": {
+              "status": "complete",
+              "version": "v4.0.30319",
+              "stream_names": [
+                "#Blob",
+                "#GUID",
+                "#Strings",
+                "#US",
+                "#~"
+              ],
+              "table_row_counts": {
+                "Module": 1,
+                "TypeRef": 115,
+                "TypeDef": 17,
+                "Field": 61,
+                "MethodDef": 145,
+                "Param": 113,
+                "InterfaceImpl": 8,
+                "MemberRef": 254,
+                "Constant": 2,
+                "CustomAttribute": 57,
+                "FieldMarshal": 5,
+                "StandAloneSig": 47,
+                "EventMap": 3,
+                "Event": 3,
+                "PropertyMap": 4,
+                "Property": 8,
+                "MethodSemantics": 17,
+                "MethodImpl": 2,
+                "ModuleRef": 1,
+                "TypeSpec": 36,
+                "ImplMap": 5,
+                "Assembly": 1,
+                "AssemblyRef": 8,
+                "NestedClass": 9,
+                "MethodSpec": 34
+              }
+            },
+            "module": {
+              "name": "XtuCoreServer.dll",
+              "generation": 0,
+              "mvid": "da5df5ec-2cda-4195-99f5-bccbed42a5e8",
+              "enc_id": null,
+              "enc_base_id": null,
+              "token": "0x00000001",
+              "row_offset": 11368
+            },
+            "assembly": {
+              "name": "XtuCoreServer",
+              "version": "7.14.2.14",
+              "culture": null,
+              "flags": 1,
+              "hash_algorithm": 32772,
+              "public_key": {
+                "kind": "public-key",
+                "byte_length": 160,
+                "sha256": "fd573255a5b7bc362cd93510223e199a17d400be5c7525d8a8428046186401ae",
+                "token": "60b984ca3eec5585"
+              },
+              "token": "0x20000001",
+              "row_offset": 17726
+            },
+            "target_frameworks": [
+              ".NETFramework,Version=v4.8"
+            ],
+            "coverage": {
+              "state": "complete",
+              "issues": []
+            },
+            "limitations": [
+              "Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code."
+            ],
+            "reported_counts": {
+              "references": 8,
+              "resources": 0,
+              "attributes": 57
+            },
+            "identity_scope": {
+              "token_identity": "build-local",
+              "requires_artifact_sha256": "f53c5bb660254abe008e060c0645d458f89eb14590431370232d55d81beb64e2",
+              "requires_mvid": "da5df5ec-2cda-4195-99f5-bccbed42a5e8"
+            }
+          }
+        },
+        "confidence": "derived",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code."
+        ],
+        "relationship_coverage": null,
+        "locations": [
+          {
+            "kind": "artifact-path",
+            "path": "/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/XtuCoreServer.dll"
+          }
+        ],
+        "evidence_links": [
+          "ev_a62240af2721c19c66603d94a541d03b5b8587fc10a46be03cf4db2c817a1126"
+        ]
+      }
+    }
+  },
+  {
+    "name": "IntelXTU/XTU-7.14.2.14/Drivers/HardwareAccess.dll",
+    "result": {
+      "_meta": {
+        "provenance": {
+          "untrusted_content": true,
+          "source": "analysis_target"
+        }
+      },
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"evidence_id\":\"ev_24b409ba62a8f230f324687573167ea971b95dfbf912cdae9554fc21912bd7fd\",\"subject\":{\"name\":\"HardwareAccess.dll\",\"digest\":{\"sha256\":\"846d6e3f531d944bc3d34c7a8e7c28ef1fe8e5c6419b25f6281f1ec651a6524d\"},\"local_path\":\"/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/HardwareAccess.dll\",\"format\":\"pe\",\"architecture\":\"x86_64\"},\"provider\":{\"id\":\"rea-analysis-view\",\"name\":\"REA analysis view projection\",\"version\":\"1\"},\"analysis_profile\":null,\"predicate_type\":\"rea.analysis-view\",\"operation\":\"inspect_analysis_view\",\"parameters\":{\"parent_evidence_id\":\"ev_5cba709de3826ed53fcb81450a10e258695129875d77c427d0fb1d147623f502\",\"view\":{\"kind\":\"summary\"}},\"raw_result\":null,\"normalized_result\":{\"kind\":\"summary\",\"view\":{\"kind\":\"summary\"},\"parent_evidence_id\":\"ev_5cba709de3826ed53fcb81450a10e258695129875d77c427d0fb1d147623f502\",\"parent_operation\":\"inspect_managed_artifact\",\"parent_digest\":\"5cba709de3826ed53fcb81450a10e258695129875d77c427d0fb1d147623f502\",\"view_digest\":\"0793b529331d85fa652bb7b83a2e120a31a2c6581f12cf4bee454309081c00c8\",\"artifact\":{\"path\":\"/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/HardwareAccess.dll\",\"sha256\":\"846d6e3f531d944bc3d34c7a8e7c28ef1fe8e5c6419b25f6281f1ec651a6524d\"},\"coverage\":{\"status\":\"complete-within-view\",\"examined\":584,\"total\":584,\"next_offset\":null,\"exhausted\":true},\"limitations\":[\"Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code.\"],\"unknowns\":[\"Collection counts and pages cover producer-returned rows; metadata completeness remains the original metadata status and coverage, not an absence claim about unreturned rows.\",\"Metadata tokens are build-local coordinates bound to the recorded artifact SHA-256 and module MVID; this view does not load or execute the assembly.\"],\"summary\":{\"artifact\":{\"path\":\"/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/HardwareAccess.dll\",\"sha256\":\"846d6e3f531d944bc3d34c7a8e7c28ef1fe8e5c6419b25f6281f1ec651a6524d\",\"byte_length\":277352,\"format\":\"pe\"},\"pe\":{\"machine\":34404,\"machine_hex\":\"0x8664\",\"architecture\":\"x86_64\",\"optional_header\":\"pe32-plus\",\"section_count\":2,\"characteristics\":8226,\"cli\":{\"header_offset\":512,\"header_size\":72,\"runtime_version\":\"2.5\",\"flags\":9,\"flag_names\":[\"il-only\",\"strong-name-signed\"],\"entry_point\":{\"kind\":\"none\",\"value\":null},\"metadata_rva\":123768,\"metadata_size\":138708,\"resources_rva\":0,\"resources_size\":0,\"strong_name_rva\":262476,\"strong_name_size\":128,\"managed_native_header_rva\":0,\"managed_native_header_size\":0,\"ready_to_run_signature\":false}},\"classification\":{\"status\":\"managed\",\"container\":\"pe\",\"runtime_family\":\"dotnet-framework\",\"implementation\":\"cil\",\"managed_architecture\":\"x86_64\",\"evidence\":[{\"code\":\"cli-header-observed\",\"detail\":\"A file-backed PE CLI header and metadata root were admitted.\",\"file_offset\":512},{\"code\":\"target-framework-observed\",\"detail\":\"An assembly-level TargetFrameworkAttribute names .NET Framework.\",\"file_offset\":149564},{\"code\":\"managed-architecture-derived\",\"detail\":\"Managed architecture x86_64 is derived from PE machine and CLI flags.\",\"file_offset\":528}]},\"metadata\":{\"status\":\"complete\",\"version\":\"v4.0.30319\",\"stream_names\":[\"#Blob\",\"#GUID\",\"#Strings\",\"#US\",\"#~\"],\"table_row_counts\":{\"Module\":1,\"TypeRef\":212,\"TypeDef\":148,\"Field\":727,\"MethodDef\":983,\"Param\":837,\"InterfaceImpl\":33,\"MemberRef\":982,\"Constant\":120,\"CustomAttribute\":574,\"ClassLayout\":1,\"StandAloneSig\":278,\"EventMap\":1,\"Event\":1,\"PropertyMap\":40,\"Property\":172,\"MethodSemantics\":271,\"MethodImpl\":4,\"TypeSpec\":226,\"FieldRVA\":1,\"Assembly\":1,\"AssemblyRef\":10,\"NestedClass\":103,\"GenericParam\":2,\"MethodSpec\":202}},\"module\":{\"name\":\"HardwareAccess.dll\",\"generation\":0,\"mvid\":\"4d8638a5-0986-4c40-8b5d-e93741ccae9e\",\"enc_id\":null,\"enc_base_id\":null,\"token\":\"0x00000001\",\"row_offset\":116320},\"assembly\":{\"name\":\"HardwareAccess\",\"version\":\"7.14.2.14\",\"culture\":null,\"flags\":1,\"hash_algorithm\":32772,\"public_key\":{\"kind\":\"public-key\",\"byte_length\":160,\"sha256\":\"0ebf34caf2f03fdaaf0aac9d68e8b9c8525cef2a2baeff81d0a4563801a979a2\",\"token\":\"a09a8e5da528268f\"},\"token\":\"0x20000001\",\"row_offset\":156882},\"target_frameworks\":[\".NETFramework,Version=v4.8\"],\"coverage\":{\"state\":\"complete\",\"issues\":[]},\"limitations\":[\"Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code.\"],\"reported_counts\":{\"references\":10,\"resources\":0,\"attributes\":574},\"identity_scope\":{\"token_identity\":\"build-local\",\"requires_artifact_sha256\":\"846d6e3f531d944bc3d34c7a8e7c28ef1fe8e5c6419b25f6281f1ec651a6524d\",\"requires_mvid\":\"4d8638a5-0986-4c40-8b5d-e93741ccae9e\"}}},\"confidence\":\"derived\",\"authority\":\"shipped-artifact\",\"environment\":null,\"limitations\":[\"Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code.\"],\"relationship_coverage\":null,\"locations\":[{\"kind\":\"artifact-path\",\"path\":\"/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/HardwareAccess.dll\"}],\"evidence_links\":[\"ev_5cba709de3826ed53fcb81450a10e258695129875d77c427d0fb1d147623f502\"]}"
+        }
+      ],
+      "structuredContent": {
+        "evidence_id": "ev_24b409ba62a8f230f324687573167ea971b95dfbf912cdae9554fc21912bd7fd",
+        "subject": {
+          "name": "HardwareAccess.dll",
+          "digest": {
+            "sha256": "846d6e3f531d944bc3d34c7a8e7c28ef1fe8e5c6419b25f6281f1ec651a6524d"
+          },
+          "local_path": "/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/HardwareAccess.dll",
+          "format": "pe",
+          "architecture": "x86_64"
+        },
+        "provider": {
+          "id": "rea-analysis-view",
+          "name": "REA analysis view projection",
+          "version": "1"
+        },
+        "analysis_profile": null,
+        "predicate_type": "rea.analysis-view",
+        "operation": "inspect_analysis_view",
+        "parameters": {
+          "parent_evidence_id": "ev_5cba709de3826ed53fcb81450a10e258695129875d77c427d0fb1d147623f502",
+          "view": {
+            "kind": "summary"
+          }
+        },
+        "raw_result": null,
+        "normalized_result": {
+          "kind": "summary",
+          "view": {
+            "kind": "summary"
+          },
+          "parent_evidence_id": "ev_5cba709de3826ed53fcb81450a10e258695129875d77c427d0fb1d147623f502",
+          "parent_operation": "inspect_managed_artifact",
+          "parent_digest": "5cba709de3826ed53fcb81450a10e258695129875d77c427d0fb1d147623f502",
+          "view_digest": "0793b529331d85fa652bb7b83a2e120a31a2c6581f12cf4bee454309081c00c8",
+          "artifact": {
+            "path": "/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/HardwareAccess.dll",
+            "sha256": "846d6e3f531d944bc3d34c7a8e7c28ef1fe8e5c6419b25f6281f1ec651a6524d"
+          },
+          "coverage": {
+            "status": "complete-within-view",
+            "examined": 584,
+            "total": 584,
+            "next_offset": null,
+            "exhausted": true
+          },
+          "limitations": [
+            "Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code."
+          ],
+          "unknowns": [
+            "Collection counts and pages cover producer-returned rows; metadata completeness remains the original metadata status and coverage, not an absence claim about unreturned rows.",
+            "Metadata tokens are build-local coordinates bound to the recorded artifact SHA-256 and module MVID; this view does not load or execute the assembly."
+          ],
+          "summary": {
+            "artifact": {
+              "path": "/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/HardwareAccess.dll",
+              "sha256": "846d6e3f531d944bc3d34c7a8e7c28ef1fe8e5c6419b25f6281f1ec651a6524d",
+              "byte_length": 277352,
+              "format": "pe"
+            },
+            "pe": {
+              "machine": 34404,
+              "machine_hex": "0x8664",
+              "architecture": "x86_64",
+              "optional_header": "pe32-plus",
+              "section_count": 2,
+              "characteristics": 8226,
+              "cli": {
+                "header_offset": 512,
+                "header_size": 72,
+                "runtime_version": "2.5",
+                "flags": 9,
+                "flag_names": [
+                  "il-only",
+                  "strong-name-signed"
+                ],
+                "entry_point": {
+                  "kind": "none",
+                  "value": null
+                },
+                "metadata_rva": 123768,
+                "metadata_size": 138708,
+                "resources_rva": 0,
+                "resources_size": 0,
+                "strong_name_rva": 262476,
+                "strong_name_size": 128,
+                "managed_native_header_rva": 0,
+                "managed_native_header_size": 0,
+                "ready_to_run_signature": false
+              }
+            },
+            "classification": {
+              "status": "managed",
+              "container": "pe",
+              "runtime_family": "dotnet-framework",
+              "implementation": "cil",
+              "managed_architecture": "x86_64",
+              "evidence": [
+                {
+                  "code": "cli-header-observed",
+                  "detail": "A file-backed PE CLI header and metadata root were admitted.",
+                  "file_offset": 512
+                },
+                {
+                  "code": "target-framework-observed",
+                  "detail": "An assembly-level TargetFrameworkAttribute names .NET Framework.",
+                  "file_offset": 149564
+                },
+                {
+                  "code": "managed-architecture-derived",
+                  "detail": "Managed architecture x86_64 is derived from PE machine and CLI flags.",
+                  "file_offset": 528
+                }
+              ]
+            },
+            "metadata": {
+              "status": "complete",
+              "version": "v4.0.30319",
+              "stream_names": [
+                "#Blob",
+                "#GUID",
+                "#Strings",
+                "#US",
+                "#~"
+              ],
+              "table_row_counts": {
+                "Module": 1,
+                "TypeRef": 212,
+                "TypeDef": 148,
+                "Field": 727,
+                "MethodDef": 983,
+                "Param": 837,
+                "InterfaceImpl": 33,
+                "MemberRef": 982,
+                "Constant": 120,
+                "CustomAttribute": 574,
+                "ClassLayout": 1,
+                "StandAloneSig": 278,
+                "EventMap": 1,
+                "Event": 1,
+                "PropertyMap": 40,
+                "Property": 172,
+                "MethodSemantics": 271,
+                "MethodImpl": 4,
+                "TypeSpec": 226,
+                "FieldRVA": 1,
+                "Assembly": 1,
+                "AssemblyRef": 10,
+                "NestedClass": 103,
+                "GenericParam": 2,
+                "MethodSpec": 202
+              }
+            },
+            "module": {
+              "name": "HardwareAccess.dll",
+              "generation": 0,
+              "mvid": "4d8638a5-0986-4c40-8b5d-e93741ccae9e",
+              "enc_id": null,
+              "enc_base_id": null,
+              "token": "0x00000001",
+              "row_offset": 116320
+            },
+            "assembly": {
+              "name": "HardwareAccess",
+              "version": "7.14.2.14",
+              "culture": null,
+              "flags": 1,
+              "hash_algorithm": 32772,
+              "public_key": {
+                "kind": "public-key",
+                "byte_length": 160,
+                "sha256": "0ebf34caf2f03fdaaf0aac9d68e8b9c8525cef2a2baeff81d0a4563801a979a2",
+                "token": "a09a8e5da528268f"
+              },
+              "token": "0x20000001",
+              "row_offset": 156882
+            },
+            "target_frameworks": [
+              ".NETFramework,Version=v4.8"
+            ],
+            "coverage": {
+              "state": "complete",
+              "issues": []
+            },
+            "limitations": [
+              "Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code."
+            ],
+            "reported_counts": {
+              "references": 10,
+              "resources": 0,
+              "attributes": 574
+            },
+            "identity_scope": {
+              "token_identity": "build-local",
+              "requires_artifact_sha256": "846d6e3f531d944bc3d34c7a8e7c28ef1fe8e5c6419b25f6281f1ec651a6524d",
+              "requires_mvid": "4d8638a5-0986-4c40-8b5d-e93741ccae9e"
+            }
+          }
+        },
+        "confidence": "derived",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "Static inspection did not load the assembly, resolve dependencies through a CLR, decompile C#, or execute target code."
+        ],
+        "relationship_coverage": null,
+        "locations": [
+          {
+            "kind": "artifact-path",
+            "path": "/tmp/omen-windows-reference/sdk-extracted/IntelXTU/XTU-7.14.2.14/Drivers/HardwareAccess.dll"
+          }
+        ],
+        "evidence_links": [
+          "ev_5cba709de3826ed53fcb81450a10e258695129875d77c427d0fb1d147623f502"
+        ]
+      }
+    }
+  }
+]

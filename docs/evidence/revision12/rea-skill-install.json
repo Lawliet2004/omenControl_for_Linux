@@ -1,0 +1,21 @@
+[
+  {
+    "name": "reverse-engineer-anything",
+    "status": "installed",
+    "source": "morluto/rea",
+    "ref": null,
+    "hash": "42b35b3223f712be309c9723528adc85a06342be3d8f6287dacf4a332aab1252",
+    "path": "/home/papan/Desktop/Projects/omen/.agents/skills/reverse-engineer-anything",
+    "scope": "project",
+    "agents": [
+      "Codex"
+    ],
+    "mode": "copy",
+    "security": {
+      "gen": "medium",
+      "socket": "0 alerts",
+      "snyk": "low",
+      "details": "https://skills.sh/morluto/rea"
+    }
+  }
+]

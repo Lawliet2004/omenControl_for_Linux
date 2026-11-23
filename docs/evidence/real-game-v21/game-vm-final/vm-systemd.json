@@ -1,0 +1,422 @@
+{
+  "started_utc": "2026-10-28T06:40:01.453166+00:00",
+  "package_sha256": "25964019083530e3c3e567dca7edd13cb4eebe1ce0ad2eea8aacc7f301ae3edf",
+  "image_sha256": "5645d0318ad21f643ebb1ac4567514620e9893380b07b0201fda163baa5b7eb5",
+  "qemu_version": "QEMU emulator version 10.2.1 (Debian 1:10.2.1+ds-1ubuntu3.3)",
+  "host_uid": 1000,
+  "host_package_installed": false,
+  "apt_mirror": "https://archive.ubuntu.com/ubuntu",
+  "offline_repository_sha256": "e484db343b75a7a357eac5e7d3e050b4c4a76acccd537258861f62a955e7334e",
+  "guest_network_restricted": true,
+  "dependency_resolution_only": false,
+  "extra_guest_packages": [
+    "plasma-desktop",
+    "sddm",
+    "polkit-kde-agent-1",
+    "xdg-desktop-portal-kde",
+    "python3-gi",
+    "gir1.2-atspi-2.0",
+    "at-spi2-core",
+    "dbus-user-session",
+    "xwayland",
+    "xauth",
+    "xserver-xorg-core",
+    "xserver-xorg-input-libinput",
+    "plasma-session-wayland",
+    "sddm-theme-breeze",
+    "python3-libevdev",
+    "lutris",
+    "openttd",
+    "openttd-opengfx"
+  ],
+  "repository_components": [
+    "main",
+    "multiverse",
+    "universe"
+  ],
+  "graphical_authorization_requested": false,
+  "real_game_requested": true,
+  "application_tests_executed": true,
+  "apt_cache_sha256": null,
+  "hardware_writes": false,
+  "physical_hardware_validated": false,
+  "result": "failed",
+  "vm_exited": true,
+  "temporary_files_removed": true,
+  "qemu_pid": 129433,
+  "qemu_arguments": [
+    "-no-user-config",
+    "-nodefaults",
+    "-machine",
+    "q35,accel=kvm,dump-guest-core=off",
+    "-cpu",
+    "host",
+    "-m",
+    "2048",
+    "-smp",
+    "2",
+    "-display",
+    "none",
+    "-vga",
+    "none",
+    "-monitor",
+    "none",
+    "-L",
+    "/home/papan/Desktop/Projects/omen/target/vm-runtime/root/usr/share/qemu",
+    "-bios",
+    "/home/papan/Desktop/Projects/omen/target/vm-runtime/root/usr/share/seabios/bios-256k.bin",
+    "-drive",
+    "file=/home/papan/Desktop/Projects/omen/target/omen-systemd-vm-n1mjvzgr/disk.qcow2,if=virtio,format=qcow2",
+    "-drive",
+    "file=/home/papan/Desktop/Projects/omen/target/omen-systemd-vm-n1mjvzgr/seed.iso,media=cdrom,readonly=on,format=raw",
+    "-netdev",
+    "user,id=net0,restrict=on,hostfwd=tcp:127.0.0.1:36051-:22",
+    "-device",
+    "virtio-net-pci,netdev=net0,romfile=,mac=52:54:00:12:34:56",
+    "-device",
+    "virtio-rng-pci",
+    "-serial",
+    "file:/home/papan/Desktop/Projects/omen/target/omen-systemd-vm-n1mjvzgr/serial.log",
+    "-sandbox",
+    "on,obsolete=deny,elevateprivileges=deny,spawn=deny,resourcecontrol=deny",
+    "-device",
+    "virtio-vga,xres=1280,yres=900,romfile=/home/papan/Desktop/Projects/omen/target/vm-runtime/root/usr/share/seabios/vgabios-virtio.bin",
+    "-qmp",
+    "unix:/home/papan/Desktop/Projects/omen/target/omen-systemd-vm-n1mjvzgr/qmp,server=on,wait=off"
+  ],
+  "graphical_captures": [
+    {
+      "path": "target/real-game-v21/game-vm-final/graphical-captures/openttd-lutris-windowed.png",
+      "sha256": "31a20390bc6e0082d8c0b06080cd5ce23607f8f10401a2577707473ce0a95b7e"
+    },
+    {
+      "path": "target/real-game-v21/game-vm-final/graphical-captures/openttd-lutris-fullscreen.png",
+      "sha256": "0c5895d924222657aa768254154d73bad61f66e7749d918c8158f7b48a75cd66"
+    },
+    {
+      "path": "target/real-game-v21/game-vm-final/graphical-captures/openttd-normal-exit.png",
+      "sha256": "10cf8d39640ed9f2c7a51a3b298a642243669847940c5f00ad17a6f5868eb216"
+    },
+    {
+      "path": "target/real-game-v21/game-vm-final/graphical-captures/real-game-failure.png",
+      "sha256": "c70466a1779e9056127192746cd0025548fa8b1d76c3dec8c40836633ac96df0"
+    }
+  ],
+  "partial_result": {
+    "checks_passed": [
+      "real systemd starts the installed read-only daemon; UID 1000 connects to its production socket",
+      "sandboxed installed service exposes real per-interface network counters and sampled rates to UID 1000",
+      "running process has NoNewPrivileges, seccomp and only CAP_DAC_OVERRIDE",
+      "actual mount namespace enforces read-only system/sysfs, writable service paths, hidden home and private tmp",
+      "sandboxed production pkcheck/polkit denies, grants a VM-only admin save and observes rule revocation",
+      "systemd stop removes the socket and RuntimeDirectory",
+      "systemd start/restart creates a new responding daemon",
+      "Restart=on-failure recovers the read-only service and socket after guest-only SIGKILL",
+      "packaged experimental writer is static and never enabled by installation",
+      "packaged writer sandbox starts without an unowned fixture write",
+      "writer has a separate cgroup and only the exact fixture mode attribute is writable",
+      "killing the controller entire service cgroup leaves independent Automatic recovery alive",
+      "systemd restarts a killed writer and its journal restores Automatic while controller remains stopped",
+      "old controller lease cannot reapply Maximum after writer restart",
+      "normal controller service stop restores Automatic without a broad hwmon sweep",
+      "independently scheduled writer expires a stopped controller lease in the real systemd guest",
+      "package removal hook preserves its executable and refuses to discard pending recovery intent",
+      "static socket activates a capability-free DynamicUser reader behind a root-private PID-1 endpoint",
+      "live client rejects fixture frames and desktop users cannot impersonate or access the control telemetry endpoint",
+      "identified active NVIDIA temperature passes fixture preflight; stale/future data restores Auto and cannot rearm itself",
+      "telemetry service loss restores Automatic without widening the controller device sandbox or using a user cache",
+      "installed service sandbox admits production-polkit-authorized desktop wrapper through peer pidfd and real cgroup v2",
+      "read-only cgroup sandbox observes exit and releases private PPD hold, persisting a root-owned private journal",
+      "installed sandbox restart preserves game execution and recovers Interrupted history without reapplying authority"
+    ],
+    "test_payload_sha256": "a1b4924093af386ab5e754cabd8e05c5642674942e7c2b2cddbbe9994b560b5f",
+    "initial_boot_id": "d221fd40-f381-4d74-b12d-218f189a3a3d",
+    "kernel": "7.0.0-38-generic",
+    "systemd_version": "systemd 259 (259.5-0ubuntu3.4)",
+    "network_monitoring": {
+      "interfaces": [
+        {
+          "ifindex": 2,
+          "link_state": "up",
+          "loopback": false,
+          "name": "enp0s1",
+          "rx_bytes": 499761694,
+          "rx_bytes_per_second": 0.0,
+          "rx_dropped_or_missed": 0,
+          "rx_errors": 0,
+          "tx_bytes": 1840616,
+          "tx_bytes_per_second": 0.0,
+          "tx_dropped": 0,
+          "tx_errors": 0
+        },
+        {
+          "ifindex": 1,
+          "link_state": "unknown",
+          "loopback": true,
+          "name": "lo",
+          "rx_bytes": 33188,
+          "rx_bytes_per_second": 0.0,
+          "rx_dropped_or_missed": 0,
+          "rx_errors": 0,
+          "tx_bytes": 33188,
+          "tx_bytes_per_second": 0.0,
+          "tx_dropped": 0,
+          "tx_errors": 0
+        }
+      ],
+      "interval_ms": 327,
+      "measured_unix_ms": 1793169689380,
+      "omitted_interfaces": 0,
+      "source": "kernel",
+      "unreadable_interfaces": 0
+    },
+    "loaded_sandbox_properties": "FragmentPath=/usr/lib/systemd/system/omen-linux.service\nReadWritePaths=/run/omen-linux /etc/omen-linux\nReadOnlyPaths=\nPrivateTmp=yes\nProtectKernelTunables=yes\nProtectHome=yes\nProtectSystem=strict\n",
+    "manager_mount_namespace": "mnt:[4026531832]",
+    "service_mount_namespace": "mnt:[4026532390]",
+    "sysfs_mountinfo": [
+      "421 415 0:25 / /sys rw,nosuid,nodev,noexec,relatime shared:351 master:5 - sysfs sysfs rw",
+      "422 421 0:8 / /sys/kernel/security rw,nosuid,nodev,noexec,relatime shared:352 master:6 - securityfs securityfs rw",
+      "423 421 0:29 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime shared:353 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting",
+      "424 421 0:30 / /sys/fs/pstore rw,nosuid,nodev,noexec,relatime shared:354 master:8 - pstore none rw",
+      "425 421 0:31 / /sys/fs/bpf rw,nosuid,nodev,noexec,relatime shared:355 master:9 - bpf bpf rw,mode=700",
+      "426 421 0:21 / /sys/kernel/config rw,nosuid,nodev,noexec,relatime shared:356 master:10 - configfs configfs rw",
+      "427 421 0:14 / /sys/kernel/tracing rw,nosuid,nodev,noexec,relatime shared:357 master:16 - tracefs tracefs rw",
+      "428 421 0:9 / /sys/kernel/debug rw,nosuid,nodev,noexec,relatime shared:358 master:17 - debugfs debugfs rw",
+      "429 421 0:36 / /sys/fs/fuse/connections rw,nosuid,nodev,noexec,relatime shared:359 master:20 - fusectl fusectl rw",
+      "437 421 0:25 / /sys ro,nosuid,nodev,noexec,relatime shared:360 master:5 - sysfs sysfs rw",
+      "438 437 0:8 / /sys/kernel/security ro,nosuid,nodev,noexec,relatime shared:361 master:6 - securityfs securityfs rw",
+      "439 437 0:29 / /sys/fs/cgroup ro,nosuid,nodev,noexec,relatime shared:362 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting",
+      "458 437 0:30 / /sys/fs/pstore ro,nosuid,nodev,noexec,relatime shared:364 master:8 - pstore none rw",
+      "459 437 0:31 / /sys/fs/bpf ro,nosuid,nodev,noexec,relatime shared:365 master:9 - bpf bpf rw,mode=700",
+      "460 437 0:21 / /sys/kernel/config ro,nosuid,nodev,noexec,relatime shared:366 master:10 - configfs configfs rw",
+      "461 437 0:14 / /sys/kernel/tracing ro,nosuid,nodev,noexec,relatime shared:367 master:16 - tracefs tracefs rw",
+      "462 437 0:9 / /sys/kernel/debug ro,nosuid,nodev,noexec,relatime shared:368 master:17 - debugfs debugfs rw",
+      "463 437 0:36 / /sys/fs/fuse/connections ro,nosuid,nodev,noexec,relatime shared:369 master:20 - fusectl fusectl rw",
+      "464 439 0:29 /system.slice/omen-linux.service/memory.pressure /sys/fs/cgroup/system.slice/omen-linux.service/memory.pressure rw,nosuid,nodev,noexec,relatime shared:363 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting"
+    ],
+    "service_mount_options": {
+      "/sys": {
+        "options": "rw,nosuid,nodev,noexec,relatime\nro,nosuid,nodev,noexec,relatime",
+        "statvfs_readonly": true,
+        "expected_writable": false
+      },
+      "/etc/hostname": {
+        "options": "ro,nosuid,relatime",
+        "statvfs_readonly": true,
+        "expected_writable": false
+      },
+      "/etc/omen-linux": {
+        "options": "rw,nosuid,relatime",
+        "statvfs_readonly": false,
+        "expected_writable": true
+      },
+      "/run/omen-linux": {
+        "options": "rw,nosuid,nodev",
+        "statvfs_readonly": false,
+        "expected_writable": true
+      }
+    },
+    "coarse_recovery_fixture_only": true,
+    "coarse_recovery_cleanup_complete": true,
+    "isolated_nvidia_fixture_only": true,
+    "isolated_nvidia_cleanup_complete": true,
+    "managed_session_fixture": {
+      "helper_sha256": "1af6ca2cc16173953d24cea78168f889896427c3bb639075c59ba2dc796508fa",
+      "private_ppd": true,
+      "physical_hardware_writes": false,
+      "production_polkit": true,
+      "installed_service_sandbox": true,
+      "cleanup_complete": true
+    },
+    "real_game": {
+      "result": "failed",
+      "checks_passed": [
+        "installed OMEN discovers actual native Lutris database and the signed OpenTTD/OpenGFX game is below 2 GB",
+        "production launch URI reaches unmodified Lutris command prefix, actual OpenTTD window and verified user scope with a held Performance profile",
+        "guest keyboard enters and exits actual game fullscreen on Plasma Wayland/Xwayland without losing the profile hold",
+        "game console quit ends the real process and scope, releases the hold and leaves no saved launch issue",
+        "explicit profile release keeps the real game running and normal game exit does not reapply a hold"
+      ],
+      "private_ppd": true,
+      "physical_hardware_writes": false,
+      "physical_keyboard_tested": false,
+      "input": "guest-only libevdev/uinput",
+      "real_game": "OpenTTD with OpenGFX",
+      "launcher": "native Lutris Linux runner",
+      "store_account_tested": false,
+      "source_sha256": "1c25cb1e42683e13cd2c03edf1d2717e746a1cc6e09e10bb36f1307331e65725",
+      "helper_sha256": "1af6ca2cc16173953d24cea78168f889896427c3bb639075c59ba2dc796508fa",
+      "authorization": "guest-only com.omenlinux.control grant; no admin grant",
+      "installed_service_sandbox": true,
+      "desktop_session": "21",
+      "installed_files": {
+        "/usr/games/openttd": "00fc1c967d7c44725cd89108bcb056947bbd1534f1aaf5dd90e6cad99320ec5f",
+        "/usr/games/lutris": "2860b4055c0bc795867780447e11051f6a66473b9eb5dd393693eb632bdbb910",
+        "/usr/lib/python3/dist-packages/lutris/runner_interpreter.py": "8454c8063c0c9cba9bdcbb306c946f372271f0e37c2f14bf9523e6b88b9f33bf",
+        "/usr/lib/python3/dist-packages/lutris/runners/linux.py": "7fc1eaad7546ebfb83d380c6a50f3ff3a8996c8057cee4c65331751bfe8e652b"
+      },
+      "versions": "lutris\t0.5.22-1\t6303\nopenttd\t15.1-1\t12856\nopenttd-data\t15.1-1\t14164\nopenttd-opengfx\t7.1-3\t5174\nplasma-workspace\t4:6.6.6-0ubuntu0.1\t25699\n",
+      "installed_game_kib": 32194,
+      "inventory": [
+        {
+          "id": "lutris/1",
+          "name": "OpenTTD",
+          "source": "lutris",
+          "launch_cmd": ""
+        }
+      ],
+      "launch_receipts": [
+        {
+          "launch": {
+            "launcher": {
+              "game_execution_verified": false,
+              "launcher_state": "running",
+              "process_id": 10918,
+              "startup_window_ms": 300
+            },
+            "managed": true,
+            "original_profile": null,
+            "profile_was_applied": false,
+            "requested_profile": "performance"
+          },
+          "ok": true
+        },
+        {
+          "launch": {
+            "launcher": {
+              "game_execution_verified": false,
+              "launcher_state": "running",
+              "process_id": 11279,
+              "startup_window_ms": 300
+            },
+            "managed": true,
+            "original_profile": null,
+            "profile_was_applied": false,
+            "requested_profile": "performance"
+          },
+          "ok": true
+        },
+        {
+          "launch": {
+            "launcher": {
+              "game_execution_verified": false,
+              "launcher_state": "running",
+              "process_id": 11443,
+              "startup_window_ms": 300
+            },
+            "managed": true,
+            "original_profile": null,
+            "profile_was_applied": false,
+            "requested_profile": "performance"
+          },
+          "ok": true
+        }
+      ],
+      "game_processes": [
+        {
+          "pid": 11086,
+          "uid": 1000,
+          "exe": "/usr/games/openttd",
+          "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/omen-game-749f6dbf3eaa93e8c896e8f283abebc8.scope",
+          "argv": [
+            "./openttd",
+            "-g",
+            "-r",
+            "960x600",
+            "-s",
+            "null",
+            "-m",
+            "null",
+            "-x",
+            "-c",
+            "/home/ubuntu/.config/openttd/openttd.cfg"
+          ],
+          "session": {
+            "detail": "Tracking the wrapped process tree. PPD releases this hold when the final process exits; effective profile may be selected by another hold.",
+            "game_id": "lutris/1",
+            "phase": "tracking",
+            "profile_held": true,
+            "requested_profile": "performance",
+            "started_unix": 1793169728,
+            "token": "749f6dbf3eaa93e8c896e8f283abebc8",
+            "updated_unix": 1793169728
+          },
+          "window": {
+            "xid": "0xe00009",
+            "properties": "_NET_WM_PID(CARDINAL) = 11086\n_NET_WM_NAME(UTF8_STRING) = \"OpenTTD 15.1\"\n_NET_WM_STATE(ATOM) = _NET_WM_STATE_FOCUSED\n"
+          }
+        },
+        {
+          "pid": 11322,
+          "uid": 1000,
+          "exe": "/usr/games/openttd",
+          "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/omen-game-cd17a7436233a72ee7dd1c5c26864cbc.scope",
+          "argv": [
+            "./openttd",
+            "-g",
+            "-r",
+            "960x600",
+            "-s",
+            "null",
+            "-m",
+            "null",
+            "-x",
+            "-c",
+            "/home/ubuntu/.config/openttd/openttd.cfg"
+          ],
+          "session": {
+            "detail": "Tracking the wrapped process tree. PPD releases this hold when the final process exits; effective profile may be selected by another hold.",
+            "game_id": "lutris/1",
+            "phase": "tracking",
+            "profile_held": true,
+            "requested_profile": "performance",
+            "started_unix": 1793169737,
+            "token": "cd17a7436233a72ee7dd1c5c26864cbc",
+            "updated_unix": 1793169737
+          },
+          "window": {
+            "xid": "0xe00009",
+            "properties": "_NET_WM_PID(CARDINAL) = 11322\n_NET_WM_NAME(UTF8_STRING) = \"OpenTTD 15.1\"\n_NET_WM_STATE(ATOM) = _NET_WM_STATE_FOCUSED\n"
+          }
+        },
+        {
+          "pid": 11482,
+          "uid": 1000,
+          "exe": "/usr/games/openttd",
+          "cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/omen-game-ef23e21a1420ae81f7f27305b546d1cd.scope",
+          "argv": [
+            "./openttd",
+            "-g",
+            "-r",
+            "960x600",
+            "-s",
+            "null",
+            "-m",
+            "null",
+            "-x",
+            "-c",
+            "/home/ubuntu/.config/openttd/openttd.cfg"
+          ],
+          "session": {
+            "detail": "Tracking the wrapped process tree. PPD releases this hold when the final process exits; effective profile may be selected by another hold.",
+            "game_id": "lutris/1",
+            "phase": "tracking",
+            "profile_held": true,
+            "requested_profile": "performance",
+            "started_unix": 1793169741,
+            "token": "ef23e21a1420ae81f7f27305b546d1cd",
+            "updated_unix": 1793169741
+          },
+          "window": {
+            "xid": "0xe00009",
+            "properties": "_NET_WM_PID(CARDINAL) = 11482\n_NET_WM_NAME(UTF8_STRING) = \"OpenTTD 15.1\"\n_NET_WM_STATE(ATOM) = _NET_WM_STATE_FOCUSED\n"
+          }
+        }
+      ],
+      "error": "RuntimeError: OpenTTD did not exit through its own console",
+      "fixture_cleanup_complete": true
+    }
+  },
+  "vm_exit_code": 0,
+  "finished_utc": "2026-10-28T06:43:05.095799+00:00"
+}

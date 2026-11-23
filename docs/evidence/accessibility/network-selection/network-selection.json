@@ -1,0 +1,2145 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "host_keyboard_events": false,
+  "profile": "release",
+  "cases": [
+    {
+      "case": "wide-light",
+      "font": "Sans 10",
+      "capture": "wide-light.png",
+      "selected_reading_contrast_measured": false,
+      "excluded_sample_reason": "native selection foreground is not exposed by Label.color()",
+      "capture_sha256": "225514dd5b84b3154b789abd371b1ad519f19cef3dde6fbc9798233369738bf2",
+      "horizontal_clipping": [],
+      "collapsed_text_allocations": [],
+      "contrast": [
+        {
+          "text": "System Vitals",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "label.title"
+          ],
+          "font": "Sans Bold 14.667px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.8281099324975892
+        },
+        {
+          "text": "Fixture",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "box.horizontal.end",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 11.172316991925232,
+          "required": 4.5,
+          "foreground": [
+            0.18431371450424194,
+            0.18431371450424194,
+            0.20313724456464544
+          ],
+          "background": [
+            0.9215686274509803,
+            0.9215686274509803,
+            0.9215686274509803
+          ],
+          "background_fraction": 0.7595486111111112
+        },
+        {
+          "text": "CPU clock",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 12px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.6785714285714286
+        },
+        {
+          "text": "\u2014",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 18.667px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.902834008097166
+        },
+        {
+          "text": "CPU utilization",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 12px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.6683203401842664
+        },
+        {
+          "text": "Collecting\u2026",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 18.667px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.6926573426573427
+        },
+        {
+          "text": "Memory used",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 12px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.6689291101055806
+        },
+        {
+          "text": "\u2014",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 18.667px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.8967611336032388
+        },
+        {
+          "text": "Storage used (/)",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 12px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.6734963648380701
+        },
+        {
+          "text": "\u2014",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 18.667px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.9089068825910931
+        },
+        {
+          "text": "Network interfaces",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6356617647058823
+        },
+        {
+          "text": "Per-interface rates; VPNs and bridges may count the same traffic. Values are not added. Errors and drops are cumulative; RX drops include missed packets.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8408472712541235
+        },
+        {
+          "text": "Fixture network counters",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9497915023103798
+        },
+        {
+          "text": "fixture0 \u00b7 up",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.sensor-row",
+            "label.heading"
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 11.664997744763124,
+          "required": 4.5,
+          "foreground": [
+            0.1898039102554321,
+            0.1898039102554321,
+            0.20941175399457707
+          ],
+          "background": [
+            0.9490196078431372,
+            0.9490196078431372,
+            0.9529411764705882
+          ],
+          "background_fraction": 0.9714384429344697
+        },
+        {
+          "text": "Reading held for selection. Clear the selection or leave this reading to resume live updates.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.sensor-row",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 11.664997744763124,
+          "required": 4.5,
+          "foreground": [
+            0.1898039102554321,
+            0.1898039102554321,
+            0.20941175399457707
+          ],
+          "background": [
+            0.9490196078431372,
+            0.9490196078431372,
+            0.9529411764705882
+          ],
+          "background_fraction": 0.8089945871242658
+        },
+        {
+          "text": "All sensors",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.655921052631579
+        },
+        {
+          "text": "Search sensor names, identifiers, devices or sources",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "entry.search",
+            "text.",
+            "placeholder."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.8796552177918147
+        },
+        {
+          "text": "Temperatures",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.636734693877551
+        },
+        {
+          "text": "CPU temp 1: 61.8 \u00b0C",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.sensor-row",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 11.664997744763124,
+          "required": 4.5,
+          "foreground": [
+            0.1898039102554321,
+            0.1898039102554321,
+            0.20941175399457707
+          ],
+          "background": [
+            0.9490196078431372,
+            0.9490196078431372,
+            0.9529411764705882
+          ],
+          "background_fraction": 0.9628584590579293
+        },
+        {
+          "text": "hwmon \u00b7 hwmon1/k10temp/temp1_input \u00b7 0s old",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.sensor-row",
+            "label.small.dim"
+          ],
+          "font": "Sans 11.333px",
+          "sensitive": true,
+          "ratio": 11.664997744763124,
+          "required": 4.5,
+          "foreground": [
+            0.1898039102554321,
+            0.1898039102554321,
+            0.20941175399457707
+          ],
+          "background": [
+            0.9490196078431372,
+            0.9490196078431372,
+            0.9529411764705882
+          ],
+          "background_fraction": 0.9117204595185996
+        },
+        {
+          "text": "Other readings",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6268867924528302
+        },
+        {
+          "text": "hp-wmi fan 1: 2800.0 RPM",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.sensor-row",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 11.664997744763124,
+          "required": 4.5,
+          "foreground": [
+            0.1898039102554321,
+            0.1898039102554321,
+            0.20941175399457707
+          ],
+          "background": [
+            0.9490196078431372,
+            0.9490196078431372,
+            0.9529411764705882
+          ],
+          "background_fraction": 0.9466198318553495
+        },
+        {
+          "text": "hwmon \u00b7 hwmon0/hp/fan1_input \u00b7 0s old",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.sensor-row",
+            "label.small.dim"
+          ],
+          "font": "Sans 11.333px",
+          "sensitive": true,
+          "ratio": 11.664997744763124,
+          "required": 4.5,
+          "foreground": [
+            0.1898039102554321,
+            0.1898039102554321,
+            0.20941175399457707
+          ],
+          "background": [
+            0.9490196078431372,
+            0.9490196078431372,
+            0.9529411764705882
+          ],
+          "background_fraction": 0.9268326039387309
+        },
+        {
+          "text": "hp-wmi fan 2: 2600.0 RPM",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.sensor-row",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 11.664997744763124,
+          "required": 4.5,
+          "foreground": [
+            0.1898039102554321,
+            0.1898039102554321,
+            0.20941175399457707
+          ],
+          "background": [
+            0.9490196078431372,
+            0.9490196078431372,
+            0.9529411764705882
+          ],
+          "background_fraction": 0.9458136588736612
+        },
+        {
+          "text": "hwmon \u00b7 hwmon0/hp/fan2_input \u00b7 0s old",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.sensor-row",
+            "label.small.dim"
+          ],
+          "font": "Sans 11.333px",
+          "sensitive": true,
+          "ratio": 11.664997744763124,
+          "required": 4.5,
+          "foreground": [
+            0.1898039102554321,
+            0.1898039102554321,
+            0.20941175399457707
+          ],
+          "background": [
+            0.9490196078431372,
+            0.9490196078431372,
+            0.9529411764705882
+          ],
+          "background_fraction": 0.9256701312910285
+        },
+        {
+          "text": "OMEN Control",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6705
+        },
+        {
+          "text": "Dashboard",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8793522267206477
+        },
+        {
+          "text": "System Vitals",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 9.051483578270854,
+          "required": 4.5,
+          "foreground": [
+            0.18274508714675902,
+            0.1537254810333252,
+            0.16627450166379706
+          ],
+          "background": [
+            0.9137254901960784,
+            0.7686274509803922,
+            0.7372549019607844
+          ],
+          "background_fraction": 0.8628879892037786
+        },
+        {
+          "text": "Performance Control",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7964912280701755
+        },
+        {
+          "text": "Fan & Thermal",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.861808367071525
+        },
+        {
+          "text": "Lighting Studio",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8445344129554656
+        },
+        {
+          "text": "Graphics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9017543859649123
+        },
+        {
+          "text": "Battery & Power",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.835357624831309
+        },
+        {
+          "text": "Game Library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8620782726045884
+        },
+        {
+          "text": "Settings & Diagnostics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7565452091767881
+        },
+        {
+          "text": "Monitor",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.924234693877551
+        },
+        {
+          "text": "Controls",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9237244897959184
+        },
+        {
+          "text": "Library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.936734693877551
+        },
+        {
+          "text": "Application",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8918367346938776
+        },
+        {
+          "text": "source: MOCK \u2014 fixture data, no real hardware",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "box.vertical",
+            "label.small.dim"
+          ],
+          "font": "Sans 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6858013716027432
+        }
+      ],
+      "inactive_labels": [],
+      "charts": [],
+      "contrast_failures": []
+    },
+    {
+      "case": "narrow-large-light",
+      "font": "Sans 20",
+      "capture": "narrow-large-light.png",
+      "selected_reading_contrast_measured": false,
+      "excluded_sample_reason": "native selection foreground is not exposed by Label.color()",
+      "capture_sha256": "75494ee27fb4baaf0bfaf646e26bdb3ee73f25489da870acb0eb9b59e2e1ab60",
+      "horizontal_clipping": [],
+      "collapsed_text_allocations": [],
+      "contrast": [
+        {
+          "text": "System Vitals",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "label.title"
+          ],
+          "font": "Sans Bold 29.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.7768858800773695
+        },
+        {
+          "text": "Fixture",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "box.horizontal.end",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 26.667px",
+          "sensitive": true,
+          "ratio": 11.172316991925232,
+          "required": 3.0,
+          "foreground": [
+            0.18431371450424194,
+            0.18431371450424194,
+            0.20313724456464544
+          ],
+          "background": [
+            0.9215686274509803,
+            0.9215686274509803,
+            0.9215686274509803
+          ],
+          "background_fraction": 0.7083926031294452
+        },
+        {
+          "text": "CPU clock",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 24px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.7706797706797707
+        },
+        {
+          "text": "\u2014",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 37.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.9148606811145511
+        },
+        {
+          "text": "CPU utilization",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 24px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.7533516988062443
+        },
+        {
+          "text": "Collecting\u2026",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 37.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.733190079684842
+        },
+        {
+          "text": "Memory used",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 24px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.7447552447552448
+        },
+        {
+          "text": "\u2014",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 37.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.9148606811145511
+        },
+        {
+          "text": "Storage used (/)",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 24px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.7451481103166496
+        },
+        {
+          "text": "\u2014",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 37.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.9071207430340558
+        },
+        {
+          "text": "Network interfaces",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 28px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 3.0,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6988122171945701
+        },
+        {
+          "text": "Per-interface rates; VPNs and bridges may count the same traffic. Values are not added. Errors and drops are cumulative; RX drops include missed packets.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 3.0,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7964368725582316
+        },
+        {
+          "text": "Fixture network counters",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 3.0,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8670114157478779
+        },
+        {
+          "text": "fixture0 \u00b7 up",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.sensor-row",
+            "label.heading"
+          ],
+          "font": "Sans Bold 26.667px",
+          "sensitive": true,
+          "ratio": 11.664997744763124,
+          "required": 3.0,
+          "foreground": [
+            0.1898039102554321,
+            0.1898039102554321,
+            0.20941175399457707
+          ],
+          "background": [
+            0.9490196078431372,
+            0.9490196078431372,
+            0.9529411764705882
+          ],
+          "background_fraction": 0.9139082903127846
+        },
+        {
+          "text": "Reading held for selection. Clear the selection or leave this reading to resume live updates.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.sensor-row",
+            "label.dim"
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 11.664997744763124,
+          "required": 3.0,
+          "foreground": [
+            0.1898039102554321,
+            0.1898039102554321,
+            0.20941175399457707
+          ],
+          "background": [
+            0.9490196078431372,
+            0.9490196078431372,
+            0.9529411764705882
+          ],
+          "background_fraction": 0.8319932652991101
+        },
+        {
+          "text": "All sensors",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 28px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 3.0,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7057225335371031
+        },
+        {
+          "text": "Search sensor names, identifiers, devices or sources",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "entry.search",
+            "text.",
+            "placeholder."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 3.0,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.6749921127353034
+        },
+        {
+          "text": "Temperatures",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 28px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 3.0,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6996712689020381
+        },
+        {
+          "text": "CPU temp 1: 61.8 \u00b0C",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.sensor-row",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 11.664997744763124,
+          "required": 3.0,
+          "foreground": [
+            0.1898039102554321,
+            0.1898039102554321,
+            0.20941175399457707
+          ],
+          "background": [
+            0.9490196078431372,
+            0.9490196078431372,
+            0.9529411764705882
+          ],
+          "background_fraction": 0.9010527381313899
+        }
+      ],
+      "inactive_labels": [],
+      "charts": [],
+      "contrast_failures": []
+    }
+  ],
+  "gui_sha256": "787c518933909bf40aacb9d738e46971f9d9fd471ec755acdc54b53774f47de3",
+  "key_events": [
+    "Control_L+2",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Control_L+a",
+    "Control_L+2",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Control_L+a"
+  ],
+  "cleanup_complete": true,
+  "measurement_recomputed_from_original_captures": true
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "path": "tests/systemd_vm.py",
+    "sha256": "a08b88e7c6ae1060b008266b824ba6bc97be70bc34de7e82a89e340e3f42a33f"
+  },
+  {
+    "path": "tests/systemd_vm_inner.py",
+    "sha256": "a1b4924093af386ab5e754cabd8e05c5642674942e7c2b2cddbbe9994b560b5f"
+  },
+  {
+    "path": "tests/coarse_recovery_vm_inner.py",
+    "sha256": "0b7b7c833793ff5f741f1c1fdb85833d87b45cf3899ebbcfc1fa9a91ca1b3cbf"
+  },
+  {
+    "path": "tests/nvidia_reader_vm_inner.py",
+    "sha256": "6281827745e47200c76cb8a7daede5fd6a17e84a55b3bd01339100774303d41c"
+  },
+  {
+    "path": "tests/managed_games_vm_inner.py",
+    "sha256": "0f4043e850c3b07025e8b3ab4c6c81cc0fc57ca3edda54276839f4f2f206ecd9"
+  },
+  {
+    "path": "tests/flatpak_scope_vm_inner.py",
+    "sha256": "9ef4a9379e1d15220995098d0c7ba82d2b7827ca8dd918110908ab1847632a30"
+  },
+  {
+    "path": "tests/package.py",
+    "sha256": "32d92dd06be7c917d1435248ccb507713b58998aa015cc1a40c7dd6060fd639e"
+  }
+]

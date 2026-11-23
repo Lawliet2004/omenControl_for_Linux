@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=OMEN Control
+GenericName=Hardware control center
+Comment=Monitor HP OMEN/Victus hardware, profiles and power status
+Exec=omen-gui
+Icon=com.omenlinux.Gui
+Terminal=false
+Categories=System;Monitor;
+Keywords=hardware;fan;thermal;omen;victus;hp;gaming;
+StartupNotify=true

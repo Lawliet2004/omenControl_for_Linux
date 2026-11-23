@@ -1,0 +1,14 @@
+[package]
+name = "omen-ipc"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "IPC protocol and Unix-socket client for the omen daemon"
+
+[dependencies]
+omen-core = { path = "../core" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+log = { workspace = true }
+tempfile = "3"

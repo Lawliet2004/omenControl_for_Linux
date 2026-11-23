@@ -1,0 +1,33 @@
+{
+  "host_packages_installed": false,
+  "purpose": "Extracted compiler sysroot assets only; no package maintainer script is executed",
+  "signed_index_sha256": "9c009342905706a05822f6e751f5b1ac34b687f054bfca9a0a652178445fc44c",
+  "inrelease_sha256": "45f95ce276cdba3e41870516a130e03c58b8b7a79e9546b0efe9e526d255740c",
+  "signature_status": [
+    "[GNUPG:] NEWSIG",
+    "[GNUPG:] KEY_CONSIDERED F6ECB3762474EDA9D21B7022871920D1991BC93C 0",
+    "[GNUPG:] SIG_ID u7N3KdZlUUFKlEUkoinMi3cQWWU 2026-04-23 1776964050",
+    "[GNUPG:] GOODSIG 871920D1991BC93C Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>",
+    "[GNUPG:] VALIDSIG F6ECB3762474EDA9D21B7022871920D1991BC93C 2026-04-23 1776964050 0 4 0 1 10 01 F6ECB3762474EDA9D21B7022871920D1991BC93C"
+  ],
+  "packages": [
+    {
+      "Package": "musl",
+      "Version": "1.2.5-3build1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/m/musl/musl_1.2.5-3build1_amd64.deb",
+      "SHA256": "ab4117a96375bd25db6be0be00fc1552d1747b7ed2401e96c48171a9e309c5b3",
+      "Size": "425264",
+      "download_url": "https://mirrors.xtom.com/ubuntu/pool/universe/m/musl/musl_1.2.5-3build1_amd64.deb"
+    },
+    {
+      "Package": "musl-dev",
+      "Version": "1.2.5-3build1",
+      "Architecture": "amd64",
+      "Filename": "pool/universe/m/musl/musl-dev_1.2.5-3build1_amd64.deb",
+      "SHA256": "6a254be70caa3515b04e5b1abd048bc158ad6cd58a5c61a907d3deb744104dc1",
+      "Size": "626486",
+      "download_url": "https://mirrors.xtom.com/ubuntu/pool/universe/m/musl/musl-dev_1.2.5-3build1_amd64.deb"
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "started_utc": "2026-10-28T09:42:07.261910+00:00",
+  "package_sha256": "1a7eb732fa5c672c2e920396ccdf163b718bb008008bc4cedd69ac7f8bb226df",
+  "image_sha256": "5645d0318ad21f643ebb1ac4567514620e9893380b07b0201fda163baa5b7eb5",
+  "qemu_version": "QEMU emulator version 10.2.1 (Debian 1:10.2.1+ds-1ubuntu3.3)",
+  "host_uid": 1000,
+  "host_package_installed": false,
+  "apt_mirror": "https://archive.ubuntu.com/ubuntu",
+  "offline_repository_sha256": "db5a0f709c2957d9d9115cacbfe7f2d608b20725085003448e33a170b90edea7",
+  "guest_network_restricted": true,
+  "dependency_resolution_only": false,
+  "extra_guest_packages": [
+    "flatpak",
+    "ostree",
+    "busybox-static"
+  ],
+  "repository_components": [
+    "main",
+    "universe"
+  ],
+  "graphical_authorization_requested": false,
+  "real_game_requested": false,
+  "source_switch_requested": false,
+  "flatpak_scope_probe_requested": true,
+  "application_tests_executed": true,
+  "apt_cache_sha256": null,
+  "hardware_writes": false,
+  "physical_hardware_validated": false,
+  "result": "failed",
+  "vm_exited": true,
+  "temporary_files_removed": true,
+  "qemu_pid": 382503,
+  "qemu_arguments": [
+    "-no-user-config",
+    "-nodefaults",
+    "-machine",
+    "q35,accel=kvm,dump-guest-core=off",
+    "-cpu",
+    "host",
+    "-m",
+    "1024",
+    "-smp",
+    "2",
+    "-display",
+    "none",
+    "-vga",
+    "none",
+    "-monitor",
+    "none",
+    "-L",
+    "/home/papan/Desktop/Projects/omen/target/vm-runtime/root/usr/share/qemu",
+    "-bios",
+    "/home/papan/Desktop/Projects/omen/target/vm-runtime/root/usr/share/seabios/bios-256k.bin",
+    "-drive",
+    "file=/home/papan/Desktop/Projects/omen/target/omen-systemd-vm-cydksfp6/disk.qcow2,if=virtio,format=qcow2",
+    "-drive",
+    "file=/home/papan/Desktop/Projects/omen/target/omen-systemd-vm-cydksfp6/seed.iso,media=cdrom,readonly=on,format=raw",
+    "-netdev",
+    "user,id=net0,restrict=on,hostfwd=tcp:127.0.0.1:45261-:22",
+    "-device",
+    "virtio-net-pci,netdev=net0,romfile=,mac=52:54:00:12:34:56",
+    "-device",
+    "virtio-rng-pci",
+    "-serial",
+    "file:/home/papan/Desktop/Projects/omen/target/omen-systemd-vm-cydksfp6/serial.log",
+    "-sandbox",
+    "on,obsolete=deny,elevateprivileges=deny,spawn=deny,resourcecontrol=deny"
+  ],
+  "partial_result": {
+    "checks_passed": [
+      "real systemd starts the installed read-only daemon; UID 1000 connects to its production socket",
+      "sandboxed installed service exposes real per-interface network counters and sampled rates to UID 1000",
+      "running process has NoNewPrivileges, seccomp and only CAP_DAC_OVERRIDE",
+      "actual mount namespace enforces read-only system/sysfs, writable service paths, hidden home and private tmp",
+      "sandboxed production pkcheck/polkit denies, grants a VM-only admin save and observes rule revocation",
+      "systemd stop removes the socket and RuntimeDirectory",
+      "systemd start/restart creates a new responding daemon",
+      "Restart=on-failure recovers the read-only service and socket after guest-only SIGKILL",
+      "packaged experimental writer is static and never enabled by installation",
+      "packaged writer sandbox starts without an unowned fixture write",
+      "writer has a separate cgroup and only the exact fixture mode attribute is writable",
+      "killing the controller entire service cgroup leaves independent Automatic recovery alive",
+      "systemd restarts a killed writer and its journal restores Automatic while controller remains stopped",
+      "old controller lease cannot reapply Maximum after writer restart",
+      "normal controller service stop restores Automatic without a broad hwmon sweep",
+      "independently scheduled writer expires a stopped controller lease in the real systemd guest",
+      "package removal hook preserves its executable and refuses to discard pending recovery intent",
+      "static socket activates a capability-free DynamicUser reader behind a root-private PID-1 endpoint",
+      "live client rejects fixture frames and desktop users cannot impersonate or access the control telemetry endpoint",
+      "identified active NVIDIA temperature passes fixture preflight; stale/future data restores Auto and cannot rearm itself",
+      "telemetry service loss restores Automatic without widening the controller device sandbox or using a user cache",
+      "installed service sandbox admits production-polkit-authorized desktop wrapper through peer pidfd and real cgroup v2",
+      "read-only cgroup sandbox observes exit and releases private PPD hold, persisting a root-owned private journal",
+      "installed sandbox restart preserves game execution and recovers Interrupted history without reapplying authority"
+    ],
+    "test_payload_sha256": "a1b4924093af386ab5e754cabd8e05c5642674942e7c2b2cddbbe9994b560b5f",
+    "initial_boot_id": "244b3f93-70c8-4c74-9187-4bfdbeb678d6",
+    "kernel": "7.0.0-38-generic",
+    "systemd_version": "systemd 259 (259.5-0ubuntu3.4)",
+    "network_monitoring": {
+      "interfaces": [
+        {
+          "ifindex": 2,
+          "link_state": "up",
+          "loopback": false,
+          "name": "enp0s1",
+          "rx_bytes": 150757538,
+          "rx_bytes_per_second": 0.0,
+          "rx_dropped_or_missed": 0,
+          "rx_errors": 0,
+          "tx_bytes": 601986,
+          "tx_bytes_per_second": 0.0,
+          "tx_dropped": 0,
+          "tx_errors": 0
+        },
+        {
+          "ifindex": 1,
+          "link_state": "unknown",
+          "loopback": true,
+          "name": "lo",
+          "rx_bytes": 27220,
+          "rx_bytes_per_second": 0.0,
+          "rx_dropped_or_missed": 0,
+          "rx_errors": 0,
+          "tx_bytes": 27220,
+          "tx_bytes_per_second": 0.0,
+          "tx_dropped": 0,
+          "tx_errors": 0
+        }
+      ],
+      "interval_ms": 327,
+      "measured_unix_ms": 1793180565546,
+      "omitted_interfaces": 0,
+      "source": "kernel",
+      "unreadable_interfaces": 0
+    },
+    "loaded_sandbox_properties": "FragmentPath=/usr/lib/systemd/system/omen-linux.service\nReadWritePaths=/run/omen-linux /etc/omen-linux\nReadOnlyPaths=\nPrivateTmp=yes\nProtectKernelTunables=yes\nProtectHome=yes\nProtectSystem=strict\n",
+    "manager_mount_namespace": "mnt:[4026531832]",
+    "service_mount_namespace": "mnt:[4026532255]",
+    "sysfs_mountinfo": [
+      "419 413 0:25 / /sys rw,nosuid,nodev,noexec,relatime shared:350 master:5 - sysfs sysfs rw",
+      "420 419 0:8 / /sys/kernel/security rw,nosuid,nodev,noexec,relatime shared:351 master:6 - securityfs securityfs rw",
+      "421 419 0:29 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime shared:352 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting",
+      "422 419 0:30 / /sys/fs/pstore rw,nosuid,nodev,noexec,relatime shared:353 master:8 - pstore none rw",
+      "423 419 0:31 / /sys/fs/bpf rw,nosuid,nodev,noexec,relatime shared:354 master:9 - bpf bpf rw,mode=700",
+      "424 419 0:21 / /sys/kernel/config rw,nosuid,nodev,noexec,relatime shared:355 master:10 - configfs configfs rw",
+      "425 419 0:9 / /sys/kernel/debug rw,nosuid,nodev,noexec,relatime shared:356 master:14 - debugfs debugfs rw",
+      "426 419 0:14 / /sys/kernel/tracing rw,nosuid,nodev,noexec,relatime shared:357 master:17 - tracefs tracefs rw",
+      "427 419 0:36 / /sys/fs/fuse/connections rw,nosuid,nodev,noexec,relatime shared:358 master:20 - fusectl fusectl rw",
+      "435 419 0:25 / /sys ro,nosuid,nodev,noexec,relatime shared:359 master:5 - sysfs sysfs rw",
+      "436 435 0:8 / /sys/kernel/security ro,nosuid,nodev,noexec,relatime shared:360 master:6 - securityfs securityfs rw",
+      "437 435 0:29 / /sys/fs/cgroup ro,nosuid,nodev,noexec,relatime shared:361 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting",
+      "456 435 0:30 / /sys/fs/pstore ro,nosuid,nodev,noexec,relatime shared:363 master:8 - pstore none rw",
+      "457 435 0:31 / /sys/fs/bpf ro,nosuid,nodev,noexec,relatime shared:364 master:9 - bpf bpf rw,mode=700",
+      "458 435 0:21 / /sys/kernel/config ro,nosuid,nodev,noexec,relatime shared:365 master:10 - configfs configfs rw",
+      "459 435 0:9 / /sys/kernel/debug ro,nosuid,nodev,noexec,relatime shared:366 master:14 - debugfs debugfs rw",
+      "460 435 0:14 / /sys/kernel/tracing ro,nosuid,nodev,noexec,relatime shared:367 master:17 - tracefs tracefs rw",
+      "461 435 0:36 / /sys/fs/fuse/connections ro,nosuid,nodev,noexec,relatime shared:368 master:20 - fusectl fusectl rw",
+      "462 437 0:29 /system.slice/omen-linux.service/memory.pressure /sys/fs/cgroup/system.slice/omen-linux.service/memory.pressure rw,nosuid,nodev,noexec,relatime shared:362 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting"
+    ],
+    "service_mount_options": {
+      "/sys": {
+        "options": "rw,nosuid,nodev,noexec,relatime\nro,nosuid,nodev,noexec,relatime",
+        "statvfs_readonly": true,
+        "expected_writable": false
+      },
+      "/etc/hostname": {
+        "options": "ro,nosuid,relatime",
+        "statvfs_readonly": true,
+        "expected_writable": false
+      },
+      "/etc/omen-linux": {
+        "options": "rw,nosuid,relatime",
+        "statvfs_readonly": false,
+        "expected_writable": true
+      },
+      "/run/omen-linux": {
+        "options": "rw,nosuid,nodev",
+        "statvfs_readonly": false,
+        "expected_writable": true
+      }
+    },
+    "coarse_recovery_fixture_only": true,
+    "coarse_recovery_cleanup_complete": true,
+    "isolated_nvidia_fixture_only": true,
+    "isolated_nvidia_cleanup_complete": true,
+    "managed_session_fixture": {
+      "helper_sha256": "f5e322fdb994d9e9bc0f209b7c67c8159a4f33560f52ba659a3fb6a73013a6ad",
+      "private_ppd": true,
+      "physical_hardware_writes": false,
+      "production_polkit": true,
+      "installed_service_sandbox": true,
+      "cleanup_complete": true
+    },
+    "flatpak_scope_probe": {
+      "result": "failed",
+      "checks_passed": [
+        "signed distro Flatpak installs a local minimal runtime and explicit sandbox fixture without a Flathub or game claim",
+        "real flatpak run moves its sandbox outside the initial OMEN-shaped scope into a separate app-flatpak scope",
+        "installed OMEN wrapper releases the private profile after scope migration while the real sandbox remains alive; naive host wrapping is insufficient"
+      ],
+      "physical_hardware_writes": false,
+      "real_game_tested": false,
+      "runtime": "locally built explicit scope fixture; not a Flathub compatibility claim",
+      "source_sha256": "6e4919d4c0c6dbacf1bab77f4feb118d532b35d07b50b77acd11b9e2a7021b94",
+      "helper_sha256": "f5e322fdb994d9e9bc0f209b7c67c8159a4f33560f52ba659a3fb6a73013a6ad",
+      "flatpak_version": "Flatpak 1.16.6",
+      "bubblewrap_version": "bubblewrap 0.11.1",
+      "raw_scope": {
+        "unit": "omen-game-11111111111111111111111111111111.scope",
+        "flatpak": {
+          "instance": "4046005699",
+          "pid": "4931",
+          "child_pid": "4943",
+          "application": "org.omenlinux.ScopeProbe",
+          "host_cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-org.omenlinux.ScopeProbe-4046005699.scope"
+        },
+        "observed_cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-org.omenlinux.ScopeProbe-4046005699.scope",
+        "original_unit_state": "inactive"
+      },
+      "managed_migration": {
+        "flatpak": {
+          "instance": "3465492559",
+          "pid": "4975",
+          "child_pid": "4990",
+          "application": "org.omenlinux.ScopeProbe",
+          "host_cgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-org.omenlinux.ScopeProbe-3465492559.scope"
+        },
+        "sessions": {
+          "mock": true,
+          "recovery_error": null,
+          "sessions": [
+            {
+              "detail": "Wrapped process tree ended. Its profile hold is released; later profile choices were preserved.",
+              "game_id": "custom/flatpak-probe",
+              "phase": "ended",
+              "profile_held": false,
+              "requested_profile": "performance",
+              "started_unix": 1793180604,
+              "token": "1183ad60a6859bf596ffc32eea6e2c82",
+              "updated_unix": 1793180604
+            }
+          ]
+        },
+        "profile_while_sandbox_alive": "balanced"
+      },
+      "enter_observation": {
+        "target_host_pid": 4991,
+        "namespace_inode": 4026532256,
+        "expected_command_exit": 7,
+        "return_code": 0,
+        "arguments": [
+          "two words",
+          "",
+          "'quoted'",
+          "$HOME",
+          "\u03b1",
+          "--literal"
+        ],
+        "stdout": "ENV=sandbox dynamic value\nCWD=/working directory\n0::/user.slice/user-1000.slice/user@1000.service/app.slice/omen-game-22222222222222222222222222222222.scope\nARG=two words\u0000ARG=\u0000ARG='quoted'\u0000ARG=/home/ubuntu\u0000ARG=\u03b1\u0000ARG=--literal\u0000",
+        "stderr": "/usr/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): No such file or directory\n"
+      },
+      "error": "AssertionError: ",
+      "logs": {
+        "ppd.log": "\nSession terminated, killing shell... ...killed.\n",
+        "private-bus.log": "\nSession terminated, killing shell... ...killed.\n",
+        "service.log": "\nSession terminated, killing shell... ...killed.\n",
+        "managed-scope.log": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): No such file or directory\nSANDBOX_PID=2\nCWD=/working directory\nENV=sandbox dynamic value\n0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-org.omenlinux.ScopeProbe-3465492559.scope\n",
+        "raw-scope.log": "/bin/sh: warning: setlocale: LC_ALL: cannot change locale (C.UTF-8): No such file or directory\nSANDBOX_PID=2\nCWD=/working directory\nENV=sandbox dynamic value\n0::/user.slice/user-1000.slice/user@1000.service/app.slice/app-flatpak-org.omenlinux.ScopeProbe-4046005699.scope\n"
+      },
+      "fixture_cleanup_complete": true
+    }
+  },
+  "vm_exit_code": 0,
+  "finished_utc": "2026-10-28T09:43:34.969490+00:00"
+}

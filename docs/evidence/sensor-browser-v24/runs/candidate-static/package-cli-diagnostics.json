@@ -1,0 +1,492 @@
+{
+  "ac": {
+    "online": true
+  },
+  "battery": {
+    "capacity_pct": 100,
+    "cycle_count": 146,
+    "energy_wh_design": 44.051,
+    "energy_wh_full": 44.051,
+    "energy_wh_now": 44.051,
+    "health_pct": 100.0,
+    "power_w": 0.0,
+    "present": true,
+    "state": "full",
+    "voltage_v": 13.052
+  },
+  "capabilities": {
+    "amd_telemetry": {
+      "detail": "hwmon amdgpu",
+      "status": "available"
+    },
+    "battery_aware_profiles": {
+      "detail": "monitoring mode; profile control requires explicit daemon opt-in for this board and BIOS",
+      "status": "read_only"
+    },
+    "charge_threshold": {
+      "detail": "firmware/kernel does not expose charge_control_end_threshold",
+      "status": "unavailable"
+    },
+    "fan_control": {
+      "detail": "hp-wmi exposes no pwm1 for board 8C30 (board is not on the hp-wmi fan-control allowlist)",
+      "status": "unavailable"
+    },
+    "fan_curve": {
+      "detail": "requires manual fan control",
+      "status": "unavailable"
+    },
+    "fan_modes": {
+      "detail": "Automatic/Maximum disabled: competing daemon 'victus-fan.service' is running",
+      "status": "read_only"
+    },
+    "fan_monitoring": {
+      "detail": "hp-wmi hwmon fan*_input",
+      "status": "available"
+    },
+    "graphics_mux": {
+      "detail": "no mainline kernel MUX interface for this model (status/monitoring only)",
+      "status": "unavailable"
+    },
+    "keyboard_backlight": {
+      "detail": "no keyboard backlight LED found",
+      "status": "unavailable"
+    },
+    "lighting_zone_count": null,
+    "lighting_zones": {
+      "detail": "no kernel keyboard-lighting interface (model without RGB keyboard or module not installed)",
+      "status": "unavailable"
+    },
+    "machine": {
+      "bios_vendor": "AMI",
+      "bios_version": "F.10",
+      "board_name": "8C30",
+      "board_vendor": "HP",
+      "class": "victus",
+      "kernel_version": "7.0.0-38-generic",
+      "product_family": "103C_5335M7 HP Victus",
+      "product_name": "Victus by HP 15.6 inch Gaming Laptop PC-fb1002AX",
+      "sys_vendor": "HP"
+    },
+    "nvidia_telemetry": {
+      "detail": "nvidia-smi interface and NVIDIA device nodes accessible; suspended GPU sampling is skipped",
+      "status": "available"
+    },
+    "performance_profiles": {
+      "detail": "monitoring mode; profile control requires explicit daemon opt-in for this board and BIOS",
+      "status": "read_only"
+    },
+    "profile_choices": [
+      "quiet",
+      "balanced",
+      "performance"
+    ],
+    "profile_plane": "power_profiles_daemon"
+  },
+  "graphics": {
+    "discrete_runtime": "active",
+    "gpus": [
+      {
+        "discrete": true,
+        "driver": "nvidia",
+        "pci_address": "0000:01:00.0",
+        "runtime_status": "active",
+        "vendor": "NVIDIA"
+      },
+      {
+        "discrete": false,
+        "driver": "amdgpu",
+        "pci_address": "0000:06:00.0",
+        "runtime_status": "active",
+        "vendor": "AMD"
+      }
+    ],
+    "inventory_complete": true,
+    "mux_available": false,
+    "mux_note": "No mainline kernel MUX interface for this model. omen-linux provides monitoring only and will never issue firmware graphics-mode changes without a verified interface."
+  },
+  "machine": {
+    "bios_vendor": "AMI",
+    "bios_version": "F.10",
+    "board_name": "8C30",
+    "board_vendor": "HP",
+    "class": "victus",
+    "kernel_version": "7.0.0-38-generic",
+    "product_family": "103C_5335M7 HP Victus",
+    "product_name": "Victus by HP 15.6 inch Gaming Laptop PC-fb1002AX",
+    "sys_vendor": "HP"
+  },
+  "mock": false,
+  "mode": "direct read-only",
+  "network": {
+    "interfaces": [
+      {
+        "ifindex": 6,
+        "link_state": "up",
+        "loopback": false,
+        "name": "docker0",
+        "rx_bytes": 47371272,
+        "rx_bytes_per_second": null,
+        "rx_dropped_or_missed": 0,
+        "rx_errors": 0,
+        "tx_bytes": 2551455204,
+        "tx_bytes_per_second": null,
+        "tx_dropped": 207,
+        "tx_errors": 0
+      },
+      {
+        "ifindex": 2,
+        "link_state": "down",
+        "loopback": false,
+        "name": "eno1",
+        "rx_bytes": 0,
+        "rx_bytes_per_second": null,
+        "rx_dropped_or_missed": 0,
+        "rx_errors": 0,
+        "tx_bytes": 0,
+        "tx_bytes_per_second": null,
+        "tx_dropped": 0,
+        "tx_errors": 0
+      },
+      {
+        "ifindex": 1,
+        "link_state": "unknown",
+        "loopback": true,
+        "name": "lo",
+        "rx_bytes": 11773647811,
+        "rx_bytes_per_second": null,
+        "rx_dropped_or_missed": 0,
+        "rx_errors": 0,
+        "tx_bytes": 11773647811,
+        "tx_bytes_per_second": null,
+        "tx_dropped": 0,
+        "tx_errors": 0
+      },
+      {
+        "ifindex": 73,
+        "link_state": "up",
+        "loopback": false,
+        "name": "veth59af55a",
+        "rx_bytes": 2144178,
+        "rx_bytes_per_second": null,
+        "rx_dropped_or_missed": 0,
+        "rx_errors": 0,
+        "tx_bytes": 111709662,
+        "tx_bytes_per_second": null,
+        "tx_dropped": 0,
+        "tx_errors": 0
+      },
+      {
+        "ifindex": 3,
+        "link_state": "up",
+        "loopback": false,
+        "name": "wlo1",
+        "rx_bytes": 42695465695,
+        "rx_bytes_per_second": null,
+        "rx_dropped_or_missed": 0,
+        "rx_errors": 0,
+        "tx_bytes": 7083918831,
+        "tx_bytes_per_second": null,
+        "tx_dropped": 839,
+        "tx_errors": 0
+      }
+    ],
+    "interval_ms": null,
+    "measured_unix_ms": 1793178366103,
+    "omitted_interfaces": 0,
+    "source": "kernel",
+    "unreadable_interfaces": 0
+  },
+  "sensors": [
+    {
+      "id": "hwmon1/acpitz_0/temp1_input",
+      "kind": "temperature",
+      "label": "acpitz_0 temp 1",
+      "measured_unix_ms": 1793178366053,
+      "source": "hwmon",
+      "text": null,
+      "value": 74.0
+    },
+    {
+      "id": "hwmon10/spd5118/temp1_input",
+      "kind": "temperature",
+      "label": "Memory module temp 1",
+      "measured_unix_ms": 1793178366054,
+      "source": "hwmon",
+      "text": null,
+      "value": 51.75
+    },
+    {
+      "device_id": "0000:06:00.0",
+      "id": "hwmon11/amdgpu/freq1_input",
+      "kind": "frequency",
+      "label": "sclk (amdgpu)",
+      "measured_unix_ms": 1793178366054,
+      "source": "hwmon",
+      "text": null,
+      "value": 200.0
+    },
+    {
+      "device_id": "0000:06:00.0",
+      "id": "hwmon11/amdgpu/in0_input",
+      "kind": "voltage",
+      "label": "vddgfx (amdgpu)",
+      "measured_unix_ms": 1793178366054,
+      "source": "hwmon",
+      "text": null,
+      "value": 1.31
+    },
+    {
+      "device_id": "0000:06:00.0",
+      "id": "hwmon11/amdgpu/in1_input",
+      "kind": "voltage",
+      "label": "vddnb (amdgpu)",
+      "measured_unix_ms": 1793178366054,
+      "source": "hwmon",
+      "text": null,
+      "value": 1.06
+    },
+    {
+      "device_id": "0000:06:00.0",
+      "id": "hwmon11/amdgpu/power1_input",
+      "kind": "power",
+      "label": "PPT (amdgpu)",
+      "measured_unix_ms": 1793178366054,
+      "source": "hwmon",
+      "text": null,
+      "value": 47.2
+    },
+    {
+      "device_id": "0000:06:00.0",
+      "id": "hwmon11/amdgpu/temp1_input",
+      "kind": "temperature",
+      "label": "edge (amdgpu)",
+      "measured_unix_ms": 1793178366054,
+      "source": "hwmon",
+      "text": null,
+      "value": 54.0
+    },
+    {
+      "id": "hwmon2/acpitz_1/temp1_input",
+      "kind": "temperature",
+      "label": "acpitz_1 temp 1",
+      "measured_unix_ms": 1793178366054,
+      "source": "hwmon",
+      "text": null,
+      "value": 20.0
+    },
+    {
+      "id": "hwmon3/BAT0/in0_input",
+      "kind": "voltage",
+      "label": "Battery voltage 0",
+      "measured_unix_ms": 1793178366055,
+      "source": "hwmon",
+      "text": null,
+      "value": 13.05
+    },
+    {
+      "id": "hwmon3/BAT0/power1_input",
+      "kind": "power",
+      "label": "Battery power 1",
+      "measured_unix_ms": 1793178366055,
+      "source": "hwmon",
+      "text": null,
+      "value": 0.0
+    },
+    {
+      "id": "hwmon4/nvme/temp1_input",
+      "kind": "temperature",
+      "label": "Composite (nvme)",
+      "measured_unix_ms": 1793178366055,
+      "source": "hwmon",
+      "text": null,
+      "value": 49.85
+    },
+    {
+      "id": "hwmon5/ucsi_source_psy_USBC000:001/curr1_input",
+      "kind": "current",
+      "label": "ucsi_source_psy_USBC000:001 current 1",
+      "measured_unix_ms": 1793178366055,
+      "source": "hwmon",
+      "text": null,
+      "value": 0.0
+    },
+    {
+      "id": "hwmon5/ucsi_source_psy_USBC000:001/in0_input",
+      "kind": "voltage",
+      "label": "ucsi_source_psy_USBC000:001 voltage 0",
+      "measured_unix_ms": 1793178366055,
+      "source": "hwmon",
+      "text": null,
+      "value": 0.0
+    },
+    {
+      "device_id": "0000:00:18.3",
+      "id": "hwmon6/k10temp/temp1_input",
+      "kind": "temperature",
+      "label": "Tctl (k10temp)",
+      "measured_unix_ms": 1793178366055,
+      "source": "hwmon",
+      "text": null,
+      "value": 74.5
+    },
+    {
+      "id": "hwmon7/hp/fan1_input",
+      "kind": "fan_rpm",
+      "label": "hp-wmi fan 1",
+      "measured_unix_ms": 1793178366057,
+      "source": "hwmon",
+      "text": null,
+      "value": 5404.0
+    },
+    {
+      "id": "hwmon7/hp/fan2_input",
+      "kind": "fan_rpm",
+      "label": "hp-wmi fan 2",
+      "measured_unix_ms": 1793178366059,
+      "source": "hwmon",
+      "text": null,
+      "value": 5195.0
+    },
+    {
+      "id": "hwmon8/mt7921_phy0/temp1_input",
+      "kind": "temperature",
+      "label": "mt7921_phy0 temp 1",
+      "measured_unix_ms": 1793178366060,
+      "source": "hwmon",
+      "text": null,
+      "value": 48.0
+    },
+    {
+      "id": "hwmon9/spd5118/temp1_input",
+      "kind": "temperature",
+      "label": "Memory module temp 1",
+      "measured_unix_ms": 1793178366061,
+      "source": "hwmon",
+      "text": null,
+      "value": 53.25
+    },
+    {
+      "id": "cpu/avg_freq",
+      "kind": "frequency",
+      "label": "CPU clock (12 cores)",
+      "measured_unix_ms": 1793178366061,
+      "source": "sysfs",
+      "text": null,
+      "value": 4155.17
+    },
+    {
+      "id": "mem/total",
+      "kind": "text",
+      "label": "Memory total",
+      "measured_unix_ms": 1793178366061,
+      "source": "procfs",
+      "text": "14.8 GiB",
+      "value": null
+    },
+    {
+      "id": "mem/used_pct",
+      "kind": "percent",
+      "label": "Memory used",
+      "measured_unix_ms": 1793178366061,
+      "source": "procfs",
+      "text": null,
+      "value": 81.3
+    },
+    {
+      "id": "cpu/load1",
+      "kind": "count",
+      "label": "Load average (1 min)",
+      "measured_unix_ms": 1793178366061,
+      "source": "procfs",
+      "text": null,
+      "value": 7.09
+    },
+    {
+      "id": "card2/amd/utilization",
+      "kind": "percent",
+      "label": "GPU utilization (AMD card2)",
+      "measured_unix_ms": 1793178366061,
+      "source": "amdgpu",
+      "text": null,
+      "value": 100.0
+    },
+    {
+      "id": "card2/amd/vram_used_pct",
+      "kind": "percent",
+      "label": "GPU VRAM used (AMD card2)",
+      "measured_unix_ms": 1793178366061,
+      "source": "amdgpu",
+      "text": null,
+      "value": 85.9710693359375
+    },
+    {
+      "id": "storage/root_used_pct",
+      "kind": "percent",
+      "label": "Root filesystem used",
+      "measured_unix_ms": 1793178366061,
+      "source": "sysfs",
+      "text": null,
+      "value": 71.53124962334213
+    },
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/name",
+      "kind": "text",
+      "label": "GPU",
+      "measured_unix_ms": 1793178366103,
+      "source": "nvidia_smi",
+      "text": "NVIDIA GeForce RTX 2050",
+      "value": null
+    },
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/temp",
+      "kind": "temperature",
+      "label": "GPU temperature (NVIDIA)",
+      "measured_unix_ms": 1793178366103,
+      "source": "nvidia_smi",
+      "text": null,
+      "value": 49.0
+    },
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/util",
+      "kind": "percent",
+      "label": "GPU utilization (NVIDIA)",
+      "measured_unix_ms": 1793178366103,
+      "source": "nvidia_smi",
+      "text": null,
+      "value": 0.0
+    },
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/power",
+      "kind": "power",
+      "label": "GPU power (NVIDIA)",
+      "measured_unix_ms": 1793178366103,
+      "source": "nvidia_smi",
+      "text": null,
+      "value": 2.72
+    },
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/sm_clock",
+      "kind": "frequency",
+      "label": "GPU SM clock (NVIDIA)",
+      "measured_unix_ms": 1793178366103,
+      "source": "nvidia_smi",
+      "text": null,
+      "value": 210.0
+    },
+    {
+      "device_id": "0000:01:00.0",
+      "id": "nvidia/vram_used_pct",
+      "kind": "percent",
+      "label": "GPU VRAM used (NVIDIA)",
+      "measured_unix_ms": 1793178366103,
+      "source": "nvidia_smi",
+      "text": null,
+      "value": 26.7578125
+    }
+  ]
+}

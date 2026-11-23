@@ -1,0 +1,510 @@
+{
+  "recorded_utc": "2026-10-27T09:15:20.493114+00:00",
+  "revision": "0.1.0-16",
+  "status": "verified software milestone; deployment validation and full audit remain incomplete",
+  "checkout_has_git_metadata": false,
+  "source_manifest": "source-manifest.json",
+  "source_sha256": "00dc0655911f9ead502aab0019bab18e300a6cc052b58753a8b14bd9d5b2ac0a",
+  "test_harness_manifest": "test-harness-manifest.json",
+  "test_harness_sha256": "6017431ca1e8d4b916249ffd6ecb7de13f578654d4a02bab0c67106ecf2c09b7",
+  "language": {
+    "application": "English only",
+    "user_instruction": "no only english",
+    "additional_translations_in_scope": false,
+    "catalogs_shipped": [],
+    "gettext_build_requirement": false,
+    "native_system_dialogs": "follow desktop settings"
+  },
+  "rust_workspace": {
+    "debug": {
+      "passed": 244,
+      "failed": 0,
+      "ignored": 0,
+      "log": "cargo-test-debug.log"
+    },
+    "release": {
+      "passed": 244,
+      "failed": 0,
+      "ignored": 0,
+      "log": "cargo-test-release.log"
+    }
+  },
+  "quality": {
+    "format_check": "passed",
+    "strict_clippy": "workspace all-targets all-features -D warnings passed"
+  },
+  "native_checks": {
+    "debug": {
+      "managed_integration": 15,
+      "foundations": 12
+    },
+    "release": {
+      "managed_integration": 15,
+      "foundations": 12
+    },
+    "gui_x11": {
+      "regressions": 29,
+      "managed_workflows": 5,
+      "gtk_display_type": "GdkX11Display",
+      "managed_gtk_display_type": "GdkX11Display",
+      "session_button_described_by": [
+        {
+          "type": 2,
+          "targets": [
+            "Profile setup"
+          ]
+        },
+        {
+          "type": 18,
+          "targets": [
+            "GUI session fixture\ncustom/gui"
+          ]
+        }
+      ],
+      "full_screen_reader_validation": false
+    },
+    "gui_wayland": {
+      "regressions": 29,
+      "managed_workflows": 5,
+      "gtk_display_type": "GdkWaylandDisplay",
+      "managed_gtk_display_type": "GdkWaylandDisplay",
+      "session_button_described_by": [
+        {
+          "type": 2,
+          "targets": [
+            "Profile setup"
+          ]
+        },
+        {
+          "type": 18,
+          "targets": [
+            "GUI session fixture\ncustom/gui"
+          ]
+        }
+      ],
+      "full_screen_reader_validation": false
+    }
+  },
+  "release_binaries": {
+    "omen-cli": {
+      "sha256": "9f0d304a347cef947d26104bcae62c864ade37270abd9f1ccea21034b7c52918"
+    },
+    "omen-daemon": {
+      "sha256": "f83bdb409f288d6e9ffb6903fc6b38e9820d37d3f40e7cbd0ce99b9178fe4f7b"
+    },
+    "omen-gui": {
+      "sha256": "f7b5687fff85b9255a0206db1605f5a6dee2c414ecbe64a369342fc3c0c22ccb"
+    }
+  },
+  "physical_hardware_writes_performed": false,
+  "host_package_or_service_installed": false,
+  "native_power_provider": "private PPD protocol fixture; no system power bus",
+  "remaining": [
+    "revision 16 container installation/lifecycle and installed-sandbox VM verification",
+    "GUI reporting of pre-registration wrapper failures",
+    "large-library responsiveness and row virtualization",
+    "real store/runtime managed execution",
+    "managed Flatpak execution and scope migration",
+    "complete keyboard, screen-reader, large-text and contrast validation",
+    "broader launcher formats",
+    "physical desktop shortcut, graphical polkit and full-screen overlay validation",
+    "physical fan/RGB/charging/graphics and suspend/resume release gates",
+    "wider target compatibility"
+  ],
+  "previous_package": {
+    "path": "target/debian/omen-linux_0.1.0-15_amd64.deb",
+    "sha256": "c8d546e4f2f52fed11a648819602e0d32ca550285f3f185bb8bd1138f0740fd5",
+    "evidence": "../audit-v15/validation-summary.json",
+    "scope": "earlier preserved snapshot"
+  },
+  "tested_runtime_package": {
+    "path": "target/audit-v16/deployment/tested-runtime.deb",
+    "sha256": "dbf4626be67b294374db1038b00b40084d63ef05e766a035ce433de3e9989b07"
+  },
+  "game_process_fixtures": 16,
+  "process_smoke": 7,
+  "installed_vm": {
+    "result": "not_verified",
+    "application_checks_executed": false,
+    "reason": "Dependency downloads stalled before application tests. Both guests exited and temporary files were removed.",
+    "prepared_test": "../../../tests/managed_games_vm_inner.py",
+    "attempts": [
+      "archive-download-attempt/vm-systemd.json",
+      "mirror-download-attempt/vm-systemd.json"
+    ]
+  },
+  "package_lifecycle": {
+    "result": "not_verified",
+    "application_checks_executed": false,
+    "reason": "Dependency downloads stalled before application tests. Both harness attempts were interrupted and containers removed.",
+    "attempts": [
+      "archive-download-attempt/package-lifecycle.json",
+      "mirror-download-attempt/package-lifecycle.json"
+    ]
+  },
+  "native_test_binaries": {
+    "debug": {
+      "managed_sha256": "9c3de105e2ca3a3fc70664d4cb3eb6ed957acb34acc68adc292cf01785ef00ee",
+      "foundations_sha256": "2711aa4126f8d53bf593cac2b7e3377ad1a7a6f5c43be16235273932fab44b17"
+    },
+    "release": {
+      "managed_sha256": "6b72d1aae30e33de6b7fe30309aaeccd0cee5787041ea8b4bf5b3115e79994ed",
+      "foundations_sha256": "6144021dbf30e3bc746735e2cc089328dadf138721a1143a66f0fc36481850f7"
+    }
+  },
+  "visual_review": {
+    "captures": [
+      {
+        "path": "docs/screenshots/managed-games/games-active-wide-light.png",
+        "sha256": "54115eb872dd26b7ef03ceaff130aa14246eb0cf3f51e53f62c692ad880775da",
+        "requested_size": [
+          1240,
+          1100
+        ],
+        "actual_size": [
+          1240,
+          1080
+        ],
+        "theme": "prefer-light",
+        "fixture_only": true
+      },
+      {
+        "path": "docs/screenshots/managed-games/games-setup-narrow-dark.png",
+        "sha256": "f45618db20f343d4fb59ad2d58624d8b0a6f5d3c6b7f2295da4298d4369e4b0e",
+        "requested_size": [
+          600,
+          1100
+        ],
+        "actual_size": [
+          600,
+          1080
+        ],
+        "theme": "prefer-dark",
+        "fixture_only": true
+      }
+    ],
+    "capture_cli_sha256": "dd99bb807b388a83b0c17b487aa981e8072e10dd8544437ef682def10190899c",
+    "scope_note": "Captures used the same final GUI with the earlier feature-enabled CLI; both final-package CLI/UI interaction workflows were separately rerun without recapturing.",
+    "scope": "final release, own GTK fixture trees, wide/light and narrow/dark; visually inspected together once after functional text wrapping/session identification fixes",
+    "full_contrast_audit": false,
+    "full_large_text_validation": false
+  },
+  "dependency_cache_recovery": {
+    "result": "incomplete",
+    "usable_as_install_validation": false,
+    "partial_files_are_not_verified_packages": true,
+    "range_request_jobs_stopped": true,
+    "cache_outside_package": "target/audit-v16/apt-cache"
+  },
+  "final_package": {
+    "path": "target/debian/omen-linux_0.1.0-16_amd64.deb",
+    "sha256": "f83ff12dbdcb73ffa0a79c5d8bc004148773405546cf8e97b8ac8985b97767af",
+    "static_verification": "package-validation.json",
+    "same_runtime_as_reference": true,
+    "documentation_only_changes": [
+      "usr/share/doc/omen-linux/APPLICATION_AUDIT_IMPLEMENTATION.md",
+      "usr/share/doc/omen-linux/MANAGED_GAME_SESSIONS.md",
+      "usr/share/doc/omen-linux/README.md",
+      "usr/share/doc/omen-linux/TEST_REPORT.md"
+    ],
+    "control_changes": [
+      "md5sums"
+    ],
+    "container_or_vm_validated": false
+  },
+  "native_cli_attribution": {
+    "release_invocation": "direct execution of the native test executable after the normal package build, without rebuilding the CLI with optional test features",
+    "cli_sha256": "9f0d304a347cef947d26104bcae62c864ade37270abd9f1ccea21034b7c52918",
+    "gtk_workflow_pair": "final packaged GUI and CLI hashes match both final-x11 and final-wayland session workflow records",
+    "earlier_capture_cli_differs": true,
+    "capture_gui_matches_final_package": true
+  },
+  "test_harness_repairs": [
+    {
+      "scope": "managed GUI AT-SPI walker",
+      "reason": "A child can disappear during dynamic traversal and be returned as None; the walker now skips that absent child. Both final workflows rerun.",
+      "retained_attempt": "managed-gui-atspi-null-attempt/gui-game-sessions-release.json"
+    }
+  ],
+  "cleanup": {
+    "new_container_attempts_removed": true,
+    "new_vm_attempts_exited_and_temporary_files_removed": true,
+    "new_native_test_processes_cleaned_up": true,
+    "no_game_scopes_left_after_native_checks": true,
+    "unrelated_existing_processes_and_containers_left_unchanged": true
+  },
+  "evidence_files": [
+    {
+      "path": "archive-download-attempt/audit-v16-container.log",
+      "sha256": "7d098ba91ac354d4096cb747f845d8bf41231be2face86d295dc02a0e1bc7053"
+    },
+    {
+      "path": "archive-download-attempt/audit-v16-vm.log",
+      "sha256": "9935992da28d7f0416240016b880cb94e5fed35cc9e0878c67833fd882d141f4"
+    },
+    {
+      "path": "archive-download-attempt/package-lifecycle-setup.log",
+      "sha256": "70a08a4e356a2704671e65acbad225e51b5c9fc67a9f3e02da84a975b11b501a"
+    },
+    {
+      "path": "archive-download-attempt/package-lifecycle.json",
+      "sha256": "18ac7f756a7b38e4546659d33bcc885c02e7ef85bbedb1c7485a102f7b6dfc03"
+    },
+    {
+      "path": "archive-download-attempt/vm-coarse-journal.log",
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e"
+    },
+    {
+      "path": "archive-download-attempt/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "archive-download-attempt/vm-serial.log",
+      "sha256": "93c24a2db4eabe9c5aafeb5984c7332abcb255c30a78f3d60b429e3cddd28e7d"
+    },
+    {
+      "path": "archive-download-attempt/vm-systemd-journal.log",
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e"
+    },
+    {
+      "path": "archive-download-attempt/vm-systemd-run.log",
+      "sha256": "2376f632aebe55a151f3162608340f7be292a23f5d81fe7be61493cab45b92a0"
+    },
+    {
+      "path": "archive-download-attempt/vm-systemd.json",
+      "sha256": "5cccc5fa6e35be6b6cfbb0db6d8bbbc0944d6bebdb178f999c272e2afbede0d6"
+    },
+    {
+      "path": "build-package-final.log",
+      "sha256": "fb439e02d4fa8ca343106e2af7e88e141d2eda729a6a3f015aa3c507e57d5478"
+    },
+    {
+      "path": "build-package.log",
+      "sha256": "43453ff37a685ccfc949bf28893bb650030342ba66464b65d591672d60afc15e"
+    },
+    {
+      "path": "cargo-clippy.log",
+      "sha256": "19e5545e9caeb7bc5d8d4e520d3ec7f95eae3d54469514826498bdcafa94a071"
+    },
+    {
+      "path": "cargo-fmt.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cargo-test-debug.log",
+      "sha256": "08dea8601249272e93d8d9afb8d2eaad9bc546db40bd945008263d4caf3f2c36"
+    },
+    {
+      "path": "cargo-test-release.log",
+      "sha256": "2844b6f3b4c217b8a63aa772e8f290714607708f597e04c4ab95fc1a20fbe96e"
+    },
+    {
+      "path": "desktop-file-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "foundations-native-debug.json",
+      "sha256": "70e9d0f397cd18ee094e6b8faad94cabd4ac2a9f63b95a7bf2716e3bedee21a0"
+    },
+    {
+      "path": "foundations-native-debug.log",
+      "sha256": "b92c080962599ef7cf8c72544aa912d1d3ec8dd9872c2816005ff63dd80c41be"
+    },
+    {
+      "path": "foundations-native-release.json",
+      "sha256": "5c1b23de159cf5344c73609eb36160fd0dfc0fa6c4b3bc1a07a5f7a7980b0a95"
+    },
+    {
+      "path": "foundations-native-release.log",
+      "sha256": "925db05399112de1eb992cf1ac7ffb1c509349a88591f80597256961f7e8a6b9"
+    },
+    {
+      "path": "game-launch-release.json",
+      "sha256": "2c0b14de6ee58f8b6d6477b597257953d660e5842e4498167933a0ce3da20be4"
+    },
+    {
+      "path": "game-launch-release.log",
+      "sha256": "2c0b14de6ee58f8b6d6477b597257953d660e5842e4498167933a0ce3da20be4"
+    },
+    {
+      "path": "gui-wayland-release.json",
+      "sha256": "dc1fcd6c54817dd29269164107633a4cc5c80c06468972a1f461dfdb751d4593"
+    },
+    {
+      "path": "gui-wayland-release.log",
+      "sha256": "530e155d596b73781a7d94b9880fa96c8e73286e5d1e7fef3404e38393ae86bd"
+    },
+    {
+      "path": "gui-x11-release.json",
+      "sha256": "10274e5da15d2055da2e7bcf479c99cdfa181a170b3b159e0f57d145a9362421"
+    },
+    {
+      "path": "gui-x11-release.log",
+      "sha256": "4b0b906d81d80434df20e4fa2d173f57728b9a682b1f1c45c514058da99e900a"
+    },
+    {
+      "path": "managed-gui-atspi-null-attempt/a11y.log",
+      "sha256": "b114ef0ac4bbbb227cf1696df281d222209bfa797d7ed83aa8fb01bfdba77002"
+    },
+    {
+      "path": "managed-gui-atspi-null-attempt/gui-game-sessions-release.json",
+      "sha256": "6212b253a5877cfbb344b2fced781e43e0b8b5b5679eef490834cf4ff68b7830"
+    },
+    {
+      "path": "managed-gui-atspi-null-attempt/gui.log",
+      "sha256": "c8ba5dda476e233164d45956a5b5f6910ca713d3eff30f7999cc0812726cb9fa"
+    },
+    {
+      "path": "managed-gui-atspi-null-attempt/power-bus.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-gui-atspi-null-attempt/ppd.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-gui-atspi-null-attempt/service.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "managed-gui-captures-release.json",
+      "sha256": "a86d623ad84de1399bfb4ddbaf7774e9c0da89f939f4e9e2f706048d292bf76d"
+    },
+    {
+      "path": "managed-gui-wayland-release.json",
+      "sha256": "b6d4553ae43c4e2e7e60dddc83efda64d521005c3517a2d124b73e9bcb97bbbb"
+    },
+    {
+      "path": "managed-gui-wayland-release.log",
+      "sha256": "213753374b56fe40d904a25ae1b9aed1dd176c2d993af8e2886a710c3d6e9a0f"
+    },
+    {
+      "path": "managed-gui-x11-release.json",
+      "sha256": "c4d03838f716b5053e3041042a6f768c653a2495f58f55c99525a044c5dc792d"
+    },
+    {
+      "path": "managed-gui-x11-release.log",
+      "sha256": "c8ba5dda476e233164d45956a5b5f6910ca713d3eff30f7999cc0812726cb9fa"
+    },
+    {
+      "path": "managed-native-debug.json",
+      "sha256": "be81ff489e09f34b25b154ab1faa7cc51d898667649ef2316fa51db05ac00a2b"
+    },
+    {
+      "path": "managed-native-debug.log",
+      "sha256": "cdd1753a63a929b83a1dbb291517ae6cd0b2255a05215b49f2f29eb2e89246ba"
+    },
+    {
+      "path": "managed-native-release.json",
+      "sha256": "447472139e8a1933d4753b5a76028bef707c3d051c8bbb574a52bbfe843baead"
+    },
+    {
+      "path": "managed-native-release.log",
+      "sha256": "035b0d97f2e83736d5f95d72333bd7296e6bac51f749f8a648e34fb524cf447b"
+    },
+    {
+      "path": "mirror-download-attempt/audit-v16-container.log",
+      "sha256": "5d37f91d0eee5ea00d95f073600bfbb60d21de439b66d38016554a31e8861d9d"
+    },
+    {
+      "path": "mirror-download-attempt/audit-v16-vm.log",
+      "sha256": "2a1d4781a0946f09b3402b43f3185f1f9fe5ecf1413a02b9d4d4f327844b258b"
+    },
+    {
+      "path": "mirror-download-attempt/package-lifecycle-setup.log",
+      "sha256": "6cbc897508ff65c1773f3dba311b761582390d68da6065e985e36ae518c84470"
+    },
+    {
+      "path": "mirror-download-attempt/package-lifecycle.json",
+      "sha256": "4aee49c346e4741f661a83222598535381fc016a95189466e6a2a143e87eec01"
+    },
+    {
+      "path": "mirror-download-attempt/vm-coarse-journal.log",
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e"
+    },
+    {
+      "path": "mirror-download-attempt/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "mirror-download-attempt/vm-serial.log",
+      "sha256": "41dc7214c233d7f7874a6525694a5374017eda2c490d77ae40abdd2601d31c2d"
+    },
+    {
+      "path": "mirror-download-attempt/vm-systemd-journal.log",
+      "sha256": "19c4e28b2f54ea8f217db4e622b0a5c758efa7b77ce2dc0394b6d159568c0b2e"
+    },
+    {
+      "path": "mirror-download-attempt/vm-systemd-run.log",
+      "sha256": "5f16949467dcf3328880b6b232955b44ce6e9c6bd0747a1e89e464e4fe87fe79"
+    },
+    {
+      "path": "mirror-download-attempt/vm-systemd.json",
+      "sha256": "a221269872858353d997944d3723b01713ef9c61e0b28c75e6b7f7e03ec15950"
+    },
+    {
+      "path": "package-checksums.log",
+      "sha256": "980df67f54db15d8ad9e2b7822a3e2775e9c176886f3e305a6c7339ee71aa7f7"
+    },
+    {
+      "path": "package-cli-diagnostics.json",
+      "sha256": "c2775ed7e4aad13cc6ca152a98fbb1490278c62c954d6a0303f1a39946380a98"
+    },
+    {
+      "path": "package-lifecycle-setup.log",
+      "sha256": "ab4a818fd7055fd3050c49b2195a69dfa6e3c600ba401680e6ecd4e224ec47d5"
+    },
+    {
+      "path": "package-runtime-linkage.log",
+      "sha256": "13fa722b3950f7c2f49d6a06c6279c5c7ebd0a53e21f83311ac82be267b01357"
+    },
+    {
+      "path": "package-validation.json",
+      "sha256": "0ac964cd742109e5f2638d9cb1f6dd023405cc0018ab42cbb5a9bc287ab1f76d"
+    },
+    {
+      "path": "runtime-desktop-file-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runtime-package-checksums.log",
+      "sha256": "980df67f54db15d8ad9e2b7822a3e2775e9c176886f3e305a6c7339ee71aa7f7"
+    },
+    {
+      "path": "runtime-package-cli-diagnostics.json",
+      "sha256": "3ecc6c6307725a66f5e797d0bcf44b671dab2810527e4f5586d9b22f3b6dc054"
+    },
+    {
+      "path": "runtime-package-runtime-linkage.log",
+      "sha256": "a8f69917810f7e1bb24cae14f491235e9d8a961190a444d581dbbef49b21b22b"
+    },
+    {
+      "path": "runtime-package-validation.json",
+      "sha256": "4b25dd48be0e33519871f51bcc5cbb18db5a8052693a87a3b8daf9ea46861dae"
+    },
+    {
+      "path": "runtime-systemd-payload-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "smoke-release.json",
+      "sha256": "27618add4320c57fb1f9f810d94a33546c13d8da93d437f90871f3f7ce8c4cea"
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "5f17797cd40e6bf9799e4062164f5100783fdc6905ce0a0a26671bf503d55244"
+    },
+    {
+      "path": "systemd-payload-validation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "test-harness-manifest.json",
+      "sha256": "a6c4a120c2be524889e4adbf3796b52ceed9a41f5f34ccd32f82a2ba97483b41"
+    },
+    {
+      "path": "vm-systemd-run.log",
+      "sha256": "49acf27781d1e063691ad0c34b97c68c6a8fbbdc1662fb4dfd7ff664bd104d5f"
+    }
+  ]
+}

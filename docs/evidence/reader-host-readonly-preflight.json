@@ -1,0 +1,19 @@
+{
+  "fixture_only": false,
+  "physical_writes_requested": false,
+  "result": "read_only_preflight",
+  "observations": [
+    {
+      "unix_ms": 1793043710713,
+      "mode": "2",
+      "cpu_rpm": 3189,
+      "gpu_rpm": 2698
+    }
+  ],
+  "automatic_restored": null,
+  "exact_target": "8C30:F.10:7.0.0-38-generic:hwmon7",
+  "capabilities": {
+    "detail": "interface detected; live model/BIOS validation pending",
+    "status": "read_only"
+  }
+}

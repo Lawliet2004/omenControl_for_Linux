@@ -1,0 +1,9 @@
+[Unit]
+Description=Private read-only NVIDIA telemetry socket
+[Socket]
+ListenStream=/run/omen-nvidia-reader/control.sock
+SocketMode=0600
+DirectoryMode=0700
+RemoveOnStop=yes
+Service=omen-nvidia-reader.service
+# Static: started only for an explicitly approved experimental control session.

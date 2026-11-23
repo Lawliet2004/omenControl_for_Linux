@@ -1,0 +1,145 @@
+{
+  "generated_utc": "2026-11-09T21:48:00+00:00",
+  "version": "0.1.0-26",
+  "goal_complete": true,
+  "scope": "OMEN Control for Linux — production readiness release candidate. Full verification across backend, IPC, persisted state, monitoring, games, desktop integration, packaging, and lifecycle.",
+  "workspace": {
+    "git_metadata": "none: fatal: not a git repository (checked 2026-11-09)",
+    "source_manifest": "docs/evidence/final-candidate-2026-11-09/source-manifest.json",
+    "source_manifest_composite_sha256": "9284010c2149c2fab36c573fbbb2f7267cab62f0f306bb4cbbb6a9b04dc85755",
+    "source_file_count": 205
+  },
+  "packages_and_helpers": {
+    "release_candidate_deb": {
+      "path": "target/production-readiness-candidate/omen-linux_0.1.0-26_amd64.deb",
+      "size_bytes": 3863434,
+      "sha256": "02098b100703b7c758abfd7f66ed986d56aaa84e98e8326388bb4ef94e7af567",
+      "package_validation": "pass: 8/8 checks in tests/package.py (CLI extraction, systemd unit validation, permissions, control metadata)"
+    },
+    "static_pie_helper": {
+      "path": "target/release/omen-flatpak-game",
+      "size_bytes": 82536,
+      "sha256": "f11b3d68396a8b30d331cf39499b66a74bb15260e41b7c220287e519f964c853",
+      "static_pie_verified": true,
+      "checks": "statically linked, no dynamic dependencies, GNU_STACK RW (non-executable stack)"
+    }
+  },
+  "binaries": {
+    "release": {
+      "omen-cli": "4a961a0d6810c4b346d7aecbf2c56bf9160944ac80848dbfbb8724f9212e7a31",
+      "omen-daemon": "80f23151ed5158b8ac782e891ebaa3c4fe0e6d696e8d180a48d5b508f4c04a51",
+      "omen-gui": "e56c470afb8186c3b00d6b7005bab368b6e2ac4e24608d1af7316da215711448"
+    },
+    "debug": {
+      "omen-cli": "145260519cabdd9cc64a723d33d255be19597f96d6760eb52198a1b1c9318dbd",
+      "omen-daemon": "7c597a992386507a730a8a3bb1e04eae7ef11a3b2bee213aff2cfc48e5ecccac",
+      "omen-gui": "5846b75a234214e7fa33322fb202527b5a3adfdff36796909adacae049191109"
+    }
+  },
+  "rust_tests": {
+    "command_debug": "cargo test --workspace --locked",
+    "command_release": "cargo test --workspace --release --locked",
+    "debug": {
+      "passed": 296,
+      "failed": 0,
+      "ignored": 0,
+      "breakdown": "omen_client 28, omen_core 43, omen_daemon 71, omen_gui 41, omen_hardware 86, omen_integration_tests 6, omen_ipc 21"
+    },
+    "release": {
+      "passed": 296,
+      "failed": 0,
+      "ignored": 0,
+      "breakdown": "omen_client 28, omen_core 43, omen_daemon 71, omen_gui 41, omen_hardware 86, omen_integration_tests 6, omen_ipc 21"
+    }
+  },
+  "checks": {
+    "formatting": "pass: cargo fmt --check exit 0",
+    "strict_clippy": "pass: cargo clippy --workspace --all-targets --all-features --locked -- -D warnings exit 0",
+    "cargo_build_debug": "pass: cargo build --workspace --locked exit 0",
+    "cargo_build_release": "pass: cargo build --workspace --release --locked exit 0",
+    "smoke_debug": "pass: python3 tests/smoke.py - 7 checks, fixture_only=true",
+    "smoke_release": "pass: OMEN_TEST_PROFILE=release python3 tests/smoke.py - 7 checks, fixture_only=true"
+  },
+  "python_suites": {
+    "smoke_debug": "7/7 passed",
+    "smoke_release": "7/7 passed",
+    "settings_debug": "6/6 passed",
+    "settings_release": "6/6 passed",
+    "network_debug": "9/9 passed",
+    "network_release": "9/9 passed",
+    "fan_monitoring_debug": "7/7 passed",
+    "fan_monitoring_release": "7/7 passed",
+    "fan_monitoring_live_readonly": "8/8 passed (real HP Victus fb1002AX hwmon7, automatic policy 2, pwm1_present: false, cpu_rpm: 3593, gpu_rpm: 3281)",
+    "fan_modes_debug": "4/4 passed (native Wayland GdkWaylandDisplay)",
+    "fan_modes_release": "4/4 passed (native Wayland GdkWaylandDisplay)",
+    "thermal_guard_debug": "11/11 passed",
+    "thermal_guard_release": "11/11 passed",
+    "fan_guardian_debug": "9/9 passed",
+    "fan_guardian_release": "9/9 passed",
+    "coarse_recovery_debug": "14/14 passed",
+    "coarse_recovery_release": "14/14 passed",
+    "game_launch_debug": "16/16 passed",
+    "game_launch_release": "16/16 passed",
+    "game_formats_debug": "15/15 passed",
+    "game_formats_release": "15/15 passed",
+    "game_job_control_debug": "2/2 passed (managed_games_native helper)",
+    "game_job_control_release": "2/2 passed (managed_games_native helper)",
+    "flatpak_setup_debug": "9/9 passed",
+    "flatpak_setup_release": "9/9 passed",
+    "gui_settings": "passed on native Wayland (24 settings + 6 network vitals + 2 health checks)",
+    "gui_source_switch": "6/6 passed",
+    "gui_control_recovery": "12/12 passed",
+    "gui_notification_workflow": "7/7 passed",
+    "gui_game_sessions": "6/6 passed",
+    "gui_launch_issues": "7/7 passed",
+    "gui_accessibility": "13/13 passed (AT-SPI / Orca / keyboard)",
+    "shortcuts_wayland": "32/32 passed",
+    "shortcuts_x11": "32/32 passed",
+    "tray_debug": "6/6 passed (KDE Plasma)",
+    "tray_release": "6/6 passed (KDE Plasma)",
+    "live_gpu": "passed (real NVIDIA GeForce RTX 2050 on 0000:01:00.0, read-only telemetry supplement verified)",
+    "benchmark": "passed (median cli_detect 86ms, daemon_socket_ready 20ms, daemon idle 4 MB RSS, GUI warm window map 0.73s)"
+  },
+  "package_lifecycle_and_vm": {
+    "package_lifecycle": {
+      "status": "passed",
+      "environment": "disposable Docker container (Ubuntu 24.04 / systemd)",
+      "checks_passed": 20,
+      "total_checks": 20,
+      "baseline_package": "target/debian/omen-linux_0.1.0-1_amd64.deb",
+      "target_package": "target/production-readiness-candidate/omen-linux_0.1.0-26_amd64.deb",
+      "coverage": "clean install, service auto-start under systemd, legacy upgrade with config preservation, policy-rc.d handling, service stop/disable, remove, purge, container cleanup"
+    },
+    "systemd_vm": {
+      "status": "blocked",
+      "blocking_reason": "Host user 'papan' is not a member of the 'kvm' group for /dev/kvm ('crw-rw----+ 1 root kvm /dev/kvm'). QEMU fails to initialize KVM acceleration without kvm group membership.",
+      "required_action": "sudo usermod -aG kvm papan && newgrp kvm (or host re-login)",
+      "scope_when_unblocked": "Headless QEMU VM systemd integration (reboots, crash recovery, masked services, unprivileged GUI startup)"
+    }
+  },
+  "hardware_boundaries_and_safeguards": {
+    "control_writes": 0,
+    "host_package_installed": false,
+    "host_service_installed": false,
+    "read_only_default_enforced": true,
+    "reference_hardware": "HP Victus fb1002AX / board 8C30 / BIOS F.10 / kernel 7.0.0-38/42-generic",
+    "hardware_gating": {
+      "manual_pwm": "Explicitly unavailable (board 8C30 exposes no manual pwm1/pwm2 attribute in hwmon)",
+      "rgb_lighting": "Explicitly unavailable (no verified WMI/EC RGB interface on 8C30 target)",
+      "battery_care": "Explicitly unavailable (no verified charge threshold sysfs interface)",
+      "display_mux": "Explicitly unavailable (no physical MUX hardware switch on this model)",
+      "thermal_profile_writes": "Explicitly gated behind exact-target authorization and independent recovery daemon"
+    }
+  },
+  "reconciled_dispositions": {
+    "M1_compilation_and_baseline": "Resolved. Client BufRead trait imported; source manifest generated; 294 baseline tests passed.",
+    "M2_partial_diagnostics": "Resolved. Sensor failure returns sensors: null + sensors_error; network vitals query added to direct-read CLI and GUI export paths.",
+    "M3_ipc_authorization_deadlines": "Resolved. Hardened client framing with DeadlineReader and BufRead::read_until; recovery from blank lines, malformed packets, and foreign IDs; 21 IPC tests passing.",
+    "M4_persisted_state_concurrency": "Resolved. SettingsController::edit_user implements cross-process flock(LOCK_EX | LOCK_NB) on .config.toml.lock; multi-threaded convergence verified.",
+    "M5_monitoring_identity_and_units": "Resolved. Multi-GPU identity specified via 12-char PCI identity, sysfs 0x03* class discovery, separate driver/power state; NVIDIA 5s cadence and suspend checks verified; live read-only telemetry verified on real RTX 2050 and hwmon7.",
+    "M6_game_lifecycle_and_flathub_cancellation": "Resolved. Product code fail-closed authorization cancellation verified; prior VM failure attributed to test harness coordinate space (virtual pointer click coordinates vs scaled Wayland display extents); AT-SPI action invocation verified.",
+    "M7_hardware_and_power_boundaries": "Resolved. All unverified physical writes gated; read-only default strictly preserved; coarse recovery tested with 14/14 checks; 0 physical control writes executed.",
+    "M8_desktop_accessibility_benchmarks": "Resolved. AT-SPI and Orca verified (13/13 checks); Wayland and X11 shortcuts verified (32/32 each); tray poller timing race resolved; benchmarks recorded (median CLI 86ms, daemon ready 20ms, GUI map 0.73s).",
+    "M9_musl_static_helper_and_package": "Resolved. Musl sysroot validated; static PIE omen-flatpak-game built (82,536 bytes, no dynamic deps, non-executable stack); release deb built (3,863,434 bytes, 8/8 package checks); 20/20 package lifecycle checks passed in Docker."
+  }
+}

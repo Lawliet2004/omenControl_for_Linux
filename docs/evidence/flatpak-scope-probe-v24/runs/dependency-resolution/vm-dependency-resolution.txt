@@ -1,0 +1,174 @@
+Reading package lists...
+Building dependency tree...
+Reading state information...
+busybox-static is already the newest version (1:1.37.0-7ubuntu1).
+busybox-static set to manually installed.
+Solving dependencies...
+The following additional packages will be installed:
+  adwaita-icon-theme bubblewrap dconf-gsettings-backend dconf-service
+  fontconfig fontconfig-config fonts-dejavu-core fonts-dejavu-mono
+  glycin-loaders glycin-thumbnailers gtk-update-icon-cache hicolor-icon-theme
+  libaccountsservice0 libadwaita-1-0 libaom3 libarchive13t64 libavahi-client3
+  libavahi-common-data libavahi-common3 libavahi-glib1 libcairo-gobject2
+  libcairo-script-interpreter2 libcairo2 libcolord2 libcomposefs1 libcups2t64
+  libdatrie1 libdconf1 libdeflate0 libdrm-intel1 libegl-mesa0 libegl1
+  libepoxy0 libfontconfig1 libgbm1 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-common
+  libgl1 libgl1-mesa-dri libgles2 libglvnd0 libglx-mesa0 libglx0 libglycin-2-0
+  libgraphene-1.0-0 libgraphite2-3 libgstreamer-gl1.0-0
+  libgstreamer-plugins-base1.0-0 libgstreamer-plugins-extra1.0-0 libgtk-4-1
+  libgtk-4-common libharfbuzz-subset0 libharfbuzz0b libheif-plugin-aomdec
+  libheif1 libhwy1t64 libjbig0 libjpeg-turbo8 libjpeg8 libjxl0.11 liblcms2-2
+  liblerc4 libmalcontent-0-0 libmalcontent-common liborc-0.4-0t64
+  libostree-1-1 libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+  libpciaccess0 libpixman-1-0 librsvg2-2 libsharpyuv0 libthai-data libthai0
+  libtiff6 libva-drm2 libva2 libvulkan1 libwayland-client0 libwayland-cursor0
+  libwayland-egl1 libwebp7 libx11-xcb1 libxcb-dri3-0 libxcb-glx0
+  libxcb-present0 libxcb-randr0 libxcb-render0 libxcb-shm0 libxcb-sync1
+  libxcb-xfixes0 libxcursor1 libxdamage1 libxfixes3 libxi6 libxinerama1
+  libxrandr2 libxrender1 libxshmfence1 libxxf86vm1 mesa-libgallium
+  xdg-dbus-proxy
+Suggested packages:
+  adwaita-icon-theme-legacy avahi-daemon malcontent-gui libheif-plugin-x265
+  | libheif-plugin-kvazaar lrzip colord cups-common libvisual-0.4-plugins gvfs
+  libheif-plugin-libde265 libheif-plugin-x265 libheif-plugin-ffmpegdec
+  libheif-plugin-jpegdec libheif-plugin-jpegenc libheif-plugin-j2kdec
+  libheif-plugin-j2kenc libheif-plugin-kvazaar libheif-plugin-rav1e
+  libheif-plugin-svtenc liblcms2-utils librsvg2-bin
+Recommended packages:
+  librsvg2-common desktop-file-utils p11-kit xdg-desktop-portal
+  xdg-desktop-portal-gtk | xdg-desktop-portal-backend libheif-plugin-aomenc
+  | libheif-plugin-rav1e | libheif-plugin-svtenc gstreamer1.0-gl
+  gstreamer1.0-plugins-base libgtk-4-bin ibus-gtk4 libheif-plugin-aomenc
+  mesa-vulkan-drivers | vulkan-icd power-profiles-daemon
+The following NEW packages will be installed:
+  adwaita-icon-theme bubblewrap dconf-gsettings-backend dconf-service flatpak
+  fontconfig fontconfig-config fonts-dejavu-core fonts-dejavu-mono
+  glycin-loaders glycin-thumbnailers gtk-update-icon-cache hicolor-icon-theme
+  libaccountsservice0 libadwaita-1-0 libaom3 libarchive13t64 libavahi-client3
+  libavahi-common-data libavahi-common3 libavahi-glib1 libcairo-gobject2
+  libcairo-script-interpreter2 libcairo2 libcolord2 libcomposefs1 libcups2t64
+  libdatrie1 libdconf1 libdeflate0 libdrm-intel1 libegl-mesa0 libegl1
+  libepoxy0 libfontconfig1 libgbm1 libgdk-pixbuf-2.0-0 libgdk-pixbuf2.0-common
+  libgl1 libgl1-mesa-dri libgles2 libglvnd0 libglx-mesa0 libglx0 libglycin-2-0
+  libgraphene-1.0-0 libgraphite2-3 libgstreamer-gl1.0-0
+  libgstreamer-plugins-base1.0-0 libgstreamer-plugins-extra1.0-0 libgtk-4-1
+  libgtk-4-common libharfbuzz-subset0 libharfbuzz0b libheif-plugin-aomdec
+  libheif1 libhwy1t64 libjbig0 libjpeg-turbo8 libjpeg8 libjxl0.11 liblcms2-2
+  liblerc4 libmalcontent-0-0 libmalcontent-common liborc-0.4-0t64
+  libostree-1-1 libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0
+  libpciaccess0 libpixman-1-0 librsvg2-2 libsharpyuv0 libthai-data libthai0
+  libtiff6 libva-drm2 libva2 libvulkan1 libwayland-client0 libwayland-cursor0
+  libwayland-egl1 libwebp7 libx11-xcb1 libxcb-dri3-0 libxcb-glx0
+  libxcb-present0 libxcb-randr0 libxcb-render0 libxcb-shm0 libxcb-sync1
+  libxcb-xfixes0 libxcursor1 libxdamage1 libxfixes3 libxi6 libxinerama1
+  libxrandr2 libxrender1 libxshmfence1 libxxf86vm1 mesa-libgallium omen-linux
+  ostree xdg-dbus-proxy
+0 upgraded, 106 newly installed, 0 to remove and 25 not upgraded.
+Need to get 0 B/44.5 MB of archives.
+After this operation, 172 MB of additional disk space will be used.
+'file:/var/tmp/omen-apt-repository/pool/main/b/bubblewrap/bubblewrap_0.11.1-1ubuntu0.3_amd64.deb' bubblewrap_0.11.1-1ubuntu0.3_amd64.deb 51032 MD5Sum:af24344a1bc415f348a6231176568c2f
+'file:/var/tmp/omen-apt-repository/pool/main/f/fonts-dejavu/fonts-dejavu-mono_2.37-8build1_all.deb' fonts-dejavu-mono_2.37-8build1_all.deb 502164 MD5Sum:4f1c9daadbdfe60cb176c6910d994a9a
+'file:/var/tmp/omen-apt-repository/pool/main/f/fonts-dejavu/fonts-dejavu-core_2.37-8build1_all.deb' fonts-dejavu-core_2.37-8build1_all.deb 834166 MD5Sum:2b8b6ad2bc939923a1c4eea4df2cc317
+'file:/var/tmp/omen-apt-repository/pool/main/f/fontconfig/fontconfig-config_2.17.1-3ubuntu1_amd64.deb' fontconfig-config_2.17.1-3ubuntu1_amd64.deb 38454 MD5Sum:daaa71dd76924ef402f4c5f34e044b44
+'file:/var/tmp/omen-apt-repository/pool/main/f/fontconfig/libfontconfig1_2.17.1-3ubuntu1_amd64.deb' libfontconfig1_2.17.1-3ubuntu1_amd64.deb 144082 MD5Sum:54aeab8c135be9fe50fe2bed4c2a7af2
+'file:/var/tmp/omen-apt-repository/pool/main/p/pixman/libpixman-1-0_0.46.4-1_amd64.deb' libpixman-1-0_0.46.4-1_amd64.deb 287322 MD5Sum:1401cc15bfe49cc785a85f22cb3b22d6
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-render0_1.17.0-2ubuntu1_amd64.deb' libxcb-render0_1.17.0-2ubuntu1_amd64.deb 16208 MD5Sum:54b2b9f5e7e85681546ba41406710cf9
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-shm0_1.17.0-2ubuntu1_amd64.deb' libxcb-shm0_1.17.0-2ubuntu1_amd64.deb 5808 MD5Sum:fb9d70143153673a246fb47d415fe826
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxrender/libxrender1_0.9.12-1build1_amd64.deb' libxrender1_1%3a0.9.12-1build1_amd64.deb 19204 MD5Sum:fafef09a4b70a8bc109599abb391b206
+'file:/var/tmp/omen-apt-repository/pool/main/c/cairo/libcairo2_1.18.4-3_amd64.deb' libcairo2_1.18.4-3_amd64.deb 578678 MD5Sum:5f75ae212214125db3ba7c8646e64bd8
+'file:/var/tmp/omen-apt-repository/pool/main/libw/libwebp/libsharpyuv0_1.5.0-0.1build1_amd64.deb' libsharpyuv0_1.5.0-0.1build1_amd64.deb 17650 MD5Sum:18244f647b208a344638a6b7cfcf646e
+'file:/var/tmp/omen-apt-repository/pool/main/a/aom/libaom3_3.13.1-2ubuntu0.1_amd64.deb' libaom3_3.13.1-2ubuntu0.1_amd64.deb 1969262 MD5Sum:8a2b0de444f8c709e6d19a19edd5aa60
+'file:/var/tmp/omen-apt-repository/pool/main/libh/libheif/libheif-plugin-aomdec_1.21.2-3ubuntu0.6_amd64.deb' libheif-plugin-aomdec_1.21.2-3ubuntu0.6_amd64.deb 15510 MD5Sum:6e58bd2638d802470a4f8e180d420dc1
+'file:/var/tmp/omen-apt-repository/pool/main/libh/libheif/libheif1_1.21.2-3ubuntu0.6_amd64.deb' libheif1_1.21.2-3ubuntu0.6_amd64.deb 550142 MD5Sum:31487fda91c76c101d2145a61ea189a6
+'file:/var/tmp/omen-apt-repository/pool/main/h/highway/libhwy1t64_1.3.0-2_amd64.deb' libhwy1t64_1.3.0-2_amd64.deb 767902 MD5Sum:c09d6424f09c22af156a30c32fd9a951
+'file:/var/tmp/omen-apt-repository/pool/main/l/lcms2/liblcms2-2_2.17-1ubuntu0.2_amd64.deb' liblcms2-2_2.17-1ubuntu0.2_amd64.deb 169156 MD5Sum:7f7a64a6b682f6a40522715a613d38c3
+'file:/var/tmp/omen-apt-repository/pool/main/j/jpeg-xl/libjxl0.11_0.11.1-6ubuntu4.2_amd64.deb' libjxl0.11_0.11.1-6ubuntu4.2_amd64.deb 1269230 MD5Sum:1d66785c570648ce38c715c03e0cd02a
+'file:/var/tmp/omen-apt-repository/pool/main/c/cairo/libcairo-gobject2_1.18.4-3_amd64.deb' libcairo-gobject2_1.18.4-3_amd64.deb 127288 MD5Sum:5b3c39443948d1d3ec06cf2b71dda63b
+'file:/var/tmp/omen-apt-repository/pool/main/f/fontconfig/fontconfig_2.17.1-3ubuntu1_amd64.deb' fontconfig_2.17.1-3ubuntu1_amd64.deb 180360 MD5Sum:3ca2e704affe4b7389f754f576434263
+'file:/var/tmp/omen-apt-repository/pool/main/g/graphite2/libgraphite2-3_1.3.14-11ubuntu1.1_amd64.deb' libgraphite2-3_1.3.14-11ubuntu1.1_amd64.deb 72928 MD5Sum:3f8b0ed0f1a6d1cbe2cfa9ca5ff95ee5
+'file:/var/tmp/omen-apt-repository/pool/main/h/harfbuzz/libharfbuzz0b_12.3.2-2_amd64.deb' libharfbuzz0b_12.3.2-2_amd64.deb 519090 MD5Sum:fde4c1b807d1feca5c395077dd835804
+'file:/var/tmp/omen-apt-repository/pool/main/libt/libthai/libthai-data_0.1.30-1_all.deb' libthai-data_0.1.30-1_all.deb 154800 MD5Sum:0be543a3e84c89df4326236f00bbb078
+'file:/var/tmp/omen-apt-repository/pool/main/libd/libdatrie/libdatrie1_0.2.14-1_amd64.deb' libdatrie1_0.2.14-1_amd64.deb 19776 MD5Sum:194f67ecfddab757263fda37d428d657
+'file:/var/tmp/omen-apt-repository/pool/main/libt/libthai/libthai0_0.1.30-1_amd64.deb' libthai0_0.1.30-1_amd64.deb 19174 MD5Sum:7eac61e35ea0f71729994323d45f5cf6
+'file:/var/tmp/omen-apt-repository/pool/main/p/pango1.0/libpango-1.0-0_1.57.0-1_amd64.deb' libpango-1.0-0_1.57.0-1_amd64.deb 240576 MD5Sum:0eb202b6e4fee3c5f722fcd68ff9fe07
+'file:/var/tmp/omen-apt-repository/pool/main/p/pango1.0/libpangoft2-1.0-0_1.57.0-1_amd64.deb' libpangoft2-1.0-0_1.57.0-1_amd64.deb 53260 MD5Sum:79a185fcfd43657a670923f873c12a1a
+'file:/var/tmp/omen-apt-repository/pool/main/p/pango1.0/libpangocairo-1.0-0_1.57.0-1_amd64.deb' libpangocairo-1.0-0_1.57.0-1_amd64.deb 29026 MD5Sum:4879508bc61ea96c0ceac3b4863775bb
+'file:/var/tmp/omen-apt-repository/pool/main/libr/librsvg/librsvg2-2_2.61.3%2bdfsg-3ubuntu0.1_amd64.deb' librsvg2-2_2.61.3+dfsg-3ubuntu0.1_amd64.deb 1849824 MD5Sum:3332fd8163d3f1498cf349af9da78444
+'file:/var/tmp/omen-apt-repository/pool/main/g/glycin/glycin-loaders_2.1.5%2bds-0ubuntu0.2_amd64.deb' glycin-loaders_2.1.5+ds-0ubuntu0.2_amd64.deb 2983588 MD5Sum:8f5693834a9596badd634bf8b07d7660
+'file:/var/tmp/omen-apt-repository/pool/main/g/glycin/libglycin-2-0_2.1.5%2bds-0ubuntu0.2_amd64.deb' libglycin-2-0_2.1.5+ds-0ubuntu0.2_amd64.deb 1486686 MD5Sum:4848c2839cbde22b8fb9fed1fcd1f707
+'file:/var/tmp/omen-apt-repository/pool/main/g/glycin/glycin-thumbnailers_2.1.5%2bds-0ubuntu0.2_amd64.deb' glycin-thumbnailers_2.1.5+ds-0ubuntu0.2_amd64.deb 222612 MD5Sum:0762397e65847f0fd41fc26b5553070e
+'file:/var/tmp/omen-apt-repository/pool/main/g/gdk-pixbuf/libgdk-pixbuf2.0-common_2.44.5%2bdfsg-4ubuntu1_all.deb' libgdk-pixbuf2.0-common_2.44.5+dfsg-4ubuntu1_all.deb 5754 MD5Sum:248a62034b6f730abfc7b69c3eafa1eb
+'file:/var/tmp/omen-apt-repository/pool/main/g/gdk-pixbuf/libgdk-pixbuf-2.0-0_2.44.5%2bdfsg-4ubuntu1_amd64.deb' libgdk-pixbuf-2.0-0_2.44.5+dfsg-4ubuntu1_amd64.deb 100992 MD5Sum:f384dcb33aa31e5fc0f7960bf8543b3e
+'file:/var/tmp/omen-apt-repository/pool/main/g/gtk4/gtk-update-icon-cache_4.22.4%2bds-0ubuntu0.1_amd64.deb' gtk-update-icon-cache_4.22.4+ds-0ubuntu0.1_amd64.deb 42654 MD5Sum:4dc958bc74b6c6d121a125fb16b041ec
+'file:/var/tmp/omen-apt-repository/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.18-2build1_all.deb' hicolor-icon-theme_0.18-2build1_all.deb 13154 MD5Sum:c33bdeefa20e88964f7df30c077d329e
+'file:/var/tmp/omen-apt-repository/pool/main/a/adwaita-icon-theme/adwaita-icon-theme_50.0-1_all.deb' adwaita-icon-theme_50.0-1_all.deb 580384 MD5Sum:cf8c9551043ac778781871584471ddfe
+'file:/var/tmp/omen-apt-repository/pool/main/d/dconf/libdconf1_0.49.0-4_amd64.deb' libdconf1_0.49.0-4_amd64.deb 40516 MD5Sum:04b02805404724eafaaed614d2992e5c
+'file:/var/tmp/omen-apt-repository/pool/main/d/dconf/dconf-service_0.49.0-4_amd64.deb' dconf-service_0.49.0-4_amd64.deb 27696 MD5Sum:dcd25cbe5be756e53d13fa1697dedd8b
+'file:/var/tmp/omen-apt-repository/pool/main/d/dconf/dconf-gsettings-backend_0.49.0-4_amd64.deb' dconf-gsettings-backend_0.49.0-4_amd64.deb 22172 MD5Sum:313cba6e380f441833c81c0c0af3525d
+'file:/var/tmp/omen-apt-repository/pool/main/x/xdg-dbus-proxy/xdg-dbus-proxy_0.1.7-1_amd64.deb' xdg-dbus-proxy_0.1.7-1_amd64.deb 25966 MD5Sum:33bc779f127101e65ced32786540ae21
+'file:/var/tmp/omen-apt-repository/pool/main/liba/libarchive/libarchive13t64_3.8.5-1ubuntu2.3_amd64.deb' libarchive13t64_3.8.5-1ubuntu2.3_amd64.deb 397154 MD5Sum:0741b1e111508f5219938c18c7f79146
+'file:/var/tmp/omen-apt-repository/pool/main/m/malcontent/libmalcontent-common_0.14.0-0ubuntu1.2_all.deb' libmalcontent-common_0.14.0-0ubuntu1.2_all.deb 11216 MD5Sum:f9fb3e5a9196f338e2eb79ac63d9f7c5
+'file:/var/tmp/omen-apt-repository/pool/main/a/accountsservice/libaccountsservice0_23.13.9-8ubuntu5.2_amd64.deb' libaccountsservice0_23.13.9-8ubuntu5.2_amd64.deb 62844 MD5Sum:b6fe7bd548e49bf8e78af588815e0d2a
+'file:/var/tmp/omen-apt-repository/pool/main/m/malcontent/libmalcontent-0-0_0.14.0-0ubuntu1.2_amd64.deb' libmalcontent-0-0_0.14.0-0ubuntu1.2_amd64.deb 40234 MD5Sum:f16a216d32c8b8b09697613c5fd674b6
+'file:/var/tmp/omen-apt-repository/pool/main/a/avahi/libavahi-common-data_0.8-18ubuntu1.1_amd64.deb' libavahi-common-data_0.8-18ubuntu1.1_amd64.deb 27194 MD5Sum:9c1f570afe70163907317d028f4a8938
+'file:/var/tmp/omen-apt-repository/pool/main/a/avahi/libavahi-common3_0.8-18ubuntu1.1_amd64.deb' libavahi-common3_0.8-18ubuntu1.1_amd64.deb 23580 MD5Sum:347964760da474996acb54f42ad0d0ae
+'file:/var/tmp/omen-apt-repository/pool/main/a/avahi/libavahi-client3_0.8-18ubuntu1.1_amd64.deb' libavahi-client3_0.8-18ubuntu1.1_amd64.deb 27220 MD5Sum:6d07929497cc26da7de0639658404157
+'file:/var/tmp/omen-apt-repository/pool/main/a/avahi/libavahi-glib1_0.8-18ubuntu1.1_amd64.deb' libavahi-glib1_0.8-18ubuntu1.1_amd64.deb 8246 MD5Sum:1cfe59936ddd978e51b860cefe443aa3
+'file:/var/tmp/omen-apt-repository/pool/universe/c/composefs/libcomposefs1_1.0.8-3_amd64.deb' libcomposefs1_1.0.8-3_amd64.deb 31524 MD5Sum:11769652d5e7cc7059cd30e7b07da19d
+'file:/var/tmp/omen-apt-repository/pool/universe/o/ostree/libostree-1-1_2025.7-3build1_amd64.deb' libostree-1-1_2025.7-3build1_amd64.deb 366782 MD5Sum:c0e6340e5308c08f376f077d23029c1e
+'file:/var/tmp/omen-apt-repository/pool/main/w/wayland/libwayland-client0_1.24.0-2_amd64.deb' libwayland-client0_1.24.0-2_amd64.deb 28530 MD5Sum:1f975789e6bd8353e05c1c00e55df104
+'file:/var/tmp/omen-apt-repository/pool/universe/f/flatpak/flatpak_1.16.6-1_amd64.deb' flatpak_1.16.6-1_amd64.deb 1473052 MD5Sum:751b91d0cf4843c5099bea6d00427cde
+'file:/var/tmp/omen-apt-repository/pool/main/g/graphene/libgraphene-1.0-0_1.10.8-5build1_amd64.deb' libgraphene-1.0-0_1.10.8-5build1_amd64.deb 46178 MD5Sum:de42d8a9b7d38b4bd3b27e7c5f001bb4
+'file:/var/tmp/omen-apt-repository/pool/main/c/cairo/libcairo-script-interpreter2_1.18.4-3_amd64.deb' libcairo-script-interpreter2_1.18.4-3_amd64.deb 61364 MD5Sum:624876972288bdef3ae826b09de683d2
+'file:/var/tmp/omen-apt-repository/pool/main/c/colord/libcolord2_1.4.8-3_amd64.deb' libcolord2_1.4.8-3_amd64.deb 149688 MD5Sum:37246058cd59333f8ade57dd1ce74364
+'file:/var/tmp/omen-apt-repository/pool/main/c/cups/libcups2t64_2.4.16-1ubuntu1.3_amd64.deb' libcups2t64_2.4.16-1ubuntu1.3_amd64.deb 268968 MD5Sum:222d48cdb998071b1b4f9e9322f25314
+'file:/var/tmp/omen-apt-repository/pool/main/libe/libepoxy/libepoxy0_1.5.10-2build1_amd64.deb' libepoxy0_1.5.10-2build1_amd64.deb 226466 MD5Sum:c597123264110d71cb1507e294a8f2b1
+'file:/var/tmp/omen-apt-repository/pool/main/libg/libglvnd/libglvnd0_1.7.0-3_amd64.deb' libglvnd0_1.7.0-3_amd64.deb 64072 MD5Sum:72c17c9135e5e53a9c4e5d9eefdd1b22
+'file:/var/tmp/omen-apt-repository/pool/main/libp/libpciaccess/libpciaccess0_0.18.1-1ubuntu4.1_amd64.deb' libpciaccess0_0.18.1-1ubuntu4.1_amd64.deb 18980 MD5Sum:453730e859f3cd10b5388bec036bbed1
+'file:/var/tmp/omen-apt-repository/pool/main/libd/libdrm/libdrm-intel1_2.4.131-1_amd64.deb' libdrm-intel1_2.4.131-1_amd64.deb 66680 MD5Sum:32f54572ce2f126761ac97c36e4ff9c5
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libx11/libx11-xcb1_1.8.13-1ubuntu0.1_amd64.deb' libx11-xcb1_2%3a1.8.13-1ubuntu0.1_amd64.deb 7980 MD5Sum:a2e746f47dc8b4735d1b44d991e8c8bb
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-dri3-0_1.17.0-2ubuntu1_amd64.deb' libxcb-dri3-0_1.17.0-2ubuntu1_amd64.deb 7540 MD5Sum:e2598840157e7c33d90e5d42daa03015
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-present0_1.17.0-2ubuntu1_amd64.deb' libxcb-present0_1.17.0-2ubuntu1_amd64.deb 6112 MD5Sum:3b3273d2e8a392a05dc144009c38e525
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-randr0_1.17.0-2ubuntu1_amd64.deb' libxcb-randr0_1.17.0-2ubuntu1_amd64.deb 17930 MD5Sum:84aba088a9234126f974d5d0c4253b93
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-sync1_1.17.0-2ubuntu1_amd64.deb' libxcb-sync1_1.17.0-2ubuntu1_amd64.deb 9348 MD5Sum:e64930623b14cf4106973c698aab4894
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-xfixes0_1.17.0-2ubuntu1_amd64.deb' libxcb-xfixes0_1.17.0-2ubuntu1_amd64.deb 10192 MD5Sum:a83bad9cda97a234337b4e8798d71092
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxshmfence/libxshmfence1_1.3.3-1build1_amd64.deb' libxshmfence1_1.3.3-1build1_amd64.deb 5284 MD5Sum:367a8c596b3dfc9f855d4e0eae15f788
+'file:/var/tmp/omen-apt-repository/pool/main/m/mesa/mesa-libgallium_26.0.8-1ubuntu0.3_amd64.deb' mesa-libgallium_26.0.8-1ubuntu0.3_amd64.deb 11241306 MD5Sum:643a059889de5c9b82029f9d1bdd91a3
+'file:/var/tmp/omen-apt-repository/pool/main/m/mesa/libgbm1_26.0.8-1ubuntu0.3_amd64.deb' libgbm1_26.0.8-1ubuntu0.3_amd64.deb 49194 MD5Sum:a719bdcbbe49b9e32afb6de1f148782b
+'file:/var/tmp/omen-apt-repository/pool/main/m/mesa/libegl-mesa0_26.0.8-1ubuntu0.3_amd64.deb' libegl-mesa0_26.0.8-1ubuntu0.3_amd64.deb 133774 MD5Sum:c64d4c3a5af46c5bc510eac1be05a5c1
+'file:/var/tmp/omen-apt-repository/pool/main/libg/libglvnd/libegl1_1.7.0-3_amd64.deb' libegl1_1.7.0-3_amd64.deb 29654 MD5Sum:301e3d61d776827d2d41b4c77c9b5e6c
+'file:/var/tmp/omen-apt-repository/pool/main/v/vulkan-loader/libvulkan1_1.4.341.0-1_amd64.deb' libvulkan1_1.4.341.0-1_amd64.deb 157194 MD5Sum:a3a3c894e00f7e92c444a0e364fd4856
+'file:/var/tmp/omen-apt-repository/pool/main/m/mesa/libgl1-mesa-dri_26.0.8-1ubuntu0.3_amd64.deb' libgl1-mesa-dri_26.0.8-1ubuntu0.3_amd64.deb 38166 MD5Sum:91408d4962007f58a4f0e8acdc06bca5
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcb/libxcb-glx0_1.17.0-2ubuntu1_amd64.deb' libxcb-glx0_1.17.0-2ubuntu1_amd64.deb 24654 MD5Sum:657bb19dd511968c8b264d34b8ab920b
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxxf86vm/libxxf86vm1_1.1.4-2_amd64.deb' libxxf86vm1_1%3a1.1.4-2_amd64.deb 10610 MD5Sum:5a7586e33ad8c9f449f8f5393b885092
+'file:/var/tmp/omen-apt-repository/pool/main/m/mesa/libglx-mesa0_26.0.8-1ubuntu0.3_amd64.deb' libglx-mesa0_26.0.8-1ubuntu0.3_amd64.deb 125602 MD5Sum:1359d7d121d8d165faf55fdf94824aa4
+'file:/var/tmp/omen-apt-repository/pool/main/libg/libglvnd/libglx0_1.7.0-3_amd64.deb' libglx0_1.7.0-3_amd64.deb 38932 MD5Sum:cc1cf595cc0e3ee56c2124ab6c7755c1
+'file:/var/tmp/omen-apt-repository/pool/main/libg/libglvnd/libgl1_1.7.0-3_amd64.deb' libgl1_1.7.0-3_amd64.deb 98292 MD5Sum:b1171b3c298c834b03c2cb40899858d9
+'file:/var/tmp/omen-apt-repository/pool/main/o/orc/liborc-0.4-0t64_0.4.42-2_amd64.deb' liborc-0.4-0t64_1%3a0.4.42-2_amd64.deb 283098 MD5Sum:043b26fceea0e0c5a43701844207ce78
+'file:/var/tmp/omen-apt-repository/pool/main/g/gst-plugins-base1.0/libgstreamer-plugins-base1.0-0_1.28.2-1ubuntu0.1_amd64.deb' libgstreamer-plugins-base1.0-0_1.28.2-1ubuntu0.1_amd64.deb 920576 MD5Sum:7511a875a741d794edb81044ab9be37e
+'file:/var/tmp/omen-apt-repository/pool/main/w/wayland/libwayland-cursor0_1.24.0-2_amd64.deb' libwayland-cursor0_1.24.0-2_amd64.deb 10770 MD5Sum:6b6060f404ae537ebcf35fc5226a2876
+'file:/var/tmp/omen-apt-repository/pool/main/w/wayland/libwayland-egl1_1.24.0-2_amd64.deb' libwayland-egl1_1.24.0-2_amd64.deb 6248 MD5Sum:e6b10525fad4d48c679fcc547b0ebf9a
+'file:/var/tmp/omen-apt-repository/pool/main/g/gst-plugins-base1.0/libgstreamer-gl1.0-0_1.28.2-1ubuntu0.1_amd64.deb' libgstreamer-gl1.0-0_1.28.2-1ubuntu0.1_amd64.deb 229996 MD5Sum:11a4af1d6615bbbb60defc05f4e5658a
+'file:/var/tmp/omen-apt-repository/pool/main/libv/libva/libva2_2.23.0-1ubuntu1_amd64.deb' libva2_2.23.0-1ubuntu1_amd64.deb 76506 MD5Sum:bee7dcf70941d598cf60c3ca35b0fc24
+'file:/var/tmp/omen-apt-repository/pool/main/libv/libva/libva-drm2_2.23.0-1ubuntu1_amd64.deb' libva-drm2_2.23.0-1ubuntu1_amd64.deb 7112 MD5Sum:abba43082f902fdd93d43f92e642230c
+'file:/var/tmp/omen-apt-repository/pool/main/g/gst-plugins-bad1.0/libgstreamer-plugins-extra1.0-0_1.28.2-1ubuntu1.2_amd64.deb' libgstreamer-plugins-extra1.0-0_1.28.2-1ubuntu1.2_amd64.deb 510394 MD5Sum:3aed9ba038c5f72eb8364aba605a44db
+'file:/var/tmp/omen-apt-repository/pool/main/h/harfbuzz/libharfbuzz-subset0_12.3.2-2_amd64.deb' libharfbuzz-subset0_12.3.2-2_amd64.deb 491630 MD5Sum:ea3335e9b39d21fef9ff7ef832d8537a
+'file:/var/tmp/omen-apt-repository/pool/main/libj/libjpeg-turbo/libjpeg-turbo8_2.1.5-4ubuntu4_amd64.deb' libjpeg-turbo8_2.1.5-4ubuntu4_amd64.deb 152810 MD5Sum:d66ce9362f0504e0080b2eb1dd754344
+'file:/var/tmp/omen-apt-repository/pool/main/libj/libjpeg8-empty/libjpeg8_8c-2ubuntu12_amd64.deb' libjpeg8_8c-2ubuntu12_amd64.deb 2142 MD5Sum:258add1b2dd69f99dc952382a73aa059
+'file:/var/tmp/omen-apt-repository/pool/main/libd/libdeflate/libdeflate0_1.23-2ubuntu1_amd64.deb' libdeflate0_1.23-2ubuntu1_amd64.deb 51702 MD5Sum:cc4e430ed5e114b24a8c06be9b9ed6e3
+'file:/var/tmp/omen-apt-repository/pool/main/j/jbigkit/libjbig0_2.1-6.1ubuntu3_amd64.deb' libjbig0_2.1-6.1ubuntu3_amd64.deb 30028 MD5Sum:6996f630c9734dbfff7decfc6a494e29
+'file:/var/tmp/omen-apt-repository/pool/main/l/lerc/liblerc4_4.0.0%2bds-5ubuntu2_amd64.deb' liblerc4_4.0.0+ds-5ubuntu2_amd64.deb 206718 MD5Sum:37a9f98a18139a6cf6224e2a926a034a
+'file:/var/tmp/omen-apt-repository/pool/main/libw/libwebp/libwebp7_1.5.0-0.1build1_amd64.deb' libwebp7_1.5.0-0.1build1_amd64.deb 263542 MD5Sum:24bf5fbfceae930ab7391ea556d076af
+'file:/var/tmp/omen-apt-repository/pool/main/t/tiff/libtiff6_4.7.0-3ubuntu5_amd64.deb' libtiff6_4.7.0-3ubuntu5_amd64.deb 205792 MD5Sum:8b1d9ab1af900393826d627112635433
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxfixes/libxfixes3_6.0.0-2build2_amd64.deb' libxfixes3_1%3a6.0.0-2build2_amd64.deb 11102 MD5Sum:931d398d065ba957233d8765d6e20823
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxcursor/libxcursor1_1.2.3-1build1_amd64.deb' libxcursor1_1%3a1.2.3-1build1_amd64.deb 22108 MD5Sum:3ffd29ab67a3f181cf599502ec160cbe
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxdamage/libxdamage1_1.1.7-1_amd64.deb' libxdamage1_1%3a1.1.7-1_amd64.deb 6582 MD5Sum:b8d4c45333498d8bf8909dcf92a9afb0
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxi/libxi6_1.8.2-2_amd64.deb' libxi6_2%3a1.8.2-2_amd64.deb 33120 MD5Sum:3014c452279057ff8e45647deff39d3e
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxinerama/libxinerama1_1.1.4-3build2_amd64.deb' libxinerama1_2%3a1.1.4-3build2_amd64.deb 6472 MD5Sum:092f58cfcbcea8e5ae29c41ef9a989de
+'file:/var/tmp/omen-apt-repository/pool/main/libx/libxrandr/libxrandr2_1.5.4-1build1_amd64.deb' libxrandr2_2%3a1.5.4-1build1_amd64.deb 19622 MD5Sum:c4bdb9d77cde3659980f45b967eebcbd
+'file:/var/tmp/omen-apt-repository/pool/main/libg/libglvnd/libgles2_1.7.0-3_amd64.deb' libgles2_1.7.0-3_amd64.deb 17458 MD5Sum:2d9724fdfaaa535941b8e9dbb5791e13
+'file:/var/tmp/omen-apt-repository/pool/main/g/gtk4/libgtk-4-common_4.22.4%2bds-0ubuntu0.1_all.deb' libgtk-4-common_4.22.4+ds-0ubuntu0.1_all.deb 1546346 MD5Sum:132501d18ddbb80f98e8219da4df47f8
+'file:/var/tmp/omen-apt-repository/pool/main/g/gtk4/libgtk-4-1_4.22.4%2bds-0ubuntu0.1_amd64.deb' libgtk-4-1_4.22.4+ds-0ubuntu0.1_amd64.deb 3551986 MD5Sum:2a203b241c4520f0d035df9d5700b20f
+'file:/var/tmp/omen-apt-repository/pool/main/liba/libadwaita-1/libadwaita-1-0_1.9.1-0ubuntu0.2_amd64.deb' libadwaita-1-0_1.9.1-0ubuntu0.2_amd64.deb 529772 MD5Sum:f6344c139e4d17886283bdfb655bb9e2
+'file:/var/tmp/omen-current.deb' omen-linux_0.1.0-24_amd64.deb 3694524 
+'file:/var/tmp/omen-apt-repository/pool/universe/o/ostree/ostree_2025.7-3build1_amd64.deb' ostree_2025.7-3build1_amd64.deb 187216 MD5Sum:5e093ea6f33697c5a902700961decd09

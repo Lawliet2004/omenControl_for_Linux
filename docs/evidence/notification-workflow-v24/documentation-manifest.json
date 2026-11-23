@@ -1,0 +1,26 @@
+[
+  {
+    "path": "docs/NOTIFICATION_WORKFLOW_2026-10-28.md",
+    "sha256": "e35faacf17f136d0dae1f072eec292bb8bdfef083bf5d6e1f5b9783fffc4f6d4"
+  },
+  {
+    "path": "docs/APPLICATION_AUDIT_IMPLEMENTATION.md",
+    "sha256": "073cd974c69c87c6281d77f36672d608cd0d2fc3aaf05c5597fa470fd653a718"
+  },
+  {
+    "path": "docs/IMPLEMENTATION_STATUS.md",
+    "sha256": "8e412b4be6cdc29180b16c3205c201f1ea274e4813502b48532f30ace30407e0"
+  },
+  {
+    "path": "docs/TEST_REPORT.md",
+    "sha256": "1564ca7b0aab7dae7e8523204dfd24a31225d309ffe9d2137f4a504ccfee81e4"
+  },
+  {
+    "path": "docs/ACCESSIBILITY.md",
+    "sha256": "74c0d04a17061f770f2c3b875fc69da59e3e675f9e4a79aceaa8e04be360511e"
+  },
+  {
+    "path": "docs/CONTINUATION_CHECKLIST.md",
+    "sha256": "d74a207fdf1cad0f4a8b83160ace30cb27e5bcf0111f8ba4950919bf9cda33a9"
+  }
+]

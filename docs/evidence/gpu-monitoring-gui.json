@@ -1,0 +1,11 @@
+{
+  "recorded_utc": "2026-10-26T05:01:29.995602+00:00",
+  "hardware_writes": false,
+  "gui_capture": {
+    "path": "docs/screenshots/dashboard-sandboxed-service.png",
+    "sha256": "3b83895807ef0b824c7354090bd616aa3760d03ab443c8bccb7e463b84d04c7d",
+    "gtk_display_type": "GdkWaylandDisplay",
+    "gui_sha256": "1a4f4a6bb5b81b1aa6947f8e56effab2f0b2fa71909b2448e579154a1061f17a"
+  },
+  "requested_gtk_backend": "wayland"
+}

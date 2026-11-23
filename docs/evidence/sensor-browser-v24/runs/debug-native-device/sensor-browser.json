@@ -1,0 +1,870 @@
+{
+  "result": "failed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "host_keyboard_events": false,
+  "gui_sha256": "348a210d06eba0e3bad405086a40187ddc130005e2e92c84c14fe2aca81d0ac6",
+  "checks_passed": [
+    "reported device/type groups and explicit unknown-device groups retain raw IDs; stale numbers are replaced by Stale",
+    "real keyboard combines search/type filtering and sorts comparable values within their device/type group"
+  ],
+  "error": "RuntimeError: reported device filter failed",
+  "last_nodes": [
+    {
+      "role": "application",
+      "name": "omen-gui"
+    },
+    {
+      "role": "frame",
+      "name": "OMEN Control"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Show or hide navigation"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "System Vitals"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Application actions"
+    },
+    {
+      "role": "button",
+      "name": "Fixture"
+    },
+    {
+      "role": "label",
+      "name": "Fixture"
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "button",
+      "name": "Minimize"
+    },
+    {
+      "role": "button",
+      "name": "Maximize"
+    },
+    {
+      "role": "button",
+      "name": "Close"
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "grouping",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": "System Vitals"
+    },
+    {
+      "role": "scroll pane",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "table",
+      "name": ""
+    },
+    {
+      "role": "table cell",
+      "name": "CPU clock \u2014"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "CPU clock"
+    },
+    {
+      "role": "label",
+      "name": "\u2014"
+    },
+    {
+      "role": "table cell",
+      "name": "CPU utilization Unavailable"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "CPU utilization"
+    },
+    {
+      "role": "label",
+      "name": "Unavailable"
+    },
+    {
+      "role": "table cell",
+      "name": "Memory used \u2014"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Memory used"
+    },
+    {
+      "role": "label",
+      "name": "\u2014"
+    },
+    {
+      "role": "table cell",
+      "name": "Storage used (/) \u2014"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Storage used (/)"
+    },
+    {
+      "role": "label",
+      "name": "\u2014"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Network interfaces"
+    },
+    {
+      "role": "label",
+      "name": "Per-interface rates; VPNs and bridges may count the same traffic. Values are not added. Errors and drops are cumulative; RX drops include missed packets."
+    },
+    {
+      "role": "label",
+      "name": "Fixture network counters"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "fixture0 \u00b7 up"
+    },
+    {
+      "role": "label",
+      "name": "Receive: 0 B/s  \u00b7  Send: 0 B/s\nErrors RX/TX: 0 / 0  \u00b7  Dropped RX/TX: 0 / 0"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "All sensors"
+    },
+    {
+      "role": "entry",
+      "name": "Search sensors"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Type"
+    },
+    {
+      "role": "combo box",
+      "name": "Type"
+    },
+    {
+      "role": "toggle button",
+      "name": "Type"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "All types"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Device"
+    },
+    {
+      "role": "combo box",
+      "name": "Device"
+    },
+    {
+      "role": "toggle button",
+      "name": "Device"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "All devices"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Availability"
+    },
+    {
+      "role": "combo box",
+      "name": "Availability"
+    },
+    {
+      "role": "toggle button",
+      "name": "Availability"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "All readings"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Order"
+    },
+    {
+      "role": "combo box",
+      "name": "Order"
+    },
+    {
+      "role": "toggle button",
+      "name": "Order"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Name"
+    },
+    {
+      "role": "button",
+      "name": "Clear sensor filters"
+    },
+    {
+      "role": "label",
+      "name": "Clear sensor filters"
+    },
+    {
+      "role": "label",
+      "name": "Grouped by reported device and measurement type. A provider group means no device identity was reported; labels do not establish device ownership."
+    },
+    {
+      "role": "label",
+      "name": "Showing 7 of 7 sensor readings."
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "grouping",
+      "name": "Device 0000:03:00.0 \u00b7 Temperatures"
+    },
+    {
+      "role": "label",
+      "name": "Device 0000:03:00.0 \u00b7 Temperatures"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Alpha GPU temperature: 80.0 \u00b0C"
+    },
+    {
+      "role": "label",
+      "name": "mock \u00b7 gpu/b \u00b7 Device 0000:03:00.0 \u00b7 0s old"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Zeta GPU temperature: 40.0 \u00b0C"
+    },
+    {
+      "role": "label",
+      "name": "mock \u00b7 gpu/a \u00b7 Device 0000:03:00.0 \u00b7 0s old"
+    },
+    {
+      "role": "grouping",
+      "name": "Device 0000:03:00.0 \u00b7 Power"
+    },
+    {
+      "role": "label",
+      "name": "Device 0000:03:00.0 \u00b7 Power"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "GPU power: 12.0 W"
+    },
+    {
+      "role": "label",
+      "name": "mock \u00b7 gpu/power \u00b7 Device 0000:03:00.0 \u00b7 0s old"
+    },
+    {
+      "role": "grouping",
+      "name": "mock \u00b7 device not reported \u00b7 Temperatures"
+    },
+    {
+      "role": "label",
+      "name": "mock \u00b7 device not reported \u00b7 Temperatures"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "CPU package: 50.0 \u00b0C"
+    },
+    {
+      "role": "label",
+      "name": "mock \u00b7 cpu/temp \u00b7 Device not reported \u00b7 0s old"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Old temperature: Stale"
+    },
+    {
+      "role": "label",
+      "name": "mock \u00b7 stale \u00b7 Device not reported \u00b7 Stale \u00b7 1793177738s old"
+    },
+    {
+      "role": "grouping",
+      "name": "mock \u00b7 device not reported \u00b7 Fan speeds"
+    },
+    {
+      "role": "label",
+      "name": "mock \u00b7 device not reported \u00b7 Fan speeds"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "CPU fan: 1200.0 RPM"
+    },
+    {
+      "role": "label",
+      "name": "mock \u00b7 fan/speed \u00b7 Device not reported \u00b7 0s old"
+    },
+    {
+      "role": "grouping",
+      "name": "mock \u00b7 device not reported \u00b7 Currents"
+    },
+    {
+      "role": "label",
+      "name": "mock \u00b7 device not reported \u00b7 Currents"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Unavailable current: Unavailable"
+    },
+    {
+      "role": "label",
+      "name": "mock \u00b7 missing \u00b7 Device not reported \u00b7 0s old"
+    },
+    {
+      "role": "scroll bar",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": "Performance Control"
+    },
+    {
+      "role": "panel",
+      "name": "Fan & Thermal"
+    },
+    {
+      "role": "panel",
+      "name": "Lighting Studio"
+    },
+    {
+      "role": "panel",
+      "name": "Graphics"
+    },
+    {
+      "role": "panel",
+      "name": "Battery & Power"
+    },
+    {
+      "role": "panel",
+      "name": "Game Library"
+    },
+    {
+      "role": "panel",
+      "name": "Settings & Diagnostics"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "scroll pane",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "OMEN Control"
+    },
+    {
+      "role": "list",
+      "name": "Pages"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Dashboard"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "System Vitals"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Performance Control"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Fan & Thermal"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Lighting Studio"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Graphics"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Battery & Power"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Game Library"
+    },
+    {
+      "role": "list item",
+      "name": ""
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "image",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "Settings & Diagnostics"
+    },
+    {
+      "role": "label",
+      "name": "Monitor"
+    },
+    {
+      "role": "label",
+      "name": "Controls"
+    },
+    {
+      "role": "label",
+      "name": "Library"
+    },
+    {
+      "role": "label",
+      "name": "Application"
+    },
+    {
+      "role": "panel",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": ""
+    },
+    {
+      "role": "label",
+      "name": "source: MOCK \u2014 fixture data, no real hardware"
+    }
+  ],
+  "focus": {
+    "role": "toggle button",
+    "name": "Device"
+  },
+  "key_events": [
+    "Control_L+f",
+    "Control_L+a",
+    "BackSpace",
+    "g",
+    "p",
+    "u",
+    "space",
+    "0",
+    "0",
+    "0",
+    "0",
+    "Shift_L+colon",
+    "0",
+    "3",
+    "Control_L+f",
+    "Tab",
+    "space",
+    "Home",
+    "Down",
+    "Return",
+    "Control_L+f",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "space",
+    "Home",
+    "Down",
+    "Return",
+    "Control_L+f",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Return",
+    "Control_L+f",
+    "Tab",
+    "Tab",
+    "space",
+    "0",
+    "0",
+    "0",
+    "0",
+    "Shift_L+colon",
+    "0",
+    "3",
+    "Shift_L+colon",
+    "0",
+    "0",
+    "period",
+    "0",
+    "Down",
+    "Return"
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  "python3",
+  "/home/papan/Desktop/Projects/omen/tests/systemd_vm.py",
+  "/home/papan/Desktop/Projects/omen/target/debian/omen-linux_0.1.0-24_amd64.deb",
+  "--offline-repository",
+  "/home/papan/Desktop/Projects/omen/target/graphical-auth-v20/complete/complete-repository.tar",
+  "--repository-component",
+  "main",
+  "--repository-component",
+  "universe",
+  "--memory-mib",
+  "1024",
+  "--resolve-only",
+  "--extra-package",
+  "flatpak",
+  "--extra-package",
+  "ostree",
+  "--extra-package",
+  "busybox-static"
+]

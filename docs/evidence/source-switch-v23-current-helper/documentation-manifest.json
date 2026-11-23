@@ -1,0 +1,26 @@
+[
+  {
+    "path": "docs/SOURCE_SWITCHING_2026-10-28.md",
+    "sha256": "063648d09ef7e5a69d8b5fff00cfa49d5e7656ec1beabbc69a293ca1fb29afc5"
+  },
+  {
+    "path": "docs/APPLICATION_AUDIT_IMPLEMENTATION.md",
+    "sha256": "2ad4ef7920214470bea936280e53c0cfd9abae1526837ff3334afbc1ad8fa50f"
+  },
+  {
+    "path": "docs/IMPLEMENTATION_STATUS.md",
+    "sha256": "12fea70053f2120d61d553d4e73c0bb2a38443aa92d8c2540eefaa178aa0bfc6"
+  },
+  {
+    "path": "docs/TEST_REPORT.md",
+    "sha256": "a550fb45241e6fa872954ef5e3bf6de75303cb87f94fa7661236a42321308fca"
+  },
+  {
+    "path": "docs/PACKAGE_VALIDATION.md",
+    "sha256": "9660fc2d43e21e085a58259bd9e6fe42f1ecc3b5513c532c88d5e889fd755162"
+  },
+  {
+    "path": "docs/VM_VALIDATION.md",
+    "sha256": "7aa73c8f8ec81df322e86cbb90a23b2f38eb9de77a041598077cc9a11d510f1a"
+  }
+]

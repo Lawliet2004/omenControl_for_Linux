@@ -1,0 +1,38 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+  configure|abort-upgrade|abort-deconfigure|abort-remove)
+    # Create the system config directory with safe defaults if missing.
+    if [ ! -e /etc/omen-linux/config.toml ] && [ ! -L /etc/omen-linux/config.toml ]; then
+      mkdir -p /etc/omen-linux
+      (umask 077
+       printf '# omen-linux configuration (TOML, schema v1)\n# See docs/INSTALLATION.md for the full reference.\nversion = 1\n' \
+         > /etc/omen-linux/config.toml)
+    fi
+    # Older snapshots used systemctl directly, leaving no helper state. Record
+    # their links first so a disabled/masked installation stays that way.
+    if [ -n "${2:-}" ] && ! deb-systemd-helper --quiet debian-installed omen-linux.service; then
+      deb-systemd-helper update-state omen-linux.service >/dev/null || true
+      if [ "${2:-}" = "0.1.0-1" ] && [ -d /run/systemd/system ]; then
+        printf '%s\n' 'omen-linux: version 0.1.0-1 may have disabled the service during its upgrade hook.' \
+          'Check systemctl status omen-linux.service; re-enable with systemctl enable --now omen-linux.service if desired.' >&2
+      fi
+    fi
+    if deb-systemd-helper --quiet was-enabled omen-linux.service; then
+      deb-systemd-helper enable omen-linux.service >/dev/null || true
+    else
+      deb-systemd-helper update-state omen-linux.service >/dev/null || true
+    fi
+    if [ -d /run/systemd/system ]; then
+      systemctl --system daemon-reload >/dev/null || true
+      action=start
+      if [ -n "${2:-}" ]; then action=restart; fi
+      # Debian's helper honors policy-rc.d and does not start disabled units.
+      deb-systemd-invoke "$action" omen-linux.service >/dev/null || true
+    fi
+    update-desktop-database /usr/share/applications 2>/dev/null || true
+    ;;
+esac
+
+exit 0

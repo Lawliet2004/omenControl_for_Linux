@@ -1,0 +1,1877 @@
+{
+  "generated_utc": "2026-10-26T06:30:49.262270+00:00",
+  "version": "0.1.0",
+  "goal_complete": false,
+  "rust_tests": {
+    "debug": {
+      "passed": 161,
+      "failed": 0,
+      "ignored": 0
+    },
+    "release": {
+      "passed": 161,
+      "failed": 0,
+      "ignored": 0
+    }
+  },
+  "checks": {
+    "strict_clippy": "pass",
+    "cargo_fmt": "pass",
+    "release_workspace_build": "pass",
+    "python_and_shell_syntax": "23 Python source files parsed; build-deb shell syntax passed",
+    "desktop_file_validate": "pass",
+    "systemd_verify_extracted_payload": "pass",
+    "package_checksums_and_release_binary_match": "pass",
+    "mock_process_smoke_debug": "pass",
+    "mock_process_smoke_release": "pass",
+    "tray_gtk_dbus_debug": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: 6 checks passed; explicit GTK x11",
+    "tray_gtk_dbus_release": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: 6 checks passed; explicit GTK wayland",
+    "dependency_notices": "156 locked crate notices included",
+    "settings_process_debug": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: previous milestone passed; scoped controller unchanged; current native settings suite passed",
+    "settings_process_release": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: previous milestone passed; scoped controller unchanged; current native settings suite passed",
+    "scoped_service_admin_action": "production IPC/pkcheck/polkit with UID 1000 and container-only rule grants; no hardware-control requests",
+    "game_launch_process_debug": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: previous milestone passed; launch controller unchanged by monitoring module",
+    "game_launch_process_release": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: previous milestone passed; launch controller unchanged by monitoring module",
+    "profile_policy_and_shutdown_serialization": "fixture unit tests passed",
+    "store_discovery": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: native/Flatpak Steam, Heroic Epic/GOG/Amazon and Lutris; pinned source and parsing/WAL fixtures",
+    "games_empty_state": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: current GTK widget screenshot inspected",
+    "package_lifecycle_container": "19 checks passed for revision 8; production authorization and network reads; container removed",
+    "package_lifecycle_final_equivalence": "Only documentation differs from the exact revision 8 package tested in container and VM",
+    "legacy_service_migration": "helper-managed state preserved; old 0.1.0-1 running prerm can erase enabled state and now reports a manual check",
+    "systemd_vm": "17 checks passed for revision 8 under actual systemd sandbox and two reboots; VM and private inputs removed",
+    "kernel_filesystem_protection": "actual visible sysfs path read-only with BindReadOnlyPaths; kernel tunables protected",
+    "native_settings_gtk_atspi_debug": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: 16 settings plus 4 network Vitals workflows passed; explicit GTK Wayland; fixture data only",
+    "native_settings_gtk_atspi_release": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: 16 settings plus 4 network Vitals workflows passed; explicit GTK Wayland; fixture data only",
+    "profile_capability_refresh": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: native GTK and tray respond to automation ownership/release and service loss; fixture hardware only",
+    "native_profile_capability_visuals": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: previous milestone app-only enabled/read-only captures; page code unchanged in monitoring change",
+    "gpu_device_sandbox_live": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: passed real already-active NVIDIA GPU; UID 1000 transient user service with PrivateDevices; no control writes or host package install",
+    "local_gpu_cache_provenance_and_mock_isolation": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: 7 added Rust cases; native fixture diagnostics and real-device regression passed",
+    "gpu_dashboard_visual": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: current app-only dashboard inspected with actual device-isolated user service; local read-only source identified",
+    "global_shortcuts_debug_x11": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: 24 workflows passed; actual GdkX11Display; private portal/daemon/tray fixtures and normal single-instance app",
+    "global_shortcuts_debug_wayland": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: 24 workflows passed; actual GdkWaylandDisplay; private portal/daemon/tray fixtures and normal single-instance app",
+    "global_shortcuts_release_x11": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: 24 workflows passed; actual GdkX11Display; private portal/daemon/tray fixtures and normal single-instance app",
+    "global_shortcuts_release_wayland": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: 24 workflows passed; actual GdkWaylandDisplay; private portal/daemon/tray fixtures and normal single-instance app",
+    "single_instance_and_bus_loss": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: normal GApplication path verified in 4 shortcut suite variants; second launch reuses the window, bus loss keeps it reachable",
+    "scoped_desktop_preferences": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: global shortcut opt-in is user-owned and backup round-trip covered; service scope unchanged",
+    "rea_direct_chat_connection": "verified registered REA 6.8.0 binary_session through this Codex chat; 229 tools; no engine installation or config repair",
+    "actual_gtk_backend_reporting": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: current native tests record or explicitly select backend; earlier host-session Wayland wording did not prove GTK Wayland",
+    "network_process_debug": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: 9 production IPC/CLI scenarios passed; fixtures, revision 6 daemon refusal and independent real read-only sysfs brackets",
+    "network_process_release": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: 9 production IPC/CLI scenarios passed; fixtures, revision 6 daemon refusal and independent real read-only sysfs brackets",
+    "network_native_visuals": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: current app-only GTK Wayland live read-only and fixture Vitals captures inspected",
+    "network_capability_and_scope": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: read-only typed GetNetwork, explicit failure/unavailable state, no host fallback for mocks or older daemon; per-interface counters never summed",
+    "network_sampling": "Prior revision 7 or earlier evidence (see recorded hashes); not rerun for revision 8: 5 added Rust tests: suspend-aware clock/gap, rate/reset/identity/cache, malformed/unavailable data, bounds and unit formatting",
+    "network_installed_service": "real kernel network reads and rate intervals reach UID 1000 in container and systemd VM without authorization grants",
+    "performance_scope": "Current binaries, warm five-second Wayland direct dashboard; private bus without host tray/portal, after disposable package checks; no cold-start claim",
+    "omencore_source_provenance": "42 selected file sizes, Git blob identities and SHA-256 hashes verified against pinned complete tree; canonical project/repository mutual links verified; no upstream code or tests executed",
+    "fan_mode_rust_regressions": "8 new cases; mode-only telemetry, invalid/missing data, unchanged write gates, conflict rejection, Linux comm names and rejection of out-of-range write readbacks on both channels",
+    "fan_monitoring_debug": "8 production IPC/CLI checks passed; private fixtures plus real unprivileged read-only mode comparison",
+    "fan_monitoring_release": "8 production IPC/CLI checks passed; private fixtures plus real unprivileged read-only mode comparison",
+    "native_fan_page": "Current GTK Wayland Auto on real read-only source and labelled Maximum fixture; private bare session bus; app-only captures inspected"
+  },
+  "package": {
+    "package": "target/debian/omen-linux_0.1.0-8_amd64.deb",
+    "bytes": 2621814,
+    "sha256": "d20c0d876352310bf926ff0e89f58393a14a11087320bacb29014640667986f5",
+    "version": "0.1.0-8",
+    "installed_by_verifier": false,
+    "checks": {
+      "root_ownership_and_directory_modes": true,
+      "payload_md5sums": true,
+      "desktop_file_validate": true,
+      "polkit_xml_matches_source": true,
+      "gui_linkage_current_environment": true,
+      "extracted_cli_readonly_discovery": true
+    },
+    "binaries": {
+      "omen-cli": {
+        "sha256": "f69565226fe4085d96a6ef971cb6867bae84695f4005b2e799526461b98277c5",
+        "matches_release": true
+      },
+      "omen-daemon": {
+        "sha256": "263c9594259c2721ab064bab38743b590225ce2a47481b32de7d761fb54124a5",
+        "matches_release": true
+      },
+      "omen-gui": {
+        "sha256": "f351d30d74e50349047466fd628d884c7080f652705a8f9bf059b6918d51fa04",
+        "matches_release": true
+      }
+    },
+    "lifecycle_equivalence": {
+      "reference_package": "target/debian/runtime-tested_omen-linux_0.1.0-8_amd64.deb",
+      "reference_sha256": "3571137c28c5efb86ccaa2d97958aefe146e796d96551ac2f64259d3396fa4d7",
+      "runtime_payload_identical": true,
+      "maintainer_scripts_and_control_identical": true,
+      "documentation_changes": [
+        "usr/share/doc/omen-linux/FAN_MONITORING.md",
+        "usr/share/doc/omen-linux/TEST_REPORT.md",
+        "usr/share/doc/omen-linux/changelog.Debian.gz"
+      ]
+    },
+    "vm_equivalence": {
+      "reference_package": "target/debian/runtime-tested_omen-linux_0.1.0-8_amd64.deb",
+      "reference_sha256": "3571137c28c5efb86ccaa2d97958aefe146e796d96551ac2f64259d3396fa4d7",
+      "runtime_payload_identical": true,
+      "maintainer_scripts_and_control_identical": true,
+      "documentation_changes": [
+        "usr/share/doc/omen-linux/FAN_MONITORING.md",
+        "usr/share/doc/omen-linux/TEST_REPORT.md",
+        "usr/share/doc/omen-linux/changelog.Debian.gz"
+      ]
+    },
+    "dependency_notices": 156,
+    "systemd_validation": {
+      "exit_code": 0,
+      "method": "unmodified unit in extracted package root; no unit started"
+    }
+  },
+  "live_profile_test": {
+    "result": "passed",
+    "fixture_only": false,
+    "board": "8C30",
+    "bios": "F.10",
+    "kernel": "7.0.0-38-generic",
+    "original": "performance",
+    "requested": "balanced",
+    "restored": "performance",
+    "uid": 1000,
+    "authorization": "installed polkit com.omenlinux.control active-session action; production IPC",
+    "scope": "one standard PPD transaction, amd_pstate CPU backend; no firmware thermal-mode equivalence claimed",
+    "evidence": "live-profile-test.json",
+    "daemon_exited_cleanly": true,
+    "tested_daemon_sha256": "11c02e6206a6bd37678cb3e8dbcc89455ffd26797e665bb4a938705b49cc89a4",
+    "repeated_after_tray_changes": false,
+    "note": "Earlier approved physical transaction; not repeated after launch-controller, serialization, monitoring or packaged-unit changes. The read-only NVIDIA probe performs no profile operation. VM/fixture tests do not validate physical automation or thermal behavior."
+  },
+  "host_changes": {
+    "rea_config": "approved setup; existing Node 24.22.1, no engines installed",
+    "polkit_action": "/usr/share/polkit-1/actions/com.omenlinux.policy installed root:root 0644",
+    "deb_installed": false,
+    "systemd_service_installed": false,
+    "test_daemon_running": false,
+    "package_test_containers": "removed; no host package or systemd service installed",
+    "vm_runtime": "19 signed-archive-checksummed Ubuntu packages extracted locally; no host installation",
+    "vm_runs": "all stopped; private VM disks/keys removed; signed base image/runtime cached under target",
+    "preexisting_mock_daemon": "left running and untouched (PID 2124598); unrelated to these tests",
+    "gpu_readonly_probe": "all temporary user services stopped/collected and private files removed; no root service or package installed",
+    "shortcut_portal_probe": "real session/list/close only; exclusive temporary user launcher removed; no BindShortcuts/ConfigureShortcuts or host key assignment",
+    "rea_direct_connection": "read-only registered-tool verification; no configuration or engine changes",
+    "network_probe": "unprivileged real daemon queried counters only and exited; no packet capture/generated traffic/network policy changes; fixture/legacy daemons exited too"
+  },
+  "performance": {
+    "method": "release binaries; 5-second windows; CPU percent of one logical core; page-cache-warm launches; live read-only monitoring",
+    "cpu_count": 12,
+    "cli_detect": {
+      "runs_seconds": [
+        0.08598144099232741,
+        0.07355676297447644,
+        0.07292766799218953,
+        0.07201581000117585,
+        0.10176249299547635
+      ],
+      "median_seconds": 0.07355676297447644
+    },
+    "daemon_socket_ready_seconds": 0.010921827022684738,
+    "daemon_idle_no_clients": {
+      "seconds": 5.000531798985321,
+      "rss_kib": 3568,
+      "cpu_pct_one_core": 0.0,
+      "reaped_children_cpu_pct_one_core": 0.0
+    },
+    "gui_window_map_seconds": 0.7235159260162618,
+    "gtk_display_type": "GdkWaylandDisplay",
+    "gui_monitoring_dashboard": {
+      "seconds": 5.000509317993419,
+      "rss_kib": 150368,
+      "cpu_pct_one_core": 2.999694440329356,
+      "reaped_children_cpu_pct_one_core": 1.3998574054870327
+    },
+    "binary_sha256": {
+      "omen-cli": "f69565226fe4085d96a6ef971cb6867bae84695f4005b2e799526461b98277c5",
+      "omen-daemon": "263c9594259c2721ab064bab38743b590225ce2a47481b32de7d761fb54124a5",
+      "omen-gui": "f351d30d74e50349047466fd628d884c7080f652705a8f9bf059b6918d51fa04"
+    },
+    "kernel": "7.0.0-38-generic",
+    "recorded_utc": "2026-10-26T06:25:42.506866+00:00",
+    "session_bus": "private minimal bus without host tray or portal; package VM and container tests completed before this run"
+  },
+  "screenshots": {
+    "battery.png": "d6c857fe5c852a890d73095276215d5147d359caa93446416a4a7bd15e00a27c",
+    "dashboard.png": "aef8977bd8e23de51a8b620fd413bba329449e0a320bdd7ecdd74a9e149af7b5",
+    "fan-mock.png": "39897cd0fe9160338f0434282918c61e7e8986d0e87a4e53e016d57704205a5d",
+    "fan.png": "1b39ff68ed44294574eafcbb91b27a8b2f6be951691d0b79d834248a4e09747e",
+    "games-mock.png": "857d955138b68da48dc6e7d4db8d14cbe11765264e5102745f391465d5da8535",
+    "games.png": "21796b7ce73f40ba72ecad70595571beaf4527344b0671cd442dd77e857b29f5",
+    "graphics.png": "5aebe425bf11dfdf909c4247febbfa47caf5e3b7307b6a91310f60b0fadc95e2",
+    "lighting.png": "e86ff12c200d2ee7a6e2d90bd78fa3473a388e99cf7ac8759f788aa43c01291c",
+    "performance.png": "22ef4e9d6a1bc72df9e4190fc0562bb435fbab4dd83d77597ec9a0411fd935c4",
+    "settings-mock.png": "fc9c753fcfa27e0f409d071e735a8f91b47f07a0d1de7499ca62f059ae3d1854",
+    "settings.png": "8f8976c22ae126640224bf648917861ef6e0812ffaa6e5b5ce0ad1ab1158dbdf",
+    "vitals.png": "3eb8f23daef40e45322658204bf7727f6bd100d348f13801578b3bda2f935575",
+    "performance-fixture.png": "51fffd0aa77d148a9a7dd3284dc50fa0784c22d78deea246a4ae1c529acd9e8e",
+    "performance-automation-fixture.png": "dbd73eba6487b2c7ef6eea45443828687073d4c4b42572955ae8dbfb0bc9e22b",
+    "dashboard-sandboxed-service.png": "3b83895807ef0b824c7354090bd616aa3760d03ab443c8bccb7e463b84d04c7d",
+    "settings-shortcut-enabled-fixture.png": "7dc0e39d72076caaf232ea65485ca36abf445e10776788798e216236d0f399cb",
+    "settings-shortcut-disabled-fixture.png": "4dabd705d6bba416bc3984222eed7c1ac5226498c3b9b346a79450015f9fac2f",
+    "vitals-network-fixture.png": "294e4ff9d74a98366f96e11ee21951c9631ed035d2fb083b1084097895361e60",
+    "vitals-network.png": "d0b284dede4d0514cdcd113a6021bc1369740bc37ed3d2abea938a53d2b78996",
+    "fan-mode-only-fixture.png": "5dbfa060809b663724f35cced132ab953a413206e2e3d2d72f1b150a12b6b379"
+  },
+  "limits": [
+    "One profile switch/restore is not thermal or Windows parity validation",
+    "Live fan/RGB/charging/graphics/firmware writes were not tested and device-specific paths remain disabled",
+    "Warm startup and short resource windows; no cold-start benchmark",
+    "Main Windows Store application and compatible Windows behavioral reference unavailable",
+    "Direct REA MCP connection verified in this chat; native decompilation engines remain unavailable",
+    "Global Show shortcut is implemented and protocol-tested on GTK X11/Wayland; real desktop key approval, physical activation and compositor focus transfer remain unverified; overlay remains unimplemented",
+    "Tray and shortcut fixtures verify explicit GTK X11/Wayland backends on KDE; other desktop backends, focus/lock-screen policy and physical shortcut activation remain unverified",
+    "Native GTK fallback chooser and preview actions passed; KDE portal dialogs, full keyboard/pointer coverage and graphical authorization remain unverified",
+    "Game/Steam execution, late-exit restoration, global atomic profile ownership and client-crash recovery are not verified or implemented; launcher tests use fixture scripts/hardware only",
+    "Store routing uses fixture clients only; GOG titles fall back to IDs, and nonstandard launcher paths/unsupported formats are listed in GAME_LAUNCHERS.md",
+    "Graphical polkit prompts/cancellation/cache expiry, logind session classification, full KDE desktop deployment and upgrade rollback remain unverified",
+    "Read-only NVIDIA supplementation is verified in a UID 1000 transient service; the full host-installed root service, physical recovery and general multi-GPU behavior remain unverified",
+    "A running-system upgrade from old development revision 0.1.0-1 can lose enabled state in its own prerm; the installer reports an explicit administrator check",
+    "Network counters are kernel reports within the reader process network namespace; no throughput calibration, physical interface churn, traffic-priority controls or host suspend test",
+    "Fan mode is kernel-reported policy, not physical cooling or recovery proof; process-name conflict detection is conservative, best effort and racy. Live fan controls remain disabled."
+  ],
+  "tray_integration": {
+    "host": "running KDE StatusNotifierWatcher",
+    "profile": "release",
+    "requested_gtk_backend": "wayland",
+    "gui_sha256": "1a4f4a6bb5b81b1aa6947f8e56effab2f0b2fa71909b2448e579154a1061f17a",
+    "live_hardware_writes": false,
+    "checks_passed": [
+      "real KDE tray: read-only menu, Hide, Activate, page navigation, clean Quit",
+      "startup preference hides only after tray registration; menu restores window",
+      "no tray host: start-minimized falls back to a visible GTK window",
+      "private-bus host loss reveals window; host restart re-registers without hiding it again",
+      "fixture only: tray capability changes remove and restore profile actions without a profile or visibility change",
+      "fixture only: tray profile changes reach daemon and restore Balanced"
+    ]
+  },
+  "settings_integration": {
+    "fixture_only": true,
+    "live_hardware_writes": false,
+    "checks_passed": [
+      "missing service config never loads the desktop user's config",
+      "connected CLI user import changes only the user file and creates a backup",
+      "reviewed service import uses typed IPC, writes the service file and preserves desktop data",
+      "scope mismatch and desktop fields in service backups are rejected without file changes",
+      "nullable AC policy remains unchanged after daemon restart",
+      "oversized input and corrupt local config fail without replacing data"
+    ]
+  },
+  "game_launch_integration": {
+    "fixture_only": true,
+    "live_hardware_writes": false,
+    "desktop_uid": 1000,
+    "checks_passed": [
+      "missing launcher is rejected before any profile write",
+      "spawn failure after profile application restores and verifies Balanced",
+      "an already-active profile is not mutated or claimed for rollback",
+      "early nonzero launcher exit is reported and rolls back the applied profile",
+      "a different profile selected by a second IPC writer is preserved",
+      "successful fixture Steam submission uses one URI argument and the desktop UID",
+      "missing Flatpak launcher fails before a bound profile is changed",
+      "steam/flatpak/620: discovered fixture submits exact arguments as desktop UID",
+      "heroic/legendary/Quail: discovered fixture submits exact arguments as desktop UID",
+      "heroic/flatpak/legendary/Quail: discovered fixture submits exact arguments as desktop UID",
+      "lutris/9: discovered fixture submits exact arguments as desktop UID",
+      "lutris/flatpak/9: discovered fixture submits exact arguments as desktop UID",
+      "battery automation and bound per-game profiles cannot compete",
+      "lost daemon during rollback reports recovery as unverified",
+      "unbound game commands work without a daemon and cannot pollute JSON stdout",
+      "longer-running launcher returns a process receipt without claiming game execution"
+    ]
+  },
+  "launcher_source_evidence": "launcher-sources.json",
+  "package_lifecycle": {
+    "started_utc": "2026-10-26T06:20:23.152999+00:00",
+    "base_image": "sha256:c098726dd9b9733f3e885f8de0ef375206a311b0a317eadc40d347b1115fb944",
+    "base_digests": [
+      "ubuntu@sha256:c098726dd9b9733f3e885f8de0ef375206a311b0a317eadc40d347b1115fb944"
+    ],
+    "package_sha256": "3571137c28c5efb86ccaa2d97958aefe146e796d96551ac2f64259d3396fa4d7",
+    "baseline_sha256": "c98e29c045c4f8fbae013bf49555b7102d5774cdec89ac2e823c7257bc6448eb",
+    "host_package_installed": false,
+    "container_removed": true,
+    "apt_mirror": "https://mirrors.edge.kernel.org/ubuntu",
+    "isolation": "default Docker namespaces/devices; SYS_ADMIN absent; no-new-privileges; no explicit host mounts, bus, sockets or device passthrough",
+    "result": "passed",
+    "checks_passed": [
+      "fresh Ubuntu package install resolves distro libraries, creates private config and enables the unit offline",
+      "installed daemon exposes container-network counters and sampled rates to UID 1000 without authorization grants",
+      "installed production daemon permits UID 1000 reads and fails closed without a system bus",
+      "installed polkit actions deny non-session UID 1000 admin/control requests without an authentication agent",
+      "a container-only control grant reaches the daemon refusal and cannot authorize admin settings",
+      "a container-only admin grant saves disabled automation through production IPC as UID 1000",
+      "removing the temporary polkit rule revokes subsequent admin requests",
+      "loss of the authorization bus leaves reads working and mutations denied",
+      "SIGTERM removes the production socket; no mock authorization bypass was used",
+      "same-version reinstall preserves a disabled unit and administrator configuration",
+      "same-version reinstall preserves an enabled unit without rewriting configuration",
+      "same-version reinstall preserves an administrator mask",
+      "policy-rc.d denial prevents runtime restart; upgrades do not disable or enable the unit directly",
+      "remove/reinstall retains service-disable state, system configuration and desktop settings",
+      "purge removes package settings, policy and helper links while retaining desktop settings",
+      "real legacy-version upgrade bootstraps helper state without enabling an administrator-disabled service",
+      "real legacy-version upgrade preserves an administrator-enabled service",
+      "real legacy-version upgrade preserves an administrator-masked service",
+      "purge followed by a fresh install restores the default enablement and private configuration"
+    ],
+    "current_version": "0.1.0-8",
+    "baseline_version": "0.1.0-1",
+    "fixture_policy_only": true,
+    "hardware_writes": false,
+    "systemd_pid1_tested": false,
+    "gui_authentication_prompt_tested": false,
+    "test_payload_sha256": "d10529f383bde0aea07070e51e557768b639c96fbc5bc5e93ea566dc1acaaa59",
+    "configuration_sha256": "6649779aaef4a32afca5cc7262556cf108a45d9f5836c4591bf56734b084e14d",
+    "distro_packages": "libadwaita-1-0:amd64\t1.9.1-0ubuntu0.2\nlibgtk-4-1:amd64\t4.22.4+ds-0ubuntu0.1\nlibsqlite3-0:amd64\t3.46.1-9ubuntu0.3\npolkitd\t127-2ubuntu1.1\nsystemd\t259.9-0ubuntu0.1",
+    "finished_utc": "2026-10-26T06:23:33.020709+00:00"
+  },
+  "systemd_vm": {
+    "started_utc": "2026-10-26T06:20:23.537160+00:00",
+    "package_sha256": "3571137c28c5efb86ccaa2d97958aefe146e796d96551ac2f64259d3396fa4d7",
+    "image_sha256": "5645d0318ad21f643ebb1ac4567514620e9893380b07b0201fda163baa5b7eb5",
+    "qemu_version": "QEMU emulator version 10.2.1 (Debian 1:10.2.1+ds-1ubuntu3.3)",
+    "host_uid": 1000,
+    "host_package_installed": false,
+    "apt_mirror": "https://mirrors.edge.kernel.org/ubuntu",
+    "hardware_writes": false,
+    "physical_hardware_validated": false,
+    "result": "passed",
+    "vm_exited": true,
+    "temporary_files_removed": true,
+    "qemu_pid": 2696409,
+    "qemu_arguments": [
+      "-no-user-config",
+      "-nodefaults",
+      "-machine",
+      "q35,accel=kvm,dump-guest-core=off",
+      "-cpu",
+      "host",
+      "-m",
+      "1024",
+      "-smp",
+      "2",
+      "-display",
+      "none",
+      "-vga",
+      "none",
+      "-monitor",
+      "none",
+      "-L",
+      "/home/papan/Desktop/Projects/omen/target/vm-runtime/root/usr/share/qemu",
+      "-bios",
+      "/home/papan/Desktop/Projects/omen/target/vm-runtime/root/usr/share/seabios/bios-256k.bin",
+      "-drive",
+      "file=/home/papan/Desktop/Projects/omen/target/omen-systemd-vm-i79z3zhj/disk.qcow2,if=virtio,format=qcow2",
+      "-drive",
+      "file=/home/papan/Desktop/Projects/omen/target/omen-systemd-vm-i79z3zhj/seed.iso,media=cdrom,readonly=on,format=raw",
+      "-netdev",
+      "user,id=net0,hostfwd=tcp:127.0.0.1:53663-:22",
+      "-device",
+      "virtio-net-pci,netdev=net0,romfile=",
+      "-device",
+      "virtio-rng-pci",
+      "-serial",
+      "file:/home/papan/Desktop/Projects/omen/target/omen-systemd-vm-i79z3zhj/serial.log",
+      "-sandbox",
+      "on,obsolete=deny,elevateprivileges=deny,spawn=deny,resourcecontrol=deny"
+    ],
+    "checks_passed": [
+      "real systemd starts the installed read-only daemon; UID 1000 connects to its production socket",
+      "sandboxed installed service exposes real per-interface network counters and sampled rates to UID 1000",
+      "running process has NoNewPrivileges, seccomp and only CAP_DAC_OVERRIDE",
+      "actual mount namespace enforces read-only system/sysfs, writable service paths, hidden home and private tmp",
+      "sandboxed production pkcheck/polkit denies, grants a VM-only admin save and observes rule revocation",
+      "systemd stop removes the socket and RuntimeDirectory",
+      "systemd start/restart creates a new responding daemon",
+      "Restart=on-failure recovers the read-only service and socket after guest-only SIGKILL",
+      "a real guest reboot starts the enabled service and retains system configuration",
+      "administrator disable --now stops the service and removes its socket",
+      "a guest reboot respects administrator-disabled service state",
+      "real systemd package reinstall preserves a disabled service and configuration",
+      "real systemd package reinstall preserves an administrator mask",
+      "enabled running-service reinstall performs a real restart and retains configuration",
+      "dpkg removal stops the actual service and preserves system configuration",
+      "reinstall after removal starts the formerly enabled service",
+      "dpkg purge stops the service and removes its config, policy and enablement link"
+    ],
+    "test_payload_sha256": "a1b4924093af386ab5e754cabd8e05c5642674942e7c2b2cddbbe9994b560b5f",
+    "initial_boot_id": "84f7f5e4-9e8e-4da1-aaf8-4c182792c13d",
+    "kernel": "7.0.0-38-generic",
+    "systemd_version": "systemd 259 (259.5-0ubuntu3.4)",
+    "network_monitoring": {
+      "interfaces": [
+        {
+          "ifindex": 2,
+          "link_state": "up",
+          "loopback": false,
+          "name": "enp0s1",
+          "rx_bytes": 48258741,
+          "rx_bytes_per_second": 0.0,
+          "rx_dropped_or_missed": 0,
+          "rx_errors": 0,
+          "tx_bytes": 1507627,
+          "tx_bytes_per_second": 0.0,
+          "tx_dropped": 0,
+          "tx_errors": 0
+        },
+        {
+          "ifindex": 1,
+          "link_state": "unknown",
+          "loopback": true,
+          "name": "lo",
+          "rx_bytes": 9576,
+          "rx_bytes_per_second": 0.0,
+          "rx_dropped_or_missed": 0,
+          "rx_errors": 0,
+          "tx_bytes": 9576,
+          "tx_bytes_per_second": 0.0,
+          "tx_dropped": 0,
+          "tx_errors": 0
+        }
+      ],
+      "interval_ms": 327,
+      "measured_unix_ms": 1792995772488,
+      "omitted_interfaces": 0,
+      "source": "kernel",
+      "unreadable_interfaces": 0
+    },
+    "loaded_sandbox_properties": "FragmentPath=/usr/lib/systemd/system/omen-linux.service\nReadWritePaths=/run/omen-linux /etc/omen-linux\nReadOnlyPaths=\nPrivateTmp=yes\nProtectKernelTunables=yes\nProtectHome=yes\nProtectSystem=strict\n",
+    "manager_mount_namespace": "mnt:[4026531832]",
+    "service_mount_namespace": "mnt:[4026532308]",
+    "sysfs_mountinfo": [
+      "373 367 0:25 / /sys rw,nosuid,nodev,noexec,relatime shared:289 master:5 - sysfs sysfs rw",
+      "374 373 0:8 / /sys/kernel/security rw,nosuid,nodev,noexec,relatime shared:290 master:6 - securityfs securityfs rw",
+      "375 373 0:29 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime shared:291 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting",
+      "376 373 0:30 / /sys/fs/pstore rw,nosuid,nodev,noexec,relatime shared:292 master:8 - pstore none rw",
+      "377 373 0:31 / /sys/fs/bpf rw,nosuid,nodev,noexec,relatime shared:293 master:9 - bpf bpf rw,mode=700",
+      "378 373 0:21 / /sys/kernel/config rw,nosuid,nodev,noexec,relatime shared:294 master:10 - configfs configfs rw",
+      "379 373 0:9 / /sys/kernel/debug rw,nosuid,nodev,noexec,relatime shared:295 master:14 - debugfs debugfs rw",
+      "380 373 0:14 / /sys/kernel/tracing rw,nosuid,nodev,noexec,relatime shared:296 master:17 - tracefs tracefs rw",
+      "381 373 0:36 / /sys/fs/fuse/connections rw,nosuid,nodev,noexec,relatime shared:297 master:20 - fusectl fusectl rw",
+      "389 373 0:25 / /sys ro,nosuid,nodev,noexec,relatime shared:298 master:5 - sysfs sysfs rw",
+      "390 389 0:8 / /sys/kernel/security ro,nosuid,nodev,noexec,relatime shared:299 master:6 - securityfs securityfs rw",
+      "391 389 0:29 / /sys/fs/cgroup ro,nosuid,nodev,noexec,relatime shared:300 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting",
+      "410 389 0:30 / /sys/fs/pstore ro,nosuid,nodev,noexec,relatime shared:302 master:8 - pstore none rw",
+      "411 389 0:31 / /sys/fs/bpf ro,nosuid,nodev,noexec,relatime shared:303 master:9 - bpf bpf rw,mode=700",
+      "412 389 0:21 / /sys/kernel/config ro,nosuid,nodev,noexec,relatime shared:304 master:10 - configfs configfs rw",
+      "413 389 0:9 / /sys/kernel/debug ro,nosuid,nodev,noexec,relatime shared:305 master:14 - debugfs debugfs rw",
+      "414 389 0:14 / /sys/kernel/tracing ro,nosuid,nodev,noexec,relatime shared:306 master:17 - tracefs tracefs rw",
+      "415 389 0:36 / /sys/fs/fuse/connections ro,nosuid,nodev,noexec,relatime shared:307 master:20 - fusectl fusectl rw",
+      "416 391 0:29 /system.slice/omen-linux.service/memory.pressure /sys/fs/cgroup/system.slice/omen-linux.service/memory.pressure rw,nosuid,nodev,noexec,relatime shared:301 master:7 - cgroup2 cgroup2 rw,nsdelegate,memory_recursiveprot,memory_hugetlb_accounting"
+    ],
+    "service_mount_options": {
+      "/sys": {
+        "options": "rw,nosuid,nodev,noexec,relatime\nro,nosuid,nodev,noexec,relatime",
+        "statvfs_readonly": true,
+        "expected_writable": false
+      },
+      "/etc/hostname": {
+        "options": "ro,nosuid,relatime",
+        "statvfs_readonly": true,
+        "expected_writable": false
+      },
+      "/etc/omen-linux": {
+        "options": "rw,nosuid,relatime",
+        "statvfs_readonly": false,
+        "expected_writable": true
+      },
+      "/run/omen-linux": {
+        "options": "rw,nosuid,nodev",
+        "statvfs_readonly": false,
+        "expected_writable": true
+      }
+    },
+    "disabled_boot_id": "3ee36db1-ade9-4fb6-a064-1bc135062f71",
+    "vm_exit_code": 0,
+    "finished_utc": "2026-10-26T06:23:36.236027+00:00"
+  },
+  "native_settings_integration": {
+    "debug": {
+      "result": "passed",
+      "profile": "debug",
+      "fixture_only": true,
+      "live_hardware_writes": false,
+      "interaction": "AT-SPI actions, editable text and native file-list selection; no injected application test actions",
+      "picker": "real GTK fallback; private bus has no desktop portal",
+      "requested_gtk_backend": "wayland",
+      "checks_passed": [
+        "native export picker cancellation leaves user and service settings unchanged",
+        "native user export writes private, scoped JSON without changing either configuration",
+        "native import picker cancellation leaves both configurations unchanged",
+        "native user import saves the selected preferences only to the desktop file",
+        "native service export reads production IPC and writes a private service-only backup",
+        "scope-mismatched native user import displays an error without configuration changes",
+        "malformed native import preserves existing configuration and reports failure",
+        "oversized native import reports its size limit and preserves configuration",
+        "service preview shows selected automation and cancellation never sends a mutation",
+        "explicit native Apply persists service policy through IPC while leaving desktop settings unchanged",
+        "profile controls become read-only after the imported battery policy takes ownership",
+        "restoring service policies re-enables profile controls without restarting the application",
+        "native diagnostics export identifies fixture hardware and writes private JSON",
+        "daemon loss during service preview reports failure without saving to either configuration",
+        "daemon loss disables profile controls and explains the missing capability",
+        "desktop settings export remains usable after the service disconnects"
+      ],
+      "network_checks_passed": [
+        "Vitals shows fixture interface identity and measured idle rates without live network data",
+        "Vitals updates sampled rates, errors and drops from changed fixture counters",
+        "missing fixture counters show an unavailable reason without falling back to the host",
+        "recovered Vitals replaces removed interface rows with the new identity"
+      ],
+      "binary_sha256": "d2d04facffc2d2cfdc0da631d70125500c4373eb3b96468335407795f1d5fb54",
+      "gtk_display_type": "GdkWaylandDisplay",
+      "cleanup_complete": true,
+      "recorded_utc": "2026-10-26T04:58:56.514882+00:00"
+    },
+    "release": {
+      "result": "passed",
+      "profile": "release",
+      "fixture_only": true,
+      "live_hardware_writes": false,
+      "interaction": "AT-SPI actions, editable text and native file-list selection; no injected application test actions",
+      "picker": "real GTK fallback; private bus has no desktop portal",
+      "requested_gtk_backend": "wayland",
+      "checks_passed": [
+        "native export picker cancellation leaves user and service settings unchanged",
+        "native user export writes private, scoped JSON without changing either configuration",
+        "native import picker cancellation leaves both configurations unchanged",
+        "native user import saves the selected preferences only to the desktop file",
+        "native service export reads production IPC and writes a private service-only backup",
+        "scope-mismatched native user import displays an error without configuration changes",
+        "malformed native import preserves existing configuration and reports failure",
+        "oversized native import reports its size limit and preserves configuration",
+        "service preview shows selected automation and cancellation never sends a mutation",
+        "explicit native Apply persists service policy through IPC while leaving desktop settings unchanged",
+        "profile controls become read-only after the imported battery policy takes ownership",
+        "restoring service policies re-enables profile controls without restarting the application",
+        "native diagnostics export identifies fixture hardware and writes private JSON",
+        "daemon loss during service preview reports failure without saving to either configuration",
+        "daemon loss disables profile controls and explains the missing capability",
+        "desktop settings export remains usable after the service disconnects"
+      ],
+      "network_checks_passed": [
+        "Vitals shows fixture interface identity and measured idle rates without live network data",
+        "Vitals updates sampled rates, errors and drops from changed fixture counters",
+        "missing fixture counters show an unavailable reason without falling back to the host",
+        "recovered Vitals replaces removed interface rows with the new identity"
+      ],
+      "binary_sha256": "1a4f4a6bb5b81b1aa6947f8e56effab2f0b2fa71909b2448e579154a1061f17a",
+      "gtk_display_type": "GdkWaylandDisplay",
+      "cleanup_complete": true,
+      "recorded_utc": "2026-10-26T04:59:26.253727+00:00"
+    }
+  },
+  "tray_integrations": {
+    "debug": {
+      "host": "running KDE StatusNotifierWatcher",
+      "profile": "debug",
+      "requested_gtk_backend": "x11",
+      "gui_sha256": "d2d04facffc2d2cfdc0da631d70125500c4373eb3b96468335407795f1d5fb54",
+      "live_hardware_writes": false,
+      "checks_passed": [
+        "real KDE tray: read-only menu, Hide, Activate, page navigation, clean Quit",
+        "startup preference hides only after tray registration; menu restores window",
+        "no tray host: start-minimized falls back to a visible GTK window",
+        "private-bus host loss reveals window; host restart re-registers without hiding it again",
+        "fixture only: tray capability changes remove and restore profile actions without a profile or visibility change",
+        "fixture only: tray profile changes reach daemon and restore Balanced"
+      ]
+    },
+    "release": {
+      "host": "running KDE StatusNotifierWatcher",
+      "profile": "release",
+      "requested_gtk_backend": "wayland",
+      "gui_sha256": "1a4f4a6bb5b81b1aa6947f8e56effab2f0b2fa71909b2448e579154a1061f17a",
+      "live_hardware_writes": false,
+      "checks_passed": [
+        "real KDE tray: read-only menu, Hide, Activate, page navigation, clean Quit",
+        "startup preference hides only after tray registration; menu restores window",
+        "no tray host: start-minimized falls back to a visible GTK window",
+        "private-bus host loss reveals window; host restart re-registers without hiding it again",
+        "fixture only: tray capability changes remove and restore profile actions without a profile or visibility change",
+        "fixture only: tray profile changes reach daemon and restore Balanced"
+      ]
+    }
+  },
+  "profile_capability_visuals": {
+    "fixture_only": true,
+    "hardware_writes": false,
+    "method": "application-only GTK widget snapshots; no desktop capture",
+    "gui_sha256": "acda0c3e76640bb46f3ecfab68dbea545f2c3211224cf9b79af88de58e7bfde1",
+    "screenshots": [
+      {
+        "path": "docs/screenshots/performance-fixture.png",
+        "battery_automation": false,
+        "sha256": "51fffd0aa77d148a9a7dd3284dc50fa0784c22d78deea246a4ae1c529acd9e8e"
+      },
+      {
+        "path": "docs/screenshots/performance-automation-fixture.png",
+        "battery_automation": true,
+        "sha256": "dbd73eba6487b2c7ef6eea45443828687073d4c4b42572955ae8dbfb0bc9e22b"
+      }
+    ],
+    "cleanup_complete": true
+  },
+  "gpu_monitoring": {
+    "result": "passed",
+    "hardware_writes": false,
+    "host_package_installed": false,
+    "requested_gtk_backend": "wayland",
+    "method": "transient systemd user service with real GPU/sysfs and PrivateDevices; production read-only IPC and CLI",
+    "uid": 1000,
+    "binary_sha256": {
+      "omen-cli": "7deae979536c4b0e3b31c8caeaec2d5bddf60ce5d1d9eb670738bd466ec12491",
+      "omen-daemon": "706fe0cc751375ddac93e9f4afb0cf1ed4dd2931765b5fd18b48f3ed5cd7dc6f"
+    },
+    "kernel": "7.0.0-38-generic",
+    "nvidia_driver_version": "595.99.02",
+    "gpus": [
+      {
+        "pci": "0000:01:00.0",
+        "runtime_status": "active",
+        "driver": "nvidia"
+      }
+    ],
+    "independent_reference": {
+      "args": [
+        "/usr/bin/nvidia-smi",
+        "--id=0000:01:00.0",
+        "--query-gpu=name,temperature.gpu,utilization.gpu,power.draw,clocks.sm,memory.used,memory.total",
+        "--format=csv,noheader,nounits"
+      ],
+      "exit_code": 0,
+      "stdout": "NVIDIA GeForce RTX 2050, 49, 0, 2.80, 210, 1940, 4096\n",
+      "stderr": ""
+    },
+    "properties": [
+      "PrivateDevices=yes",
+      "ProtectSystem=strict",
+      "ProtectHome=yes",
+      "BindReadOnlyPaths=/sys",
+      "ProtectKernelTunables=yes",
+      "ReadWritePaths=/tmp/omen-gpu-probe-dh0qasno",
+      "PrivateTmp=no",
+      "RestrictAddressFamilies=AF_UNIX",
+      "ProtectKernelModules=yes",
+      "ProtectKernelLogs=yes",
+      "ProtectControlGroups=yes",
+      "NoNewPrivileges=yes",
+      "LockPersonality=yes",
+      "RestrictSUIDSGID=yes",
+      "UMask=0077"
+    ],
+    "device_visibility_control": {
+      "exit_code": 0,
+      "stdout": "NVIDIA GeForce RTX 2050, 49, 0, 2.82, 210, 1940, 4096\n",
+      "stderr": "Running as unit: omen-gpu-readonly-95e409a978-control.service\n          Finished with result: success\nMain processes terminated with: code=exited, status=0/SUCCESS\n               Service runtime: 84ms\n             CPU time consumed: 70ms\n                   Memory peak: 17.1M (swap: 0B)\n"
+    },
+    "namespace": {
+      "uid": 1000,
+      "nvidiactl_visible": false,
+      "sysfs_readonly": true,
+      "mount_namespace": "mnt:[4026533273]"
+    },
+    "daemon_info": {
+      "daemon_version": "0.1.0",
+      "machine": {
+        "bios_vendor": "AMI",
+        "bios_version": "F.10",
+        "board_name": "8C30",
+        "board_vendor": "HP",
+        "class": "victus",
+        "kernel_version": "7.0.0-38-generic",
+        "product_family": "103C_5335M7 HP Victus",
+        "product_name": "Victus by HP 15.6 inch Gaming Laptop PC-fb1002AX",
+        "sys_vendor": "HP"
+      },
+      "mock": false,
+      "protocol_version": 1,
+      "started_unix": 1792990876
+    },
+    "daemon_nvidia_capability": {
+      "detail": "NVIDIA telemetry unavailable in this process (nvidia-smi, bound GPU or device-node access missing)",
+      "status": "unavailable"
+    },
+    "daemon_nvidia_samples": [],
+    "client_nvidia_capability": {
+      "detail": "read-only nvidia-smi samples from the local client; privileged daemon keeps its device sandbox",
+      "status": "available"
+    },
+    "client_nvidia_samples": [
+      {
+        "id": "nvidia/name",
+        "kind": "text",
+        "label": "GPU",
+        "measured_unix_ms": 1792990877354,
+        "source": "nvidia_smi",
+        "text": "NVIDIA GeForce RTX 2050",
+        "value": null
+      },
+      {
+        "id": "nvidia/temp",
+        "kind": "temperature",
+        "label": "GPU temperature (NVIDIA)",
+        "measured_unix_ms": 1792990877354,
+        "source": "nvidia_smi",
+        "text": null,
+        "value": 50.0
+      },
+      {
+        "id": "nvidia/util",
+        "kind": "percent",
+        "label": "GPU utilization (NVIDIA)",
+        "measured_unix_ms": 1792990877354,
+        "source": "nvidia_smi",
+        "text": null,
+        "value": 0.0
+      },
+      {
+        "id": "nvidia/power",
+        "kind": "power",
+        "label": "GPU power (NVIDIA)",
+        "measured_unix_ms": 1792990877354,
+        "source": "nvidia_smi",
+        "text": null,
+        "value": 2.82
+      },
+      {
+        "id": "nvidia/sm_clock",
+        "kind": "frequency",
+        "label": "GPU SM clock (NVIDIA)",
+        "measured_unix_ms": 1792990877354,
+        "source": "nvidia_smi",
+        "text": null,
+        "value": 210.0
+      },
+      {
+        "id": "nvidia/vram_used_pct",
+        "kind": "percent",
+        "label": "GPU VRAM used (NVIDIA)",
+        "measured_unix_ms": 1792990877354,
+        "source": "nvidia_smi",
+        "text": null,
+        "value": 47.36328125
+      }
+    ],
+    "client_telemetry": {
+      "nvidia": {
+        "mode": "read_only",
+        "origin": "local_client",
+        "sensor_ids": [
+          "nvidia/name",
+          "nvidia/temp",
+          "nvidia/util",
+          "nvidia/power",
+          "nvidia/sm_clock",
+          "nvidia/vram_used_pct"
+        ]
+      }
+    },
+    "gui_capture": {
+      "path": "docs/screenshots/dashboard-sandboxed-service.png",
+      "sha256": "3b83895807ef0b824c7354090bd616aa3760d03ab443c8bccb7e463b84d04c7d",
+      "gtk_display_type": "GdkWaylandDisplay",
+      "gui_sha256": "1a4f4a6bb5b81b1aa6947f8e56effab2f0b2fa71909b2448e579154a1061f17a"
+    },
+    "connected_monitoring": {
+      "method": "five-second warm window; GUI connected to device-isolated user daemon; percent of one logical core; includes local read-only NVIDIA fallback",
+      "seconds": 5.00007100001676,
+      "gui_sha256": "1a4f4a6bb5b81b1aa6947f8e56effab2f0b2fa71909b2448e579154a1061f17a",
+      "processes": {
+        "gui": {
+          "rss_kib": 155896,
+          "cpu_pct_one_core": 0.39999432007931407,
+          "reaped_children_cpu_pct_one_core": 0.39999432007931407
+        },
+        "daemon": {
+          "rss_kib": 4516,
+          "cpu_pct_one_core": 1.5999772803172563,
+          "reaped_children_cpu_pct_one_core": 0.5999914801189711
+        }
+      }
+    },
+    "service_stopped": true,
+    "recorded_utc": "2026-10-26T05:01:29.995602+00:00",
+    "temporary_files_removed": true
+  },
+  "gpu_monitoring_visuals": {
+    "recorded_utc": "2026-10-26T05:01:29.995602+00:00",
+    "hardware_writes": false,
+    "gui_capture": {
+      "path": "docs/screenshots/dashboard-sandboxed-service.png",
+      "sha256": "3b83895807ef0b824c7354090bd616aa3760d03ab443c8bccb7e463b84d04c7d",
+      "gtk_display_type": "GdkWaylandDisplay",
+      "gui_sha256": "1a4f4a6bb5b81b1aa6947f8e56effab2f0b2fa71909b2448e579154a1061f17a"
+    },
+    "requested_gtk_backend": "wayland"
+  },
+  "global_shortcuts_integration": {
+    "debug": {
+      "x11": {
+        "result": "passed",
+        "profile": "debug",
+        "host_shortcuts_changed": false,
+        "hardware_writes": false,
+        "requested_gtk_backend": "x11",
+        "method": "AT-SPI actions on real GTK and DBusMenu actions; private portal protocol and tray fixtures",
+        "gui_sha256": "d2d04facffc2d2cfdc0da631d70125500c4373eb3b96468335407795f1d5fb54",
+        "checks_passed": [
+          "startup only probes support; no shortcut session or preference write before opt-in",
+          "a second ordinary launch activates the existing window without building another UI or shortcut controller",
+          "native enable registers app identity, parents the portal dialog and saves only after approval; no suggested key",
+          "only the current session and requested Show action reveal the GTK window",
+          "version 2 Configure opens asynchronously and preserves a change signal arriving before its reply",
+          "native disable releases the session and saves startup opt-out",
+          "cancel response leaves the shortcut disabled and preferences unchanged",
+          "deny response leaves the shortcut disabled and preferences unchanged",
+          "empty response leaves the shortcut disabled and preferences unchanged",
+          "bad_handle response leaves the shortcut disabled and preferences unchanged",
+          "bad_session response leaves the shortcut disabled and preferences unchanged",
+          "registration_error response leaves the shortcut disabled and preferences unchanged",
+          "cancel during hold_create closes pending work without saving or retaining a session",
+          "cancel during hold_bind closes pending work without saving or retaining a session",
+          "portal loss during approval fails promptly and releases pending sessions",
+          "corrupt preferences fail before creating a portal session and are not overwritten",
+          "failed preference persistence releases the approved session and retains the original file",
+          "version 1 portal binds normally and hides unsupported Configure action",
+          "backend session closure disables activation and retains the requested startup preference",
+          "portal owner loss releases the old session; re-enable registers a fresh connection after recovery",
+          "quitting releases the active portal session without clearing the startup preference",
+          "saved opt-in restores a fresh approved session after application restart",
+          "slow portal startup restores the shortcut while minimized and activation reveals the window",
+          "whole-bus loss keeps GTK alive and permits saving startup opt-out while disconnected"
+        ],
+        "portal_state": {
+          "scenario": "slow_registration",
+          "version": 2,
+          "creates": 15,
+          "binds": 12,
+          "configs": 1,
+          "closes": 1,
+          "request_closes": 0,
+          "sessions": {
+            "/org/freedesktop/portal/desktop/session/1_134/omen_2646774_2": {
+              "owner": ":1.134"
+            }
+          },
+          "parents": [
+            "x11:2400004",
+            "x11:2400004",
+            "x11:2400004",
+            "x11:2400004",
+            "x11:2400004",
+            "x11:2400004",
+            "x11:2400004",
+            "x11:2400004",
+            "x11:2400004",
+            "x11:2400004",
+            "x11:2000004",
+            ""
+          ],
+          "preferred_triggers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "observed_parent_backends": [
+          "x11"
+        ],
+        "gtk_display_type": "GdkX11Display",
+        "cleanup_complete": true
+      },
+      "wayland": {
+        "result": "passed",
+        "profile": "debug",
+        "host_shortcuts_changed": false,
+        "hardware_writes": false,
+        "requested_gtk_backend": "wayland",
+        "method": "AT-SPI actions on real GTK and DBusMenu actions; private portal protocol and tray fixtures",
+        "gui_sha256": "d2d04facffc2d2cfdc0da631d70125500c4373eb3b96468335407795f1d5fb54",
+        "checks_passed": [
+          "startup only probes support; no shortcut session or preference write before opt-in",
+          "a second ordinary launch activates the existing window without building another UI or shortcut controller",
+          "native enable registers app identity, parents the portal dialog and saves only after approval; no suggested key",
+          "only the current session and requested Show action reveal the GTK window",
+          "version 2 Configure opens asynchronously and preserves a change signal arriving before its reply",
+          "native disable releases the session and saves startup opt-out",
+          "cancel response leaves the shortcut disabled and preferences unchanged",
+          "deny response leaves the shortcut disabled and preferences unchanged",
+          "empty response leaves the shortcut disabled and preferences unchanged",
+          "bad_handle response leaves the shortcut disabled and preferences unchanged",
+          "bad_session response leaves the shortcut disabled and preferences unchanged",
+          "registration_error response leaves the shortcut disabled and preferences unchanged",
+          "cancel during hold_create closes pending work without saving or retaining a session",
+          "cancel during hold_bind closes pending work without saving or retaining a session",
+          "portal loss during approval fails promptly and releases pending sessions",
+          "corrupt preferences fail before creating a portal session and are not overwritten",
+          "failed preference persistence releases the approved session and retains the original file",
+          "version 1 portal binds normally and hides unsupported Configure action",
+          "backend session closure disables activation and retains the requested startup preference",
+          "portal owner loss releases the old session; re-enable registers a fresh connection after recovery",
+          "quitting releases the active portal session without clearing the startup preference",
+          "saved opt-in restores a fresh approved session after application restart",
+          "slow portal startup restores the shortcut while minimized and activation reveals the window",
+          "whole-bus loss keeps GTK alive and permits saving startup opt-out while disconnected"
+        ],
+        "portal_state": {
+          "scenario": "slow_registration",
+          "version": 2,
+          "creates": 15,
+          "binds": 12,
+          "configs": 1,
+          "closes": 0,
+          "request_closes": 3,
+          "sessions": {
+            "/org/freedesktop/portal/desktop/session/1_137/omen_2646398_2": {
+              "owner": ":1.137"
+            }
+          },
+          "parents": [
+            "wayland:82484b7c-5c15-4a4c-bebf-a56cc87c9283",
+            "wayland:d8d29553-ef99-4d86-9312-40676ffcb51e",
+            "wayland:76b3cd1a-c54a-42a4-919d-79534d80b801",
+            "wayland:551ccaff-42f9-41f9-bf29-dff2511ab2c6",
+            "wayland:b6c8b345-be40-4e45-b76e-b4935a657da6",
+            "wayland:ce247b26-6f82-486b-ac09-20fae47c18bc",
+            "wayland:01ea18a6-867a-41c0-8c60-c03f51660f87",
+            "wayland:6b84c8f4-432f-412a-be46-101006c46050",
+            "wayland:a739ce4b-4294-482c-b29f-8b9a85225e2b",
+            "wayland:35797b17-0d64-4e04-b148-4d633793506e",
+            "wayland:f24d4092-0c36-46d3-b0ea-340fe22c464a",
+            ""
+          ],
+          "preferred_triggers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "observed_parent_backends": [
+          "wayland"
+        ],
+        "gtk_display_type": "GdkWaylandDisplay",
+        "cleanup_complete": true
+      }
+    },
+    "release": {
+      "x11": {
+        "result": "passed",
+        "profile": "release",
+        "host_shortcuts_changed": false,
+        "hardware_writes": false,
+        "requested_gtk_backend": "x11",
+        "method": "AT-SPI actions on real GTK and DBusMenu actions; private portal protocol and tray fixtures",
+        "gui_sha256": "1a4f4a6bb5b81b1aa6947f8e56effab2f0b2fa71909b2448e579154a1061f17a",
+        "checks_passed": [
+          "startup only probes support; no shortcut session or preference write before opt-in",
+          "a second ordinary launch activates the existing window without building another UI or shortcut controller",
+          "native enable registers app identity, parents the portal dialog and saves only after approval; no suggested key",
+          "only the current session and requested Show action reveal the GTK window",
+          "version 2 Configure opens asynchronously and preserves a change signal arriving before its reply",
+          "native disable releases the session and saves startup opt-out",
+          "cancel response leaves the shortcut disabled and preferences unchanged",
+          "deny response leaves the shortcut disabled and preferences unchanged",
+          "empty response leaves the shortcut disabled and preferences unchanged",
+          "bad_handle response leaves the shortcut disabled and preferences unchanged",
+          "bad_session response leaves the shortcut disabled and preferences unchanged",
+          "registration_error response leaves the shortcut disabled and preferences unchanged",
+          "cancel during hold_create closes pending work without saving or retaining a session",
+          "cancel during hold_bind closes pending work without saving or retaining a session",
+          "portal loss during approval fails promptly and releases pending sessions",
+          "corrupt preferences fail before creating a portal session and are not overwritten",
+          "failed preference persistence releases the approved session and retains the original file",
+          "version 1 portal binds normally and hides unsupported Configure action",
+          "backend session closure disables activation and retains the requested startup preference",
+          "portal owner loss releases the old session; re-enable registers a fresh connection after recovery",
+          "quitting releases the active portal session without clearing the startup preference",
+          "saved opt-in restores a fresh approved session after application restart",
+          "slow portal startup restores the shortcut while minimized and activation reveals the window",
+          "whole-bus loss keeps GTK alive and permits saving startup opt-out while disconnected"
+        ],
+        "portal_state": {
+          "scenario": "slow_registration",
+          "version": 2,
+          "creates": 15,
+          "binds": 12,
+          "configs": 1,
+          "closes": 0,
+          "request_closes": 1,
+          "sessions": {
+            "/org/freedesktop/portal/desktop/session/1_134/omen_2646766_2": {
+              "owner": ":1.134"
+            }
+          },
+          "parents": [
+            "x11:2200004",
+            "x11:2200004",
+            "x11:2200004",
+            "x11:2200004",
+            "x11:2200004",
+            "x11:2200004",
+            "x11:2200004",
+            "x11:2200004",
+            "x11:2200004",
+            "x11:2200004",
+            "x11:2200004",
+            ""
+          ],
+          "preferred_triggers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "observed_parent_backends": [
+          "x11"
+        ],
+        "gtk_display_type": "GdkX11Display",
+        "cleanup_complete": true
+      },
+      "wayland": {
+        "result": "passed",
+        "profile": "release",
+        "host_shortcuts_changed": false,
+        "hardware_writes": false,
+        "requested_gtk_backend": "wayland",
+        "method": "AT-SPI actions on real GTK and DBusMenu actions; private portal protocol and tray fixtures",
+        "gui_sha256": "1a4f4a6bb5b81b1aa6947f8e56effab2f0b2fa71909b2448e579154a1061f17a",
+        "checks_passed": [
+          "startup only probes support; no shortcut session or preference write before opt-in",
+          "a second ordinary launch activates the existing window without building another UI or shortcut controller",
+          "native enable registers app identity, parents the portal dialog and saves only after approval; no suggested key",
+          "only the current session and requested Show action reveal the GTK window",
+          "version 2 Configure opens asynchronously and preserves a change signal arriving before its reply",
+          "native disable releases the session and saves startup opt-out",
+          "cancel response leaves the shortcut disabled and preferences unchanged",
+          "deny response leaves the shortcut disabled and preferences unchanged",
+          "empty response leaves the shortcut disabled and preferences unchanged",
+          "bad_handle response leaves the shortcut disabled and preferences unchanged",
+          "bad_session response leaves the shortcut disabled and preferences unchanged",
+          "registration_error response leaves the shortcut disabled and preferences unchanged",
+          "cancel during hold_create closes pending work without saving or retaining a session",
+          "cancel during hold_bind closes pending work without saving or retaining a session",
+          "portal loss during approval fails promptly and releases pending sessions",
+          "corrupt preferences fail before creating a portal session and are not overwritten",
+          "failed preference persistence releases the approved session and retains the original file",
+          "version 1 portal binds normally and hides unsupported Configure action",
+          "backend session closure disables activation and retains the requested startup preference",
+          "portal owner loss releases the old session; re-enable registers a fresh connection after recovery",
+          "quitting releases the active portal session without clearing the startup preference",
+          "saved opt-in restores a fresh approved session after application restart",
+          "slow portal startup restores the shortcut while minimized and activation reveals the window",
+          "whole-bus loss keeps GTK alive and permits saving startup opt-out while disconnected"
+        ],
+        "portal_state": {
+          "scenario": "slow_registration",
+          "version": 2,
+          "creates": 15,
+          "binds": 12,
+          "configs": 1,
+          "closes": 0,
+          "request_closes": 0,
+          "sessions": {
+            "/org/freedesktop/portal/desktop/session/1_136/omen_2646417_2": {
+              "owner": ":1.136"
+            }
+          },
+          "parents": [
+            "wayland:4fe4ad08-4dc6-4d82-8be6-3b4923d7f782",
+            "wayland:1616a580-59cc-4076-a751-95a702df2c87",
+            "wayland:c944f9dc-77b2-40ca-83f3-4c0becd5c867",
+            "wayland:98a82c33-56a9-43dc-99f0-38bd5745ca5c",
+            "wayland:f5717d09-bf12-4d2d-93f7-a834eb907a59",
+            "wayland:f54efd28-c1fc-4f44-8ec2-c9f6bef21e09",
+            "wayland:4e75afa2-67b8-4e3f-bae0-7ba0bd39ec5b",
+            "wayland:a8f4de1d-d9d6-495f-8ddd-df0a305cad5b",
+            "wayland:9bcb7da6-3395-4907-8655-bdb0b7b35f3e",
+            "wayland:8d15542a-580e-4ef6-81f9-a9bddd562c67",
+            "wayland:2cf03155-de4d-49e4-9f77-7f6f6164f549",
+            ""
+          ],
+          "preferred_triggers": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        "observed_parent_backends": [
+          "wayland"
+        ],
+        "gtk_display_type": "GdkWaylandDisplay",
+        "cleanup_complete": true
+      }
+    }
+  },
+  "global_shortcut_visuals": {
+    "fixture_only": true,
+    "host_shortcuts_changed": false,
+    "hardware_writes": false,
+    "cleanup_complete": true,
+    "method": "application-only GTK snapshot with private portal/tray/daemon fixtures",
+    "gui_sha256": "391688183390b9dc418f16d8b43b7db916a6d83de6ae788407534c3ec046d822",
+    "screenshots": [
+      {
+        "path": "docs/screenshots/settings-shortcut-disabled-fixture.png",
+        "sha256": "4dabd705d6bba416bc3984222eed7c1ac5226498c3b9b346a79450015f9fac2f",
+        "shortcut_enabled": false,
+        "portal_fixture_bind_count": 0,
+        "display_type": "GdkWaylandDisplay"
+      },
+      {
+        "path": "docs/screenshots/settings-shortcut-enabled-fixture.png",
+        "sha256": "7dc0e39d72076caaf232ea65485ca36abf445e10776788798e216236d0f399cb",
+        "shortcut_enabled": true,
+        "portal_fixture_bind_count": 1,
+        "display_type": "GdkWaylandDisplay"
+      }
+    ],
+    "note": "previous milestone captures; shortcut widget code unchanged in network addition"
+  },
+  "shortcut_portal_host": {
+    "result": "passed",
+    "uid": 1000,
+    "hardware_writes": false,
+    "bind_or_configure_requested": false,
+    "scope": "independent real-portal Register/CreateSession/ListShortcuts/Close probe; no key assignment or activation test",
+    "script_sha256": "22ba12753ec9118d9ed1d1906aa76c46383a559f76144a606eac8d2592f046ab",
+    "installed_desktop_entry": true,
+    "responses": [
+      {
+        "method": "CreateSession",
+        "code": 0,
+        "result_fields": [
+          "session_handle"
+        ]
+      },
+      {
+        "method": "ListShortcuts",
+        "code": 0,
+        "result_fields": [
+          "shortcuts"
+        ]
+      }
+    ],
+    "version": 2,
+    "previous_shortcut_ids": [],
+    "session_closed": true,
+    "connection_closed": true,
+    "recorded_utc": "2026-10-26T02:26:45.555745+00:00",
+    "temporary_user_launcher": {
+      "source_sha256": "a04d446ba46f18dbe2ccff6ea8be2b6790e0e94e4606a2f7cd9e22a41e6ae464",
+      "created_exclusively": true,
+      "removed": true,
+      "host_package_installed": false
+    }
+  },
+  "rea_direct_connection": {
+    "evidence": "rea-chat-session.json",
+    "server_identity": {
+      "package": {
+        "name": "rea-agents",
+        "version": "6.8.0",
+        "root_path": "/home/papan/.npm/_npx/af752b90495482d7/node_modules/rea-agents",
+        "build_commit": null
+      },
+      "server": {
+        "name": "rea",
+        "version": "6.8.0",
+        "started_at": "2026-10-26T04:27:19.344Z",
+        "command_path": "/home/papan/.npm/_npx/af752b90495482d7/node_modules/rea-agents/scripts/rea.mjs"
+      },
+      "sdk": {
+        "server": "2.3.1",
+        "client_test": "2.3.1",
+        "core": "2.3.1"
+      },
+      "negotiated_protocol_version": "2025-06-18",
+      "client": {
+        "name": "codex-mcp-client",
+        "version": "0.163.0-alpha.11.1"
+      },
+      "skill": {
+        "name": "reverse-engineer-anything",
+        "expected_version": "49"
+      },
+      "catalog": {
+        "counts": {
+          "cli_commands": 175,
+          "mcp_tools": 229,
+          "mcp_prompts": 6
+        },
+        "digests": {
+          "tools_sha256": "a98940ba69acd9c1781d180cee362d4ddab18f77eefdd3e3216f10e1bf98e5e9",
+          "prompts_sha256": "9609379442110570cd52fdea61a777242350873bc28958f54827ca3590e680b7",
+          "combined_sha256": "fe938a7c6eba3763b22ae2022de76dc4a7812d35d86f1d4efd36b9962b04da0b"
+        }
+      },
+      "protocol_features": {
+        "progress": true,
+        "cancellation": true,
+        "elicitation": false
+      },
+      "alignment": {
+        "state": "unknown",
+        "reasons": [],
+        "remediation": "Supply expected package, catalog, or registration identity to compare the live server."
+      }
+    },
+    "target_open": false,
+    "cleanup_pending": false,
+    "native_engines_installed": false
+  },
+  "network_monitoring": {
+    "debug": {
+      "result": "passed",
+      "profile": "debug",
+      "hardware_control_writes": false,
+      "host_network_policy_changed": false,
+      "binary_sha256": {
+        "omen-cli": "ab250d5e21568a2faf50b6bf1807774a53a43e12fcf073df0e4a994694b44e92",
+        "omen-daemon": "a57ef915f8cff5f82bf0fae1445ee49a251d05924f1e3bd88279b72267e6d89c"
+      },
+      "checks_passed": [
+        "first fixture acquisition reports counters and an unknown rate without reading host interfaces",
+        "production IPC rates match byte deltas and actual interval; errors/drops preserve kernel counter semantics",
+        "counter decrease rebases that direction while unchanged traffic is a measured zero",
+        "an interface identity change suppresses the first rate instead of spiking",
+        "missing counters fail explicitly and recovery starts a fresh baseline",
+        "CLI two-sample JSON and diagnostics use the same fixture-only production path",
+        "CLI rejects polling intervals below the supported bound",
+        "a revision 6 daemon reports the new operation unsupported; the client never substitutes host network data",
+        "unprivileged real daemon counters fall between independent sysfs reads; no traffic is generated and controls remain disabled"
+      ],
+      "old_daemon_sha256": "3021e526922424a548bd9176c46de3ea7aa1e8b966c5cbc6398761d4a2c47aa1",
+      "live_readonly": {
+        "kernel": "7.0.0-38-generic",
+        "uid": 1000,
+        "first": {
+          "interfaces": [
+            {
+              "ifindex": 6,
+              "link_state": "down",
+              "loopback": false,
+              "name": "docker0",
+              "rx_bytes": 21782612,
+              "rx_bytes_per_second": null,
+              "rx_dropped_or_missed": 0,
+              "rx_errors": 0,
+              "tx_bytes": 1103528785,
+              "tx_bytes_per_second": null,
+              "tx_dropped": 163,
+              "tx_errors": 0
+            },
+            {
+              "ifindex": 2,
+              "link_state": "down",
+              "loopback": false,
+              "name": "eno1",
+              "rx_bytes": 0,
+              "rx_bytes_per_second": null,
+              "rx_dropped_or_missed": 0,
+              "rx_errors": 0,
+              "tx_bytes": 0,
+              "tx_bytes_per_second": null,
+              "tx_dropped": 0,
+              "tx_errors": 0
+            },
+            {
+              "ifindex": 1,
+              "link_state": "unknown",
+              "loopback": true,
+              "name": "lo",
+              "rx_bytes": 3363772000,
+              "rx_bytes_per_second": null,
+              "rx_dropped_or_missed": 0,
+              "rx_errors": 0,
+              "tx_bytes": 3363772000,
+              "tx_bytes_per_second": null,
+              "tx_dropped": 0,
+              "tx_errors": 0
+            },
+            {
+              "ifindex": 3,
+              "link_state": "up",
+              "loopback": false,
+              "name": "wlo1",
+              "rx_bytes": 19720702630,
+              "rx_bytes_per_second": null,
+              "rx_dropped_or_missed": 0,
+              "rx_errors": 0,
+              "tx_bytes": 4979661459,
+              "tx_bytes_per_second": null,
+              "tx_dropped": 356,
+              "tx_errors": 0
+            }
+          ],
+          "interval_ms": null,
+          "measured_unix_ms": 1792990713733,
+          "omitted_interfaces": 0,
+          "source": "kernel",
+          "unreadable_interfaces": 0
+        },
+        "second": {
+          "interfaces": [
+            {
+              "ifindex": 6,
+              "link_state": "down",
+              "loopback": false,
+              "name": "docker0",
+              "rx_bytes": 21782612,
+              "rx_bytes_per_second": 0.0,
+              "rx_dropped_or_missed": 0,
+              "rx_errors": 0,
+              "tx_bytes": 1103528785,
+              "tx_bytes_per_second": 0.0,
+              "tx_dropped": 163,
+              "tx_errors": 0
+            },
+            {
+              "ifindex": 2,
+              "link_state": "down",
+              "loopback": false,
+              "name": "eno1",
+              "rx_bytes": 0,
+              "rx_bytes_per_second": 0.0,
+              "rx_dropped_or_missed": 0,
+              "rx_errors": 0,
+              "tx_bytes": 0,
+              "tx_bytes_per_second": 0.0,
+              "tx_dropped": 0,
+              "tx_errors": 0
+            },
+            {
+              "ifindex": 1,
+              "link_state": "unknown",
+              "loopback": true,
+              "name": "lo",
+              "rx_bytes": 3363772000,
+              "rx_bytes_per_second": 0.0,
+              "rx_dropped_or_missed": 0,
+              "rx_errors": 0,
+              "tx_bytes": 3363772000,
+              "tx_bytes_per_second": 0.0,
+              "tx_dropped": 0,
+              "tx_errors": 0
+            },
+            {
+              "ifindex": 3,
+              "link_state": "up",
+              "loopback": false,
+              "name": "wlo1",
+              "rx_bytes": 19720702630,
+              "rx_bytes_per_second": 0.0,
+              "rx_dropped_or_missed": 0,
+              "rx_errors": 0,
+              "tx_bytes": 4979661459,
+              "tx_bytes_per_second": 0.0,
+              "tx_dropped": 356,
+              "tx_errors": 0
+            }
+          ],
+          "interval_ms": 326,
+          "measured_unix_ms": 1792990714059,
+          "omitted_interfaces": 0,
+          "source": "kernel",
+          "unreadable_interfaces": 0
+        },
+        "independent_sysfs_before": {
+          "lo": {
+            "ifindex": 1,
+            "rx_bytes": 3363772000,
+            "tx_bytes": 3363772000
+          },
+          "eno1": {
+            "ifindex": 2,
+            "rx_bytes": 0,
+            "tx_bytes": 0
+          },
+          "docker0": {
+            "ifindex": 6,
+            "rx_bytes": 21782612,
+            "tx_bytes": 1103528785
+          },
+          "wlo1": {
+            "ifindex": 3,
+            "rx_bytes": 19720702630,
+            "tx_bytes": 4979661459
+          }
+        },
+        "independent_sysfs_after": {
+          "lo": {
+            "ifindex": 1,
+            "rx_bytes": 3363772000,
+            "tx_bytes": 3363772000
+          },
+          "eno1": {
+            "ifindex": 2,
+            "rx_bytes": 0,
+            "tx_bytes": 0
+          },
+          "docker0": {
+            "ifindex": 6,
+            "rx_bytes": 21782612,
+            "tx_bytes": 1103528785
+          },
+          "wlo1": {
+            "ifindex": 3,
+            "rx_bytes": 19720702630,
+            "tx_bytes": 4979661459
+          }
+        },
+        "verified_interfaces": [
+          "docker0",
+          "eno1",
+          "lo",
+          "wlo1"
+        ]
+      },
+      "cleanup_complete": true,
+      "recorded_utc": "2026-10-26T04:58:35.454076+00:00"
+    },
+    "release": {
+      "result": "passed",
+      "profile": "release",
+      "hardware_control_writes": false,
+      "host_network_policy_changed": false,
+      "binary_sha256": {
+        "omen-cli": "7deae979536c4b0e3b31c8caeaec2d5bddf60ce5d1d9eb670738bd466ec12491",
+        "omen-daemon": "706fe0cc751375ddac93e9f4afb0cf1ed4dd2931765b5fd18b48f3ed5cd7dc6f"
+      },
+      "checks_passed": [
+        "first fixture acquisition reports counters and an unknown rate without reading host interfaces",
+        "production IPC rates match byte deltas and actual interval; errors/drops preserve kernel counter semantics",
+        "counter decrease rebases that direction while unchanged traffic is a measured zero",
+        "an interface identity change suppresses the first rate instead of spiking",
+        "missing counters fail explicitly and recovery starts a fresh baseline",
+        "CLI two-sample JSON and diagnostics use the same fixture-only production path",
+        "CLI rejects polling intervals below the supported bound",
+        "a revision 6 daemon reports the new operation unsupported; the client never substitutes host network data",
+        "unprivileged real daemon counters fall between independent sysfs reads; no traffic is generated and controls remain disabled"
+      ],
+      "old_daemon_sha256": "3021e526922424a548bd9176c46de3ea7aa1e8b966c5cbc6398761d4a2c47aa1",
+      "live_readonly": {
+        "kernel": "7.0.0-38-generic",
+        "uid": 1000,
+        "first": {
+          "interfaces": [
+            {
+              "ifindex": 6,
+              "link_state": "down",
+              "loopback": false,
+              "name": "docker0",
+              "rx_bytes": 21782612,
+              "rx_bytes_per_second": null,
+              "rx_dropped_or_missed": 0,
+              "rx_errors": 0,
+              "tx_bytes": 1103528785,
+              "tx_bytes_per_second": null,
+              "tx_dropped": 163,
+              "tx_errors": 0
+            },
+            {
+              "ifindex": 2,
+              "link_state": "down",
+              "loopback": false,
+              "name": "eno1",
+              "rx_bytes": 0,
+              "rx_bytes_per_second": null,
+              "rx_dropped_or_missed": 0,
+              "rx_errors": 0,
+              "tx_bytes": 0,
+              "tx_bytes_per_second": null,
+              "tx_dropped": 0,
+              "tx_errors": 0
+            },
+            {
+              "ifindex": 1,
+              "link_state": "unknown",
+              "loopback": true,
+              "name": "lo",
+              "rx_bytes": 3363772000,
+              "rx_bytes_per_second": null,
+              "rx_dropped_or_missed": 0,
+              "rx_errors": 0,
+              "tx_bytes": 3363772000,
+              "tx_bytes_per_second": null,
+              "tx_dropped": 0,
+              "tx_errors": 0
+            },
+            {
+              "ifindex": 3,
+              "link_state": "up",
+              "loopback": false,
+              "name": "wlo1",
+              "rx_bytes": 19720898361,
+              "rx_bytes_per_second": null,
+              "rx_dropped_or_missed": 0,
+              "rx_errors": 0,
+              "tx_bytes": 4979669825,
+              "tx_bytes_per_second": null,
+              "tx_dropped": 356,
+              "tx_errors": 0
+            }
+          ],
+          "interval_ms": null,
+          "measured_unix_ms": 1792990722436,
+          "omitted_interfaces": 0,
+          "source": "kernel",
+          "unreadable_interfaces": 0
+        },
+        "second": {
+          "interfaces": [
+            {
+              "ifindex": 6,
+              "link_state": "down",
+              "loopback": false,
+              "name": "docker0",
+              "rx_bytes": 21782612,
+              "rx_bytes_per_second": 0.0,
+              "rx_dropped_or_missed": 0,
+              "rx_errors": 0,
+              "tx_bytes": 1103528785,
+              "tx_bytes_per_second": 0.0,
+              "tx_dropped": 163,
+              "tx_errors": 0
+            },
+            {
+              "ifindex": 2,
+              "link_state": "down",
+              "loopback": false,
+              "name": "eno1",
+              "rx_bytes": 0,
+              "rx_bytes_per_second": 0.0,
+              "rx_dropped_or_missed": 0,
+              "rx_errors": 0,
+              "tx_bytes": 0,
+              "tx_bytes_per_second": 0.0,
+              "tx_dropped": 0,
+              "tx_errors": 0
+            },
+            {
+              "ifindex": 1,
+              "link_state": "unknown",
+              "loopback": true,
+              "name": "lo",
+              "rx_bytes": 3363772000,
+              "rx_bytes_per_second": 0.0,
+              "rx_dropped_or_missed": 0,
+              "rx_errors": 0,
+              "tx_bytes": 3363772000,
+              "tx_bytes_per_second": 0.0,
+              "tx_dropped": 0,
+              "tx_errors": 0
+            },
+            {
+              "ifindex": 3,
+              "link_state": "up",
+              "loopback": false,
+              "name": "wlo1",
+              "rx_bytes": 19720898415,
+              "rx_bytes_per_second": 165.67258971025768,
+              "rx_dropped_or_missed": 0,
+              "rx_errors": 0,
+              "tx_bytes": 4979669825,
+              "tx_bytes_per_second": 0.0,
+              "tx_dropped": 356,
+              "tx_errors": 0
+            }
+          ],
+          "interval_ms": 325,
+          "measured_unix_ms": 1792990722762,
+          "omitted_interfaces": 0,
+          "source": "kernel",
+          "unreadable_interfaces": 0
+        },
+        "independent_sysfs_before": {
+          "lo": {
+            "ifindex": 1,
+            "rx_bytes": 3363772000,
+            "tx_bytes": 3363772000
+          },
+          "eno1": {
+            "ifindex": 2,
+            "rx_bytes": 0,
+            "tx_bytes": 0
+          },
+          "docker0": {
+            "ifindex": 6,
+            "rx_bytes": 21782612,
+            "tx_bytes": 1103528785
+          },
+          "wlo1": {
+            "ifindex": 3,
+            "rx_bytes": 19720898415,
+            "tx_bytes": 4979669825
+          }
+        },
+        "independent_sysfs_after": {
+          "lo": {
+            "ifindex": 1,
+            "rx_bytes": 3363772000,
+            "tx_bytes": 3363772000
+          },
+          "eno1": {
+            "ifindex": 2,
+            "rx_bytes": 0,
+            "tx_bytes": 0
+          },
+          "docker0": {
+            "ifindex": 6,
+            "rx_bytes": 21782612,
+            "tx_bytes": 1103528785
+          },
+          "wlo1": {
+            "ifindex": 3,
+            "rx_bytes": 19720898415,
+            "tx_bytes": 4979669825
+          }
+        },
+        "verified_interfaces": [
+          "docker0",
+          "eno1",
+          "lo",
+          "wlo1"
+        ]
+      },
+      "cleanup_complete": true,
+      "recorded_utc": "2026-10-26T04:58:44.557669+00:00"
+    }
+  },
+  "network_visuals": {
+    "method": "application-only GTK widget captures; no desktop framebuffer capture",
+    "hardware_control_writes": false,
+    "host_network_policy_changed": false,
+    "cleanup_complete": true,
+    "screenshots": [
+      {
+        "path": "docs/screenshots/vitals-network.png",
+        "sha256": "d0b284dede4d0514cdcd113a6021bc1369740bc37ed3d2abea938a53d2b78996",
+        "fixture": false,
+        "gtk_display_type": "GdkWaylandDisplay"
+      },
+      {
+        "path": "docs/screenshots/vitals-network-fixture.png",
+        "sha256": "294e4ff9d74a98366f96e11ee21951c9631ed035d2fb083b1084097895361e60",
+        "fixture": true,
+        "gtk_display_type": "GdkWaylandDisplay"
+      }
+    ],
+    "gui_sha256": "1a4f4a6bb5b81b1aa6947f8e56effab2f0b2fa71909b2448e579154a1061f17a"
+  },
+  "research": {
+    "omencore": {
+      "canonical_repository": "https://github.com/theantipopau/omencore",
+      "commit": "840f03d58ddd4c3a709780b6d635828d9ef3d87c",
+      "selected_files_verified": 42,
+      "report": "OMENCORE_REVIEW.md",
+      "evidence": "omencore-review-validation.json",
+      "runtime_changes": false,
+      "hardware_control_writes": 0,
+      "upstream_tests_run": false,
+      "limitations": "Development source review, not release-binary or physical compatibility validation. Live fan controls remain disabled."
+    }
+  },
+  "fan_monitoring": {
+    "debug": {
+      "result": "passed",
+      "profile": "debug",
+      "hardware_control_writes": 0,
+      "binary_sha256": {
+        "omen-daemon": "792f55ab4b0106c93d5da3ef8e31065a8ac58f059e75ebae5a8fd239536b8af5",
+        "omen-cli": "1a433854f39f6a0c91897167f7947f530b9a255f04acd4a8f1fee453f5eb2872"
+      },
+      "checks_passed": [
+        "mode-only Victus exposes Auto through production IPC and CLI without granting control",
+        "fixture mode-only changes are observed without inventing PWM targets",
+        "invalid/missing policy and missing manual duty remain unknown while RPM survives",
+        "mode-only fixture rejects a control request without touching its policy file",
+        "device disappearance fails explicitly and recovers without a host-data fallback",
+        "malformed/out-of-range manual readings are absent and valid duty recovers",
+        "OmenCore process presence blocks fixture writes before mutation and removal releases the gate",
+        "real unprivileged daemon and direct CLI agree with independent sysfs mode reads; controls stay disabled"
+      ],
+      "live_operations": [
+        "get_info",
+        "get_fan_state",
+        "get_capabilities"
+      ],
+      "live_readonly": {
+        "uid": 1000,
+        "kernel": "7.0.0-38-generic",
+        "hwmon": "/sys/class/hwmon/hwmon7",
+        "policy_before": "2",
+        "policy_after": "2",
+        "daemon_state": {
+          "cpu_rpm": 3208,
+          "duty_pct": null,
+          "gpu_rpm": 2702,
+          "mode": {
+            "kind": "auto"
+          }
+        },
+        "direct_cli_state": {
+          "cpu_rpm": 3208,
+          "gpu_rpm": 2702,
+          "mode": {
+            "kind": "auto"
+          },
+          "duty_pct": null
+        },
+        "pwm1_present": false,
+        "scope": "Kernel-reported mode only; RPM calibration, physical response and recovery are not tested."
+      },
+      "cleanup_complete": true,
+      "recorded_utc": "2026-10-26T06:20:25.812641+00:00"
+    },
+    "release": {
+      "result": "passed",
+      "profile": "release",
+      "hardware_control_writes": 0,
+      "binary_sha256": {
+        "omen-daemon": "263c9594259c2721ab064bab38743b590225ce2a47481b32de7d761fb54124a5",
+        "omen-cli": "f69565226fe4085d96a6ef971cb6867bae84695f4005b2e799526461b98277c5"
+      },
+      "checks_passed": [
+        "mode-only Victus exposes Auto through production IPC and CLI without granting control",
+        "fixture mode-only changes are observed without inventing PWM targets",
+        "invalid/missing policy and missing manual duty remain unknown while RPM survives",
+        "mode-only fixture rejects a control request without touching its policy file",
+        "device disappearance fails explicitly and recovers without a host-data fallback",
+        "malformed/out-of-range manual readings are absent and valid duty recovers",
+        "OmenCore process presence blocks fixture writes before mutation and removal releases the gate",
+        "real unprivileged daemon and direct CLI agree with independent sysfs mode reads; controls stay disabled"
+      ],
+      "live_operations": [
+        "get_info",
+        "get_fan_state",
+        "get_capabilities"
+      ],
+      "live_readonly": {
+        "uid": 1000,
+        "kernel": "7.0.0-38-generic",
+        "hwmon": "/sys/class/hwmon/hwmon7",
+        "policy_before": "2",
+        "policy_after": "2",
+        "daemon_state": {
+          "cpu_rpm": 3194,
+          "duty_pct": null,
+          "gpu_rpm": 2695,
+          "mode": {
+            "kind": "auto"
+          }
+        },
+        "direct_cli_state": {
+          "cpu_rpm": 3218,
+          "gpu_rpm": 2695,
+          "mode": {
+            "kind": "auto"
+          },
+          "duty_pct": null
+        },
+        "pwm1_present": false,
+        "scope": "Kernel-reported mode only; RPM calibration, physical response and recovery are not tested."
+      },
+      "cleanup_complete": true,
+      "recorded_utc": "2026-10-26T06:20:28.941247+00:00"
+    }
+  },
+  "fan_monitoring_visuals": {
+    "recorded_utc": "2026-10-26T06:20:32.761117+00:00",
+    "method": "application-only GTK widget captures; no desktop framebuffer capture",
+    "session_bus": "private minimal dbus-daemon without service activation; host tray and portal are not used",
+    "hardware_control_writes": 0,
+    "cleanup_complete": true,
+    "screenshots": [
+      {
+        "path": "docs/screenshots/fan.png",
+        "sha256": "1b39ff68ed44294574eafcbb91b27a8b2f6be951691d0b79d834248a4e09747e",
+        "fixture": false,
+        "gtk_display_type": "GdkWaylandDisplay",
+        "page_changes": []
+      },
+      {
+        "path": "docs/screenshots/fan-mode-only-fixture.png",
+        "sha256": "5dbfa060809b663724f35cced132ab953a413206e2e3d2d72f1b150a12b6b379",
+        "fixture": true,
+        "gtk_display_type": "GdkWaylandDisplay",
+        "page_changes": []
+      }
+    ],
+    "gui_sha256": "f351d30d74e50349047466fd628d884c7080f652705a8f9bf059b6918d51fa04",
+    "visual_inspection": {
+      "result": "passed",
+      "scope": "Current build: live read-only Auto and labelled Maximum fixture; actual GTK Wayland fan page; no live controls."
+    }
+  },
+  "validation_scope": {
+    "current_debian_revision": 8,
+    "current_runtime_checks": [
+      "rust_tests",
+      "fan_monitoring",
+      "fan_monitoring_visuals",
+      "package",
+      "package_lifecycle",
+      "systemd_vm",
+      "performance",
+      "mock_process_smoke_debug",
+      "mock_process_smoke_release"
+    ],
+    "prior_evidence_fields": [
+      "tray_integration",
+      "settings_integration",
+      "game_launch_integration",
+      "native_settings_integration",
+      "tray_integrations",
+      "profile_capability_visuals",
+      "gpu_monitoring",
+      "gpu_monitoring_visuals",
+      "global_shortcuts_integration",
+      "global_shortcut_visuals",
+      "shortcut_portal_host",
+      "network_monitoring",
+      "network_visuals"
+    ],
+    "prior_evidence_note": "Retained results from revision 7 or earlier with their original hashes. Their modules were not changed by this fan backend work; these full workflow suites were not repeated on revision 8."
+  }
+}

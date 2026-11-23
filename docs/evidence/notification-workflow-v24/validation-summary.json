@@ -1,0 +1,237 @@
+{
+  "result": "passed",
+  "revision": "0.1.0-24",
+  "recorded_utc": "2026-10-28T09:20:15.881008+00:00",
+  "purpose": "Close direct checkbox/field/save/delivery/action/error-recovery coverage; no application or package change.",
+  "package": "target/debian/omen-linux_0.1.0-24_amd64.deb",
+  "package_sha256": "1a7eb732fa5c672c2e920396ccdf163b718bb008008bc4cedd69ac7f8bb226df",
+  "package_bytes": 3694524,
+  "product_source_files_verified": 132,
+  "original_summary_sha256": "579ef9c40d7964dbee2343ec71c43e95cbdabf920eac7faed41999a65dc55254",
+  "original_evidence_files_rehashed": 388,
+  "native_workflows": {
+    "debug": {
+      "checks": 7,
+      "gui_sha256": "91bb9c9e6c9f8a4b26269a53f6df9dc50f4152c96cdc1d5c8977ba1c974a2fe9",
+      "notifications_received": 2,
+      "actual_message_interval_seconds": 30.020543891005218
+    },
+    "release": {
+      "checks": 7,
+      "gui_sha256": "1155a13c189de8f82460ec3c5188512480a436ab9e973f198b0939bf5143569a",
+      "notifications_received": 2,
+      "actual_message_interval_seconds": 30.028715972963255
+    }
+  },
+  "test_script_sha256": "0ea4c983de1fc046c20499f3240ff169b299de32db43783a1988ee91756ae4a7",
+  "actual_notification_action_signal": true,
+  "real_cooldown_elapsed": true,
+  "private_notification_server": true,
+  "real_desktop_notified": false,
+  "host_keyboard_events": false,
+  "physical_hardware_writes": false,
+  "host_packages_or_services_installed": false,
+  "english_only": true,
+  "limits": [
+    "XTEST uses a private authenticated Xwayland server; physical desktop input/placement is unverified.",
+    "The receiver is a private D-Bus notification fixture; no physical desktop notification or compositor policy is claimed.",
+    "Native UI coverage does not establish complete accessibility, audible synthesis, broader desktops or hardware validation."
+  ],
+  "evidence_files": [
+    {
+      "path": "collect-evidence.py",
+      "sha256": "7602421bcaec95b133149702b7c8ef0d444fcd8e34cbe3929d12712fa681b2b4",
+      "bytes": 4937
+    },
+    {
+      "path": "documentation-manifest.json",
+      "sha256": "ab52cc2fb83d68587542b0e0e947f9fa20859561fc0d484bd5e854a2c0c51458",
+      "bytes": 818
+    },
+    {
+      "path": "reports/docs/ACCESSIBILITY.md",
+      "sha256": "74c0d04a17061f770f2c3b875fc69da59e3e675f9e4a79aceaa8e04be360511e",
+      "bytes": 10985
+    },
+    {
+      "path": "reports/docs/APPLICATION_AUDIT_IMPLEMENTATION.md",
+      "sha256": "073cd974c69c87c6281d77f36672d608cd0d2fc3aaf05c5597fa470fd653a718",
+      "bytes": 31669
+    },
+    {
+      "path": "reports/docs/CONTINUATION_CHECKLIST.md",
+      "sha256": "d74a207fdf1cad0f4a8b83160ace30cb27e5bcf0111f8ba4950919bf9cda33a9",
+      "bytes": 8024
+    },
+    {
+      "path": "reports/docs/IMPLEMENTATION_STATUS.md",
+      "sha256": "8e412b4be6cdc29180b16c3205c201f1ea274e4813502b48532f30ace30407e0",
+      "bytes": 25124
+    },
+    {
+      "path": "reports/docs/NOTIFICATION_WORKFLOW_2026-10-28.md",
+      "sha256": "e35faacf17f136d0dae1f072eec292bb8bdfef083bf5d6e1f5b9783fffc4f6d4",
+      "bytes": 3007
+    },
+    {
+      "path": "reports/docs/TEST_REPORT.md",
+      "sha256": "1564ca7b0aab7dae7e8523204dfd24a31225d309ffe9d2137f4a504ccfee81e4",
+      "bytes": 47563
+    },
+    {
+      "path": "runs/collection.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "runs/debug-final/notification-workflow.json",
+      "sha256": "1352b7f0c143c85898aa4596908d901b301d01127eeed0e6306b3e6a3b0a48cd",
+      "bytes": 2715
+    },
+    {
+      "path": "runs/debug-final/process/a11y.log",
+      "sha256": "4ff3755b3b9a97648b45b5f91c1d70d4125a0aae694190ad3f7cf4fb6d08b941",
+      "bytes": 355
+    },
+    {
+      "path": "runs/debug-final/process/daemon.log",
+      "sha256": "21af8da76ac26bed181363e6772b6861901c0af51079e385c4b934b774ba9ff6",
+      "bytes": 76694
+    },
+    {
+      "path": "runs/debug-final/process/gui-restarted.log",
+      "sha256": "3d217a906b463ed849dbf4f7449fd77ab9b2b57a40134c1a149a78edf3d7d7ca",
+      "bytes": 516
+    },
+    {
+      "path": "runs/debug-final/process/gui.log",
+      "sha256": "3b4f62a02a498f38c29636806b00d383ad81df4db1f80b4cbd0ac5f5ecd3100d",
+      "bytes": 813
+    },
+    {
+      "path": "runs/debug-final/process/notifications.log",
+      "sha256": "a07972deef711430736988ae1f449c952954b0b5fe4d171daa1bb36c3a4a7b54",
+      "bytes": 263
+    },
+    {
+      "path": "runs/debug-final/process/session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "runs/debug-final/process/xwayland.log",
+      "sha256": "f78e45a223a47e6934cefeb53901a970ec57751c0e2e4fde85194b88e6741b0e",
+      "bytes": 680
+    },
+    {
+      "path": "runs/debug-final.log",
+      "sha256": "12969d1a10041dc02b446378fcea3f7820ac6431ede00a593cd78d51dd1fe5a7",
+      "bytes": 1152
+    },
+    {
+      "path": "runs/release-final/notification-workflow.json",
+      "sha256": "0dd8113486719dc3a7d424e10dc30a5d911df5fb97123afedd656cb8d6ba29c0",
+      "bytes": 2717
+    },
+    {
+      "path": "runs/release-final/process/a11y.log",
+      "sha256": "4a0c5cf7b40488ccb4a62bb05c3bcb6ec1bbc0d888fad258cea76dfca56ee82d",
+      "bytes": 355
+    },
+    {
+      "path": "runs/release-final/process/daemon.log",
+      "sha256": "5e5064ce4ed12929bc9d4dfce180423cb682f0f356d669a9bb0df4c50eb52f1c",
+      "bytes": 76406
+    },
+    {
+      "path": "runs/release-final/process/gui-restarted.log",
+      "sha256": "3d217a906b463ed849dbf4f7449fd77ab9b2b57a40134c1a149a78edf3d7d7ca",
+      "bytes": 516
+    },
+    {
+      "path": "runs/release-final/process/gui.log",
+      "sha256": "3b4f62a02a498f38c29636806b00d383ad81df4db1f80b4cbd0ac5f5ecd3100d",
+      "bytes": 813
+    },
+    {
+      "path": "runs/release-final/process/notifications.log",
+      "sha256": "a07972deef711430736988ae1f449c952954b0b5fe4d171daa1bb36c3a4a7b54",
+      "bytes": 263
+    },
+    {
+      "path": "runs/release-final/process/session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "runs/release-final/process/xwayland.log",
+      "sha256": "f78e45a223a47e6934cefeb53901a970ec57751c0e2e4fde85194b88e6741b0e",
+      "bytes": 680
+    },
+    {
+      "path": "runs/release-final.log",
+      "sha256": "570a3b67e825a87bc65bf33397cb8d878d0a85796618976d2ddbd2d94bb2e623",
+      "bytes": 1152
+    },
+    {
+      "path": "runs/release-native/notification-workflow.json",
+      "sha256": "7d0b571672ad6d36f17f0d431e39fdc138408c35d77d2829e145f61241e3bf3e",
+      "bytes": 2486
+    },
+    {
+      "path": "runs/release-native/process/a11y.log",
+      "sha256": "94fa17e752dfb2384f4b2fc8a4896215c921e5b69401df1e0285ba6c1451bba2",
+      "bytes": 355
+    },
+    {
+      "path": "runs/release-native/process/daemon.log",
+      "sha256": "b5639c61ea6e5ec35008098c2906bdf0bfef46f2ee89d0efc5565efab64ca372",
+      "bytes": 43107
+    },
+    {
+      "path": "runs/release-native/process/gui.log",
+      "sha256": "3b4f62a02a498f38c29636806b00d383ad81df4db1f80b4cbd0ac5f5ecd3100d",
+      "bytes": 813
+    },
+    {
+      "path": "runs/release-native/process/notifications.log",
+      "sha256": "a07972deef711430736988ae1f449c952954b0b5fe4d171daa1bb36c3a4a7b54",
+      "bytes": 263
+    },
+    {
+      "path": "runs/release-native/process/session.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "runs/release-native/process/xwayland.log",
+      "sha256": "f78e45a223a47e6934cefeb53901a970ec57751c0e2e4fde85194b88e6741b0e",
+      "bytes": 680
+    },
+    {
+      "path": "runs/release-native.log",
+      "sha256": "ca9c70bff7833ac0b7685b448f32982c47c6c1920a19e34cab849870298f2922",
+      "bytes": 889
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "9dac9d099764dbba1cd8b03aaf43e9ea03eb364afc0b62b71e11c32133bf4dc6",
+      "bytes": 18077
+    },
+    {
+      "path": "sources/tests/gui_notification_workflow.py",
+      "sha256": "0ea4c983de1fc046c20499f3240ff169b299de32db43783a1988ee91756ae4a7",
+      "bytes": 10737
+    },
+    {
+      "path": "sources/tests/native_desktop.py",
+      "sha256": "5b031486b649b7c40161ea4e3bc599389b6764be876075bb8f9e836bd76f619f",
+      "bytes": 12792
+    },
+    {
+      "path": "test-manifest.json",
+      "sha256": "4bcf16c492b3dc47fc3e52518c97bdae39165b737607100f69996918d828d56c",
+      "bytes": 272
+    }
+  ]
+}

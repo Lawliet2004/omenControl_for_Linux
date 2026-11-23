@@ -1,0 +1,182 @@
+[
+  {
+    "path": "OMENSDK_Ver.exe",
+    "evidence_id": "ev_c61ea4a15a2575320850929e218b211a361bf67691e02b66ec1a5cf58a2e28b1",
+    "sha256": "6dd9e66f2edbefb125e90fb4e82aaa82b4228498d6418a25da3b6e77c1293571",
+    "classification": {
+      "status": "managed",
+      "container": "pe",
+      "runtime_family": "dotnet-framework",
+      "implementation": "cil",
+      "managed_architecture": "x86_64",
+      "evidence": [
+        {
+          "code": "cli-header-observed",
+          "detail": "A file-backed PE CLI header and metadata root were admitted.",
+          "file_offset": 512
+        },
+        {
+          "code": "target-framework-observed",
+          "detail": "An assembly-level TargetFrameworkAttribute names .NET Framework.",
+          "file_offset": 1006
+        },
+        {
+          "code": "managed-architecture-derived",
+          "detail": "Managed architecture x86_64 is derived from PE machine and CLI flags.",
+          "file_offset": 528
+        }
+      ]
+    },
+    "assembly": {
+      "name": "OMENSDKVer",
+      "version": "1.0.91.0",
+      "culture": null,
+      "flags": 0,
+      "hash_algorithm": 32772,
+      "public_key": {
+        "kind": "none",
+        "byte_length": 0,
+        "sha256": null,
+        "token": null
+      },
+      "token": "0x20000001",
+      "row_offset": 1072
+    },
+    "references": null
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/XtuService.exe",
+    "evidence_id": "ev_d3be6411ff787d7422ded05c56842f0fc8d7413d5ffa665e350b13f409e32123",
+    "sha256": "bbdbbcbf20dd502aa1bf9dabb4ae223dd1aa4c79abf84e4657eb767157462f02",
+    "classification": {
+      "status": "managed",
+      "container": "pe",
+      "runtime_family": "dotnet-framework",
+      "implementation": "cil",
+      "managed_architecture": "x86_64",
+      "evidence": [
+        {
+          "code": "cli-header-observed",
+          "detail": "A file-backed PE CLI header and metadata root were admitted.",
+          "file_offset": 512
+        },
+        {
+          "code": "target-framework-observed",
+          "detail": "An assembly-level TargetFrameworkAttribute names .NET Framework.",
+          "file_offset": 3150
+        },
+        {
+          "code": "managed-architecture-derived",
+          "detail": "Managed architecture x86_64 is derived from PE machine and CLI flags.",
+          "file_offset": 528
+        }
+      ]
+    },
+    "assembly": {
+      "name": "XtuService",
+      "version": "7.14.2.14",
+      "culture": null,
+      "flags": 1,
+      "hash_algorithm": 32772,
+      "public_key": {
+        "kind": "public-key",
+        "byte_length": 160,
+        "sha256": "12b85e2df49ebc4e42f11299593370f9874f4346dc3e2e3f421450687fc6b098",
+        "token": "15fcf59f0862f006"
+      },
+      "token": "0x20000001",
+      "row_offset": 3256
+    },
+    "references": null
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/XtuCoreServer.dll",
+    "evidence_id": "ev_80183abeac8c7da087a17f04079e13b653f9ae7c4846ccf0b15010b75e427314",
+    "sha256": "f53c5bb660254abe008e060c0645d458f89eb14590431370232d55d81beb64e2",
+    "classification": {
+      "status": "managed",
+      "container": "pe",
+      "runtime_family": "dotnet-framework",
+      "implementation": "cil",
+      "managed_architecture": "x86_64",
+      "evidence": [
+        {
+          "code": "cli-header-observed",
+          "detail": "A file-backed PE CLI header and metadata root were admitted.",
+          "file_offset": 512
+        },
+        {
+          "code": "target-framework-observed",
+          "detail": "An assembly-level TargetFrameworkAttribute names .NET Framework.",
+          "file_offset": 16948
+        },
+        {
+          "code": "managed-architecture-derived",
+          "detail": "Managed architecture x86_64 is derived from PE machine and CLI flags.",
+          "file_offset": 528
+        }
+      ]
+    },
+    "assembly": {
+      "name": "XtuCoreServer",
+      "version": "7.14.2.14",
+      "culture": null,
+      "flags": 1,
+      "hash_algorithm": 32772,
+      "public_key": {
+        "kind": "public-key",
+        "byte_length": 160,
+        "sha256": "fd573255a5b7bc362cd93510223e199a17d400be5c7525d8a8428046186401ae",
+        "token": "60b984ca3eec5585"
+      },
+      "token": "0x20000001",
+      "row_offset": 17726
+    },
+    "references": null
+  },
+  {
+    "path": "IntelXTU/XTU-7.14.2.14/Drivers/HardwareAccess.dll",
+    "evidence_id": "ev_24b409ba62a8f230f324687573167ea971b95dfbf912cdae9554fc21912bd7fd",
+    "sha256": "846d6e3f531d944bc3d34c7a8e7c28ef1fe8e5c6419b25f6281f1ec651a6524d",
+    "classification": {
+      "status": "managed",
+      "container": "pe",
+      "runtime_family": "dotnet-framework",
+      "implementation": "cil",
+      "managed_architecture": "x86_64",
+      "evidence": [
+        {
+          "code": "cli-header-observed",
+          "detail": "A file-backed PE CLI header and metadata root were admitted.",
+          "file_offset": 512
+        },
+        {
+          "code": "target-framework-observed",
+          "detail": "An assembly-level TargetFrameworkAttribute names .NET Framework.",
+          "file_offset": 149564
+        },
+        {
+          "code": "managed-architecture-derived",
+          "detail": "Managed architecture x86_64 is derived from PE machine and CLI flags.",
+          "file_offset": 528
+        }
+      ]
+    },
+    "assembly": {
+      "name": "HardwareAccess",
+      "version": "7.14.2.14",
+      "culture": null,
+      "flags": 1,
+      "hash_algorithm": 32772,
+      "public_key": {
+        "kind": "public-key",
+        "byte_length": 160,
+        "sha256": "0ebf34caf2f03fdaaf0aac9d68e8b9c8525cef2a2baeff81d0a4563801a979a2",
+        "token": "a09a8e5da528268f"
+      },
+      "token": "0x20000001",
+      "row_offset": 156882
+    },
+    "references": null
+  }
+]

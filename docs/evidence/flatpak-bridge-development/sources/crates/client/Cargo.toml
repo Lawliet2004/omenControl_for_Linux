@@ -1,0 +1,18 @@
+[package]
+name = "omen-client"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Unprivileged application workflows shared by desktop and CLI"
+
+[dependencies]
+omen-core = { path = "../core" }
+omen-hardware = { path = "../hardware" }
+omen-ipc = { path = "../ipc" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+libc = "0.2"
+zbus = { version = "5.19.0", default-features = false, features = ["async-io", "blocking-api"] }
+
+[dev-dependencies]
+tempfile = "3"

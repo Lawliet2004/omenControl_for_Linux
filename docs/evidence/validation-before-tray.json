@@ -1,0 +1,138 @@
+{
+  "generated_utc": "2026-10-25T19:11:18.865065+00:00",
+  "version": "0.1.0",
+  "goal_complete": false,
+  "rust_tests": {
+    "debug": {
+      "passed": 98,
+      "failed": 0,
+      "ignored": 0
+    },
+    "release": {
+      "passed": 98,
+      "failed": 0,
+      "ignored": 0
+    }
+  },
+  "checks": {
+    "strict_clippy": "pass",
+    "cargo_fmt": "pass",
+    "release_workspace_build": "pass",
+    "python_and_shell_syntax": "pass",
+    "desktop_file_validate": "pass",
+    "systemd_verify_extracted_payload": "pass",
+    "package_checksums_and_release_binary_match": "pass",
+    "mock_process_smoke_debug": "pass",
+    "mock_process_smoke_release": "pass"
+  },
+  "package": {
+    "package": "target/debian/omen-linux_0.1.0-1_amd64.deb",
+    "version": "0.1.0-1",
+    "sha256": "bb336e2bcada18f9b289c8034a91c4ddae2e3bcc03088d822ef9ff90206d9a69",
+    "bytes": 1273012,
+    "installed": false,
+    "checks": {
+      "required_payload_present": true,
+      "payload_md5sums": true,
+      "directories_mode_755": true,
+      "desktop_file_validate": true,
+      "gui_linkage_with_local_prefix": true,
+      "extracted_cli_readonly_discovery": true,
+      "archive_root_ownership_and_directory_modes": true,
+      "polkit_xml_and_installed_action_match": true
+    },
+    "binaries": {
+      "omen-daemon": {
+        "sha256": "11c02e6206a6bd37678cb3e8dbcc89455ffd26797e665bb4a938705b49cc89a4",
+        "matches_release": true,
+        "mode": "0o755"
+      },
+      "omen-gui": {
+        "sha256": "8875c5441dea7f0b1b532110036ed0d5ff792f7fb71955a8d43332935b7a3db7",
+        "matches_release": true,
+        "mode": "0o755"
+      },
+      "omen-cli": {
+        "sha256": "900a092c5e2344225b4304c4173d3b767d31d74e3d4792440568979382ed3fcc",
+        "matches_release": true,
+        "mode": "0o755"
+      }
+    },
+    "systemd_validation": {
+      "exit_code": 0,
+      "output": "",
+      "method": "unmodified unit, extracted package root, no unit started"
+    }
+  },
+  "live_profile_test": {
+    "result": "passed",
+    "fixture_only": false,
+    "board": "8C30",
+    "bios": "F.10",
+    "kernel": "7.0.0-38-generic",
+    "original": "performance",
+    "requested": "balanced",
+    "restored": "performance",
+    "uid": 1000,
+    "authorization": "installed polkit com.omenlinux.control active-session action; production IPC",
+    "scope": "one standard PPD transaction, amd_pstate CPU backend; no firmware thermal-mode equivalence claimed",
+    "evidence": "live-profile-test.json",
+    "daemon_exited_cleanly": true
+  },
+  "host_changes": {
+    "rea_config": "approved setup; existing Node 24.22.1, no engines installed",
+    "polkit_action": "/usr/share/polkit-1/actions/com.omenlinux.policy installed root:root 0644",
+    "deb_installed": false,
+    "systemd_service_installed": false,
+    "test_daemon_running": false
+  },
+  "performance": {
+    "method": "release binaries; 5-second windows; CPU percent of one logical core; page-cache-warm launches; live read-only monitoring",
+    "cpu_count": 12,
+    "cli_detect": {
+      "runs_seconds": [
+        0.09887120299390517,
+        0.08173752200673334,
+        0.07554406501003541,
+        0.07499455500510521,
+        0.07408854900859296
+      ],
+      "median_seconds": 0.07554406501003541
+    },
+    "daemon_socket_ready_seconds": 0.010912812984315678,
+    "daemon_idle_no_clients": {
+      "seconds": 5.000834756006952,
+      "rss_kib": 3176,
+      "cpu_pct_one_core": 0.19996661533333213,
+      "reaped_children_cpu_pct_one_core": 0.0
+    },
+    "gui_window_map_seconds": 0.7202246649831068,
+    "gui_monitoring_dashboard": {
+      "seconds": 5.000676786992699,
+      "rss_kib": 165608,
+      "cpu_pct_one_core": 1.9997293218412118,
+      "reaped_children_cpu_pct_one_core": 1.5997834574729695
+    }
+  },
+  "screenshots": {
+    "battery.png": "1f978257a9f53c13c0cfcadffd1a93dd981174b31d4964404521f12f3c69b973",
+    "dashboard.png": "b1d1d98e7ef3e8cb167da380bc6d2f34a5b1b3f04f37444da26cc2f4618258dc",
+    "fan-mock.png": "9089bdcbfa6a533a66c33b9a7d04fcde283f042339f772656c1b7b767cb27b30",
+    "fan.png": "44b5615e88c6821592431c1a005f02a090adea55ab9bebce2866c97d47718199",
+    "games.png": "f2b1930ac150ff1329d193dbb22284ab36f5934bf5cf4e18c5b7e3e61ae010be",
+    "graphics.png": "66f5a44a686f1c91acc312b9b4ce9fa82416f50627ecf98b605e25989d812614",
+    "lighting.png": "a9cba442b3f040ead3e82eda9089c5c100f551d27450dccc2a9b54b72acc40c9",
+    "performance.png": "cb268cd20e4495257154e6d90d872511a71b0ac6aac7db4d75e7b90aea47d295",
+    "settings.png": "360c96278c8de2a59283a743a6b98836e45703e2b2e279625a901b16978f9533",
+    "vitals.png": "24753ac5e26111ff9acca37d9f639e818ea4687e82117a4b2f42f17da11f21c4"
+  },
+  "limits": [
+    "One profile switch/restore is not thermal or Windows parity validation",
+    "Live fan/RGB/charging/graphics/firmware writes were not tested and device-specific paths remain disabled",
+    "No clean-system package install/upgrade/remove, full polkit lifecycle, suspend/resume or fan crash-recovery validation",
+    "Warm startup and short resource windows; no cold-start benchmark",
+    "Main Windows Store application and compatible Windows behavioral reference unavailable",
+    "Configured REA needs chat reconnect for direct tools; standalone MCP was used successfully",
+    "Tray/hotkeys/overlay and several optional integrations remain unimplemented"
+  ]
+}

@@ -1,0 +1,566 @@
+{
+  "archive_sha256": "db5a0f709c2957d9d9115cacbfe7f2d608b20725085003448e33a170b90edea7",
+  "archive_bytes": 135546880,
+  "signed_indices_verified": 3,
+  "component_indices_verified": 6,
+  "archives_verified_against_signed_indices": 105,
+  "signatures": [
+    {
+      "suite": "resolute",
+      "status": [
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED F6ECB3762474EDA9D21B7022871920D1991BC93C 0",
+        "[GNUPG:] SIG_ID u7N3KdZlUUFKlEUkoinMi3cQWWU 2026-04-23 1776964050",
+        "[GNUPG:] GOODSIG 871920D1991BC93C Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>",
+        "[GNUPG:] VALIDSIG F6ECB3762474EDA9D21B7022871920D1991BC93C 2026-04-23 1776964050 0 4 0 1 10 01 F6ECB3762474EDA9D21B7022871920D1991BC93C"
+      ]
+    },
+    {
+      "suite": "resolute-updates",
+      "status": [
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED F6ECB3762474EDA9D21B7022871920D1991BC93C 0",
+        "[GNUPG:] SIG_ID aIIYF28EYn4Ca5eHBp3Ips2sJdY 2026-10-27 1793097745",
+        "[GNUPG:] GOODSIG 871920D1991BC93C Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>",
+        "[GNUPG:] VALIDSIG F6ECB3762474EDA9D21B7022871920D1991BC93C 2026-10-27 1793097745 0 4 0 1 10 01 F6ECB3762474EDA9D21B7022871920D1991BC93C"
+      ]
+    },
+    {
+      "suite": "resolute-security",
+      "status": [
+        "[GNUPG:] NEWSIG",
+        "[GNUPG:] KEY_CONSIDERED F6ECB3762474EDA9D21B7022871920D1991BC93C 0",
+        "[GNUPG:] SIG_ID 1tsPypK8OzFgimfF4/jHTMD/Z2M 2026-10-26 1793034298",
+        "[GNUPG:] GOODSIG 871920D1991BC93C Ubuntu Archive Automatic Signing Key (2018) <ftpmaster@ubuntu.com>",
+        "[GNUPG:] VALIDSIG F6ECB3762474EDA9D21B7022871920D1991BC93C 2026-10-26 1793034298 0 4 0 1 10 01 F6ECB3762474EDA9D21B7022871920D1991BC93C"
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "file": "pool/main/b/bubblewrap/bubblewrap_0.11.1-1ubuntu0.3_amd64.deb",
+      "sha256": "d3a6c1b6b0e0474eaed6dbd055c0d601fd875af153976a0dc4aae75f4ea10868",
+      "bytes": 51032
+    },
+    {
+      "file": "pool/main/f/fonts-dejavu/fonts-dejavu-mono_2.37-8build1_all.deb",
+      "sha256": "bf5ad873961972ea8f1299ef99c1854715e68d9aa798830fb78c5b222ddeb4b9",
+      "bytes": 502164
+    },
+    {
+      "file": "pool/main/f/fonts-dejavu/fonts-dejavu-core_2.37-8build1_all.deb",
+      "sha256": "f4606b12eb41ddf7932d3a1ebc2019f9bbf90d0824943a2dc0c77a00f43019f2",
+      "bytes": 834166
+    },
+    {
+      "file": "pool/main/f/fontconfig/fontconfig-config_2.17.1-3ubuntu1_amd64.deb",
+      "sha256": "304cc61f61b94399453db02e1032d9f74a0bd737307acb4ed847f8da9406b8c1",
+      "bytes": 38454
+    },
+    {
+      "file": "pool/main/f/fontconfig/libfontconfig1_2.17.1-3ubuntu1_amd64.deb",
+      "sha256": "72ba4fc43155566b46442b741a6892d5d1f1581ba58cdfd037aabf47ad9080f7",
+      "bytes": 144082
+    },
+    {
+      "file": "pool/main/p/pixman/libpixman-1-0_0.46.4-1_amd64.deb",
+      "sha256": "55a274db32d4824a1f1a48c42e959fe4293a4e4b545d400d89949cfabe160cc3",
+      "bytes": 287322
+    },
+    {
+      "file": "pool/main/libx/libxcb/libxcb-render0_1.17.0-2ubuntu1_amd64.deb",
+      "sha256": "2bdd10dd88c99523a62bfcc2b71b59fdf93ee396e8baf617c76fc3ec38f39bde",
+      "bytes": 16208
+    },
+    {
+      "file": "pool/main/libx/libxcb/libxcb-shm0_1.17.0-2ubuntu1_amd64.deb",
+      "sha256": "e70d52936aabd7a90e9cd8af0f54ca050cde244f8382ffc5524ba65117c199c4",
+      "bytes": 5808
+    },
+    {
+      "file": "pool/main/libx/libxrender/libxrender1_0.9.12-1build1_amd64.deb",
+      "sha256": "60b2f01e8124318e2a11049b82c764fd4c05c21adba11312e93ab116d6594f1e",
+      "bytes": 19204
+    },
+    {
+      "file": "pool/main/c/cairo/libcairo2_1.18.4-3_amd64.deb",
+      "sha256": "525ab7b5ad6529ea35aa09308ddd1fd2325c85ad70e7483ba66b526d8ee9f7a7",
+      "bytes": 578678
+    },
+    {
+      "file": "pool/main/libw/libwebp/libsharpyuv0_1.5.0-0.1build1_amd64.deb",
+      "sha256": "4e2c0a8aa97dafd923f00d77ca017d14f16ab79d3b1120892c8215a0b5fb7892",
+      "bytes": 17650
+    },
+    {
+      "file": "pool/main/a/aom/libaom3_3.13.1-2ubuntu0.1_amd64.deb",
+      "sha256": "74d46764b6b336d15682fb7d6203e6e1052be4ffb1ec371237989bab59fa829d",
+      "bytes": 1969262
+    },
+    {
+      "file": "pool/main/libh/libheif/libheif-plugin-aomdec_1.21.2-3ubuntu0.6_amd64.deb",
+      "sha256": "502594310c052b626cb4ab0fcfaa2a9e7132cd073809f2603ef8b2334a490475",
+      "bytes": 15510
+    },
+    {
+      "file": "pool/main/libh/libheif/libheif1_1.21.2-3ubuntu0.6_amd64.deb",
+      "sha256": "a7971dc57fc86dbdfe646100be4fffcca099fed1d69d092f9303b321ae11ff17",
+      "bytes": 550142
+    },
+    {
+      "file": "pool/main/h/highway/libhwy1t64_1.3.0-2_amd64.deb",
+      "sha256": "8b4e74f6fc7c9a08956f1430fe5d80f4d8970a08fe24df9e187d57753f652c7a",
+      "bytes": 767902
+    },
+    {
+      "file": "pool/main/l/lcms2/liblcms2-2_2.17-1ubuntu0.2_amd64.deb",
+      "sha256": "0fcc048872daa6a242d548b78b76749044800d3be5a883123ca45eb4c8c65e05",
+      "bytes": 169156
+    },
+    {
+      "file": "pool/main/j/jpeg-xl/libjxl0.11_0.11.1-6ubuntu4.2_amd64.deb",
+      "sha256": "ad047c32784c7e3d1119f32c164876ae8f60c545c25354c9d673a958eef183df",
+      "bytes": 1269230
+    },
+    {
+      "file": "pool/main/c/cairo/libcairo-gobject2_1.18.4-3_amd64.deb",
+      "sha256": "1d48661d59bb164fc27e88bb8e6a8dab0cdfdbf35ea5d2bbf3ebffe849a38822",
+      "bytes": 127288
+    },
+    {
+      "file": "pool/main/f/fontconfig/fontconfig_2.17.1-3ubuntu1_amd64.deb",
+      "sha256": "5f87d9f0ff7189e5dbf7bedd1ef6c09ea81747bc68dd5263ea811b471f23ee65",
+      "bytes": 180360
+    },
+    {
+      "file": "pool/main/g/graphite2/libgraphite2-3_1.3.14-11ubuntu1.1_amd64.deb",
+      "sha256": "b4a4fbeb00c8553a20c31874c153cbcd856cfc1dda1c9b8252fa1d9bfbec24fc",
+      "bytes": 72928
+    },
+    {
+      "file": "pool/main/h/harfbuzz/libharfbuzz0b_12.3.2-2_amd64.deb",
+      "sha256": "ec93ea39ddeb5a98179b60eab4af234b6c676f1958106645d1f4b19280d4cd09",
+      "bytes": 519090
+    },
+    {
+      "file": "pool/main/libt/libthai/libthai-data_0.1.30-1_all.deb",
+      "sha256": "345fa75fcec8b562e2c6a4a5cd61187e7b825c8379fadb7f3f60d64d73ab1b72",
+      "bytes": 154800
+    },
+    {
+      "file": "pool/main/libd/libdatrie/libdatrie1_0.2.14-1_amd64.deb",
+      "sha256": "1ba5a9190119370912ec5955c8129cdf2780a098ed6c80e9ecca05cc515bd039",
+      "bytes": 19776
+    },
+    {
+      "file": "pool/main/libt/libthai/libthai0_0.1.30-1_amd64.deb",
+      "sha256": "c06f206be1ef7aa8208110b38945205ebc742dd777cbb39142baa555fe61390a",
+      "bytes": 19174
+    },
+    {
+      "file": "pool/main/p/pango1.0/libpango-1.0-0_1.57.0-1_amd64.deb",
+      "sha256": "309f30a8ea77e0264a3c8b66811188f5b788fe87b33be3cafd97c8f221235591",
+      "bytes": 240576
+    },
+    {
+      "file": "pool/main/p/pango1.0/libpangoft2-1.0-0_1.57.0-1_amd64.deb",
+      "sha256": "c1e08ebf03feded26a42a0f07f94789e5995b402d704d2faafdc86fffda0b28b",
+      "bytes": 53260
+    },
+    {
+      "file": "pool/main/p/pango1.0/libpangocairo-1.0-0_1.57.0-1_amd64.deb",
+      "sha256": "a989e666bb0d64636a10a1253c949f92a282782d79d1725e0e1acc17282909a5",
+      "bytes": 29026
+    },
+    {
+      "file": "pool/main/libr/librsvg/librsvg2-2_2.61.3+dfsg-3ubuntu0.1_amd64.deb",
+      "sha256": "49a535a1d8903eca4c0fdb651ee1461a6bc732a9774b2f6bae0f171f02abb779",
+      "bytes": 1849824
+    },
+    {
+      "file": "pool/main/g/glycin/glycin-loaders_2.1.5+ds-0ubuntu0.2_amd64.deb",
+      "sha256": "b4689ad426e82a08f9274281ee0f712d035ad35cec2dac4b7b2e23048c82e586",
+      "bytes": 2983588
+    },
+    {
+      "file": "pool/main/g/glycin/libglycin-2-0_2.1.5+ds-0ubuntu0.2_amd64.deb",
+      "sha256": "df5f6ac3af28284f678834b13ab90ebd5bebf80e3352bee517755f7125139d09",
+      "bytes": 1486686
+    },
+    {
+      "file": "pool/main/g/glycin/glycin-thumbnailers_2.1.5+ds-0ubuntu0.2_amd64.deb",
+      "sha256": "caf00f3251981eb69643a0b67f07b5c8f4f60ebd756200eca97b8efb3740000f",
+      "bytes": 222612
+    },
+    {
+      "file": "pool/main/g/gdk-pixbuf/libgdk-pixbuf2.0-common_2.44.5+dfsg-4ubuntu1_all.deb",
+      "sha256": "2476d552009724d9b027236fcd2e4540a46f419d9d8b881f1d92edf10d6fcc13",
+      "bytes": 5754
+    },
+    {
+      "file": "pool/main/g/gdk-pixbuf/libgdk-pixbuf-2.0-0_2.44.5+dfsg-4ubuntu1_amd64.deb",
+      "sha256": "ccd902384546225842384de0c46dad4670ccdda17b697bed4518610ed2e08e89",
+      "bytes": 100992
+    },
+    {
+      "file": "pool/main/g/gtk4/gtk-update-icon-cache_4.22.4+ds-0ubuntu0.1_amd64.deb",
+      "sha256": "d9cc7406c53f609ab81cb5b95b965ab926f711d7d7ea0711151cf36d5c1f2826",
+      "bytes": 42654
+    },
+    {
+      "file": "pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.18-2build1_all.deb",
+      "sha256": "d05726c4a4dc15079ed2bd6ef633e7d6dca4c4be20296148b1c558dbd5a6c570",
+      "bytes": 13154
+    },
+    {
+      "file": "pool/main/a/adwaita-icon-theme/adwaita-icon-theme_50.0-1_all.deb",
+      "sha256": "db9f11a94f993de589e7d8879664cb371eb8aefc8a2bce100d923951e4ef30c8",
+      "bytes": 580384
+    },
+    {
+      "file": "pool/main/d/dconf/libdconf1_0.49.0-4_amd64.deb",
+      "sha256": "d7a12b52a4803bf3e4c270c9367db4ac20f03412a9dc948e0272348889a151bd",
+      "bytes": 40516
+    },
+    {
+      "file": "pool/main/d/dconf/dconf-service_0.49.0-4_amd64.deb",
+      "sha256": "7f247f6032e72f86b1877f0020de77a0f8a11de256cf8f1726c072cf09585d31",
+      "bytes": 27696
+    },
+    {
+      "file": "pool/main/d/dconf/dconf-gsettings-backend_0.49.0-4_amd64.deb",
+      "sha256": "4da7b8309d49079ebac028c1f3284df02463da451cbd5f90ea61e535534531ac",
+      "bytes": 22172
+    },
+    {
+      "file": "pool/main/x/xdg-dbus-proxy/xdg-dbus-proxy_0.1.7-1_amd64.deb",
+      "sha256": "d8643ee790c1b36fa3f98c239edad013b59755539358138a64fc77ac5669ca39",
+      "bytes": 25966
+    },
+    {
+      "file": "pool/main/liba/libarchive/libarchive13t64_3.8.5-1ubuntu2.3_amd64.deb",
+      "sha256": "0e4e57918da8bf8ba56460d00d82a5cf27c303f000f10ab4c40c51aa181cc58a",
+      "bytes": 397154
+    },
+    {
+      "file": "pool/main/m/malcontent/libmalcontent-common_0.14.0-0ubuntu1.2_all.deb",
+      "sha256": "b38b2edc753d7203ae8648cc41ce364a7b509f48f7c3553924198f5a183c0f76",
+      "bytes": 11216
+    },
+    {
+      "file": "pool/main/a/accountsservice/libaccountsservice0_23.13.9-8ubuntu5.2_amd64.deb",
+      "sha256": "4c3bca934a145513f39fbc9ff1baa98e422b4b293a3b4a07534ad995850e01c9",
+      "bytes": 62844
+    },
+    {
+      "file": "pool/main/m/malcontent/libmalcontent-0-0_0.14.0-0ubuntu1.2_amd64.deb",
+      "sha256": "4157ed7ac889c37ee459cd5de52df27854d1db19c8f150019282eeb7b035398f",
+      "bytes": 40234
+    },
+    {
+      "file": "pool/main/a/avahi/libavahi-common-data_0.8-18ubuntu1.1_amd64.deb",
+      "sha256": "db013cab614418c47073faac4e16f652cb4532458cd8b919f70c717f235d1091",
+      "bytes": 27194
+    },
+    {
+      "file": "pool/main/a/avahi/libavahi-common3_0.8-18ubuntu1.1_amd64.deb",
+      "sha256": "2213977fd25dab90f3566d3163576955eb74dc89954c48ba6e2bd960fdcd45e2",
+      "bytes": 23580
+    },
+    {
+      "file": "pool/main/a/avahi/libavahi-client3_0.8-18ubuntu1.1_amd64.deb",
+      "sha256": "a0677750521663c898d25ddd0566127712ff4803108ec67182330a27fce85774",
+      "bytes": 27220
+    },
+    {
+      "file": "pool/main/a/avahi/libavahi-glib1_0.8-18ubuntu1.1_amd64.deb",
+      "sha256": "4e80e023d5b9d15cb65c15b100a8834d3d59f773d087e54a499e21a2a8e55358",
+      "bytes": 8246
+    },
+    {
+      "file": "pool/universe/c/composefs/libcomposefs1_1.0.8-3_amd64.deb",
+      "sha256": "100f66d177b3ed6b0762738b14b40190a4dd0b098e4a97db52ce97e4a76277db",
+      "bytes": 31524
+    },
+    {
+      "file": "pool/universe/o/ostree/libostree-1-1_2025.7-3build1_amd64.deb",
+      "sha256": "7864aa3a30ff3d3418e308301cbf19b46c7823af50ed5ee95e1d3e63517714f3",
+      "bytes": 366782
+    },
+    {
+      "file": "pool/main/w/wayland/libwayland-client0_1.24.0-2_amd64.deb",
+      "sha256": "094db0e190b53872e4d5310cd5fa09ca28ee3936386cd09e5f7d13e645aa12ab",
+      "bytes": 28530
+    },
+    {
+      "file": "pool/universe/f/flatpak/flatpak_1.16.6-1_amd64.deb",
+      "sha256": "277af98ade8a54d05a0eadd8be543a2912d7da53a94623dd88f5593696bb7ecd",
+      "bytes": 1473052
+    },
+    {
+      "file": "pool/main/g/graphene/libgraphene-1.0-0_1.10.8-5build1_amd64.deb",
+      "sha256": "0c73a0aee47f87f496c9150121b04281def45d8e52564e059b59ebd9f22f5360",
+      "bytes": 46178
+    },
+    {
+      "file": "pool/main/c/cairo/libcairo-script-interpreter2_1.18.4-3_amd64.deb",
+      "sha256": "516ad272f711e3c4550307ff6d6e1cbc828e3f4744471ffa0389430739197c81",
+      "bytes": 61364
+    },
+    {
+      "file": "pool/main/c/colord/libcolord2_1.4.8-3_amd64.deb",
+      "sha256": "063718186165d691f1b14d77d6ae7abefaf567c7331a463cbe97fa4a1e0b0fac",
+      "bytes": 149688
+    },
+    {
+      "file": "pool/main/c/cups/libcups2t64_2.4.16-1ubuntu1.3_amd64.deb",
+      "sha256": "2617a78cbd830310e31813420ea34159347f1121709d2f00c93a87fa666bfcda",
+      "bytes": 268968
+    },
+    {
+      "file": "pool/main/libe/libepoxy/libepoxy0_1.5.10-2build1_amd64.deb",
+      "sha256": "2f4525535b2c7c6d61cc5c131f1cb3f5c0d70177ccf550a05f80d12016dfcfdf",
+      "bytes": 226466
+    },
+    {
+      "file": "pool/main/libg/libglvnd/libglvnd0_1.7.0-3_amd64.deb",
+      "sha256": "db2cd8cff67e3e210f5223dfe41f000efd4d3d887ab05bda2e88c4a622f12b36",
+      "bytes": 64072
+    },
+    {
+      "file": "pool/main/libp/libpciaccess/libpciaccess0_0.18.1-1ubuntu4.1_amd64.deb",
+      "sha256": "8733699ae9d7102a84cd10a1f0f0769b684c6ca8842035db389bb6b8310f72dd",
+      "bytes": 18980
+    },
+    {
+      "file": "pool/main/libd/libdrm/libdrm-intel1_2.4.131-1_amd64.deb",
+      "sha256": "77411c3b93c8756862a18ccaa4413a65777f40819abdd1468954ba859c8aa740",
+      "bytes": 66680
+    },
+    {
+      "file": "pool/main/libx/libx11/libx11-xcb1_1.8.13-1ubuntu0.1_amd64.deb",
+      "sha256": "23d0a8c5d8be6dc1ca39d5ea66c139ee56ab20116f11bae586e0dc1685682578",
+      "bytes": 7980
+    },
+    {
+      "file": "pool/main/libx/libxcb/libxcb-dri3-0_1.17.0-2ubuntu1_amd64.deb",
+      "sha256": "2e0e3916c647a74e081621f385aa296dab3052b2582b0781d9fbea2f15696ef4",
+      "bytes": 7540
+    },
+    {
+      "file": "pool/main/libx/libxcb/libxcb-present0_1.17.0-2ubuntu1_amd64.deb",
+      "sha256": "64f23e7166461758d158220305e93a98fe75c570b68f96303a1c2395a58d5d7d",
+      "bytes": 6112
+    },
+    {
+      "file": "pool/main/libx/libxcb/libxcb-randr0_1.17.0-2ubuntu1_amd64.deb",
+      "sha256": "78977a067ec1d59bb4ded1b35835d0ba70e6538aac1ea7edefe413795aaa0d4f",
+      "bytes": 17930
+    },
+    {
+      "file": "pool/main/libx/libxcb/libxcb-sync1_1.17.0-2ubuntu1_amd64.deb",
+      "sha256": "8883f5e6badab24cb7487390bf1a888bb714e406f6c799345c33e4b69a8f3112",
+      "bytes": 9348
+    },
+    {
+      "file": "pool/main/libx/libxcb/libxcb-xfixes0_1.17.0-2ubuntu1_amd64.deb",
+      "sha256": "00c1381b61e2e5b8a78e89b15818a214a8f44f1fae6a9ddd95e7c61de8ea33d2",
+      "bytes": 10192
+    },
+    {
+      "file": "pool/main/libx/libxshmfence/libxshmfence1_1.3.3-1build1_amd64.deb",
+      "sha256": "85d6b6883a35e1a3b78af3dda6bb6b843c06cbead030a00d9de7d31a8077d562",
+      "bytes": 5284
+    },
+    {
+      "file": "pool/main/m/mesa/mesa-libgallium_26.0.8-1ubuntu0.3_amd64.deb",
+      "sha256": "7f123a545774034793ba3516c5fad0be88de68ad91319a4b220d98b32a289451",
+      "bytes": 11241306
+    },
+    {
+      "file": "pool/main/m/mesa/libgbm1_26.0.8-1ubuntu0.3_amd64.deb",
+      "sha256": "5d2d1eaf0f72c5a2c4aef692e5660c6fa61e46542c4d9cb5593ba8bd020b2eea",
+      "bytes": 49194
+    },
+    {
+      "file": "pool/main/m/mesa/libegl-mesa0_26.0.8-1ubuntu0.3_amd64.deb",
+      "sha256": "938813d9d6bb7ccf8315af1f8bb2770ad4b9d240ad177f0da420db3e94600d6b",
+      "bytes": 133774
+    },
+    {
+      "file": "pool/main/libg/libglvnd/libegl1_1.7.0-3_amd64.deb",
+      "sha256": "cf2a6549bbc4339671901bde97c0ca41c380c5783179ef68977bf86151f03766",
+      "bytes": 29654
+    },
+    {
+      "file": "pool/main/v/vulkan-loader/libvulkan1_1.4.341.0-1_amd64.deb",
+      "sha256": "b4aca7a519d6318347f15a0e485c636603005e2553dae1a986272ac8c96176b0",
+      "bytes": 157194
+    },
+    {
+      "file": "pool/main/m/mesa/libgl1-mesa-dri_26.0.8-1ubuntu0.3_amd64.deb",
+      "sha256": "585dfac64d7ca95a9813faad9f14c361d788069b7578859fb426c657dd528f08",
+      "bytes": 38166
+    },
+    {
+      "file": "pool/main/libx/libxcb/libxcb-glx0_1.17.0-2ubuntu1_amd64.deb",
+      "sha256": "857c34618ae56b2577d8d439cf86f80375582626193efaa3229c6767106a1a20",
+      "bytes": 24654
+    },
+    {
+      "file": "pool/main/libx/libxxf86vm/libxxf86vm1_1.1.4-2_amd64.deb",
+      "sha256": "ff01ae50526c23c6c747e1efd98ee3785a1d28458e865277fc367c565bb94703",
+      "bytes": 10610
+    },
+    {
+      "file": "pool/main/m/mesa/libglx-mesa0_26.0.8-1ubuntu0.3_amd64.deb",
+      "sha256": "17ff6239daaf75337d3697c1e5f1ef3e190c4c2dd73a9f0edfc36868ef41905c",
+      "bytes": 125602
+    },
+    {
+      "file": "pool/main/libg/libglvnd/libglx0_1.7.0-3_amd64.deb",
+      "sha256": "e0b75c32f773201ebca2184d94dfc34f6e09470c7cf6e425d48b270e516fd909",
+      "bytes": 38932
+    },
+    {
+      "file": "pool/main/libg/libglvnd/libgl1_1.7.0-3_amd64.deb",
+      "sha256": "83ec3a454b28e947a6886e9ae8167e129e25d7a2fd741aaffcdca76eddff5955",
+      "bytes": 98292
+    },
+    {
+      "file": "pool/main/o/orc/liborc-0.4-0t64_0.4.42-2_amd64.deb",
+      "sha256": "247e3b2100d94e897398e45548beba164b90917130333d6c540a0e3403e82906",
+      "bytes": 283098
+    },
+    {
+      "file": "pool/main/g/gst-plugins-base1.0/libgstreamer-plugins-base1.0-0_1.28.2-1ubuntu0.1_amd64.deb",
+      "sha256": "b04ecc2677ae4544b55efa72655e5239437653bb4a30c031db75599978e5f63c",
+      "bytes": 920576
+    },
+    {
+      "file": "pool/main/w/wayland/libwayland-cursor0_1.24.0-2_amd64.deb",
+      "sha256": "941affa9ef61b0cca5cfac1fab13e8e78168af306709df4adf546c76be82a1de",
+      "bytes": 10770
+    },
+    {
+      "file": "pool/main/w/wayland/libwayland-egl1_1.24.0-2_amd64.deb",
+      "sha256": "692358c252186b132f6807548cffffe6f358d5b2139e8d57d0763b1f3ba28c61",
+      "bytes": 6248
+    },
+    {
+      "file": "pool/main/g/gst-plugins-base1.0/libgstreamer-gl1.0-0_1.28.2-1ubuntu0.1_amd64.deb",
+      "sha256": "95c06e26d8fa0666df1b5ba6b1768112e903fababbca0af5a5a3bacb41b6ecdf",
+      "bytes": 229996
+    },
+    {
+      "file": "pool/main/libv/libva/libva2_2.23.0-1ubuntu1_amd64.deb",
+      "sha256": "83053abb11b8b0169bfb2abbd209a44ddeb4e56223980cdcfc0218b09e845f00",
+      "bytes": 76506
+    },
+    {
+      "file": "pool/main/libv/libva/libva-drm2_2.23.0-1ubuntu1_amd64.deb",
+      "sha256": "f56b0cb850dcd8af45929b2da7cc1fbdf64245fbcec99033298499a8db2765a3",
+      "bytes": 7112
+    },
+    {
+      "file": "pool/main/g/gst-plugins-bad1.0/libgstreamer-plugins-extra1.0-0_1.28.2-1ubuntu1.2_amd64.deb",
+      "sha256": "a6bcbe90a98d9b6709b75a6fe9f6afaf2089e24c3d25ca32e50f207d446d0e12",
+      "bytes": 510394
+    },
+    {
+      "file": "pool/main/h/harfbuzz/libharfbuzz-subset0_12.3.2-2_amd64.deb",
+      "sha256": "5135ba4f61cc3f71f73d3992b68b2fb08eedac7269a7070ce16d44671f143c04",
+      "bytes": 491630
+    },
+    {
+      "file": "pool/main/libj/libjpeg-turbo/libjpeg-turbo8_2.1.5-4ubuntu4_amd64.deb",
+      "sha256": "07672ce1f4d187e005ea0cc35d03e515ba056f3d3e7a9a25d3ef386e184da8c5",
+      "bytes": 152810
+    },
+    {
+      "file": "pool/main/libj/libjpeg8-empty/libjpeg8_8c-2ubuntu12_amd64.deb",
+      "sha256": "1403d44d2c2d3eba6a7a8aea97fab0bac2e89e144a3bf600adfdd3ecdc3d9394",
+      "bytes": 2142
+    },
+    {
+      "file": "pool/main/libd/libdeflate/libdeflate0_1.23-2ubuntu1_amd64.deb",
+      "sha256": "40ee517cffd3730405be6ae30826533bec0ddf8773bb7ac2cccd22a57acafc25",
+      "bytes": 51702
+    },
+    {
+      "file": "pool/main/j/jbigkit/libjbig0_2.1-6.1ubuntu3_amd64.deb",
+      "sha256": "bb2ffa4e359ee7a29dab9902b45e5c85de06f019272700cb2538e4762f141ee8",
+      "bytes": 30028
+    },
+    {
+      "file": "pool/main/l/lerc/liblerc4_4.0.0+ds-5ubuntu2_amd64.deb",
+      "sha256": "29051d37d010a7a0e3b5648f73f30d35eb1e313061137c88f3a2c2078925a36d",
+      "bytes": 206718
+    },
+    {
+      "file": "pool/main/libw/libwebp/libwebp7_1.5.0-0.1build1_amd64.deb",
+      "sha256": "0a846cf63522d9c1f28d31bdd53e35e223d590a0971bb6927b3ee5092934ce9d",
+      "bytes": 263542
+    },
+    {
+      "file": "pool/main/t/tiff/libtiff6_4.7.0-3ubuntu5_amd64.deb",
+      "sha256": "f48cb837a644826b9411ecd9692cbd57fbcb57b5b8fba026652d9204b3acb169",
+      "bytes": 205792
+    },
+    {
+      "file": "pool/main/libx/libxfixes/libxfixes3_6.0.0-2build2_amd64.deb",
+      "sha256": "f3a71f6aa12000480c419e44f3aa5bdca7eb862b720d0307661b4e886db1c5f8",
+      "bytes": 11102
+    },
+    {
+      "file": "pool/main/libx/libxcursor/libxcursor1_1.2.3-1build1_amd64.deb",
+      "sha256": "0f3d9816a3a557590ca1b31f2548b1988ad7ec9de976bad07cc24cc7d69b4ee7",
+      "bytes": 22108
+    },
+    {
+      "file": "pool/main/libx/libxdamage/libxdamage1_1.1.7-1_amd64.deb",
+      "sha256": "dd751597c6216105774a93769972d1cb6dad5fd1ba91f090197d7acc85c406cb",
+      "bytes": 6582
+    },
+    {
+      "file": "pool/main/libx/libxi/libxi6_1.8.2-2_amd64.deb",
+      "sha256": "b975dd89cac8c32a3cf622e1b7f5434db59f37eda87dfee399d0806d9953db0a",
+      "bytes": 33120
+    },
+    {
+      "file": "pool/main/libx/libxinerama/libxinerama1_1.1.4-3build2_amd64.deb",
+      "sha256": "02d3dce422acc3ac9b5491f47acdd07bc7c3f78ce193865f2920d38b10fbadf5",
+      "bytes": 6472
+    },
+    {
+      "file": "pool/main/libx/libxrandr/libxrandr2_1.5.4-1build1_amd64.deb",
+      "sha256": "d0052315ac1417234777c0872568a86fce4d3a3316c041e5a2200da70f43a855",
+      "bytes": 19622
+    },
+    {
+      "file": "pool/main/libg/libglvnd/libgles2_1.7.0-3_amd64.deb",
+      "sha256": "60113d7ec92c7ccdbd09e90b379bb9041581af3b85e28b3f250374025bb6440e",
+      "bytes": 17458
+    },
+    {
+      "file": "pool/main/g/gtk4/libgtk-4-common_4.22.4+ds-0ubuntu0.1_all.deb",
+      "sha256": "701267c163e22c901b81733d8a6369cb7edf783618b30a35a663bb8111e67554",
+      "bytes": 1546346
+    },
+    {
+      "file": "pool/main/g/gtk4/libgtk-4-1_4.22.4+ds-0ubuntu0.1_amd64.deb",
+      "sha256": "5ae394b2cdd4c09cb725e8a6686af27e33b476c6aca6caf016dce068b0702b2b",
+      "bytes": 3551986
+    },
+    {
+      "file": "pool/main/liba/libadwaita-1/libadwaita-1-0_1.9.1-0ubuntu0.2_amd64.deb",
+      "sha256": "b676528ae7e6e60c19776ccde1e1a31111f9d16569a3978c0aa18176b2d55daf",
+      "bytes": 529772
+    },
+    {
+      "file": "pool/universe/o/ostree/ostree_2025.7-3build1_amd64.deb",
+      "sha256": "9be1be3be66d37c9df2c839ec46200be40902c332b85a8c8e95126c235030526",
+      "bytes": 187216
+    }
+  ]
+}

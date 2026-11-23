@@ -1,0 +1,35 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "system_power_bus_used": false,
+  "real_shortcuts_or_notifications_enabled": false,
+  "profile": "release",
+  "requested_gtk_backend": "wayland",
+  "gui_sha256": "516b722be9cd8c57b13f401e714bcb0a2affb2a120e771ff9f14ccce00bd2fc3",
+  "cli_sha256": "f0e5c0b08cfec6f32ecb94e39ca65a990f46af4f4ee7bd0dd74c8c562484cf30",
+  "checks_passed": [
+    "native setup saves automatic mode in user settings without starting a hold",
+    "native Launch runs the custom wrapper and renders active ownership with the effective profile",
+    "changing the preference affects future launches and preserves the active session until explicitly released",
+    "native release restores provider selection without stopping the game, and actual exit moves it to history",
+    "SIGKILL of the GUI preserves the running session and the daemon releases its hold after real exit"
+  ],
+  "captures": [],
+  "setup_accessible_description": "",
+  "setup_accessible_relations": [
+    {
+      "type": 2,
+      "targets": [
+        "Profile setup"
+      ]
+    },
+    {
+      "type": 18,
+      "targets": [
+        "GUI session fixture\ncustom/gui"
+      ]
+    }
+  ],
+  "cleanup_complete": true
+}

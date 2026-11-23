@@ -1,0 +1,12 @@
+[
+  {
+    "file": "flatpak_scope_vm_inner.py",
+    "bytes": 12417,
+    "sha256": "c3b566e1f8766d51bb5f495d7f3ce7c0b5a9ec50c424483b94dcb6726abe593b"
+  },
+  {
+    "file": "systemd_vm.py",
+    "bytes": 25563,
+    "sha256": "868f68f5f4f3f0b3699df73dc8485d76192acd9859ea84ffc9b5d275390e4942"
+  }
+]

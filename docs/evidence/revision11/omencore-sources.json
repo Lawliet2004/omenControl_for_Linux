@@ -1,0 +1,305 @@
+{
+  "repository": "https://github.com/theantipopau/omencore",
+  "commit": "840f03d58ddd4c3a709780b6d635828d9ef3d87c",
+  "commit_date": "2026-10-26T01:43:41Z",
+  "downloaded_utc": "2026-10-26T05:14:04.283411+00:00",
+  "local_root": "/tmp/omen-source-review/omencore-840f03d58ddd",
+  "files": [
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/LICENSE",
+      "bytes": 1074,
+      "git_blob_sha1": "9db754d065c50515cb10ccf744bd8168edb234d7",
+      "sha256": "e1ee0757abcdf960d6b42a3c5e6c3f1059ffe185001977acb18d220e724b6fde"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/README.md",
+      "bytes": 95783,
+      "git_blob_sha1": "221c084e6541ebed3ebaae108470749203314bda",
+      "sha256": "498bce934ebaa23552e0a0c3faf3a475efaa0ec258337ba0a2148c15db436826"
+    },
+    {
+      "path": "docs/LINUX_INSTALL_GUIDE.md",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/docs/LINUX_INSTALL_GUIDE.md",
+      "bytes": 31514,
+      "git_blob_sha1": "debac3f4e4d3235e0cae3c09c1b2d98b2d1a7189",
+      "sha256": "76f0c6db40725d3b9ea098d4060114d5a172e3a3c3439e2dab1149f0d69f27f5"
+    },
+    {
+      "path": "docs/LINUX_KERNEL_BOARD_SUPPORT.md",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/docs/LINUX_KERNEL_BOARD_SUPPORT.md",
+      "bytes": 5653,
+      "git_blob_sha1": "102045f213195f9f39dd381fa208f6a0cc36548d",
+      "sha256": "4abd90b3aad1eac396f4679ab554fe82839eab1ec5926570aa31427a734812d4"
+    },
+    {
+      "path": "docs/3.6.2-LINUX-CAPABILITY-MATRIX.md",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/docs/3.6.2-LINUX-CAPABILITY-MATRIX.md",
+      "bytes": 1063,
+      "git_blob_sha1": "08f5fe8800eeaac34c52292c8da00f7a159eb209",
+      "sha256": "c806b70691116f38509265e68f3b6ed729f7702cf31ee087eaf54472b1eee0c9"
+    },
+    {
+      "path": "docs/LINUX_QA_TESTING.md",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/docs/LINUX_QA_TESTING.md",
+      "bytes": 7471,
+      "git_blob_sha1": "6d9e8de77857273a7ff46b3049f5910403d5eb56",
+      "sha256": "3cddda2d02cb0d8306eb9e2f67106c5a1ea72fe019696f8c66911e29d925deb7"
+    },
+    {
+      "path": "docs/LINUX_VALIDATION_EVIDENCE_v3.2.5.md",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/docs/LINUX_VALIDATION_EVIDENCE_v3.2.5.md",
+      "bytes": 1633,
+      "git_blob_sha1": "e8e6b2abd082371c245ac68f216c3cd1e3c68dbd",
+      "sha256": "02b5b094cfbb4c5938fe1c519b993545f6892319486183c9e398ec5d9726574f"
+    },
+    {
+      "path": "src/OmenCore.Core/Hardware/OmenBoard.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Core/Hardware/OmenBoard.cs",
+      "bytes": 3276,
+      "git_blob_sha1": "dd952c35ae25b0dd6a80b3d352a98445a8ca7c3a",
+      "sha256": "7502ebb0c750b8eaa1977702fb24db93a1f539671b5c31a05d3f885de9bb0ac3"
+    },
+    {
+      "path": "src/OmenCore.Core/Hardware/HpWmiBios.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Core/Hardware/HpWmiBios.cs",
+      "bytes": 143540,
+      "git_blob_sha1": "d15682fea693987518bdcfb01b41794e785d4111",
+      "sha256": "789cd6f08b65576971297bea0dc36ded798919614e159260745300ea559f9b47"
+    },
+    {
+      "path": "src/OmenCore.Core/Hardware/WmiFanController.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Core/Hardware/WmiFanController.cs",
+      "bytes": 123052,
+      "git_blob_sha1": "0646e663e217c90e32cf74234d94b52a6fa72da2",
+      "sha256": "02d71a1ce2e659ee62c5f3e4f3a1cdf0c30964a6b9c20d2ae21806456d61559c"
+    },
+    {
+      "path": "src/OmenCore.Core/Hardware/FanControllerFactory.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Core/Hardware/FanControllerFactory.cs",
+      "bytes": 53095,
+      "git_blob_sha1": "7ac41d77e64b806b4467fe28e9b5f05fdbe38953",
+      "sha256": "de0b4197efde0e03727db9c14a7c92151627b89cf26ec30dca255586cd690cd5"
+    },
+    {
+      "path": "src/OmenCore.Avalonia/Services/LinuxHardwareService.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Avalonia/Services/LinuxHardwareService.cs",
+      "bytes": 51858,
+      "git_blob_sha1": "7428d516322a035e05c3986ddf15ff9c1612697c",
+      "sha256": "e046266a1d493a536dd97255a7fd98a5e7fb4b05a9fa83924a63e035de9e425a"
+    },
+    {
+      "path": ".github/workflows/linux-qa.yml",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/.github/workflows/linux-qa.yml",
+      "bytes": 7144,
+      "git_blob_sha1": "68d72b438d31b80fc84f8c3b6fcccdff5752ea50",
+      "sha256": "92bbdd6ae61789d612d366ab564f947fc44550a9039a53421fabe96bb10da827"
+    },
+    {
+      "path": "src/OmenCore.Linux.Tests/Hardware/FanWriterScannerTests.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux.Tests/Hardware/FanWriterScannerTests.cs",
+      "bytes": 1581,
+      "git_blob_sha1": "a11ec3bda715692363b49fd2972ed1bf385b0926",
+      "sha256": "9264f6019e13fb9a364ee38d5628022d77aa99e70ba469381ba6fecc761b3f31"
+    },
+    {
+      "path": "src/OmenCore.Linux.Tests/Hardware/LinuxCapabilityClassifierTests.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux.Tests/Hardware/LinuxCapabilityClassifierTests.cs",
+      "bytes": 8590,
+      "git_blob_sha1": "1ce662a7bb8a600fe603786155425a0550153f22",
+      "sha256": "09beed7e6e5894bf2df023e96982908b0eabf40eece6584dede882e0c8f8b8b1"
+    },
+    {
+      "path": "src/OmenCore.Linux.Tests/Hardware/LinuxCpuSensorRankTests.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux.Tests/Hardware/LinuxCpuSensorRankTests.cs",
+      "bytes": 1882,
+      "git_blob_sha1": "7fc1403dafa645ef5ac4fb5d105791620048c6f4",
+      "sha256": "7d532d3bf8ee2cad6d65b8cc9171b42872d3196bfdc9c419ea11ce918bf288d6"
+    },
+    {
+      "path": "src/OmenCore.Linux.Tests/Hardware/LinuxFourZonePayloadTests.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux.Tests/Hardware/LinuxFourZonePayloadTests.cs",
+      "bytes": 2755,
+      "git_blob_sha1": "55c80876c4bf5903198a34f6fdb7725efe347f07",
+      "sha256": "f1fc7bc9f92d7bdb738fbb736494649369697bcd4973999fde99acd393b357e7"
+    },
+    {
+      "path": "src/OmenCore.Linux.Tests/Hardware/LinuxSysfsPathMapTests.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux.Tests/Hardware/LinuxSysfsPathMapTests.cs",
+      "bytes": 4129,
+      "git_blob_sha1": "a5acdce820b96bc240262da4f465f225b24e4a30",
+      "sha256": "d2c4bb8bbf1c4848cda0cae4f7662ab7e9ee827fd9474993a60beb13fc2f368d"
+    },
+    {
+      "path": "src/OmenCore.Linux.Tests/Hardware/NvmlInteropTests.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux.Tests/Hardware/NvmlInteropTests.cs",
+      "bytes": 2377,
+      "git_blob_sha1": "e8b0ad712e3a0a16071fbe83c7cb1ea7775a56ef",
+      "sha256": "2987ecbbbd796918f37f2be764ef5402ca98e7cb43856169b16ae8580f6c02dd"
+    },
+    {
+      "path": "src/OmenCore.Linux.Tests/Hardware/WriterLockTests.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux.Tests/Hardware/WriterLockTests.cs",
+      "bytes": 1436,
+      "git_blob_sha1": "60409d57a3005b6af25dbf17c73233ac1a5aa79f",
+      "sha256": "e971acc5bab32cfa8df0bfdd62485cb56ca0e98d658d84c1408d02116b3a706c"
+    },
+    {
+      "path": "src/OmenCore.Linux/Commands/FanCommand.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Commands/FanCommand.cs",
+      "bytes": 20170,
+      "git_blob_sha1": "aa9a09d79ed8407a43ae6d195ccd5a5b4a6c99c4",
+      "sha256": "a4cc519021b30caac6855ad4ad5ddcb72cd547a37b2b871235f9c9987e8a33ea"
+    },
+    {
+      "path": "src/OmenCore.Linux/Commands/KeyboardCommand.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Commands/KeyboardCommand.cs",
+      "bytes": 7372,
+      "git_blob_sha1": "bbc2bb3df396321e6517650698381fe983be7608",
+      "sha256": "9c64e0a6fadb43e7730882bb32097d0a55685c9374818548e0a79a15675695a8"
+    },
+    {
+      "path": "src/OmenCore.Linux/Commands/PerformanceCommand.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Commands/PerformanceCommand.cs",
+      "bytes": 9290,
+      "git_blob_sha1": "2097fa319cb72411a64516e3af0c864ac6143b0c",
+      "sha256": "538ca27854c7c35345008147851cbf3ac7c2eff54ccfed18786f83c4a7cd071c"
+    },
+    {
+      "path": "src/OmenCore.Linux/Daemon/FanCurveEngine.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Daemon/FanCurveEngine.cs",
+      "bytes": 10276,
+      "git_blob_sha1": "13c0cdb5720f117a7adaaec49157b4ae7f80d6e8",
+      "sha256": "eb7aadc3582b99ee71799b9a0cdd9872469c2ae518d2b7174940884816b77b90"
+    },
+    {
+      "path": "src/OmenCore.Linux/Daemon/OmenCoreDaemon.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Daemon/OmenCoreDaemon.cs",
+      "bytes": 19489,
+      "git_blob_sha1": "e6804683cb20fad8d6e0fd19978594b1f98e3a45",
+      "sha256": "f63809edc603c999fec79c37e03cc4cfdbe2e5ef9a33f96889c83ba4af59d817"
+    },
+    {
+      "path": "src/OmenCore.Linux/Hardware/FanWriterScanner.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Hardware/FanWriterScanner.cs",
+      "bytes": 1717,
+      "git_blob_sha1": "3ee40ea2d7cd75ebef554d05adacf5812cbde802",
+      "sha256": "452b875b3a2d690806298e9137812d3fdbc249950fe9e6fee7304e796e8eb40f"
+    },
+    {
+      "path": "src/OmenCore.Linux/Hardware/LinuxBatteryController.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Hardware/LinuxBatteryController.cs",
+      "bytes": 4598,
+      "git_blob_sha1": "19afac8503d5f93e2ed8265198e845e0c00b0faf",
+      "sha256": "195ec967b8545e3924fcf20caa3d880accbd6b29f693459cefa0255dcf5795d0"
+    },
+    {
+      "path": "src/OmenCore.Linux/Hardware/LinuxCapabilityClassifier.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Hardware/LinuxCapabilityClassifier.cs",
+      "bytes": 6899,
+      "git_blob_sha1": "2b9fabb49836cdddbfc24f054100bff2f96ed571",
+      "sha256": "1ed89e489837b1ce157cbc7f9f82b4d965fb72fbec8c0430b6a5eda76ba15b33"
+    },
+    {
+      "path": "src/OmenCore.Linux/Hardware/LinuxEcController.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Hardware/LinuxEcController.cs",
+      "bytes": 59973,
+      "git_blob_sha1": "ce189a27913ac4cedf90101c61d30f1fe9fbb14e",
+      "sha256": "1023ac0ca1c1fda37e457c8c5187b9f9857461912e9d327cf872fecad54efd38"
+    },
+    {
+      "path": "src/OmenCore.Linux/Hardware/LinuxFourZonePayload.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Hardware/LinuxFourZonePayload.cs",
+      "bytes": 2978,
+      "git_blob_sha1": "01b9fa0dc6e36fd49300f97b1d21fa68371db52d",
+      "sha256": "3f5d9e73d31bf45ea0e428f439143dae4c2c3853f714e8983fc2d1de98e9d43e"
+    },
+    {
+      "path": "src/OmenCore.Linux/Hardware/LinuxHwMonController.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Hardware/LinuxHwMonController.cs",
+      "bytes": 12267,
+      "git_blob_sha1": "5f99397b09b5bf63be1c7cd0f7866175cd02da91",
+      "sha256": "7a5909712f430325d47d5fe934243a8b2fac52c1c45320c15f58ea35cf9201da"
+    },
+    {
+      "path": "src/OmenCore.Linux/Hardware/LinuxKeyboardController.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Hardware/LinuxKeyboardController.cs",
+      "bytes": 15295,
+      "git_blob_sha1": "c26eea0e73d3be9bfd10f627405c543fdaab030c",
+      "sha256": "a8d9b0ca5a757745c5d7ec582b8b158509e2984b113bb744ab171ebea51f9de6"
+    },
+    {
+      "path": "src/OmenCore.Linux/Hardware/LinuxSysfsPathMap.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Hardware/LinuxSysfsPathMap.cs",
+      "bytes": 13205,
+      "git_blob_sha1": "c01cb8b0ee9485869ed3bd67d2847979fc2e892d",
+      "sha256": "04a3ddbcc331b10e65879fee377b86e9ffe506a55bd0ccf9d229c1369c423627"
+    },
+    {
+      "path": "src/OmenCore.Linux/Hardware/LinuxTelemetryResolver.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Hardware/LinuxTelemetryResolver.cs",
+      "bytes": 2614,
+      "git_blob_sha1": "8080ee9be82dcc9d7aa24509e98e62adfb46cf58",
+      "sha256": "140375a44ea5a49b42834f46b5be0fce97402cf540bcbefed463b438a1a4898a"
+    },
+    {
+      "path": "src/OmenCore.Linux/Hardware/NvmlInterop.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Hardware/NvmlInterop.cs",
+      "bytes": 9931,
+      "git_blob_sha1": "bc1f9efbbd54bec25268f8f64540015602fffcd0",
+      "sha256": "6eb80708119b4666242f885f87483296791de45b9955fd6a583816aa9200fbed"
+    },
+    {
+      "path": "src/OmenCore.Linux/Hardware/WriterLock.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Hardware/WriterLock.cs",
+      "bytes": 3454,
+      "git_blob_sha1": "b0df3974c9106dffa1519de4357c167a614ad068",
+      "sha256": "0ce781c6a790ec48eeeb296a90f65fd62661dbf4770773071e8f3a1d4a3cc3ec"
+    },
+    {
+      "path": "src/OmenCore.Linux/OmenCore.Linux.csproj",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/OmenCore.Linux.csproj",
+      "bytes": 1907,
+      "git_blob_sha1": "aba932fd588b06ab2d0cd850517acd6de6b940b9",
+      "sha256": "2f54e269abbf5a69f5b011264e84f8f20149800bca461246c284eb3947ee3ae7"
+    },
+    {
+      "path": "src/OmenCore.Linux/README.md",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/README.md",
+      "bytes": 9661,
+      "git_blob_sha1": "7e82154dcbd8a52f399a2e813e6e7b824b678b94",
+      "sha256": "001be42c720d3fae9c95d7556d619a26d7020d769cf0130a2730b072f3a9c0ba"
+    },
+    {
+      "path": "src/OmenCore.Linux/Program.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Program.cs",
+      "bytes": 13817,
+      "git_blob_sha1": "66394844d04d23236fa0e8a605d823931b7a309f",
+      "sha256": "8e15c36256674a455964e5d87d95c5a3372c8e67b68833d0408eaa5f1cff38ef"
+    },
+    {
+      "path": "src/OmenCore.Linux/Commands/DaemonCommand.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Linux/Commands/DaemonCommand.cs",
+      "bytes": 15307,
+      "git_blob_sha1": "655032bffd67891916842e2e0ddbfd554377821c",
+      "sha256": "c7b28fbbeccb03ee46a34808b304d9739239ced50e45e0c5929eba28eb06dacb"
+    },
+    {
+      "path": "packaging/aur/omencore-bin/omencore.service",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/packaging/aur/omencore-bin/omencore.service",
+      "bytes": 935,
+      "git_blob_sha1": "6159f03720aaa6d99099791b92bc35afc307270e",
+      "sha256": "e143c17f4d115dca84408488eb29dd7d5d18605e01ee33e8ada3688f72e6a491"
+    },
+    {
+      "path": "src/OmenCore.Core/Services/KeyboardLighting/KeyboardModelDatabase.cs",
+      "url": "https://raw.githubusercontent.com/theantipopau/omencore/840f03d58ddd4c3a709780b6d635828d9ef3d87c/src/OmenCore.Core/Services/KeyboardLighting/KeyboardModelDatabase.cs",
+      "bytes": 58995,
+      "git_blob_sha1": "690de22c45f22eefa07b0d36305c69d38d812424",
+      "sha256": "8eaf6ee4999eb05a72dac5aa0b556e4078d1a2b17449bcc72e31213922aa59e2"
+    }
+  ],
+  "target_code_executed": false,
+  "additional_downloaded_utc": "2026-10-26T05:21:27.883229+00:00"
+}

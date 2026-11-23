@@ -1,0 +1,37 @@
+{
+  "result": "passed",
+  "profile": "debug",
+  "fixture_only": true,
+  "live_hardware_writes": false,
+  "interaction": "AT-SPI actions, editable text and native file-list selection; no injected application test actions",
+  "picker": "real GTK fallback; private bus has no desktop portal",
+  "requested_gtk_backend": "wayland",
+  "checks_passed": [
+    "native export picker cancellation leaves user and service settings unchanged",
+    "native user export writes private, scoped JSON without changing either configuration",
+    "native import picker cancellation leaves both configurations unchanged",
+    "native user import saves the selected preferences only to the desktop file",
+    "native service export reads production IPC and writes a private service-only backup",
+    "scope-mismatched native user import displays an error without configuration changes",
+    "malformed native import preserves existing configuration and reports failure",
+    "oversized native import reports its size limit and preserves configuration",
+    "service preview shows selected automation and cancellation never sends a mutation",
+    "explicit native Apply persists service policy through IPC while leaving desktop settings unchanged",
+    "profile controls become read-only after the imported battery policy takes ownership",
+    "restoring service policies re-enables profile controls without restarting the application",
+    "native diagnostics export identifies fixture hardware and writes private JSON",
+    "daemon loss during service preview reports failure without saving to either configuration",
+    "daemon loss disables profile controls and explains the missing capability",
+    "desktop settings export remains usable after the service disconnects"
+  ],
+  "network_checks_passed": [
+    "Vitals shows fixture interface identity and measured idle rates without live network data",
+    "Vitals updates sampled rates, errors and drops from changed fixture counters",
+    "missing fixture counters show an unavailable reason without falling back to the host",
+    "recovered Vitals replaces removed interface rows with the new identity"
+  ],
+  "binary_sha256": "4166f5e3f0798f6eb282d880adaf4bb64521db9f3c4f850c5e2564eb92a2c5e6",
+  "gtk_display_type": "GdkWaylandDisplay",
+  "cleanup_complete": true,
+  "recorded_utc": "2026-10-26T13:40:06.139970+00:00"
+}

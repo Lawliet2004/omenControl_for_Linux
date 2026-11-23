@@ -1,0 +1,207 @@
+{
+  "recorded_utc": "2026-10-25T21:20:25.251541+00:00",
+  "purpose": "Read-only source research; no launcher or game installed/executed",
+  "repositories": [
+    {
+      "repository": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
+      "commit": "509a34feea8541b73c928e289f2cf262d432db4a",
+      "files": [
+        {
+          "path": "src/backend/__tests__/protocol.test.ts",
+          "sha256": "d62720f06e8541c7728967ff293e0e87074d1782de8e00301fe27cc10649ed82",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/__tests__/protocol.test.ts"
+        },
+        {
+          "path": "src/backend/constants/paths.ts",
+          "sha256": "8e3b6d65ff14a5c3f28fa04fce050cead8345f2b6cdb51365eb86d193dc12bbf",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/constants/paths.ts"
+        },
+        {
+          "path": "src/backend/main.ts",
+          "sha256": "e314bb4a716d02607b0f7bca75a178ca2373c97424ee9e539ef71f3891c7e5a8",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/main.ts"
+        },
+        {
+          "path": "src/backend/protocol.ts",
+          "sha256": "78e879d23e347fcebfd9264d2d64761f19ed38bc8ad00a338c90db9035512b3a",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/protocol.ts"
+        },
+        {
+          "path": "src/backend/storeManagers/gog/constants.ts",
+          "sha256": "44a46c103ffa76209e984dd0f147a608f0d62253ced4992410ff2828b024c894",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/gog/constants.ts"
+        },
+        {
+          "path": "src/backend/storeManagers/gog/electronStores.ts",
+          "sha256": "cf7988f261bde9e5a74594d288d9116ea29ae8360b9d65a8b6de181e00397d0a",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/gog/electronStores.ts"
+        },
+        {
+          "path": "src/backend/storeManagers/gog/library.ts",
+          "sha256": "0654dd0163bcd57d3140bcf917397e5436e0c90a7865c7f64d81cdf55e46360e",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/gog/library.ts"
+        },
+        {
+          "path": "src/backend/storeManagers/legendary/constants.ts",
+          "sha256": "819ddfb33db68dce97d3c8ebaf1b410593d29aca53de1d0c82b9431fd8021c15",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/legendary/constants.ts"
+        },
+        {
+          "path": "src/backend/storeManagers/legendary/library.ts",
+          "sha256": "65cca152ec4b4d03608c037b656122f55d6ac1fdcb27fda0ffd25104c608259f",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/legendary/library.ts"
+        },
+        {
+          "path": "src/backend/storeManagers/nile/constants.ts",
+          "sha256": "2bfce592d455acb60d5197267b576ab4ac7f393a75e24da17a212a71cd0db4c0",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/nile/constants.ts"
+        },
+        {
+          "path": "src/backend/storeManagers/nile/library.ts",
+          "sha256": "f7c200da71e758018ff47cbb41411f7cb68e5774b21eb30a3af6cfb68d4ceba9",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/nile/library.ts"
+        },
+        {
+          "path": "src/backend/storeManagers/sideload/library.ts",
+          "sha256": "0e879d1f0ddf6bea56d3cc75324d9d2f2ba40bd57c7922f8942037a7d420de79",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/sideload/library.ts"
+        },
+        {
+          "path": "src/backend/storeManagers/zoom/constants.ts",
+          "sha256": "1e4cbf2db7803122e11a867f8b71d3f7b821ff68426a357de4df4c4d1d7728f4",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/zoom/constants.ts"
+        },
+        {
+          "path": "src/backend/storeManagers/zoom/library.ts",
+          "sha256": "a8018550cfa8c2898bf2fb3ee83a103c9b258787607ecf3933ac14963cba6516",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/backend/storeManagers/zoom/library.ts"
+        },
+        {
+          "path": "src/common/types/gog.ts",
+          "sha256": "c40b74e536e8313f36e93058cccaad81a6dea0470f99531b784a569df0fa53e9",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/common/types/gog.ts"
+        },
+        {
+          "path": "src/common/types/legendary.ts",
+          "sha256": "2552b66f0b3915a6cdc87308cbab9b512df0ff56f936ad27bc3cc11f294cebcf",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/common/types/legendary.ts"
+        },
+        {
+          "path": "src/common/types.ts",
+          "sha256": "5cc53b06b93e6045b165e443bfc0f5e2a69d8845e21fe5dcb31b199a1316d8cc",
+          "source_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/blob/509a34feea8541b73c928e289f2cf262d432db4a/src/common/types.ts"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/lutris/lutris",
+      "commit": "1f32fe0e46e2a5d92fad9db2846c7cb7becd20c3",
+      "files": [
+        {
+          "path": "lutris/database/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "source_url": "https://github.com/lutris/lutris/blob/1f32fe0e46e2a5d92fad9db2846c7cb7becd20c3/lutris/database/__init__.py"
+        },
+        {
+          "path": "lutris/database/categories.py",
+          "sha256": "88323b8c0f4c82693870ce11710ad6e51bf73366b63e6fcf98df33677de425da",
+          "source_url": "https://github.com/lutris/lutris/blob/1f32fe0e46e2a5d92fad9db2846c7cb7becd20c3/lutris/database/categories.py"
+        },
+        {
+          "path": "lutris/database/games.py",
+          "sha256": "8336f311fc06630347a6d96b33e943d3769697cb669256ec9c512ecf73601cff",
+          "source_url": "https://github.com/lutris/lutris/blob/1f32fe0e46e2a5d92fad9db2846c7cb7becd20c3/lutris/database/games.py"
+        },
+        {
+          "path": "lutris/database/saved_searches.py",
+          "sha256": "8093354a6843d7bda4cd2600a2ad597e22014f19a7f08a0ba3f0cc86aa0a25fd",
+          "source_url": "https://github.com/lutris/lutris/blob/1f32fe0e46e2a5d92fad9db2846c7cb7becd20c3/lutris/database/saved_searches.py"
+        },
+        {
+          "path": "lutris/database/schema.py",
+          "sha256": "9dd57e91ec88edd6bfa926caffda2645977633298d9dabcef2d32dccf75b184d",
+          "source_url": "https://github.com/lutris/lutris/blob/1f32fe0e46e2a5d92fad9db2846c7cb7becd20c3/lutris/database/schema.py"
+        },
+        {
+          "path": "lutris/database/services.py",
+          "sha256": "3130c86db8a5ca9d8a05fa827c1776ea5a3939c2e6db4d181516ebd4851f4965",
+          "source_url": "https://github.com/lutris/lutris/blob/1f32fe0e46e2a5d92fad9db2846c7cb7becd20c3/lutris/database/services.py"
+        },
+        {
+          "path": "lutris/database/sources.py",
+          "sha256": "cb32eedb6bde0bac2a3efecf7eeae2f0fd87bbb27db4afc16b47676228daab0f",
+          "source_url": "https://github.com/lutris/lutris/blob/1f32fe0e46e2a5d92fad9db2846c7cb7becd20c3/lutris/database/sources.py"
+        },
+        {
+          "path": "lutris/database/sql.py",
+          "sha256": "9312be84edfcfe69ca21769025bebf14ea493f501130dc909b7f741c25db5437",
+          "source_url": "https://github.com/lutris/lutris/blob/1f32fe0e46e2a5d92fad9db2846c7cb7becd20c3/lutris/database/sql.py"
+        },
+        {
+          "path": "lutris/gui/application.py",
+          "sha256": "ff88f119d94517af76d63b32a2e8f88cb0693aeb233938e26180cd2730162921",
+          "source_url": "https://github.com/lutris/lutris/blob/1f32fe0e46e2a5d92fad9db2846c7cb7becd20c3/lutris/gui/application.py"
+        },
+        {
+          "path": "lutris/settings.py",
+          "sha256": "550e16ce747b1547e27ecc35dc0dad293fed816fd2b1317ac81422c5419b10e8",
+          "source_url": "https://github.com/lutris/lutris/blob/1f32fe0e46e2a5d92fad9db2846c7cb7becd20c3/lutris/settings.py"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/flathub/com.valvesoftware.Steam",
+      "commit": "ab8426f18476fd2debaa303086833b9ddb7ef3c9",
+      "files": [
+        {
+          "path": "README.md",
+          "sha256": "656c981aedb1bec92364bac089b57c8e1a8fc8577951b5a796ca6288860453e3",
+          "source_url": "https://github.com/flathub/com.valvesoftware.Steam/blob/ab8426f18476fd2debaa303086833b9ddb7ef3c9/README.md"
+        },
+        {
+          "path": "com.valvesoftware.Steam.yml",
+          "sha256": "f2c057c0d62cf6025bb5a8dae23577d2c6425c36c44ba90d27573896c994efd4",
+          "source_url": "https://github.com/flathub/com.valvesoftware.Steam/blob/ab8426f18476fd2debaa303086833b9ddb7ef3c9/com.valvesoftware.Steam.yml"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/Matoking/protontricks",
+      "commit": "23f19063999bb016fc8e1be048b76e4c5e4c78dc",
+      "files": [
+        {
+          "path": "src/protontricks/steam.py",
+          "sha256": "69086405dbf3435068d517147775dc3b716ef5287b7d870c6a24ef3e84d49744",
+          "source_url": "https://github.com/Matoking/protontricks/blob/23f19063999bb016fc8e1be048b76e4c5e4c78dc/src/protontricks/steam.py"
+        },
+        {
+          "path": "tests/test_steam.py",
+          "sha256": "257c5287c36f6386485342440c3bd3d534a564a22222098ee5d4ab8a04cf54e8",
+          "source_url": "https://github.com/Matoking/protontricks/blob/23f19063999bb016fc8e1be048b76e4c5e4c78dc/tests/test_steam.py"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/flathub/com.heroicgameslauncher.hgl",
+      "commit": "1b6bc9882ce765087c86f2b568188a03093ad358",
+      "files": [
+        {
+          "path": "com.heroicgameslauncher.hgl.yml",
+          "sha256": "982796aed3585e8312fd270c703c6817137a6f9a9bb22c503702e6ad1f91604f",
+          "source_url": "https://github.com/flathub/com.heroicgameslauncher.hgl/blob/1b6bc9882ce765087c86f2b568188a03093ad358/com.heroicgameslauncher.hgl.yml"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/flathub/net.lutris.Lutris",
+      "commit": "067090ef45b2248c2f17ae9d117d474a43eb3a07",
+      "files": [
+        {
+          "path": "net.lutris.Lutris.yml",
+          "sha256": "41187b9631aea78c45b368067f4d3c75cf767c9f46b528564fc4a286fcfe484a",
+          "source_url": "https://github.com/flathub/net.lutris.Lutris/blob/067090ef45b2248c2f17ae9d117d474a43eb3a07/net.lutris.Lutris.yml"
+        }
+      ]
+    }
+  ]
+}

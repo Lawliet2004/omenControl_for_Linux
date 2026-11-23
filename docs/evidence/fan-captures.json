@@ -1,0 +1,29 @@
+{
+  "recorded_utc": "2026-10-26T17:33:58.060804+00:00",
+  "method": "application-only GTK widget captures; no desktop framebuffer capture",
+  "session_bus": "private minimal dbus-daemon without service activation; host tray and portal are not used",
+  "hardware_control_writes": 0,
+  "cleanup_complete": true,
+  "screenshots": [
+    {
+      "path": "docs/screenshots/fan.png",
+      "sha256": "f503447627fa8181e61bd6d408b7b88d93b16f145dc791338039a4ceb95934cc",
+      "fixture": false,
+      "gtk_display_type": "GdkWaylandDisplay",
+      "page_changes": []
+    },
+    {
+      "path": "docs/screenshots/fan-mode-only-fixture.png",
+      "sha256": "419ebf407fb0d9e9807b6ce363fcd21b32f3bdd108f2e2f6b0bbfaa7ace3a85e",
+      "fixture": true,
+      "gtk_display_type": "GdkWaylandDisplay",
+      "page_changes": []
+    }
+  ],
+  "gui_sha256": "00ff31c59c90d6c11f6e6bbafe0809ae20bee27549a736b25d0713ad3376c982",
+  "visual_inspection": {
+    "result": "passed",
+    "review": "docs/evidence/fan-modes-review.json",
+    "scope": "Application-only native capture; readonly host and clearly labeled mode-only simulation. No framebuffer capture."
+  }
+}

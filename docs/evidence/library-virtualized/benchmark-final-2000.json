@@ -1,0 +1,15 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "count": 2000,
+  "profile": "release",
+  "benchmark_only": true,
+  "gui_sha256": "376eb8dd7d0a51b921b574ac616c1dd961553022e196b7c6bc0ed2160e7a9825",
+  "checks_passed": [],
+  "requested_backend": "x11",
+  "scan_and_first_accessible_response_seconds": 2.103441596031189,
+  "loaded_rss_kib": 318824,
+  "peak_observed_rss_kib": 318824,
+  "cleanup_complete": true
+}

@@ -1,0 +1,641 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "host_keyboard_events": false,
+  "profile": "release",
+  "checks_passed": [
+    "Legendary search, provenance and actual-command setup are keyboard reachable; wrapper text releases Tab",
+    "native Legendary Launch preserves its selected configuration and exposes working manual profile restoration",
+    "Snap shortcut setup explains its unsupported automatic wrapping and keeps that action disabled",
+    "keyboard folder selection saves a Legendary location, rescans it and launches from that exact configuration",
+    "the native location chooser persists an explicit Steam Snap route",
+    "removing a selected catalog rescans and removes its entry without rewriting the other installation"
+  ],
+  "gui_sha256": "516b722be9cd8c57b13f401e714bcb0a2affb2a120e771ff9f14ccce00bd2fc3",
+  "selector_navigation": [
+    [
+      {
+        "focus": {
+          "role": "list item",
+          "name": ""
+        },
+        "labels": [
+          "Steam \u00b7 Native"
+        ],
+        "selected": false
+      },
+      {
+        "focus": {
+          "role": "list item",
+          "name": ""
+        },
+        "labels": [
+          "Steam \u00b7 Native"
+        ],
+        "selected": true
+      },
+      {
+        "focus": {
+          "role": "list item",
+          "name": ""
+        },
+        "labels": [
+          "Steam \u00b7 Flatpak"
+        ],
+        "selected": true
+      },
+      {
+        "focus": {
+          "role": "list item",
+          "name": ""
+        },
+        "labels": [
+          "Heroic \u00b7 Native"
+        ],
+        "selected": true
+      },
+      {
+        "focus": {
+          "role": "list item",
+          "name": ""
+        },
+        "labels": [
+          "Heroic \u00b7 Flatpak"
+        ],
+        "selected": true
+      },
+      {
+        "focus": {
+          "role": "list item",
+          "name": ""
+        },
+        "labels": [
+          "Lutris \u00b7 Native"
+        ],
+        "selected": true
+      },
+      {
+        "focus": {
+          "role": "list item",
+          "name": ""
+        },
+        "labels": [
+          "Lutris \u00b7 Flatpak"
+        ],
+        "selected": true
+      },
+      {
+        "focus": {
+          "role": "list item",
+          "name": ""
+        },
+        "labels": [
+          "Steam \u00b7 Snap"
+        ],
+        "selected": true
+      },
+      {
+        "focus": {
+          "role": "list item",
+          "name": ""
+        },
+        "labels": [
+          "Legendary \u00b7 Native"
+        ],
+        "selected": true
+      }
+    ],
+    [
+      {
+        "focus": {
+          "role": "list item",
+          "name": ""
+        },
+        "labels": [
+          "Steam \u00b7 Native"
+        ],
+        "selected": true
+      },
+      {
+        "focus": {
+          "role": "list item",
+          "name": ""
+        },
+        "labels": [
+          "Steam \u00b7 Flatpak"
+        ],
+        "selected": true
+      },
+      {
+        "focus": {
+          "role": "list item",
+          "name": ""
+        },
+        "labels": [
+          "Heroic \u00b7 Native"
+        ],
+        "selected": true
+      },
+      {
+        "focus": {
+          "role": "list item",
+          "name": ""
+        },
+        "labels": [
+          "Heroic \u00b7 Flatpak"
+        ],
+        "selected": true
+      },
+      {
+        "focus": {
+          "role": "list item",
+          "name": ""
+        },
+        "labels": [
+          "Lutris \u00b7 Native"
+        ],
+        "selected": true
+      },
+      {
+        "focus": {
+          "role": "list item",
+          "name": ""
+        },
+        "labels": [
+          "Lutris \u00b7 Flatpak"
+        ],
+        "selected": true
+      },
+      {
+        "focus": {
+          "role": "list item",
+          "name": ""
+        },
+        "labels": [
+          "Steam \u00b7 Snap"
+        ],
+        "selected": true
+      }
+    ]
+  ],
+  "location_selections": [
+    {
+      "requested": "/home/papan/Desktop/Projects/omen/target/omen-native-m0010i_6/Additional catalog",
+      "chosen_control": {
+        "role": "toggle button",
+        "name": "Legendary \u00b7 Native"
+      },
+      "saved_after_return": [
+        {
+          "source": "legendary",
+          "path": "/home/papan/Desktop/Projects/omen/target/omen-native-m0010i_6/Additional catalog",
+          "flatpak": false
+        }
+      ],
+      "dialog_present": false
+    },
+    {
+      "requested": "/home/papan/Desktop/Projects/omen/target/omen-native-m0010i_6/home/snap/steam/common/.local/share/Steam",
+      "chosen_control": {
+        "role": "toggle button",
+        "name": "Steam \u00b7 Snap"
+      },
+      "saved_after_return": [
+        {
+          "source": "legendary",
+          "path": "/home/papan/Desktop/Projects/omen/target/omen-native-m0010i_6/Additional catalog",
+          "flatpak": false
+        },
+        {
+          "source": "steam",
+          "path": "/home/papan/Desktop/Projects/omen/target/omen-native-m0010i_6/home/snap/steam/common/.local/share/Steam",
+          "flatpak": false,
+          "snap": true
+        }
+      ],
+      "dialog_present": false
+    }
+  ],
+  "key_events": [
+    "Control_L+f",
+    "Control_L+a",
+    "BackSpace",
+    "l",
+    "e",
+    "g",
+    "e",
+    "n",
+    "d",
+    "a",
+    "r",
+    "y",
+    "slash",
+    "Shift_L+F",
+    "i",
+    "x",
+    "t",
+    "u",
+    "r",
+    "e",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "space",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Return",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Return",
+    "Control_L+f",
+    "Control_L+a",
+    "BackSpace",
+    "s",
+    "t",
+    "e",
+    "a",
+    "m",
+    "slash",
+    "s",
+    "n",
+    "a",
+    "p",
+    "slash",
+    "s",
+    "h",
+    "o",
+    "r",
+    "t",
+    "c",
+    "u",
+    "t",
+    "slash",
+    "7",
+    "slash",
+    "4",
+    "0",
+    "4",
+    "5",
+    "6",
+    "2",
+    "0",
+    "5",
+    "8",
+    "3",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "space",
+    "Control_L+f",
+    "Control_L+a",
+    "BackSpace",
+    "Tab",
+    "Tab",
+    "space",
+    "Control_L+f",
+    "Control_L+a",
+    "BackSpace",
+    "Tab",
+    "Tab",
+    "Tab",
+    "space",
+    "Home",
+    "Down",
+    "Down",
+    "Down",
+    "Down",
+    "Down",
+    "Down",
+    "Down",
+    "Down",
+    "Return",
+    "Tab",
+    "Return",
+    "Control_L+l",
+    "Control_L+a",
+    "BackSpace",
+    "slash",
+    "h",
+    "o",
+    "m",
+    "e",
+    "slash",
+    "p",
+    "a",
+    "p",
+    "a",
+    "n",
+    "slash",
+    "Shift_L+D",
+    "e",
+    "s",
+    "k",
+    "t",
+    "o",
+    "p",
+    "slash",
+    "Shift_L+P",
+    "r",
+    "o",
+    "j",
+    "e",
+    "c",
+    "t",
+    "s",
+    "slash",
+    "o",
+    "m",
+    "e",
+    "n",
+    "slash",
+    "t",
+    "a",
+    "r",
+    "g",
+    "e",
+    "t",
+    "slash",
+    "o",
+    "m",
+    "e",
+    "n",
+    "minus",
+    "n",
+    "a",
+    "t",
+    "i",
+    "v",
+    "e",
+    "minus",
+    "m",
+    "0",
+    "0",
+    "1",
+    "0",
+    "i",
+    "Shift_L+underscore",
+    "6",
+    "slash",
+    "Shift_L+A",
+    "d",
+    "d",
+    "i",
+    "t",
+    "i",
+    "o",
+    "n",
+    "a",
+    "l",
+    "space",
+    "c",
+    "a",
+    "t",
+    "a",
+    "l",
+    "o",
+    "g",
+    "Return",
+    "Control_L+f",
+    "Control_L+a",
+    "BackSpace",
+    "l",
+    "e",
+    "g",
+    "e",
+    "n",
+    "d",
+    "a",
+    "r",
+    "y",
+    "slash",
+    "Shift_L+O",
+    "t",
+    "h",
+    "e",
+    "r",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Return",
+    "Control_L+f",
+    "Control_L+a",
+    "BackSpace",
+    "Tab",
+    "Tab",
+    "Tab",
+    "space",
+    "Home",
+    "Down",
+    "Down",
+    "Down",
+    "Down",
+    "Down",
+    "Down",
+    "Return",
+    "Tab",
+    "Return",
+    "Control_L+l",
+    "Control_L+a",
+    "BackSpace",
+    "slash",
+    "h",
+    "o",
+    "m",
+    "e",
+    "slash",
+    "p",
+    "a",
+    "p",
+    "a",
+    "n",
+    "slash",
+    "Shift_L+D",
+    "e",
+    "s",
+    "k",
+    "t",
+    "o",
+    "p",
+    "slash",
+    "Shift_L+P",
+    "r",
+    "o",
+    "j",
+    "e",
+    "c",
+    "t",
+    "s",
+    "slash",
+    "o",
+    "m",
+    "e",
+    "n",
+    "slash",
+    "t",
+    "a",
+    "r",
+    "g",
+    "e",
+    "t",
+    "slash",
+    "o",
+    "m",
+    "e",
+    "n",
+    "minus",
+    "n",
+    "a",
+    "t",
+    "i",
+    "v",
+    "e",
+    "minus",
+    "m",
+    "0",
+    "0",
+    "1",
+    "0",
+    "i",
+    "Shift_L+underscore",
+    "6",
+    "slash",
+    "h",
+    "o",
+    "m",
+    "e",
+    "slash",
+    "s",
+    "n",
+    "a",
+    "p",
+    "slash",
+    "s",
+    "t",
+    "e",
+    "a",
+    "m",
+    "slash",
+    "c",
+    "o",
+    "m",
+    "m",
+    "o",
+    "n",
+    "slash",
+    "period",
+    "l",
+    "o",
+    "c",
+    "a",
+    "l",
+    "slash",
+    "s",
+    "h",
+    "a",
+    "r",
+    "e",
+    "slash",
+    "Shift_L+S",
+    "t",
+    "e",
+    "a",
+    "m",
+    "Return",
+    "Control_L+f",
+    "Control_L+a",
+    "BackSpace",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Tab",
+    "Return",
+    "Control_L+f",
+    "Control_L+a",
+    "BackSpace",
+    "l",
+    "e",
+    "g",
+    "e",
+    "n",
+    "d",
+    "a",
+    "r",
+    "y",
+    "slash",
+    "Shift_L+O",
+    "t",
+    "h",
+    "e",
+    "r"
+  ],
+  "cleanup_complete": true
+}

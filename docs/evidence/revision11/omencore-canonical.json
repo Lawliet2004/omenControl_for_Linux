@@ -1,0 +1,48 @@
+{
+  "checked_utc": "2026-10-26T05:23:19.601677+00:00",
+  "repository": "https://github.com/theantipopau/omencore",
+  "original_supplied_url": "https://github.com/omencore",
+  "basis": "Project website links to the repository and repository links back to that project website; GitHub repository metadata agrees. This establishes project source identity, not HP affiliation or hardware compatibility.",
+  "checks": [
+    {
+      "requested_url": "https://omencore.info/",
+      "final_url": "https://omencore.info/",
+      "http_status": 200,
+      "page_sha256": "7a2f422e4ff1c69d14c6ca586df963c5008e458ac610b5f64d65af962d70b5a9",
+      "matching_links": [
+        "https://github.com/theantipopau/omencore",
+        "https://github.com/theantipopau/omencore/blob/main/INSTALL.md",
+        "https://github.com/theantipopau/omencore/blob/main/LICENSE",
+        "https://github.com/theantipopau/omencore/blob/main/README.md",
+        "https://github.com/theantipopau/omencore/blob/main/docs/ANTIVIRUS_FAQ.md",
+        "https://github.com/theantipopau/omencore/blob/main/docs/CHANGELOG_v3.9.0.md",
+        "https://github.com/theantipopau/omencore/blob/main/docs/CHANGELOG_v4.0.0.md",
+        "https://github.com/theantipopau/omencore/blob/main/docs/CHANGELOG_v4.1.0.md",
+        "https://github.com/theantipopau/omencore/blob/main/docs/CHANGELOG_v4.1.5.md",
+        "https://github.com/theantipopau/omencore/blob/main/docs/CHANGELOG_v4.1.7.md",
+        "https://github.com/theantipopau/omencore/blob/main/docs/CHANGELOG_v4.2.0.md",
+        "https://github.com/theantipopau/omencore/blob/main/docs/CHANGELOG_v4.3.0.md",
+        "https://github.com/theantipopau/omencore/blob/main/docs/CHANGELOG_v4.3.1.md",
+        "https://github.com/theantipopau/omencore/blob/main/docs/CHANGELOG_v4.4.0.md",
+        "https://github.com/theantipopau/omencore/blob/main/docs/CHANGELOG_v4.4.1.md",
+        "https://github.com/theantipopau/omencore/blob/main/docs/CHANGELOG_v4.4.5.md",
+        "https://github.com/theantipopau/omencore/blob/main/docs/CHANGELOG_v4.5.0.md",
+        "https://github.com/theantipopau/omencore/blob/main/docs/LINUX_INSTALL_GUIDE.md",
+        "https://github.com/theantipopau/omencore/blob/main/docs/ROADMAP_v4.5.0.md",
+        "https://github.com/theantipopau/omencore/blob/main/docs/model-database/CONTRIBUTING_MODEL_DATABASE.md",
+        "https://github.com/theantipopau/omencore/issues",
+        "https://github.com/theantipopau/omencore/releases/latest",
+        "https://github.com/theantipopau/omencore/tree/main/docs"
+      ]
+    },
+    {
+      "requested_url": "https://github.com/theantipopau/omencore",
+      "final_url": "https://github.com/theantipopau/omencore",
+      "http_status": 200,
+      "page_sha256": "d4bf549e31b477ecdc5473b4bac0b193f186a4baa6ce86eb87c1e56182a7c3e6",
+      "matching_links": [
+        "https://omencore.info"
+      ]
+    }
+  ]
+}

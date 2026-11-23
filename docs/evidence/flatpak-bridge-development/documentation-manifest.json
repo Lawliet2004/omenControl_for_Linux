@@ -1,0 +1,22 @@
+[
+  {
+    "path": "docs/FLATPAK_BRIDGE_DEVELOPMENT_2026-10-28.md",
+    "sha256": "589ab02e6915c6ab0104373755caf8d939153ba461725e67ae786aca4aaeb62f"
+  },
+  {
+    "path": "docs/APPLICATION_AUDIT_IMPLEMENTATION.md",
+    "sha256": "60a402f99950f87eaadcfb6c469150254ff2ed701c7aac44d44dee533415e519"
+  },
+  {
+    "path": "docs/IMPLEMENTATION_STATUS.md",
+    "sha256": "cba1ff7ba45bdc1bf75c1b284cfecf21b80d4869b8b17931227ea0d51050061f"
+  },
+  {
+    "path": "docs/CONTINUATION_CHECKLIST.md",
+    "sha256": "63e1b64a3c0b143e0e2e262cb848fa9dad2ced75e0465c4cf02104f81ba7d15f"
+  },
+  {
+    "path": "docs/TEST_REPORT.md",
+    "sha256": "e32436b390422fe2d5e2d012cb3d7c22d3c079040f661e43d65e0a79b27a03f2"
+  }
+]

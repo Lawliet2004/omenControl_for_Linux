@@ -1,0 +1,6883 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "cases": [
+    {
+      "name": "fixture-wide-light",
+      "source": "fixture",
+      "page": "settings",
+      "font": "Sans 10",
+      "capture": "fixture-wide-light.png",
+      "report": "fixture-wide-light.json",
+      "overlay_capture": "fixture-wide-light-overlay.png",
+      "horizontal_clipping": [],
+      "collapsed_text_allocations": [],
+      "contrast": [
+        {
+          "text": "Settings & Diagnostics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "label.title"
+          ],
+          "font": "Sans Bold 14.667px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.8067897371714643
+        },
+        {
+          "text": "Fixture",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "box.horizontal.end",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 11.172316991925232,
+          "required": 4.5,
+          "foreground": [
+            0.18431371450424194,
+            0.18431371450424194,
+            0.20313724456464544
+          ],
+          "background": [
+            0.9215686274509803,
+            0.9215686274509803,
+            0.9215686274509803
+          ],
+          "background_fraction": 0.7595486111111112
+        },
+        {
+          "text": "Device and service health",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6555865921787709
+        },
+        {
+          "text": "Source: MOCK \u2014 fixture data, no real hardware",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9096697847402232
+        },
+        {
+          "text": "Monitoring update received \u2014 last update 0 seconds ago",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8860024794319846
+        },
+        {
+          "text": "Model: HP OMEN 16\nBoard: 8A3D\nBIOS: F.05\nKernel: 7.0.0-38-generic",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9637294300548532
+        },
+        {
+          "text": "Availability is reported by the current source and does not by itself establish physical validation. Hardware writes remain subject to their safety checks and authorization.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8221251229816541
+        },
+        {
+          "text": "Capability details",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6684702410231186
+        },
+        {
+          "text": "Compatibility evidence",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6764269829503335
+        },
+        {
+          "text": "Desktop integration",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6219858156028368
+        },
+        {
+          "text": "System tray unavailable \u2014 the window stays open",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8990194973515159
+        },
+        {
+          "text": "Start in system tray",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "checkbutton.text-button",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9607538802660753
+        },
+        {
+          "text": "Use Hide to tray to keep monitoring. Closing the window quits. Ctrl+H hides; Ctrl+Q quits. These two shortcuts apply while this window is focused.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7065254141778429
+        },
+        {
+          "text": "F6 and Shift+F6 move between the header, navigation and page. Use arrows to choose a page, then Tab to enter it. Ctrl+1 through Ctrl+9 open the nine pages in sidebar order. Ctrl+F focuses sensor or game search. Escape closes a menu or file chooser.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7459922449215811
+        },
+        {
+          "text": "Show OMEN Control or toggle the status overlay from any application. Choose keys in your desktop's shortcut dialog; enabling restores them next launch.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8392557439666647
+        },
+        {
+          "text": "Install OMEN Control's desktop launcher to enable global shortcuts",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8594049363236785
+        },
+        {
+          "text": "Retry shortcut support",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "widget.",
+            "box.horizontal",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.7284858387799564
+        },
+        {
+          "text": "Show status overlay",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "checkbutton.text-button",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9582594235033259
+        },
+        {
+          "text": "Overlay preference is saved when toggled",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9092189789248282
+        },
+        {
+          "text": "Compact monitoring window. Move it with your desktop's window controls. Placement above games and visibility in full screen depend on the compositor.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8405579026564037
+        },
+        {
+          "text": "Monitoring notifications",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6287790697674419
+        },
+        {
+          "text": "Optional temperature notifications are informational, not thermal protection. They do not change hardware settings and work only while the application is running. Desktop notification settings also apply.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.787343017535737
+        },
+        {
+          "text": "Notify when a temperature reaches the threshold",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "checkbutton.text-button",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9005543237250554
+        },
+        {
+          "text": "Temperature threshold (\u00b0C)",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9645689158016147
+        },
+        {
+          "text": "Rearm after cooling by (\u00b0C)",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9666955017301038
+        },
+        {
+          "text": "Minimum time between notifications (seconds)",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9428788756882063
+        },
+        {
+          "text": "Save notification preferences",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.9413425925925926
+        },
+        {
+          "text": "Settings backups",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6370833333333333
+        },
+        {
+          "text": "OMEN Control",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6705
+        },
+        {
+          "text": "Dashboard",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8793522267206477
+        },
+        {
+          "text": "System Vitals",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8628879892037786
+        },
+        {
+          "text": "Performance Control",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7964912280701755
+        },
+        {
+          "text": "Fan & Thermal",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.861808367071525
+        },
+        {
+          "text": "Lighting Studio",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8445344129554656
+        },
+        {
+          "text": "Graphics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9017543859649123
+        },
+        {
+          "text": "Battery & Power",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.835357624831309
+        },
+        {
+          "text": "Game Library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8620782726045884
+        },
+        {
+          "text": "Settings & Diagnostics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 9.051483578270854,
+          "required": 4.5,
+          "foreground": [
+            0.18274508714675902,
+            0.1537254810333252,
+            0.16627450166379706
+          ],
+          "background": [
+            0.9137254901960784,
+            0.7686274509803922,
+            0.7372549019607844
+          ],
+          "background_fraction": 0.7565452091767881
+        },
+        {
+          "text": "Monitor",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.924234693877551
+        },
+        {
+          "text": "Controls",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9237244897959184
+        },
+        {
+          "text": "Library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.936734693877551
+        },
+        {
+          "text": "Application",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8918367346938776
+        },
+        {
+          "text": "source: MOCK \u2014 fixture data, no real hardware",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "box.vertical",
+            "label.small.dim"
+          ],
+          "font": "Sans 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6858013716027432
+        }
+      ],
+      "inactive_labels": [],
+      "charts": [],
+      "contrast_failures": []
+    },
+    {
+      "name": "fixture-narrow-large-dark",
+      "source": "fixture",
+      "page": "settings",
+      "font": "Sans 20",
+      "capture": "fixture-narrow-large-dark.png",
+      "report": "fixture-narrow-large-dark.json",
+      "overlay_capture": "fixture-narrow-large-dark-overlay.png",
+      "horizontal_clipping": [],
+      "collapsed_text_allocations": [],
+      "contrast": [
+        {
+          "text": "Settings & Diagnostics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "label.title"
+          ],
+          "font": "Sans Bold 29.333px",
+          "sensitive": true,
+          "ratio": 13.522003164742648,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.1803921568627451,
+            0.1803921568627451,
+            0.19607843137254902
+          ],
+          "background_fraction": 0.7973169272836025
+        },
+        {
+          "text": "Fixture",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "box.horizontal.end",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 26.667px",
+          "sensitive": true,
+          "ratio": 9.847565653874646,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2627450980392157,
+            0.2627450980392157,
+            0.2784313725490196
+          ],
+          "background_fraction": 0.7081081081081081
+        },
+        {
+          "text": "Device and service health",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 28px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.7087552969905911
+        },
+        {
+          "text": "Source: MOCK \u2014 fixture data, no real hardware",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.8775283121507343
+        },
+        {
+          "text": "Monitoring update received \u2014 last update 0 seconds ago",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.8430344691162652
+        },
+        {
+          "text": "Model: HP OMEN 16\nBoard: 8A3D\nBIOS: F.05\nKernel: 7.0.0-38-generic",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.9060382770387221
+        },
+        {
+          "text": "Availability is reported by the current source and does not by itself establish physical validation. Hardware writes remain subject to their safety checks and authorization.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.7695465110528659
+        },
+        {
+          "text": "Capability details",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.7350590026646364
+        },
+        {
+          "text": "Compatibility evidence",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.7449562238294632
+        },
+        {
+          "text": "Desktop integration",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 28px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.6866703036915803
+        },
+        {
+          "text": "System tray unavailable \u2014 the window stays open",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.8651649275505663
+        },
+        {
+          "text": "Start in system tray",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "checkbutton.text-button",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.8887853370611991
+        },
+        {
+          "text": "Use Hide to tray to keep monitoring. Closing the window quits. Ctrl+H hides; Ctrl+Q quits. These two shortcuts apply while this window is focused.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.8053137827011523
+        }
+      ],
+      "inactive_labels": [],
+      "charts": [],
+      "contrast_failures": []
+    },
+    {
+      "name": "unverified-wide-light",
+      "source": "unverified",
+      "page": "dashboard",
+      "font": "Sans 10",
+      "capture": "unverified-wide-light.png",
+      "report": "unverified-wide-light.json",
+      "overlay_capture": "unverified-wide-light-overlay.png",
+      "horizontal_clipping": [],
+      "collapsed_text_allocations": [],
+      "contrast": [
+        {
+          "text": "Dashboard",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "label.title"
+          ],
+          "font": "Sans Bold 14.667px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.8235294117647058
+        },
+        {
+          "text": "Source unverified",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "box.horizontal.end",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 11.172316991925232,
+          "required": 4.5,
+          "foreground": [
+            0.18431371450424194,
+            0.18431371450424194,
+            0.20313724456464544
+          ],
+          "background": [
+            0.9215686274509803,
+            0.9215686274509803,
+            0.9215686274509803
+          ],
+          "background_fraction": 0.7329059829059829
+        },
+        {
+          "text": "Current profile: Balanced",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.card",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.9459742070407807
+        },
+        {
+          "text": "Monitoring update received \u2014 last update 0 seconds ago",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.card",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.8831764842570001
+        },
+        {
+          "text": "Source: service source unverified",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.card",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.931915882421285
+        },
+        {
+          "text": "Metrics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.horizontal",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9853129472019282
+        },
+        {
+          "text": "Choose metrics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.horizontal",
+            "menubutton.popup",
+            "button.text-button.arrow-button.toggle",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.7443365695792881
+        },
+        {
+          "text": "CPU temperature",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 12px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.6698679471788715
+        },
+        {
+          "text": "61.8 \u00b0C",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 18.667px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.7191697191697192
+        },
+        {
+          "text": "hwmon \u00b7 0s ago",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.897270955165692
+        },
+        {
+          "text": "GPU temperature",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 12px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.648235294117647
+        },
+        {
+          "text": "Unavailable",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 18.667px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.658004158004158
+        },
+        {
+          "text": "No sensor reading",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.8681275679906085
+        },
+        {
+          "text": "CPU fan",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 12px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.6982097186700768
+        },
+        {
+          "text": "2800 RPM",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 18.667px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.6311965811965812
+        },
+        {
+          "text": "Fan report \u00b7 0s ago",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.8777147329289767
+        },
+        {
+          "text": "GPU fan",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 12px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.6708385481852316
+        },
+        {
+          "text": "2600 RPM",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 18.667px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.6230769230769231
+        },
+        {
+          "text": "Fan report \u00b7 0s ago",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.8740740740740741
+        },
+        {
+          "text": "GPU power",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 12px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.6424632352941176
+        },
+        {
+          "text": "Unavailable",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 18.667px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.658004158004158
+        },
+        {
+          "text": "No sensor reading",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.8669536294267267
+        },
+        {
+          "text": "Battery",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 12px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.6526610644257703
+        },
+        {
+          "text": "50%",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 18.667px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 3.0,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.6301775147928994
+        },
+        {
+          "text": "Battery power \u00b7 0s ago",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.8438661710037175
+        },
+        {
+          "text": "Temperature history (\u00b0C)",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.645639534883721
+        },
+        {
+          "text": "Time range",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "widget.",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8326429163214581
+        },
+        {
+          "text": "All retained history",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "widget.",
+            "box.horizontal",
+            "dropdown.",
+            "button.toggle",
+            "box.horizontal",
+            "stack.",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.7277131782945736
+        },
+        {
+          "text": "Export CSV\u2026",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "widget.",
+            "box.horizontal",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.7359437751004017
+        },
+        {
+          "text": "CPU: 61.8 \u00b7 hwmon \u00b7 0s ago (solid)  |  GPU: unavailable (dashed)  |  Gaps indicate unavailable or stale readings.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "label.small.dim"
+          ],
+          "font": "Sans 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8010572805139187
+        },
+        {
+          "text": "Read history data",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6818181818181818
+        },
+        {
+          "text": "Fan history (RPM)",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6439024390243903
+        },
+        {
+          "text": "Time range",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "widget.",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8342999171499585
+        },
+        {
+          "text": "All retained history",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "widget.",
+            "box.horizontal",
+            "dropdown.",
+            "button.toggle",
+            "box.horizontal",
+            "stack.",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.729328165374677
+        },
+        {
+          "text": "Export CSV\u2026",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "widget.",
+            "box.horizontal",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.7374497991967871
+        },
+        {
+          "text": "CPU fan: 2800.0 \u00b7 snapshot time \u00b7 0s ago (solid)  |  GPU fan: 2600.0 \u00b7 snapshot time \u00b7 0s ago (dashed)  |  Gaps indicate unavailable or stale readings.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "label.small.dim"
+          ],
+          "font": "Sans 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7506022483940042
+        },
+        {
+          "text": "Read history data",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7397129186602871
+        },
+        {
+          "text": "OMEN Control",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6705
+        },
+        {
+          "text": "Dashboard",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 9.051483578270854,
+          "required": 4.5,
+          "foreground": [
+            0.18274508714675902,
+            0.1537254810333252,
+            0.16627450166379706
+          ],
+          "background": [
+            0.9137254901960784,
+            0.7686274509803922,
+            0.7372549019607844
+          ],
+          "background_fraction": 0.8793522267206477
+        },
+        {
+          "text": "System Vitals",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8628879892037786
+        },
+        {
+          "text": "Performance Control",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7964912280701755
+        },
+        {
+          "text": "Fan & Thermal",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.861808367071525
+        },
+        {
+          "text": "Lighting Studio",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8445344129554656
+        },
+        {
+          "text": "Graphics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9017543859649123
+        },
+        {
+          "text": "Battery & Power",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.835357624831309
+        },
+        {
+          "text": "Game Library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8620782726045884
+        },
+        {
+          "text": "Settings & Diagnostics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7565452091767881
+        },
+        {
+          "text": "Monitor",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.924234693877551
+        },
+        {
+          "text": "Controls",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9237244897959184
+        },
+        {
+          "text": "Library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.936734693877551
+        },
+        {
+          "text": "Application",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8918367346938776
+        },
+        {
+          "text": "source: service source unverified",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "box.vertical",
+            "label.small.dim"
+          ],
+          "font": "Sans 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6831896551724138
+        }
+      ],
+      "inactive_labels": [],
+      "charts": [
+        {
+          "bounds": [
+            278.0,
+            500.0,
+            934.0,
+            140.0
+          ],
+          "clips": [
+            [
+              278.0,
+              61.0,
+              934.0,
+              1015.0
+            ],
+            [
+              278.0,
+              61.0,
+              934.0,
+              1015.0
+            ],
+            [
+              0.0,
+              47.0,
+              1230.0,
+              1043.0
+            ],
+            [
+              0.0,
+              0.0,
+              1230.0,
+              1090.0
+            ],
+            [
+              -5.0,
+              -5.0,
+              1240.0,
+              1100.0
+            ]
+          ],
+          "font": "Sans 13.333px",
+          "foreground": [
+            0.0,
+            0.0,
+            0.0235294122248888,
+            0.800000011920929
+          ],
+          "kind": "chart",
+          "line_height": 19,
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "widget.chart"
+          ]
+        },
+        {
+          "bounds": [
+            278.0,
+            796.0,
+            934.0,
+            140.0
+          ],
+          "clips": [
+            [
+              278.0,
+              61.0,
+              934.0,
+              1015.0
+            ],
+            [
+              278.0,
+              61.0,
+              934.0,
+              1015.0
+            ],
+            [
+              0.0,
+              47.0,
+              1230.0,
+              1043.0
+            ],
+            [
+              0.0,
+              0.0,
+              1230.0,
+              1090.0
+            ],
+            [
+              -5.0,
+              -5.0,
+              1240.0,
+              1100.0
+            ]
+          ],
+          "font": "Sans 13.333px",
+          "foreground": [
+            0.0,
+            0.0,
+            0.0235294122248888,
+            0.800000011920929
+          ],
+          "kind": "chart",
+          "line_height": 19,
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "widget.chart"
+          ]
+        }
+      ],
+      "contrast_failures": []
+    },
+    {
+      "name": "unverified-narrow-large-dark",
+      "source": "unverified",
+      "page": "dashboard",
+      "font": "Sans 20",
+      "capture": "unverified-narrow-large-dark.png",
+      "report": "unverified-narrow-large-dark.json",
+      "overlay_capture": "unverified-narrow-large-dark-overlay.png",
+      "horizontal_clipping": [],
+      "collapsed_text_allocations": [],
+      "contrast": [
+        {
+          "text": "Dashboard",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "label.title"
+          ],
+          "font": "Sans Bold 29.333px",
+          "sensitive": true,
+          "ratio": 13.522003164742648,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.1803921568627451,
+            0.1803921568627451,
+            0.19607843137254902
+          ],
+          "background_fraction": 0.8491118485262541
+        },
+        {
+          "text": "Source unverified",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "box.horizontal.end",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 26.667px",
+          "sensitive": true,
+          "ratio": 9.847565653874646,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2627450980392157,
+            0.2627450980392157,
+            0.2784313725490196
+          ],
+          "background_fraction": 0.7000575043128234
+        },
+        {
+          "text": "Current profile: Balanced",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.card",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.8558216010687494
+        },
+        {
+          "text": "Monitoring update received \u2014 last update 0 seconds ago",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.card",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.8364758581176103
+        },
+        {
+          "text": "Source: service source unverified",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.card",
+            "label.dim"
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.8218065974719967
+        },
+        {
+          "text": "Metrics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.horizontal",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 28px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.9068526293318153
+        },
+        {
+          "text": "Choose metrics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.horizontal",
+            "menubutton.popup",
+            "button.text-button.arrow-button.toggle",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans Bold 26.667px",
+          "sensitive": true,
+          "ratio": 11.510183970285562,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2235294117647059,
+            0.2235294117647059,
+            0.23529411764705882
+          ],
+          "background_fraction": 0.7100856954515491
+        },
+        {
+          "text": "CPU temperature",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 24px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.7586580086580087
+        },
+        {
+          "text": "61.8 \u00b0C",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 37.333px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.7515294117647059
+        },
+        {
+          "text": "hwmon \u00b7 0s ago",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.dim"
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.9118503118503118
+        },
+        {
+          "text": "GPU temperature",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 24px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.752855185015989
+        },
+        {
+          "text": "Unavailable",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 37.333px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.695371842430666
+        },
+        {
+          "text": "No sensor reading",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.dim"
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.8935031185031185
+        },
+        {
+          "text": "CPU fan",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 24px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.7649017649017649
+        },
+        {
+          "text": "2800 RPM",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 37.333px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.6671048307591193
+        },
+        {
+          "text": "Fan report \u00b7 0s ago",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.dim"
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.9005717255717256
+        },
+        {
+          "text": "GPU fan",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 24px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.7601824698598892
+        },
+        {
+          "text": "2600 RPM",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-value"
+          ],
+          "font": "Sans Bold 37.333px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.6705006024756271
+        },
+        {
+          "text": "Fan report \u00b7 0s ago",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.dim"
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.9005717255717256
+        },
+        {
+          "text": "GPU power",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "flowbox.horizontal",
+            "flowboxchild.",
+            "box.card",
+            "label.card-title"
+          ],
+          "font": "Sans 24px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.7549510856597471
+        }
+      ],
+      "inactive_labels": [],
+      "charts": [
+        {
+          "bounds": [
+            18.0,
+            1534.0,
+            554.0,
+            259.0
+          ],
+          "clips": [
+            [
+              18.0,
+              74.0,
+              554.0,
+              1002.0
+            ],
+            [
+              18.0,
+              74.0,
+              554.0,
+              1002.0
+            ],
+            [
+              0.0,
+              60.0,
+              590.0,
+              1030.0
+            ],
+            [
+              0.0,
+              0.0,
+              590.0,
+              1090.0
+            ],
+            [
+              -5.0,
+              -5.0,
+              600.0,
+              1100.0
+            ]
+          ],
+          "font": "Sans 26.667px",
+          "foreground": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "kind": "chart",
+          "line_height": 37,
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "widget.chart"
+          ]
+        },
+        {
+          "bounds": [
+            18.0,
+            2194.0,
+            554.0,
+            259.0
+          ],
+          "clips": [
+            [
+              18.0,
+              74.0,
+              554.0,
+              1002.0
+            ],
+            [
+              18.0,
+              74.0,
+              554.0,
+              1002.0
+            ],
+            [
+              0.0,
+              60.0,
+              590.0,
+              1030.0
+            ],
+            [
+              0.0,
+              0.0,
+              590.0,
+              1090.0
+            ],
+            [
+              -5.0,
+              -5.0,
+              600.0,
+              1100.0
+            ]
+          ],
+          "font": "Sans 26.667px",
+          "foreground": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "kind": "chart",
+          "line_height": 37,
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "widget.chart"
+          ]
+        }
+      ],
+      "contrast_failures": []
+    },
+    {
+      "name": "unavailable-wide-light",
+      "source": "unavailable",
+      "page": "settings",
+      "font": "Sans 10",
+      "capture": "unavailable-wide-light.png",
+      "report": "unavailable-wide-light.json",
+      "overlay_capture": "unavailable-wide-light-overlay.png",
+      "horizontal_clipping": [],
+      "collapsed_text_allocations": [],
+      "contrast": [
+        {
+          "text": "Settings & Diagnostics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "label.title"
+          ],
+          "font": "Sans Bold 14.667px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.8067897371714643
+        },
+        {
+          "text": "Attention needed",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "box.horizontal.end",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 11.172316991925232,
+          "required": 4.5,
+          "foreground": [
+            0.18431371450424194,
+            0.18431371450424194,
+            0.20313724456464544
+          ],
+          "background": [
+            0.9215686274509803,
+            0.9215686274509803,
+            0.9215686274509803
+          ],
+          "background_fraction": 0.7334039548022598
+        },
+        {
+          "text": "Device and service health",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6555865921787709
+        },
+        {
+          "text": "Source: monitoring source unavailable",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9218978924828131
+        },
+        {
+          "text": "not found: No such file or directory (os error 2) \u2014 last update 0 seconds ago",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8554603854389722
+        },
+        {
+          "text": "Model: Not reported\nBoard: Not reported\nBIOS: Not reported\nKernel: Not reported",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9562054501187996
+        },
+        {
+          "text": "Availability is reported by the current source and does not by itself establish physical validation. Hardware writes remain subject to their safety checks and authorization.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8221251229816541
+        },
+        {
+          "text": "Capability details",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6684702410231186
+        },
+        {
+          "text": "Compatibility evidence",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6764269829503335
+        },
+        {
+          "text": "Desktop integration",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6219858156028368
+        },
+        {
+          "text": "System tray unavailable \u2014 the window stays open",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8990194973515159
+        },
+        {
+          "text": "Start in system tray",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "checkbutton.text-button",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9607538802660753
+        },
+        {
+          "text": "Use Hide to tray to keep monitoring. Closing the window quits. Ctrl+H hides; Ctrl+Q quits. These two shortcuts apply while this window is focused.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7065254141778429
+        },
+        {
+          "text": "F6 and Shift+F6 move between the header, navigation and page. Use arrows to choose a page, then Tab to enter it. Ctrl+1 through Ctrl+9 open the nine pages in sidebar order. Ctrl+F focuses sensor or game search. Escape closes a menu or file chooser.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7459922449215811
+        },
+        {
+          "text": "Show OMEN Control or toggle the status overlay from any application. Choose keys in your desktop's shortcut dialog; enabling restores them next launch.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8392557439666647
+        },
+        {
+          "text": "Install OMEN Control's desktop launcher to enable global shortcuts",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8594049363236785
+        },
+        {
+          "text": "Retry shortcut support",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "widget.",
+            "box.horizontal",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.7284858387799564
+        },
+        {
+          "text": "Show status overlay",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "checkbutton.text-button",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9582594235033259
+        },
+        {
+          "text": "Overlay preference is saved when toggled",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9092189789248282
+        },
+        {
+          "text": "Compact monitoring window. Move it with your desktop's window controls. Placement above games and visibility in full screen depend on the compositor.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8405579026564037
+        },
+        {
+          "text": "Monitoring notifications",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6287790697674419
+        },
+        {
+          "text": "Optional temperature notifications are informational, not thermal protection. They do not change hardware settings and work only while the application is running. Desktop notification settings also apply.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.787343017535737
+        },
+        {
+          "text": "Notify when a temperature reaches the threshold",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "checkbutton.text-button",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9005543237250554
+        },
+        {
+          "text": "Temperature threshold (\u00b0C)",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9645689158016147
+        },
+        {
+          "text": "Rearm after cooling by (\u00b0C)",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9666955017301038
+        },
+        {
+          "text": "Minimum time between notifications (seconds)",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9428788756882063
+        },
+        {
+          "text": "Save notification preferences",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.9413425925925926
+        },
+        {
+          "text": "Settings backups",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6370833333333333
+        },
+        {
+          "text": "OMEN Control",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6705
+        },
+        {
+          "text": "Dashboard",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8793522267206477
+        },
+        {
+          "text": "System Vitals",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8628879892037786
+        },
+        {
+          "text": "Performance Control",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7964912280701755
+        },
+        {
+          "text": "Fan & Thermal",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.861808367071525
+        },
+        {
+          "text": "Lighting Studio",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8445344129554656
+        },
+        {
+          "text": "Graphics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9017543859649123
+        },
+        {
+          "text": "Battery & Power",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.835357624831309
+        },
+        {
+          "text": "Game Library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8620782726045884
+        },
+        {
+          "text": "Settings & Diagnostics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 9.051483578270854,
+          "required": 4.5,
+          "foreground": [
+            0.18274508714675902,
+            0.1537254810333252,
+            0.16627450166379706
+          ],
+          "background": [
+            0.9137254901960784,
+            0.7686274509803922,
+            0.7372549019607844
+          ],
+          "background_fraction": 0.7565452091767881
+        },
+        {
+          "text": "Monitor",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.924234693877551
+        },
+        {
+          "text": "Controls",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9237244897959184
+        },
+        {
+          "text": "Library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.936734693877551
+        },
+        {
+          "text": "Application",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8918367346938776
+        },
+        {
+          "text": "not found: No such file or directory (os error 2)",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.707700851536468
+        },
+        {
+          "text": "source: monitoring source unavailable",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "box.vertical",
+            "label.small.dim"
+          ],
+          "font": "Sans 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6770833333333334
+        }
+      ],
+      "inactive_labels": [],
+      "charts": [],
+      "contrast_failures": []
+    },
+    {
+      "name": "unavailable-narrow-large-dark",
+      "source": "unavailable",
+      "page": "settings",
+      "font": "Sans 20",
+      "capture": "unavailable-narrow-large-dark.png",
+      "report": "unavailable-narrow-large-dark.json",
+      "overlay_capture": "unavailable-narrow-large-dark-overlay.png",
+      "horizontal_clipping": [],
+      "collapsed_text_allocations": [],
+      "contrast": [
+        {
+          "text": "Settings & Diagnostics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "label.title"
+          ],
+          "font": "Sans Bold 29.333px",
+          "sensitive": true,
+          "ratio": 13.522003164742648,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.1803921568627451,
+            0.1803921568627451,
+            0.19607843137254902
+          ],
+          "background_fraction": 0.833886394690611
+        },
+        {
+          "text": "Attention needed",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "box.horizontal.end",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 26.667px",
+          "sensitive": true,
+          "ratio": 9.847565653874646,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2627450980392157,
+            0.2627450980392157,
+            0.2784313725490196
+          ],
+          "background_fraction": 0.6949971247843588
+        },
+        {
+          "text": "Device and service health",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 28px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.7087552969905911
+        },
+        {
+          "text": "Source: monitoring source unavailable",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.7917845643477412
+        },
+        {
+          "text": "not found: No such file or directory (os error 2) \u2014 last update 0 seconds ago",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.8042628950101379
+        },
+        {
+          "text": "Model: Not reported\nBoard: Not reported\nBIOS: Not reported\nKernel: Not reported",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.8862074081400524
+        },
+        {
+          "text": "Availability is reported by the current source and does not by itself establish physical validation. Hardware writes remain subject to their safety checks and authorization.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.7695465110528659
+        },
+        {
+          "text": "Capability details",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.7350590026646364
+        },
+        {
+          "text": "Compatibility evidence",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.7449562238294632
+        },
+        {
+          "text": "Desktop integration",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 28px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.6866703036915803
+        },
+        {
+          "text": "System tray unavailable \u2014 the window stays open",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.8651649275505663
+        },
+        {
+          "text": "Start in system tray",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "checkbutton.text-button",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.8887853370611991
+        },
+        {
+          "text": "Use Hide to tray to keep monitoring. Closing the window quits. Ctrl+H hides; Ctrl+Q quits. These two shortcuts apply while this window is focused.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.8053137827011523
+        }
+      ],
+      "inactive_labels": [],
+      "charts": [],
+      "contrast_failures": []
+    }
+  ],
+  "gui_sha256": "ea30b9e94eabd1396e424f6e5c87f3ac48f5543d779bd85e4cdde8ca7eda2fb8",
+  "cleanup_complete": true
+}

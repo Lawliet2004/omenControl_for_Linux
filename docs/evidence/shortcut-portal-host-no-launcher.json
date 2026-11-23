@@ -1,0 +1,13 @@
+{
+  "result": "unavailable",
+  "uid": 1000,
+  "hardware_writes": false,
+  "bind_or_configure_requested": false,
+  "scope": "independent real-portal Register/CreateSession/ListShortcuts/Close probe; no key assignment or activation test",
+  "script_sha256": "22ba12753ec9118d9ed1d1906aa76c46383a559f76144a606eac8d2592f046ab",
+  "installed_desktop_entry": false,
+  "responses": [],
+  "error": "g-io-error-quark: GDBus.Error:org.freedesktop.portal.Error.Failed: Could not register app ID: App info not found for 'com.omenlinux.Gui' (36)",
+  "connection_closed": true,
+  "recorded_utc": "2026-10-26T02:15:37.734813+00:00"
+}

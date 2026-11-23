@@ -1,0 +1,3439 @@
+{
+  "result": "passed",
+  "fixture_only": true,
+  "physical_hardware_writes": false,
+  "input": "AT-SPI actions for capture staging; separate XTEST workflows verify keyboard input",
+  "gui_sha256": "c529a826491f04ae02ff8ab69b88210134271b8026b77e62677cdb9871d5d3c5",
+  "cases": [
+    {
+      "case": "legendary-wide-light",
+      "font": "Sans 10",
+      "window_size": [
+        1230,
+        1090
+      ],
+      "capture": "legendary-wide-light.png",
+      "report": "legendary-wide-light.json",
+      "capture_sha256": "e483d1f7fa0c4873836ffe3561b5f21cecb2ce4f23292f117bbb9cc638211ce2",
+      "horizontal_clipping": [],
+      "collapsed_text_allocations": [],
+      "contrast": [
+        {
+          "text": "Game Library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "label.title"
+          ],
+          "font": "Sans Bold 14.667px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.8359636537541846
+        },
+        {
+          "text": "Fixture",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "box.horizontal.end",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 11.172316991925232,
+          "required": 4.5,
+          "foreground": [
+            0.18431371450424194,
+            0.18431371450424194,
+            0.20313724456464544
+          ],
+          "background": [
+            0.9215686274509803,
+            0.9215686274509803,
+            0.9215686274509803
+          ],
+          "background_fraction": 0.7595486111111112
+        },
+        {
+          "text": "Game library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.656043956043956
+        },
+        {
+          "text": "Rescan library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "box.horizontal",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.7421052631578947
+        },
+        {
+          "text": "Library locations",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6973684210526315
+        },
+        {
+          "text": "Game sessions",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9715285091018505
+        },
+        {
+          "text": "Refresh sessions",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.728030303030303
+        },
+        {
+          "text": "Current system profile: Balanced",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9326608813253691
+        },
+        {
+          "text": "No tracked sessions yet. Open a game's Profile setup to enable automatic restoration. Launcher submission alone does not create a session.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7180209624704159
+        },
+        {
+          "text": "Found 3 games from Steam, Heroic, Lutris, Legendary and custom entries. Missing or unreadable store records are skipped.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7544798827904879
+        },
+        {
+          "text": "About launch and profile modes",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6978266561927207
+        },
+        {
+          "text": "Offline Legendary fixture\nlegendary/Fixture\nLibrary: /home/papan/Desktop/Projects/omen/target/omen-native-wltvap9m/home/.config/legendary",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical.card",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.8404324939536207
+        },
+        {
+          "text": "(no profile)",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical.card",
+            "widget.",
+            "box.horizontal",
+            "dropdown.",
+            "button.toggle",
+            "box.horizontal",
+            "stack.",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 11.172316991925232,
+          "required": 4.5,
+          "foreground": [
+            0.18431371450424194,
+            0.18431371450424194,
+            0.20313724456464544
+          ],
+          "background": [
+            0.9215686274509803,
+            0.9215686274509803,
+            0.9215686274509803
+          ],
+          "background_fraction": 0.723536036036036
+        },
+        {
+          "text": "Launch",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical.card",
+            "widget.",
+            "box.horizontal",
+            "button.text-button.suggested-action",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 5.522624754525334,
+          "required": 4.5,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.6705882352941176,
+            0.30196078431372547,
+            0.07450980392156863
+          ],
+          "background_fraction": 0.7440476190476191
+        },
+        {
+          "text": "Profile setup",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical.card",
+            "widget.",
+            "box.horizontal",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 11.172316991925232,
+          "required": 4.5,
+          "foreground": [
+            0.18431371450424194,
+            0.18431371450424194,
+            0.20313724456464544
+          ],
+          "background": [
+            0.9215686274509803,
+            0.9215686274509803,
+            0.9215686274509803
+          ],
+          "background_fraction": 0.7205882352941176
+        },
+        {
+          "text": "Manual restore is selected. Enable automatic restore after choosing Performance or Quiet and setting up the wrapper below.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical.card",
+            "revealer.",
+            "box.vertical",
+            "label.heading"
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.6891188645771733
+        },
+        {
+          "text": "Automatic restore uses Power Profiles Daemon and a dedicated systemd user scope. It needs an enabled, authorized daemon, a user systemd session and a supported kernel. A canceled hold is never automatically reapplied. Other profile holds can change the effective profile.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical.card",
+            "revealer.",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.697752808988764
+        },
+        {
+          "text": "Set this as the game's wrapper in Legendary's configuration. It must wrap the actual game command; wrapping a Legendary launch request alone is not lifetime evidence.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical.card",
+            "revealer.",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.8143941694503493
+        },
+        {
+          "text": "Copy wrapper command",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical.card",
+            "revealer.",
+            "box.vertical",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 11.172316991925232,
+          "required": 4.5,
+          "foreground": [
+            0.18431371450424194,
+            0.18431371450424194,
+            0.20313724456464544
+          ],
+          "background": [
+            0.9215686274509803,
+            0.9215686274509803,
+            0.9215686274509803
+          ],
+          "background_fraction": 0.7344069529652352
+        },
+        {
+          "text": "Launcher/runtime compatibility still needs verification for your game. If setup cannot establish a profile hold, the wrapped command reports an error; switch to manual restore to run without this integration.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical.card",
+            "revealer.",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.7766474339508047
+        },
+        {
+          "text": "OMEN Control",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6705
+        },
+        {
+          "text": "Dashboard",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8793522267206477
+        },
+        {
+          "text": "System Vitals",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8628879892037786
+        },
+        {
+          "text": "Performance Control",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7964912280701755
+        },
+        {
+          "text": "Fan & Thermal",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.861808367071525
+        },
+        {
+          "text": "Lighting Studio",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8445344129554656
+        },
+        {
+          "text": "Graphics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9017543859649123
+        },
+        {
+          "text": "Battery & Power",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.835357624831309
+        },
+        {
+          "text": "Game Library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 9.051483578270854,
+          "required": 4.5,
+          "foreground": [
+            0.18274508714675902,
+            0.1537254810333252,
+            0.16627450166379706
+          ],
+          "background": [
+            0.9137254901960784,
+            0.7686274509803922,
+            0.7372549019607844
+          ],
+          "background_fraction": 0.8620782726045884
+        },
+        {
+          "text": "Settings & Diagnostics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7565452091767881
+        },
+        {
+          "text": "Monitor",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.924234693877551
+        },
+        {
+          "text": "Controls",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9237244897959184
+        },
+        {
+          "text": "Library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.936734693877551
+        },
+        {
+          "text": "Application",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8918367346938776
+        },
+        {
+          "text": "source: MOCK \u2014 fixture data, no real hardware",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "box.vertical",
+            "label.small.dim"
+          ],
+          "font": "Sans 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6858013716027432
+        }
+      ],
+      "inactive_labels": [
+        {
+          "text": "Enable automatic restore",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical.card",
+            "revealer.",
+            "box.vertical",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": false,
+          "ratio": 11.869504728214638,
+          "required": 4.5,
+          "foreground": [
+            0.1921568512916565,
+            0.1921568512916565,
+            0.21098038135206
+          ],
+          "background": [
+            0.9607843137254902,
+            0.9607843137254902,
+            0.9607843137254902
+          ],
+          "background_fraction": 0.7435897435897436
+        }
+      ],
+      "charts": [],
+      "contrast_failures": []
+    },
+    {
+      "case": "snap-narrow-large-dark",
+      "font": "Sans 20",
+      "window_size": [
+        590,
+        1090
+      ],
+      "capture": "snap-narrow-large-dark.png",
+      "report": "snap-narrow-large-dark.json",
+      "capture_sha256": "c0b38484a4e3a0a371b1db20ad3de889bc3d3a3e2610e292c5691fc5ce148e20",
+      "horizontal_clipping": [],
+      "collapsed_text_allocations": [],
+      "contrast": [
+        {
+          "text": "Game Library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "label.title"
+          ],
+          "font": "Sans Bold 29.333px",
+          "sensitive": true,
+          "ratio": 13.522003164742648,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.1803921568627451,
+            0.1803921568627451,
+            0.19607843137254902
+          ],
+          "background_fraction": 0.783592102741039
+        },
+        {
+          "text": "Fixture",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "box.horizontal.end",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 26.667px",
+          "sensitive": true,
+          "ratio": 9.847565653874646,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2627450980392157,
+            0.2627450980392157,
+            0.2784313725490196
+          ],
+          "background_fraction": 0.7081081081081081
+        },
+        {
+          "text": "Game library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 28px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.6976613130459284
+        },
+        {
+          "text": "Rescan library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "box.horizontal",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 26.667px",
+          "sensitive": true,
+          "ratio": 11.510183970285562,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2235294117647059,
+            0.2235294117647059,
+            0.23529411764705882
+          ],
+          "background_fraction": 0.6946946946946947
+        },
+        {
+          "text": "Library locations",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.7570178874526701
+        },
+        {
+          "text": "Game sessions",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 28px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.8248324103759836
+        },
+        {
+          "text": "Refresh sessions",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 26.667px",
+          "sensitive": true,
+          "ratio": 11.510183970285562,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2235294117647059,
+            0.2235294117647059,
+            0.23529411764705882
+          ],
+          "background_fraction": 0.6925061425061425
+        },
+        {
+          "text": "Current system profile: Balanced",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.820421504537028
+        },
+        {
+          "text": "No tracked sessions yet. Open a game's Profile setup to enable automatic restoration. Launcher submission alone does not create a session.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.8156248454576925
+        },
+        {
+          "text": "Found 3 games from Steam, Heroic, Lutris, Legendary and custom entries. Missing or unreadable store records are skipped.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.7812738051866327
+        },
+        {
+          "text": "About launch and profile modes",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.7569584509883017
+        },
+        {
+          "text": "Snap shortcut\nsteam/snap/shortcut/7/4045620583\nLibrary: /home/papan/Desktop/Projects/omen/target/omen-native-wltvap9m/home/snap/steam/common/.local/share/Steam",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical.card",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 12.578924054963117,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2,
+            0.2,
+            0.21568627450980393
+          ],
+          "background_fraction": 0.7923676234260257
+        },
+        {
+          "text": "(no profile)",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical.card",
+            "widget.",
+            "box.vertical",
+            "dropdown.",
+            "button.toggle",
+            "box.horizontal",
+            "stack.",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans Bold 26.667px",
+          "sensitive": true,
+          "ratio": 9.1142297022516,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2823529411764706,
+            0.2823529411764706,
+            0.29411764705882354
+          ],
+          "background_fraction": 0.6861555432984004
+        },
+        {
+          "text": "Launch",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical.card",
+            "widget.",
+            "box.vertical",
+            "button.text-button.suggested-action",
+            "label."
+          ],
+          "font": "Sans Bold 26.667px",
+          "sensitive": true,
+          "ratio": 5.522624754525334,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.6705882352941176,
+            0.30196078431372547,
+            0.07450980392156863
+          ],
+          "background_fraction": 0.9408925732455145
+        }
+      ],
+      "inactive_labels": [],
+      "charts": [],
+      "contrast_failures": []
+    },
+    {
+      "case": "locations-wide-light",
+      "font": "Sans 10",
+      "window_size": [
+        1230,
+        1090
+      ],
+      "capture": "locations-wide-light.png",
+      "report": "locations-wide-light.json",
+      "capture_sha256": "f2635c6447881c19a8ea0d487bcf5a2661fba803bb544e8e89830788a7ca1cea",
+      "horizontal_clipping": [],
+      "collapsed_text_allocations": [],
+      "contrast": [
+        {
+          "text": "Game Library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "label.title"
+          ],
+          "font": "Sans Bold 14.667px",
+          "sensitive": true,
+          "ratio": 12.567279196431576,
+          "required": 4.5,
+          "foreground": [
+            0.19999998807907104,
+            0.19999998807907104,
+            0.21882351813947454
+          ],
+          "background": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background_fraction": 0.8359636537541846
+        },
+        {
+          "text": "Fixture",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "box.horizontal.end",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 11.172316991925232,
+          "required": 4.5,
+          "foreground": [
+            0.18431371450424194,
+            0.18431371450424194,
+            0.20313724456464544
+          ],
+          "background": [
+            0.9215686274509803,
+            0.9215686274509803,
+            0.9215686274509803
+          ],
+          "background_fraction": 0.7595486111111112
+        },
+        {
+          "text": "Game library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.656043956043956
+        },
+        {
+          "text": "Rescan library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "box.horizontal",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.7421052631578947
+        },
+        {
+          "text": "Library locations",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6973684210526315
+        },
+        {
+          "text": "Add a Steam directory containing steamapps, a Heroic configuration directory, a Lutris directory containing pga.db, or a Legendary directory containing installed.json. Records are read as your desktop user. Legendary uses the selected configuration. Steam, Heroic and Lutris use the selected installation's active configuration. Adding a location does not verify game files.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7402958925442865
+        },
+        {
+          "text": "Steam \u00b7 Native",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "box.vertical",
+            "dropdown.",
+            "button.toggle",
+            "box.horizontal",
+            "stack.",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.7436224489795918
+        },
+        {
+          "text": "Add library location\u2026",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "box.vertical",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.9591666666666666
+        },
+        {
+          "text": "Legendary (Native)\n/home/papan/Desktop/Projects/omen/target/omen-native-wtd3nw4l/Additional Legendary configuration with a long directory name xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8293122152310697
+        },
+        {
+          "text": "Remove",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.8654320987654321
+        },
+        {
+          "text": "Steam (Snap)\n/home/papan/Desktop/Projects/omen/target/omen-native-wtd3nw4l/home/snap/steam/common/.local/share/Steam",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8398051989937432
+        },
+        {
+          "text": "Remove",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.7757201646090535
+        },
+        {
+          "text": "Game sessions",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9713404543403039
+        },
+        {
+          "text": "Refresh sessions",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 13.333px",
+          "sensitive": true,
+          "ratio": 10.829403907237356,
+          "required": 4.5,
+          "foreground": [
+            0.18039214611053467,
+            0.18039214611053467,
+            0.19999998984967962
+          ],
+          "background": [
+            0.9019607843137255,
+            0.9019607843137255,
+            0.9058823529411765
+          ],
+          "background_fraction": 0.7276515151515152
+        },
+        {
+          "text": "Current system profile: Balanced",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.932210075509974
+        },
+        {
+          "text": "No tracked sessions yet. Open a game's Profile setup to enable automatic restoration. Launcher submission alone does not create a session.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7170630001127014
+        },
+        {
+          "text": "Found 3 games from Steam, Heroic, Lutris, Legendary and custom entries. Missing or unreadable store records are skipped.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7525639580750592
+        },
+        {
+          "text": "No games match this search.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "label.dim"
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9398737743716894
+        },
+        {
+          "text": "About launch and profile modes",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.content-pane",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6978266561927207
+        },
+        {
+          "text": "OMEN Control",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 14px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6705
+        },
+        {
+          "text": "Dashboard",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8793522267206477
+        },
+        {
+          "text": "System Vitals",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8628879892037786
+        },
+        {
+          "text": "Performance Control",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7964912280701755
+        },
+        {
+          "text": "Fan & Thermal",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.861808367071525
+        },
+        {
+          "text": "Lighting Studio",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8445344129554656
+        },
+        {
+          "text": "Graphics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9017543859649123
+        },
+        {
+          "text": "Battery & Power",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.835357624831309
+        },
+        {
+          "text": "Game Library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 9.051483578270854,
+          "required": 4.5,
+          "foreground": [
+            0.18274508714675902,
+            0.1537254810333252,
+            0.16627450166379706
+          ],
+          "background": [
+            0.9137254901960784,
+            0.7686274509803922,
+            0.7372549019607844
+          ],
+          "background_fraction": 0.8620782726045884
+        },
+        {
+          "text": "Settings & Diagnostics",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 13.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.7565452091767881
+        },
+        {
+          "text": "Monitor",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.924234693877551
+        },
+        {
+          "text": "Controls",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.9237244897959184
+        },
+        {
+          "text": "Library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.936734693877551
+        },
+        {
+          "text": "Application",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "list.nav",
+            "label.navigation-heading"
+          ],
+          "font": "Sans Bold 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.8918367346938776
+        },
+        {
+          "text": "source: MOCK \u2014 fixture data, no real hardware",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.sidebar-pane",
+            "scrolledwindow.",
+            "viewport.",
+            "box.vertical.sidebar",
+            "box.vertical",
+            "label.small.dim"
+          ],
+          "font": "Sans 11.333px",
+          "sensitive": true,
+          "ratio": 12.223244600102507,
+          "required": 4.5,
+          "foreground": [
+            0.19607841968536377,
+            0.19607841968536377,
+            0.2156862634245087
+          ],
+          "background": [
+            0.9803921568627451,
+            0.9803921568627451,
+            0.984313725490196
+          ],
+          "background_fraction": 0.6858013716027432
+        }
+      ],
+      "inactive_labels": [],
+      "charts": [],
+      "contrast_failures": []
+    },
+    {
+      "case": "locations-narrow-large-dark",
+      "font": "Sans 20",
+      "window_size": [
+        590,
+        1090
+      ],
+      "capture": "locations-narrow-large-dark.png",
+      "report": "locations-narrow-large-dark.json",
+      "capture_sha256": "8e21df0e087bcb2d55b0dfe2eaa17a36e8e9e388e2ec2574096d4610440bce9a",
+      "horizontal_clipping": [],
+      "collapsed_text_allocations": [],
+      "contrast": [
+        {
+          "text": "Game Library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "label.title"
+          ],
+          "font": "Sans Bold 29.333px",
+          "sensitive": true,
+          "ratio": 13.522003164742648,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.1803921568627451,
+            0.1803921568627451,
+            0.19607843137254902
+          ],
+          "background_fraction": 0.783592102741039
+        },
+        {
+          "text": "Fixture",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "headerbar.",
+            "windowhandle.",
+            "box.",
+            "widget.",
+            "box.horizontal.end",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 26.667px",
+          "sensitive": true,
+          "ratio": 9.847565653874646,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2627450980392157,
+            0.2627450980392157,
+            0.2784313725490196
+          ],
+          "background_fraction": 0.7081081081081081
+        },
+        {
+          "text": "Game library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "label.section-title"
+          ],
+          "font": "Sans Bold 28px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.6976613130459284
+        },
+        {
+          "text": "Rescan library",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "box.horizontal",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 26.667px",
+          "sensitive": true,
+          "ratio": 11.510183970285562,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2235294117647059,
+            0.2235294117647059,
+            0.23529411764705882
+          ],
+          "background_fraction": 0.6946946946946947
+        },
+        {
+          "text": "Library locations",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "title.horizontal",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.7564956260608434
+        },
+        {
+          "text": "Add a Steam directory containing steamapps, a Heroic configuration directory, a Lutris directory containing pga.db, or a Legendary directory containing installed.json. Records are read as your desktop user. Legendary uses the selected configuration. Steam, Heroic and Lutris use the selected installation's active configuration. Adding a location does not verify game files.",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "box.vertical",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.7999365255682945
+        },
+        {
+          "text": "Steam \u00b7 Native",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "box.vertical",
+            "dropdown.",
+            "button.toggle",
+            "box.horizontal",
+            "stack.",
+            "row.activatable",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans Bold 26.667px",
+          "sensitive": true,
+          "ratio": 11.510183970285562,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2235294117647059,
+            0.2235294117647059,
+            0.23529411764705882
+          ],
+          "background_fraction": 0.7106029106029106
+        },
+        {
+          "text": "Add library location\u2026",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "box.vertical",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 26.667px",
+          "sensitive": true,
+          "ratio": 11.510183970285562,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2235294117647059,
+            0.2235294117647059,
+            0.23529411764705882
+          ],
+          "background_fraction": 0.8383575883575883
+        },
+        {
+          "text": "Legendary (Native)\n/home/papan/Desktop/Projects/omen/target/omen-native-wtd3nw4l/Additional Legendary configuration with a long directory name xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "label."
+          ],
+          "font": "Sans 26.667px",
+          "sensitive": true,
+          "ratio": 15.851265625238128,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.13333333333333333,
+            0.13333333333333333,
+            0.14901960784313725
+          ],
+          "background_fraction": 0.7969114589962242
+        },
+        {
+          "text": "Remove",
+          "path": [
+            "window.background.solid-csd",
+            "dialog-host.",
+            "widget.",
+            "widget.",
+            "box.vertical",
+            "overlay-split-view.",
+            "widget.",
+            "box.vertical",
+            "box.vertical",
+            "stack.",
+            "scrolledwindow.",
+            "listview.game-library",
+            "row.",
+            "box.vertical",
+            "expander-widget.",
+            "box.vertical",
+            "box.vertical",
+            "box.vertical",
+            "box.horizontal",
+            "button.text-button",
+            "label."
+          ],
+          "font": "Sans Bold 26.667px",
+          "sensitive": true,
+          "ratio": 11.510183970285562,
+          "required": 3.0,
+          "foreground": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.2235294117647059,
+            0.2235294117647059,
+            0.23529411764705882
+          ],
+          "background_fraction": 0.9607210563075798
+        }
+      ],
+      "inactive_labels": [],
+      "charts": [],
+      "contrast_failures": []
+    }
+  ],
+  "cleanup_complete": true
+}

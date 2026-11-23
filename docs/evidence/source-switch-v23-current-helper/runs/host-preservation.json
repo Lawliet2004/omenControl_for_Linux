@@ -1,0 +1,37 @@
+{
+  "recorded_utc": "2026-10-28T08:44:45.207900+00:00",
+  "protected_processes": [
+    {
+      "pid": 3278700,
+      "cmdline": [
+        "/home/papan/Desktop/Projects/omen/target/release/omen-gui",
+        "--page",
+        "fan"
+      ],
+      "start": "Tue Oct 27 10:48:46 2026"
+    },
+    {
+      "pid": 2124598,
+      "cmdline": [
+        "./target/release/omen-daemon",
+        "--mock"
+      ],
+      "start": "Sun Oct 25 22:59:37 2026"
+    },
+    {
+      "pid": 2563,
+      "cmdline": [
+        "/usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1"
+      ],
+      "start": "Fri Oct 23 19:46:51 2026"
+    }
+  ],
+  "protected_container": {
+    "id": "86ebefddca73f91adea91f764e878e1b3ae94ab7f45069fb9cab17281c19e911",
+    "pid": 3101448,
+    "started": "2026-10-26T19:37:22.265072939Z",
+    "running": true,
+    "paused": false
+  },
+  "protected_host_state_unchanged": true
+}

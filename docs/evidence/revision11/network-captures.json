@@ -1,0 +1,21 @@
+{
+  "method": "application-only GTK widget captures; no desktop framebuffer capture",
+  "hardware_control_writes": false,
+  "host_network_policy_changed": false,
+  "cleanup_complete": true,
+  "screenshots": [
+    {
+      "path": "docs/screenshots/vitals-network.png",
+      "sha256": "d0b284dede4d0514cdcd113a6021bc1369740bc37ed3d2abea938a53d2b78996",
+      "fixture": false,
+      "gtk_display_type": "GdkWaylandDisplay"
+    },
+    {
+      "path": "docs/screenshots/vitals-network-fixture.png",
+      "sha256": "294e4ff9d74a98366f96e11ee21951c9631ed035d2fb083b1084097895361e60",
+      "fixture": true,
+      "gtk_display_type": "GdkWaylandDisplay"
+    }
+  ],
+  "gui_sha256": "1a4f4a6bb5b81b1aa6947f8e56effab2f0b2fa71909b2448e579154a1061f17a"
+}

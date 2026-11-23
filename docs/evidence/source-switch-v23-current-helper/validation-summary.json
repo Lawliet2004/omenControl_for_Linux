@@ -1,0 +1,181 @@
+{
+  "result": "passed",
+  "revision": "0.1.0-23",
+  "recorded_utc": "2026-10-28T08:46:41.575105+00:00",
+  "purpose": "Correct native managed-session helper attribution; no app or final package change.",
+  "supersedes_helper_attribution_in": "source-switch-v23/validation-summary.json",
+  "prior_summary_sha256": "b292d9cde46410aabe0f70fe6c0774e3c15959efec1b9d7e36511fa9e4f7f56c",
+  "prior_evidence_files_rehashed": 357,
+  "package": "target/debian/omen-linux_0.1.0-23_amd64.deb",
+  "package_sha256": "4fafc9356f712be2bbf4d642747daade0e689adbf23fa334f61d41cfb0945abe",
+  "package_bytes": 3664646,
+  "current_helper": "target/release/deps/managed_games_native-4cff964311c5e5ac",
+  "current_helper_sha256": "f5e322fdb994d9e9bc0f209b7c67c8159a4f33560f52ba659a3fb6a73013a6ad",
+  "cached_helper_sha256": "1af6ca2cc16173953d24cea78168f889896427c3bb639075c59ba2dc796508fa",
+  "current_helper_native_checks": 20,
+  "fresh_final_package_vm_checks": 38,
+  "installed_current_helper_checks": 3,
+  "installed_source_checks": 5,
+  "guest_reboots": 2,
+  "all_private_resources_removed": true,
+  "product_and_test_sources_match_initial_publication": true,
+  "host_installation": false,
+  "physical_hardware_writes": false,
+  "limits": [
+    "Physical hardware, input/DPI, suspend/resume, complete accessibility and broader distributions remain unvalidated.",
+    "Revision 21 Lutris/OpenTTD evidence remains separate; revision 23 is not newly tested with a real store game.",
+    "Root-service trust verifies a local endpoint and reported identity, not hardware-validation semantics or compromised root."
+  ],
+  "evidence_files": [
+    {
+      "path": "collect-evidence.py",
+      "sha256": "7b01921ffcbde5488b3dd47f8d87a7f07aac6b183a6646b6d1b37b5e0e721824",
+      "bytes": 4526
+    },
+    {
+      "path": "documentation-manifest.json",
+      "sha256": "73f7115aaf0d8caf70dae65921e6257abd8061da05f7a2cf612a63ee3c7b2d75",
+      "bytes": 809
+    },
+    {
+      "path": "reports/docs/APPLICATION_AUDIT_IMPLEMENTATION.md",
+      "sha256": "2ad4ef7920214470bea936280e53c0cfd9abae1526837ff3334afbc1ad8fa50f",
+      "bytes": 29888
+    },
+    {
+      "path": "reports/docs/IMPLEMENTATION_STATUS.md",
+      "sha256": "12fea70053f2120d61d553d4e73c0bb2a38443aa92d8c2540eefaa178aa0bfc6",
+      "bytes": 23942
+    },
+    {
+      "path": "reports/docs/PACKAGE_VALIDATION.md",
+      "sha256": "9660fc2d43e21e085a58259bd9e6fe42f1ecc3b5513c532c88d5e889fd755162",
+      "bytes": 12333
+    },
+    {
+      "path": "reports/docs/SOURCE_SWITCHING_2026-10-28.md",
+      "sha256": "063648d09ef7e5a69d8b5fff00cfa49d5e7656ec1beabbc69a293ca1fb29afc5",
+      "bytes": 7488
+    },
+    {
+      "path": "reports/docs/TEST_REPORT.md",
+      "sha256": "a550fb45241e6fa872954ef5e3bf6de75303cb87f94fa7661236a42321308fca",
+      "bytes": 46115
+    },
+    {
+      "path": "reports/docs/VM_VALIDATION.md",
+      "sha256": "7aa73c8f8ec81df322e86cbb90a23b2f38eb9de77a041598077cc9a11d510f1a",
+      "bytes": 11269
+    },
+    {
+      "path": "runs/collection.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "runs/fresh-vm/graphical-captures/source-direct.png",
+      "sha256": "593fd319b608ff0f435c205cda06e4d3432d0aeee4422e76a8aec11fdf1f3071",
+      "bytes": 280150
+    },
+    {
+      "path": "runs/fresh-vm/graphical-captures/source-fixture.png",
+      "sha256": "b04930ee69b7dad29b55f9d0ade7f0c54f91e1d4988851bdf399090ab1552fea",
+      "bytes": 276775
+    },
+    {
+      "path": "runs/fresh-vm/graphical-captures/source-service.png",
+      "sha256": "b9705c053faf8ff3b3d914c6d09446ca3cabe7501ebfa23db56e2b90ea086e0b",
+      "bytes": 282355
+    },
+    {
+      "path": "runs/fresh-vm/vm-cloud-init-status.json",
+      "sha256": "21d23512285440641dea748c961394752d4ffeb85fb9ee72a28086f7aa168874",
+      "bytes": 737
+    },
+    {
+      "path": "runs/fresh-vm/vm-coarse-journal.log",
+      "sha256": "06fbf26cd1c3b17d615c19016cd8f0f6b574be348d01711a2dbc640dbf88b4bc",
+      "bytes": 4948
+    },
+    {
+      "path": "runs/fresh-vm/vm-desktop-journal.log",
+      "sha256": "132b39799e4f1ae3d59b8b1184cc97103d53542fbc5bb1bd0badb6572a45724b",
+      "bytes": 65671
+    },
+    {
+      "path": "runs/fresh-vm/vm-polkit-journal.log",
+      "sha256": "19f8dfbbab0587b559b432c820cd54a9fb5cd2b0923cfe8cb396de3608878464",
+      "bytes": 1450
+    },
+    {
+      "path": "runs/fresh-vm/vm-qemu.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "runs/fresh-vm/vm-serial.log",
+      "sha256": "df3e6fe9ba8ba8fa6379da84c5124cbb43c03f2b7ffa0f7d1c07c8e2f6015a1b",
+      "bytes": 284240
+    },
+    {
+      "path": "runs/fresh-vm/vm-systemd-initial-journal.log",
+      "sha256": "1fd89e572f5e241a76e5188b4d93324cfdd95b51073aadd3b504973eb4929771",
+      "bytes": 23386
+    },
+    {
+      "path": "runs/fresh-vm/vm-systemd-journal.log",
+      "sha256": "83604c33c510a544db208a4999cdfc45f750991616d0c04ca8987e6fb8fdb641",
+      "bytes": 27777
+    },
+    {
+      "path": "runs/fresh-vm/vm-systemd-run.log",
+      "sha256": "43b6f58be34afa5eab254f03ebda1c08810c2102fdbae8cec0d201e73ac614d5",
+      "bytes": 432483
+    },
+    {
+      "path": "runs/fresh-vm/vm-systemd.json",
+      "sha256": "d7e32afce901f0979f63c061db94ce71902cbe2fbf7a960198e7e938134fde65",
+      "bytes": 13199
+    },
+    {
+      "path": "runs/host-preservation.json",
+      "sha256": "ecc4bb2e7c9e1700423097efde543bb6fbf7ac075c8e03f894b4245fb5b68aa2",
+      "bytes": 898
+    },
+    {
+      "path": "runs/managed-release/managed-games-native.json",
+      "sha256": "e11c54c8d1a2e6ddb17b2c7ed31e86dfb629d10c272811cac0389698dbdb0553",
+      "bytes": 2284
+    },
+    {
+      "path": "runs/managed-release.log",
+      "sha256": "64c3473eb7c5664a7f4c8711d4477513c50c3cd684b9af15a6879073118cdf22",
+      "bytes": 2082
+    },
+    {
+      "path": "runs/native-command.json",
+      "sha256": "bfab1c90f2c1624a96b125c3f666b2859fcf2ece407e801b91ae4eb0bebffc93",
+      "bytes": 353
+    },
+    {
+      "path": "runs/vm-command.json",
+      "sha256": "53ffd4cf04cd1732cf5525df9a55c2ac75527d3270bdc452273ac9b2ac0accab",
+      "bytes": 1165
+    },
+    {
+      "path": "runs/vm-console.log",
+      "sha256": "0867c3706772b4fda641342ad57ef484b115316c6096fef92f4ef79d08098bf6",
+      "bytes": 13406
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "b9c9869eefab4bd3d90ca3b91c88949932916826704c08699ac688bbcb7ee012",
+      "bytes": 17949
+    },
+    {
+      "path": "test-manifest.json",
+      "sha256": "c3d6da7c3bce7da6f1ba4d2f1e63d4ce4d1e673de887f862313dc33110a78e8d",
+      "bytes": 1863
+    }
+  ]
+}

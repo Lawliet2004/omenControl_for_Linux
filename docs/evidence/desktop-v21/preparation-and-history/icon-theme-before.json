@@ -1,0 +1,66 @@
+{
+  "theme": "gnome",
+  "icons": [
+    {
+      "requested": "computer-symbolic",
+      "exists": false,
+      "resolved_name": "image-missing",
+      "uri": "resource:///org/gtk/libgtk/icons/16x16/status/image-missing.png"
+    },
+    {
+      "requested": "view-grid-symbolic",
+      "exists": true,
+      "resolved_name": "view-grid-symbolic",
+      "uri": "resource:///org/gtk/libgtk/icons/view-grid-symbolic.svg"
+    },
+    {
+      "requested": "applications-system-symbolic",
+      "exists": false,
+      "resolved_name": "image-missing",
+      "uri": "resource:///org/gtk/libgtk/icons/16x16/status/image-missing.png"
+    },
+    {
+      "requested": "speedometer-symbolic",
+      "exists": false,
+      "resolved_name": "image-missing",
+      "uri": "resource:///org/gtk/libgtk/icons/16x16/status/image-missing.png"
+    },
+    {
+      "requested": "view-refresh-symbolic",
+      "exists": true,
+      "resolved_name": "view-refresh-symbolic",
+      "uri": "resource:///org/gtk/libgtk/icons/view-refresh-symbolic.svg"
+    },
+    {
+      "requested": "weather-clear-night-symbolic",
+      "exists": false,
+      "resolved_name": "image-missing",
+      "uri": "resource:///org/gtk/libgtk/icons/16x16/status/image-missing.png"
+    },
+    {
+      "requested": "video-display-symbolic",
+      "exists": false,
+      "resolved_name": "image-missing",
+      "uri": "resource:///org/gtk/libgtk/icons/16x16/status/image-missing.png"
+    },
+    {
+      "requested": "battery-symbolic",
+      "exists": false,
+      "resolved_name": "image-missing",
+      "uri": "resource:///org/gtk/libgtk/icons/16x16/status/image-missing.png"
+    },
+    {
+      "requested": "applications-games-symbolic",
+      "exists": false,
+      "resolved_name": "image-missing",
+      "uri": "resource:///org/gtk/libgtk/icons/16x16/status/image-missing.png"
+    },
+    {
+      "requested": "preferences-system-symbolic",
+      "exists": false,
+      "resolved_name": "image-missing",
+      "uri": "resource:///org/gtk/libgtk/icons/16x16/status/image-missing.png"
+    }
+  ],
+  "installed_svg_loader": "unknown ok not-installed "
+}

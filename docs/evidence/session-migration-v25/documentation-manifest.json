@@ -1,0 +1,30 @@
+[
+  {
+    "path": "docs/SESSION_SCOPE_MIGRATION_2026-10-28.md",
+    "sha256": "8383e070b911507f83366733ec0a85e791f49f7ed46d8b9b159a41ce6cfe0546"
+  },
+  {
+    "path": "docs/APPLICATION_AUDIT_IMPLEMENTATION.md",
+    "sha256": "cd1e2f53abee8f4fc3e05ddcaa90e484c5d514705f213d61ed250e5fdb073e1e"
+  },
+  {
+    "path": "docs/IMPLEMENTATION_STATUS.md",
+    "sha256": "a7624a7ee56a9dea68f75204efd8e2a1505672caac06b5c57655b0eee9d76e64"
+  },
+  {
+    "path": "docs/CONTINUATION_CHECKLIST.md",
+    "sha256": "d052a191577de8e55dd6a5a896273b05cbd6b1593d0a4d777fe8604b00ad6c0c"
+  },
+  {
+    "path": "docs/TEST_REPORT.md",
+    "sha256": "0b1b73cea7bbebc9f6d54e64f7a4030e01c86f950dcafe5876695fca0d51250f"
+  },
+  {
+    "path": "docs/MANAGED_GAME_SESSIONS.md",
+    "sha256": "74857139324eacfc5307fbc86844ab8e80bc7623ce479c57cf721028a0391e25"
+  },
+  {
+    "path": "docs/GAME_LAUNCHERS.md",
+    "sha256": "3b156d7c6d9e88bc44c328c4a0d4aeaee004b0fc1db6f01112fbf6d78a556038"
+  }
+]
