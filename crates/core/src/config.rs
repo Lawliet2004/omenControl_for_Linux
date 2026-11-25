@@ -239,6 +239,9 @@ pub struct GameConfig {
     /// Defer profile ownership to the actual-command wrapper for these games.
     #[serde(default)]
     pub managed_game_ids: std::collections::BTreeSet<String>,
+    /// Enable in-game MangoHud FPS and performance overlay when available.
+    #[serde(default)]
+    pub mangohud_overlay: bool,
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]

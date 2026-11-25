@@ -110,6 +110,7 @@ pub struct SourcePoller {
     direct: Option<Arc<SysfsBackend>>,
     selected: DataSource,
     origin: SourceOrigin,
+    process_monitor: omen_hardware::processes::ProcessMonitor,
 }
 
 impl SourcePoller {
@@ -127,6 +128,7 @@ impl SourcePoller {
             direct: None,
             selected: DataSource::Offline,
             origin: SourceOrigin::default(),
+            process_monitor: omen_hardware::processes::ProcessMonitor::default(),
         }
     }
 
@@ -176,6 +178,7 @@ impl SourcePoller {
     pub fn poll(&mut self) -> Snapshot {
         let started = crate::overlay::now_ms();
         if let Err(error) = self.select() {
+            self.process_monitor.reset();
             return Snapshot::unavailable(started, error.to_string());
         }
         let mut snapshot = self.selected.snapshot();
@@ -185,6 +188,7 @@ impl SourcePoller {
                 .call_decode::<omen_ipc::protocol::DaemonInfo>(Op::GetInfo)
                 .is_ok_and(|info| info == service.info);
             if !unchanged {
+                self.process_monitor.reset();
                 return Snapshot::unavailable(
                     started,
                     "Service changed during the update; waiting for a fresh report".into(),
@@ -192,6 +196,13 @@ impl SourcePoller {
             }
         }
         snapshot.origin = self.origin.clone();
+        if snapshot.origin.fixture == Some(false) {
+            snapshot.top_processes = self
+                .process_monitor
+                .sample(std::path::Path::new("/proc"), 5);
+        } else {
+            self.process_monitor.reset();
+        }
         snapshot
     }
 }
@@ -207,6 +218,7 @@ impl Snapshot {
             network_error: Some(error.clone()),
             capabilities: fallback_caps(),
             sensors: vec![],
+            top_processes: vec![],
             fan: None,
             fan_err: Some(error.clone()),
             profile: None,
@@ -559,6 +571,7 @@ pub struct Snapshot {
     pub network_error: Option<String>,
     pub capabilities: Capabilities,
     pub sensors: Vec<SensorSample>,
+    pub top_processes: Vec<omen_core::sensors::ProcessSample>,
     pub fan: Option<FanState>,
     pub fan_err: Option<String>,
     pub profile: Option<ProfileKind>,
@@ -583,6 +596,7 @@ impl DataSource {
         let battery = self.battery().ok();
         let ac_online = self.ac().ok().map(|a| a.online);
         let capabilities = self.capabilities();
+        let top_processes = Vec::new();
         // Readbacks belong to the polling worker. Constructing a page or
         // receiving a capability update must never block GTK on hardware/IPC.
         let controls = ControlReadings {
@@ -610,6 +624,7 @@ impl DataSource {
             network_error: network.err().map(|e| e.to_string()),
             capabilities,
             sensors,
+            top_processes,
             fan,
             fan_err,
             profile,

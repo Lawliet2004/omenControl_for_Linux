@@ -567,7 +567,9 @@ pub fn battery(ui: &Rc<Ui>) -> gtk::Widget {
     let (charge, charge_value) = value_card("Charge");
     let (health, health_value) = value_card("Health");
     let (power, power_value) = value_card("Power draw");
-    for card in [state, charge, health, power] {
+    let (cycles, cycles_value) = value_card("Cycle count");
+    let (capacity, capacity_value) = value_card("Full / design capacity");
+    for card in [state, charge, health, power, cycles, capacity] {
         card.set_size_request(175, -1);
         grid.append(&card);
     }
@@ -635,11 +637,25 @@ pub fn battery(ui: &Rc<Ui>) -> gtk::Widget {
                     .map(|v| format!("{v:+.1} W"))
                     .unwrap_or_else(|| "—".into()),
             );
+            cycles_value.set_text(
+                &battery
+                    .cycle_count
+                    .map(|v| format!("{v}"))
+                    .unwrap_or_else(|| "—".into()),
+            );
+            capacity_value.set_text(&match (battery.energy_wh_full, battery.energy_wh_design) {
+                (Some(full), Some(design)) => format!("{full:.1} / {design:.1} Wh"),
+                (Some(full), None) => format!("{full:.1} Wh"),
+                (None, Some(design)) => format!("— / {design:.1} Wh"),
+                (None, None) => "—".into(),
+            });
         } else {
             state_value.set_text("Unavailable");
             charge_value.set_text("—");
             health_value.set_text("—");
             power_value.set_text("—");
+            cycles_value.set_text("—");
+            capacity_value.set_text("—");
         }
         reason(
             &unavailable,

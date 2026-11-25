@@ -50,6 +50,11 @@ enum Cmd {
     /// Wrap the actual game command in a tracked user scope. Never pass a URI launcher here.
     GameRun {
         id: String,
+        #[arg(
+            long,
+            help = "Wrap game with MangoHud in-game FPS and frametime overlay"
+        )]
+        mangohud: bool,
         #[arg(last = true, required = true)]
         command: Vec<std::ffi::OsString>,
     },
@@ -302,14 +307,32 @@ fn run(cli: Cli) -> i32 {
                 }
             };
         }
-        Cmd::GameRun { id, command } | Cmd::GameWorker { id, command, .. } => {
-            let token = if let Cmd::GameWorker { token, .. } = &cli.command {
-                Some(token.as_str())
-            } else {
-                None
+        Cmd::GameRun {
+            id,
+            mangohud,
+            command,
+        } => {
+            return match omen_client::game_sessions::run_with_overlay(
+                id,
+                command,
+                cli.socket.as_deref(),
+                None,
+                *mangohud,
+            ) {
+                Ok(status) => omen_client::game_sessions::exit_code(status),
+                Err(error) => {
+                    eprintln!("{error}");
+                    1
+                }
             };
-            return match omen_client::game_sessions::run(id, command, cli.socket.as_deref(), token)
-            {
+        }
+        Cmd::GameWorker { id, token, command } => {
+            return match omen_client::game_sessions::run(
+                id,
+                command,
+                cli.socket.as_deref(),
+                Some(token.as_str()),
+            ) {
                 Ok(status) => omen_client::game_sessions::exit_code(status),
                 Err(error) => {
                     eprintln!("{error}");

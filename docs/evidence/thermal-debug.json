@@ -16,11 +16,11 @@
     "the named power worker is blocked on fixture profile IO while independent fan ticks still follow GPU heat",
     "shutdown restores Auto before profile IO drains and performs no late profile write after the blocked read returns"
   ],
-  "daemon_sha256": "eb705625b0dbb053fc0276378c674cb89799dd9cada74f7e754adcff9d261fe1",
+  "daemon_sha256": "7c597a992386507a730a8a3bb1e04eae7ef11a3b2bee213aff2cfc48e5ecccac",
   "blocked_power_worker": {
-    "tid": 1025194,
+    "tid": 578305,
     "wchan": "wait_for_partner"
   },
   "cleanup_complete": true,
-  "recorded_utc": "2026-11-09T15:43:59.026273+00:00"
+  "recorded_utc": "2026-11-25T18:10:26.738056+00:00"
 }

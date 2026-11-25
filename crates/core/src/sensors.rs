@@ -151,6 +151,15 @@ fn now_ms() -> u64 {
         .unwrap_or(0)
 }
 
+/// A lightweight process resource sample for System Vitals / Oasis monitoring.
+#[derive(Debug, Clone, Serialize, Deserialize, PartialEq)]
+pub struct ProcessSample {
+    pub pid: u32,
+    pub name: String,
+    pub cpu_pct: f32,
+    pub mem_bytes: u64,
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;

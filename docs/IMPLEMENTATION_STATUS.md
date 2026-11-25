@@ -1,5 +1,18 @@
 # Goal status and continuation
 
+## Windows Gaming Hub Parity & Modernization (2026-11-24) — Done, verified release candidate 0.1.0-28
+
+Execution of Windows Gaming Hub parity and modernization roadmap:
+- **Top Process Resource Monitoring**: Added `/proc` process reader and stateful delta CPU% `ProcessMonitor` in `crates/hardware/src/processes.rs` (`omen_core::sensors::ProcessSample`) and integrated into native GUI System Vitals (`gui/src/pages.rs`), updating active desktop processes in place sorted by resident memory (excluded in mock/offline modes).
+- **In-Game FPS & Frametime Overlay (MangoHud)**: Implemented opt-in MangoHud overlay wrapper in `crates/client/src/game_sessions.rs`, `crates/hardware/src/games.rs`, `crates/client/src/games.rs`, CLI (`omen-cli game-run --mangohud`), and native GUI toggle in Game Library (`gui/src/game_library.rs`) with live PATH detection.
+- **Battery Health & Capacity Polish**: Surfaced battery cycle count and full vs design energy capacity (Wh) in native GUI Battery page (`gui/src/control_pages.rs`).
+- **Packaging & Release**: Release `.deb` package built at `target/production-readiness-candidate/omen-linux_0.1.0-28_amd64.deb` (6,259,410 bytes, SHA-256 `dbfb8a5b3ec5a5267ba4c59237af8386f64186aa9e6c9730863949705c764a5e`), verified via `tests/package.py` (8/8 checks pass).
+- **Workspace Verification**:
+  - `cargo fmt --check`: Clean exit 0.
+  - `cargo clippy --workspace --all-targets --all-features --locked -- -D warnings`: Clean exit 0.
+  - Rust tests: 308 unit/integration tests passed in both debug and release profiles.
+  - Python tests: `tests/smoke.py`, `tests/settings.py`, `tests/network.py`, `tests/fan_monitoring.py --live-readonly`, `tests/game_launch.py`, `tests/live_gpu.py`, `tests/gui_settings.py`, `tests/gui_library.py`, `tests/gui_presentation.py` (vitals/battery/games), and `tests/tray.py` passed with zero errors in release profile.
+
 ## Production Readiness Release Candidate (2026-11-09) — Done, verified release candidate
 
 Production-readiness roadmap from `PRODUCTION_READINESS_PROMPT.md` and `GOAL.md` fully executed across the Rust workspace and verification harnesses:

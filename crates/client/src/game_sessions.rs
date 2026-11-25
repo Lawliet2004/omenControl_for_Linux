@@ -25,11 +25,41 @@ fn execute(arguments: &[OsString]) -> Result<ExitStatus> {
     )))
 }
 
+/// Check if `mangohud` is executable in PATH.
+pub fn mangohud_available() -> bool {
+    omen_hardware::games::PreparedLaunch::mangohud_executable().is_some()
+}
+
+/// Wrap arguments with `mangohud` if overlay is enabled, available, and not already present.
+pub fn prepare_arguments(arguments: &[OsString], enable_mangohud: bool) -> Vec<OsString> {
+    let already = arguments.first().is_some_and(|first| {
+        std::path::Path::new(first).file_name() == Some(std::ffi::OsStr::new("mangohud"))
+    });
+    if enable_mangohud && !arguments.is_empty() && !already && mangohud_available() {
+        let mut wrapped = Vec::with_capacity(arguments.len() + 1);
+        wrapped.push(OsString::from("mangohud"));
+        wrapped.extend_from_slice(arguments);
+        wrapped
+    } else {
+        arguments.to_vec()
+    }
+}
+
 pub fn run(
     id: &str,
     arguments: &[OsString],
     socket: Option<&str>,
     worker_token: Option<&str>,
+) -> Result<ExitStatus> {
+    run_with_overlay(id, arguments, socket, worker_token, false)
+}
+
+pub fn run_with_overlay(
+    id: &str,
+    arguments: &[OsString],
+    socket: Option<&str>,
+    worker_token: Option<&str>,
+    mangohud: bool,
 ) -> Result<ExitStatus> {
     if unsafe { libc::geteuid() } == 0 {
         return Err(OmenError::PermissionDenied(
@@ -69,8 +99,10 @@ pub fn run(
         }
     };
     let config = OmenConfig::load().inspect_err(|e| early_report(Stage::Configuration, e))?;
+    let enable_hud = mangohud || config.games.mangohud_overlay;
+    let effective_args = prepare_arguments(arguments, enable_hud);
     if !config.games.managed_game_ids.contains(id) {
-        return execute(arguments).inspect_err(|e| early_report(Stage::Execution, e));
+        return execute(&effective_args).inspect_err(|e| early_report(Stage::Execution, e));
     }
     let request = inherited
         .map(Ok)
@@ -115,7 +147,7 @@ pub fn run(
             report(Stage::Registration, &error);
             return Err(error);
         }
-        let outcome = execute(arguments).inspect_err(|e| report(Stage::Execution, e));
+        let outcome = execute(&effective_args).inspect_err(|e| report(Stage::Execution, e));
         // Failed exec still has a live worker: relinquish its hold promptly.
         let _ = daemon.call(Op::ReleaseGameSession {
             token: token.into(),
@@ -142,7 +174,7 @@ pub fn run(
     }
     command
         .args(["game-worker", id, "--token", &token, "--"])
-        .args(arguments);
+        .args(&effective_args);
     command.env(crate::launch_issues::REQUEST_ENV, &request);
     let signals = crate::game_supervisor::Signals::new()
         .map_err(OmenError::from)
@@ -162,4 +194,30 @@ pub fn run(
         );
     }
     Ok(status)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn disabled_mangohud_leaves_arguments_unchanged() {
+        let args = vec![OsString::from("/bin/true"), OsString::from("--help")];
+        let prep = prepare_arguments(&args, false);
+        assert_eq!(prep, args);
+    }
+
+    #[test]
+    fn already_mangohud_does_not_duplicate() {
+        let args = vec![OsString::from("mangohud"), OsString::from("game")];
+        let prep = prepare_arguments(&args, true);
+        assert_eq!(prep, args);
+    }
+
+    #[test]
+    fn path_qualified_mangohud_does_not_duplicate() {
+        let args = vec![OsString::from("/usr/bin/mangohud"), OsString::from("game")];
+        let prep = prepare_arguments(&args, true);
+        assert_eq!(prep, args);
+    }
 }

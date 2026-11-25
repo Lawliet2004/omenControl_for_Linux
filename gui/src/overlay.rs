@@ -501,6 +501,7 @@ mod tests {
             started_unix_ms: 1000,
             capabilities: backend.capabilities(),
             sensors: vec![],
+            top_processes: vec![],
             fan: None,
             fan_err: None,
             profile: None,

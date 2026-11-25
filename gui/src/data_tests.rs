@@ -150,6 +150,20 @@ fn source_tracker_retains_edits_during_outage_and_resets_on_replacement() {
 }
 
 #[test]
+fn mock_and_offline_sources_do_not_leak_host_processes() {
+    let directory = tempfile::tempdir().unwrap();
+    let path = directory.path().join("service");
+    let mut poller = SourcePoller::at(IpcClient::new(&path), false);
+    let offline = poller.poll();
+    assert!(offline.top_processes.is_empty());
+
+    let _service = Service::new(&path);
+    let mock = poller.poll();
+    assert_eq!(mock.origin.fixture, Some(true));
+    assert!(mock.top_processes.is_empty());
+}
+
+#[test]
 fn unbound_user_endpoint_never_establishes_physical_provenance() {
     let client = IpcClient::new("unused");
     let mut info = DaemonInfo {

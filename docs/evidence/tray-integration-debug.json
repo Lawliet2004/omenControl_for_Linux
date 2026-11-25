@@ -1,7 +1,7 @@
 {
   "host": "running KDE StatusNotifierWatcher",
   "profile": "debug",
-  "requested_gtk_backend": "auto",
+  "requested_gtk_backend": "wayland",
   "gui_sha256": "5846b75a234214e7fa33322fb202527b5a3adfdff36796909adacae049191109",
   "live_hardware_writes": false,
   "checks_passed": [

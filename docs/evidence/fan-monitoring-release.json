@@ -3,8 +3,8 @@
   "profile": "release",
   "hardware_control_writes": 0,
   "binary_sha256": {
-    "omen-daemon": "80f23151ed5158b8ac782e891ebaa3c4fe0e6d696e8d180a48d5b508f4c04a51",
-    "omen-cli": "4a961a0d6810c4b346d7aecbf2c56bf9160944ac80848dbfbb8724f9212e7a31"
+    "omen-daemon": "fee7a01df899c02e9df15fa67c1ee834189d5635df0eb00c0f7495c98d0aee11",
+    "omen-cli": "501da8ad8c23fb02b74699050cecbaaeafb9b973301d1d6127f489f3753a2302"
   },
   "checks_passed": [
     "mode-only Victus exposes Auto through production IPC and CLI without granting manual control",
@@ -13,13 +13,39 @@
     "mode-only fixture switches Maximum/Automatic through IPC while refusing manual duty",
     "device disappearance fails explicitly and recovers without a host-data fallback",
     "malformed/out-of-range manual readings are absent and valid duty recovers",
-    "OmenCore process presence blocks fixture writes before mutation and removal releases the gate"
+    "OmenCore process presence blocks fixture writes before mutation and removal releases the gate",
+    "real unprivileged daemon and direct CLI agree with independent sysfs mode reads; controls stay disabled"
   ],
   "live_operations": [
     "get_info",
     "get_fan_state",
     "get_capabilities"
   ],
+  "live_readonly": {
+    "uid": 1000,
+    "kernel": "7.0.0-44-generic",
+    "hwmon": "/sys/class/hwmon/hwmon6",
+    "policy_before": "2",
+    "policy_after": "2",
+    "daemon_state": {
+      "cpu_rpm": 2729,
+      "duty_pct": null,
+      "gpu_rpm": 2387,
+      "mode": {
+        "kind": "auto"
+      }
+    },
+    "direct_cli_state": {
+      "cpu_rpm": 2729,
+      "gpu_rpm": 2387,
+      "mode": {
+        "kind": "auto"
+      },
+      "duty_pct": null
+    },
+    "pwm1_present": false,
+    "scope": "Kernel-reported mode only; RPM calibration, physical response and recovery are not tested."
+  },
   "cleanup_complete": true,
-  "recorded_utc": "2026-11-09T15:42:47.852854+00:00"
+  "recorded_utc": "2026-11-25T18:48:49.163515+00:00"
 }

@@ -144,6 +144,52 @@ impl PreparedLaunch {
         self
     }
 
+    /// Locate an executable `mangohud` binary on `PATH`, if available.
+    pub fn mangohud_executable() -> Option<PathBuf> {
+        let path = std::env::var_os("PATH")?;
+        executable("mangohud", &path).ok()
+    }
+
+    fn copy_env_and_stdio(from: &Command, to: &mut Command) {
+        for (name, value) in from.get_envs() {
+            if let Some(value) = value {
+                to.env(name, value);
+            } else {
+                to.env_remove(name);
+            }
+        }
+        to.stdin(Stdio::null())
+            .stdout(Stdio::null())
+            .stderr(Stdio::inherit());
+    }
+
+    /// Wrap a non-store-URI game command with `mangohud` if not already wrapped.
+    pub fn wrap_mangohud(self, mangohud: &std::path::Path) -> Self {
+        let already_wrapped = std::path::Path::new(self.command.get_program()).file_name()
+            == Some(std::ffi::OsStr::new("mangohud"))
+            || (self.command.get_program() == std::path::Path::new("/bin/sh")
+                && self
+                    .command
+                    .get_args()
+                    .nth(1)
+                    .and_then(|s| s.to_str())
+                    .and_then(|cmd| cmd.split_whitespace().next())
+                    .and_then(|first| std::path::Path::new(first).file_name())
+                    == Some(std::ffi::OsStr::new("mangohud")));
+        if already_wrapped {
+            return self;
+        }
+        let mut command = Command::new(mangohud);
+        Self::copy_env_and_stdio(&self.command, &mut command);
+        command
+            .arg(self.command.get_program())
+            .args(self.command.get_args());
+        Self {
+            command,
+            observer: self.observer,
+        }
+    }
+
     /// Use only for an actual custom command, never a store URI submission.
     pub fn wrap_actual_command(self, cli: &std::path::Path, id: &str) -> Result<Self> {
         if !cli.is_absolute()
@@ -154,20 +200,11 @@ impl PreparedLaunch {
             return Err(OmenError::NotFound("omen-cli must be installed beside the application for automatic custom-game profiles".into()));
         }
         let mut command = Command::new(cli);
-        for (name, value) in self.command.get_envs() {
-            if let Some(value) = value {
-                command.env(name, value);
-            } else {
-                command.env_remove(name);
-            }
-        }
+        Self::copy_env_and_stdio(&self.command, &mut command);
         command
             .args(["game-run", id, "--"])
             .arg(self.command.get_program())
-            .args(self.command.get_args())
-            .stdin(Stdio::null())
-            .stdout(Stdio::null())
-            .stderr(Stdio::inherit());
+            .args(self.command.get_args());
         Ok(Self {
             command,
             observer: self.observer,
@@ -720,5 +757,62 @@ mod tests {
     fn no_steam_dir_is_empty() {
         let dir = tempfile::tempdir().unwrap();
         assert!(detect_steam(dir.path()).is_empty());
+    }
+
+    #[test]
+    fn mangohud_wrapper_preserves_env_and_avoids_duplication() {
+        let dir = tempfile::tempdir().unwrap();
+        let mangohud = dir.path().join("mangohud");
+        std::fs::write(&mangohud, "#!/bin/sh\n").unwrap();
+        std::fs::set_permissions(&mangohud, std::fs::Permissions::from_mode(0o700)).unwrap();
+        let legendary = dir.path().join("legendary");
+        std::fs::write(
+            &legendary,
+            "#!/bin/sh\nprintf 'legendary version \"0.21.1\"\\n'\n",
+        )
+        .unwrap();
+        std::fs::set_permissions(&legendary, std::fs::Permissions::from_mode(0o700)).unwrap();
+
+        let game = Game {
+            id: "legendary/GameA".into(),
+            name: "Game A".into(),
+            source: GameSource::Legendary,
+            launch_cmd: String::new(),
+            library_root: Some(dir.path().into()),
+        };
+        let prepared = PreparedLaunch::prepare_with_path(&game, dir.path().as_os_str())
+            .unwrap()
+            .wrap_mangohud(&mangohud);
+        assert_eq!(prepared.command.get_program(), mangohud);
+        assert_eq!(
+            prepared.command.get_args().collect::<Vec<_>>(),
+            [
+                legendary.to_string_lossy().as_ref(),
+                "launch",
+                "--",
+                "GameA"
+            ]
+        );
+        assert!(prepared
+            .command
+            .get_envs()
+            .any(|(name, value)| name == "LEGENDARY_CONFIG_PATH"
+                && value == Some(dir.path().as_os_str())));
+
+        // Custom command already starting with mangohud is not double-wrapped.
+        let custom = Game {
+            id: "custom/already".into(),
+            name: "Already".into(),
+            source: GameSource::Custom,
+            launch_cmd: "mangohud /bin/true".into(),
+            library_root: None,
+        };
+        let prepared = PreparedLaunch::prepare_with_path(&custom, dir.path().as_os_str())
+            .unwrap()
+            .wrap_mangohud(&mangohud);
+        assert_eq!(
+            prepared.command.get_program(),
+            std::path::Path::new("/bin/sh")
+        );
     }
 }

@@ -14,8 +14,8 @@
     "mode-only Maximum lease renews, expires on stall and restores on parent SIGKILL without manual targets",
     "internal helper refuses startup without its inherited private channel"
   ],
-  "daemon_sha256": "eb705625b0dbb053fc0276378c674cb89799dd9cada74f7e754adcff9d261fe1",
-  "parent_sigkill_recovery_ms": 1.3,
+  "daemon_sha256": "7c597a992386507a730a8a3bb1e04eae7ef11a3b2bee213aff2cfc48e5ecccac",
+  "parent_sigkill_recovery_ms": 1.2,
   "cleanup_complete": true,
-  "recorded_utc": "2026-11-09T15:45:05.017546+00:00"
+  "recorded_utc": "2026-11-25T18:10:03.817450+00:00"
 }

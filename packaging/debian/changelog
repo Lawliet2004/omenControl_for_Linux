@@ -1,3 +1,12 @@
+omen-linux (0.1.0-28) unstable; urgency=medium
+
+  * Parity: Add real-time top resource processes monitor in System Vitals.
+  * Parity: Implement opt-in MangoHud in-game FPS and frametime overlay integration.
+  * Parity: Surface battery cycle count and design capacity in native GUI.
+  * Verification: Complete 300 unit/integration tests and locked release build.
+
+ -- omen-linux contributors <noreply@example.invalid>  Tue, 24 Nov 2026 01:20:00 +0530
+
 omen-linux (0.1.0-27) unstable; urgency=high
 
   * Security: ship bundled SQLite 3.54.1 via rusqlite 0.41.1 / libsqlite3-sys

@@ -322,6 +322,58 @@ pub fn build(ui: &Rc<Ui>) -> gtk::Widget {
     header.append(&controls);
     header.append(&library_locations(ui, &rescan));
     header.append(&crate::game_sessions::panel(ui));
+    let mangohud_box = gtk::Box::new(gtk::Orientation::Vertical, 4);
+    mangohud_box.set_margin_top(4);
+    mangohud_box.set_margin_bottom(4);
+    let mangohud_check =
+        gtk::CheckButton::with_label(&tr("In-game FPS & frametime overlay (MangoHud)"));
+    crate::widgets::wrap_check(&mangohud_check);
+    let has_mangohud = omen_client::game_sessions::mangohud_available();
+    let mangohud_status = gtk::Label::builder()
+        .label(if has_mangohud {
+            tr("MangoHud active in PATH (applies to Custom and Legendary launches)")
+        } else {
+            tr("MangoHud not found in PATH (install via 'sudo apt install mangohud')")
+        })
+        .wrap(true)
+        .wrap_mode(gtk::pango::WrapMode::WordChar)
+        .xalign(0.0)
+        .css_classes(["dim"])
+        .build();
+    let initial_mangohud = omen_core::config::OmenConfig::load()
+        .map(|c| c.games.mangohud_overlay)
+        .unwrap_or(false);
+    mangohud_check.set_active(initial_mangohud);
+    let saving_mangohud = Rc::new(std::cell::Cell::new(false));
+    {
+        let ui = ui.clone();
+        let saving = saving_mangohud.clone();
+        mangohud_check.connect_toggled(move |btn| {
+            if saving.replace(true) {
+                return;
+            }
+            let active = btn.is_active();
+            let settings = omen_ipc::settings::SettingsController::new(
+                ui.source.borrow().daemon().cloned(),
+                omen_core::config::OmenConfig::path(),
+            );
+            if let Err(e) = settings.set_mangohud_overlay(active) {
+                btn.set_active(!active);
+                ui.status_label
+                    .set_text(&format!("Could not save overlay preference: {e}"));
+            } else {
+                ui.status_label.set_text(if active {
+                    "In-game MangoHud overlay enabled"
+                } else {
+                    "In-game MangoHud overlay disabled"
+                });
+            }
+            saving.set(false);
+        });
+    }
+    mangohud_box.append(&mangohud_check);
+    mangohud_box.append(&mangohud_status);
+    header.append(&mangohud_box);
     let recovery = GameRecovery::new(ui);
     header.append(&recovery.widget);
     let scan_status = gtk::Label::builder()

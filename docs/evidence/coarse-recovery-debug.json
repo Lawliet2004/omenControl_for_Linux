@@ -3,7 +3,7 @@
   "profile": "debug",
   "fixture_only": true,
   "physical_writes": 0,
-  "binary_sha256": "eb705625b0dbb053fc0276378c674cb89799dd9cada74f7e754adcff9d261fe1",
+  "binary_sha256": "7c597a992386507a730a8a3bb1e04eae7ef11a3b2bee213aff2cfc48e5ecccac",
   "checks_passed": [
     "coarse control requires its independent writer and never grants manual/curve access",
     "guarded daemon renews standalone writer lease beyond its original deadline",
@@ -20,6 +20,6 @@
     "healthy heartbeat cannot extend the independent ten-second physical trial ceiling",
     "replacement inode is never written; pending intent survives and restart refuses redirection"
   ],
-  "recorded_utc": "2026-11-09T15:46:20.378660+00:00",
+  "recorded_utc": "2026-11-25T18:11:02.789946+00:00",
   "cleanup_complete": true
 }

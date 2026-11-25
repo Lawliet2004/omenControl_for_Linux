@@ -275,6 +275,15 @@ impl DesktopGames {
             prepared = prepared
                 .wrap_actual_command(&cli, id)
                 .map_err(|cause| LaunchFailure::before_change(LaunchStage::Preparation, cause))?;
+        } else if config.games.mangohud_overlay
+            && matches!(
+                game.source,
+                omen_core::games::GameSource::Custom | omen_core::games::GameSource::Legendary
+            )
+        {
+            if let Some(mangohud) = PreparedLaunch::mangohud_executable() {
+                prepared = prepared.wrap_mangohud(&mangohud);
+            }
         }
         if let Some(request) = request {
             use crate::launch_issues::{best_effort, History, Issue, Reason, Stage};

@@ -52,19 +52,35 @@ mod tests {
     }
 
     struct TestDaemon {
+        dir: PathBuf,
         socket: PathBuf,
         client: omen_ipc::IpcClient,
     }
 
+    impl Drop for TestDaemon {
+        fn drop(&mut self) {
+            let _ = std::fs::remove_dir_all(&self.dir);
+        }
+    }
+
     fn start_daemon(model: MockModel) -> TestDaemon {
-        let dir = std::env::temp_dir().join(format!(
+        let base = std::env::temp_dir();
+        let dir_name = format!(
             "omen-it-{}-{}",
             std::process::id(),
             std::time::SystemTime::now()
                 .duration_since(std::time::UNIX_EPOCH)
                 .unwrap()
                 .as_nanos()
-        ));
+        );
+        // Unix domain socket paths are capped by SUN_LEN (108 bytes). Fall back
+        // to /tmp when the inherited TMPDIR is too deep to bind a socket.
+        let root = if base.join(&dir_name).join("ctl.sock").as_os_str().len() < 100 {
+            base
+        } else {
+            PathBuf::from("/tmp")
+        };
+        let dir = root.join(dir_name);
         std::fs::create_dir_all(&dir).unwrap();
         let socket = dir.join("ctl.sock");
         let service = Arc::new(ServiceShim {
@@ -107,6 +123,7 @@ mod tests {
             });
         }
         TestDaemon {
+            dir,
             socket: socket.clone(),
             client: omen_ipc::IpcClient::new(socket),
         }

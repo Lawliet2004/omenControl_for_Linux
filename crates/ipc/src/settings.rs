@@ -136,6 +136,9 @@ impl SettingsController {
     pub fn set_overlay_enabled(&self, enabled: bool) -> Result<()> {
         self.edit_user(|user| user.general.overlay_enabled = enabled)
     }
+    pub fn set_mangohud_overlay(&self, enabled: bool) -> Result<()> {
+        self.edit_user(|user| user.games.mangohud_overlay = enabled)
+    }
     pub fn set_onboarding_dismissed(&self, dismissed: bool) -> Result<()> {
         self.edit_user(|user| user.general.onboarding_dismissed = dismissed)
     }

@@ -28,6 +28,7 @@ pub mod mock;
 pub mod network;
 pub mod nvidia_bridge;
 pub mod power;
+pub mod processes;
 pub mod profiles;
 pub mod sensors;
 

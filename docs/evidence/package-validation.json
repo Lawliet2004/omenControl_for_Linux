@@ -1,8 +1,8 @@
 {
-  "package": "target/security-27/omen-linux_0.1.0-27_amd64.deb",
-  "bytes": 6245564,
-  "sha256": "dca2bf6d749dc22dbb0f94cf97ca5227c7fc0c9930187e6182aebc22759048e2",
-  "version": "0.1.0-27",
+  "package": "target/production-readiness-candidate/omen-linux_0.1.0-28_amd64.deb",
+  "bytes": 6257762,
+  "sha256": "3a384918c761812e9469ecdceedb5ca99ece4476202702a9f28189e4c1865a3b",
+  "version": "0.1.0-28",
   "installed_by_verifier": false,
   "checks": {
     "root_ownership_and_directory_modes": true,
@@ -16,15 +16,15 @@
   },
   "binaries": {
     "omen-cli": {
-      "sha256": "0f88c6a998187505bc0498acb33c4ca8f3accb04a5fac2ed6762ba7f740c629e",
+      "sha256": "0f58498d13a48ee3a67577ac05aac54bf057693d6f172e854fd96cfc28cd4d22",
       "matches_release": true
     },
     "omen-daemon": {
-      "sha256": "c9d63b1fa2664f5022914aa39984c5d86c51f0023885bbe2a2e08de646931002",
+      "sha256": "a6857ff926a8587ebf86e8adc8dd9f3c1a715b06c837b1e310835eef4f86ffe2",
       "matches_release": true
     },
     "omen-gui": {
-      "sha256": "3566e81ae60be8079fc333645156d8ee363118e5a5ed37d19cdd7270349c71e8",
+      "sha256": "9f14f4dae35f5d1411932e89b234bde957eca3ed455d2c4fbd301d9df6422039",
       "matches_release": true
     }
   },

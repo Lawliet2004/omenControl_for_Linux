@@ -4,8 +4,8 @@
   "hardware_control_writes": false,
   "host_network_policy_changed": false,
   "binary_sha256": {
-    "omen-cli": "4a961a0d6810c4b346d7aecbf2c56bf9160944ac80848dbfbb8724f9212e7a31",
-    "omen-daemon": "80f23151ed5158b8ac782e891ebaa3c4fe0e6d696e8d180a48d5b508f4c04a51"
+    "omen-cli": "501da8ad8c23fb02b74699050cecbaaeafb9b973301d1d6127f489f3753a2302",
+    "omen-daemon": "fee7a01df899c02e9df15fa67c1ee834189d5635df0eb00c0f7495c98d0aee11"
   },
   "checks_passed": [
     "first fixture acquisition reports counters and an unknown rate without reading host interfaces",
@@ -20,7 +20,7 @@
   ],
   "old_daemon_sha256": "3021e526922424a548bd9176c46de3ea7aa1e8b966c5cbc6398761d4a2c47aa1",
   "live_readonly": {
-    "kernel": "7.0.0-42-generic",
+    "kernel": "7.0.0-44-generic",
     "uid": 1000,
     "first": {
       "interfaces": [
@@ -29,13 +29,13 @@
           "link_state": "down",
           "loopback": false,
           "name": "docker0",
-          "rx_bytes": 1876386,
+          "rx_bytes": 0,
           "rx_bytes_per_second": null,
           "rx_dropped_or_missed": 0,
           "rx_errors": 0,
-          "tx_bytes": 1637762,
+          "tx_bytes": 0,
           "tx_bytes_per_second": null,
-          "tx_dropped": 1130,
+          "tx_dropped": 62,
           "tx_errors": 0
         },
         {
@@ -57,11 +57,11 @@
           "link_state": "unknown",
           "loopback": true,
           "name": "lo",
-          "rx_bytes": 3078383005,
+          "rx_bytes": 835588005,
           "rx_bytes_per_second": null,
           "rx_dropped_or_missed": 0,
           "rx_errors": 0,
-          "tx_bytes": 3078383005,
+          "tx_bytes": 835588005,
           "tx_bytes_per_second": null,
           "tx_dropped": 0,
           "tx_errors": 0
@@ -71,18 +71,18 @@
           "link_state": "up",
           "loopback": false,
           "name": "wlo1",
-          "rx_bytes": 22105871783,
+          "rx_bytes": 10598179641,
           "rx_bytes_per_second": null,
           "rx_dropped_or_missed": 0,
           "rx_errors": 0,
-          "tx_bytes": 6099107133,
+          "tx_bytes": 1651081436,
           "tx_bytes_per_second": null,
-          "tx_dropped": 578,
+          "tx_dropped": 44,
           "tx_errors": 0
         }
       ],
       "interval_ms": null,
-      "measured_unix_ms": 1794238952536,
+      "measured_unix_ms": 1795632527746,
       "omitted_interfaces": 0,
       "source": "kernel",
       "unreadable_interfaces": 0
@@ -94,13 +94,13 @@
           "link_state": "down",
           "loopback": false,
           "name": "docker0",
-          "rx_bytes": 1876386,
+          "rx_bytes": 0,
           "rx_bytes_per_second": 0.0,
           "rx_dropped_or_missed": 0,
           "rx_errors": 0,
-          "tx_bytes": 1637762,
+          "tx_bytes": 0,
           "tx_bytes_per_second": 0.0,
-          "tx_dropped": 1130,
+          "tx_dropped": 62,
           "tx_errors": 0
         },
         {
@@ -122,12 +122,12 @@
           "link_state": "unknown",
           "loopback": true,
           "name": "lo",
-          "rx_bytes": 3078383127,
-          "rx_bytes_per_second": 374.04162869939745,
+          "rx_bytes": 836284275,
+          "rx_bytes_per_second": 2134866.3840919617,
           "rx_dropped_or_missed": 0,
           "rx_errors": 0,
-          "tx_bytes": 3078383127,
-          "tx_bytes_per_second": 374.04162869939745,
+          "tx_bytes": 836284275,
+          "tx_bytes_per_second": 2134866.3840919617,
           "tx_dropped": 0,
           "tx_errors": 0
         },
@@ -136,18 +136,18 @@
           "link_state": "up",
           "loopback": false,
           "name": "wlo1",
-          "rx_bytes": 22105872424,
-          "rx_bytes_per_second": 1965.2515081665063,
+          "rx_bytes": 10598184549,
+          "rx_bytes_per_second": 15048.650973219223,
           "rx_dropped_or_missed": 0,
           "rx_errors": 0,
-          "tx_bytes": 6099107219,
-          "tx_bytes_per_second": 263.6686890831818,
-          "tx_dropped": 578,
+          "tx_bytes": 1651127756,
+          "tx_bytes_per_second": 142023.9431702352,
+          "tx_dropped": 44,
           "tx_errors": 0
         }
       ],
       "interval_ms": 326,
-      "measured_unix_ms": 1794238952862,
+      "measured_unix_ms": 1795632528073,
       "omitted_interfaces": 0,
       "source": "kernel",
       "unreadable_interfaces": 0
@@ -155,8 +155,8 @@
     "independent_sysfs_before": {
       "lo": {
         "ifindex": 1,
-        "rx_bytes": 3078383127,
-        "tx_bytes": 3078383127
+        "rx_bytes": 836279983,
+        "tx_bytes": 836279983
       },
       "eno1": {
         "ifindex": 2,
@@ -165,20 +165,20 @@
       },
       "docker0": {
         "ifindex": 4,
-        "rx_bytes": 1876386,
-        "tx_bytes": 1637762
+        "rx_bytes": 0,
+        "tx_bytes": 0
       },
       "wlo1": {
         "ifindex": 3,
-        "rx_bytes": 22105872424,
-        "tx_bytes": 6099107219
+        "rx_bytes": 10598184549,
+        "tx_bytes": 1651127756
       }
     },
     "independent_sysfs_after": {
       "lo": {
         "ifindex": 1,
-        "rx_bytes": 3078383127,
-        "tx_bytes": 3078383127
+        "rx_bytes": 836284514,
+        "tx_bytes": 836284514
       },
       "eno1": {
         "ifindex": 2,
@@ -187,13 +187,13 @@
       },
       "docker0": {
         "ifindex": 4,
-        "rx_bytes": 1876386,
-        "tx_bytes": 1637762
+        "rx_bytes": 0,
+        "tx_bytes": 0
       },
       "wlo1": {
         "ifindex": 3,
-        "rx_bytes": 22105872424,
-        "tx_bytes": 6099107219
+        "rx_bytes": 10598184549,
+        "tx_bytes": 1651127756
       }
     },
     "verified_interfaces": [
@@ -204,5 +204,5 @@
     ]
   },
   "cleanup_complete": true,
-  "recorded_utc": "2026-11-09T15:42:33.276056+00:00"
+  "recorded_utc": "2026-11-25T18:48:48.275444+00:00"
 }

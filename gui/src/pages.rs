@@ -396,6 +396,7 @@ fn expired_snapshot(last: &Snapshot) -> Snapshot {
         network_error: Some(STALE_REASON.into()),
         capabilities: expired_capabilities(&last.capabilities),
         sensors: Vec::new(),
+        top_processes: Vec::new(),
         fan: None,
         fan_err: Some(STALE_REASON.into()),
         profile: None,
@@ -921,9 +922,72 @@ pub fn vitals(ui: &Rc<Ui>) -> gtk::Widget {
     network_view::bind(ui, &page, network_list, network_status);
     page.append(&network);
 
+    let procs_section = section(&tr("Top resource processes"));
+    procs_section.append(
+        &gtk::Label::builder()
+            .label(tr(
+                "Active desktop processes sorted by resident memory; lightweight /proc monitoring.",
+            ))
+            .wrap(true)
+            .xalign(0.0)
+            .css_classes(["dim"])
+            .build(),
+    );
+    let procs_list = gtk::Box::new(gtk::Orientation::Vertical, 4);
+    let procs_empty = gtk::Label::builder()
+        .label(tr("No process metrics available"))
+        .xalign(0.0)
+        .css_classes(["dim", "small"])
+        .build();
+    procs_list.append(&procs_empty);
+    let proc_rows: RefCell<Vec<(gtk::Box, gtk::Label, gtk::Label)>> = RefCell::new(Vec::new());
+    procs_section.append(&procs_list);
+    page.append(&procs_section);
+
     let search = sensor_view::bind(ui, &page);
     let search_for_action = search.clone();
+    let procs_list_for_update = procs_list.clone();
     ui.register(&page, move |snap| {
+        let count = snap.top_processes.len();
+        procs_empty.set_visible(count == 0);
+        let mut rows = proc_rows.borrow_mut();
+        while rows.len() < count {
+            let row = gtk::Box::new(gtk::Orientation::Horizontal, 12);
+            row.add_css_class("sensor-row");
+            let name = gtk::Label::builder()
+                .hexpand(true)
+                .xalign(0.0)
+                .ellipsize(gtk::pango::EllipsizeMode::End)
+                .build();
+            let val = gtk::Label::builder()
+                .css_classes(["sensor-val"])
+                .xalign(1.0)
+                .build();
+            row.append(&name);
+            row.append(&val);
+            procs_list_for_update.append(&row);
+            rows.push((row, name, val));
+        }
+        for (idx, (row, name_lbl, val_lbl)) in rows.iter().enumerate() {
+            if let Some(proc) = snap.top_processes.get(idx) {
+                let title = format!("PID {}: {}", proc.pid, proc.name);
+                if name_lbl.text() != title {
+                    name_lbl.set_text(&title);
+                }
+                let mem_mb = proc.mem_bytes as f64 / (1024.0 * 1024.0);
+                let val = if proc.cpu_pct > 0.0 {
+                    format!("{:.1}% · {mem_mb:.1} MiB", proc.cpu_pct)
+                } else {
+                    format!("{mem_mb:.1} MiB")
+                };
+                if val_lbl.text() != val {
+                    val_lbl.set_text(&val);
+                }
+                row.set_visible(true);
+            } else {
+                row.set_visible(false);
+            }
+        }
         fr_l.set_text(
             &cpu_freq(snap)
                 .map(|v| format!("{v:.0} MHz"))
@@ -2040,6 +2104,7 @@ mod freshness_tests {
             network_error: None,
             capabilities: crate::data::fallback_caps(),
             sensors: Vec::new(),
+            top_processes: Vec::new(),
             fan: None,
             fan_err: None,
             profile: None,
@@ -2107,6 +2172,7 @@ mod freshness_tests {
             network_error: None,
             capabilities: crate::data::fallback_caps(),
             sensors: Vec::new(),
+            top_processes: Vec::new(),
             fan: None,
             fan_err: None,
             profile: None,
@@ -2186,6 +2252,7 @@ mod freshness_tests {
             network_error: None,
             capabilities: crate::data::fallback_caps(),
             sensors: Vec::new(),
+            top_processes: Vec::new(),
             fan: None,
             fan_err: None,
             profile: None,
@@ -2248,6 +2315,7 @@ mod freshness_tests {
             network_error: None,
             capabilities: caps,
             sensors: vec![sensor],
+            top_processes: Vec::new(),
             fan: Some(omen_core::fans::FanState {
                 cpu_rpm: Some(2000),
                 ..Default::default()

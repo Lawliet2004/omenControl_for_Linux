@@ -2,7 +2,7 @@
   "host": "running KDE StatusNotifierWatcher",
   "profile": "release",
   "requested_gtk_backend": "wayland",
-  "gui_sha256": "e56c470afb8186c3b00d6b7005bab368b6e2ac4e24608d1af7316da215711448",
+  "gui_sha256": "25afd58f24dbfd4cc2b27fbb59efb5ed1288d8e4b9839ce5362897e013cfb26f",
   "live_hardware_writes": false,
   "checks_passed": [
     "real KDE tray: read-only menu, Hide, Activate, page navigation, clean Quit",

@@ -205,4 +205,19 @@ mod tests {
         user.version = CONFIG_VERSION + 1;
         assert!(SettingsBackup::User(user).export_json().is_err());
     }
+    #[test]
+    fn user_backup_preserves_mangohud_overlay() {
+        let mut config = OmenConfig::default();
+        config.games.mangohud_overlay = true;
+        let raw = SettingsBackup::User(UserSettings::from(&config))
+            .export_json()
+            .unwrap();
+        let SettingsBackup::User(user) =
+            SettingsBackup::import_json(&raw, SettingsScope::User).unwrap()
+        else {
+            panic!("expected user backup");
+        };
+        let next = user.apply_to(&OmenConfig::default()).unwrap();
+        assert!(next.games.mangohud_overlay);
+    }
 }

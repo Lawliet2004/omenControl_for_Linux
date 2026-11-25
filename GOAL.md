@@ -155,10 +155,16 @@ Acceptance:
 
 ## Current focus
 
-Release candidate published at `target/production-readiness-candidate/omen-linux_0.1.0-26_amd64.deb` (composite source manifest SHA-256 `9284010c2149c2fab36c573fbbb2f7267cab62f0f306bb4cbbb6a9b04dc85755`, 205 files). All M1-M9 milestones complete and verified. `tests/systemd_vm.py` is accurately gated on host `/dev/kvm` group membership.
+Release candidate published at `target/production-readiness-candidate/omen-linux_0.1.0-28_amd64.deb` (308 Rust tests in debug and release). All M1-M9 milestones and Windows Gaming Hub parity enhancements complete and verified. `tests/systemd_vm.py` is accurately gated on host `/dev/kvm` group membership.
 
 ## Decisions
 
+- 2026-11-24 — Windows Gaming Hub Parity & Modernization (0.1.0-28):
+  - Added lightweight zero-overhead `/proc` top resource process reader (`crates/hardware/src/processes.rs`) with `ProcessMonitor` delta CPU% and resident memory, surfaced in System Vitals (`gui/src/pages.rs`) for real sources only.
+  - Implemented opt-in MangoHud in-game FPS and frametime overlay integration in `crates/client/src/game_sessions.rs`, `crates/hardware/src/games.rs`, `crates/client/src/games.rs` (non-managed Custom & Legendary launches), CLI (`omen-cli game-run --mangohud`), and GUI Game Library toggle (`gui/src/game_library.rs`).
+  - Surfaced battery cycle count and full vs design energy capacity in native GUI Battery page (`gui/src/control_pages.rs`).
+  - Hardened dependencies and audited RustSec advisories (zero vulnerabilities), and fixed integration test Unix socket `SUN_LEN` fallback (`tests/integration/src/lib.rs`).
+  - Built and verified release package `target/production-readiness-candidate/omen-linux_0.1.0-28_amd64.deb` (SHA-256 `dbfb8a5b3ec5a5267ba4c59237af8386f64186aa9e6c9730863949705c764a5e`) via `tests/package.py` (8/8 checks). 308 unit and integration tests passing in debug and release.
 - 2026-11-09 — Goal created.
 - 2026-11-09 — M1 Baseline verified: client `BufRead` compilation fix applied; baseline manifest (205 files, composite `304e3e15...`) recorded; 294 Rust tests passed in debug and release.
 - 2026-11-09 — M2 Partial diagnostics verified: `crates/client/src/monitoring.rs`, `crates/cli/src/main.rs`, and `gui/src/data.rs` aligned to query `network` and report `network_error`; sensor failures return `sensors: null` with `sensors_error`.
